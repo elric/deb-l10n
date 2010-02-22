@@ -31,12 +31,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg man pages\n"
 "POT-Creation-Date: 2010-02-21 11:26+0000\n"
-"PO-Revision-Date: 2010-02-22 22:39+0200\n"
+"PO-Revision-Date: 2010-02-22 23:46+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.5.2\n"
@@ -845,9 +845,8 @@ msgstr "28 de eneror del 2010"
 
 #. type: Plain text
 #: deb-split.5:4
-#, fuzzy
 msgid "deb-split - Debian multi-part binary package format"
-msgstr "deb - Formato de paquetes binarios de Debian"
+msgstr "deb-split - Formato de paquete binario dividido de Debian"
 
 # type: Plain text
 #. type: Plain text
@@ -859,16 +858,16 @@ msgstr ""
 
 #. type: Plain text
 #: deb-split.5:12
-#, fuzzy
 msgid ""
 "The file is an B<ar> archive with a magic value of B<!E<lt>archE<gt>>.  The "
 "file names might contain a trailing slash (since dpkg 1.15.6)."
 msgstr ""
-"El fichero es un archivo B<ar> con el número mágico B<!E<lt>archE<gt>>."
+"El fichero es un archivo B<ar> con el número mágico B<!E<lt>archE<gt>>. Los "
+"nombres de fichero pueden contener caracteres en exceso al final (a partir "
+"de dpkg 1.15.6)."
 
 #. type: Plain text
 #: deb-split.5:21
-#, fuzzy
 msgid ""
 "The first member is named B<debian-split> and contains a series of lines, "
 "separated by newlines. Currently seven lines are present.  The first is the "
@@ -878,11 +877,14 @@ msgid ""
 "sixth is the maximum part size. The seventh is the current part number, "
 "followed by a slash and the total amount of parts (as in \\(oq1/10\\(cq)."
 msgstr ""
-"El primer miembro del archivo B<ar> se llama B<debian-binary> y contiene una "
-"serie de líneas separadas por saltos de línea. A fecha de hoy sólo hay una "
-"línea, el número de versión del formato, B<2.0>.  Los programas que lean "
-"versiones más nuevas deberían esperar que los números menores aumentaran y "
-"que hubiera nuevas líneas, y en ese caso deberían ignorarlas."
+"El primer miembro se llama B<debian-split> y contiene un conjunto de líneas "
+"separadas por saltos de línea. A día de hoy hay siete líneas. La primera es "
+"el número de versión de formato, B<2.1> en el momento de escribir esta "
+"página de manual. El segundo es el nombre del paquete. El tercero es la "
+"versión del paquete. El cuarto es la suma de control md5 del paquete. El "
+"quinto es tamaño total del paquete. El sexto es el tamaño máximo de una "
+"parte. El séptimo es el número de la parte actual, seguido de una barra "
+"invertida y el número total de partes (por ejemplo, \\(oq1/10\\(cq)."
 
 # type: Plain text
 #. type: Plain text
@@ -894,7 +896,6 @@ msgstr ""
 
 #. type: Plain text
 #: deb-split.5:29
-#, fuzzy
 msgid ""
 "If the version number has changed, an incompatible change has been made and "
 "the program should stop. If it has not, then the program should be able to "
@@ -902,9 +903,9 @@ msgid ""
 "(except at the end), as described below."
 msgstr ""
 "Si el número mayor ha cambiado es que hay cambios incompatibles y el "
-"programa debería parar. Si no, debería poder seguir sin problemas, a no ser "
-"que encontrara un miembro no esperado en el archivo (excepto al final), como "
-"se describe más abajo."
+"programa debería parar. De no ser así debería poder seguir sin problemas, a "
+"no ser que encontrara un miembro no esperado en el archivo (excepto al "
+"final), como se describe más abajo."
 
 #. type: Plain text
 #: deb-split.5:32
@@ -913,55 +914,49 @@ msgid ""
 "The second, last required member is named B<data.>N, where N denotes the "
 "part number. It contains the raw part data."
 msgstr ""
-"El tercer y último miembro requerido es el llamado B<data.tar.gz .> Contiene "
-"el archivo del sistema de ficheros en forma de tar comprimido."
+"El segundo y último miembro requerido se llama B<data>.N. N simboliza el "
+"número de la parte y contiene los datos no procesados de la parte."
 
 #. type: Plain text
 #: deb-split.5:37
-#, fuzzy
 msgid ""
 "These members must occur in this exact order. Current implementations should "
 "ignore any additional members after B<data.>N.  Further members may be "
 "defined in the future, and (if possible) will be placed after these two."
 msgstr ""
 "Estos miembros deben aparecer en este orden. Las implementaciones actuales "
-"deberían ignorar cualquier miembro adicional después de B<data.tar.gz>.  "
-"Podrán definirse nuevos miembros en el futuro, y se pondrán, si es posible, "
-"después de éstos tres. Cualquier miembro adicional que tuviera que "
-"insertarse antes de B<data.tar.gz> y que tenga que ser ignorado por los "
-"programas más antiguos, tendrá un nombre que comience con un guión bajo, "
-"`B<_>'."
+"deberían ignorar cualquier miembro adicional después de B<data>.N.  Podrán "
+"definirse nuevos miembros en el futuro, y se pondrán, si es posible, después "
+"de éstos dos."
 
 #. type: Plain text
 #: deb-split.5:39
-#, fuzzy
 msgid "B<deb>(5), B<dpkg-split>(1)."
-msgstr "B<dpkg-deb>(1), B<dpkg>(8), B<dselect>(8), B<gpg>(1), B<pgp>(1)."
+msgstr "B<deb>(5), B<dpkg-split>(1)."
 
 #. type: TH
 #: deb-version.5:5
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "deb-version"
-msgstr "--version"
+msgstr "deb-version"
 
 #. type: TH
 #: deb-version.5:5 dpkg-distaddfile.1:1 dpkg-divert.8:1 dpkg-genchanges.1:1
 #: dpkg-gencontrol.1:1 dpkg-name.1:6
 #, no-wrap
 msgid "2008-08-18"
-msgstr ""
+msgstr "18 de Agosto del 2008"
 
 #. type: Plain text
 #: deb-version.5:8
-#, fuzzy
 msgid "deb-version - Debian package version number format"
-msgstr ""
-"deb-control - formato del fichero de control maestro de los paquetes Debian."
+msgstr "deb-version - Formato del número de versión de paquetes de Debian"
 
 #. type: Plain text
 #: deb-version.5:11
+#, fuzzy
 msgid "[ I<epoch>:] I<upstream_version> [-I<debian_revision> ]"
-msgstr ""
+msgstr "[ I<epoch>:] I<upstream_version> [-I<debian_revision> ]"
 
 #. type: Plain text
 #: deb-version.5:14
@@ -1143,30 +1138,27 @@ msgstr ""
 
 #. type: Plain text
 #: deb-version.5:120
-#, fuzzy
 msgid "B<deb-control>(5), B<deb>(5), B<dpkg>(1)"
-msgstr "B<deb>(5), B<deb-control>(5), B<dpkg-deb>(1), B<dpkg>(8)"
+msgstr "B<deb-control>(5), B<deb>(5), B<dpkg>(1)"
 
 #. type: SH
 #: deb-version.5:120 dpkg.1:708 dpkg-buildpackage.1:313 dpkg-distaddfile.1:47
 #: dpkg-genchanges.1:146 dpkg-gencontrol.1:140 dpkg-gensymbols.1:455
 #: dpkg-parsechangelog.1:122 dpkg-shlibdeps.1:331 dpkg-source.1:570
 #: dselect.1:457 start-stop-daemon.8:294 update-alternatives.8:487
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "AUTHORS"
 msgstr "AUTORES"
 
 #. type: Plain text
 #: deb-version.5:122
-#, fuzzy
 msgid "Copyright \\(co 1996,1997,1998 Ian Jackson and Christian Schwarz"
-msgstr "Copyright (C) 1995-1996 Ian Jackson"
+msgstr "Copyright \\(co 1996,1997,1998 Ian Jackson y Christian Schwarz"
 
 #. type: Plain text
 #: deb-version.5:124 dpkg-buildpackage.1:319
-#, fuzzy
 msgid "Copyright \\(co 2007 Frank Lichtenheld"
-msgstr "Copyright (C) 2000 Wichert Akkerman"
+msgstr "Copyright \\(co 2007 Frank Lichtenheld"
 
 #. type: Plain text
 #: deb-version.5:126 deb-substvars.5:147 dpkg-buildpackage.1:323
@@ -1175,7 +1167,6 @@ msgstr "Copyright (C) 2000 Wichert Akkerman"
 #: dpkg-gensymbols.1:459 dpkg-name.1:110 dpkg-parsechangelog.1:130
 #: dpkg-query.1:169 dpkg-shlibdeps.1:341 dpkg-source.1:578 dpkg-split.1:236
 #: dpkg-statoverride.8:86 dpkg-vendor.1:53 update-alternatives.8:494
-#, fuzzy
 msgid ""
 "This is free software; see the GNU General Public Licence version 2 or later "
 "for copying conditions. There is NO WARRANTY."
@@ -1187,7 +1178,7 @@ msgstr ""
 #: deb-old.5:1
 #, no-wrap
 msgid "deb-old"
-msgstr ""
+msgstr "deb-old"
 
 #. type: TH
 #: deb-old.5:1
@@ -1197,36 +1188,32 @@ msgstr ""
 
 #. type: Plain text
 #: deb-old.5:4
-#, fuzzy
 msgid "deb-old - old style Debian binary package format"
 msgstr "deb-old - Antiguo formato de paquetes binarios de Debian"
 
 #. type: Plain text
 #: deb-old.5:17
-#, fuzzy
 msgid ""
 "The B<.deb> format is the Debian binary package file format. This manual "
-"page describes the B<old> format, used before Debian 0.93. Please see B<deb>"
-"(5)  for details of the new format."
+"page describes the B<old> format, used before Debian 0.93. Please see "
+"B<deb>(5)  for details of the new format."
 msgstr ""
-"El formato B<.deb> es el formato de archivos de paquetes binarios de "
-"Debian.  Esta página de manual describe el formato B<antiguo> usado "
-"previamente a la versión de Debian 0.93. Por favor, vea el manual B<deb>(5)  "
-"para mayor detalle sobre el nuevo formato."
+"El formato B<.deb> es el formato de archivos de paquetes binarios de Debian. "
+" Esta página de manual describe el formato B<antiguo> usado previamente a "
+"la versión de Debian 0.93. Por favor, consulte el manual B<deb>(5)  para "
+"mayor detalle sobre el nuevo formato."
 
 #. type: Plain text
 #: deb-old.5:21
-#, fuzzy
 msgid ""
 "The file is two lines of format information as ASCII text, followed by two "
 "concatenated gzipped ustar files."
 msgstr ""
-"El archivo está conformado por dos lineas con información en texto ASCII, "
-"seguido por dos archivos tar, concatenados y comprimidos vía gzip."
+"El fichero está formado por dos lineas con información en texto ASCII, "
+"seguido por dos archivos tar concatenados y comprimidos vía gzip."
 
 #. type: Plain text
 #: deb-old.5:25
-#, fuzzy
 msgid ""
 "The first line is the format version number padded to 8 digits, and is "
 "B<0.939000> for all old-format archives."
@@ -1236,36 +1223,31 @@ msgstr ""
 
 #. type: Plain text
 #: deb-old.5:28
-#, fuzzy
 msgid ""
 "The second line is a decimal string (without leading zeroes) giving the "
 "length of the first gzipped tarfile."
 msgstr ""
-"La segunda línea es un número decimal (sin ceros precedentes) que informa el "
-"tamaño del primer archivo tar comprimido con gzip."
+"La segunda línea es un número decimal (sin ceros precedentes) que informa "
+"del tamaño del primer archivo tar comprimido con gzip."
 
 #. type: Plain text
 #: deb-old.5:30
-#, fuzzy
 msgid "Each of these lines is terminated with a single newline character."
 msgstr "Cada línea finaliza con un carácter único de nueva línea."
 
 #. type: Plain text
 #: deb-old.5:35
-#, fuzzy
 msgid ""
 "The first tarfile contains the control information, as a series of ordinary "
 "files. The file B<control> must be present, as it contains the core control "
 "information."
 msgstr ""
-"El primer archivo tar contiene la información de control, como una serie de "
-"archivos comunes, descritos en I<Debian Packaging Manual, sección 2.2>.  El "
-"archivo de B<control> debe estar presente, debido a que contiene la base de "
-"la información de control."
+"El primer fichero tar contiene la información de control como una serie de "
+"ficheros comunes. El fichero de B<control> debe estar presente ya que "
+"contiene la información de control básica."
 
 #. type: Plain text
 #: deb-old.5:46
-#, fuzzy
 msgid ""
 "In some very old archives, the files in the control tarfile may optionally "
 "be in a B<DEBIAN> subdirectory. In that case, the B<DEBIAN> subdirectory "
@@ -1273,37 +1255,35 @@ msgid ""
 "files in that directory. Optionally the control tarfile may contain an entry "
 "for `B<.>', that is, the current directory."
 msgstr ""
-"En algunos archivos muy antiguos, los archivos de control en el archivo tar "
+"En algunos archivos muy antiguos, los ficheros de control en el fichero tar "
 "pueden estar opcionalmente en un subdirectorio B<DEBIAN.> En este caso, el "
-"subdirectorio B<DEBIAN> estará también en el archivo tar de control, y el "
-"archivo tar de control tendrá solamente archivos en este directorio. "
-"Opcionalmente el archivo tar podrá contener una entrada para `B<.>', que es "
+"subdirectorio B<DEBIAN> estará también en el fichero tar de control, y el "
+"ficher tar de control tendrá solamente archivos en este directorio. De forma "
+"opcional, el fichero tar podrá contener una entrada para «B<.>», ello es, "
 "el directorio actual."
 
 #. type: Plain text
 #: deb-old.5:50
-#, fuzzy
 msgid ""
 "The second gzipped tarfile is the filesystem archive, containing pathnames "
 "relative to the root directory of the system to be installed on. The "
 "pathnames do not have leading slashes."
 msgstr ""
-"El segundo archivo tar comprimido con gzip es el archivo del sistema de "
-"archivos, contiene las rutas relativas al directorio raíz del sistema donde "
-"será instalado. Las rutas no tienen barras precedentes."
+"El segundo fichero tar comprimido con gzip es el archivo del sistema de "
+"ficheros, que contiene las rutas relativas al directorio raíz del sistema "
+"donde se instalado instalará. Los nombres de ruta no tienen barras↓ "
+"precedentes."
 
 #. type: Plain text
 #: deb-old.5:54
-#, fuzzy
 msgid "B<deb>(5), B<dpkg-deb>(1), B<deb-control>(5)."
-msgstr ""
-"B<deb>(5), B<dpkg-deb>(1), B<deb-control>(5), I<Debian Packaging Manual>."
+msgstr "B<deb>(5), B<dpkg-deb>(1), B<deb-control>(5)."
 
 #. type: TH
 #: deb-override.5:15
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "deb-override"
-msgstr "I</var/lib/dpkg/statoverride>"
+msgstr "deb-override"
 
 #. type: TH
 #: deb-override.5:15
@@ -1319,17 +1299,9 @@ msgstr ""
 #: dpkg-name.1:6 dpkg-parsechangelog.1:1 dpkg-scanpackages.1:15
 #: dpkg-scansources.1:1 dpkg-shlibdeps.1:1 dpkg-source.1:2 dpkg-split.1:2
 #: dpkg-statoverride.8:1 start-stop-daemon.8:1 update-alternatives.8:8
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "dpkg utilities"
-msgstr ""
-"#-#-#-#-#  es.po (dpkg man pages)  #-#-#-#-#\n"
-"Herramientas de dpkg\n"
-"#-#-#-#-#  es.po (dpkg man pages)  #-#-#-#-#\n"
-"utilidades dpkg\n"
-"#-#-#-#-#  es.po (dpkg man pages)  #-#-#-#-#\n"
-"utilidades de dpkg\n"
-"#-#-#-#-#  es.po (dpkg man pages)  #-#-#-#-#\n"
-"herramientas dpkg"
+msgstr "Herramientas de dpkg"
 
 #. type: Plain text
 #: deb-override.5:18
