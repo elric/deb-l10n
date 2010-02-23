@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg man pages\n"
 "POT-Creation-Date: 2010-02-21 11:26+0000\n"
-"PO-Revision-Date: 2010-02-22 23:46+0200\n"
+"PO-Revision-Date: 2010-02-23 01:13+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -471,10 +471,10 @@ msgid ""
 "other installation tool will not allow an B<Essential> package to be removed "
 "(at least not without using one of the force options)."
 msgstr ""
-"Generalmente, este campo sólo se necesita cuando la respuesta es «yes» (sí).\n"
-"Denota los paquetes necesarios para el correcto funcionamiento del\n"
+"Generalmente, este campo sólo se necesita cuando la respuesta es «yes» (sí). "
+"Denota los paquetes necesarios para el correcto funcionamiento del "
 "sistema. Dpkg o cualquier otra herramienta de instalación impiden "
-"desinstalar un paquete B<Essential> (al menos sin usar opciones de forzado).\n"
+"desinstalar un paquete B<Essential> (al menos sin usar opciones de forzado). "
 
 #. type: TP
 #: deb-control.5:78
@@ -1306,17 +1306,15 @@ msgstr "Herramientas de dpkg"
 #. type: Plain text
 #: deb-override.5:18
 msgid "deb-override - Debian archive override file"
-msgstr ""
+msgstr "deb-override - Fichero de anulación de archivo de Debian"
 
 #. type: Plain text
 #: deb-override.5:21 deb-extra-override.5:7
-#, fuzzy
 msgid "override"
-msgstr "I</var/lib/dpkg/statoverride>"
+msgstr "override"
 
 #. type: Plain text
 #: deb-override.5:28
-#, fuzzy
 msgid ""
 "While most information about a package can be found in the control file, "
 "some must be filled in by the distribution czars rather than by the "
@@ -1325,97 +1323,91 @@ msgid ""
 "information is found in the override file."
 msgstr ""
 "Mientras que la mayoría de la información acerca de los paquetes se "
-"encuentre en el fichero de control, parte de esta información debe de ser "
-"rellenada por los encargados de planificar la distribución en vez de por los "
-"mantenedores, porque es información relacionada con el ordenamiento de los "
-"archivos para el lanzamiento de la distribución, más que dependencias reales "
-"o descripciones del paquete. Este tipo de información se encuentra en el "
-"fichero de override."
+"encuentra en el fichero de control, parte de esta información se debe "
+"rellenar por los encargados de planificar la distribución, en lugar de los "
+"mantenedores. Esto se debe a que es información relacionada con el "
+"ordenamiento de los ficheros para el lanzamiento de la distribución, más que "
+"las dependencias reales o descripciones del paquete. Este tipo de "
+"información se encuentra en el fichero «override» (anulación)."
 
 #. type: Plain text
 #: deb-override.5:32
-#, fuzzy
 msgid ""
 "The override file has a simple whitespace-delimited format. Comments are "
 "allowed (denoted with a B<#>)."
 msgstr ""
-"El fichero override tiene un formato simple, está delimitado por espacios en "
+"El fichero de anulación tiene un formato simple, delimitado por espacios en "
 "blanco. Los comentarios van precedidos de B<#>)."
 
 #. type: Plain text
 #: deb-override.5:38
-#, fuzzy
 msgid "I<package> I<priority> I<section> [I<maintainerinfo>]"
-msgstr "I<paquete> I<prioridad> I<sección> [I<información_del_mantenedor>]"
+msgstr "I<paquete> I<prioridad> I<sección> [I<información-del-mantenedor>]"
 
 #. type: Plain text
 #: deb-override.5:43
-#, fuzzy
 msgid ""
 "I<package> is the name of the package. Entries in the override file for "
 "packages not found in the tree of binary packages are ignored."
 msgstr ""
-"I<paquete> El nombre del paquete.  Las entradas en el fichero de override de "
+"I<paquete> El nombre del paquete. Las entradas en el fichero de anulación de "
 "un paquete no encontrado en el directorio son descartadas."
 
 #. type: Plain text
 #: deb-override.5:52
-#, fuzzy
 msgid ""
 "I<priority> and I<section> place the package within the release tree; these "
 "ought not to be found in the control file. If the package is found in a "
 "subdirectory of I<binarydir>, that will be checked against I<section>."
 msgstr ""
-"I<prioridad> y I<sección> colocan el paquete en el árbol de directorios de "
-"la distribución; esta información no debe de encontrarse en el fichero de "
-"control. Si el paquete se encuentra en un subdirectorio de I<bindir>, se "
+"I<prioridad> y I<sección> ubican el paquete en el árbol de directorios de la "
+"distribución; esta información no debe estar presente en el fichero de "
+"control. Si el paquete se encuentra en un subdirectorio de I<binarydir>, se "
 "tendrá en cuenta la I<sección>."
 
 #. type: Plain text
 #: deb-override.5:60
-#, fuzzy
 msgid ""
 "I<maintainerinfo>, if present, can be either the name of a maintainer for an "
 "unconditional override, or else I<oldmaintainer> B<=E<gt>> I<newmaintainer> "
 "to perform a substitution."
 msgstr ""
-"I<información_del_mantenedor>, si está presente, puede ser el nombre del "
-"mantenedor para un fichero de override incondicional , o bien I<antiguo "
+"I<información-del-mantenedor>, de estar presente, puede ser el nombre del "
+"mantenedor para un fichero de anulación incondicional, o bien I<antiguo "
 "mantenedor> B<=E<gt>> I<nuevo mantenedor> para hacer una substitución."
 
 #. type: Plain text
 #: deb-override.5:65
-#, fuzzy
 msgid ""
 "The override files used to make the official Packages lists may be found in "
 "the I<indices> directory on any Debian mirror."
 msgstr ""
-"Los ficheros override que se usan para hacer las listas de paquetes "
-"oficiales, suelen encontrarse en el directorio I<índices> en cualquier "
-"réplica de Debian."
+"Puede encontrar los ficheros de anulación que se usan para hacer las listas "
+"de paquetes oficiales en el directorio «I<indices>» de cualquier réplica de "
+"Debian."
 
 #. type: Plain text
 #: deb-override.5:69 deb-extra-override.5:40
-#, fuzzy
 msgid "B<dpkg-scanpackages>(1), B<dpkg-scansources>(1), B<apt-ftparchive>(1)."
-msgstr "B<dpkg-buildpackage> [I<opciones>]"
+msgstr "B<dpkg-scanpackages>(1), B<dpkg-scansources>(1), B<apt-ftparchive>(1)."
 
 #. type: TH
 #: deb-extra-override.5:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "deb-extra-override"
-msgstr "I</var/lib/dpkg/statoverride>"
+msgstr "deb-extra-override"
 
 #. type: TH
 #: deb-extra-override.5:1
 #, no-wrap
 msgid "2009-08-16"
-msgstr ""
+msgstr "16 de Agosto del 2008"
 
 #. type: Plain text
 #: deb-extra-override.5:4
 msgid "deb-extra-override - Debian archive extra override file"
 msgstr ""
+"deb-extra-override - Fichero de anulación adicional de archivo de Debian"
 
 #. type: Plain text
 #: deb-extra-override.5:12
@@ -1424,27 +1416,29 @@ msgid ""
 "control/.dsc file, all of it can be overridden when it's exported to "
 "Packages/Sources files. The extra override file contains those overrides."
 msgstr ""
+"Mientras que puede encontrar la mayoría de la información de un paquete "
+"binario o fuente en el fichero «control/.dsc», ésta se puede anular al "
+"exportarlo a los ficheros «Packages» y «Sources». El fichero de anulación "
+"adicional contiene esas anulaciones."
 
 #. type: Plain text
 #: deb-extra-override.5:16
-#, fuzzy
 msgid ""
 "The extra override file has a simple whitespace-delimited format. Comments "
 "are allowed (denoted with a B<#>)."
 msgstr ""
-"El fichero override tiene un formato simple, está delimitado por espacios en "
-"blanco. Los comentarios van precedidos de B<#>)."
+"El fichero de anulación adicional tiene un formato simple, delimitado por "
+"espacios en blanco. Los comentarios van precedidos de B<#>)."
 
 #. type: Plain text
 #: deb-extra-override.5:21
-#, fuzzy
 msgid "I<package> I<field-name> I<value>"
-msgstr "B<-D>I<campo>B<=>I<valor>"
+msgstr "I<paquete> I<nombre-del-campo> I<valor>"
 
 #. type: Plain text
 #: deb-extra-override.5:25
 msgid "I<package> is the name of the binary/source package."
-msgstr ""
+msgstr "I<paquete> es el nombre del paquete binario o fuente."
 
 #. type: Plain text
 #: deb-extra-override.5:31
@@ -1453,23 +1447,25 @@ msgid ""
 "value to put in the field. It can contain spaces as the line is split in no "
 "more than 3 columns when it's parsed."
 msgstr ""
+"I<nombre-de-campo> es el nombre del campo a anular,  y el I<valor> es el "
+"valor a insertaren el campo. Puede contener espacios ya que la línea se "
+"divide en al menos 3 columnas durante el análisis."
 
 #. type: Plain text
 #: deb-extra-override.5:36
-#, fuzzy
 msgid ""
 "The extra override files used to make the official Packages lists may be "
 "found in the I<indices> directory on any Debian mirror."
 msgstr ""
-"Los ficheros override que se usan para hacer las listas de paquetes "
-"oficiales, suelen encontrarse en el directorio I<índices> en cualquier "
-"réplica de Debian."
+"Los ficheros de anulación adicional que se usan para hacer las listas de "
+"paquetes oficiales suelen encontrarse en el directorio I<indices> de "
+"cualquier réplica de Debian."
 
 #. type: TH
 #: deb-shlibs.5:16
 #, no-wrap
 msgid "deb-shlibs"
-msgstr ""
+msgstr "deb-shlibs"
 
 #. type: TH
 #: deb-shlibs.5:16
@@ -1481,9 +1477,7 @@ msgstr ""
 #: deb-shlibs.5:19
 #, fuzzy
 msgid "deb-shlibs - Debian shared library information file"
-msgstr ""
-"Información acerca de redefinición de dependencias de bibliotecas "
-"compartidas para cada sistema."
+msgstr "deb-shlibs - Fichero de"
 
 #. type: Plain text
 #: deb-shlibs.5:29
@@ -1859,23 +1853,18 @@ msgstr ""
 #: dpkg-distaddfile.1:39 dpkg-divert.8:112 dpkg-genchanges.1:136
 #: dpkg-gencontrol.1:126 dpkg-parsechangelog.1:114 dpkg-split.1:215
 #: dpkg-statoverride.8:69 dselect.cfg.5:12 update-alternatives.8:355
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "FILES"
-msgstr ""
-"#-#-#-#-#  es.po (dpkg man pages)  #-#-#-#-#\n"
-"FICHEROS\n"
-"#-#-#-#-#  es.po (dpkg man pages)  #-#-#-#-#\n"
-"ARCHIVOS"
+msgstr "FICHEROS"
 
 #. type: TP
 #: deb-substvars.5:126
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "B<debian/substvars>"
 msgstr "B<debian/substvars>"
 
 #. type: Plain text
 #: deb-substvars.5:129
-#, fuzzy
 msgid "List of substitution variables and values."
 msgstr "Lista de variables de sustitución y sus valores."
 
@@ -1899,7 +1888,6 @@ msgstr ""
 
 #. type: Plain text
 #: deb-substvars.5:133 dpkg-source.1:565
-#, fuzzy
 msgid ""
 "The point at which field overriding occurs compared to certain standard "
 "output field settings is rather confused."
@@ -1909,18 +1897,19 @@ msgstr ""
 
 #. type: Plain text
 #: deb-substvars.5:140
-#, fuzzy
 msgid ""
-"B<dpkg>(1), B<dpkg-genchanges>(1), B<dpkg-gencontrol>(1), B<dpkg-shlibdeps>"
-"(1), B<dpkg-source>(1)."
-msgstr "B<dpkg-deb>(1), B<dpkg>(8), B<dselect>(8), B<gpg>(1), B<pgp>(1)."
+"B<dpkg>(1), B<dpkg-genchanges>(1), B<dpkg-gencontrol>(1), B<dpkg-"
+"shlibdeps>(1), B<dpkg-source>(1)."
+msgstr ""
+"B<dpkg>(1), B<dpkg-genchanges>(1), B<dpkg-gencontrol>(1), B<dpkg-"
+"shlibdeps>(1), B<dpkg-source>(1)."
 
 #. type: SH
 #: deb-substvars.5:141 dpkg-architecture.1:298 dpkg.cfg.5:19
 #: dpkg-checkbuilddeps.1:40 dpkg-deb.1:249 dpkg-divert.8:125 dpkg-name.1:106
 #: dpkg-query.1:164 dpkg-scansources.1:77 dpkg-split.1:232
 #: dpkg-statoverride.8:82 dpkg-vendor.1:48 dselect.cfg.5:19
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "AUTHOR"
 msgstr "AUTOR"
 
@@ -1929,17 +1918,15 @@ msgstr "AUTOR"
 #: dpkg-deb.1:251 dpkg-genchanges.1:148 dpkg-gencontrol.1:142
 #: dpkg-parsechangelog.1:124 dpkg-shlibdeps.1:333 dpkg-source.1:572
 #: dpkg-split.1:234
-#, fuzzy
 msgid "Copyright \\(co 1995-1996 Ian Jackson"
-msgstr "Copyright (C) 1995-1996 Ian Jackson"
+msgstr "Copyright \\(co 1995-1996 Ian Jackson"
 
 #. type: Plain text
 #: deb-substvars.5:145 dpkg-buildpackage.1:317 dpkg-distaddfile.1:51
 #: dpkg-genchanges.1:150 dpkg-gencontrol.1:144 dpkg-parsechangelog.1:126
 #: dpkg-shlibdeps.1:335 dpkg-source.1:574 dpkg-statoverride.8:84
-#, fuzzy
 msgid "Copyright \\(co 2000 Wichert Akkerman"
-msgstr "Copyright (C) 2000 Wichert Akkerman"
+msgstr "Copyright \\(co 2000 Wichert Akkerman"
 
 #. type: TH
 #: deb-symbols.5:2
@@ -2085,15 +2072,14 @@ msgstr ""
 
 #. type: Plain text
 #: deb-symbols.5:65
-#, fuzzy
 msgid "B<dpkg-shlibdeps>(1), B<dpkg-gensymbols>(1)."
-msgstr "B<dpkg-shlibdeps> I<opciones>"
+msgstr "B<dpkg-shlibdeps>(1), B<dpkg-gensymbols>(1)."
 
 #. type: TH
 #: deb-triggers.5:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "deb-triggers"
-msgstr "--version"
+msgstr "deb-triggers"
 
 #. type: TH
 #: deb-triggers.5:1 dpkg-trigger.1:1
@@ -2179,9 +2165,8 @@ msgstr ""
 
 #. type: Plain text
 #: deb-triggers.5:52
-#, fuzzy
 msgid "B<dpkg-trigger>(1), B<dpkg>(1), B</usr/share/doc/dpkg/triggers.txt.gz>."
-msgstr "B<dpkg-buildpackage> [I<opciones>]"
+msgstr "B<dpkg-trigger>(1), B<dpkg>(1), B</usr/share/doc/dpkg/triggers.txt.gz>."
 
 #. type: TH
 #: dpkg.1:1
@@ -2216,7 +2201,7 @@ msgstr "B<dpkg> [I<opciones>] I<acción>"
 
 #. type: SH
 #: dpkg.1:9
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "WARNING"
 msgstr "AVISO"
 
@@ -14145,7 +14130,7 @@ msgstr ""
 
 #. type: SH
 #: update-alternatives.8:150
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "TERMINOLOGY"
 msgstr "TERMINOLOGÍA"
 
