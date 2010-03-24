@@ -1,0 +1,122 @@
+# clamsmtp po-debconf translation to Spanish
+# Copyright (C) 2010 Software in the Public Interest
+# This file is distributed under the same license as the clamsmtp package.
+#
+# Changes:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com>, 2010
+#
+#   - Updates
+#       TRANSLATOR
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.10-5\n"
+"Report-Msgid-Bugs-To: clamsmtp@packages.debian.org\n"
+"POT-Creation-Date: 2009-12-07 14:13+0100\n"
+"PO-Revision-Date: 2010-03-24 10:46+0100\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Add a clamsmtp system user and group?"
+msgstr "¿Desea añadir el usuario y grupo del sistema «clamsmtp»?"
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid ""
+"New installations of clamsmtp install with a system user and group of "
+"\"clamsmtp\".  The \"clamav\" user is added to the clamsmtp group to allow "
+"the clamav-daemon process to view the quarantine directory.  If this option "
+"is set, the installation process will also update the ownership and "
+"permissions of the quarantine and run directories."
+msgstr ""
+"Las instalaciones nuevas de clamsmtp añaden el usuario y grupo del sistema "
+"«clamsmtp». El usuario «clamav» se añade al grupo «clamsmtp» para permitir "
+"que el proceso clamav-daemon pueda ver el directorio de cuarentena. De "
+"activar esta opción, el proceso de instalación actualizará también el "
+"propietario y los permisos de los directorios de cuarentena y ejecución."
+
+#. Type: boolean
+#. Description
+#: ../templates:2001
+msgid "Fix directory permissions?"
+msgstr "¿Desea arreglar los permisos del directorio?"
+
+#. Type: boolean
+#. Description
+#: ../templates:2001
+msgid ""
+"clamsmtpd needs read and write permissions to the virus spool directory, and "
+"the run directory in which its PID file is created.  Additionally, the Clam "
+"AV daemon must have read access to the spool directory to scan for viruses."
+msgstr ""
+"clamsmtpd precisa permisos de lectura y escritura en el directorio de la cola "
+"(«spool») de virus, y en el directorio en el cual crea su fichero PID. "
+"Además, el demonio de Clam AV precisa permisos de lectura en el directorio "
+"de la cola para realizar un análisis en busca de virus."
+
+#. Type: boolean
+#. Description
+#: ../templates:2001
+msgid ""
+"The post-installation script can fix the permissions and ownership of these "
+"two directories.  It will consult the /etc/clamsmtpd.conf and /etc/default/"
+"clamsmtp files for the administratively assigned TempDirectory, PidFile, "
+"User, and Group variables, and then update the two directories appropriately."
+msgstr ""
+"El script de post-instalación puede arreglar los permisos y el propietario de "
+"estos dos directorios. Consultará los ficheros «/etc/clamsmtpd.conf» y "
+"«/etc/default/clamsmtp» en busca de las variables «TempDirectory», «PidFile», "
+"«User» y «Group», designadas por el administrador, para después actualizar "
+"ambos directorios apropiadamente."
+
+#. Type: boolean
+#. Description
+#: ../templates:2001
+msgid ""
+"Be sure to check directory permissions after running the init script with "
+"the parameters 'start' or 'restart'."
+msgstr ""
+"Revise los permisos del directorio después de ejecutar el script de arranque "
+"(«init») con los parámetros «start» o «restart»."
+
+#. Type: boolean
+#. Description
+#: ../templates:3001
+msgid "Purge spool directory on --purge?"
+msgstr "¿Desea purgar el directorio de la cola al usar «--purge»?"
+
+#. Type: boolean
+#. Description
+#: ../templates:3001
+msgid ""
+"The virus spool directory may contain quarantined viruses that can be "
+"removed automatically when purging the package."
+msgstr ""
+"El directorio de la cola de virus puede contener virus en cuarentena que se "
+"pueden eliminar automáticamente al purgar el paquete."
