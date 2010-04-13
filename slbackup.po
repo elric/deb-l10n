@@ -32,7 +32,7 @@ msgstr ""
 "Project-Id-Version: slbackup 0.0.12\n"
 "Report-Msgid-Bugs-To: werner@debian.org\n"
 "POT-Creation-Date: 2007-04-25 21:26+0200\n"
-"PO-Revision-Date: 2010-04-06 22:23+0200\n"
+"PO-Revision-Date: 2010-04-13 11:28+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -46,7 +46,7 @@ msgstr ""
 #. Description
 #: ../slbackup.templates:1001
 msgid "Configure the backup system now?"
-msgstr "¿Desea configurar el sistema de copias de seguridad?"
+msgstr "¿Desea configurar el sistema de copias de seguridad ahora?"
 
 #. Type: boolean
 #. Description
@@ -63,9 +63,9 @@ msgid ""
 "and the backup server, and a cron job will be configured to start the backup "
 "session once a day, on a moment of time of your choice."
 msgstr ""
-"Si la selecciona, tendrá la oportunidad de configurar un cliente y un "
-"servidor de respaldo, así como configurar una tarea de cron para iniciar "
-"la sesión de copias de seguridad en el momento que desee."
+"Si selecciona esta opción, tendrá la oportunidad de configurar un cliente y "
+"un servidor de copias de seguridad, así como configurar una tarea de cron "
+"para iniciar una sesión diaria de copias de seguridad, a la hora que desee."
 
 #. Type: boolean
 #. Description
@@ -75,9 +75,9 @@ msgid ""
 "module provided by the webmin-slbackup package, or you can do this manually "
 "in the file /etc/slbackup/slbackup.conf."
 msgstr ""
-"Para configurar más de un cliente de respaldo puede usar el módulo Webmin, "
-"que el paquete webmin-slbackup provee, o editar directamente el fichero "
-"«/etc/slbackup/slbackup.conf»."
+"Para configurar más de un cliente de copias de seguridad puede usar el módulo "
+"Webmin, que proporciona el paquete webmin-slbackup, o editar directamente el "
+"fichero «/etc/slbackup/slbackup.conf»."
 
 #. Type: boolean
 #. Description
@@ -128,7 +128,7 @@ msgid ""
 "unique name of the client you want to configure."
 msgstr ""
 "Con slbackup, cada cliente tiene un nombre único que le identifica. Este "
-"nombre no tiene porqué guardar relación con el nombre del sistema. "
+"nombre no tiene porqué guardar relación con el nombre del equipo. "
 "Introduzca el nombre único del cliente que desea configurar."
 
 #. Type: select
@@ -141,7 +141,7 @@ msgstr "Tipo de cliente a configurar:"
 #. Description
 #: ../slbackup.templates:4001
 msgid "This determines what type of client that will be configured now."
-msgstr "Esto define el tipo de cliente a configurar a continuación."
+msgstr "Esto define el tipo de cliente que se configurará a continuación."
 
 #. Type: select
 #. Description
@@ -154,12 +154,12 @@ msgid ""
 "computer (probably root) and the user running the backup software on the "
 "client)."
 msgstr ""
-"Si escoge la opción «local», el servidor copiará los datos de esta "
-"computadora. Si escoge «extern», el servidor copiará los datos de otra "
-"computadora mediante una conexión SSH (esta opción presupone que SSH está "
+"Si escoge la opción «local», el servidor copiará los datos de este "
+"equipo. Si escoge «extern», el servidor copiará los datos de otro "
+"equipo mediante una conexión SSH (esta opción presupone que SSH está "
 "instalado y que tiene una conexión sin contraseña entre el usuario que "
-"ejecuta el software de copia de seguridad en esta computadora, probablemente "
-"«root», y el usuario que ejecuta el software de copia de seguridad en el "
+"ejecuta el programa de copia de seguridad en este equipo, probablemente "
+"«root», y el usuario que ejecuta el programa de copia de seguridad en el "
 "cliente)."
 
 #. Type: string
@@ -193,10 +193,10 @@ msgid ""
 "Enter the username of the user that shall run the backup software on the "
 "client."
 msgstr ""
-"El software de copia de seguridad (rdiff-backup) también se ejecutará en el "
+"El programa de copia de seguridad (rdiff-backup) también se ejecutará en el "
 "cliente, y el usuario que lo ejecute debe tener acceso a todos los ficheros "
-"copiados. Introduzca el nombre del usuario que ejecutará el software de "
-"copia de seguridad en el cliente."
+"que se van a copiar. Introduzca el nombre del usuario que ejecutará el "
+"programa de copia de seguridad en el cliente."
 
 #. Type: string
 #. Description
@@ -211,8 +211,8 @@ msgid ""
 "Enter the location of the files and/or directories that you want to back up "
 "on the client. Use a whitespace as a delimiter."
 msgstr ""
-"Introduzca la ubicación de los ficheros y/o directorios en el sistema "
-"cliente de los que desea crear una copia de seguridad. Use espacios en "
+"Introduzca la ubicación de los ficheros y/o directorios del cliente de "
+"los que desea crear una copia de seguridad. Use espacios en "
 "blanco para separarlos."
 
 #. Type: string
@@ -240,8 +240,8 @@ msgstr ""
 "slbackup realiza una sesión de mantenimiento previa a cada sesión de copia "
 "de seguridad, borrando las copias de seguridad con una antigüedad superior a "
 "unos días determinados. Puede definir en este diálogo el número de días que "
-"desea guardar las copias de este cliente en el servidor de respaldo. Por "
-"omisión, son 185 días (6 meses aproximadamente)."
+"desea guardar las copias de este cliente en el servidor de copias de "
+"seguridad. Por omisión, son 185 días (6 meses aproximadamente)."
 
 #. Type: string
 #. Description
@@ -251,14 +251,14 @@ msgid ""
 "maintenance yourself, 0 days will be treated as infinite."
 msgstr ""
 "Si desea guardar las copias de seguridad de este cliente indefinidamente, o "
-"desea realizar directamente las tareas de mantenimiento, 0 se toma como un "
-"valor infinito."
+"desea realizar directamente las tareas de mantenimiento, cero días se tomarán "
+"como un valor infinito."
 
 #. Type: select
 #. Description
 #: ../slbackup.templates:9001
 msgid "Type of server to configure / connect to:"
-msgstr "Tipo de servidor a configurar para una conexión:"
+msgstr "Tipo de servidor a configurar a al que conectarse:" 
 
 #. Type: select
 #. Description
@@ -277,13 +277,13 @@ msgid ""
 "computer (probably root) and the user running the backup software on the "
 "backup server)."
 msgstr ""
-"Si escoge la opción «local», las copias de seguridad se guardarán en esta "
-"computadora. Si escoge «extern», el servidor copiará los datos en otra "
-"computadora mediante una conexión SSH (esta opción presupone que SSH está "
+"Si escoge la opción «local», las copias de seguridad se guardarán en este "
+"equipo. Si escoge «extern», el servidor copiará los datos en otro "
+"equipo mediante una conexión SSH (esta opción presupone que SSH está "
 "instalada y que tiene una conexión sin contraseña entre el usuario que "
-"ejecuta el software de copia de seguridad en esta computadora, probablemente "
-"«root», y el usuario que ejecuta el software de copia de seguridad en el "
-"servidor de respaldo)."
+"ejecuta el programa de copias de seguridad en este equipo, probablemente "
+"«root», y el usuario que ejecuta el programa de copia de seguridad en el "
+"servidor de copias de seguridad)."
 
 #. Type: string
 #. Description
@@ -299,7 +299,7 @@ msgid ""
 "backup server's hostname or IP address."
 msgstr ""
 "Ha escogido configurar un servidor externo de copia de seguridad. Introduzca "
-"el nombre de sistema del servidor de respaldo o la dirección IP."
+"el nombre del equipo del servidor de copias de seguridad o la dirección IP."
 
 #. Type: string
 #. Description
@@ -317,14 +317,14 @@ msgid ""
 msgstr ""
 "Introduzca la ubicación dónde desea guardar las copias de seguridad. "
 "slbackup no creará el directorio si no existe. Al crear el directorio, "
-"Asegúrese de que tiene suficiente espacio en el disco para guardar todas las "
+"asegúrese de que tiene suficiente espacio en el disco para guardar todas las "
 "copias de seguridad que defina."
 
 #. Type: string
 #. Description
 #: ../slbackup.templates:12001
 msgid "User running the backup software on the server:"
-msgstr "El usuario que ejecuta el software de respaldo en el servidor:"
+msgstr "Usuario que ejecuta el programa de copias de seguridad en el servidor:"
 
 #. Type: string
 #. Description
@@ -335,7 +335,7 @@ msgid ""
 "to be stored. Enter the username that shall run the backup software on the "
 "backup server."
 msgstr ""
-"El software de copia de seguridad (rdiff-backup) también se ejecutará en el "
+"El programa de copias de seguridad (rdiff-backup) también se ejecutará en el "
 "servidor, y el usuario que lo inicie debe tener acceso a la ubicación dónde "
 "se guardarán los ficheros. Introduzca el nombre del usuario que ejecutará el "
-"software de copia de seguridad en el servidor de respaldo."
+"programa de copias de seguridad en el servidor de copias de seguridad."

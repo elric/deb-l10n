@@ -1,0 +1,253 @@
+# qmail po-debconf translation to Spanish
+# Copyright (C) 2010 Software in the Public Interest
+# This file is distributed under the same license as the qmail package.
+#
+# Changes:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com>, 2010
+#
+#   - Updates
+#       TRANSLATOR
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: qmail 1.03-49\n"
+"Report-Msgid-Bugs-To: qmail@packages.debian.org\n"
+"POT-Creation-Date: 2010-04-10 07:04+0200\n"
+"PO-Revision-Date: 2010-04-12 09:49+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.5.2\n"
+
+#. Type: note
+#. Description
+#: ../qmail.templates:2001
+msgid "Notice for qmail users"
+msgstr "Aviso a los usuarios de qmail"
+
+#. Type: note
+#. Description
+#: ../qmail.templates:2001
+msgid ""
+"Before making any changes to Qmail configuration, please read /usr/share/doc/"
+"qmail/README.Debian.gz. This file includes a description of the differences "
+"between Qmail in Debian, Qmail in other systems, and other mail transfer "
+"agents."
+msgstr ""
+"Consulte «/usr/share/doc/qmail/README.Debian.gz» antes de realizar cambios "
+"en la configuración de Qmail. Este fichero incluye una descripción de las "
+"diferencias entre Qmail en Debian, Qmail en otros sistemas, y otros agentes "
+"de transporte de correo."
+
+#. Type: note
+#. Description
+#: ../qmail.templates:2001
+msgid ""
+"If you were using a more conventional MTA previously, you will also want to "
+"read the \"qmail-upgrade\" manpage, which details user-visible differences "
+"between Sendmail and Qmail."
+msgstr ""
+"Si usaba un agente de transporte de correo más convencional se recomienda "
+"leer la página de manual «qmail-upgrade», que detalla las diferencias entre "
+"Sendmail y Qmail más visibles para el usuario."
+
+#. Type: note
+#. Description
+#: ../qmail.templates:2001
+msgid ""
+"If you are new to Qmail, you will want to at least peruse the Qmail FAQ, "
+"which can be found in /usr/share/doc/qmail."
+msgstr ""
+"Si nunca ha usado Qmail, se recomienda que al menos examine en detalle el "
+"PUF de Qmail, disponible en «/usr/share/doc/qmail»."
+
+#. Type: boolean
+#. Description
+#: ../qmail.templates:3001
+msgid "Start Qmail now?"
+msgstr "¿Desea iniciar Qmail ahora?"
+
+#. Type: note
+#. Description
+#: ../qmail.templates:4001
+msgid "Qmail will be started at the next reboot"
+msgstr "Qmail se iniciará en el siguiente reinicio"
+
+#. Type: note
+#. Description
+#: ../qmail.templates:4001
+msgid ""
+"You chose not to start Qmail now. It will be started automatically at next "
+"reboot."
+msgstr ""
+"Ha seleccionado no iniciar Qmail en este momento. Se iniciará automáticamente "
+"en el siguiente reinicio."
+
+#. Type: note
+#. Description
+#: ../qmail.templates:4001
+msgid ""
+"You can also start it manually with \"/etc/init.d/qmail start\" (as root) at "
+"a shell prompt."
+msgstr ""
+"También puede iniciarlo manualmente ejecutando «/etc/init.d/qmail start» "
+"como administrador en un intérprete de órdenes."
+
+#. Type: boolean
+#. Description
+#: ../qmail.templates:5001
+msgid "Remove Qmail users during a purge?"
+msgstr "¿Desea eliminar los usuarios de Qmail al purgar?"
+
+#. Type: boolean
+#. Description
+#: ../qmail.templates:5001
+msgid ""
+"Please choose whether you want users created by the qmail package to be "
+"removed when this package is purged."
+msgstr ""
+"Seleccione si desea eliminar los usuarios que creó el paquete qmail al "
+"purgar éste."
+
+#. Type: error
+#. Description
+#: ../qmail.templates:6001
+msgid "Changes for virtual users"
+msgstr "Cambios en los usuarios virtuales"
+
+#. Type: error
+#. Description
+#: ../qmail.templates:6001
+msgid ""
+"recipientmap is gone from Qmail 1.03. The virtualdomains mechanism has been "
+"expanded to support virtual users. This machine's setup needs to be fixed."
+msgstr ""
+"«recipientmap» ya no existe en la versión 1.03 de Qmail. El mecanismo de "
+"dominios virtuales se ha extendido para ser compatible con usuarios "
+"virtuales. Es necesario arreglar la configuración de este sistema."
+
+#. Type: note
+#. Description
+#: ../qmail.templates:7001
+msgid "qlist utility discontinued"
+msgstr "La herramienta qlist ya no está en desarrollo"
+
+#. Type: note
+#. Description
+#: ../qmail.templates:7001
+msgid ""
+"The qlist utility was split out into a separate tarball by the upstream "
+"developer in Qmail 1.02."
+msgstr ""
+"El autor original separó la herramienta qlist en otro archivo tar en la "
+"versión 1.02 de Qmail."
+
+#. Type: note
+#. Description
+#: ../qmail.templates:7001
+msgid ""
+"This utility has not been packaged as it can be replaced by ezmlm. It can "
+"however be downloaded from http://pobox.com/~djb/qlist.html."
+msgstr ""
+"Esta herramienta no está empaquetada, ya que se puede reemplazar con ezmlm. "
+"Aún así, se puede descargar desde «http://pobox.com/~djb/qlist.html»."
+
+#. Type: note
+#. Description
+#: ../qmail.templates:7001
+msgid ""
+"Please check in /usr/share/doc/qmail and the man pages for changes since "
+"Qmail 1.01."
+msgstr ""
+"Consulte los cambios introducidos desde la versión 1.01 de Qmail en "
+"«/usr/share/doc/qmail» y las páginas de manual."
+
+#. Type: error
+#. Description
+#: ../qmail.templates:8001
+msgid "Internet superserver configuration file (inetd.conf) changes"
+msgstr "Cambios en el fichero de configuración del súper servidor de Internet "
+"(«inetd.conf»)"
+
+#. Type: error
+#. Description
+#: ../qmail.templates:8001
+msgid ""
+"The inetd superserver is not very efficient at handling Qmail, so  the "
+"default installation uses tcpserver from ucspi-tcp instead."
+msgstr ""
+"El súper servidor «inetd» no es muy eficiente al gestionar Qmail, por ello "
+"la instalación predefinida usa el servidor tcp de ucspi-tcp."
+
+#. Type: error
+#. Description
+#: ../qmail.templates:8001
+msgid "For this reason, the smtp line in /etc/inetd.conf has been disabled."
+msgstr "Debido a ello, se ha desactivado la línea de smtp en «/etc/inetd.conf»."
+
+#. Type: error
+#. Description
+#: ../qmail.templates:8001
+msgid ""
+"This means that you must configure things such as RELAYCLIENT using /etc/tcp."
+"smtp, rather than /etc/hosts.allow (see /usr/share/doc/qmail/README for "
+"details)."
+msgstr ""
+"Esto significa que debe configurar cosas tales como «RELAYCLIENT» usando "
+"«/etc/tcp.smtp», en lugar de «/etc/hosts.allow» (para más detalles, consulte "
+"«/usr/share/doc/qmail/README»)."
+
+#. Type: note
+#. Description
+#: ../qmail.templates:9001
+msgid "Updating /etc/tcp.smtp database for tcpserver"
+msgstr "Actualizando la base de datos de «/etc/tcp.stmp» para tcpserver"
+
+#. Type: boolean
+#. Description
+#: ../qmail.templates:10001
+msgid "Override pre-existing Qmail installation?"
+msgstr "¿Desea reemplazar la instalación previa de Qmail?"
+
+#. Type: boolean
+#. Description
+#: ../qmail.templates:10001
+msgid ""
+"An existing installation of Qmail has been detected. Please choose whether "
+"you want this installation to be overridden."
+msgstr ""
+"Se ha detectado una instalación previa de Qmail. Seleccione si desea "
+"reemplazar esa instalación."
+
+#. Type: boolean
+#. Description
+#: ../qmail.templates:10001
+msgid ""
+"Do not choose this option if you need to preserve the current setup for "
+"Qmail."
+msgstr ""
+"No seleccione esta opción si desea preservar la configuración actual de "
+"de Qmail."
