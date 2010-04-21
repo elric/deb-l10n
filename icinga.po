@@ -1,0 +1,104 @@
+# icinga po-debconf translation to spanish
+# Copyright (C) 2004-2010 Software in the Public Interest
+# This file is distributed under the same license as the icinga package.
+#
+# Changes:
+# - Initial translation
+#       Rudy Godoy <rudy@kernel-panik.org>, 2006
+#	
+# - Updates
+#	Omar Campagne <ocampagne@gmail.com>, 2010
+#
+#  Traductores, si no conoce el formato PO, merece la pena leer la
+#  documentación de gettext, especialmente las secciones dedicadas a este
+#  formato, por ejemplo ejecutando:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+# - El proyecto de traducción de Debian al español
+#   http://www.debian.org/intl/spanish/coordinacion
+#   especialmente las notas de traducción en
+#   http://www.debian.org/intl/spanish/notas
+#
+# - La guía de traducción de po's de debconf:
+#   /usr/share/doc/po-debconf/README-trans
+#   o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: icinga 1.0.1-3\n"
+"Report-Msgid-Bugs-To: icinga@packages.debian.org\n"
+"POT-Creation-Date: 2010-03-14 12:04+0100\n"
+"PO-Revision-Date: 2010-04-20 10:14+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: multiselect
+#. Description
+#: ../icinga-cgi.templates:1001
+msgid "Apache servers to configure for icinga:"
+msgstr "Servidores apache a configurar para icinga:"
+
+#. Type: multiselect
+#. Description
+#: ../icinga-cgi.templates:1001
+msgid "Please select which apache servers should be configured for icinga."
+msgstr ""
+"Seleccione los servidores apache que se deberían configurar para "
+"icinga."
+
+#. Type: multiselect
+#. Description
+#: ../icinga-cgi.templates:1001
+msgid ""
+"If you would prefer to perform configuration manually, leave all servers "
+"unselected."
+msgstr ""
+"No seleccione ningún servidor si prefiere realizar la configuración de forma "
+"manual."
+
+#. Type: password
+#. Description
+#: ../icinga-cgi.templates:2001
+msgid "Icinga web administration password:"
+msgstr "Contraseña para la administración web de icinga:"
+
+#. Type: password
+#. Description
+#: ../icinga-cgi.templates:2001
+msgid ""
+"Please provide the password to be created with the \"icingaadmin\" user."
+msgstr ""
+"Introduzca la contraseña para el nuevo usuario «icingaadmin»."
+
+#. Type: password
+#. Description
+#: ../icinga-cgi.templates:2001
+msgid ""
+"This is the username and password you will use to log in to your icinga "
+"installation after configuration is complete.  If you do not provide a "
+"password, you will have to configure access to icinga yourself."
+msgstr ""
+"Estos son el usuario y contraseña que usará para identificarse en su "
+"instalación de icinga, una vez que la configuración se haya completado. "
+"Si no define una contraseña tendrá que configurar icinga de forma manual."
+
+#. Type: password
+#. Description
+#: ../icinga-cgi.templates:3001
+msgid "Password confirmation:"
+msgstr "Confirmar contraseña:"
+
+#. Type: note
+#. Description
+#: ../icinga-cgi.templates:4001
+msgid "The passwords do not match"
+msgstr "Las contraseñas no coinciden"
+

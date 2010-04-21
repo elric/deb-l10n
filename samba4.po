@@ -1,0 +1,101 @@
+# samba translation to spanish
+# Copyright (C) 2003-2007 Steve Langasek <vorlon@debian.org>
+# Copyright (C) 2006 Software in the Public Interest, SPI Inc.
+# Copyright (C) 2010 Software in the Public Interest, SPI Inc.
+# This file is distributed under the same license as the samba package.
+#
+#  Changes:
+#  - Initial translation
+#        Steve Langasek, 2003-2006
+#
+#  - Revision and update
+#        Javier Fernandez-Sanguino, 2006
+#
+#  - Translation of new templates
+#        Steve Langasek, 2007
+#	 Omar Campagne <ocampagne@gmail.com>, 2010
+#
+#   Traductores, si no conoce el formato PO, merece la pena leer la 
+#   documentación de gettext, especialmente las secciones dedicadas a este
+#   formato, por ejemplo ejecutando:
+#          info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#  - El proyecto de traducción de Debian al español
+#    http://www.debian.org/intl/spanish/
+#    especialmente las notas y normas de traducción en
+#    http://www.debian.org/intl/spanish/notas
+#
+#  - La guía de traducción de po's de debconf:
+#    /usr/share/doc/po-debconf/README-trans
+#    o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#  Si tiene dudas o consultas sobre esta traducción consulte con el último
+#  traductor (campo Last-Translator) y ponga en copia a la lista de
+#  traducción de Debian al español (<debian-l10n-spanish@lists.debian.org>)
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Samba4 4.0.0 \n"
+"Report-Msgid-Bugs-To: samba4@packages.debian.org\n"
+"POT-Creation-Date: 2009-06-08 22:46+0200\n"
+"PO-Revision-Date: 2010-04-15 10:26+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../samba4.templates:1001
+msgid "Upgrade from Samba 3?"
+msgstr "¿Desea actualizar desde Samba 3?"
+
+#. Type: boolean
+#. Description
+#: ../samba4.templates:1001
+msgid ""
+"It is possible to migrate the existing configuration files from Samba 3 to "
+"Samba 4. This is likely to fail for complex setups, but should provide a "
+"good starting point for most existing installations."
+msgstr ""
+"Es posible migrar los ficheros de configuración existentes de Samba 3 a "
+"Samba 4. El proceso puede fallar con configuraciones complejas, pero "
+"debería proporcionar un buen punto de partida con la mayoría de "
+"instalaciones."
+
+#. Type: boolean
+#. Description
+#: ../samba4.templates:2001
+msgid "Set up Samba 4 as a PDC?"
+msgstr "¿Desea configurar Samba 4 como un controlador primario de dominio (PDC)?"
+
+#. Type: boolean
+#. Description
+#: ../samba4.templates:2001
+#| msgid ""
+#| "If you do not choose this option, you will have to handle any "
+#| "configuration changes yourself, and will not be able to take advantage of "
+#| "periodic configuration enhancements."
+msgid ""
+"If you do not choose this option, Samba will be left unconfigured, and you "
+"will have to configure it yourself."
+msgstr ""
+"Si no escoge esta opción, Samba no se configurará, y tendrá que "
+"configurarlo usted mismo."
+
+#. Type: boolean
+#. Description
+#: ../samba4.templates:2001
+msgid ""
+"Even when using this option, you will need to set up DNS such that it serves "
+"the data from the zone file in that directory before you can use the Active "
+"Directory domain."
+msgstr ""
+"Aún usando esta opción, necesitará configurar un DNS de tal forma que sirva "
+"los datos del fichero de zona en ese directorio antes de poder usar el "
+"dominio del Directorio Activo."
+

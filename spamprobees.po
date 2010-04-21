@@ -1,0 +1,82 @@
+# spamprobe po-debconf translation to Spanish
+# Copyright (C) 2010 Software in the Public Interest
+# This file is distributed under the same license as the spamprobe package.
+#
+# Changes:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com>, 2010
+#
+#   - Updates
+#       TRANSLATOR
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: spamprobe 1.4d-5\n"
+"Report-Msgid-Bugs-To: nduboc@debian.org\n"
+"POT-Creation-Date: 2007-10-02 06:34+0200\n"
+"PO-Revision-Date: 2010-04-16 12:35+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: note
+#. Description
+#: ../templates:2001
+msgid "Upgrading to Berkeley DB 4.6"
+msgstr "Actualizando a la versión 4.6 de la base de datos de Berkeley"
+
+#. Type: note
+#. Description
+#: ../templates:2001
+msgid ""
+"As of spamprobe 1.4d-1, the database format changed to Berkeley DB 4.6 and "
+"spamprobe is no longer able to modify databases using an older format."
+msgstr ""
+"A partir de la versión 1.4d-1, el formato de la base de datos cambió al "
+"formato de la versión 4.6 de la base de datos de Berkeley, y spamprobe "
+"ya no es capaz de modificar bases de datos con un formato anterior a éste."
+
+#. Type: note
+#. Description
+#: ../templates:2001
+msgid ""
+"Since there is no general way to locate all existing databases, no automatic "
+"upgrade is attempted. A manual upgrade path using spamprobe export/import is "
+"outlined in the 'DATABASE MAINTENANCE' section of the spamprobe(1) manual "
+"page."
+msgstr ""
+"Debido a que no existe una manera general de ubicar todas las bases de datos "
+"existentes, no se intenta ninguna actualización automática. Se describe una "
+"vía para actualizar, usando las funciones de exportar e importar de "
+"spamprobe, en la sección «DATABASE MAINTENANCE» de la página de manual de "
+"spamprobe(1)."
+
+#. Type: note
+#. Description
+#: ../templates:2001
+msgid ""
+"All spamprobe users on this system should be informed of this change and "
+"advised to read the README.Debian file."
+msgstr ""
+"Se debería informar de este cambio a todos los usuarios de spamprobe en el "
+"sistema, así como recomendar la lectura del fichero «README.Debian»."
