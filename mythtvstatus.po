@@ -1,0 +1,115 @@
+# mythtv-status po-debconf translation to Spanish
+# Copyright (C) 2010 Software in the Public Interest
+# This file is distributed under the same license as the mythtv-status package.
+#
+# Changes:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com>, 2010
+#
+#   - Updates
+#       TRANSLATOR
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mythtv-status\n"
+"Report-Msgid-Bugs-To: andrew@etc.gen.nz\n"
+"POT-Creation-Date: 2007-12-25 13:20+1300\n"
+"PO-Revision-Date: 2010-05-19 18:50+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: string
+#. Description
+#: ../templates:1001
+msgid "MythTV backend to check:"
+msgstr "Módulo de MythTV a comprobar:"
+
+#. Type: string
+#. Description
+#: ../templates:1001
+msgid ""
+"The MythTV backend to check, you only need to change this if you want to "
+"check a different host."
+msgstr ""
+"El módulo de MythTV a comprobar. Sólo necesita cambiar "
+"esto si desea comprobar otro sistema."
+
+#. Type: boolean
+#. Description
+#: ../templates:2001
+msgid "Update the system MOTD?"
+msgstr "¿Desea actualizar el mensaje del día del sistema?"
+
+#. Type: boolean
+#. Description
+#: ../templates:2001
+msgid ""
+"Whether the Message of the Day should be updated on system boot and on a "
+"regular basis."
+msgstr ""
+"Si el mensaje del día se debería actualizar al iniciar el sistema y de "
+"forma regular."
+
+#. Type: boolean
+#. Description
+#: ../templates:2001
+msgid ""
+"To adjust how often the MOTD is updated, edit /etc/cron.d/mythtv-status."
+msgstr ""
+"Edite «/etc/cron.d/mythtv-status» para definir la regularidad de las "
+"actualizaciones de mensajes del día."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Send email status to:"
+msgstr "Enviar correo electrónico de estado a:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Status emails can be sent on a daily basis."
+msgstr "Se pueden enviar correos electrónicos de estado diariamente."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"By default an email is only sent if there are alerts.  You must have the "
+"MythTV Perl API installed for conflict alerts to be generated."
+msgstr ""
+"Por omisión, sólo si envía un correo electrónico en caso de alerta. Debe "
+"tener la API de Perl de MythTV instalado para la generación de alertas de "
+"conflictos."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"To disable set the email address to \"none\".  To specify multiple email "
+"addresses, seperate them with a comma."
+msgstr ""
+"Para desactivarlo, defina la dirección de correo electrónico como «none». "
+"Separe las direcciones de correo electrónico con comas en caso de definir "
+"varias."
