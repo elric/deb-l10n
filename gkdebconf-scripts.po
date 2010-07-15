@@ -1,0 +1,69 @@
+# gkdebconf po translation to Spanish
+# Copyright (C) 2010 Software in the Public Interest
+# This file is distributed under the same license as the gkdebconf package.
+#
+# Changes:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com>, 2010
+#
+#   - Updates
+#       TRANSLATOR
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+msgid ""
+msgstr ""
+"Project-Id-Version: gkdebconf 1.2.64\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-10-29 17:42+0200\n"
+"PO-Revision-Date: 2010-07-15 19:38+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.1\n"
+
+#: gkdebconf-term:5
+msgid ""
+"This program is not to be used alone, it is a wrapper for dpkg-reconfigure"
+"\\nused by gkdebconf, use it instead."
+msgstr ""
+"Este programa no está diseñado para usarlo de forma individual, sino que es "
+"\\nuna interfaz para dpkg-reconfigure usada por gkdebconf."
+"\\nÚselo en su lugar."
+
+#: gkdebconf-term:9
+msgid "To run dpkg-reconfigure I need root, please type your password:"
+msgstr ""
+"Se requieren privilegios de administrador para ejecutar «dpkg-reconfigure», "
+"introduzca su contraseña:"
+
+#: gkdebconf-term:11
+msgid "dpkg-reconfigure has successfully finished..."
+msgstr "dpkg-reconfigure finalizó con éxito..."
+
+#: gkdebconf-term:13
+msgid "dpkg-reconfigure has failed..."
+msgstr "dpkg-reconfigure ha fallado..."
+
+#: gkdebconf-term:15
+msgid "press enter to continue..."
+msgstr "pulse intro para continuar..."

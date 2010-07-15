@@ -1,0 +1,105 @@
+# mason po-debconf translation to Spanish
+# Copyright (C) 2010 Software in the Public Interest
+# This file is distributed under the same license as the mason package.
+#
+# Changes:
+#   - Initial translation
+#       Maria Germana Oliveira Blazetic <germanaoliveirab@gmail.com>, 2008
+#
+#   - Updates
+#       Omar Campagne <ocampagne@gmail.com>,2010
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mason 1.0.0-8\n"
+"Report-Msgid-Bugs-To: mason@packages.debian.org\n"
+"POT-Creation-Date: 2010-04-23 10:58+0200\n"
+"PO-Revision-Date: 2010-07-15 11:18+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: select
+#. Choices
+#. Type: select
+#. Choices
+#: ../templates:1001 ../templates:2001
+msgid "accept, reject, deny"
+msgstr "aceptar, rechazar, denegar"
+
+#. Type: select
+#. Description
+#: ../templates:1002
+msgid "Default action for new firewall rules:"
+msgstr "Acción predeterminada para las nuevas reglas del cortafuegos:"
+
+#. Type: select
+#. Description
+#: ../templates:1002
+msgid ""
+"The new rule default action specifies how Mason will handle unknown packets, "
+"when the firewall is in learning mode."
+msgstr ""
+"La nueva acción predeterminada de reglas define cómo gestionará Mason los "
+"paquetes desconocidos mientras el cortafuegos esté en el modo de aprendizaje."
+
+#. Type: select
+#. Description
+#: ../templates:1002
+msgid ""
+"The \"accept\" action will allow the packet through.  \"Reject\" will stop "
+"the packet with a rejection reply, while \"deny\" will drop the packet "
+"silently."
+msgstr ""
+"La acción «aceptar» dejará pasar el paquete, «rechazar» rechazará el paquete "
+"con una respuesta de rechazo, mientras que «denegar» desechará el paquete "
+"silenciosamente."
+
+#. Type: select
+#. Description
+#: ../templates:2002
+msgid "Default action for rulesets:"
+msgstr "Acción predeterminada para el conjunto de reglas:"
+
+#. Type: select
+#. Description
+#: ../templates:2002
+msgid ""
+"The default action specifies how Mason will handle unknown packets, when the "
+"firewall is not in learning mode."
+msgstr ""
+"La acción predeterminada define cómo gestionará Mason los paquetes "
+"desconocidos mientras el cortafuegos no esté en el modo de aprendizaje."
+
+#. Type: select
+#. Description
+#: ../templates:2002
+msgid ""
+"Again, \"accept\" allows the packet through, \"reject\" drops the packet "
+"with a reply, and \"deny\" silently drops the packet."
+msgstr ""
+"De nuevo, «aceptar» permite pasar el paquete, «rechazar» rechaza el paquete "
+"con una respuesta, y «denegar» rechaza el paquete silenciosamente."
+
