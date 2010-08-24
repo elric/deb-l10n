@@ -32,7 +32,7 @@ msgstr ""
 "Project-Id-Version: mumble\n"
 "Report-Msgid-Bugs-To: mumble@packages.debian.org\n"
 "POT-Creation-Date: 2010-01-11 16:52+0100\n"
-"PO-Revision-Date: 2010-07-16 13:06+0200\n"
+"PO-Revision-Date: 2010-07-25 17:25+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -46,7 +46,7 @@ msgstr ""
 #. Description
 #: ../mumble-server.templates:1001
 msgid "Password to set on SuperUser account:"
-msgstr "Contraseña a definir para la cuenta «SuperUser»:"
+msgstr "Contraseña a utilizar para la cuenta «SuperUser»:"
 
 #. Type: password
 #. Description
@@ -55,8 +55,8 @@ msgid ""
 "Murmur has a special account called \"SuperUser\" which bypasses all "
 "privilege checks."
 msgstr ""
-"Murmur posee una cuenta especial llamada «SuperUser» que está exenta de "
-"todas las comprobaciones de privilegios."
+"Murmur posee una cuenta especial llamada «SuperUser» para la que no se "
+"hacen ninguna de las comprobaciones de nivel de privilegios."
 
 #. Type: password
 #. Description
@@ -65,14 +65,14 @@ msgid ""
 "If you set a password here, the password for the \"SuperUser\" account will "
 "be updated."
 msgstr ""
-"Si define una contraseña aquí se actualizará la contraseña de la cuenta "
-"«SuperUser»."
+"Se actualizará la contraseña de la cuenta «SuperUser» si se define una "
+"contraseña aquí."
 
 #. Type: password
 #. Description
 #: ../mumble-server.templates:1001
 msgid "If you leave this blank, the password will not be changed."
-msgstr "Si deja esto en blanco, la contraseña no se modificará."
+msgstr "La contraseña no se modificará si deja este valor en blanco."
 
 #. Type: boolean
 #. Description
@@ -86,7 +86,7 @@ msgstr "¿Desea iniciar automáticamente mumble-server al arrancar el servidor?"
 msgid ""
 "Mumble-server (murmurd) can start automatically when the server is booted."
 msgstr ""
-"Mumble-server (murmurd) se puede iniciar automáticamente al arrancar el "
+"Mumble-server («murmurd») se puede iniciar automáticamente al arrancar el "
 "servidor."
 
 #. Type: boolean
@@ -103,9 +103,9 @@ msgid ""
 "Mumble-server (murmurd) can use higher process and network priority to "
 "ensure low latency audio forwarding even on highly loaded servers."
 msgstr ""
-"Mumble-server (murmurd) puede usar una prioridad más alta de proceso y red "
-"para asegurar un envío de audio con una latencia baja incluso en servidores "
-"con una alta carga."
+"Mumble-server («murmurd») puede usar una prioridad de proceso y de red "
+"más alta de forma que pueda garantizar una latencia baja al reenviar "
+"audio incluso en servidores que tengan mucha carga."
 
 #~ msgid "Email address to send registration emails from:"
 #~ msgstr ""

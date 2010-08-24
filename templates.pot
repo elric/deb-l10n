@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: gitolite@packages.debian.org\n"
+"POT-Creation-Date: 2010-08-14 14:42+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "System username for gitolite:"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid ""
+"Please enter the name for the system user which should be used by gitolite "
+"to access repositories. It will be created if necessary."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Repository path:"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"Please enter the path in which gitolite should store the repositories. This "
+"will become the gitolite system user's home directory."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:4001
+msgid "Administrator's SSH key:"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:4001
+msgid ""
+"Please specify the key of the user that will administer the access "
+"configuration of gitolite."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:4001
+msgid ""
+"This can be either the SSH public key itself, or the path to a file "
+"containing it. If it is blank, gitolite will be left unconfigured and must "
+"be set up manually."
+msgstr ""
