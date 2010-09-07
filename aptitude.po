@@ -65,9 +65,8 @@ msgstr "<systemitem class=\"username\">root</systemitem>"
 
 #. type: Content of the VERSION entity
 #: en/aptitude.xml:10
-#, fuzzy
 msgid "0.6.3"
-msgstr "0.6.0.1"
+msgstr ""
 
 #. type: Content of the actions-install entity
 #: en/aptitude.xml:14
@@ -7016,7 +7015,7 @@ msgstr "Puede abandonar esta vista pulsando <keycap>o</keycap> otra vez."
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:4384
 msgid "Costs in the interactive dependency resolver"
-msgstr "Costes en el solucionador interactivo de dependencias"
+msgstr "Los costes en el solucionador interactivo de dependencias."
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:4387
@@ -7035,22 +7034,23 @@ msgid ""
 "ProblemResolver::SolutionCost</literal></link>."
 msgstr ""
 "El <firstterm>coste</firstterm> de una solución producida por el solucionador "
-"interactivo de dependencias es el valor que usa &aptitude; para determinar "
-"<quote>cuan</quote> mala es una solución. Las <quote>mejores</quote> "
+"interactivo de dependencias es un valor que &aptitude; usa para determinar "
+"cuán <quote>mala</quote> es una solución. Las <quote>mejores</quote> "
 "soluciones siempre aparecen antes de las <quote>peores</quote> soluciones. "
-"El coste de las soluciones se define en la opción de configuración <link "
+"El coste de las soluciones se definen con la opción de configuración <link "
 "linkend='configProblemResolver-SolutionCost'><literal>Aptitude::"
 "ProblemResolver::SolutionCost</literal></link>."
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4401
 msgid "Some typical costs are shown in <xref linkend='exampleResolverCosts'/>."
-msgstr "<xref linkend='exampleResolverCosts'/> muestra algunos costes típicos."
+msgstr ""
+"Algunos costes típicos se muestran en <xref linkend='exampleResolverCosts'/>."
 
 #. type: Content of: <book><chapter><section><section><section><example><title>
 #: en/aptitude.xml:4406
 msgid "Sample resolver costs"
-msgstr "Ejemplos de costes del solucionador"
+msgstr "Ejemplo de costes del solucionador"
 
 #. type: Content of: <book><chapter><section><section><section><example><para>
 #: en/aptitude.xml:4409
@@ -7059,16 +7059,12 @@ msgid ""
 "linkend='secDependencyResolutionCostsSafetyCosts'>safety cost</link>, then "
 "by their apt pin priority:"
 msgstr ""
-"El coste predefinido, ordenando las soluciones por su <link "
-"linkend='secDependencyResolutionCostsSafetyCosts'>coste de seguridad</link>, "
-"y después por su prioridad de anclaje de apt:"
-
 
 #. type: Content of: <book><chapter><section><section><section><example><screen>
 #: en/aptitude.xml:4414
 #, no-wrap
 msgid "safety, priority"
-msgstr "seguridad, prioridad"
+msgstr "seguridad, anclaje"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:4414 en/aptitude.xml:4421 en/aptitude.xml:4429
@@ -7081,14 +7077,14 @@ msgstr "<placeholder type=\"screen\" id=\"0\"/>"
 msgid ""
 "Remove as few packages as possible, then cancel as few actions as possible:"
 msgstr ""
-"Elimina el menor número posible de paquetes, y después anula el menor número "
-"posible de acciones:"
+"Elimina el menor número de paquetes posible, después cancela el menor número "
+"de acciones:"
 
 #. type: Content of: <book><chapter><section><section><section><example><screen>
 #: en/aptitude.xml:4421
 #, no-wrap
 msgid "removals, canceled-actions"
-msgstr "eliminaciones, acciones canceladas"
+msgstr "eliminaciones, acciones-canceladas"
 
 #. type: Content of: <book><chapter><section><section><section><example><para>
 #: en/aptitude.xml:4424
@@ -7096,14 +7092,14 @@ msgid ""
 "Sort solutions by the number of packages they remove <emphasis>plus</"
 "emphasis> twice the number of actions they cancel."
 msgstr ""
-"Ordena las soluciones por el número de paquetes que elimina "
-"<emphasis>además</emphasis> del doble del número de acciones que cancela."
+"Ordena soluciones por el número de paquetes que eliminan <emphasis>además</"
+"emphasis> del doble del número de las acciones que cancela."
 
 #. type: Content of: <book><chapter><section><section><section><example><screen>
 #: en/aptitude.xml:4429
 #, no-wrap
 msgid "removals + 2 * canceled-actions"
-msgstr "eliminaciones + 2 * acciones canceladas"
+msgstr "eliminaciones + 2 * acciones-canceladas"
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4433
@@ -7126,6 +7122,9 @@ msgid ""
 "Cost components come in two flavors: <emphasis>basic</emphasis> cost "
 "components and <emphasis>compound</emphasis> cost components."
 msgstr ""
+"Los componentes del coste son de dos tipos: componentes de coste "
+"<emphasis>básicos</emphasis> y componentes de coste "
+"<emphasis>compuestos</emphasis>."
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4456
@@ -7174,7 +7173,7 @@ msgstr "<literal>broken-holds</literal>"
 #: en/aptitude.xml:4523 en/aptitude.xml:4544 en/aptitude.xml:4553
 #: en/aptitude.xml:4573
 msgid "Counter"
-msgstr "Contador"
+msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4495
@@ -7184,10 +7183,10 @@ msgid ""
 "Holds'><literal>Aptitude::ProblemResolver::Allow-Break-Holds</literal></"
 "link>)."
 msgstr ""
-"Cuenta el número de retenciones («hold») que la solución rompe, en el caso "
-"de que se permita al solucionador romper retenciones "
-"(<link linkend='configProblemResolver-Allow-Break-Holds'>"
-"<literal>Aptitude::ProblemResolver::Allow-Break-Holds</literal></link>)."
+"Cuenta el número de retenciones que la solución rompe, si es que se permite "
+"que el solucionador los rompa (<link linkend='configProblemResolver-Allow-"
+"Break-Holds'><literal>Aptitude::ProblemResolver::Allow-Break-Holds</literal></"
+"link>)."
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4503
@@ -7200,8 +7199,8 @@ msgid ""
 "Counts the number of pending actions that the solution cancels (keeping "
 "packages at their current version)."
 msgstr ""
-"Cuenta el número de acciones pendientes que la solución cancela (manteniendo "
-"los paquetes en su versión actual)."
+"Cuenta el número de acciones pendientes que la solución cancela (esto es, "
+"mantiene los paquetes en su versión presente)."
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4513
@@ -7224,7 +7223,7 @@ msgid ""
 "Counts the number of versions that the solution installs or upgrades from "
 "non-default sources."
 msgstr ""
-"Cuenta el número de versiones que la solución instala o actualiza desde "
+"Cuenta el número de versiones que la instalación instala o actualiza desde "
 "fuentes no predefinidas."
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
@@ -7244,9 +7243,10 @@ msgid ""
 "Specifically, this is computed by negating the pin priority (so, e.g., if "
 "the pin priority is 500, this component will compute -500)."
 msgstr ""
-"Un valor que aumenta que medida que decrece la prioridad de anclaje de apt. "
-"Específicamente, esto se computa negando la prioridad de anclaje (esto es, "
-"si la prioridad de anclaje es 500, este componente computará -500)."
+"Un valor que aumenta a medida que disminuye la prioridad de anclaje de apt. "
+"Específicamente, se computa haciendo negativa la prioridad de anclaje (por "
+"ejemplo, si la prioridad de anclaje es 500, este componente computará como "
+"-500)."
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4543
@@ -7294,6 +7294,7 @@ msgstr "Cuenta el número de paquetes que la solución actualiza."
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4584
+#, fuzzy
 msgid ""
 "Compound components are built by combining the values of basic components.  "
 "For instance, <literal>removals + canceled-actions</literal> adds the "
@@ -7303,6 +7304,15 @@ msgid ""
 "counters by adding them together and levels by taking their maximum value, "
 "as shown in <xref linkend='figureCompoundCostComponents'/>."
 msgstr ""
+"Los componentes compuestos se generan combinando los valores de componentes "
+"básicos. Por ejemplo, <literal>removals + canceled-actions</literal> "
+"(eliminaciones + acciones canceladas) suma los componentes "
+"<literal>removal</literal> y <literal>canceled-actions</literal>, resultando "
+"en un componente que cuenta el número de eliminaciones <emphasis>y</emphasis> "
+"de acciones canceladas. Los componentes compuestos combinan contadores "
+"mediante la suma, y escoge el nivel tomando el valor máximo si es que no se "
+"suman, tal y como se ve en <xref linkend='figureCompoundCostComponents'/>."
+
 
 #. type: Content of: <book><chapter><section><section><section><note><para><footnote><para>
 #: en/aptitude.xml:4603
@@ -7311,6 +7321,9 @@ msgid ""
 "difficult to optimize the resolver.  Future versions of the program might "
 "remove some of the restrictions if they turn out to be unnecessary."
 msgstr ""
+"Este límite se impuso porque las estructuras más complejas de coste podían "
+"dificultar la optimización del solucionador. Puede que las versiones futuras "
+"del programa eliminen algunas de las restricciones si resultan innecesarias."
 
 #. type: Content of: <book><chapter><section><section><section><note><para>
 #: en/aptitude.xml:4598
@@ -7321,24 +7334,31 @@ msgid ""
 "literal> will be treated as errors and ignored by the resolver.<placeholder "
 "type=\"footnote\" id=\"0\"/>"
 msgstr ""
+"Es un error añadir dos niveles, tomar el máximo de dos contadores, o combinar "
+"niveles y contadores de cualquier manera. Por ejemplo, los costes "
+"<literal>removals + safety</literal> y <literal>max(upgrades, installs)</"
+"literal> se tomarán como errores, siendo ignorados por el solucionador."
+"<placeholder type=\"footnote\" id=\"0\"/>"
 
 #. type: Content of: <book><chapter><section><section><section><figure><title>
 #: en/aptitude.xml:4612
 msgid "Syntax of compound cost components"
-msgstr ""
+msgstr "Sintaxis de componentes de coste compuestos"
 
 #. type: Content of: <book><chapter><section><section><section><figure><informalexample><para>
 #: en/aptitude.xml:4618
 msgid "Add two or more basic costs:"
-msgstr ""
+msgstr "Suma dos o más costes básicos:"
 
 #. type: Content of: <book><chapter><section><section><section><figure><informalexample><synopsis>
 #: en/aptitude.xml:4621
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "                <literal><optional><replaceable>scale1</replaceable></optional>*<replaceable>cost1</replaceable> + <optional><replaceable>scale2</replaceable></optional>*<replaceable>cost2</replaceable> + ...</literal>\n"
 "              "
-msgstr "<literal>?<replaceable>tipodep</replaceable>(<replaceable>patrón</replaceable>)</literal>, <literal>~D<optional><replaceable>tipodep</replaceable>:</optional><replaceable>patrón</replaceable></literal>"
+msgstr ""
+"                <literal><optional><replaceable>escala1</replaceable></optional>*<replaceable>coste1</replaceable>+<optional><replaceable>escala2</replaceable></optional>*<replaceable>coste2</replaceable> + ...</literal>\n"
+"              "
 
 #. type: Content of: <book><chapter><section><section><section><figure><informalexample><para>
 #: en/aptitude.xml:4625
@@ -7347,11 +7367,13 @@ msgstr "Toma el valor máximo de dos o más costes básicos:"
 
 #. type: Content of: <book><chapter><section><section><section><figure><informalexample><synopsis>
 #: en/aptitude.xml:4628
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "                <literal>max(<optional><replaceable>scale1</replaceable></optional>*<replaceable>cost1</replaceable>, <optional><replaceable>scale2</replaceable></optional>*<replaceable>cost2</replaceable>, ...)</literal>\n"
 "              "
-msgstr "<literal>?<replaceable>tipodep</replaceable>(<replaceable>patrón</replaceable>)</literal>, <literal>~D<optional><replaceable>tipodep</replaceable>:</optional><replaceable>patrón</replaceable></literal>"
+msgstr ""
+"                <literal>max(<optional><replaceable>escala1</replaceable></optional>*<replaceable>coste1</replaceable>,<optional><replaceable>escala2</replaceable></optional>*<replaceable>coste2</replaceable>, ...)</literal>\n"
+"              "
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4634
@@ -7368,28 +7390,26 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:4648
 msgid "Safety costs"
-msgstr ""
+msgstr "Costes de seguridad («safety»)"
 
 #. type: Content of: <book><chapter><section><section><section><figure><title>
 #: en/aptitude.xml:4651
 msgid "Safety cost levels"
-msgstr ""
+msgstr "Niveles de coste de seguridad"
 
 #. type: Content of: <book><chapter><section><section><section><figure><mediaobject>
 #: en/aptitude.xml:4654
-#, fuzzy
 msgid ""
 "<imageobject> <imagedata fileref='images/safety-cost-level-diagram.png'/> </"
 "imageobject>"
 msgstr ""
-"  <imageobject> <imagedata fileref='images/search-tier-diagram.png'/> </"
+"<imageobject> <imagedata fileref='images/safety-cost-level-diagram.png'/> </"
 "imageobject>"
 
 #. type: Content of: <book><chapter><section><section><section><figure>
 #: en/aptitude.xml:4653
-#, fuzzy
 msgid "<placeholder type=\"mediaobject\" id=\"0\"/>"
-msgstr "  <placeholder type=\"mediaobject\" id=\"0\"/>"
+msgstr "<placeholder type=\"mediaobject\" id=\"0\"/>"
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4661
@@ -7401,6 +7421,13 @@ msgid ""
 "higher numbers.  <xref linkend='figureSafetyCostLevels'/> shows how this "
 "works with &aptitude;'s default settings."
 msgstr ""
+"El componente de coste <literal>safety</literal> es una estimación heurística "
+"de lo <quote>segura</quote> o <quote>insegura</quote> que es una solución. "
+"Los costes de seguridad se pueden imaginar como una forma de dividir "
+"soluciones en varios <quote>niveles</quote>, donde los niveles "
+"<quote>menos seguros</quote> reciben número más altos. "
+"<xref linkend='figureSafetyCostLevels'/> muestra cómo esto funciona "
+"con la configuración predefinida de &aptitude;."
 
 #. type: Content of: <book><chapter><section><section><section><tip><para>
 #: en/aptitude.xml:4673
@@ -7410,26 +7437,29 @@ msgid ""
 "for a full description of how to change the order in which &aptitude; sorts "
 "solutions."
 msgstr ""
+"Los niveles de coste de seguridad son sólo una forma de controlar en el orden "
+"en que aparecen las soluciones de dependencia. Consulte "
+"<xref linkend='secDependencyResolutionCosts'/> para una descripción completa "
+"de como modificar el orden en que &aptitude; ordena las soluciones."
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4682
-#, fuzzy
 msgid ""
 "By default, &aptitude; initializes the resolver with a <quote>reasonable</"
 "quote> set of safety cost levels.  They are:"
 msgstr ""
 "Por omisión &aptitude; inicia el solucionador con un conjunto "
-"<quote>apreciable</quote> de grados. Éstos son:"
+"<quote>apreciable</quote> de niveles de coste de seguridad. Éstos son:"
 
 #. type: Content of: <book><chapter><section><section><section><table><title>
 #: en/aptitude.xml:4688
 msgid "Default safety cost levels"
-msgstr ""
+msgstr "Niveles de coste de seguridad predefinidos"
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><thead><row><entry>
 #: en/aptitude.xml:4693
 msgid "Cost level"
-msgstr ""
+msgstr "Nivel del coste"
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><thead><row><entry>
 #: en/aptitude.xml:4695
@@ -7448,18 +7478,22 @@ msgid ""
 "default target for a package or keeping a package at its current version) "
 "and package removals."
 msgstr ""
+"Las soluciones que sólo incluyen acciones <quote>seguras</quote> (instalar "
+"la versión predefinida de un paquete, o mantener un paquete en su versión "
+"actual) y la eliminación de paquetes."
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4708
-#, fuzzy
 msgid ""
 "<literal><link linkend='configProblemResolver-Safe-Level'>Aptitude::"
 "ProblemResolver::Safe-Level</link></literal>, <literal><link "
 "linkend='configProblemResolver-Remove-Level'>Aptitude::ProblemResolver::"
 "Remove-Level</link></literal>"
 msgstr ""
-"<literal><link linkend='configProblemResolver-Remove-Tier'>Aptitude::"
-"ProblemResolver::Remove-Tier</link></literal>"
+"<literal><link linkend='configProblemResolver-Safe-Level'>Aptitude::"
+"ProblemResolver::Safe-Level</link></literal>, <literal><link "
+"linkend='configProblemResolver-Remove-Level'>Aptitude::ProblemResolver::"
+"Remove-Level</link></literal>"
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4712
@@ -7473,13 +7507,12 @@ msgstr "La solución que cancela todas las acciones del usuario."
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4716
-#, fuzzy
 msgid ""
 "<literal><link linkend='configProblemResolver-Keep-All-Level'>Aptitude::"
 "ProblemResolver::Keep-All-Level</link></literal>"
 msgstr ""
-"<literal><link linkend='configProblemResolver-Keep-All-Tier'>Aptitude::"
-"ProblemResolver::Keep-All-Tier</link></literal>"
+"<literal><link linkend='configProblemResolver-Keep-All-Level'>Aptitude::"
+"ProblemResolver::Keep-All-Level</link></literal>"
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4720
@@ -7496,13 +7529,12 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4725
-#, fuzzy
 msgid ""
 "<literal><link linkend='configProblemResolver-Break-Hold-Level'>Aptitude::"
 "ProblemResolver::Break-Hold-Level</link></literal>"
 msgstr ""
-"<literal><link linkend='configProblemResolver-Break-Hold-Tier'>Aptitude::"
-"ProblemResolver::Break-Hold-Tier</link></literal>"
+"<literal><link linkend='configProblemResolver-Break-Hold-Level'>Aptitude::"
+"ProblemResolver::Break-Hold-Level</link></literal>"
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4729
@@ -7520,13 +7552,12 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4736
-#, fuzzy
 msgid ""
 "<literal><link linkend='configProblemResolver-Non-Default-Level'>Aptitude::"
 "ProblemResolver::Non-Default-Level</link></literal>"
 msgstr ""
-"<literal><link linkend='configProblemResolver-Non-Default-Tier'>Aptitude::"
-"ProblemResolver::Non-Default-Tier</link></literal>"
+"<literal><link linkend='configProblemResolver-Non-Default-Level'>Aptitude::"
+"ProblemResolver::Non-Default-Level</link></literal>"
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4740
@@ -7540,13 +7571,12 @@ msgstr "Soluciones que desinstalan paquetes Esenciales."
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4744
-#, fuzzy
 msgid ""
 "<literal><link linkend='configProblemResolver-Remove-Essential-"
 "Level'>Aptitude::ProblemResolver::Remove-Essential-Level</link></literal>"
 msgstr ""
 "<literal><link linkend='configProblemResolver-Remove-Essential-"
-"Tier'>Aptitude::ProblemResolver::Remove-Essential-Tier</link></literal>"
+"Level'>Aptitude::ProblemResolver::Remove-Essential-Level</link></literal>"
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4751
@@ -7674,6 +7704,10 @@ msgid ""
 "the version.  Differs from <quote><literal>reject</literal></quote> in that "
 "it is not visible to the user and cannot be modified interactively."
 msgstr ""
+"<quote><literal>discard</literal></quote>: Descarta cada solución que "
+"contenga la versión. Se diferencia con <quote><literal>reject</literal>"
+"</quote> en que no es visible, de forma que el usuario no lo puede modificar "
+"interactivamente."
 
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><para>
 #: en/aptitude.xml:4842
@@ -7708,7 +7742,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><para><orderedlist><listitem><para>
 #: en/aptitude.xml:4874
 msgid "<literal>maximum</literal>: the highest safety cost."
-msgstr ""
+msgstr "<literal>maximum</literal>: El coste máximo de seguridad."
 
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><para><orderedlist><listitem><para>
 #: en/aptitude.xml:4881
@@ -7733,13 +7767,12 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><para>
 #: en/aptitude.xml:4858
-#, fuzzy
 msgid ""
 "Several special cost levels can be chosen by name: <placeholder type="
 "\"orderedlist\" id=\"0\"/>"
 msgstr ""
-"Se pueden escoger algunos grados especiales por nombre: <placeholder type="
-"\"orderedlist\" id=\"0\"/>"
+"Se pueden escoger algunos niveles de coste especiales por nombre: "
+"<placeholder type=\"orderedlist\" id=\"0\"/>"
 
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><note><para>
 #: en/aptitude.xml:4898
@@ -16762,9 +16795,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10703
-#, fuzzy
 msgid "<literal>Aptitude::CmdLine::Versions-Group-By</literal>"
-msgstr "<literal>Aptitude::CmdLine::Show-Versions</literal>"
+msgstr "<literal>Aptitude::CmdLine::Versions-Group-By</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10706
@@ -16836,9 +16868,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10758
-#, fuzzy
 msgid "<literal>Aptitude::CmdLine::Progress::Percent-On-Right</literal>"
-msgstr "<literal>Aptitude::CmdLine::Verbose</literal>"
+msgstr "<literal>Aptitude::CmdLine::Progress::Percent-On-Right</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10761
@@ -16851,9 +16882,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10770
-#, fuzzy
 msgid "<literal>Aptitude::CmdLine::Progress::Retain-Completed</literal>"
-msgstr "<literal>Aptitude::CmdLine::Simulate</literal>"
+msgstr "<literal>Aptitude::CmdLine::Progress::Retain-Completed</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10773
@@ -17103,15 +17133,13 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10937
-#, fuzzy
 msgid "<literal>Aptitude::CmdLine::Version-Display-Format</literal>"
-msgstr "<literal>Aptitude::CmdLine::Package-Display-Format</literal>"
+msgstr "<literal>Aptitude::CmdLine::Version-Display-Format</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10938
-#, fuzzy
 msgid "<literal>%c%a%M %p# %t %i</literal>"
-msgstr "<literal>%c%a%M %p# - %d#</literal>"
+msgstr "<literal>%c%a%M %p# %t %i</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10941
@@ -17129,9 +17157,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10950
-#, fuzzy
 msgid "<literal>Aptitude::CmdLine::Versions-Show-Package-Names</literal>"
-msgstr "<literal>Aptitude::CmdLine::Show-Deps</literal>"
+msgstr "<literal>Aptitude::CmdLine::Versions-Show-Package-Names</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10953
@@ -17179,15 +17206,13 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10987
-#, fuzzy
 msgid "<literal>Aptitude::Screenshot::IncrementalLoadLimit</literal>"
-msgstr "<literal>Aptitude::UI::Incremental-Search</literal>"
+msgstr "<literal>Aptitude::Screenshot::IncrementalLoadLimit</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10988
-#, fuzzy
 msgid "<literal>16384</literal>"
-msgstr "<literal>1</literal>"
+msgstr "<literal>16384</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10991
@@ -17199,15 +17224,13 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10999
-#, fuzzy
 msgid "<literal>Aptitude::Screenshot::Cache-Max</literal>"
-msgstr "<literal>Aptitude::ProblemResolver::Trace-File</literal>"
+msgstr "<literal>Aptitude::Screenshot::Cache-Max</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11000
-#, fuzzy
 msgid "<literal>4194304</literal>"
-msgstr "<literal>400</literal>"
+msgstr "<literal>4194304</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11003
@@ -17810,9 +17833,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11414
-#, fuzzy
 msgid "<literal>Aptitude::ProblemResolver::Break-Hold-Level</literal>"
-msgstr "<literal>Aptitude::ProblemResolver::Break-Hold-Tier</literal>"
+msgstr "<literal>Aptitude::ProblemResolver::Break-Hold-Level</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11415 en/aptitude.xml:11603
@@ -17921,9 +17943,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11474
-#, fuzzy
 msgid "<literal>Aptitude::ProblemResolver::Remove-Essential-Level</literal>"
-msgstr "<literal>Aptitude::ProblemResolver::Remove-Essential-Tier</literal>"
+msgstr "<literal>Aptitude::ProblemResolver::Remove-Essential-Level</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11475
@@ -17932,15 +17953,14 @@ msgstr "<literal>60000</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11477
-#, fuzzy
 msgid ""
 "The safety cost assigned to actions that remove an Essential package.  See "
 "<xref linkend='secDependencyResolutionCostsSafetyCosts'/> for a description "
 "of safety costs."
 msgstr ""
 "El grado de búsqueda asignado a acciones que eliminan un paquete Esencial."
-"Véase <xref linkend='secDependencyResolutionSearchTiers'/> para una "
-"descripción del funcionamiento de los grados de búsqueda."
+"Véase <xref linkend='secDependencyResolutionCostsSafetyCosts'/> para una "
+"descripción de los costes de seguridad."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11485
@@ -18089,9 +18109,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11569
-#, fuzzy
 msgid "<literal>Aptitude::ProblemResolver::Keep-All-Level</literal>"
-msgstr "<literal>Aptitude::ProblemResolver::Keep-All-Tier</literal>"
+msgstr "<literal>Aptitude::ProblemResolver::Keep-All-Level</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11570
@@ -18151,9 +18170,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11602
-#, fuzzy
 msgid "<literal>Aptitude::ProblemResolver::Non-Default-Level</literal>"
-msgstr "<literal>Aptitude::ProblemResolver::Non-Default-Tier</literal>"
+msgstr "<literal>Aptitude::ProblemResolver::Non-Default-Level</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11605
@@ -18241,9 +18259,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11656
-#, fuzzy
 msgid "<literal>Aptitude::ProblemResolver::Remove-Level</literal>"
-msgstr "<literal>Aptitude::ProblemResolver::Remove-Tier</literal>"
+msgstr "<literal>Aptitude::ProblemResolver::Remove-Level</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11659
@@ -18293,9 +18310,8 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11689
-#, fuzzy
 msgid "<literal>Aptitude::ProblemResolver::Safe-Level</literal>"
-msgstr "<literal>Aptitude::ProblemResolver::Safe-Tier</literal>"
+msgstr "<literal>Aptitude::ProblemResolver::Safe-Level</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11692
@@ -18318,15 +18334,13 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11705
-#, fuzzy
 msgid "<literal>Aptitude::ProblemResolver::SolutionCost</literal>"
-msgstr "<literal>Aptitude::ProblemResolver::ResolutionScore</literal>"
+msgstr "<literal>Aptitude::ProblemResolver::SolutionCost</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11706
-#, fuzzy
 msgid "<literal>safety,priority</literal>"
-msgstr "<literal>priority</literal>"
+msgstr "<literal>safety,priority</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11709
@@ -20368,9 +20382,8 @@ msgstr ""
 
 #. type: Content of: <refentry><refentryinfo><legalnotice><para>
 #: en/manpage.xml:25
-#, fuzzy
 msgid "Copyright 2004-2010 Daniel Burrows."
-msgstr "Copyright 2004-2009 Daniel Burrows."
+msgstr "Copyright 2004-2010 Daniel Burrows."
 
 #. type: Content of: <refentry><refentryinfo><legalnotice><para>
 #: en/manpage.xml:29 en/manpage.xml:2462 en/manpage.xml:2665
@@ -21174,14 +21187,14 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><screen>
 #: en/manpage.xml:632
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "i   apt                             - Advanced front-end for dpkg\n"
 "pi  apt-build                       - frontend to apt to build, optimize and in\n"
 "cp  apt-file                        - APT package searching utility -- command-\n"
 "ihA raptor-utils                    - Raptor RDF Parser utilities"
 msgstr ""
-"i   apt                             - Advanced front-end for dpkg              \n"
+"i   apt                             - Advanced front-end for dpkg\n"
 "pi  apt-build                       - frontend to apt to build, optimize and in\n"
 "cp  apt-file                        - APT package searching utility -- command-\n"
 "ihA raptor-utils                    - Raptor RDF Parser utilities"
@@ -21309,15 +21322,13 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:724
-#, fuzzy
 msgid "<literal>versions</literal>"
-msgstr "<literal>version</literal>"
+msgstr "<literal>versions</literal>"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:728
-#, fuzzy
 msgid "Displays the versions of the packages listed on the command-line."
-msgstr "Mostrar las versiones disponibles del paquete seleccionado."
+msgstr "Muestra las versiones de los paquetes listados en la línea de órdenes."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><screen>
 #: en/manpage.xml:732
@@ -21328,6 +21339,10 @@ msgid ""
 "p   1:1.6.5-1                                    unstable                 500\n"
 "p   1:1.7.14-1                                   experimental             1"
 msgstr ""
+"$ aptitude versions wesnoth\n"
+"p   1:1.4.5-1                                                             100\n"
+"p   1:1.6.5-1                                    unstable                 500\n"
+"p   1:1.7.14-1                                   experimental             1"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:738
@@ -21340,6 +21355,13 @@ msgid ""
 "releases from which the version is available, and the pin priority of the "
 "version."
 msgstr ""
+"Cada versión aparece en una línea separada. Los tres caracteres a la "
+"izquierda indican el estado actual, el estado planeado (de existir), y si el "
+"paquete se ha instalado automáticamente; para más información acerca de sus "
+"significados, consulte <link linkend='cmdlineSearch'>la documentación de "
+"<literal>aptitude search</literal></link>. A la derecha del número de versión "
+"puede ver las publicaciones en que disponen de esa versión, y la prioridad "
+"de anclaje de la versión."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:750
@@ -21375,6 +21397,13 @@ msgid ""
 "Package exim4-daemon-light-dbg:\n"
 "p   4.71-4                                       unstable                 500"
 msgstr ""
+"$ aptitude versions '~nexim4-daemon-light'\n"
+"Package exim4-daemon-light:\n"
+"i   4.71-3                                                                100\n"
+"p   4.71-4                                       unstable                 500\n"
+"\n"
+"Package exim4-daemon-light-dbg:\n"
+"p   4.71-4                                       unstable                 500"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:772
@@ -21396,16 +21425,21 @@ msgid ""
 "p   exim4-daemon-light 4.71-4                    unstable                 500\n"
 "p   exim4-daemon-light-dbg 4.71-4                unstable                 500"
 msgstr ""
+"$ aptitude versions --group-by=none '~nexim4-daemon-light'\n"
+"i   exim4-daemon-light 4.71-3                                             100\n"
+"p   exim4-daemon-light 4.71-4                    unstable                 500\n"
+"p   exim4-daemon-light-dbg 4.71-4                unstable                 500"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:788
-#, fuzzy
 msgid ""
 "To disable the package name, pass <literal><link "
 "linkend='cmdlineShowPackageNames'>--show-package-names</link>=never</"
 "literal>:"
 msgstr ""
-"<literal><link linkend='searchSourcePackage'>?source-package</link></literal>"
+"Para desactivar el nombre de paquete, introduzca <literal><link "
+"linkend='cmdlineShowPackageNames'>--show-package-names</link>=never</"
+"literal>:"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><screen>
 #: en/manpage.xml:792
@@ -21416,6 +21450,10 @@ msgid ""
 "p   4.71-4                                       unstable                 500\n"
 "p   4.71-4                                       unstable                 500"
 msgstr ""
+"$ aptitude versions --show-package-names=never --group-by=none '~nexim4-daemon-light'\n"
+"i   4.71-3                                                                100\n"
+"p   4.71-4                                       unstable                 500\n"
+"p   4.71-4                                       unstable                 500"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:799
@@ -21979,7 +22017,6 @@ msgstr "<literal>--disable-columns</literal>"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1190
-#, fuzzy
 msgid ""
 "This option causes <literal>aptitude search</literal> and <literal>aptitude "
 "version</literal> to output their results without any special formatting.  "
@@ -21990,12 +22027,12 @@ msgid ""
 "be ignored."
 msgstr ""
 "Esta opción provoca que no se de ningún formato especial a la salida de "
-"resultados de <literal>aptitude search</literal>. En particular: "
-"generalmente &aptitude; añade espacios en blanco o trunca los resultados de "
-"una búsqueda para encajar éstos en <quote>columnas</quote> verticales. Con "
-"esta marca, cada línea se formará reemplazando cualquier escape de formato "
-"en la cadena formato con el texto correspondiente; se ignorará el ancho de "
-"las columnas."
+"resultados de <literal>aptitude search</literal> y "
+"<literal>aptitude version</literal>. En particular: generalmente &aptitude; "
+"añade espacios en blanco o trunca los resultados de una búsqueda para encajar "
+"éstos en <quote>columnas</quote> verticales. Con esta opción, cada línea se "
+"formará reemplazando cualquier escape de formato en la cadena formato con el "
+"texto correspondiente; se ignorará el ancho de las columnas."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1201
@@ -22230,9 +22267,8 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:1338
-#, fuzzy
 msgid "<literal>--group-by</literal> <replaceable>grouping-mode</replaceable>"
-msgstr "<literal>-S</literal> <replaceable>nombre_de_archivo</replaceable>"
+msgstr "<literal>--group-by</literal> <replaceable>modo-de-agrupación</replaceable>"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1343
@@ -22240,6 +22276,8 @@ msgid ""
 "Control how the <link linkend='cmdlineVersions'><literal>versions</literal></"
 "link> command groups its output.  The following values are recognized:"
 msgstr ""
+"Controla como la orden <link linkend='cmdlineVersions'><literal>versions</"
+"literal></link> agrupa su salida. Se aceptan los siguientes valores:"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/manpage.xml:1352
@@ -22249,6 +22287,10 @@ msgid ""
 "literal></quote>, etc).  If a package occurs in several archives, it will be "
 "displayed in each of them."
 msgstr ""
+"<literal>archive</literal> para agrupar paquetes según su archivo "
+"(<quote><literal>stable</literal></quote>, <quote><literal>unstable</"
+"literal></quote>, etc). Si un paquete aparece en más de un archivo,"
+"se mostrará en cada uno de ellos."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/manpage.xml:1363
@@ -22256,6 +22298,8 @@ msgid ""
 "<literal>auto</literal> to group versions by their package unless there is "
 "exactly one argument and it is not a search pattern."
 msgstr ""
+"<literal>auto</literal> para agrupar las versiones por su paquete a menos "
+"que se introduzca exactamente un argumento que no sea un patrón de búsqueda."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/manpage.xml:1371
@@ -22263,30 +22307,31 @@ msgid ""
 "<literal>none</literal> to display all the versions in a single list without "
 "any grouping."
 msgstr ""
+"<literal>none</literal> para mostrar todas las versiones en una única lista "
+"sin ningún modo de agrupación."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/manpage.xml:1378
-#, fuzzy
 msgid "<literal>package</literal> to group versions by their package."
-msgstr ""
-"Uso de <literal>pattern</literal> (patrón) para agrupar paquetes en base a "
-"su desarrollador."
+msgstr "<literal>paquete</literal> para agrupar versiones por su paquete."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/manpage.xml:1385
-#, fuzzy
 msgid ""
 "<literal>source-package</literal> to group versions by their source package."
 msgstr ""
-"Uso de <literal>pattern</literal> (patrón) para agrupar paquetes en base a "
-"su desarrollador."
+"<literal>source-package</literal> para agrupar versiones según su paquete "
+"de fuentes."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/manpage.xml:1392
+#, fuzzy
 msgid ""
 "<literal>source-version</literal> to group versions by their source package "
 "and source version."
 msgstr ""
+"<literal>source-version</literal> para agrupar versiones por su paquete "
+"fuentes y versión de las fuentes."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1399
@@ -22609,9 +22654,8 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1606
-#, fuzzy
 msgid "The default sort order is <literal>name,version</literal>."
-msgstr "<literal>version</literal>"
+msgstr "El orden de ordenamiento predefinido es <literal>name,version</literal>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:1612
@@ -22985,9 +23029,8 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:1860
-#, fuzzy
 msgid "<literal>--show-package-names</literal> <replaceable>when</replaceable>"
-msgstr "<literal>-S</literal> <replaceable>nombre_de_archivo</replaceable>"
+msgstr "<literal>--show-package-names</literal> <replaceable>when</replaceable>"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1864
@@ -22996,6 +23039,9 @@ msgid ""
 "literal></link> command shows package names.  The following settings are "
 "allowed:"
 msgstr ""
+"Controla cuando la orden <link linkend='cmdlineVersions'><literal>versions</"
+"literal></link> muestra nombres de paquete. Se aceptan las siguientes "
+"opciones:"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/manpage.xml:1873
@@ -23003,6 +23049,8 @@ msgid ""
 "<literal>always</literal>: display package names every time that "
 "<literal>aptitude versions</literal> runs."
 msgstr ""
+"<literal>always</literal>: muestra nombres de paquete cada vez que se ejecuta "
+"<literal>aptitude versions</literal>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/manpage.xml:1880
@@ -23018,18 +23066,19 @@ msgid ""
 "<literal>never</literal>: never display package names in the output of "
 "<literal>aptitude versions</literal>."
 msgstr ""
+"<literal>never</literal>: nunca muestra nombres de paquete en la salida de "
+"<literal>aptitude versions</literal>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1897
-#, fuzzy
 msgid ""
 "This option corresponds to the configuration item <link "
 "linkend='configCmdLine-Versions-Show-Package-Names'><literal>Aptitude::"
 "CmdLine::Versions-Show-Package-Names</literal></link>."
 msgstr ""
-"Esto se corresponde con el grupo de configuración <link "
-"linkend='configLoggingLevels'><literal>Aptitude::Logging::Levels</literal></"
-"link>."
+"Esta opción se corresponde con el elemento de configuración <link "
+"linkend='configCmdLine-Versions-Show-Package-Names'><literal>Aptitude::"
+"CmdLine::Versions-Show-Package-Names</literal></link>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:1904
