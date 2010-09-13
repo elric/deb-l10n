@@ -7059,6 +7059,9 @@ msgid ""
 "linkend='secDependencyResolutionCostsSafetyCosts'>safety cost</link>, then "
 "by their apt pin priority:"
 msgstr ""
+"El coste predefinido, que orden las soluciones por su <link "
+"linkend='secDependencyResolutionCostsSafetyCosts'>coste de seguridad</link>, "
+"y después por su prioridad de anclaje de apt:"
 
 #. type: Content of: <book><chapter><section><section><section><example><screen>
 #: en/aptitude.xml:4414
@@ -7115,6 +7118,18 @@ msgid ""
 "solutions with the same number of removals are sorted so that solutions with "
 "fewer canceled actions appear first."
 msgstr ""
+"Como se puede ver en los ejemplos anteriores, el coste no es necesariamente "
+"un único número. De hecho, un coste consiste de uno más "
+"<firstterm>componentes del coste</firstterm>, siendo cada uno un número "
+"asociado a una solución. Al ordenar las soluciones, el solucionador examina "
+"los componentes del coste en orden, procediendo a los siguientes componentes "
+"una vez que los anteriores son iguales. Por ejemplo, en el coste "
+"<quote><literal>removals, canceled-actions</literal></quote>, los soluciones "
+"que eliminan menos paquetes siempre aparecen antes que las soluciones que "
+"eliminan más, sin importar el número de acciones canceladas que conllevan. "
+"Por otra parte, las soluciones con el mismo número de eliminaciones se "
+"ordenan de manera que las acciones con menos acciones canceladas aparecen "
+"primero."
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4450
@@ -7137,6 +7152,14 @@ msgid ""
 "component</literal> and <literal>raise-cost-component</literal> hints; see "
 "<xref linkend='secDependencyResolutionHints'/> for details."
 msgstr ""
+"Los componentes básicos simplemente nombran una propiedad de la solución, "
+"como <quote><literal>upgrades</literal></quote> o <quote><literal>removals</"
+"literal></quote>. Puede ver una lista de los componentes básicos integrados "
+"que &aptitude; ofrece en <xref linkend='tableBasicCostComponents'/>. También "
+"puede crear sus propios componentes de coste usando las indicaciones "
+"<literal>add-to-cost-component</literal> y <literal>raise-cost-component"
+"</literal>; para más detalles consulte "
+"<xref linkend='secDependencyResolutionHints'/>."
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4469
@@ -7147,6 +7170,12 @@ msgid ""
 "while levels associate a number with each action and compute the highest "
 "number associated with any action in the solution."
 msgstr ""
+"Cada componente es o bien un <emphasis>contador</emphasis> o un "
+"<emphasis>nivel</emphasis>. Los contadores enumeran cuantas acciones de una "
+"solución se corresponden con una condición (como eliminar paquetes o "
+"instalar paquetes nuevos), mientras que los niveles asocian un número con "
+"cada acción para computar el número más alto asociado con cualquier acción "
+"en la solución."
 
 #. type: Content of: <book><chapter><section><section><section><table><title>
 #: en/aptitude.xml:4479
@@ -7173,7 +7202,7 @@ msgstr "<literal>broken-holds</literal>"
 #: en/aptitude.xml:4523 en/aptitude.xml:4544 en/aptitude.xml:4553
 #: en/aptitude.xml:4573
 msgid "Counter"
-msgstr ""
+msgstr "Contador"
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4495
@@ -7183,7 +7212,7 @@ msgid ""
 "Holds'><literal>Aptitude::ProblemResolver::Allow-Break-Holds</literal></"
 "link>)."
 msgstr ""
-"Cuenta el número de retenciones que la solución rompe, si es que se permite "
+"Enumera el número de retenciones que la solución rompe, si es que se permite "
 "que el solucionador los rompa (<link linkend='configProblemResolver-Allow-"
 "Break-Holds'><literal>Aptitude::ProblemResolver::Allow-Break-Holds</literal></"
 "link>)."
@@ -7386,6 +7415,15 @@ msgid ""
 "four removals and one upgrade will be considered equivalent to solutions "
 "containing one removal and three upgrades, since both have a cost of eleven."
 msgstr ""
+"Tenga en cuenta que cada componente básico individual se puede multiplicar "
+"por un factor de escala antes de su combinación con otros componentes. Se "
+"puede usar para controlar las negociaciones que el solucionador realiza "
+"entre costes. Por ejemplo, un coste de "
+"<literal>2*removals + 3*upgrades</literal> dice que dos eliminaciones son "
+"igualmente <quote>malas</quote> que tres actualizaciones. Las soluciones que "
+"contienen cuatro eliminaciones y una actualización se considerarán "
+"equivalentes a soluciones que contienen una eliminación y tres "
+"actualizaciones, ya que ambos tiene un coste de once."
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:4648
@@ -7738,6 +7776,10 @@ msgid ""
 "<quote><link linkend='hintDiscard'><literal>discard</literal></link></quote> "
 "hint had been applied."
 msgstr ""
+"<literal>conflict</literal>, <literal>discard</literal>: en lugar de cambiar "
+"el coste de seguridad, descarta soluciones que contienen la versión como si "
+"se hubiese aplicado la indicación "
+"<quote><link linkend='hintDiscard'><literal>discard</literal></link></quote>."
 
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><para><orderedlist><listitem><para>
 #: en/aptitude.xml:4874
@@ -16808,6 +16850,13 @@ msgid ""
 "linkend='cmdlineGroupBy'><literal>--group-by</literal></link> (see its "
 "documentation for more description of what the values mean)."
 msgstr ""
+"Se puede definir con <literal>auto</literal>, <literal>none</literal>, "
+"<literal>package</literal>, o <literal>source-package</literal> para  "
+"si se muestra la salida de <link linkend='cmdlineVersions'><literal>aptitude "
+"versions</literal></link>, y la forma en que se agrupa. Equivale a la opción "
+"de línea de órdenes <link linkend='cmdlineGroupBy'><literal>--group-by"
+"</literal></link> (consulte la documentación para una mejor descripción del "
+"significado de los valores)."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10720
@@ -16879,6 +16928,10 @@ msgid ""
 "get;, or on the right-hand side (the default).  This option does not affect "
 "download progress indicators."
 msgstr ""
+"Esta opción controla si los indicadores de progreso de línea de órdenes "
+"muestran el porcentaje en la parte izquierda de la pantalla, al igual que "
+"&apt-get;, o en la parte derecha (predefinido). Esta opción no afecta a los "
+"indicadores de progreso de descarga."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10770
@@ -16893,6 +16946,11 @@ msgid ""
 "completed.  If it is <literal>true</literal>, then they will be left on the "
 "terminal.  This option does not affect download progress indicators."
 msgstr ""
+"Si este valor se define como <literal>false</literal>, los indicadores de "
+"progreso de línea de órdenes se eliminarán y sobreescribirán una vez que "
+"la tarea que representan haya finalizado. Si es <literal>true</literal>, "
+"permanecerán en la terminal. Esta opción no afecta a los indicadores de "
+"progreso de descarga."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10783
@@ -16945,7 +17003,7 @@ msgid ""
 "this option is set to the name of a writable file, the resolver state will "
 "be dumped to this file before any calculations are undertaken."
 msgstr ""
-"En el modo de línea de órdenes, en caso de ser necesario solucionar "
+"En modo de línea de órdenes, en caso de ser necesario solucionar "
 "dependencias rotas y si esta opción se configura con el nombre de un archivo "
 "con permisos de escritura, el estado del solucionador se guardará en este "
 "archivo antes de realizar cualquier calculo."
