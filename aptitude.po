@@ -1,5 +1,5 @@
 # aptitude-doc po translation to Spanish
-# Copyright (C) 2009 Software in the Public Interest
+# Copyright (C) 2009 - 2010 Software in the Public Interest
 # This file is distributed under the same license as the aptitude-doc package.
 #
 # Changes:
@@ -7,7 +7,7 @@
 #       Omar Campagne <ocampagne@gmail.com>, 2009 (C)
 #
 #   - Updates
-#       TRADUCTOR <CORREO>, AÑO
+#       Omar Campagne <ocampagne@gmail.com>, 2010 (C)
 #
 # Traductores, si no conocen el formato PO, merece la pena leer la
 # de gettext, especialmente las secciones dedicadas a este
@@ -3875,7 +3875,7 @@ msgid ""
 msgstr ""
 "Puede configurar el comportamiento y la apariencia de &aptitude; de varias "
 "maneras. Este manual describe el funcionamiento del programa con las "
-"opciones predeterminadas; las descripciones de las múltiples opciones que "
+"opciones predefinidas; las descripciones de las múltiples opciones que "
 "afectan al comportamiento se detallan en <xref linkend='secConfig'/>."
 
 #. type: Content of: <book><chapter><section><title>
@@ -4323,7 +4323,7 @@ msgstr ""
 "Cuando explora la lista de paquetes, varía la información que puede ver en "
 "el área de información (la mitad inferior de la pantalla). El área de "
 "información puede mostrar una larga descripción del paquete seleccionado "
-"(predeterminado), un resumen de las dependencias relacionadas con ese "
+"(predefinido), un resumen de las dependencias relacionadas con ese "
 "paquete o un análisis de qué otros paquetes requieren o sugieren el paquete "
 "seleccionado."
 
@@ -4487,7 +4487,7 @@ msgid ""
 msgstr ""
 "Rechazar (al igual que con &resolver-reject;) todas las acciones que rompen "
 "una retención o que instalan una versión prohibida. De manera "
-"predeterminada, estas acciones se rechazan a menos que defina <link "
+"predefinida, estas acciones se rechazan a menos que defina <link "
 "linkend='configProblemResolver-Allow-Break-Holds'><literal>Aptitude::"
 "ProblemResolver::Allow-Break-Holds</literal></link> como <literal>true</"
 "literal>."
@@ -4631,7 +4631,7 @@ msgstr "&options-revert;"
 #. type: Content of: <book><chapter><section><section><section><figure><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:2633
 msgid "Reset all options to their default values."
-msgstr "Devolver todas las opciones a sus valores predeterminados."
+msgstr "Devolver todas las opciones a sus valores predefinidos."
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:2643
@@ -5063,7 +5063,7 @@ msgid ""
 "linkend='configGet-Root-Command'><literal>Aptitude::Get-Root-Command</"
 "literal></link>."
 msgstr ""
-"De manera predeterminada, aptitude usará la orden <systemitem>su</"
+"De manera predefinida, aptitude usará la orden <systemitem>su</"
 "systemitem> para obtener privilegios de superusuario. Si desea usar otra "
 "orden, (como por ejemplo <systemitem>sudo</systemitem>), defina la opción de "
 "configuración <link linkend='configGet-Root-Command'><literal>Aptitude::Get-"
@@ -7310,6 +7310,9 @@ msgid ""
 "A broad heuristic that increases as actions become less <quote>safe</quote>; "
 "see <xref linkend='secDependencyResolutionCostsSafetyCosts'/> for details."
 msgstr ""
+"Una amplia heurística que aumenta a medida que las acciones son menos "
+"<quote>seguras</quote>; para más detalles consulte "
+"<xref linkend='secDependencyResolutionCostsSafetyCosts'/>."
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4572
@@ -7323,7 +7326,6 @@ msgstr "Cuenta el número de paquetes que la solución actualiza."
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4584
-#, fuzzy
 msgid ""
 "Compound components are built by combining the values of basic components.  "
 "For instance, <literal>removals + canceled-actions</literal> adds the "
@@ -7337,10 +7339,10 @@ msgstr ""
 "básicos. Por ejemplo, <literal>removals + canceled-actions</literal> "
 "(eliminaciones + acciones canceladas) suma los componentes "
 "<literal>removal</literal> y <literal>canceled-actions</literal>, resultando "
-"en un componente que cuenta el número de eliminaciones <emphasis>y</emphasis> "
+"en un componente que enumera el número de eliminaciones <emphasis>y</emphasis> "
 "de acciones canceladas. Los componentes compuestos combinan contadores "
-"mediante la suma, y escoge el nivel tomando el valor máximo si es que no se "
-"suman, tal y como se ve en <xref linkend='figureCompoundCostComponents'/>."
+"mediante la suma, y escoge el nivel tomando el valor máximo "
+"tal y como se ve en <xref linkend='figureCompoundCostComponents'/>."
 
 
 #. type: Content of: <book><chapter><section><section><section><note><para><footnote><para>
@@ -7350,7 +7352,7 @@ msgid ""
 "difficult to optimize the resolver.  Future versions of the program might "
 "remove some of the restrictions if they turn out to be unnecessary."
 msgstr ""
-"Este límite se impuso porque las estructuras más complejas de coste podían "
+"Este límite se impuso porque las estructuras de coste más complejas podían "
 "dificultar la optimización del solucionador. Puede que las versiones futuras "
 "del programa eliminen algunas de las restricciones si resultan innecesarias."
 
@@ -7363,7 +7365,7 @@ msgid ""
 "literal> will be treated as errors and ignored by the resolver.<placeholder "
 "type=\"footnote\" id=\"0\"/>"
 msgstr ""
-"Es un error añadir dos niveles, tomar el máximo de dos contadores, o combinar "
+"Es un error sumar dos niveles, tomar el máximo de dos contadores, o combinar "
 "niveles y contadores de cualquier manera. Por ejemplo, los costes "
 "<literal>removals + safety</literal> y <literal>max(upgrades, installs)</"
 "literal> se tomarán como errores, siendo ignorados por el solucionador."
@@ -7585,7 +7587,7 @@ msgid ""
 "Solutions that install packages from non-default versions (such as "
 "<quote><literal>experimental</literal></quote>, for instance)."
 msgstr ""
-"Soluciones que instalan paquetes con versiones no predeterminadas (tales "
+"Soluciones que instalan paquetes con versiones no predefinidas (tales "
 "como <quote><literal>experimental</literal></quote>, por ejemplo)."
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
@@ -7630,10 +7632,10 @@ msgid ""
 msgstr ""
 "Si una solución entra dentro de diferentes grados, se muestra en el grado "
 "superior (el último). Por ejemplo, una solución que actualiza un paquete a "
-"su versión predeterminada y que elimina un segundo paquete correspondería al "
+"su versión predefinida y que elimina un segundo paquete correspondería al "
 "grado 30.000. Puede ajustar los grados de versiones de manera individual "
 "usando las indicaciones del solucionador; para más detalles, véase <xref "
-"linkend='secDependencyResolutionHints'/>. Los grados predeterminados se "
+"linkend='secDependencyResolutionHints'/>. Los grados predefinidos se "
 "ilustran en <xref linkend='figureSearchTiers'/>."
 
 #. type: Content of: <book><chapter><section><section><title>
@@ -7829,12 +7831,12 @@ msgid ""
 "<systemitem>hal</systemitem> is not the default candidate version)."
 msgstr ""
 "La indicación <literal>increase-tier</literal> se aplica <emphasis>en "
-"adición</emphasis> a cualquier grado predeterminado correspondiente a la "
+"adición</emphasis> a cualquier grado predefinido correspondiente a la "
 "acción seleccionada. Por ejemplo, una indicación que aumenta el grado de "
 "<quote>instalar <systemitem>hal</systemitem> desde <systemitem>experimental</"
 "systemitem></quote> a 15.000 no tiene efecto alguno, porque la acción ya se "
 "encuentra en el grado 15.000 (suponiendo que esta versión de "
-"<systemitem>hal</systemitem> no es la versión candidata predeterminada)."
+"<systemitem>hal</systemitem> no es la versión candidata predefinida)."
 
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><para>
 #: en/aptitude.xml:4915
@@ -8367,7 +8369,7 @@ msgid ""
 "<literal>&Sversion;(2\\.0)</literal>, and hence <literal>foo</literal> will "
 "not be found by this search."
 msgstr ""
-"De manera predeterminada, un patrón se corresponde con un paquete si "
+"De manera predefinida, un patrón se corresponde con un paquete si "
 "cualquier versión del paquete encaja con el patrón. De todas formas, algunos "
 "patrones restringen sus sub-patrones para emparejarse solo con algunas "
 "versiones de un paquete. Por ejemplo, el término de búsqueda "
@@ -9537,7 +9539,7 @@ msgid ""
 msgstr ""
 "Emparejar paquetes cuyos nombres encajan con la expresión regular "
 "<replaceable>nombre</replaceable>. Éste es el modo de búsqueda "
-"<quote>predeterminado</quote> y se emplea con patrones que no comienzan con "
+"<quote>predefinido</quote> y se emplea con patrones que no comienzan con "
 "<literal>~</literal>."
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><note><para>
@@ -10053,7 +10055,7 @@ msgstr ""
 "<literal>&Sdepends;(libpng3)</literal> muestra todo paquete que depende de "
 "<literal>libpng3</literal>. Si emplea la forma corta (<literal>~D</literal>) "
 "pero sin introducir <replaceable>tipodep</replaceable>,buscará "
-"<literal>depends</literal> de manera predeterminada."
+"<literal>depends</literal> de manera predefinida."
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:6331
@@ -10234,7 +10236,7 @@ msgid ""
 "Since all versions are tested by default, this normally matches packages "
 "which are currently installed."
 msgstr ""
-"Debido a que de manera predeterminada se revisan todas las versiones, ésto "
+"Debido a que de manera predefinida se revisan todas las versiones, ésto "
 "generalmente muestra paquetes que están instalados."
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
@@ -10438,7 +10440,7 @@ msgstr ""
 "linkend='searchBrokenType'>la documentación de <literal>?broken-"
 "<replaceable>tipodep</replaceable></literal></link>. Si "
 "<replaceable>tipodep</replaceable> no está presente, <literal>depends</"
-"literal> es el argumento predeterminado."
+"literal> es el argumento predefinido."
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:6614
@@ -10944,7 +10946,7 @@ msgstr ""
 "<literal><link linkend='configPackage-Status-Format'>Aptitude::UI::Package-"
 "Status-Format</link></literal>, y <literal><link linkend='configPackage-"
 "Header-Format'>Aptitude::UI::Package-Header-Format</link></literal> definen "
-"la forma predeterminada de la lista de paquetes, la cabecera en lo alto de "
+"la forma predefinida de la lista de paquetes, la cabecera en lo alto de "
 "la lista de paquetes, y la línea de estado debajo de la lista de paquetes, "
 "respectivamente. Para cambiar la manera en que se muestran los resultados  "
 "de una orden <literal><link linkend='cmdlineSearch'>aptitude search</link></"
@@ -10979,7 +10981,7 @@ msgstr "Escape"
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><segtitle>
 #: en/aptitude.xml:7023
 msgid "Default size"
-msgstr "Tamaño predeterminado"
+msgstr "Tamaño predefinido"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><segtitle>
 #: en/aptitude.xml:7024
@@ -11250,7 +11252,7 @@ msgid ""
 msgstr ""
 "Mostrar la prioridad más alta asignada a la versión de un paquete; para "
 "paquetes, muestra la prioridad de la versión que se va a instalar de forma "
-"predeterminada (de existir)."
+"predefinida (de existir)."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:7157
@@ -11696,7 +11698,7 @@ msgstr ""
 "regla. Una regla terminal, por otra parte, también genera parte del árbol "
 "(por lo general, elementos correspondientes al paquete), pero no filtra el "
 "paquete con otra regla posterior. Si no especifica una regla terminal, "
-"&aptitude; usará la regla predeterminada, que es crear los <quote>elementos "
+"&aptitude; usará la regla predefinida, que es crear los <quote>elementos "
 "de paquete</quote> estándar."
 
 # Los siguientes términos no están localizados en la interfaz visual
@@ -11849,7 +11851,7 @@ msgstr ""
 "El ejemplo anterior agrupa paquetes de acuerdo al campo de desarrollador. La "
 "directriz <literal>pattern(&Smaintainer;())</literal> realiza la misma "
 "función, al igual que un <replaceable>título</replaceable> ausente pasa a "
-"ser <literal>\\1</literal> de manera predeterminada."
+"ser <literal>\\1</literal> de manera predefinida."
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7526
@@ -11902,7 +11904,7 @@ msgid ""
 "</literal>) after the title of the group, after the <literal>||</literal>, "
 "or after the pattern if neither is present.  For instance:"
 msgstr ""
-"De manera predeterminada, todos los paquetes que se corresponden con cada "
+"De manera predefinida, todos los paquetes que se corresponden con cada "
 "patrón se agrupan de acuerdo a las reglas que sigue la directriz del "
 "<literal>pattern</literal>. Para especificar una directriz diferente para "
 "algunos paquetes, describa la directriz entre llaves (<literal>{}</literal>) "
@@ -12012,7 +12014,7 @@ msgid ""
 msgstr ""
 "Agrupar en base a todo el campo de la sección, con lo cual se crean "
 "categorías tales como <quote>non-free/games</quote>. Ésta es la manera "
-"predeterminada si no se especifica el <replaceable>modo</replaceable>."
+"predefinida si no se especifica el <replaceable>modo</replaceable>."
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><variablelist><varlistentry><term>
 #: en/aptitude.xml:7657
@@ -12266,7 +12268,7 @@ msgid ""
 "link></literal> command-line option."
 msgstr ""
 "Para modificar la directriz de ordenación en una lista de paquetes activa, "
-"pulse <keycap>S</keycap>. Para modificar la ordenación predeterminada de "
+"pulse <keycap>S</keycap>. Para modificar la ordenación predefinida de "
 "todas las listas de paquetes, configure la opción de configuración "
 "<literal><link linkend='configDefault-Sorting'>Aptitude::UI::Default-"
 "Sorting</link></literal>. Para modificar la directriz de ordenación de "
@@ -12376,7 +12378,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><segtitle>
 #: en/aptitude.xml:7933 en/aptitude.xml:9390 en/aptitude.xml:10475
 msgid "Default"
-msgstr "Predeterminado"
+msgstr "predefinido"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:7940
@@ -12618,7 +12620,7 @@ msgid ""
 msgstr ""
 "Esto equivale a pulsar <quote><guilabel>Ok</guilabel></quote> en los cuadros "
 "de dialogo; si está interactuando con una pregunta de elección múltiple de "
-"la línea de estado, elige la opción predeterminada."
+"la línea de estado, elige la opción predefinida."
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8066
@@ -12663,7 +12665,7 @@ msgstr "<literal>o</literal>"
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8085
 msgid "Cycles through predefined arrangements of the display."
-msgstr "Pasar por organizaciones predeterminadas de la pantalla."
+msgstr "Pasar por organizaciones predefinidas de la pantalla."
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8090
@@ -13824,7 +13826,7 @@ msgstr "<literal>Yes</literal>"
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry><footnote><para>
 #: en/aptitude.xml:8744
 msgid "This default may be different in different locales."
-msgstr "Esta configuración predeterminada puede variar con diferentes locales."
+msgstr "Esta configuración predefinida puede variar con diferentes locales."
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:8741
@@ -14592,7 +14594,7 @@ msgstr ""
 "lista no es necesariamente exhaustiva; si no se especifica algún color o "
 "atributo sus valores se toman del contexto visual circundante. De hecho, la "
 "mayoría de los elementos visuales tiene un estilo <quote>vacío</quote> de "
-"manera predeterminada."
+"manera predefinida."
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:9197
@@ -14730,8 +14732,8 @@ msgstr ""
 "<literal>magenta</literal>, <literal>rojo</literal>, <literal>blanco</"
 "literal> y <literal>amarillo</literal> <placeholder type=\"footnote\" id=\"0"
 "\"/>. Además, puede especificar <literal>default</literal> en lugar de un "
-"color de fondo para usar el fondo predeterminado de la terminal (esto puede "
-"ser el color predeterminado, un archivo de imagen, o incluso "
+"color de fondo para usar el fondo predefinido de la terminal (esto puede "
+"ser el color predefinido, un archivo de imagen, o incluso "
 "<quote>transparente</quote>). Los estilos que &aptitude; reconoce son:"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
@@ -15671,7 +15673,7 @@ msgstr ""
 "el elemento de pantalla. Por ejemplo, si configura esto como <literal><link "
 "linkend='keyShowHideDescription'>ShowHideDescription</link></literal>, el "
 "elemento de pantalla actual tendría las mismas características que el área "
-"de información predeterminado. La opción <literal><link "
+"de información predefinido. La opción <literal><link "
 "linkend='layoutPopUpDownKey'>PopUpDownLinked</link></literal> proporciona el "
 "nombre de otro elemento de pantalla; el elemento se mostrará u ocultará "
 "dependiendo de si el otro elemento lo está también."
@@ -15912,7 +15914,7 @@ msgstr ""
 msgid "If this option is not present, it defaults to <literal>Left</literal>."
 msgstr ""
 "Si está opción no está presente, activa <literal>Left</literal> de manera "
-"predeterminada."
+"predefinida."
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10056
@@ -15940,7 +15942,7 @@ msgstr ""
 msgid "If this option is not present, it defaults to <literal>false</literal>."
 msgstr ""
 "Si esta opción no esta presente, <literal>false</literal> es la opción "
-"predeterminada."
+"predefinida."
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10075
@@ -15964,7 +15966,7 @@ msgstr ""
 "linkend='layoutStatic'>Static</link></literal>. "
 "<replaceable>nombre_de_color</replaceable> es el nombre de un color (por "
 "ejemplo, <literal><link linkend='colorScreenStatusColor'>ScreenStatusColor</"
-"link></literal>) que se debe usar como el color <quote>predeterminado</"
+"link></literal>) que se debe usar como el color <quote>predefinido</"
 "quote> para este elemento de pantalla."
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
@@ -15974,7 +15976,7 @@ msgid ""
 "linkend='colorDefaultWidgetBackground'>DefaultWidgetBackground</link></"
 "literal>."
 msgstr ""
-"Si esta opción no esta presente, la opción predeterminada es <literal><link "
+"Si esta opción no esta presente, la opción predefinida es <literal><link "
 "linkend='colorDefaultWidgetBackground'>DefaultWidgetBackground</link></"
 "literal>."
 
@@ -16207,7 +16209,7 @@ msgstr ""
 msgid "If this option is not present, it defaults to <literal>Top</literal>."
 msgstr ""
 "Si esta opción no está presente, <literal>Top</literal> es la opción "
-"predeterminada."
+"predefinida."
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10275
@@ -16280,7 +16282,7 @@ msgstr ""
 msgid "If this option is not present, it defaults to <literal>true</literal>."
 msgstr ""
 "Si no configura esta opción, <literal>true</literal> es la forma "
-"predeterminada."
+"predefinida."
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10337
@@ -16437,13 +16439,13 @@ msgid ""
 "Default values stored in <filename>/usr/share/aptitude/aptitude-defaults</"
 "filename>."
 msgstr ""
-"Valores predeterminados guardados en <filename>/usr/share/aptitude/aptitude-"
+"Valores predefinidos guardados en <filename>/usr/share/aptitude/aptitude-"
 "defaults</filename>."
 
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><para>
 #: en/aptitude.xml:10441
 msgid "Default values built into &aptitude;."
-msgstr "Valores predeterminados integrados en &aptitude;"
+msgstr "Valores predefinidos integrados en &aptitude;"
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:10447
@@ -16457,7 +16459,7 @@ msgstr ""
 "Cuando se activa una opción, estas fuentes se examinan por orden, y se "
 "emplea el primero que provee el valor para la opción usada. Por ejemplo, si "
 "configura una opción en <filename>/etc/apt/apt.conf</filename>, esto "
-"sobreescribe los valores predeterminados de &aptitude; para esa opción, pero "
+"sobreescribe los valores predefinidos de &aptitude; para esa opción, pero "
 "no sobreescribe las configuraciones de usuario en <filename>~/.aptitude/"
 "config</filename>."
 
@@ -16910,7 +16912,7 @@ msgid ""
 "size, or for an 80-column display if the terminal size cannot be determined."
 msgstr ""
 "Esta opción proporciona el ancho de los caracteres que aparecen en una "
-"búsqueda en línea de órdenes. De estar vacía (predeterminado; p.ej., "
+"búsqueda en línea de órdenes. De estar vacía (predefinido; p.ej., "
 "<literal>\"\"</literal>), los resultados de búsqueda se formatearán en "
 "relación al tamaño de la terminal, o para una exposición de 80 columnas si "
 "no se puede determinar el tamaño de la terminal."
@@ -17142,7 +17144,7 @@ msgid ""
 "linkend='cmdlineOptionShowSummary'><literal>--show-summary</literal></link> "
 "for a list of the allowed values of this option and their meanings."
 msgstr ""
-"Esta opción define el valor predeterminado del argumento en línea de órdenes "
+"Esta opción define el valor predefinido del argumento en línea de órdenes "
 "<link linkend='cmdlineOptionShowSummary'><literal>--show-summary</literal></"
 "link>. Véase la documentación de <link "
 "linkend='cmdlineOptionShowSummary'><literal>--show-summary</literal></link> "
@@ -17228,6 +17230,13 @@ msgid ""
 "linkend='cmdlineShowPackageNames'><literal>--show-package-names</literal></"
 "link> (see its documentation for more description of what the values mean)."
 msgstr ""
+"Se puede definir con <literal>always</literal>, <literal>auto</literal>, o "
+"<literal>never</literal> para controlar cuando se muestran nombres de paquete "
+"en la salida de <link linkend='cmdlineVersions'><literal>aptitude versions</"
+"literal></link>. Equivale a la opción en línea de órdenes <link "
+"linkend='cmdlineShowPackageNames'><literal>--show-package-names</literal></"
+"link> (consulte su documentación para una descripción más amplia del "
+"significado de los valores)."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10967
@@ -17279,6 +17288,9 @@ msgid ""
 "screenshots incrementally.  Below this size, screenshots will not appear "
 "until they are fully downloaded."
 msgstr ""
+"El tamaño mínimo en bytes en el que aptitude empezará a mostrar las capturas "
+"de pantalla de forma incremental. Las capturas de pantalla menores que este "
+"tamaño no se mostrarán hasta que se haya completado su descarga."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10999
@@ -17297,6 +17309,9 @@ msgid ""
 "memory for screenshots that are not currently being displayed.  The default "
 "is four megabytes."
 msgstr ""
+"El tamaño máximo en bytes de datos de capturas de pantalla que aptitude "
+"guardará para aquellas capturas que no se están mostrando actualmente. El "
+"valor predefinido es de cuatro megabytes."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11011
@@ -17652,7 +17667,7 @@ msgstr ""
 "link></literal> vale <literal>true</literal>, solo se eliminarán aquellos "
 "paquetes que no se correspondan con el patrón (véase <xref "
 "linkend='secSearchPatterns'/>). Si define esta opción como una cadena vacía "
-"(opción predeterminada), se eliminan todos aquellos paquetes no usados."
+"(opción predefinida), se eliminan todos aquellos paquetes no usados."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11265
@@ -17838,7 +17853,7 @@ msgid ""
 "The default filter applied to the package list; see <xref "
 "linkend='secSearchPatterns'/> for details about its format."
 msgstr ""
-"El filtro predeterminado que se aplica a la lista de paquetes; véase <xref "
+"El filtro predefinido que se aplica a la lista de paquetes; véase <xref "
 "linkend='secSearchPatterns'/> para ver los detalles acerca de su formato."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
@@ -17859,7 +17874,7 @@ msgstr ""
 "problemas considerará romper la retención de cualquier paquete o instalar "
 "versiones prohibidas si con ello puede resolver una dependencia. Si lo "
 "define como <literal>false</literal>, se rechazarán estas acciones de forma "
-"predeterminada, aunque siempre puede activarlas manualmente (véase <xref "
+"predefinida, aunque siempre puede activarlas manualmente (véase <xref "
 "linkend='secResolver'/>)."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
@@ -17958,8 +17973,8 @@ msgid ""
 "recommendations whose targets are not currently installed."
 msgstr ""
 "Cuánto premiar o penalizar una solución potencial en base a cuantas "
-"resoluciones <quote>predeterminadas</quote> instalan por dependencias "
-"actualmente insatisfechas. La resolución predeterminada es la que tomaría "
+"resoluciones <quote>predefinidas</quote> instalan por dependencias "
+"actualmente insatisfechas. La resolución predefinida es la que tomaría "
 "<quote><literal>apt-get install</literal></quote> o el <quote><link "
 "linkend='secImmediateResolution'>solucionador de dependencias inmediato</"
 "link></quote>. La puntuación sólo se aplica a las dependencias y "
@@ -18223,7 +18238,7 @@ msgid ""
 "<quote>candidate version</quote>)."
 msgstr ""
 "Cuánta importancia otorga el solucionador de problemas a instalar una "
-"versión no predeterminada de un paquete (una que no es la versión presente y "
+"versión no predefinida de un paquete (una que no es la versión presente y "
 "tampoco la <quote>versión candidata</quote>)."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
@@ -18243,9 +18258,9 @@ msgid ""
 "safety costs."
 msgstr ""
 "El grado de búsqueda asignado a acciones que instalan versiones no "
-"predeterminadas de un paquete. Por ejemplo, su la versión 5 de un paquete se "
+"predefinidas de un paquete. Por ejemplo, su la versión 5 de un paquete se "
 "encuentra instalada, están disponibles las versiones 6,7 y 8, y la versión "
-"predeterminada es la 7, entonces las versiones 6 y 8 se hallarían en este "
+"predefinida es la 7, entonces las versiones 6 y 8 se hallarían en este "
 "grado. Véase <xref linkend='secDependencyResolutionSearchTiers'/> para una "
 "descripción del funcionamiento de los grados de búsqueda."
 
@@ -18383,8 +18398,8 @@ msgid ""
 "description of safety costs."
 msgstr ""
 "El grado de búsqueda asignado a acciones que instalan la versión "
-"predeterminada de un paquete, actualizan un paquete a su versión "
-"predeterminada, o cancelan instalar o actualizar un paquete. Las soluciones "
+"predefinida de un paquete, actualizan un paquete a su versión "
+"predefinida, o cancelan instalar o actualizar un paquete. Las soluciones "
 "generadas en este grado también se pueden generar mediante <link "
 "linkend='manpageSafeUpgrade'><literal>aptitude safe-upgrade</literal></"
 "link>. Véase <xref linkend='secDependencyResolutionSearchTiers'/> para una "
@@ -18408,6 +18423,11 @@ msgid ""
 "costs are, what they do, and the syntax used to specify them.  If the cost "
 "cannot be parsed, an error is issued and the default cost is used instead."
 msgstr ""
+"Describe como determinar el coste de una solución. Consulte "
+"<xref linkend='secDependencyResolutionCosts'/> para una descripción de los "
+"costes de una solución, lo que hacen y la sintaxis para definirlas. Si el "
+"coste no se puede analizar, se mostrará un error y en su lugar se usará el "
+"coste predefinido ."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11719
@@ -18459,7 +18479,7 @@ msgstr ""
 "vencido</quote>; si lo aumenta, permitirá que la búsqueda de una solución "
 "pueda tomar más tiempo y memoria antes de interrumpirse. Si define el valor "
 "de <literal>StepLimit</literal> como 0, desactivaría totalmente el "
-"solucionador de problemas. El valor predeterminado es suficientemente alto "
+"solucionador de problemas. El valor predefinido es suficientemente alto "
 "para gestionar cómodamente las situaciones más comunes, a la vez que impide "
 "que &aptitude; <quote>explote</quote> en caso de encontrarse con un problema "
 "más complicado. (Nota: ésto sólo afecta a las búsquedas en línea de órdenes; "
@@ -18915,7 +18935,7 @@ msgid ""
 "linkend='secGroupingPolicy'/> for additional information on grouping "
 "policies."
 msgstr ""
-"Definir la directriz de agrupación predeterminada utilizada en las listas de "
+"Definir la directriz de agrupación predefinida utilizada en las listas de "
 "paquetes. Para información adicional acerca de las directrices de "
 "agrupación, véase <xref linkend='secGroupingPolicy'/>."
 
@@ -18932,7 +18952,7 @@ msgid ""
 "information."
 msgstr ""
 "Esta opción es un grupo cuyos miembros definen la presentación "
-"predeterminada de la interfaz de &aptitude;. Para más información, véase "
+"predefinida de la interfaz de &aptitude;. Para más información, véase "
 "<xref linkend='secDisplayLayout'/>."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
@@ -18952,7 +18972,7 @@ msgid ""
 "linkend='secGroupingPolicy'/> for additional information on grouping "
 "policies."
 msgstr ""
-"Definir la directriz de agrupación predeterminada para las pantallas de "
+"Definir la directriz de agrupación predefinida para las pantallas de "
 "previsualización. Para información adicional acerca de las directrices de "
 "agrupación, véase <xref linkend='secGroupingPolicy'/>."
 
@@ -18967,7 +18987,7 @@ msgid ""
 "The default sorting policy of package views.  See <xref "
 "linkend='secSortingPolicy'/> for more information."
 msgstr ""
-"La directriz de ordenación predeterminada para la vista de paquetes. Para "
+"La directriz de ordenación predefinida para la vista de paquetes. Para "
 "más información, véase <xref linkend='secSortingPolicy'/>."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
@@ -19032,7 +19052,7 @@ msgid ""
 "view on startup instead of the default view."
 msgstr ""
 "Si define esta opción como <literal>true</literal>, &aptitude; mostrará una "
-"vista plana al inicio, en lugar de la vista predeterminada."
+"vista plana al inicio, en lugar de la vista predefinida."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:12167
@@ -19263,7 +19283,7 @@ msgid ""
 "The default filter applied to the preview screen; see <xref "
 "linkend='secSearchPatterns'/> for details about its format."
 msgstr ""
-"El filtro predeterminado que se aplica a la pantalla de previsualización.  "
+"El filtro predefinido que se aplica a la pantalla de previsualización.  "
 "Para más detalles acerca de su formato, véase <xref "
 "linkend='secSearchPatterns'/>."
 
@@ -19399,11 +19419,11 @@ msgid ""
 msgstr ""
 "En &aptitude; un <firstterm>tema</firstterm> es simplemente un conjunto de "
 "configuraciones que <quote>están agrupados</quote>. Los temas funcionan "
-"invalidando los valores predeterminados de las opciones: si una opción no "
+"invalidando los valores predefinidos de las opciones: si una opción no "
 "está definida en el archivo de configuración del sistema, o en su propio "
 "archivo personal de configuración, &aptitude; utilizará la configuración del "
 "tema presente de haber uno disponible, antes de utilizar el valor estándar "
-"predeterminado."
+"predefinido."
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:12446
@@ -19421,7 +19441,7 @@ msgstr ""
 "correspondiente opción en la configuración global. Por ejemplo, si "
 "selecciona el tema <literal>Dselect</literal>, la opción <literal>Aptitude::"
 "Themes::Dselect::Aptitude::UI::Package-Display-Format</literal> invalidará "
-"el valor predeterminado de la opción <literal>Aptitude::UI::Package-Display-"
+"el valor predefinido de la opción <literal>Aptitude::UI::Package-Display-"
 "Format</literal>."
 
 #. type: Content of: <book><chapter><section><section><para>
@@ -21008,7 +21028,7 @@ msgid ""
 msgstr ""
 "Prohibir que un paquete se actualice a un versión determinada. Esto evita "
 "que aptitude lo actualice a esa versión, pero permitiría una actualización "
-"automática a otra versión futura. De manera predeterminada aptitude escogerá "
+"automática a otra versión futura. De manera predefinida aptitude escogerá "
 "la versión a la que se actualizaría el paquete en cualquier circunstancia; "
 "puede invalidar esta selección añadiendo "
 "<quote><literal>=<replaceable>versión</replaceable></literal></quote> al "
@@ -21213,7 +21233,7 @@ msgstr ""
 "cualquier patrón introducido; por ejemplo <quote><literal>aptitude search "
 "'~N' edit</literal></quote> listaría todos los paquetes <quote>nuevos</"
 "quote> y todos aquellos paquetes cuyo nombre contenga <quote>edit</quote>. "
-"Para más información acerca de patrones de búsqueda, véase la siguiente "
+"Para más información acerca de patrones de búsqueda consulte la "
 "sección en la guía de referencia de &aptitude; <quote><link "
 "linkend='secSearchPatterns'>Patrones de búsqueda</link></quote>."
 
@@ -21231,6 +21251,17 @@ msgid ""
 "<quote><literal>aptitude search '~N edit'</literal></quote> will only show "
 "<quote>new</quote> packages whose name contains <quote>edit</quote>."
 msgstr ""
+"En el ejemplo anterior, <quote><literal>aptitude search '~N' edit</literal></"
+"quote> tiene dos argumentos después de <literal>search</literal>, y por ello "
+"busca <emphasis>dos</emphasis> patrones: <quote><literal>~N</"
+"literal></quote> y <quote><literal>edit</literal></quote>. Como se describe "
+"en la <link linkend='secSearchPatterns'>referencia de patrones de "
+"búsqueda</link>, un <emphasis>único</emphasis> patrón compuesto de dos "
+"patrones separados por un espacio (como <quote><literal>~N edit</literal>"
+"</quote>), sólo encuentra una coincidencia si <emphasis>ambos</emphasis> "
+"patrones encajan. Por ello, <quote><literal>aptitude search '~N edit' "
+"</literal></quote> sólo mostrará paquetes <quote>nuevos</quote> cuyo nombre "
+"contenga <quote>edit</quote>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:626
@@ -21473,6 +21504,13 @@ msgid ""
 "&aptitude; will display a single list of all the versions that were found "
 "and automatically include the package name in each output line:"
 msgstr ""
+"Si la entrada es un patrón de búsqueda o si se mostrará más de una de las "
+"versiones del paquete, &aptitude; agrupará automáticamente la salida según el "
+"paquete, como se puede ver más arriba. Puede desactivar esto mediante "
+"<literal><link linkend='cmdlineGroupBy'>--group-by</link>=none</literal>, en "
+"cuyo caso &aptitude; mostrará una única lista de todas las versiones que se "
+"han encontrado, incluyendo automáticamente el nombre del paquete en cada "
+"línea de la salida."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><screen>
 #: en/manpage.xml:782
@@ -21525,6 +21563,14 @@ msgid ""
 "linkend='cmdlineOptionDisableColumns'><literal>--disable-columns</literal></"
 "link>."
 msgstr ""
+"Además de las opciones anteriores, puede controlar la información que se "
+"muestra para cada versión mediante la opción de línea de órdenes <link "
+"linkend='cmdlineOptionFormat'><literal>-F</literal></link>. La orden en el "
+"se muestran las versiones se puede controlar mediante la opción de línea "
+"de órdenes <link linkend='cmdlineOptionSort'><literal>--sort</literal></link>."
+" Para evitar que &aptitude; dé formato a la salida en forma de columnas, use "
+"<link linkend='cmdlineOptionDisableColumns'><literal>--disable-columns"
+"</literal></link>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:814
@@ -21709,7 +21755,7 @@ msgid ""
 "the shortest dependency chain meeting those criteria.  These rules are "
 "progressively weakened until a match is found."
 msgstr ""
-"De manera predeterminada, aptitude solo muestra la cadena de dependencias "
+"De manera predefinida, aptitude solo muestra la cadena de dependencias "
 "<quote>con más paquetes instalados, la más fuerte, precisa y corta</quote>. "
 "Esto significa que busca una cadena que solo contiene paquetes instalados y "
 "que se van a instalar; busca las dependencias más fuertes posibles bajo esa "
@@ -21797,7 +21843,7 @@ msgid ""
 "<replaceable>release</replaceable></literal> to the package name (for "
 "instance, <literal>/unstable</literal> or <literal>/sid</literal>)."
 msgstr ""
-"De manera predeterminada, se descarga el registro de cambios de la versión "
+"De manera predefinida, se descarga el registro de cambios de la versión "
 "que se va a instalar con <quote><literal>aptitude install</literal></quote>. "
 "Puede seleccionar una versión en particular de un paquete añadiendo "
 "<literal>=<replaceable>versión</replaceable></literal> al nombre del "
@@ -21843,7 +21889,7 @@ msgid ""
 "<replaceable>release</replaceable></literal> to the package name (for "
 "instance: <literal>/unstable</literal> or <literal>/sid</literal>)."
 msgstr ""
-"De manera predeterminada, se descarga la versión que se instalaría con "
+"De manera predefinida, se descarga la versión que se instalaría con "
 "<quote><literal>aptitude install</literal></quote>. Puede seleccionar una "
 "versión en particular de un paquete añadiendo "
 "<literal>=<replaceable>versión</replaceable></literal> al nombre del "
@@ -22186,7 +22232,7 @@ msgid ""
 "cache/apt/archives</filename>."
 msgstr ""
 "Descargar cuántos paquetes se necesitan al almacén de paquetes, pero no "
-"instalar o eliminar nada. De manera predeterminada, el almacén de paquetes "
+"instalar o eliminar nada. De manera predefinida, el almacén de paquetes "
 "se guarda en <filename>/var/cache/apt/archives</filename>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
@@ -22269,7 +22315,7 @@ msgid ""
 "Try hard to fix the dependencies of broken packages, even if it means "
 "ignoring the actions requested on the command line."
 msgstr ""
-"Intentar arreglar agresivamente las dependencias de paquetes rotos, incluso "
+"Intenta arreglar agresivamente las dependencias de paquetes rotos, incluso "
 "si ello significa ignorar las acciones introducidas en la línea de órdenes."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
@@ -22298,8 +22344,8 @@ msgid ""
 "fulfill dependencies.  It can resolve more situations than the safe "
 "algorithm, but its solutions are more likely to be undesirable."
 msgstr ""
-"Cuando se encuentren problemas de dependencias de paquetes, utilizar el "
-"solucionador predeterminado <quote>full</quote> (completo). A diferencia del "
+"Cuando se encuentren problemas de dependencias de paquetes, utiliza el "
+"solucionador predefinido <quote>completo</quote> (full). A diferencia del "
 "solucionador <quote>seguro</quote> (el cual se ejecuta mediante <link "
 "linkend='cmdlineSafeResolver'><literal>--safe-resolver</literal></link>), el "
 "solucionador completo eliminará con alegría cualquier paquete para así "
@@ -22383,17 +22429,15 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/manpage.xml:1392
-#, fuzzy
 msgid ""
 "<literal>source-version</literal> to group versions by their source package "
 "and source version."
 msgstr ""
 "<literal>source-version</literal> para agrupar versiones por su paquete "
-"fuentes y versión de las fuentes."
+"fuente y versión de las fuentes."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1399
-#, fuzzy
 msgid ""
 "This corresponds to the configuration option <literal><link "
 "linkend='configCmdLine-Versions-Group-By'>Aptitude::CmdLine::Versions-Group-"
@@ -22502,7 +22546,7 @@ msgstr ""
 "niveles de registro (en orden descendente) son <literal>off</literal>, "
 "<literal>fatal</literal>, <literal>error</literal>, <literal>warn</literal>, "
 "<literal>info</literal>, <literal>debug</literal>, y <literal>trace</"
-"literal>. El nivel de registro predeterminado es <literal>warn</literal>."
+"literal>. El nivel de registro predefinido es <literal>warn</literal>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1474
@@ -22788,7 +22832,7 @@ msgid ""
 msgstr ""
 "Si define <literal><link linkend='configDelete-Unused'>Aptitude::Delete-"
 "Unused</link></literal> como <quote><literal>true</literal></quote> (su "
-"valor predeterminado), además de eliminar cada paquete que ya no necesite "
+"valor predefinido), además de eliminar cada paquete que ya no necesite "
 "ningún otro paquete instalado, &aptitude; los purgará, borrando sus archivos "
 "de configuración y puede que otros datos importantes. Para más información "
 "relativa a qué paquetes se consideran <quote>en desuso</quote>, véase la "
@@ -23117,6 +23161,10 @@ msgid ""
 "versions</literal> runs if the output is not grouped by package, and either "
 "there is a pattern-matching argument or there is more than one argument."
 msgstr ""
+"<literal>auto</literal>: muestra los nombres de paquete cuando se ejecuta "
+"<literal>aptitude versions</literal> si la salida no está agrupada por "
+"paquete, y si hay un argumento de búsqueda de patrón o si hay más de un "
+"argumento."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/manpage.xml:1890
@@ -23192,7 +23240,7 @@ msgid ""
 "<literal>--show-summary</literal> is not present)."
 msgstr ""
 "<literal>no-summary</literal>: no mostrar el resumen (el comportamiento "
-"predeterminado si no se ha introducido <literal>--show-summary</literal>)."
+"predefinido si no se ha introducido <literal>--show-summary</literal>)."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><orderedlist><listitem><para>
 #: en/manpage.xml:1947
@@ -23202,7 +23250,7 @@ msgid ""
 "present."
 msgstr ""
 "<literal>first-package</literal>: mostrar el primer paquete de cada cadena. "
-"Este es el valor predeterminado de <replaceable>MODO</replaceable> si no "
+"Este es el valor predefinido de <replaceable>MODO</replaceable> si no "
 "está presente."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><orderedlist><listitem><para>
@@ -23638,7 +23686,7 @@ msgid ""
 msgstr ""
 "Especificar el ancho de pantalla que se debería emplear en la salida de la "
 "orden <literal>search</literal> (el ancho de la terminal se usa de manera "
-"predeterminada)."
+"predefinida)."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:2200
@@ -23852,7 +23900,7 @@ msgid ""
 msgstr ""
 "Si define esta variable de entorno &aptitude; la usará para mostrar los "
 "registros de cambios cuando invoque <quote><literal>aptitude changelog</"
-"literal></quote>. De no ser así, su valor predeterminado es <literal>more</"
+"literal></quote>. De no ser así, su valor predefinido es <literal>more</"
 "literal>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
@@ -24058,7 +24106,7 @@ msgid ""
 "appear to be available."
 msgstr ""
 "Invalidar la detección de qué algoritmo de compresión usar. De manera "
-"predeterminada, <command>aptitude-create-state-bundle</command> utiliza "
+"predefinida, <command>aptitude-create-state-bundle</command> utiliza "
 "<citerefentry><refentrytitle>bzip2</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>, de estar disponible, o <citerefentry><refentrytitle>gzip</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> de no ser así. "
@@ -24082,7 +24130,7 @@ msgid ""
 "<command>bzip2</command> is available."
 msgstr ""
 "Invalidar la detección de qué algoritmo de compresión usar. De manera "
-"predeterminada, <command>aptitude-create-state-bundle</command> utiliza "
+"predefinida, <command>aptitude-create-state-bundle</command> utiliza "
 "<citerefentry><refentrytitle>bzip2</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>, de estar disponible, o <citerefentry><refentrytitle>gzip</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> de no ser así. "
@@ -24238,7 +24286,7 @@ msgid ""
 msgstr ""
 "Introducir al final de la línea de órdenes las opciones que dan la ubicación "
 "del archivo de estado al invocar <replaceable>programa</replaceable>, en "
-"lugar de al principio de éste (comportamiento predeterminado)."
+"lugar de al principio de éste (comportamiento predefinido)."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:2756
@@ -24261,7 +24309,7 @@ msgstr ""
 "Introducir al inicio de la línea de órdenes las opciones que dan la "
 "ubicación del paquete de estado al invocar <replaceable>programa</"
 "replaceable>, invalidando cualquier otro <literal>--append-args</literal> "
-"(el valor predeterminado es ubicar las opciones al inicio)."
+"(el valor predefinido es ubicar las opciones al inicio)."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:2776
