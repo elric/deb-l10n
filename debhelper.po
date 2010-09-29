@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2010-08-07 11:36-0300\n"
-"PO-Revision-Date: 2010-09-27 23:54+0200\n"
+"PO-Revision-Date: 2010-09-29 20:26+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -1688,7 +1688,7 @@ msgstr "Joey Hess <joeyh@debian.org>"
 #. type: textblock
 #: dh:5
 msgid "dh - debhelper command sequencer"
-msgstr ""
+msgstr "dh - Secuenciador de órdenes de debhelper"
 
 #. type: textblock
 #: dh:14
@@ -1697,6 +1697,9 @@ msgid ""
 "I<cmd>] [B<--before> I<cmd>] [B<--after> I<cmd>] [B<--remaining>] "
 "[S<I<debhelper options>>]"
 msgstr ""
+"B<dh> secuencia [B<--with> I<extensión>[,I<extensión>,...]] [B<--list>] "
+"[B<--until> I<orden>] [B<--before> I<orden>] [B<--after> I<orden>] "
+"[B<--remaining>] [S<I<opciones-de-debhelper>>]"
 
 #. type: textblock
 #: dh:18
@@ -1705,6 +1708,9 @@ msgid ""
 "to the targets of a debian/rules file: \"build\", \"clean\", \"install\", "
 "\"binary-arch\", \"binary-indep\", and \"binary\"."
 msgstr ""
+"dh ejecuta una secuencia de órdenes de debhelper. Las secuencias aceptadas "
+"se corresponden con los objetivos de un fichero «debian/rules»: build, "
+"clean, install, binary-arch, binary-indep y binary."
 
 #. type: textblock
 #: dh:22
@@ -1714,6 +1720,10 @@ msgid ""
 "arch sequences are passed the \"-a\" option to ensure they only work on "
 "architecture dependent packages."
 msgstr ""
+"La opción «-i» se introduce a las órdenes en la secuencia binary-indep para "
+"asegurar que sólo actúan sobre paquetes binarios independientes, y la opción "
+"«-a» se introduce a órdenes en la secuencia binary-arch para asegurar que "
+"sólo actúan sobre paquetes dependientes de la arquitectura."
 
 #. type: textblock
 #: dh:27
@@ -1725,6 +1735,13 @@ msgid ""
 "(Note that to use this feature, you should Build-Depend on debhelper 7.0.50 "
 "or above.)"
 msgstr ""
+"Si «debian/rules» contiene un objetivo con un nombre del tipo "
+"«override_I<dh_command>», dh invocará este objetivo en lugar de ejecutar "
+"I<dh_command>. El objetivo «override» puede después ejecutar la orden con "
+"opciones adicionales, o ejecutar otras órdenes totalmente diferentes. "
+"Consulte los ejemplos más abajo. Tenga en cuenta que para usar esta "
+"funcionalidad, el paquete debe tener una dependencia de construcción sobre "
+"la versión 7.0.50 de debhelper, o superior."
 
 # type: =head1
 #. type: =head1
@@ -1746,7 +1763,7 @@ msgstr "OPCIONES"
 #. type: =item
 #: dh:37
 msgid "B<--with> I<addon>[,I<addon>,...]"
-msgstr ""
+msgstr "B<--with> I<extensión>[,I<extensión>,...]"
 
 #. type: textblock
 #: dh:39
@@ -1758,6 +1775,12 @@ msgid ""
 "commands. See the PROGRAMMING file for documentation about the sequence "
 "addon interface."
 msgstr ""
+"Añade las órdenes de debhelper definidas con la extensión dada a los lugares "
+"apropiados de la secuencia de órdenes que se va a ejecutar. Esta opción se "
+"puede repetir varias veces, o puede listar varias extensiones, separadas por "
+"comas. Se usa cuando hay un paquete de terceras fuentes que proporciona "
+"órdenes de debhelper. Para más documentación sobre la interfaz de extensión "
+"de secuencia consulte el fichero «PROGRAMMING»."
 
 # type: =item
 #. type: =item
@@ -1768,12 +1791,12 @@ msgstr "B<--without> I<addon>"
 #. type: textblock
 #: dh:48
 msgid "The inverse of --with, disables using the given addon."
-msgstr ""
+msgstr "El reverso de «--with», desactiva la extensión dada."
 
 #. type: textblock
 #: dh:52
 msgid "List all available addons."
-msgstr ""
+msgstr "Lista todas las extensiones disponibles."
 
 # type: =item
 #. type: =item
@@ -1785,6 +1808,7 @@ msgstr "B<--until> I<orden>"
 #: dh:56
 msgid "Run commands in the sequence until and including I<cmd>, then stop."
 msgstr ""
+"Ejecuta las órdenes en la secuencia hasta la I<orden>, inclusive, y cierra."
 
 # type: =item
 #. type: =item
@@ -1795,7 +1819,7 @@ msgstr "B<--before> I<orden>"
 #. type: textblock
 #: dh:60
 msgid "Run commands in the sequence before I<cmd>, then stop."
-msgstr ""
+msgstr "Ejecuta las órdenes en la secuencia anteriores a I<orden>, y cierra."
 
 # type: =item
 #. type: =item
@@ -1806,7 +1830,7 @@ msgstr "B<--after> I<orden>"
 #. type: textblock
 #: dh:64
 msgid "Run commands in the sequence that come after I<cmd>."
-msgstr ""
+msgstr "Ejecuta las órdenes en la secuencia posteriores a I<orden>."
 
 # type: =item
 #. type: =item
@@ -1816,13 +1840,15 @@ msgstr "B<--remaining>"
 #. type: textblock
 #: dh:68
 msgid "Run all commands in the sequence that have yet to be run."
-msgstr ""
+msgstr "Ejecuta todas las órdenes en la secuencia que aún no se han ejecutado."
 
 #. type: textblock
 #: dh:72
 msgid ""
 "Prints commands that would run for a given sequence, but does not run them."
 msgstr ""
+"Muestra las órdenes que se ejecutarían para una secuencia dada, pero no las "
+"ejecuta."
 
 #. type: textblock
 #: dh:76
@@ -1831,6 +1857,9 @@ msgid ""
 "can be used to set an option like \"-v\" or \"-X\" or \"-N\", as well as for "
 "more specialised options."
 msgstr ""
+"Todas las demás opciones introducidas a dh se introducen a cada orden que "
+"ejecuta. Puede usar esto para definir una opción como «-v», «-X» o «-N», así "
+"como opciones más especializadas."
 
 #. type: textblock
 #: dh:80
@@ -1840,6 +1869,11 @@ msgid ""
 "the name, to avoid any ambiguity. If there are multiple substring matches, "
 "the last one in the sequence will be used."
 msgstr ""
+"En las opciones anteriores, I<orden> puede ser el nombre completo de una "
+"orden de debhelper, o una subcadena. Buscará en primer lugar una orden en la "
+"secuencia que coincide totalmente con el nombre, para evitar cualqueir "
+"ambigüedad. Si hay muchas coincidencias con la subcadena se usará la última "
+"en la secuencia."
 
 # type: =head1
 #. type: =head1
@@ -1853,6 +1887,8 @@ msgid ""
 "To see what commands are included in a sequence, without actually doing "
 "anything:"
 msgstr ""
+"Para ver qué órdenes se incluyen en una secuencia, sin hacer nada en "
+"realidad:"
 
 #. type: verbatim
 #: dh:116
@@ -1861,6 +1897,8 @@ msgid ""
 "\tdh binary-arch --no-act\n"
 "\n"
 msgstr ""
+"\tdh binary-arch --no-act\n"
+"\n"
 
 #. type: textblock
 #: dh:118
@@ -1868,6 +1906,8 @@ msgid ""
 "This is a very simple rules file, for packages where the default sequences "
 "of commands work with no additional options."
 msgstr ""
+"Este es un fichero «rules» muy sencillo, para paquetes donde las secuencias "
+"predeterminadas de órdenes funcionan sin opciones adicionales."
 
 #. type: verbatim
 #: dh:121 dh:128 dh:142 dh:155
@@ -1878,6 +1918,10 @@ msgid ""
 "\t\tdh $@\n"
 "\n"
 msgstr ""
+"\t#!/usr/bin/make -f\n"
+"\t%:\n"
+"\t\tdh $@\n"
+"\n"
 
 #. type: verbatim
 #: dh:125
@@ -1887,6 +1931,10 @@ msgid ""
 "easy way to do with is by adding an override target for that command.\n"
 "\t\n"
 msgstr ""
+"A menudo, querrá introducir una opción a una orden de debhelper en\n"
+"particular. La forma sencilla de hacerlo es añadir un objetivo «overrride»\n"
+"para esa orden.\n"
+"\t\n"
 
 #. type: verbatim
 #: dh:132
@@ -1896,6 +1944,9 @@ msgid ""
 "\t\tdh_strip -Xfoo\n"
 "\t\t\n"
 msgstr ""
+"\toverride_dh_strip:\n"
+"\t\tdh_strip -Xfoo\n"
+"\t\t\n"
 
 #. type: verbatim
 #: dh:135
@@ -1905,6 +1956,9 @@ msgid ""
 "\t\tdh_installdocs README TODO\n"
 "\n"
 msgstr ""
+"\toverride_dh_installdocs:\n"
+"\t\tdh_installdocs README TODO\n"
+"\n"
 
 #. type: textblock
 #: dh:138
@@ -1913,6 +1967,10 @@ msgid ""
 "can't guess what to do for a strange package. Here's how to avoid running "
 "either and instead run your own commands."
 msgstr ""
+"En ocasiones, las órdenes automatizadas L<dh_auto_configure(1)> y "
+"L<dh_auto_build(1)> no pueden averiguar qué hacer con un paquete extraño. A "
+"continuación puede ver cómo evitar que se ejecuten para que así pueda "
+"ejecutar sus propias órdenes."
 
 #. type: verbatim
 #: dh:146
@@ -1922,6 +1980,9 @@ msgid ""
 "\t\t./mondoconfig\n"
 "\n"
 msgstr ""
+"\toverride_dh_auto_configure:\n"
+"\t\t./mondoconfig\n"
+"\n"
 
 #. type: verbatim
 #: dh:149
@@ -1931,6 +1992,9 @@ msgid ""
 "\t\tmake universe-explode-in-delight\n"
 "\n"
 msgstr ""
+"\toverride_dh_auto_build:\n"
+"\t\tmake universe-explode-in-delight\n"
+"\n"
 
 #. type: textblock
 #: dh:152
@@ -1938,6 +2002,8 @@ msgid ""
 "Another common case is wanting to do something manually before or after a "
 "particular debhelper command is run."
 msgstr ""
+"Otra caso común es que desee hacer algo manualmente antes o después de que "
+"se ejecute una orden en particular de debhelper."
 
 #. type: verbatim
 #: dh:159
@@ -1948,6 +2014,10 @@ msgid ""
 "\t\tchmod 4755 debian/foo/usr/bin/foo\n"
 "\n"
 msgstr ""
+"\toverride_dh_fixperms:\n"
+"\t\tdh_fixperms\n"
+"\t\tchmod 4755 debian/foo/usr/bin/foo\n"
+"\n"
 
 #. type: textblock
 #: dh:163
@@ -1955,6 +2025,8 @@ msgid ""
 "If your package is a python package, dh will use dh_pysupport by default. "
 "This is how to use dh_pycentral instead."
 msgstr ""
+"Si su paquete es un paquete de Python, dh usará dh_pysupport de forma "
+"predeterminada. A continuación puede ver como usar dh_pycentral en su lugar."
 
 #. type: verbatim
 #: dh:166
@@ -1965,6 +2037,10 @@ msgid ""
 "\t\tdh $@ --with python-central\n"
 "\n"
 msgstr ""
+"\t#!/usr/bin/make -f\n"
+"\t%:\n"
+"\t\tdh $@ --with python-central\n"
+"\n"
 
 #. type: textblock
 #: dh:170
@@ -1973,6 +2049,10 @@ msgid ""
 "guess with newer versions from the autotools-dev package at build time, you "
 "can use some commands provided in autotools-dev that automate it, like this."
 msgstr ""
+"Si su paquete usa Autotools y desea refrescar «config.sub» y «config.guess» "
+"con nuevas versiones del paquete autotools-dev en tiempo de ejecución, puede "
+"usar algunas órdenes proporcionadas por autotools-dev que automatizan esto, "
+"como puede ver a continuación."
 
 #. type: verbatim
 #: dh:175
@@ -1983,6 +2063,10 @@ msgid ""
 "\t\tdh $@ --with autotools_dev\n"
 "\n"
 msgstr ""
+"\t#!/usr/bin/make -f\n"
+"\t%:\n"
+"\t\tdh $@ --with autotools_dev\n"
+"\n"
 
 #. type: textblock
 #: dh:179
@@ -1990,6 +2074,9 @@ msgid ""
 "Here is how to force use of perl's Module::Build build system, which can be "
 "necessary if debhelper wrongly detects that the package uses MakeMaker."
 msgstr ""
+"A continuación puede ver como forzar el uso del sistema de construcción del "
+"módulo Perl Module::Build, lo cual puede ser necesario si debhelper detecta "
+"erróneamente que el paquete usa MakeMaker."
 
 #. type: verbatim
 #: dh:183
@@ -2000,6 +2087,10 @@ msgid ""
 "\t\tdh $@ --buildsystem=perl_build\n"
 "\n"
 msgstr ""
+"\t#!/usr/bin/make -f\n"
+"\t%:\n"
+"\t\tdh $@ --buildsystem=perl_build\n"
+"\n"
 
 #. type: verbatim
 #: dh:187
@@ -2009,6 +2100,9 @@ msgid ""
 "sequence addons like this:\n"
 "\t\n"
 msgstr ""
+"Para parchear su paquete mediante quilt, puede indicar a dh que\n"
+"use las extensiones de secuencia de dh de quilt, como puede ver:\n"
+"\t\n"
 
 #. type: verbatim
 #: dh:190
@@ -2019,6 +2113,10 @@ msgid ""
 "\t\tdh $@ --with quilt\n"
 "\n"
 msgstr ""
+"\t#!/usr/bin/make -f\n"
+"\t%:\n"
+"\t\tdh $@ --with quilt\n"
+"\n"
 
 #. type: textblock
 #: dh:194
@@ -2027,6 +2125,9 @@ msgid ""
 "package's source, for a package where the source is located in a "
 "subdirectory."
 msgstr ""
+"Aquí tiene un ejemplo de cómo sobreescribir la ubicación dónde las órdenes "
+"«dh_auto_*» encuentran el código fuente de un paquete, para un paquete en el "
+"que las fuentes se ubican en un subdirectorio."
 
 #. type: verbatim
 #: dh:198
@@ -2037,6 +2138,10 @@ msgid ""
 "\t\tdh $@ --sourcedirectory=src\n"
 "\n"
 msgstr ""
+"\t#!/usr/bin/make -f\n"
+"\t%:\n"
+"\t\tdh $@ --sourcedirectory=src\n"
+"\n"
 
 #. type: textblock
 #: dh:202
@@ -2044,6 +2149,9 @@ msgid ""
 "And here is an example of how to tell the dh_auto_* commands to build in a "
 "subdirectory, which will be removed on clean."
 msgstr ""
+"Y aquí tiene un ejemplo de cómo indicar a las órdenes «dh_auto_*» que "
+"realicen la construcción en un subdirectorio, que se eliminará mediante "
+"«clean»."
 
 #. type: verbatim
 #: dh:205
@@ -2054,6 +2162,10 @@ msgid ""
 "\t\tdh $@ --builddirectory=build\n"
 "\n"
 msgstr ""
+"\t#!/usr/bin/make -f\n"
+"\t%:\n"
+"\t\tdh $@ --builddirectory=build\n"
+"\n"
 
 #. type: textblock
 #: dh:209
@@ -2061,6 +2173,9 @@ msgid ""
 "If your package can be built in parallel, you can support parallel building "
 "as follows. Then I<dpkg-buildpackage -j> will work."
 msgstr ""
+"Si su paquete se puede construir en paralelo, puede permitir la construcción "
+"en paralelo de la siguiente manera. Después, funcionará la orden I<dpkg-"
+"buildpackage -j>."
 
 #. type: verbatim
 #: dh:212
@@ -2071,6 +2186,10 @@ msgid ""
 "\t\tdh $@ --parallel\n"
 "\n"
 msgstr ""
+"\t#!/usr/bin/make -f\n"
+"\t%:\n"
+"\t\tdh $@ --parallel\n"
+"\n"
 
 #. type: textblock
 #: dh:216
@@ -2078,6 +2197,9 @@ msgid ""
 "Here is a way to prevent dh from running several commands that you don't "
 "want it to run, by defining empty override targets for each command."
 msgstr ""
+"A continuación puede ver cómo evitar que dh ejecute varias órdenes que no "
+"desea que se ejecuten. Para ello, defina objetivos «override» vacíos para "
+"cada orden."
 
 #. type: verbatim
 #: dh:219 dh:230 dh:247
@@ -2088,6 +2210,10 @@ msgid ""
 "\t\tdh $@\n"
 "\t\n"
 msgstr ""
+"\t#!/usr/bin/make -f\n"
+"\t%:\n"
+"\t\tdh $@\n"
+"\t\n"
 
 #. type: verbatim
 #: dh:223
@@ -2097,6 +2223,9 @@ msgid ""
 "\toverride_dh_auto_test override_dh_compress override_dh_fixperms:\n"
 "\n"
 msgstr ""
+"\t# Órdenes que no se ejecutan:\n"
+"\toverride_dh_auto_test override_dh_compress override_dh_fixperms:\n"
+"\n"
 
 #. type: textblock
 #: dh:226
@@ -2105,6 +2234,10 @@ msgid ""
 "particular package is being built. This can be accomplished using "
 "L<dh_listpackages(1)> to test what is being built. For example:"
 msgstr ""
+"A veces, puede que desee hacer que un objetivo «override» ejecute la órdenes "
+"sólo cuando se construya un paquete en particular. Para ello, use "
+"L<dh_listpackages(1)> para comprobar qué paquete se está construyendo. Por "
+"ejemplo:"
 
 #. type: verbatim
 #: dh:234
@@ -2117,6 +2250,12 @@ msgid ""
 "\tendif\n"
 "\n"
 msgstr ""
+"\toverride_dh_fixperms:\n"
+"\t\tdh_fixperms\n"
+"\tifneq (,$(findstring foo, $(shell dh_listpackages)))\n"
+"\t\tchmod 4755 debian/foo/usr/bin/foo\n"
+"\tendif\n"
+"\n"
 
 #. type: textblock
 #: dh:240
@@ -2128,6 +2267,13 @@ msgid ""
 "example, a package with a long document build process can put it in build-"
 "indep to avoid build daemons redundantly building the documentation."
 msgstr ""
+"Por último, recuerde que no está limitado al uso de objetivos «override» en "
+"el fichero «rules» cuando use dh. También puede definir de forma explícita "
+"cualquiera de los objetivos normales del fichero «rules» cuando sea "
+"oportuno. Una razón común es si su paquete necesita distintos objetivos "
+"«build-arch» y «build-indep». Por ejemplo, puede insertar un paquete bajo "
+"«build-indep» si tiene una extensa documentación para evitar que los "
+"demonios de construcción generen la documentación de forma redundante."
 
 #. type: verbatim
 #: dh:251
@@ -2140,17 +2286,25 @@ msgid ""
 "\t\t$(MAKE) bins\n"
 "\n"
 msgstr ""
+"\tbuild: build-arch build-indep ;\n"
+"\tbuild-indep:\n"
+"\t\t$(MAKE) docs\n"
+"\tbuild-arch:\n"
+"\t\t$(MAKE) bins\n"
+"\n"
 
 #. type: =head1
 #: dh:257
 msgid "INTERNALS"
-msgstr ""
+msgstr "FUNCIONAMIENTO INTERNO"
 
 #. type: textblock
 #: dh:259
 msgid ""
 "If you're curious about dh's internals, here's how it works under the hood."
 msgstr ""
+"Si siente curiosidad por el funcionamiento interno de dh, a continuación "
+"puede ver como funciona por dentro."
 
 #. type: textblock
 #: dh:261
@@ -2160,6 +2314,10 @@ msgid ""
 "commands have already been run, for which packages, and skip running those "
 "commands again."
 msgstr ""
+"Cada orden de debhelper registra una ejecución exitosa en "
+"«debian/package.debhelper.log.» (que dh_clean elimina). Gracias a ello dh "
+"puede conocer qué órdenes se han ejecutado, para qué paquetes, y omitir "
+"ejecutar esas órdenes otra vez."
 
 #. type: textblock
 #: dh:266
@@ -2169,6 +2327,10 @@ msgid ""
 "in the sequence. The B<--until>, B<--before>, B<--after>, and B<--remaining> "
 "options can override this behavior."
 msgstr ""
+"Cada vez que se ejecuta dh, comprueba el registro y encuentra la última "
+"orden registrada contenida en la secuencia especificada. Después, continua "
+"con la siguiente orden en la secuencia. Las opciones B<--until>, "
+"B<--before>, B<--after> y B<--remaining> pueden anular este comportamiento."
 
 #. type: textblock
 #: dh:271
@@ -2178,6 +2340,11 @@ msgid ""
 "contents (and indeed, existence) of this environment variable, as the name "
 "might suggest, is subject to change at any time."
 msgstr ""
+"dh usa la variable de entorno «DH_INTERNAL_OPTIONS» para introducir "
+"información a las órdenes de debhelper que se estén ejecutando dentro de "
+"objetivos «override». El contenido (e incluso, la existencia) de esta "
+"variable de entorno, como el nombre sugiere, está sujeto a cambios en "
+"cualquier momento."
 
 # type: textblock
 #. type: textblock
@@ -2220,19 +2387,19 @@ msgstr "Este programa es parte de debhelper."
 # type: textblock
 #. type: textblock
 #: dh_auto_build:5
-#, fuzzy
 msgid "dh_auto_build - automatically builds a package"
-msgstr "dh_builddeb - construye paquetes debian"
+msgstr "dh_auto_build - Construye paquetes de forma automática"
 
 # type: textblock
 #. type: textblock
 #: dh_auto_build:14
-#, fuzzy
 #| msgid "B<dh_gencontrol> [S<I<debhelper options>>] [S<B<--> I<params>>]"
 msgid ""
 "B<dh_auto_build> [S<I<build system options>>] [S<I<debhelper options>>] "
 "[S<B<--> I<params>>]"
-msgstr "B<dh_gencontrol> [S<I<opciones debhelper>>] [S<B<--> I<parámetros>>]"
+msgstr ""
+"B<dh_auto_build> [S<I<opciones-sistema-de-construcción>>] [S<I<opciones-de-"
+"debhelper>>] [S<B<--> I<parámetros>>]"
 
 #. type: textblock
 #: dh_auto_build:18
@@ -2243,6 +2410,12 @@ msgid ""
 "done by running make (or MAKE, if the environment variable is set). If "
 "there's a setup.py, or Build.PL, it is run to build the package."
 msgstr ""
+"dh_auto_build es un programa de debhelper que intenta generar un paquete "
+"automáticamente. Realiza esto ejecutando la orden adecuada para el sistema "
+"de construcción que detecta que usa el paquete. Por ejemplo, si encuentra un "
+"fichero «Makefile», ejecuta «make» (o MAKE, si se define la variable de "
+"entorno). Si existe un fichero «setup.py» o «Build.PL», se usará para "
+"construir el paquete."
 
 #. type: textblock
 #: dh_auto_build:24
@@ -2251,6 +2424,9 @@ msgid ""
 "you're encouraged to skip using dh_auto_build at all, and just run the build "
 "process manually."
 msgstr ""
+"La meta es que funcione para el 90% de los paquetes. Si no funciona, le "
+"animamos a que no use dh_auto_build, y simplemente ejecute el proceso de "
+"construcción manualmente."
 
 #. type: textblock
 #: dh_auto_build:30 dh_auto_clean:31 dh_auto_configure:33 dh_auto_install:45
@@ -2259,6 +2435,8 @@ msgid ""
 "See L<debhelper(7)/BUILD SYSTEM OPTIONS> for a list of common build system "
 "selection and control options."
 msgstr ""
+"Para una lista de selección de sistemas de construcción comunes y opciones "
+"de control consulte L<debhelper(7)/BUILD SYSTEM OPTIONS>."
 
 # type: =item
 #. type: =item
@@ -2274,21 +2452,24 @@ msgid ""
 "Pass \"params\" to the program that is run. These can be used to supplement "
 "or override any standard parameters that dh_auto_build passes."
 msgstr ""
+"Introduce los «parámetros» al programa que ejecuta. Se puede usar para "
+"añadir o anular cualquier parámetro estandar que dh_auto_build introduce."
 
 #. type: textblock
 #: dh_auto_clean:5
 msgid "dh_auto_clean - automatically cleans up after a build"
-msgstr ""
+msgstr "dh_auto_clean - Limpia automáticamente después de una construcción"
 
 # type: textblock
 #. type: textblock
 #: dh_auto_clean:14
-#, fuzzy
 #| msgid "B<dh_gencontrol> [S<I<debhelper options>>] [S<B<--> I<params>>]"
 msgid ""
 "B<dh_auto_clean> [S<I<build system options>>] [S<I<debhelper options>>] "
 "[S<B<--> I<params>>]"
-msgstr "B<dh_gencontrol> [S<I<opciones debhelper>>] [S<B<--> I<parámetros>>]"
+msgstr ""
+"B<dh_auto_clean> [S<I<opciones-sistema-de-construcción>>] [S<I<opciones-de-"
+"debhelper>>] [S<B<--> I<parámetros>>]"
 
 #. type: textblock
 #: dh_auto_clean:18
@@ -2300,6 +2481,13 @@ msgid ""
 "this is done by running make (or MAKE, if the environment variable is set). "
 "If there is a setup.py or Build.PL, it is run to clean the package."
 msgstr ""
+"dh_auto_clean es un programa de debhelper que intenta limpiar "
+"automáticamente después de la construcción de un paquete. Para ello, ejecuta "
+"la orden adecuada para el sistema de construcción que detecta que usa el "
+"paquete. Por ejemplo, si hay un fichero «Makefile» que contiene un objetivo "
+"«distclean», «realclean» o «clean», ejecutará «make» (o MAKE, si se define "
+"la variable de entorno). Si existe un fichero «setup.py» o «Build.PL», se "
+"ejecuta para limpiar el paquete."
 
 #. type: textblock
 #: dh_auto_clean:25
@@ -2308,6 +2496,9 @@ msgid ""
 "tries to use the wrong clean target, you're encouraged to skip using "
 "dh_auto_clean at all, and just run make clean manually."
 msgstr ""
+"El objetivo es que funcione con el 90% de los paquetes. Si no funciona, o lo "
+"intenta usando el objetivo «clean» equivocado, le animamos a que no use "
+"dh_auto_clean, y que simplemente ejecute «make clean» manualmente."
 
 #. type: textblock
 #: dh_auto_clean:38
@@ -2315,21 +2506,26 @@ msgid ""
 "Pass \"params\" to the program that is run. These can be used to supplement "
 "or override the any standard parameters that dh_auto_clean passes."
 msgstr ""
+"Introduce los «parámetros» al programa que ejecuta. Se puede usar para "
+"añadir o anular cualquier parámetro estandar que dh_auto_clean introduce."
 
 #. type: textblock
 #: dh_auto_configure:5
 msgid "dh_auto_configure - automatically configure a package prior to building"
 msgstr ""
+"dh_auto_configure - Configura un paquete automáticamente antes de la "
+"construcción"
 
 # type: textblock
 #. type: textblock
 #: dh_auto_configure:14
-#, fuzzy
 #| msgid "B<dh_gencontrol> [S<I<debhelper options>>] [S<B<--> I<params>>]"
 msgid ""
 "B<dh_auto_configure> [S<I<build system options>>] [S<I<debhelper options>>] "
 "[S<B<--> I<params>>]"
-msgstr "B<dh_gencontrol> [S<I<opciones debhelper>>] [S<B<--> I<parámetros>>]"
+msgstr ""
+"B<dh_auto_configure> [S<I<opciones-sistema-de-construcción>>] [S<I<opciones-"
+"de-debhelper>>] [S<B<--> I<parámetros>>]"
 
 #. type: textblock
 #: dh_auto_configure:18
@@ -2342,6 +2538,14 @@ msgid ""
 "run. Some build systems, such as make, do not need a configure step; for "
 "these dh_auto_configure will exit without doing anything."
 msgstr ""
+"dh_auto_configure es un programa de debhelper que intenta configurar "
+"automáticamente un paquete antes de su construcción. Para ello, ejecuta la "
+"orden adecuada para el sistema de construcción que detecta que usa el "
+"paquete. Por ejemplo, busca y ejecuta un script «./configure», "
+"«Makefile.PL», «Build.PL» o cmake. Determina un conjunto estándar de "
+"parámetros y los introduce al programa a ejecutar. Algunos sistemas de "
+"construcción, como make, no necesitan un paso «configure»; para ellos, "
+"dh_auto_configure cerrará sin hacer nada."
 
 #. type: textblock
 #: dh_auto_configure:27
@@ -2350,6 +2554,9 @@ msgid ""
 "you're encouraged to skip using dh_auto_configure at all, and just run ./"
 "configure or its equivalent manually."
 msgstr ""
+"La meta es que funcione con el 90% de los paquetes. Si no funciona, le "
+"animamos a no usar dh_auto_configure, y que simplemente ejecute "
+"«./configure», o su equivalente, manualmente."
 
 #. type: textblock
 #: dh_auto_configure:40
@@ -2358,6 +2565,9 @@ msgid ""
 "that dh_auto_configure passes. This can be used to supplement or override "
 "those parameters. For example:"
 msgstr ""
+"Introduce los «parámetros» al programa a ejecutar, después de que "
+"dh_auto_configure introduzca los parámetros estándar. Se puede usar para "
+"añadir o anular esos parámetros. Por ejemplo:"
 
 #. type: verbatim
 #: dh_auto_configure:44
@@ -2366,16 +2576,17 @@ msgid ""
 "  dh_auto_configure -- --with-foo --enable-bar\n"
 "\n"
 msgstr ""
+"  dh_auto_configure -- --with-foo --enable-bar\n"
+"\n"
 
 #. type: textblock
 #: dh_auto_install:5
 msgid "dh_auto_install - automatically runs make install or similar"
-msgstr ""
+msgstr "dh_auto_install - Ejecuta automáticamente «make install» o similar"
 
 # type: textblock
 #. type: textblock
 #: dh_auto_install:17
-#, fuzzy
 #| msgid ""
 #| "B<dh_installdebconf> [S<I<debhelper options>>] [B<-n>] [S<B<--> "
 #| "I<params>>]"
@@ -2383,8 +2594,8 @@ msgid ""
 "B<dh_auto_install> [S<I<build system options>>] [S<I<debhelper options>>] "
 "[S<B<--> I<params>>]"
 msgstr ""
-"B<dh_installdebconf> [S<I<opciones debhelper>>] [B<-n>] [S<B<--> "
-"I<parámetros>>]"
+"B<dh_auto_install> [S<I<opciones-sistema-de-construcción>>] [S<I<opciones-"
+"de-debhelper>>] [S<B<--> I<parámetros>>]"
 
 #. type: textblock
 #: dh_auto_install:21
@@ -2397,6 +2608,14 @@ msgid ""
 "PL, it is used. Note that the Ant build system does not support "
 "installation, so dh_auto_install will not install files built using Ant."
 msgstr ""
+"dh_auto_install es un programa de debhelper que intenta instalar "
+"automáticamente ficheros construidos. Para ello, ejecuta la orden adecuada "
+"para el sistema de construcción que detecta que usa su paquete. Por ejemplo, "
+"si hay un fichero «Makefile» y contiene un objetivo «install», ejecutará "
+"«make» (o MAKE, si se define la variable de entorno). Si existe un fichero "
+"«setup.py» o «Build.PL», se usará. Tenga en cuenta que el sistema de "
+"construcción Ant no permite la instalación, y por ello dh_auto_install no "
+"instalará ficheros construidos mediante Ant."
 
 #. type: textblock
 #: dh_auto_install:29
@@ -2407,6 +2626,11 @@ msgid ""
 "be moved from there to the appropriate package build directory using "
 "L<dh_install(1)>."
 msgstr ""
+"A menos que se defina la opción «--destdir», los ficheros se instalan en "
+"«debian/<paquete>/» si sólo hay un paquete binario. En el caso de varios "
+"paquetes binarios, los ficheros se instalan en «debian/tmp/», y se deberían "
+"mover desde ahí al directorio de construcción del paquete usando "
+"L<dh_install(1)>."
 
 #. type: textblock
 #: dh_auto_install:35
@@ -2415,6 +2639,10 @@ msgid ""
 "was generated by MakeMaker from a Makefile.PL, it will automatically set "
 "PREFIX=/usr too, since such Makefiles need that."
 msgstr ""
+"«DESTDIR» se usa para indicar a make dónde instalar los ficheros. Si el "
+"fichero «Makefile» se generó mediante MakeMaker a partir de un fichero "
+"«Makefile.PL», definirá también «PREFIX=/usr», ya que lso ficheros "
+"«Makefile» lo requieren."
 
 #. type: textblock
 #: dh_auto_install:39
@@ -2423,6 +2651,9 @@ msgid ""
 "tries to use the wrong install target, you're encouraged to skip using "
 "dh_auto_install at all, and just run make install manually."
 msgstr ""
+"El objetivo es que funcione con el 90% de los paquetes. Si no funciona, o lo "
+"intenta usando el objetivo «install» equivocado, le animamos a que no use "
+"dh_auto_install, y que simplemente ejecute «make install» manualmente."
 
 # type: =item
 #. type: =item
@@ -2432,11 +2663,15 @@ msgstr "B<--destdir=>I<directorio>"
 
 #. type: textblock
 #: dh_auto_install:52
+#, fuzzy
 msgid ""
 "Install files into the specified I<directory>. If this option is not "
 "specified, destination directory is determined automatically as described in "
 "the L</DESCRIPTION> section."
 msgstr ""
+"Instala ficheros en el I<directorio> especificado. Si esta opción no se "
+"define, el directorio de destino se determina automáticamente como se "
+"describe en la sección L</DESCRIPTION>."
 
 #. type: textblock
 #: dh_auto_install:58
@@ -2444,21 +2679,26 @@ msgid ""
 "Pass \"params\" to the program that is run. These can be used to supplement "
 "or override the any standard parameters that dh_auto_install passes."
 msgstr ""
+"Introduce los «parámetros» al programa a ejecutar. Se puede usar para añadir "
+"o anular cualquiera de los parámetros estándar que dh_auto_install "
+"introduce."
 
 #. type: textblock
 #: dh_auto_test:5
 msgid "dh_auto_test - automatically runs a package's test suites"
 msgstr ""
+"dh_auto_test - Ejecuta automáticamente un conjunto de pruebas de un paquete"
 
 # type: textblock
 #. type: textblock
 #: dh_auto_test:14
-#, fuzzy
 #| msgid "B<dh_gencontrol> [S<I<debhelper options>>] [S<B<--> I<params>>]"
 msgid ""
 "B<dh_auto_test> [S<I<build system options>>] [S<I<debhelper options>>] "
 "[S<B<--> I<params>>]"
-msgstr "B<dh_gencontrol> [S<I<opciones debhelper>>] [S<B<--> I<parámetros>>]"
+msgstr ""
+"B<dh_auto_test> [S<I<opciones-sistema-de-construcción>>] [S<I<opciones-de-"
+"debhelper>>] [S<B<--> I<parámetros>>]"
 
 #. type: textblock
 #: dh_auto_test:18
@@ -2471,6 +2711,14 @@ msgid ""
 "the command will exit nonzero. If there's no test suite, it will exit zero "
 "without doing anything."
 msgstr ""
+"dh_auto_test es un programa de debhelper que intenta ejecutar "
+"automáticamente el conjunto de pruebas de un paquete. Para ello, ejecuta la "
+"orden adecuada para el sistema de construcción que detecta que usa el "
+"paquete. Por ejemplo, si hay un fichero «Makefile» y contiene un objetivo "
+"«test» o «check», ejecutará «make» (o MAKE, si se define la variable de "
+"entorno). Si el conjunto de pruebas falla, la orden cerrará con un valor "
+"distinto de cero. Si no hay un conjunto de pruebas, cerrará con un valor de "
+"cero sin hacer nada."
 
 #. type: textblock
 #: dh_auto_test:26
@@ -2479,6 +2727,9 @@ msgid ""
 "doesn't work, you're encouraged to skip using dh_auto_test at all, and just "
 "run the test suite manually."
 msgstr ""
+"La meta es que funcione para el 90% de los paquetes con un conjunto de "
+"pruebas. Si no funciona, le animamos a que no use dh_auto_test, y que "
+"simplemente ejecute el conjunto de pruebas manualmente."
 
 #. type: textblock
 #: dh_auto_test:39
@@ -2486,40 +2737,39 @@ msgid ""
 "Pass \"params\" to the program that is run. These can be used to supplement "
 "or override the any standard parameters that dh_auto_test passes."
 msgstr ""
+"Introduce los «parámetros» al programa que ejecuta. Se puede usar para "
+"añadir o anular cualquier parámetro estandar que dh_auto_test introduce."
 
 # type: textblock
 #. type: textblock
 #: dh_auto_test:46
-#, fuzzy
 msgid ""
 "If the DEB_BUILD_OPTIONS environment variable contains \"nocheck\", no tests "
 "will be performed."
 msgstr ""
-"Si la variable de entorno DEB_BUILD_OPTIONS contiene \"nostrip\", no se "
-"eliminará nada, conforme a las normas de Debian."
+"No se realizará ninguna prueba si la variable de entorno DEB_BUILD_OPTIONS "
+"contiene «nocheck»."
 
 # type: textblock
 #. type: textblock
 #: dh_bugfiles:5
-#, fuzzy
 #| msgid "dh_install - install files into package build directories"
 msgid ""
 "dh_bugfiles - install bug reporting customization files into package build "
 "directories"
 msgstr ""
-"dh_install - instala ficheros en los directorios de construcción del paquete"
+"dh_bugfiles - Instala ficheros personalizados para el informe de fallos en "
+"los directorios de construcción del paquete"
 
 # type: textblock
 #. type: textblock
 #: dh_bugfiles:14
-#, fuzzy
 msgid "B<dh_bugfiles> [B<-A>] [S<I<debhelper options>>]"
-msgstr "B<dh_testroot> [S<I<opciones debhelper>>]"
+msgstr "B<dh_bugfiles> [B<-A>] [S<I<opciones-de-debhelper>>]"
 
 # type: textblock
 #. type: textblock
 #: dh_bugfiles:18
-#, fuzzy
 #| msgid ""
 #| "dh_installmenu is a debhelper program that is responsible for installing "
 #| "files used by the debian menu package into package build directories."
@@ -2528,9 +2778,10 @@ msgid ""
 "reporting customization files (bug scripts and/or bug control files and/or "
 "presubj files) into package build directories."
 msgstr ""
-"dh_installmenu es un programa de debhelper responsable de instalar ficheros "
-"usados por el paquete menu de Debian en los directorios de construcción del "
-"paquete."
+"dh_bugfiles es un programa de debhelper responsable de la instalación de "
+"ficheros personalizados para el informe de fallos (scripts de fallos y/o "
+"ficheros de control de fallos y/o ficheros «presubj») en los directorios de "
+"construcción del paquete."
 
 #. type: =head1
 #: dh_bugfiles:22 dh_clean:31 dh_compress:31 dh_gconf:23 dh_install:38
@@ -2542,12 +2793,12 @@ msgstr ""
 #: dh_installppp:21 dh_installudev:25 dh_installwm:24 dh_link:39 dh_lintian:21
 #: dh_makeshlibs:24 dh_movefiles:26
 msgid "FILES"
-msgstr ""
+msgstr "FICHEROS"
 
 #. type: =item
 #: dh_bugfiles:26
 msgid "debian/I<package>.bug-script"
-msgstr ""
+msgstr "debian/I<paquete>.bug-script"
 
 #. type: textblock
 #: dh_bugfiles:28
@@ -2559,11 +2810,18 @@ msgid ""
 "file is installed as F<usr/share/bug/package/script>. Finally, the installed "
 "script is given execute permissions."
 msgstr ""
+"Este el script a ejecutar por el programa de informe de fallos para generar "
+"una plantilla de informe de fallo. El fichero se instala como "
+"F<usr/share/bug/package> en el directorio de construcción del paquete, si no "
+"se van a instalar en tal paquete otros ficheros personalizados de informe "
+"de fallos. En caso contrario, el fichero se instala como "
+"F<usr/share/bug/package/script>. Por último, se dan permisos de ejecución al "
+"script instalado."
 
 #. type: =item
 #: dh_bugfiles:35
 msgid "debian/I<package>.bug-control"
-msgstr ""
+msgstr "debian/I<paquete>.bug-control"
 
 #. type: textblock
 #: dh_bugfiles:37
@@ -2572,11 +2830,15 @@ msgid ""
 "tool. This file is installed as F<usr/share/bug/package/control> in the "
 "package build directory."
 msgstr ""
+"El fichero de control de fallos, que contiene algunas indicaciones para la "
+"herramienta de informe de fallos. Este fichero se instala como "
+"F<usr/share/bug/package/control> en el directorio de construcción del "
+"paquete."
 
 #. type: =item
 #: dh_bugfiles:41
 msgid "debian/I<package>.bug-presubj"
-msgstr ""
+msgstr "debian/I<paquete>.bug-presubj"
 
 #. type: textblock
 #: dh_bugfiles:43
@@ -2586,6 +2848,11 @@ msgid ""
 "Debian Bug Tracking System. This file is installed as F<usr/share/bug/"
 "package/presubj> in the package build directory."
 msgstr ""
+"La herramienta de informe de fallos muestra el contenido de este fichero al "
+"usuario antes de permitir a este escribir informe de fallo del paquete en el "
+"sistema de seguimiento de fallos de Debian. El fichero se instala como "
+"F<usr/share/bug/package/presubj> en el directorio de construcción del "
+"paquete."
 
 #. type: textblock
 #: dh_bugfiles:56
@@ -2594,6 +2861,9 @@ msgid ""
 "package.bug-* files do not exist. Normally, debian/bug-* will be installed "
 "to the first package only."
 msgstr ""
+"Instala ficheros «debian/bug-*» en todos los paquetes afectados cuando los "
+"ficheros «debian/package.bug-*» no existen. Habitualmente, «debian/bug-*» "
+"sólo se instala en el primer paquete."
 
 # type: =item
 #. type: textblock
@@ -2615,9 +2885,8 @@ msgstr "Modestas Vainius <modestas@vainius.eu>"
 # type: textblock
 #. type: textblock
 #: dh_builddeb:5
-#, fuzzy
 msgid "dh_builddeb - build debian binary packages"
-msgstr "dh_builddeb - construye paquetes debian"
+msgstr "dh_builddeb - Construye paquetes binarios de Debian"
 
 # type: textblock
 #. type: textblock
@@ -2632,13 +2901,12 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_builddeb:18
-#, fuzzy
 msgid ""
 "dh_builddeb simply calls L<dpkg-deb(1)> to build a debian package or "
 "packages."
 msgstr ""
-"dh_builddeb simplemente llama a L<dpkg-deb(8)> para construir el paquete o "
-"paquetes Debian."
+"dh_builddeb simplemente invoca L<dpkg-deb(1)> para construir uno o varios "
+"paquetes de Debian."
 
 # type: textblock
 #. type: textblock
@@ -2647,8 +2915,8 @@ msgid ""
 "Use this if you want the generated .deb files to be put in a directory other "
 "than the default of \"..\""
 msgstr ""
-"Use esta opción si quiere que los ficheros .deb generados se dejen en un "
-"directorio distinto de \"..\""
+"Use esta opción si quiere que los ficheros «.deb» generados se dejen en un "
+"directorio distinto de «..»."
 
 # type: =item
 #. type: =item
@@ -2663,14 +2931,15 @@ msgid ""
 "Use this if you want to force the generated .deb file to have a particular "
 "file name. Does not work well if more than one .deb is generated!"
 msgstr ""
-"Use esta opción si quiere forzar un nombre para el fichero .deb generado. "
-"¡No funciona bien si se genera más de un .deb!"
+"Use esta opción si quiere forzar un nombre para el fichero «.deb» generado. "
+"¡No funciona bien si se genera más de un «.deb»!"
 
 # type: textblock
 #. type: textblock
 #: dh_builddeb:37
 msgid "Pass I<params> to L<dpkg-deb(1)> when it is used to build the package."
-msgstr "Pasa I<parámetros> a L<dpkg-deb(1)> cuando se construye el paquete."
+msgstr ""
+"Introduce los I<parámetros> a L<dpkg-deb(1)> cuando se construye el paquete."
 
 # type: =item
 #. type: =item
@@ -2684,12 +2953,14 @@ msgid ""
 "This is another way to pass I<params> to L<dpkg-deb(1)>.  It is deprecated; "
 "use B<--> instead."
 msgstr ""
+"Esta es otra manera de introducir I<parámetros> a L<dpkg-deb(1)>. Está "
+"obosoleta, use B<--> en su lugar."
 
 # type: textblock
 #. type: textblock
 #: dh_clean:5
 msgid "dh_clean - clean up package build directories"
-msgstr "dh_clean - limpia los directorios de construcción de los paquetes"
+msgstr "dh_clean - Limpia los directorios de construcción de paquetes"
 
 # type: textblock
 #. type: textblock
@@ -2704,7 +2975,7 @@ msgstr ""
 # type: verbatim
 #. type: verbatim
 #: dh_clean:18
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "dh_clean is a debhelper program that is responsible for cleaning up after a\n"
 "package is built. It removes the package build directories, and removes some\n"
@@ -2715,11 +2986,13 @@ msgid ""
 "\n"
 msgstr ""
 "dh_clean es un programa de debhelper responsable de limpiar ficheros y\n"
-"directorios temporales después de construir el paquete. Elimina los directorios\n"
-"de construcción del paquete, y otros ficheros incluyendo debian/files, y todos\n"
-"los ficheros auxiliares que han ido dejando otras órdenes de debhelper. También\n"
+"directorios temporales después de construir el paquete. Elimina los "
+"directorios\n"
+"de construcción del paquete, otros ficheros incluyendo debian/files y todos\n"
+"los ficheros auxiliares que han ido dejando otras órdenes de debhelper. "
+"También\n"
 "elimina ficheros comunes que no deberían aparecer en un diff de Debian:\n"
-"  #*# *~ DEADJOE *.orig *.rej *.SUMS TAGS core .deps/* *.P\n"
+"  #*# *~ DEADJOE *.orig *.rej *.SUMS TAGS .deps/* *.P *-stamp\n"
 "\n"
 
 #. type: textblock
@@ -2728,6 +3001,8 @@ msgid ""
 "It does not run \"make clean\" to clean up after the build process. Use "
 "L<dh_auto_clean(1)> to do things like that."
 msgstr ""
+"No ejecuta «make clean» para limpiar después del proceso de construcción. "
+"Para ello use L<dh_auto_clean(1)>."
 
 # type: textblock
 #. type: textblock
@@ -2736,20 +3011,19 @@ msgid ""
 "dh_clean (or \"dh clean\") should be the last debhelper command run in the "
 "clean target in debian/rules."
 msgstr ""
+"dh_clean (o «dh clean») debería ser la última orden de debhelper a ejecutar "
+"en el objetivo «clean» en «debian/rules»."
 
 #. type: =item
 #: dh_clean:35
 msgid "debian/clean"
-msgstr ""
+msgstr "debian/clean"
 
 # type: textblock
 #. type: textblock
 #: dh_clean:37
-#, fuzzy
 msgid "Can list other files to be removed."
-msgstr ""
-"Ficheros llamados debian/paquete.info pueden listar otros ficheros a "
-"instalar."
+msgstr "Puede listar otros ficheros que desea eliminar."
 
 # type: =item
 #. type: =item
@@ -2760,9 +3034,8 @@ msgstr "B<-k>, B<--keep>"
 # type: textblock
 #. type: textblock
 #: dh_clean:47
-#, fuzzy
 msgid "This is deprecated, use L<dh_prep(1)> instead."
-msgstr "Se desaconseja el uso de esta opción, use --name en su lugar."
+msgstr "Está obsoleta, use L<dh_prep(1)>en su lugar."
 
 # type: =item
 #. type: =item
@@ -2778,7 +3051,7 @@ msgid ""
 "all."
 msgstr ""
 "Sólo limpia los directorios de construcción del paquete, no limpia ningún "
-"otro tipo de ficheros en absoluto."
+"otro tipo de ficheros."
 
 # type: =item
 #. type: =item
@@ -2794,9 +3067,9 @@ msgid ""
 "deleted, even if they would normally be deleted. You may use this option "
 "multiple times to build up a list of things to exclude."
 msgstr ""
-"No borra los ficheros que contengan \"elemento\" en cualquier parte del "
-"nombre, incluso si normalmente hubiesen sido borrados. Puede usar esta "
-"opción si quiere excluir una lista de ficheros."
+"No borra los ficheros que contengan «elemento» en cualquier parte del "
+"nombre, incluso si se habrían borrado en condiciones normales. Puede usar "
+"esta opción varias veces para crear una lista de ficheros a excluir."
 
 # type: =item
 #. type: =item
@@ -2817,8 +3090,8 @@ msgstr "Borra también estos ficheros."
 msgid ""
 "dh_compress - compress files and fix symlinks in package build directories"
 msgstr ""
-"dh_compress - comprime ficheros y arregla enlaces simbólicos en los "
-"directorios de contrucción de los paquetes."
+"dh_compress - Comprime ficheros y arregla enlaces simbólicos en los "
+"directorios de construcción de los paquetes."
 
 # type: textblock
 #. type: textblock
@@ -2840,14 +3113,13 @@ msgid ""
 "new files."
 msgstr ""
 "dh_compress es un programa de debhelper responsable de comprimir los "
-"ficheros de los directorios de construcción del paquete, se asegura de que "
-"cualquier enlace simbólico que apuntaba a los ficheros antes de ser "
-"comprimidos es actualizado para apuntar a los nuevos ficheros."
+"ficheros en los directorios de construcción del paquete, y se asegura de que "
+"cualquier enlace simbólico que apuntaba a los ficheros antes la compresión "
+"se actualicen para apuntar a los nuevos ficheros."
 
 # type: textblock
 #. type: textblock
 #: dh_compress:24
-#, fuzzy
 msgid ""
 "By default, dh_compress compresses files that debian policy mandates should "
 "be compressed, namely all files in usr/share/info, usr/share/man, files in "
@@ -2857,30 +3129,28 @@ msgid ""
 "fonts underneath usr/share/fonts/X11/"
 msgstr ""
 "Por omisión, dh_compress comprime los ficheros que las normas de Debian "
-"obligan a comprimir, es decir, todos los ficheros en usr/share/info, usr/"
-"share/man, usr/X11R6/man, fichero en usr/share/doc mayores de 4k, (excepto "
-"el fichero de copyright, ficheros .html y .css, y ficheros que ya parezcan "
-"estar comprimidos basándose en sus extensiones), y todos los ficheros de "
-"registro de cambios. Además de los tipos de letra PCF debajo de usr/X11R6/"
-"lib/X11/fonts/"
+"obligan a comprimir, es decir, todos los ficheros en «usr/share/info», "
+"«usr/share/man», ficheros en «usr/share/doc» mayores de 4k, (excepto el "
+"fichero de derechos de autor, ficheros «.html» y «.css», y ficheros que ya "
+"parezcan estar comprimidos basándose en sus extensiones), y todos los "
+"ficheros de registro de cambios. Además de los tipos de letra PCF debajo de "
+"«usr/share/fonts/X11/»."
 
 #. type: =item
 #: dh_compress:35
 msgid "debian/I<package>.compress"
-msgstr ""
+msgstr "debian/I<paquete>.compress"
 
 # type: textblock
 #. type: textblock
 #: dh_compress:37
-#, fuzzy
 #| msgid "This mode is deprecated."
 msgid "These files are deprecated."
-msgstr "Este modo está desaconsejado."
+msgstr "Estos ficheros están obsoletos."
 
 # type: textblock
 #. type: textblock
 #: dh_compress:39
-#, fuzzy
 msgid ""
 "If this file exists, the default files are not compressed. Instead, the file "
 "is ran as a shell script, and all filenames that the shell script outputs "
@@ -2888,27 +3158,26 @@ msgid ""
 "build directory. Note though that using -X is a much better idea in general; "
 "you should only use a debian/package.compress file if you really need to."
 msgstr ""
-"Si existe un debian/package.compress, sin embargo, se ejecutará como un "
-"script de shell, y se comprimirán todos los ficheros que devuelva en vez de "
-"los ficheros predeterminados. El script de shell se ejecutará desde el "
-"interior del directorio de construcción del paquete. Dese cuenta de que usar "
-"la opción -X es generalmente una mejor idea, sólo debe usar el fichero "
-"debian/package.compress cuando sea realmente necesario"
+"No se comprimirán los ficheros predeterminados si existe este fichero. Sin "
+"embargo, se ejecutará como un script de consola, y se comprimirán todos los "
+"ficheros que devuelva en vez de los ficheros predeterminados. El script de "
+"consola se ejecutará desde el interior del directorio de construcción del "
+"paquete. Tenga en cuenta que usar la opción «-X» es generalmente una mejor "
+"idea, sólo debe usar el fichero «debian/paquete.compress» cuando sea "
+"realmente necesario"
 
 # type: textblock
 #. type: textblock
 #: dh_compress:54
-#, fuzzy
 msgid ""
 "Exclude files that contain \"item\" anywhere in their filename from being "
 "compressed. For example, -X.tiff will exclude tiff files from compression.  "
 "You may use this option multiple times to build up a list of things to "
 "exclude."
 msgstr ""
-"Los ficheros que contengan \"elemento\" en cualquier parte de su nombre no "
-"se comprimirán. Por ejemplo, -X.jpeg excluirá los jpeg's. Se puede usar esta "
-"opción varias veces para excluir una lista de elementos. También puede usar "
-"el fichero debian/compress para realizarlo, pero esto es más sencillo."
+"Los ficheros que contengan «elemento» en cualquier parte de su nombre no se "
+"comprimirán. Por ejemplo, -«X.tiff» excluirá los ficheros tiff. Se puede "
+"usar esta opción varias veces para excluir una lista de elementos."
 
 # type: textblock
 #. type: textblock
@@ -2918,7 +3187,7 @@ msgid ""
 "acted on."
 msgstr ""
 "Comprime todos los ficheros especificados en los parámetros de la línea de "
-"órdenesen TODOS los paquetes sobre los que se actúa."
+"órdenes en TODOS los paquetes sobre los que se actúa."
 
 # type: textblock
 #. type: textblock
@@ -2941,14 +3210,13 @@ msgstr "Normas de Debian, versión 3.0"
 #. type: textblock
 #: dh_desktop:5
 msgid "dh_desktop - deprecated no-op"
-msgstr ""
+msgstr "dh_desktop - Nop obsoleto"
 
 # type: textblock
 #. type: textblock
 #: dh_desktop:14
-#, fuzzy
 msgid "B<dh_desktop> [S<I<debhelper options>>]"
-msgstr "B<dh_testroot> [S<I<opciones debhelper>>]"
+msgstr "B<dh_desktop> [S<I<opciones-de-debhelper>>]"
 
 #. type: textblock
 #: dh_desktop:18
@@ -2956,6 +3224,8 @@ msgid ""
 "dh_desktop was a debhelper program that registers .desktop files.  However, "
 "it no longer does anything, and is now deprecated."
 msgstr ""
+"dh_desktop es un programa de debhelper que registra ficheros «.desktop». Sin "
+"embargo, ya no hace nada y ha quedado obsoleto."
 
 #. type: textblock
 #: dh_desktop:21
@@ -2964,12 +3234,15 @@ msgid ""
 "correct location (/usr/share/applications) and they will be registered by "
 "the appropriate tools for the corresponding desktop environments."
 msgstr ""
+"Si un paquete proporciona ficheros «desktop», sólo se tiene que instalar en "
+"la ubicación correcta («/usr/share/applications)») y se registrarán mediante "
+"las herramientas apropiadas a cada entorno de escritorio."
 
 # type: textblock
 #. type: textblock
 #: dh_desktop:33 dh_icons:67 dh_scrollkeeper:30
 msgid "L<debhelper>"
-msgstr "L<debhelper(7)>"
+msgstr "L<debhelper>"
 
 # type: textblock
 #. type: textblock
@@ -2982,14 +3255,14 @@ msgstr "Ross Burton <ross@burtonini.com>"
 #: dh_fixperms:5
 msgid "dh_fixperms - fix permissions of files in package build directories"
 msgstr ""
-"dh_fixperms - arregla los permisos de los ficheros en los directorios de "
+"dh_fixperms - Arregla los permisos de los ficheros en los directorios de "
 "construcción."
 
 # type: textblock
 #. type: textblock
 #: dh_fixperms:14
 msgid "B<dh_fixperms> [S<I<debhelper options>>] [B<-X>I<item>]"
-msgstr "B<dh_fixperms> [S<I<debhelper opciones>>] [B<-X>I<elemento>]"
+msgstr "B<dh_fixperms> [S<I<opciones-de-debhelper>>] [B<-X>I<elemento>]"
 
 # type: textblock
 #. type: textblock
@@ -3006,7 +3279,6 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_fixperms:22
-#, fuzzy
 msgid ""
 "dh_fixperms makes all files in usr/share/doc in the package build directory "
 "(excluding files in the examples/ directory) be mode 644. It also changes "
@@ -3017,14 +3289,16 @@ msgid ""
 "sbin directories, usr/games/ and etc/init.d executable (since v4). Finally, "
 "it removes the setuid and setgid bits from all files in the package."
 msgstr ""
-"dh_fixperms hace que el modo de todos los ficheros en usr/share/doc en el "
+"dh_fixperms hace que el modo de todos los ficheros en« usr/share/doc» en el "
 "directorio de construcción del paquete (excluyendo los ficheros en el "
-"directorio examples/) se 644. También cambia el modo de las páginas del "
-"manual a 644. Hace que todos los ficheros pertenezcan al superusuario y "
-"elimina los permisos de escritura del grupo y de otros. Elimina los permisos "
-"de ejecución de cualquier biblioteca. Hace ejecutables todos los ficheros en "
-"bin/, /usr/games/ y en etc/init.d (sólo v4). Finalmente, elimina los bit "
-"setuid y setgid de todos los ficheros en el paquete."
+"directorio «examples/)» tengan el modo 644. También cambia el modo de las "
+"páginas del manual a 644. Hace que todos los ficheros pertenezcan al "
+"administrador y elimina los permisos de escritura de grupo y de otros. "
+"Elimina los permisos de ejecución de cualquier biblioteca, paquetes para el "
+"desarrollo («headers»), modulos de Perl o ficheros «desktop» que lo puedan "
+"tener. Hace ejecutables todos los ficheros en «bin/», «/usr/games/» y "
+"«etc/init.d» (sólo v4). Finalmente, elimina los bit setuid y setgid de todos "
+"los ficheros en el paquete."
 
 # type: =item
 #. type: =item
@@ -3040,76 +3314,76 @@ msgid ""
 "their permissions changed. You may use this option multiple times to build "
 "up a list of things to exclude."
 msgstr ""
-"No se cambian los permisos de los ficheros que contengan \"elemento\" en su "
+"No se cambian los permisos de los ficheros que contengan «elemento» en su "
 "nombre. Puede usar la opción varias veces para construir una lista de "
 "ficheros a excluir."
 
 # type: textblock
 #. type: textblock
 #: dh_gconf:5
-#, fuzzy
 #| msgid "dh_gconf - generate GConf schema registration scripts"
 msgid "dh_gconf - install GConf defaults files and register schemas"
-msgstr "dh_gconf - genera scripts para registrar esquemas de GConf"
+msgstr ""
+"dh_gconf - Instala ficheros de valores predeterminados de GConf y registra "
+"esquemas"
 
 # type: textblock
 #. type: textblock
 #: dh_gconf:14
-#, fuzzy
 msgid "B<dh_gconf> [S<I<debhelper options>>] [B<--priority=<number>>]"
-msgstr "B<dh_gconf> [S<I<opciones debhelper>>] [B<-p<paquete>>]"
+msgstr "B<dh_gconf> [S<I<opciones-de-debhelper>>] [B<--priority=<número>>]"
 
 # type: textblock
 #. type: textblock
 #: dh_gconf:18
-#, fuzzy
 #| msgid ""
 #| "dh_gconf is a debhelper program that is responsible for registering GConf "
 #| "schemas."
 msgid ""
 "dh_gconf is a debhelper program that is responsible for installing GConf "
 "defaults files and registering GConf schemas."
-msgstr "dh_gconf es un programa de debhelper que registra esquemas de GConf."
+msgstr ""
+"dh_gconf es un programa de debhelper responsable de la instalación de "
+"ficheros de valores pretederminados de GConf («defaults») y de registrar "
+"esquemas de GConf."
 
 #. type: textblock
 #: dh_gconf:21
 msgid ""
 "An appropriate dependency on gconf2 will be generated in ${misc:Depends}."
-msgstr ""
+msgstr "Se generará una dependencia apropiada sobre gconf2 en ${misc:Depends}."
 
 #. type: =item
 #: dh_gconf:27
 msgid "debian/I<package>.gconf-defaults"
-msgstr ""
+msgstr "debian/I<paquete>.gconf-defaults"
 
 # type: textblock
 #. type: textblock
 #: dh_gconf:29
-#, fuzzy
 msgid ""
 "Installed into usr/share/gconf/defaults/10_package in the package build "
 "directory, with \"I<package>\" replaced by the package name."
 msgstr ""
-"Si existe un fichero llamado debian/paquete.default, se instala en etc/"
-"default/paquete en el directorio de construcción del paquete, con \"paquete"
-"\" reemplazado por el nombre del paquete."
+"Se instala en «usr/share/gconf/defaults/10_paquete» en el directorio de "
+"construcción del paquete, con I<paquete> reemplazado por el nombre del "
+"paquete."
 
 #. type: =item
 #: dh_gconf:32
 msgid "debian/I<package>.gconf-mandatory"
-msgstr ""
+msgstr "debian/I<paquete>.gconf-mandatory"
 
 # type: textblock
 #. type: textblock
 #: dh_gconf:34
-#, fuzzy
 msgid ""
 "Installed into usr/share/gconf/mandatory/10_package in the package build "
 "directory, with \"I<package>\" replaced by the package name."
 msgstr ""
-"Si existe un fichero llamado debian/paquete.default, se instala en etc/"
-"default/paquete en el directorio de construcción del paquete, con \"paquete"
-"\" reemplazado por el nombre del paquete."
+"Se instala en «usr/share/gconf/mandatory/10_paquete» en el directorio de "
+"construcción del paquete, con I<paquete> reemplazado por el nombre del "
+"paquete."
 
 # type: =item
 #. type: =item
@@ -3120,11 +3394,16 @@ msgstr "B<--priority> I<prioridad>"
 # type: textblock
 #. type: textblock
 #: dh_gconf:45
+#, fuzzy
 msgid ""
 "Use I<priority> (which should be a 2-digit number) as the defaults priority "
 "instead of 10. Higher values than ten can be used by derived distributions "
 "(20), CDD distributions (50), or site-specific packages (90)."
 msgstr ""
+"Usa I<prioridad> (que debería ser un número de dos dígitos) como la "
+"prioridad predeterminada, en lugar de 10. Otros pueden usar valores "
+"superiores a 10, como las distribuciones derivadas (20), distribuciones CDD "
+"(50) y paquetes específicos de sitio (90)."
 
 # type: textblock
 #. type: textblock
@@ -3136,13 +3415,13 @@ msgstr "Ross Burton <ross@burtonini.com> Josselin Mouette <joss@debian.org>"
 #. type: textblock
 #: dh_gencontrol:5
 msgid "dh_gencontrol - generate and install control file"
-msgstr "dh_gencontrol - genera e instala el fichero de control"
+msgstr "dh_gencontrol - Genera e instala el fichero de control"
 
 # type: textblock
 #. type: textblock
 #: dh_gencontrol:14
 msgid "B<dh_gencontrol> [S<I<debhelper options>>] [S<B<--> I<params>>]"
-msgstr "B<dh_gencontrol> [S<I<opciones debhelper>>] [S<B<--> I<parámetros>>]"
+msgstr "B<dh_gencontrol> [S<I<opciones-de-debhelper>>] [S<B<--> I<parámetros>>]"
 
 # type: textblock
 #. type: textblock
@@ -3158,21 +3437,20 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_gencontrol:22
-#, fuzzy
 msgid ""
 "This program is merely a wrapper around L<dpkg-gencontrol(1)>, which calls "
 "it once for each package being acted on, and passes in some additional "
 "useful flags."
 msgstr ""
-"El programa es simplemente un envoltorio alrededor de L<dpkg-gencontrol(1)>, "
-"al que llama una vez por cada programa sobre el que actúa, y le pasa algunas "
-"opciones adicionales útiles, incluyendo \"-isp\"."
+"El programa es simplemente una interfaz para L<dpkg-gencontrol(1)>, al que "
+"invoca una vez por cada paquete sobre el que actúa, introduciendo algunas "
+"opciones adicionales útiles."
 
 # type: textblock
 #. type: textblock
 #: dh_gencontrol:32
 msgid "Pass \"params\" to L<dpkg-gencontrol(1)>."
-msgstr "Pasa \"parámetros\" a L<dpkg-gencontrol(1)>."
+msgstr "Pasa «parámetros» a L<dpkg-gencontrol(1)>."
 
 # type: =item
 #. type: =item
@@ -3183,20 +3461,18 @@ msgstr "B<-u>I<parámetros>, B<--dpkg-gencontrol-params>I<parámetros>"
 #. type: textblock
 #: dh_icons:5
 msgid "dh_icons - Update Freedesktop icon caches"
-msgstr ""
+msgstr "dh_icons - Actualiza el almacén de iconos Freedesktop"
 
 # type: textblock
 #. type: textblock
 #: dh_icons:15
-#, fuzzy
 #| msgid "B<dh_installmime> [S<I<debhelper options>>] [B<-n>]"
 msgid "B<dh_icons> [S<I<debhelper options>>] [B<-n>]"
-msgstr "B<dh_installmime> [S<I<opciones debhelper>>] [B<-n>]"
+msgstr "B<dh_icons> [S<I<opciones-de-debhelper>>] [B<-n>]"
 
 # type: textblock
 #. type: textblock
 #: dh_icons:19
-#, fuzzy
 #| msgid ""
 #| "dh_desktop is a debhelper program that registers .desktop files.  "
 #| "Currently this program does not handle installation of the files, though "
@@ -3209,10 +3485,12 @@ msgid ""
 "may do so at a later date. It takes care of adding maintainer script "
 "fragments to call F<update-icon-caches>."
 msgstr ""
-"dh_desktop es un programa de debhelper que registra ficheros .desktop.  En "
-"la actualidad no gestiona la instalación de los ficheros, aunque puede que "
-"lo haga en un futuro. Se preocupa de añadir los fragmentos necesario para "
-"llamar a F<update-desktop-database> en los scripts del desarrollador."
+"dh_desktop es un programa de debhelper que actualiza los almacenes de iconos "
+"Freedesktop cuando es necesario, usando el progrma update-icon-caches "
+"proporcionado por GTK+2.12. En el momento presente, el programa no gestiona "
+"la instalación de los ficheros, aunque puede que lo haga en el futuro. Se "
+"encarga de añadir fragmentos de script de encargado de paquete para invocar "
+"F<update-icon-caches>."
 
 # type: =item
 #. type: =item
@@ -3226,10 +3504,9 @@ msgstr "B<-n>, B<--noscripts>"
 # type: textblock
 #. type: textblock
 #: dh_icons:31
-#, fuzzy
 #| msgid "Do not modify postinst/prerm scripts."
 msgid "Do not modify maintainer scripts."
-msgstr "No modifica los scripts de postinst/prerm."
+msgstr "No modifica los scripts de mantenedor."
 
 # type: textblock
 #. type: textblock
@@ -3246,7 +3523,7 @@ msgstr ""
 #: dh_install:5
 msgid "dh_install - install files into package build directories"
 msgstr ""
-"dh_install - instala ficheros en los directorios de construcción del paquete"
+"dh_install - Instala ficheros en los directorios de construcción del paquete"
 
 # type: textblock
 #. type: textblock
@@ -4941,9 +5218,8 @@ msgstr "B<-r>, B<--no-restart-on-upgrade>"
 # type: textblock
 #. type: textblock
 #: dh_installinit:81
-#, fuzzy
 msgid "Do not stop init script on upgrade."
-msgstr "No reinicia el script de init después de una actualización."
+msgstr "No detiene el script de init durante una actualización."
 
 # type: =item
 #. type: =item
