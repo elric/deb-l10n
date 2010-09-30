@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2010-08-07 11:36-0300\n"
-"PO-Revision-Date: 2010-09-30 11:12+0200\n"
+"PO-Revision-Date: 2010-09-30 13:56+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -4660,7 +4660,7 @@ msgid ""
 "installed. Note that this includes doc-base files."
 msgstr ""
 "Excluye ficheros que contienen «elemento» en cualquier lugar de su nombre. "
-"Tenga en cuenta qeu esto incluyue fichero de doc-base."
+"Tenga en cuenta que esto incluye ficheros de doc-base."
 
 # type: =item
 #. type: =item
@@ -4677,6 +4677,12 @@ msgid ""
 "exists when B<dh_installdocs> is run. To comply with policy, I<package> must "
 "be a binary package that comes from the same source package."
 msgstr ""
+"Hace que el directorio de documentación de todos los paquetes sobre los que "
+"se actúa sea un enlace simbólico al directorio de documentación del "
+"I<paquete>. No tiene efecto cuando se actúa sobre el mismo I<paquete>, o si "
+"el directorio de documentación a crear ya existe al ejecutar "
+"B<dh_installdocs>. Para cumplir las normas, el I<<paquete> debe ser un "
+"paquete binario que se origina del mismo paquete de fuentes."
 
 #. type: textblock
 #: dh_installdocs:82
@@ -4687,6 +4693,11 @@ msgid ""
 "directories, and copyright, changelog, README.Debian, and TODO files will "
 "not be installed."
 msgstr ""
+"debhelper intentará evitar instalar ficheros en directorios de documentación "
+"enlazados que podrían causar un conflicto con el paquete enlazado. La "
+"opción B<-A> no tendrá efecto sobre los paquetes con directorios de "
+"documentación enlazados, y no se instalarán los ficheros «copyright», "
+"«changelog», «README.Debian» y «TODO»."
 
 #. type: textblock
 #: dh_installdocs:88
@@ -4695,6 +4706,8 @@ msgid ""
 "to make the documentation directory of a package be a dangling symlink, "
 "before calling dh_installdocs.)"
 msgstr ""
+"(Otro método, aún permitido, es hacer del directorio de documentación un "
+"enlace simbólico colgante, «dangling», antes de invocar dh_installdocs.)"
 
 # type: textblock
 #. type: textblock
@@ -4742,15 +4755,15 @@ msgid ""
 "you ask it to (similar to cp -a). If it is asked to install a directory, it "
 "will install the complete contents of the directory."
 msgstr ""
-"Dese cuenta de que dh_installdocs copiará alegremente jerarquías de "
-"directorios enteras si usted lo pide (similar a -a). Si se le pide instalar "
-"un directorio instalará todos sus contenidos."
+"Tenga en cuenta que dh_installdocs copiará sin problemas jerarquías de "
+"directorio enteras si se le pide (similar a «cp -a»). Si le pide instalar un "
+"directorio instalará todos los contenidos de éste."
 
 # type: textblock
 #. type: textblock
 #: dh_installemacsen:5
 msgid "dh_installemacsen - register an emacs add on package"
-msgstr "dh_installemacsen - registra un paquete añadido para emacs"
+msgstr "dh_installemacsen - Registra un paquete añadido para emacs"
 
 # type: textblock
 #. type: textblock
@@ -4759,8 +4772,8 @@ msgid ""
 "B<dh_installemacsen> [S<I<debhelper options>>] [B<-n>] [B<--priority=>I<n>] "
 "[B<--flavor=>I<foo>]"
 msgstr ""
-"B<dh_installemacsen> [S<I<opciones debhelper>>] [B<-n>] [B<--priority=>I<n>] "
-"[B<--flavor=>I<tal>]"
+"B<dh_installemacsen> [S<I<opciones-de-debhelper>>] [B<-n>] "
+"[B<--priority=>I<n>] [B<--flavor=>I<foo>]"
 
 # type: textblock
 #. type: textblock
@@ -4777,16 +4790,17 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_installemacsen:22
-#, fuzzy
 msgid ""
 "It also automatically generates the postinst and prerm commands needed to "
 "register a package as an emacs add on package. The commands are added to the "
 "maintainer scripts by dh_installdeb. See L<dh_installdeb(1)> for an "
 "explanation of how this works."
 msgstr ""
-"Además genera automáticamente las órdenes de postinst y prerm necesarios "
-"para registrar el paquete como un añadido para emacs. Lea L<dh_installdeb(1)"
-"> para una explicación acerca de como funciona esto."
+"Además, genera automáticamente las órdenes de «postinst» y «prerm» "
+"necesarios para registrar el paquete como una extensión para emacs. Las "
+"órdenes se añaden a los scripts de desarollador mediante dh_installdeb. "
+"Consulte L<dh_installdeb(1)> para una explicación acerca de su "
+"funcionamiento."
 
 #. type: =item
 #: dh_installemacsen:31
@@ -4796,13 +4810,12 @@ msgstr "debian/I<paquete>.emacsen-install"
 # type: textblock
 #. type: textblock
 #: dh_installemacsen:33
-#, fuzzy
 msgid ""
 "Installed into usr/lib/emacsen-common/packages/install/package in the "
 "package build directory."
 msgstr ""
-"Si existe un fichero llamado debian/package.pam, se instala en etc/pam.d/"
-"paquete en el directorio de construcción del paquete."
+"Instalado en «usr/lib/emacsen-common/packages/install/paquete» en el "
+"directorio de construcción del paquete."
 
 #. type: =item
 #: dh_installemacsen:36
@@ -4815,6 +4828,8 @@ msgid ""
 "Installed into usr/lib/emacsen-common/packages/remove/package in the package "
 "build directory."
 msgstr ""
+"Instalado en «usr/lib/emacsen-common/packages/remove/paquete» en el "
+"directorio de construcción del paquete."
 
 #. type: =item
 #: dh_installemacsen:41
@@ -4827,12 +4842,15 @@ msgid ""
 "Installed into etc/emacs/site-start.d/50I<package>.el in the package build "
 "directory. Use --priority to use a different priority than 50."
 msgstr ""
+"Instalado en «etc/emacs/site-start.d/50I<paquete>.el» en el directorio de "
+"construcción del paquete. Use «--priority» para definir una prioridad "
+"distinta de 50."
 
 # type: textblock
 #. type: textblock
 #: dh_installemacsen:54
 msgid "Do not modify postinst/prerm scripts."
-msgstr "No modifica los scripts de postinst/prerm."
+msgstr "No modifica los scripts postinst/prerm."
 
 # type: =item
 #. type: =item
@@ -4845,14 +4863,14 @@ msgstr "B<--priority=>I<n>"
 #: dh_installemacsen:58
 msgid "Sets the priority number of a site-start.d file. Default is 50."
 msgstr ""
-"Establece el número de prioridad de un fichero site-start.d. 50 es el número "
+"Define el número de prioridad de un fichero site-start.d. 50 es el número "
 "predeterminado."
 
 # type: =item
 #. type: =item
 #: dh_installemacsen:60
 msgid "B<--flavor=>I<foo>"
-msgstr "B<--flavor=>I<tal>"
+msgstr "B<--flavor=>I<foo>"
 
 # type: textblock
 #. type: textblock
@@ -4861,8 +4879,8 @@ msgid ""
 "Sets the flavor a site-start.d file will be installed in. Default is \"emacs"
 "\", alternatives include \"xemacs\" and \"emacs20\"."
 msgstr ""
-"Establece el sabor para el cual se instalará el fichero site-start.d. Por "
-"omisión es \"emacs\", las alternativas son \"xemacs\" y \"emacs20\"."
+"Define el sabor para el cual se instalará el fichero site-start.d. Por "
+"omisión es «emacs», las alternativas son «xemacs» y «emacs20»."
 
 # type: textblock
 #. type: textblock
@@ -4880,8 +4898,8 @@ msgid ""
 "B<dh_installexamples> [S<I<debhelper options>>] [B<-A>] [B<-X>I<item>] "
 "[S<I<file ...>>]"
 msgstr ""
-"B<dh_installexamples> [S<I<opciones debhelper>>] [B<-A>] [B<-X>I<elemento>] "
-"[S<I<fichero ...>>]"
+"B<dh_installexamples> [S<I<opciones-de-debhelper>>] [B<-A>] "
+"[B<-X>I<elemento>] [S<I<fichero ...>>]"
 
 # type: textblock
 #. type: textblock
@@ -4890,22 +4908,20 @@ msgid ""
 "dh_installexamples is a debhelper program that is responsible for installing "
 "examples into usr/share/doc/package/examples in package build directories."
 msgstr ""
-"dh_installexamples es un programa de debhelper responsable responsable de "
-"instalar ejemplos en usr/share/doc/paquete/examples en los directorios de "
+"dh_installexamples es un programa de debhelper responsable de instalar "
+"ejemplos en «usr/share/doc/paquete/examples» en los directorios de "
 "construcción del paquete."
 
 #. type: =item
 #: dh_installexamples:26
 msgid "debian/I<package>.examples"
-msgstr ""
+msgstr "debian/I<paquete>.examples"
 
 # type: textblock
 #. type: textblock
 #: dh_installexamples:28
-#, fuzzy
 msgid "Lists example files or directories to be installed."
-msgstr ""
-"Los ficheros debian/paquete.docs pueden listar otros ficheros a instalar."
+msgstr "Lista ficheros de ejemplo o directorios a instalar."
 
 # type: textblock
 #. type: textblock
@@ -4915,18 +4931,17 @@ msgid ""
 "on."
 msgstr ""
 "Instala todos los ficheros especificados en los parámetros de la línea de "
-"órdenes en TODOS los paquetes sobre los que actúe."
+"órdenes en TODOS los paquetes sobre los que actúa."
 
 # type: textblock
 #. type: textblock
 #: dh_installexamples:48
-#, fuzzy
 msgid ""
 "Install these files (or directories) as examples into the first package "
 "acted on. (Or into all packages if -A is specified.)"
 msgstr ""
-"Instala esos ficheros como documentación en el primer paquete sobre el que "
-"actúe. (O en todos si se especifica B<-A>)."
+"Instala esos ficheros (o directorios) como ejemplos en el primer paquete "
+"sobre el que actúa. (O en todos si se define «-A»)."
 
 # type: textblock
 #. type: textblock
@@ -4936,9 +4951,9 @@ msgid ""
 "if you ask it to (similar to cp -a). If it is asked to install a directory, "
 "it will install the complete contents of the directory."
 msgstr ""
-"Dese cuenta de que dh_installexamples copiará alegremente jerarquías de "
-"directorios enteras si usted lo pide (similar a -a). Si se le pide instalar "
-"un directorio instalará todos sus contenidos."
+"Tenga en cuenta que dh_installexamples copiará directamente jerarquías de "
+"directorio enteras si se le pide (similar a «cp -a»). Si le pide instalar un "
+"directorio instalará todos sus contenidos."
 
 # type: textblock
 #. type: textblock
@@ -4946,7 +4961,7 @@ msgstr ""
 #, fuzzy
 #| msgid "dh_installppp - install ppp ip-up and ip-down files"
 msgid "dh_installifupdown - install if-up and if-down hooks"
-msgstr "dh_installppp - instala los ficheros ip-up e ip-down de ppp"
+msgstr "dh_installifupdown - install if-up and if-down hooks"
 
 # type: textblock
 #. type: textblock
@@ -4973,40 +4988,37 @@ msgstr ""
 # type: =item
 #. type: =item
 #: dh_installifupdown:26
-#, fuzzy
 msgid "debian/I<package>.if-up"
-msgstr "dh_makeshlibs"
+msgstr "debian/I<paquete>.if-up"
 
 #. type: =item
 #: dh_installifupdown:28
 msgid "debian/I<package>.if-down"
-msgstr ""
+msgstr "debian/I<paquete>.if-down"
 
 #. type: =item
 #: dh_installifupdown:30
 msgid "debian/I<package>.if-pre-up"
-msgstr ""
+msgstr "debian/I<paquete>.if-pre-up"
 
 #. type: =item
 #: dh_installifupdown:32
 msgid "debian/I<package>.if-post-down"
-msgstr ""
+msgstr "debian/I<paquete>.if-post-down"
 
 # type: textblock
 #. type: textblock
 #: dh_installifupdown:34
-#, fuzzy
 msgid ""
 "These files are installed into etc/network/if-*.d/I<package> in the package "
 "build directory."
 msgstr ""
-"Si existe un fichero llamado debian/package.pam, se instala en etc/pam.d/"
-"paquete en el directorio de construcción del paquete."
+"Estos ficheros se instalan en «etc/network/if-*.d/I<paquete>» en el "
+"directorio de construcción del paquete."
 
 # type: textblock
 #. type: textblock
 #: dh_installifupdown:45
-#, fuzzy
 #| msgid ""
 #| "Look for files named debian/package.name.ppp.ip-* and install them as etc/"
 #| "ppp/ip-*/name, instead of using the usual files and installing them as "
@@ -5016,46 +5028,42 @@ msgid ""
 "network/if-*/name, instead of using the usual files and installing them as "
 "the package name."
 msgstr ""
-"Busca ficheros llamados debian/paquete.nombre.ppp.ip-* y los instala como "
-"etc/ppp/ip-*/nombre, en vez de usar los ficheros usuales e instalarlos con "
-"el nombre del paquete."
+"Busca ficheros llamados «debian/paquete.nombre.if-*» y los instala como "
+"«etc/network/if-*/nombre», en vez de usar los ficheros usuales e instalarlos "
+"con el nombre del paquete."
 
 # type: textblock
 #. type: textblock
 #: dh_installinfo:5
-#, fuzzy
 msgid "dh_installinfo - install info files"
-msgstr "dh_installinfo - instala y registra ficheros info"
+msgstr "dh_installinfo - Instala ficheros info"
 
 # type: textblock
 #. type: textblock
 #: dh_installinfo:14
-#, fuzzy
 msgid "B<dh_installinfo> [S<I<debhelper options>>] [B<-A>] [S<I<file ...>>]"
 msgstr ""
-"B<dh_installinfo> [S<I<opciones debhelper>>] [B<-A>] [B<-n>] [S<I<fichero ..."
-">>]"
+"B<dh_installinfo> [S<I<opciones-de-debhelper>>] [B<-A>] [S<I<fichero ...>>]"
 
 # type: textblock
 #. type: textblock
 #: dh_installinfo:18
-#, fuzzy
 msgid ""
 "dh_installinfo is a debhelper program that is responsible for installing "
 "info files into usr/share/info in the package build directory."
 msgstr ""
-"dh_installmime es un programa de debhelper responsable de instalar ficheros "
-"mime en los directorios de construcción del paquete."
+"dh_installinfo es un programa de debhelper responsable de instalar ficheros "
+"infor en «usr/share/info» en el directorio de construcción del paquete."
 
 #. type: =item
 #: dh_installinfo:25
 msgid "debian/I<package>.info"
-msgstr ""
+msgstr "debian/I<paquete>.info"
 
 #. type: textblock
 #: dh_installinfo:27
 msgid "List info files to be installed."
-msgstr ""
+msgstr "Lista los ficheros info a instalar."
 
 # type: textblock
 #. type: textblock
@@ -5064,43 +5072,42 @@ msgid ""
 "Install these info files into the first package acted on. (Or in all "
 "packages if -A is specified)."
 msgstr ""
-"Instala estos ficheros info en el primer paquete sobre el que actúe. (O en "
-"todos los paquete si se especifica -A)."
+"Instala estos ficheros info en el primer paquete sobre el que actúa. (O en "
+"todos los paquete si se define «-A»)."
 
 # type: textblock
 #. type: textblock
 #: dh_installinit:5
-#, fuzzy
 msgid ""
 "dh_installinit - install upstart jobs or init scripts into package build "
 "directories"
 msgstr ""
-"dh_installinit - instala scripts de init en los directorios de construcción"
+"dh_installinit - Instala tareas de upstart o scripts de init en los "
+"directorios de construcción del paquete"
 
 # type: textblock
 #. type: textblock
 #: dh_installinit:14
-#, fuzzy
 msgid ""
 "B<dh_installinit> [S<I<debhelper options>>] [B<--name=>I<name>] [B<-n>] [B<-"
 "R>] [B<-r>] [B<-d>] [B<-O>] [S<B<--> I<params>>]"
 msgstr ""
-"B<dh_installinit> [S<I<opciones debhelper>>] [B<--name=>I<nombre>] [B<-n>] "
-"[B<-r>] [B<-d>] [S<B<--> I<parámetros>>]"
+"B<dh_installinit> [S<I<opciones-de-debhelper>>] [B<--name=>I<nombre>] "
+"[B<-n>] [B<-R>] [B<-r>] [B<-d>] [B<-O>] [S<B<--> I<parámetros>>]"
 
 # type: textblock
 #. type: textblock
 #: dh_installinit:18
-#, fuzzy
 msgid ""
 "dh_installinit is a debhelper program that is responsible for installing "
 "upstart job files or init scripts with associated defaults files into "
 "package build directories, and in the former case providing compatibility "
 "handling for non-upstart systems."
 msgstr ""
-"dh_installinit es un programa de debhelper responsable de instalar scripts "
-"de init y asociar los ficheros predeterminados en los directorios de "
-"construcción del paquete."
+"dh_installinit es un programa de debhelper responsable de instalar ficheros "
+"de tareas de upstart o scripts de init con ficheros predeterminados "
+"asociados en los directorios de construcción del paquete, y en el primer "
+"caso, de proporcionar compatibilidad con sistemas diferentes de upstart."
 
 # type: textblock
 #. type: textblock
@@ -5110,63 +5117,60 @@ msgid ""
 "needed to set up the symlinks in /etc/rc*.d/ and to start and stop the init "
 "scripts."
 msgstr ""
-"Además genera automáticamente las órdenes de postrm y prerm necesarias para "
-"crear los enlaces simbólicos en /etc/rc*.d/ y arrancar y parar los scripts "
-"de init."
+"Además, genera automáticamente las órdenes de «postinst», «postrm» y «prerm» "
+"necesarias para crear los enlaces simbólicos en «/etc/rc*.d/» y arrancar y "
+"parar los scripts de init."
 
 #. type: =item
 #: dh_installinit:31
 msgid "debian/I<package>.upstart"
-msgstr ""
+msgstr "debian/I<paquete>.upstart"
 
 # type: textblock
 #. type: textblock
 #: dh_installinit:33
-#, fuzzy
 msgid ""
 "If this exists, it is installed into etc/init/I<package>.conf in the package "
 "build directory."
 msgstr ""
-"Si existe un fichero llamado debian/package.pam, se instala en etc/pam.d/"
-"paquete en el directorio de construcción del paquete."
+"Si existe, se instala en «etc/init/I<paquete>.conf» en el directorio de "
+"construcción del paquete."
 
 #. type: =item
 #: dh_installinit:36
 msgid "debian/I<package>.init"
-msgstr ""
+msgstr "debian/I<paquete>.init"
 
 # type: textblock
 #. type: textblock
 #: dh_installinit:38
-#, fuzzy
 msgid ""
 "Otherwise, if this exists, it is installed into etc/init.d/I<package> in the "
 "package build directory."
 msgstr ""
-"Si existe un fichero llamado debian/package.pam, se instala en etc/pam.d/"
-"paquete en el directorio de construcción del paquete."
+"De lo contrario, si esto existe, se instalará en «etc/init.d/I<paquete>» en "
+"el directorio de construcción del paquete."
 
 #. type: =item
 #: dh_installinit:41
 msgid "debian/I<package>.default"
-msgstr ""
+msgstr "debian/I<paquete>.default"
 
 # type: textblock
 #. type: textblock
 #: dh_installinit:43
-#, fuzzy
 msgid ""
 "If this exists, it is installed into etc/default/I<package> in the package "
 "build directory."
 msgstr ""
-"Si existe un fichero llamado debian/package.pam, se instala en etc/pam.d/"
-"paquete en el directorio de construcción del paquete."
+"Si esto existe, se instala en «etc/default/I<paquete>» en el directorio de "
+"construcción del paquete."
 
 # type: textblock
 #. type: textblock
 #: dh_installinit:54
 msgid "Do not modify postinst/postrm/prerm scripts."
-msgstr "No modifica los scripts de postinst/postrm/prerm."
+msgstr "No modifica los scripts postinst/postrm/prerm."
 
 # type: =item
 #. type: =item
@@ -5393,32 +5397,32 @@ msgstr ""
 #. type: =item
 #: dh_installlogcheck:25
 msgid "debian/I<package>.logcheck.cracking"
-msgstr ""
+msgstr "debian/I<paquete>.logcheck.cracking"
 
 #. type: =item
 #: dh_installlogcheck:27
 msgid "debian/I<package>.logcheck.violations"
-msgstr ""
+msgstr "debian/I<paquete>.logcheck.violations"
 
 #. type: =item
 #: dh_installlogcheck:29
 msgid "debian/I<package>.logcheck.violations.ignore"
-msgstr ""
+msgstr "debian/I<paquete>.logcheck.violations.ignore"
 
 #. type: =item
 #: dh_installlogcheck:31
 msgid "debian/I<package>.logcheck.ignore.workstation"
-msgstr ""
+msgstr "debian/I<paquete>.logcheck.ignore.workstation"
 
 #. type: =item
 #: dh_installlogcheck:33
 msgid "debian/I<package>.logcheck.ignore.server"
-msgstr ""
+msgstr "debian/I<paquete>.logcheck.ignore.server"
 
 #. type: =item
 #: dh_installlogcheck:35
 msgid "debian/I<package>.logcheck.ignore.paranoid"
-msgstr ""
+msgstr "debian/I<paquete>.logcheck.ignore.paranoid"
 
 #. type: textblock
 #: dh_installlogcheck:37
@@ -5493,7 +5497,8 @@ msgstr ""
 #. type: textblock
 #: dh_installman:15
 msgid "B<dh_installman> [S<I<debhelper options>>] [S<I<manpage ...>>]"
-msgstr "B<dh_installman> [S<I<opciones debhelper>>] [S<I<página ...>>]"
+msgstr ""
+"B<dh_installman> [S<I<opciones-de-debhelper>>] [S<I<página-de-manual ...>>]"
 
 # type: textblock
 #. type: textblock
@@ -5581,7 +5586,7 @@ msgstr ""
 #. type: =item
 #: dh_installman:54
 msgid "debian/I<package>.manpages"
-msgstr ""
+msgstr "debian/I<paquete>.manpages"
 
 #. type: textblock
 #: dh_installman:56
@@ -5606,7 +5611,7 @@ msgstr ""
 #. type: =item
 #: dh_installman:74
 msgid "I<manpage ...>"
-msgstr "I<página ...>"
+msgstr "I<página-de-manual ...>"
 
 # type: textblock
 #. type: textblock
@@ -5635,16 +5640,17 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_installmanpages:5
-#, fuzzy
 #| msgid "dh_installmanpages - old-style man page installer"
 msgid "dh_installmanpages - old-style man page installer (deprecated)"
-msgstr "dh_installmanpages - instalador al viejo estilo de páginas del manual"
+msgstr ""
+"dh_installmanpages - Instalador al viejo estilo de páginas del manual "
+"(obsoleto)"
 
 # type: textblock
 #. type: textblock
 #: dh_installmanpages:15
 msgid "B<dh_installmanpages> [S<I<debhelper options>>] [S<I<file ...>>]"
-msgstr "B<dh_installmanpages> [S<I<opciones debhelper>>] [S<I<fichero ...>>]"
+msgstr "B<dh_installmanpages> [S<I<opciones-de-debhelper>>] [S<I<fichero ...>>]"
 
 # type: textblock
 #. type: textblock
@@ -5772,14 +5778,14 @@ msgstr ""
 msgid ""
 "dh_installmenu - install debian menu files into package build directories"
 msgstr ""
-"dh_installmenu - instala fichero del menú de Debian en los directorios de "
-"construcción"
+"dh_installmenu - Instala ficheros de menú de Debian en los directorios de "
+"construcción del paquete"
 
 # type: textblock
 #. type: textblock
 #: dh_installmenu:14
 msgid "B<dh_installmenu> [S<B<debhelper options>>] [B<-n>]"
-msgstr "B<dh_installmenu> [S<B<opciones debhelper>>] [B<-n>]"
+msgstr "B<dh_installmenu> [S<B<opciones-de-debhelper>>] [B<-n>]"
 
 # type: textblock
 #. type: textblock
@@ -5971,7 +5977,7 @@ msgstr ""
 #. type: =item
 #: dh_installmodules:37
 msgid "debian/I<package>.modules"
-msgstr ""
+msgstr "debian/I<paquete>.modules"
 
 #. type: textblock
 #: dh_installmodules:39
@@ -6019,7 +6025,7 @@ msgstr ""
 #. type: =item
 #: dh_installpam:25
 msgid "debian/I<package>.pam"
-msgstr ""
+msgstr "debian/I<paquete>.pam"
 
 # type: textblock
 #. type: textblock
@@ -6070,7 +6076,7 @@ msgstr ""
 #. type: =item
 #: dh_installppp:25
 msgid "debian/I<package>.ppp.ip-up"
-msgstr ""
+msgstr "debian/I<paquete>.ppp.ip-up"
 
 # type: textblock
 #. type: textblock
