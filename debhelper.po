@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2010-08-07 11:36-0300\n"
-"PO-Revision-Date: 2010-09-30 00:01+0200\n"
+"PO-Revision-Date: 2010-09-30 11:12+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -3894,15 +3894,13 @@ msgstr "B<dh_installcatalogs> [S<I<opciones-de-debhelper>>] [B<-n>]"
 # type: textblock
 #. type: textblock
 #: dh_installcatalogs:20
-#, fuzzy
 msgid ""
 "dh_installcatalogs is a debhelper program that installs and registers SGML "
 "catalogs. It complies with the Debian XML/SGML policy."
 msgstr ""
 "dh_installcatalogs es un programa de debhelper que instala y registra "
-"catálogos SGML. (Nota: se extenderá para catálogos XML cuando xml-core esté "
-"disponible).  El programa respeta las normas de Debian en lo que a XML/SGML "
-"se refiere."
+"catálogos SGML. El programa respeta las normas de Debian referentes a "
+"XML/SGML."
 
 # type: textblock
 #. type: textblock
@@ -3911,13 +3909,12 @@ msgid ""
 "Catalogs will be registered in a supercatalog, in F</etc/sgml/I<package>."
 "cat>."
 msgstr ""
-"Los catálogos se registrarán en un catálogo principal, en F</etc/sgml/"
-"I<paquete>.cat>."
+"Los catálogos se registrarán en un catálogo principal, en "
+"F</etc/sgml/I<paquete>.cat>."
 
 # type: textblock
 #. type: textblock
 #: dh_installcatalogs:26
-#, fuzzy
 msgid ""
 "This command automatically adds maintainer script snippets for registering "
 "and unregistering the catalogs and supercatalogs (unless B<-n> is used). "
@@ -3925,13 +3922,12 @@ msgid ""
 "see L<dh_installdeb(1)> for an explanation of Debhelper maintainer script "
 "snippets."
 msgstr ""
-"Esta orden añade automáticamente la parte necesaria para registrar y "
-"desregistrar los catálogos y los catálogos principales (a menos que se use "
-"B<-n>) a los scripts del desarrollador. Se añadirá una la dependencia de "
-"B<sgml-base> a C<${misc:Depends}>, así que asegúrese de que su paquete use "
-"esta variable en F<debian/control>. Lea L<dh_installdeb(1)> para una "
-"explicación acerca de la porción de código que se añade a los scripts del "
-"desarrollador."
+"Esta orden añade automáticamente la parte necesaria a los scripts del "
+"desarrollador para registrar y  borrar del registro los catálogos y los "
+"catálogos principales (a menos que se use B<-n>). Estas porciones se "
+"insertan en los scripts de desarollador mediante dh_installdeb; consulte "
+"L<dh_installdeb(1)> para una explicación acerca de la porción de código que "
+"se añade a los scripts del desarrollador."
 
 # type: textblock
 #. type: textblock
@@ -3940,16 +3936,17 @@ msgid ""
 "A dependency on B<sgml-base> will be added to C<${misc:Depends}>, so be sure "
 "your package uses that variable in F<debian/control>."
 msgstr ""
+"Se añadirá una dependencia sobre B<sgml-base> a C<${misc:Depends}>, "
+"asegúrese que su paquete usar tal variable en F<debian/control>."
 
 #. type: =item
 #: dh_installcatalogs:39
 msgid "debian/I<package>.sgmlcatalogs"
-msgstr ""
+msgstr "debian/I<paquete>.sgmlcatalogs"
 
 # type: textblock
 #. type: textblock
 #: dh_installcatalogs:41
-#, fuzzy
 msgid ""
 "Lists the catalogs to be installed per package.  Each line in that file "
 "should be of the form C<source dest>, where C<source> indicates where the "
@@ -3957,33 +3954,31 @@ msgid ""
 "location for the catalog under the package build area.  C<dest> should start "
 "with F</usr/share/sgml/>."
 msgstr ""
-"El fichero F<debian/I<paquete>.sgmlcatalogs> contiene los catálogos a "
-"instalar por paquete. Cada línea en ese fichero debe ser de la forma "
-"C<origen destino>, donde C<origen> indica donde reside el catálogo dentro "
-"del árbol de las fuentes, y C<destino> indica el lugar del catálogo dentro "
-"del área de construcción del paquete.  C<destino> debe empezar por F</usr/"
-"share/sgml/>."
+"Lista los catálogos a instalar por cada paquete. Cada línea en ese fichero "
+"debe ser de la forma C<origen destino>, donde C<origen> indica dónde reside "
+"el catálogo dentro del árbol de las fuentes, y C<destino> indica el lugar "
+"del catálogo dentro del área de construcción del paquete.  C<destino> debe "
+"empezar por F</usr/share/sgml/>."
 
 # type: textblock
 #. type: textblock
 #: dh_installcatalogs:55
 msgid "Do not modify F<postinst>/F<postrm>/F<prerm> scripts."
-msgstr "No modifica los scripts de F<postinst>/F<postrm>/F<prerm>."
+msgstr "No modifica los scripts F<postinst>/F<postrm>/F<prerm>."
 
 # type: textblock
 #. type: textblock
 #: dh_installcatalogs:61 dh_installdocs:116 dh_installemacsen:69
 #: dh_installinit:135 dh_installmime:53 dh_installmodules:62 dh_installudev:57
 #: dh_installwm:56 dh_usrlocal:51
-#, fuzzy
 msgid ""
 "Note that this command is not idempotent. L<dh_prep(1)> should be called "
 "between invocations of this command. Otherwise, it may cause multiple "
 "instances of the same text to be added to maintainer scripts."
 msgstr ""
-"Esta orden no es idempotente. Debe llamarse a \"dh_clean -k\" entre "
-"invocaciones de esta orden. De otro modo, puede causar que los scripts de "
-"mantenimiento contengan partes duplicadas."
+"Esta orden no es idempotente. Debería invocar L<dh_prep(1)> entre las "
+"invocaciones de esta orden. De otro modo, puede causar que los scripts del "
+"desarollador contengan partes duplicadas."
 
 # type: textblock
 #. type: textblock
@@ -5813,7 +5808,7 @@ msgstr ""
 #. type: =item
 #: dh_installmenu:29
 msgid "debian/I<package>.menu"
-msgstr ""
+msgstr "debian/I<paquete>.menu"
 
 # type: textblock
 #. type: textblock
@@ -5830,7 +5825,7 @@ msgstr ""
 #. type: =item
 #: dh_installmenu:34
 msgid "debian/I<package>.menu-method"
-msgstr ""
+msgstr "debian/I<paquete>.menu-method"
 
 # type: textblock
 #. type: textblock
@@ -5895,7 +5890,7 @@ msgstr ""
 #. type: =item
 #: dh_installmime:29
 msgid "debian/I<package>.mime"
-msgstr ""
+msgstr "debian/I<paquete>.mime"
 
 # type: textblock
 #. type: textblock
@@ -5910,7 +5905,7 @@ msgstr ""
 #. type: =item
 #: dh_installmime:34
 msgid "debian/I<package>.sharedmimeinfo"
-msgstr ""
+msgstr "debian/I<paquete>.sharedmimeinfo"
 
 #. type: textblock
 #: dh_installmime:36
@@ -5961,7 +5956,7 @@ msgstr ""
 #. type: =item
 #: dh_installmodules:33
 msgid "debian/I<package>.modprobe"
-msgstr ""
+msgstr "debian/I<paquete>.modprobe"
 
 # type: textblock
 #. type: textblock
@@ -6154,7 +6149,7 @@ msgstr ""
 #. type: =item
 #: dh_installudev:29
 msgid "debian/I<package>.udev"
-msgstr ""
+msgstr "debian/I<paquete>.udev"
 
 # type: textblock
 #. type: textblock
@@ -6198,7 +6193,7 @@ msgstr ""
 #. type: textblock
 #: dh_installwm:5
 msgid "dh_installwm - register a window manager"
-msgstr "dh_installwm - registra un gestor de ventanas"
+msgstr "dh_installwm - Registra un gestor de ventanas"
 
 # type: textblock
 #. type: textblock
@@ -6228,7 +6223,7 @@ msgstr ""
 #. type: =item
 #: dh_installwm:28
 msgid "debian/I<package>.wm"
-msgstr ""
+msgstr "debian/I<paquete>.wm"
 
 # type: textblock
 #. type: textblock
@@ -6598,7 +6593,7 @@ msgstr ""
 #. type: textblock
 #: dh_lintian:63
 msgid "L<lintian(1)>"
-msgstr ""
+msgstr "L<lintian(1)>"
 
 # type: textblock
 #. type: textblock
@@ -6679,12 +6674,12 @@ msgstr ""
 #. type: =item
 #: dh_makeshlibs:28
 msgid "debian/I<package>.symbols"
-msgstr ""
+msgstr "debian/I<paquete>.symbols"
 
 #. type: =item
 #: dh_makeshlibs:30
 msgid "debian/I<package>.symbols.I<arch>"
-msgstr ""
+msgstr "debian/I<paquete>.symbols.I<arch>"
 
 #. type: textblock
 #: dh_makeshlibs:32
