@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2010-08-07 11:36-0300\n"
-"PO-Revision-Date: 2010-10-01 15:38+0200\n"
+"PO-Revision-Date: 2010-10-01 20:08+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -2663,7 +2663,6 @@ msgstr "B<--destdir=>I<directorio>"
 
 #. type: textblock
 #: dh_auto_install:52
-#, fuzzy
 msgid ""
 "Install files into the specified I<directory>. If this option is not "
 "specified, destination directory is determined automatically as described in "
@@ -2671,7 +2670,7 @@ msgid ""
 msgstr ""
 "Instala ficheros en el I<directorio> especificado. Si esta opción no se "
 "define, el directorio de destino se determina automáticamente como se "
-"describe en la sección L</DESCRIPTION>."
+"describe en la sección L</DESCRIPCIÓN>."
 
 #. type: textblock
 #: dh_auto_install:58
@@ -4653,7 +4652,6 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_installdocs:71
-#, fuzzy
 msgid ""
 "Exclude files that contain \"item\" anywhere in their filename from being "
 "installed. Note that this includes doc-base files."
@@ -5401,13 +5399,12 @@ msgstr "B<dh_installlogcheck> [S<B<opciones debhelper>>]"
 # type: textblock
 #. type: textblock
 #: dh_installlogcheck:18
-#, fuzzy
 msgid ""
 "dh_installlogcheck is a debhelper program that is responsible for installing "
 "logcheck rule files."
 msgstr ""
-"dh_installlogcheck is a debhelper program that is responsible for installing "
-"logcheck rule files."
+"dh_installlogcheck es un programa de debhelper responsable de instalar "
+"ficheros de reglas de logcheck"
 
 #. type: =item
 #: dh_installlogcheck:25
@@ -6129,32 +6126,30 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_installudev:5
-#, fuzzy
 msgid "dh_installudev - install udev rules files"
-msgstr "dh_installinfo - instala y registra ficheros info"
+msgstr "dh_installinfo - Instala ficheros de reglas de udev"
 
 # type: textblock
 #. type: textblock
 #: dh_installudev:15
-#, fuzzy
 #| msgid ""
 #| "B<dh_installmodules> [S<I<debhelper options>>] [B<-n>] [B<--name=>I<name>]"
 msgid ""
 "B<dh_installudev> [S<I<debhelper options>>] [B<-n>] [B<--name=>I<name>] [B<--"
 "priority=>I<priority>]"
 msgstr ""
-"B<dh_installmodules> [S<I<opciones debhelper>>] [B<-n>] [B<--name=>I<nombre>]"
+"B<dh_installmodules> [S<I<opciones-de-debhelper>>] [B<-n>] "
+"[B<--name=>I<nombre>] [B<--priority=>I<prioridad>]"
 
 # type: textblock
 #. type: textblock
 #: dh_installudev:19
-#, fuzzy
 msgid ""
 "dh_installudev is a debhelper program that is responsible for installing "
 "udev rules files."
 msgstr ""
-"dh_installmodules es un programa de debhelper responsable de registrar "
-"módulos del núcleo con modutils."
+"dh_installudev es un programa de debhelper responsable de instalar ficheros "
+"de reglas de udev."
 
 #. type: textblock
 #: dh_installudev:22
@@ -6162,6 +6157,8 @@ msgid ""
 "Code is added to the preinst and postinst to handle the upgrade from the old "
 "udev rules file location."
 msgstr ""
+"El código se añade a los scripts «preinst» y «postinst» para gestionar la "
+"actualización desde la ubicación antigua de ficheros de reglas de udev."
 
 #. type: =item
 #: dh_installudev:29
@@ -6171,24 +6168,22 @@ msgstr "debian/I<paquete>.udev"
 # type: textblock
 #. type: textblock
 #: dh_installudev:31
-#, fuzzy
 msgid "Installed into lib/udev/rules.d/ in the package build directory."
 msgstr ""
-"Si existe un fichero llamado debian/package.pam, se instala en etc/pam.d/"
-"paquete en el directorio de construcción del paquete."
+"Instalado en «lib/udev/rules.d/» en el directorio de construcción del "
+"paquete."
 
 # type: textblock
 #. type: textblock
 #: dh_installudev:41
-#, fuzzy
 msgid ""
 "When this parameter is used, dh_installudev looks for and installs files "
 "named debian/I<package>.I<name>.udev instead of the usual debian/I<package>."
 "udev."
 msgstr ""
-"Usa \"nombre\" para el fichero de módulos instalado en etc/modutils/. Cuando "
-"se usa este parámetro, dh_installmodules busca e instala ficheros llamados "
-"debian/paquete.nombre.modules en vez del usual debian/paquete.modules."
+"Cuando este parámetro se usa, dh_installudev busca e instala ficheros "
+"nombrados «debian/I<paquete>I<nombre>.udev», en lugar del habitual "
+"«debian/I<paquete>.udev»."
 
 # type: =item
 #. type: =item
@@ -6199,12 +6194,11 @@ msgstr "B<--priority=>I<prioridad>"
 # type: textblock
 #. type: textblock
 #: dh_installudev:47
-#, fuzzy
 #| msgid "Sets the priority number of a site-start.d file. Default is 50."
 msgid "Sets the priority string of the rules.d symlink. Default is 60."
 msgstr ""
-"Establece el número de prioridad de un fichero site-start.d. 50 es el número "
-"predeterminado."
+"Define la cadena de prioridad del enlace simbólico de «rules.d». El valor "
+"predeterminado es 60."
 
 # type: textblock
 #. type: textblock
@@ -6544,14 +6538,13 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_lintian:5
-#, fuzzy
 #| msgid ""
 #| "dh_installmenu - install debian menu files into package build directories"
 msgid ""
 "dh_lintian - install lintian override files into package build directories"
 msgstr ""
-"dh_installmenu - instala fichero del menú de Debian en los directorios de "
-"construcción"
+"dh_lintian - Instala ficheros «override» de lintian en los directorios de "
+"construcción del paquete."
 
 # type: textblock
 #. type: textblock
@@ -6563,7 +6556,6 @@ msgstr "B<dh_lintian> [S<I<opciones-de-debhelper options>>]"
 # type: textblock
 #. type: textblock
 #: dh_lintian:18
-#, fuzzy
 #| msgid ""
 #| "dh_installpam is a debhelper program that is responsible for installing "
 #| "files used by PAM into package build directories."
@@ -6571,8 +6563,8 @@ msgid ""
 "dh_lintian is a debhelper program that is responsible for installing "
 "override files used by lintian into package build directories."
 msgstr ""
-"dh_installpam es un programa de debhelper responsable de instalar ficheros "
-"usados por PAM en los directorios de construcción del paquete."
+"dh_lintian es un programa de debhelper responsable de instalar ficheros "
+"«override» usado por linitan en los directorios de construcción del paquete."
 
 #. type: =item
 #: dh_lintian:25
@@ -6582,14 +6574,13 @@ msgstr "debian/I<paquete>.lintian-overrides"
 # type: textblock
 #. type: textblock
 #: dh_lintian:27
-#, fuzzy
 msgid ""
 "Installed into usr/share/lintian/overrides/I<package> in the package build "
 "directory. This file is used to suppress erroneous lintian diagnostics."
 msgstr ""
-"Si existe el fichero llamado debian/paquete.menu, se instala en usr/share/"
-"menu/paquete en el directorio de construcción. Este es un fichero de menú de "
-"Debian. Lea L<menufile(5)> para detalles acerca del formato."
+"Instalado en «usr/share/lintian/overrides/I<paquete>» en el directorio de "
+"construcción del paquete. Este fichero se usa para eliminar diagnósticos "
+"erróneos de lintian."
 
 #. type: =item
 #: dh_lintian:31
@@ -7022,7 +7013,6 @@ msgstr "B<--sourcedir=>I<directorio>"
 # type: textblock
 #. type: textblock
 #: dh_movefiles:44
-#, fuzzy
 msgid ""
 "Instead of moving files out of debian/tmp (the default), this option makes "
 "it move files out of some other directory. Since the entire contents of the "
@@ -7030,11 +7020,11 @@ msgid ""
 "so to prevent mistakes, the sourcedir must be a relative filename; it cannot "
 "begin with a `/'."
 msgstr ""
-"En lugar de mover ficheros de debian/tmp (el predeterminado), esta opción "
-"los mueve de otro directorio. Puesto que el contenido del directorio origen "
-"es movido, especificar algo como --sourcedir=/ es muy inseguro, así que para "
-"impedir errores, el sourcedir debe ser un fichero relativo; y no puede "
-"empezar con un `/'."
+"En lugar de mover ficheros de «debian/tmp» (el predeterminado), esta opción "
+"los mueve de otro directorio. Puesto que se mueve el contenido del "
+"directorio origen, definir algo como «--sourcedir=/» es muy inseguro, así "
+"que para impedir errores, el directorio origen debe ser un nombre de fichero "
+"relativo; y no puede empezar con un «/»."
 
 # type: textblock
 #. type: textblock
@@ -7409,7 +7399,7 @@ msgstr "muchas de las ideas tomadas de Brendan O'Dea <bod@debian.org>"
 #. type: textblock
 #: dh_scrollkeeper:5
 msgid "dh_scrollkeeper - deprecated no-op"
-msgstr ""
+msgstr "dh_scrollkeeper - Orden obsoleta sin efecto"
 
 # type: textblock
 #. type: textblock
@@ -7421,14 +7411,13 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_scrollkeeper:18
-#, fuzzy
 msgid ""
 "dh_scrollkeeper was a debhelper program that handled registering OMF files "
 "for ScrollKeeper. However, it no longer does anything, and is now deprecated."
 msgstr ""
-"B<dh_scrollkeeper> es un programa de debhelper que maneja el registro "
-"adecuado de ficheros OMF que encuentra en los arboles de construcción de "
-"paquetes y que usan ScrollKeeper."
+"dh_scrollkeeper era un programa de debhelper que manipulaba el registro de "
+"ficheros OMF para ScrollKeeper. Por otra parte, ya no tiene efecto, y ahora "
+"está obosoleto."
 
 # type: textblock
 #. type: textblock
@@ -7513,7 +7502,6 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_shlibdeps:51
-#, fuzzy
 msgid ""
 "Before dpkg-shlibdeps is run, LD_LIBRARY_PATH will have added to it the "
 "specified directory (or directories -- separate with colons). With recent "
@@ -7521,11 +7509,12 @@ msgid ""
 "build multiple flavors of the same library, or other situations where the "
 "library is installed into a directory not on the regular library search path."
 msgstr ""
-"Antes de ejecutarse dpkg-shlibdeps, se deberá añadir a LD_LIBRARY_PATH el "
-"directorio especificado (o directorios -- separados por dos puntos).  Esto "
-"es útil para paquetes multi-binarios que contienen binarios enlazados con "
-"las bibliotecas indicadas. Las rutas relativas se convierten en absolutas "
-"para el beneficio de dpkg-shlibdeps."
+"Antes de ejecutar dpkg-shlibdeps, se debería añadir a «LD_LIBRARY_PATH» el "
+"directorio especificado (o directorios, separados por dos puntos).  Con las "
+"recientes versiones de dpkg-shlibdeps, es básicamente útil para paquetes con "
+"varias variantes de la misma biblioteca, o en situaciones cuándo la "
+"biblioteca se instala en un directorio, y no en la ruta de búsqueda de "
+"bibliotecas habitual."
 
 # type: =item
 #. type: =item
@@ -7540,6 +7529,9 @@ msgid ""
 "With recent versions of dpkg-shlibdeps, this option is generally not needed, "
 "unless your package builds multiple flavors of the same library."
 msgstr ""
+"Habitualmente, esta opción no es necesaria con las últimas versiones de "
+"dpkg-shlibdeps, a menos que su paquete construya diferentes variantes de la "
+"misma biblioteca."
 
 # type: textblock
 #. type: textblock
@@ -7549,6 +7541,9 @@ msgid ""
 "build directory for the specified package, when searching for libraries, "
 "symbol files, and shlibs files."
 msgstr ""
+"Indica a dpkg-shlibdeps (a través del parámetro «-S») que primero busque en "
+"el directorio de construcción del paquete del paquete especificado cuando "
+"busque bibliotecas, ficheros «symbols» y «shlibs»."
 
 # type: textblock
 #. type: textblock
@@ -7596,6 +7591,9 @@ msgid ""
 "and is installed into /usr/lib/bar/, you can make libfoo-bin depend on "
 "libbar1 as follows:"
 msgstr ""
+"Si también se produce un paquete libcual1, que una construcción alternativa "
+"de libtal, y que se instala en «/usr/lib/cual/», puede hacer que libtal-bin "
+"dependa de libcual1 de la siguiente manera:"
 
 # type: verbatim
 #. type: verbatim
@@ -7711,13 +7709,13 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_strip:51
-#, fuzzy
 msgid ""
 "For example, if your packages are libfoo and foo and you want to include a "
 "foo-dbg package with debugging symbols, use dh_strip --dbg-package=foo-dbg."
 msgstr ""
 "Por ejemplo, si sus paquetes son libtal y tal y quiere incluir una "
-"paquetetal-dbg con símbolos de depuración, use dh_strip --dbg-to=tal-dbg."
+"paquete_tal-dbg con símbolos de depuración, use «dh_strip --dbg-package=tal-"
+"dbg»."
 
 # type: textblock
 #. type: textblock
@@ -7758,14 +7756,13 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_strip:70
-#, fuzzy
 msgid ""
 "If the DEB_BUILD_OPTIONS environment variable contains \"nostrip\", nothing "
 "will be stripped, in accordance with Debian policy (section 10.1 \"Binaries"
 "\")."
 msgstr ""
-"Si la variable de entorno DEB_BUILD_OPTIONS contiene \"nostrip\", no se "
-"eliminará nada, conforme a las normas de Debian."
+"Si la variable de entorno «DEB_BUILD_OPTIONS» contiene «nostrip», no se "
+"eliminará nada, conforme a las normas de Debian (sección 10.1 «Binarios»)."
 
 # type: textblock
 #. type: textblock
@@ -7776,10 +7773,9 @@ msgstr "Normas de Debian, versión 3.0.1"
 # type: textblock
 #. type: textblock
 #: dh_suidregister:5
-#, fuzzy
 #| msgid "dh_suidregister - obsolete suid registration program"
 msgid "dh_suidregister - suid registration program (deprecated)"
-msgstr "dh_suidregister - programa obsoleto de registro suid"
+msgstr "dh_suidregister - Programa obsoleto de registro suid"
 
 # type: textblock
 #. type: textblock
@@ -7790,7 +7786,6 @@ msgstr "¡No lo ejecute!"
 # type: textblock
 #. type: textblock
 #: dh_suidregister:13
-#, fuzzy
 #| msgid ""
 #| "This program used to register suid and sgid files with L<suidregister(1)"
 #| ">, but with the introduction of L<dpkg-statoverride(8)>, registration of "
@@ -7802,10 +7797,10 @@ msgid ""
 "in this way is unnecessary, and even harmful, so this program is deprecated "
 "and should not be used."
 msgstr ""
-"Este programa se usaba para registrar ficheros suid y sgid con L<suidregister"
-"(1)>, pero con la introducción de L<dpkg-statoverrride(8)>, el registro de "
-"ficheros de esta forma es innecesaria, e inclusive peligrosa, por lo que "
-"este programa no debe ser usado."
+"Este programa se usaba para registrar ficheros suid y sgid con "
+"L<suidregister(1)>, pero con la introducción de L<dpkg-statoverrride(8)>, el "
+"registro de ficheros de esta forma es innecesaria, e inclusive peligrosa, "
+"por lo que este programa está obsoleto y no se debería usar."
 
 # type: =head1
 #. type: =head1
@@ -7909,11 +7904,11 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_undocumented:5
-#, fuzzy
 #| msgid "dh_undocumented - obsolete undocumented.7 symlink program"
 msgid "dh_undocumented - undocumented.7 symlink program (deprecated no-op)"
 msgstr ""
-"dh_undocumented - programa obsoleto de enlace simbólico a undocumented.7"
+"dh_undocumented - Programa sin efecto obsoleto de enlace simbólico a "
+"undocumented.7"
 
 # type: textblock
 #. type: textblock
@@ -7933,13 +7928,13 @@ msgstr ""
 #. type: textblock
 #: dh_usrlocal:5
 msgid "dh_usrlocal - migrate usr/local directories to maintainer scripts"
-msgstr "dh_usrlocal - migra directorios usr/local a programas de desarrollador"
+msgstr "dh_usrlocal - Migra directorios «usr/local» a scripts de desarrollador"
 
 # type: textblock
 #. type: textblock
 #: dh_usrlocal:17
 msgid "B<dh_usrlocal> [S<I<debhelper options>>] [B<-n>]"
-msgstr "B<dh_usrlocal> [S<I<opciones debhelper>>] [B<-n>]"
+msgstr "B<dh_usrlocal> [S<I<opciones-de-debhelper>>] [B<-n>]"
 
 # type: textblock
 #. type: textblock
@@ -7954,7 +7949,6 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_usrlocal:24
-#, fuzzy
 msgid ""
 "It finds subdirectories of usr/local in the package build directory, and "
 "removes them, replacing them with maintainer script snippets (unless B<-n> "
@@ -7964,12 +7958,12 @@ msgid ""
 "L<dh_installdeb(1)> for an explanation of Debhelper maintainer script "
 "snippets."
 msgstr ""
-"Éste busca subdirectorios de usr/local en el directorio de construcción del "
-"paquete, y los borra, reemplazándolos con las partes de programas de "
+"Busca subdirectorios de «usr/local» en el directorio de construcción del "
+"paquete, y los elimina, reemplazándolos con las partes de scripts de "
 "desarrollador (a menos que se use B<-n>) para crear los directorios al "
-"momento de la instalación, y los borra cuando el paquete es desinstalado, de "
-"una forma que cumpla con las Normas de Debian. Vea L<dh_installdeb(1)> para "
-"una explicación de las partes de programas Debhelper de desarrollador."
+"instalar, y los elimina cuando se desinstala el paquete de una forma que "
+"cumpla con las Normas de Debian. Para una explicación de los scripts de "
+"desarrollador de Debhelper consulte L<dh_installdeb(1)>."
 
 # type: textblock
 #. type: textblock
@@ -7985,8 +7979,8 @@ msgstr ""
 "Si los directorios encontrados en el árbol de construcción tienen "
 "propietarios, grupos o permisos inusuales, entonces estos valores serán "
 "preservados en los directorios hechos por el programa postinst. Sin embargo, "
-"como una excepción especial, si un directorio tiene como propietario root."
-"root, éste será tratado como si tuviese como dueño root.staff y en modo "
+"como una excepción especial, si un directorio tiene como propietario "
+"root.root, éste será tratado como si tuviese como dueño root.staff y en modo "
 "2775. Esto es útil, puesto que esa es la norma recomendada para el grupo y "
 "modo de los directorios en /usr/local."
 
