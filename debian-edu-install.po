@@ -1,0 +1,400 @@
+# debian-edu-install po-debconf translation to Spanish
+# Copyright (C) 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the debian-edu-install package.
+#
+# Changes:
+#   - Initial translation
+#       Javier Ruano Ruano , 2007
+#
+#   - Updates
+#       José L. Redrejo Rodríguez <jredrejo@debian.org>, 2008
+#       Francisco Javier Cuadrado <fcocuadrado@gmail.com>, 2009, 2010
+#       Omar Campagne <ocampagne@gmail.com>, 2010
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-edu-install 1.503\n"
+"Report-Msgid-Bugs-To: debian-edu-install@packages.debian.org\n"
+"POT-Creation-Date: 2010-07-14 12:05+0200\n"
+"PO-Revision-Date: 2010-10-08 19:18+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: text
+#. Description
+#. Debian Installer Main-menu Item
+#: ../debian-edu-profile-udeb.templates:1001
+msgid "Choose Debian Edu profile"
+msgstr "Escoja un perfil de Debian Edu"
+
+#. Type: multiselect
+#. Choices
+#. Type: multiselect
+#. Choices
+#. __Choices: Main-Server, Workstation, Roaming-Workstation, Thin-Client-Server, Standalone, Minimal, Sugar
+#: ../debian-edu-profile-udeb.templates:2001
+#: ../debian-edu-profile-udeb.templates:3001
+msgid "Main Server"
+msgstr "Servidor principal"
+
+#. Type: multiselect
+#. Choices
+#. Type: multiselect
+#. Choices
+#. __Choices: Main-Server, Workstation, Roaming-Workstation, Thin-Client-Server, Standalone, Minimal, Sugar
+#: ../debian-edu-profile-udeb.templates:2001
+#: ../debian-edu-profile-udeb.templates:3001
+msgid "Workstation"
+msgstr "Estación de trabajo"
+
+#. Type: multiselect
+#. Choices
+#. Type: multiselect
+#. Choices
+#. __Choices: Main-Server, Workstation, Roaming-Workstation, Thin-Client-Server, Standalone, Minimal, Sugar
+#: ../debian-edu-profile-udeb.templates:2001
+#: ../debian-edu-profile-udeb.templates:3001
+msgid "Roaming Workstation"
+msgstr "Estación de trabajo itinerante"
+
+#. Type: multiselect
+#. Choices
+#. Type: multiselect
+#. Choices
+#. __Choices: Main-Server, Workstation, Roaming-Workstation, Thin-Client-Server, Standalone, Minimal, Sugar
+#: ../debian-edu-profile-udeb.templates:2001
+#: ../debian-edu-profile-udeb.templates:3001
+msgid "Thin Client Server"
+msgstr "Servidor de clientes ligeros"
+
+#. Type: multiselect
+#. Choices
+#. Type: multiselect
+#. Choices
+#. __Choices: Main-Server, Workstation, Roaming-Workstation, Thin-Client-Server, Standalone, Minimal, Sugar
+#: ../debian-edu-profile-udeb.templates:2001
+#: ../debian-edu-profile-udeb.templates:3001
+msgid "Standalone"
+msgstr "Independiente"
+
+#. Type: multiselect
+#. Description
+#. Type: multiselect
+#. Description
+#: ../debian-edu-profile-udeb.templates:2002
+#: ../debian-edu-profile-udeb.templates:3002
+msgid "Profile(s) to apply to this machine:"
+msgstr "Escoja qué perfil(es) aplicará en esta máquina:"
+
+#. Type: multiselect
+#. Description
+#. Type: multiselect
+#. Description
+#: ../debian-edu-profile-udeb.templates:2002
+#: ../debian-edu-profile-udeb.templates:3002
+msgid "Profiles determine how the machine can be used out-of-the-box:"
+msgstr ""
+"Los perfiles determinan el uso qué podrá tener la máquina nada más finalizar "
+"la instalación:"
+
+#. Type: multiselect
+#. Description
+#: ../debian-edu-profile-udeb.templates:2002
+msgid ""
+" - Main Server: reserved for the Debian Edu server. It does not\n"
+"                include any GUI (Graphical User Interface). There\n"
+"                should only be one such server on a Debian Edu\n"
+"                network.\n"
+" - Workstation: for normal machines on the Debian Edu network.\n"
+" - Roaming Workstation: for single user machines on the Debian Edu\n"
+"                network which some times travel outside the network.\n"
+" - Thin Client Server:\n"
+"                includes 'Workstation' and requires two network\n"
+"                cards.\n"
+" - Standalone:  for machines meant to be used outside the Debian Edu\n"
+"                network. It includes a GUI and conflicts with other\n"
+"                profiles."
+msgstr ""
+" - Servidor Principal: reservado para el servidor de Debian Edu. No\n"
+"                incluye ninguna GUI (Interfaz Gráfica de Usuario).\n"
+"                Sólo debería haber un servidor de este tipo en una\n"
+"                red de Debian Edu.\n"
+" - Estación de Trabajo: máquinas normales en la red de Debian Edu.\n"
+" - Estación de Trabajo itinerante: para máquinas de un sólo usuario\n"
+"                en la red de Debian Edu que a veces se conectan\n"
+"                fuera de la red.\n"
+" - Servidor de Clientes Ligeros: incluye 'Estación de Trabajo' y\n"
+"                necesita dos tarjetas de red.\n"
+" - Independiente: para máquinas que se vayan a usar fuera de la\n"
+"                red de Debian Edu. Incluye una GUI y es incompatible\n"
+"                con otros perfiles."
+
+#. Type: multiselect
+#. Choices
+#. __Choices: Main-Server, Workstation, Roaming-Workstation, Thin-Client-Server, Standalone, Minimal, Sugar
+#: ../debian-edu-profile-udeb.templates:3001
+msgid "Minimal"
+msgstr "Mínimo"
+
+#. Type: multiselect
+#. Description
+#. # Translators, do not translate "Sugar"
+#: ../debian-edu-profile-udeb.templates:3002
+msgid ""
+" - Main Server: reserved for the Debian Edu server. It does not\n"
+"                include any GUI (Graphical User Interface). There\n"
+"                should only be one such server on a Debian Edu\n"
+"                network.\n"
+" - Workstation: for normal machines on the Debian Edu network.\n"
+" - Roaming Workstation: for single user machines on the Debian Edu\n"
+"                network which some times travel outside the network.\n"
+" - Thin Client Server:\n"
+"                includes 'Workstation' and requires two network\n"
+"                cards.\n"
+" - Standalone:  for machines meant to be used outside the Debian Edu\n"
+"                network. It includes a GUI and conflicts with other\n"
+"                profiles.\n"
+" - Minimal:     fully integrated into the Debian Edu network but\n"
+"                contains only a basic system without any GUI."
+msgstr ""
+" - Servidor Principal: reservado para el servidor de Debian Edu. No\n"
+"                incluye ninguna GUI (Interfaz Gráfica de Usuario).\n"
+"                Sólo debería haber un servidor de este tipo en una\n"
+"                red de Debian Edu.\n"
+" - Estación de Trabajo: para máquinas normales en la red de\n"
+"                Debian Edu.\n"
+" - Estación de Trabajo itinerante: para máquinas de un sólo usuario\n"
+"                en la red de Debian Edu que a veces se conectan\n"
+"                fuera de la red.\n"
+" - Servidor de Clientes Ligeros: incluye 'Estación de Trabajo' y\n"
+"                necesita dos tarjetas de red.\n"
+" - Independiente: para máquinas que se vayan a usar fuera de la\n"
+"                red de Debian Edu. Incluye una GUI y es incompatible\n"
+"                con otros perfiles.\n"
+" - Mínimo:      totalmente integrado en la red de Debian Edu pero\n"
+"                sólo contiene un sistema básico sin ningún tipo de GUI."
+
+# " - Sugar:       variante de 'Independiente que incluye el entorno\n"
+# "                de escritorio Sugar que promueve el aprendizaje\n"
+# "                colaborativo entre los niños.\n"
+#. Type: error
+#. Description
+#: ../debian-edu-profile-udeb.templates:4001
+msgid "Standalone profile cannot be used with other profiles"
+msgstr "El perfil «Independiente» es incompatible con otros perfiles"
+
+#. Type: error
+#. Description
+#: ../debian-edu-profile-udeb.templates:4001
+msgid ""
+"The Standalone profile cannot be installed together with any other profile "
+"on the same machine. Please either only choose Standalone or any other "
+"combination excluding Standalone."
+msgstr ""
+"El perfil «Independiente» no se puede instalar junto a ningún otro perfil en "
+"la misma máquina. Por favor, seleccione sólo «Independiente» u otra "
+"combinación que excluya «Independiente»."
+
+#. Type: note
+#. Description
+#: ../debian-edu-profile-udeb.templates:5001
+msgid "Standalone installation is partly manual"
+msgstr "La instalación «Independiente» es en parte manual"
+
+#. Type: note
+#. Description
+#: ../debian-edu-profile-udeb.templates:5001
+msgid ""
+"The Standalone install is currently not as automatic as the other profiles, "
+"to make it easier to do manual partitioning.  You are now sent to the debian-"
+"installer main menu.  Select \"Change debconf priority\", and choose "
+"priority \"high\" to enable the automatic installation again."
+msgstr ""
+"La instalación de «Independiente» no es automática como la de otros perfiles, "
+"se hará un particionado manual para hacerlo fácil. Pasará al menú principal "
+"de debian-installer. Para volver a la instalación automática, seleccione "
+"«Cambiar la prioridad de debconf» y elija «prioridad alta»."
+
+#. Type: text
+#. Description
+#. Type: boolean
+#. Description
+#: ../debian-edu-profile-udeb.templates:7001
+#: ../debian-edu-profile-udeb.templates:8001
+msgid "Really use the automatic partitioning tool?"
+msgstr "¿Realmente desea usar el particionado automático?"
+
+#. Type: boolean
+#. Description
+#: ../debian-edu-profile-udeb.templates:8001
+msgid ""
+"This will destroy the partition table on all disks in the machine. REPEAT: "
+"THIS WILL WIPE CLEAN ALL HARD DISKS IN THE MACHINE! If you have important "
+"data that are not backed up, you may want to stop now in order to do a "
+"backup. In that case, you'll have to restart the installation later."
+msgstr ""
+"Se eliminará la tabla de particiones de todos lo discos de la máquina. "
+"¡REPITO: ESTO ELIMINARÁ TODO DE LOS DISCOS DUROS DE SU MÁQUINA! Haga una "
+"copia de seguridad si tiene información importante, ahora tal vez quiera "
+"parar para hacer ese respaldo. En ese caso, tendrá que reiniciar la "
+"instalación después."
+
+#. Type: text
+#. Description
+#. Type: boolean
+#. Description
+#: ../debian-edu-profile-udeb.templates:9001
+#: ../debian-edu-profile-udeb.templates:10001
+msgid "Participate in the package usage survey?"
+msgstr "¿Desea participar en la encuesta de uso del paquete?"
+
+#. Type: boolean
+#. Description
+#: ../debian-edu-profile-udeb.templates:10001
+msgid ""
+"The system may anonymously supply the distribution developers with "
+"statistics about the most used packages on this system.  This information "
+"influences decisions such as which packages should go on the first "
+"distribution CD."
+msgstr ""
+"El sistema puede aportar estadísticas de los paquetes más usados en esta "
+"máquina de forma anónima a los desarrolladores de la distribución. Este "
+"información tiene influencia en decisiones como qué paquetes incluirá el "
+"primer CD de la distribución."
+
+#. Type: boolean
+#. Description
+#: ../debian-edu-profile-udeb.templates:10001
+msgid ""
+"If you choose to participate, the automatic submission script will run once "
+"every week, sending statistics to the distribution developers. The collected "
+"statistics can be viewed on http://popcon.debian.org/."
+msgstr ""
+"Si decide participar, cada semana un script automáticamente enviará las "
+"estadísticas a los desarrolladores de la distribución. Puede ver las "
+"estadísticas recogidas en http://popcon.debian.org/."
+
+#. Type: boolean
+#. Description
+#: ../debian-edu-profile-udeb.templates:10001
+msgid ""
+"This choice can be later modified by running \"dpkg-reconfigure popularity-"
+"contest\"."
+msgstr ""
+"Puede cambiar esta decisión ejecutando más tarde «dpkg-reconfigure popularity-"
+"contest»."
+
+#. Type: text
+#. Description
+#. Debian Edu main server menu entry for partman recipe.
+#: ../debian-edu-profile-udeb.templates:11001
+msgid "Debian Edu Main Server"
+msgstr "Debian Edu Servidor principal"
+
+#. Type: text
+#. Description
+#. Debian Edu ltsp server menu entry for partman recipe.
+#: ../debian-edu-profile-udeb.templates:12001
+msgid "Debian Edu Thin Client Server"
+msgstr "Debian Edu Servidor de clientes ligeros"
+
+#. Type: text
+#. Description
+#. Debian Edu workstation menu entry for partman recipe.
+#: ../debian-edu-profile-udeb.templates:13001
+msgid "Debian Edu Workstation"
+msgstr "Debian Edu Estación de trabajo"
+
+#. Type: text
+#. Description
+#. Debian Edu combo main+ltsp menu entry for partman recipe.
+#: ../debian-edu-profile-udeb.templates:14001
+msgid "Debian Edu Main Server and Thin Client Server"
+msgstr "Debian Edu Servidor principal y Servidor de clientes ligeros"
+
+#. Type: text
+#. Description
+#. Debian Edu combo main+ws menu entry for partman recipe.
+#: ../debian-edu-profile-udeb.templates:15001
+msgid "Debian Edu Main Server and Workstation"
+msgstr "Debian Edu Servidor principal y Estación de trabajo"
+
+#. Type: text
+#. Description
+#. Debian Edu minimal menu entry for partman recipe.
+#: ../debian-edu-profile-udeb.templates:16001
+msgid "Debian Edu Minimal"
+msgstr "Debian Edu Mínimo"
+
+#. Type: title
+#. Description
+#: ../debian-edu-profile-udeb.templates:17001
+msgid "Debian Edu package installation failed"
+msgstr "La instalación del paquete de Debian Edu ha fallado"
+
+#. Type: error
+#. Description
+#: ../debian-edu-profile-udeb.templates:18001
+msgid "Installation of required packages failed"
+msgstr "La instalación de los paquetes necesarios ha fallado"
+
+#. Type: error
+#. Description
+#: ../debian-edu-profile-udeb.templates:18001
+msgid ""
+"Some required packages failed to install. The packages were ${PACKAGES}. "
+"Check /var/log/syslog if there is some information why this happened. The "
+"installed system is not going to work properly, so the installation was "
+"aborted and the system will be rebooted now."
+msgstr ""
+"La instalación de algunos paquetes necesarios ha fallado. Los paquetes son "
+"${PACKAGES}. Compruebe si en «/var/log/syslog» hay algún tipo de información "
+"sobre lo ocurrido. El sistema instalado no va a funcionar correctamente, de "
+"modo que la instalación se ha cancelado y el sistema se reiniciará ahora "
+"mismo."
+
+#. Type: text
+#. Description
+#. Debian Installer Main-menu Item
+#: ../debian-edu-install-udeb.templates:1001
+msgid "Install Debian Edu profile (enforce menu order)"
+msgstr "¿Desea instalar el perfil Debian Edu (cumpliendo el orden del menú)?"
+
+#. Type: error
+#. Description
+#: ../debian-edu-install.templates:1001
+msgid "Some errors were found during installation"
+msgstr "Se encontraron algunos errores durante la instalación"
+
+#. Type: error
+#. Description
+#: ../debian-edu-install.templates:1001
+msgid "${ERRORS}"
+msgstr "${ERRORS}"
+
+#. Type: error
+#. Description
+#: ../debian-edu-install.templates:1001
+msgid "Consider reporting them to the Debian Edu developers."
+msgstr "Considere notificarlos a los desarrolladores de Debian Edu."
