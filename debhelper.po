@@ -1,6 +1,34 @@
-# SOME DESCRIPTIVE TITLE
-# Copyright (C) YEAR Free Software Foundation, Inc.
-# Omar Campagne <ocampagne@gmail.com>, 2010.
+# debhelper man/po translation to Spanish
+# Copyright (C) 2005 - 2010 Software in the Public Interest
+# This file is distributed under the same license as the deborphan package.
+#
+# Changes:
+#   - Initial translation
+#       Rubén Porras Campo, 2005
+#       Rudy Godoy, 2005 
+#	Omar Campagne, 2010
+#
+#   - Updates
+#       Omar Campagne, 2010
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debhelper 8.0.0\n"
@@ -920,7 +948,7 @@ msgstr ""
 "Todas las órdenes de este tipo, además de documentar qué dependencias pueden "
 "ser necesarias en sus páginas de manual, generarán automáticamente una "
 "variable de substitución llamada ${misc:Depends}. Si introduce esta variable "
-"en el archivo debian/control, se expandirá a las dependencias que "
+"en el fichero «debian/control», se expandirá a las dependencias que "
 "debhelper crea oportunas."
 
 # type: textblock
@@ -1719,8 +1747,8 @@ msgid ""
 "or above.)"
 msgstr ""
 "Si «debian/rules» contiene un objetivo con un nombre del tipo "
-"«override_I<dh_command>», dh invocará este objetivo en lugar de ejecutar "
-"I<dh_command>. El objetivo «override» puede después ejecutar la orden con "
+"«override_I<dh_orden>», dh invocará este objetivo en lugar de ejecutar "
+"I<dh_orden>. El objetivo «override» puede después ejecutar la orden con "
 "opciones adicionales, o ejecutar otras órdenes totalmente diferentes. "
 "Consulte los ejemplos a continuación. Tenga en cuenta que para usar esta "
 "funcionalidad, el paquete debe tener una dependencia de construcción sobre "
@@ -2217,7 +2245,7 @@ msgid ""
 "particular package is being built. This can be accomplished using "
 "L<dh_listpackages(1)> to test what is being built. For example:"
 msgstr ""
-"A veces, puede que desee hacer que un objetivo «override» ejecute la órdenes "
+"A veces, puede que desee hacer que un objetivo «override» ejecute las órdenes "
 "sólo cuando se construya un paquete en particular. Para ello, use "
 "L<dh_listpackages(1)> para comprobar qué paquete se está construyendo. Por "
 "ejemplo:"
@@ -2522,7 +2550,7 @@ msgstr ""
 "automáticamente un paquete antes de su construcción. Para ello, ejecuta la "
 "orden adecuada para el sistema de construcción que detecta que usa el "
 "paquete. Por ejemplo, busca y ejecuta un script «./configure», "
-"«Makefile.PL», «Build.PL» o cmake. Determina un conjunto estándar de "
+"«Makefile.PL», «Build.PL» o «cmake». Determina un conjunto estándar de "
 "parámetros y los introduce al programa a ejecutar. Algunos sistemas de "
 "construcción, como make, no necesitan un paso «configure»; para ellos, "
 "dh_auto_configure cerrará sin hacer nada."
@@ -2618,8 +2646,8 @@ msgid ""
 msgstr ""
 "«DESTDIR» se usa para indicar a make dónde instalar los ficheros. Si el "
 "fichero «Makefile» se generó mediante MakeMaker a partir de un fichero "
-"«Makefile.PL», definirá también «PREFIX=/usr», ya que lso ficheros "
-"«Makefile» lo requieren."
+"«Makefile.PL», definirá también «PREFIX=/usr», ya que lo requieren "
+"los ficheros «Makefile»."
 
 #. type: textblock
 #: dh_auto_install:39
@@ -2819,8 +2847,8 @@ msgid ""
 "package/presubj> in the package build directory."
 msgstr ""
 "La herramienta de informe de fallos muestra el contenido de este fichero al "
-"usuario antes de permitir a éste escribir informe de fallo del paquete en el "
-"sistema de seguimiento de fallos de Debian. El fichero se instala como "
+"usuario antes de permitir a éste escribir un informe de fallo del paquete en "
+"el sistema de seguimiento de fallos de Debian. El fichero se instala como "
 "F<usr/share/bug/package/presubj> en el directorio de construcción del "
 "paquete."
 
@@ -3004,7 +3032,7 @@ msgstr "B<-k>, B<--keep>"
 #. type: textblock
 #: dh_clean:47
 msgid "This is deprecated, use L<dh_prep(1)> instead."
-msgstr "Está obsoleta, use L<dh_prep(1)>en su lugar."
+msgstr "Está obsoleta, use L<dh_prep(1)> en su lugar."
 
 # type: =item
 #. type: =item
@@ -3020,7 +3048,7 @@ msgid ""
 "all."
 msgstr ""
 "Sólo limpia los directorios de construcción del paquete, no limpia ningún "
-"otro tipo de ficheros."
+"otro tipo de fichero."
 
 # type: =item
 #. type: =item
@@ -3143,9 +3171,9 @@ msgid ""
 "You may use this option multiple times to build up a list of things to "
 "exclude."
 msgstr ""
-"No se comprimirán los ficheros que contengan «elemento» en cualquier parte de "
-"su nombre. Por ejemplo, -«X.tiff» excluirá los ficheros tiff. Puede "
-"usar esta opción varias veces para excluir una lista de elementos."
+"Excluye ficheros que contengan «elemento» en cualquier parte de "
+"su nombre de ser comprimidos. Por ejemplo, «-X.tiff» excluirá los ficheros "
+"tiff. Puede usar esta opción varias veces para excluir una lista de elementos."
 
 # type: textblock
 #. type: textblock
@@ -3260,13 +3288,13 @@ msgstr ""
 "dh_fixperms hace que el modo de todos los ficheros en« usr/share/doc» en el "
 "directorio de construcción del paquete (excluyendo los ficheros en el "
 "directorio «examples/)» tengan el modo 644. También cambia el modo de las "
-"páginas del manual a 644. Hace que todos los ficheros pertenezcan al "
+"páginas de manual a 644. Hace que todos los ficheros pertenezcan al "
 "administrador y elimina los permisos de escritura de grupo y de otros. "
 "Elimina los permisos de ejecución de cualquier biblioteca, paquetes para el "
 "desarrollo («headers»), modulos de Perl o ficheros «desktop» que lo puedan "
 "tener. Hace ejecutables todos los ficheros en «bin/», «/usr/games/» y "
-"«etc/init.d» (sólo v4). Finalmente, elimina los bit setuid y setgid de todos "
-"los ficheros en el paquete."
+"«etc/init.d» (a partir de v4). Finalmente, elimina los bit setuid y setgid "
+"de todos los ficheros en el paquete."
 
 # type: =item
 #. type: =item
@@ -3358,7 +3386,6 @@ msgstr "B<--priority> I<prioridad>"
 # type: textblock
 #. type: textblock
 #: dh_gconf:45
-#, fuzzy
 msgid ""
 "Use I<priority> (which should be a 2-digit number) as the defaults priority "
 "instead of 10. Higher values than ten can be used by derived distributions "
@@ -3366,8 +3393,8 @@ msgid ""
 msgstr ""
 "Usa I<prioridad> (que debería ser un número de dos dígitos) como la "
 "prioridad predeterminada, en lugar de 10. Otros pueden usar valores "
-"superiores a 10, como las distribuciones derivadas (20), distribuciones CDD "
-"(50) y paquetes específicos de sitio (90)."
+"superiores a 10, como las distribuciones derivadas (20), distribuciones de "
+"Debian personalizadas «CDD» (50) y paquetes de sitios web específicos (90)."
 
 # type: textblock
 #. type: textblock
@@ -3395,8 +3422,8 @@ msgid ""
 "control files, and installing them into the DEBIAN directory with the proper "
 "permissions."
 msgstr ""
-"dh_gencontrol es un programa de debhelper que genera los ficheros de "
-"control, y los instala en el directorio DEBIAN con los permisos correctos."
+"dh_gencontrol es un programa de debhelper que genera ficheros de "
+"control, e instala en el directorio «DEBIAN» con los permisos correctos."
 
 # type: textblock
 #. type: textblock
@@ -3406,8 +3433,8 @@ msgid ""
 "it once for each package being acted on, and passes in some additional "
 "useful flags."
 msgstr ""
-"El programa es simplemente una interfaz de L<dpkg-gencontrol(1)>, al que "
-"invoca una vez por cada paquete sobre el que actúa, e introduciendo algunas "
+"El programa es simplemente una interfaz para L<dpkg-gencontrol(1)>, al que "
+"invoca una vez por cada paquete sobre el que actúa, introduciendo algunas "
 "opciones adicionales útiles."
 
 # type: textblock
@@ -3425,7 +3452,7 @@ msgstr "B<-u>I<parámetros>, B<--dpkg-gencontrol-params>I<parámetros>"
 #. type: textblock
 #: dh_icons:5
 msgid "dh_icons - Update Freedesktop icon caches"
-msgstr "dh_icons - Actualiza el almacén de iconos Freedesktop"
+msgstr "dh_icons - Actualiza el almacén de iconos de Freedesktop"
 
 # type: textblock
 #. type: textblock
@@ -3443,12 +3470,12 @@ msgid ""
 "may do so at a later date. It takes care of adding maintainer script "
 "fragments to call F<update-icon-caches>."
 msgstr ""
-"dh_desktop es un programa de debhelper que actualiza los almacenes de iconos "
-"Freedesktop cuando es necesario, usando el programa update-icon-caches "
-"proporcionado por GTK+2.12. En el momento presente, el programa no gestiona "
-"la instalación de los ficheros, aunque puede que lo haga en el futuro. Se "
-"encarga de añadir fragmentos de script de desarrollador para invocar "
-"F<update-icon-caches>."
+"dh_desktop es un programa de debhelper que actualiza los almacenes («cache») "
+"de iconos de Freedesktop cuando es necesario, usando el programa "
+"update-icon-caches proporcionado por GTK+2.12. En el momento presente, el "
+"programa no gestiona la instalación de los ficheros, aunque puede que lo "
+"haga en el futuro. Se encarga de añadir fragmentos a los scripts del "
+"desarrollador para invocar F<update-icon-caches>."
 
 # type: =item
 #. type: =item
@@ -3507,8 +3534,8 @@ msgstr ""
 "dh_install es un programa de debhelper que instala ficheros en los "
 "directorios de construcción del paquete. Hay muchas órdenes dh_install* que "
 "se encargan de instalar tipos de ficheros específicos, como documentación, "
-"ejemplos, páginas del manual... se deben usar siempre que sea posible, pues a "
-"menudo son más hábiles en estas tareas particulares. Así, dh_install "
+"ejemplos, páginas de manual y más, se deben usar siempre que sea posible, "
+"pues a menudo son más hábiles en estas tareas particulares. Así, dh_install "
 "es útil para instalar el resto de las cosas para las cuales no se necesite "
 "ninguna habilidad especial. Es un reemplazo de la antigua orden dh_movefiles."
 
@@ -3523,8 +3550,8 @@ msgid ""
 "Makefile to install it all into debian/tmp, and then use dh_install to copy "
 "directories and files from there into the proper package build directories."
 msgstr ""
-"Este programa se puede usar de dos modos. Si solamente tiene uno o dos "
-"ficheros que el «Makefile» del desarrollador principal no instala por usted, "
+"Este programa se puede usar de dos modos. Si sólo tiene uno o dos "
+"ficheros que el «Makefile» del desarrollador principal no instala, "
 "puede usar dh_install para moverlos a su lugar. Por otro lado, quizá tenga "
 "un gran paquete que construye múltiples paquetes binarios. Puede usar el "
 "«Makefile» del desarrollador original para instalar todo en «debian/tmp», y "
@@ -3585,7 +3612,7 @@ msgid ""
 "of the files (and symlinks) in the source directory were not installed to "
 "somewhere, it will warn on stderr about that."
 msgstr ""
-"Esta opción hace que dh_install registre los ficheros que instala, y al "
+"Esta opción hace que dh_install registre los ficheros que instala y, al "
 "final, compare esa lista con los ficheros en el directorio fuente. Si alguno "
 "de los ficheros (o enlaces simbólicos) en el directorio fuente no se "
 "instalaron en algún lugar, dará un aviso a través de la salida de error "
@@ -3598,7 +3625,7 @@ msgid ""
 "This may be useful if you have a large package and want to make sure that "
 "you don't miss installing newly added files in new upstream releases."
 msgstr ""
-"Esto puede ser útil si tiene un paquete grande y quiere comprobar que no "
+"Puede ser útil si tiene un paquete grande y quiere comprobar que no "
 "olvida instalar ningún fichero nuevo añadido en una nueva versión del "
 "programa."
 
@@ -3625,7 +3652,7 @@ msgid ""
 "This option is like --list-missing, except if a file was missed, it will not "
 "only list the missing files, but also fail with a nonzero exit code."
 msgstr ""
-"Esta opción es como «--list-missing», excepto que si se olvida un fichero, "
+"Esta opción es como «--list-missing», excepto que si olvida un fichero, "
 "no sólo se listarán los ficheros olvidados, sino que además se devolverá un "
 "código de salida distinto de cero."
 
@@ -3643,8 +3670,7 @@ msgid ""
 "Exclude files that contain \"item\" anywhere in their filename from being "
 "installed."
 msgstr ""
-"No instala los ficheros que contengan «elemento» en alguna parte de su "
-"nombre."
+"Excluye ficheros que contienen «elemento» en alguna parte de su nombre."
 
 # type: =item
 #. type: =item
@@ -3865,7 +3891,7 @@ msgid ""
 "Catalogs will be registered in a supercatalog, in F</etc/sgml/I<package>."
 "cat>."
 msgstr ""
-"Los catálogos se registrarán en un catálogo principal, en "
+"Los catálogos se registran en un catálogo principal,  "
 "F</etc/sgml/I<paquete>.cat>."
 
 # type: textblock
@@ -3911,7 +3937,7 @@ msgid ""
 "with F</usr/share/sgml/>."
 msgstr ""
 "Lista los catálogos a instalar por cada paquete. Cada línea en ese fichero "
-"debe ser de la forma C<origen destino>, donde C<origen> indica dónde reside "
+"debe tener la forma C<origen destino>, donde C<origen> indica dónde reside "
 "el catálogo dentro del árbol de las fuentes, y C<destino> indica el lugar "
 "del catálogo dentro del área de construcción del paquete. C<destino> debería "
 "empezar por F</usr/share/sgml/>."
@@ -3933,7 +3959,7 @@ msgid ""
 "instances of the same text to be added to maintainer scripts."
 msgstr ""
 "Esta orden no es idempotente. Debería invocar L<dh_prep(1)> entre cada "
-"invocaciones de esta orden. De otro modo, puede causar que los scripts del "
+"invocación de esta orden. De otro modo, puede causar que los scripts del "
 "desarrollador contengan partes duplicadas."
 
 # type: textblock
@@ -4101,7 +4127,7 @@ msgstr ""
 #. type: textblock
 #: dh_installcron:5
 msgid "dh_installcron - install cron scripts into etc/cron.*"
-msgstr "dh_installcron - Instala scripts de cron en etc/cron.*"
+msgstr "dh_installcron - Instala scripts para cron en etc/cron.*"
 
 # type: textblock
 #. type: textblock
@@ -4117,7 +4143,7 @@ msgid ""
 "cron scripts."
 msgstr ""
 "dh_installcron es un programa de debhelper responsable de instalar scripts "
-"de cron."
+"para cron."
 
 #. type: =item
 #: dh_installcron:25
@@ -4151,8 +4177,8 @@ msgid ""
 "Installed into the appropriate etc/cron.*/ directory in the package build "
 "directory."
 msgstr ""
-"Instalado en el directorio «etc/cron.*/» en el directorio de construcción "
-"del paquete."
+"Se instalan en el directorio «etc/cron.*/» adecuado en el directorio de "
+"construcción del paquete."
 
 # type: =item
 #. type: =item
@@ -4260,7 +4286,7 @@ msgstr "I<paquete>.conffiles"
 #. type: textblock
 #: dh_installdeb:47
 msgid "This control file will be installed into the DEBIAN directory."
-msgstr "Este fichero de control se instalará en el directorio «DEBIAN»."
+msgstr "Este fichero de control se instalan en el directorio «DEBIAN»."
 
 # type: textblock
 #. type: textblock
@@ -4312,7 +4338,7 @@ msgid ""
 "See L<dh_installdeb(1)> for an explanation of how that works."
 msgstr ""
 "Además, genera automáticamente las órdenes del «postrm» necesarias para "
-"interaccionar con debconf. Las órdenes se añaden a los scripts de "
+"interactuar con debconf. Las órdenes se añaden a los scripts de "
 "desarrollador mediante dh_installdeb. Consulte L<dh_installdeb(1)> para una "
 "explicación acerca de su funcionamiento."
 
@@ -4323,8 +4349,8 @@ msgid ""
 "Note that if you use debconf, your package probably needs to depend on it "
 "(it will be added to ${misc:Depends} by this program)."
 msgstr ""
-"Tenga en cuenta que si usa debconf, probablemente su paquete dependa de él "
-"(este programa lo añadirá a ${misc:Depends}."
+"Tenga en cuenta que si usa debconf, probablemente su paquete necesita "
+"depender de él (este programa lo añadirá a ${misc:Depends}."
 
 # type: textblock
 #. type: textblock
@@ -4334,7 +4360,7 @@ msgid ""
 "to source debconf's confmodule. dh_installdebconf does not install this "
 "statement into the postinst automatically as it it too hard to do it right."
 msgstr ""
-"Tenga en cuenta que para que dpkg invoque su script de «config», su "
+"Tenga en cuenta que para que dpkg invoque su script «config», su "
 "«postinst» necesita cargar el fichero «confmodule» de debconf. "
 "dh_installdebconf no introduce esta orden automáticamente en el script de "
 "«postinst» porque es demasiado difícil hacerlo bien."
@@ -4391,7 +4417,7 @@ msgid ""
 "translations from there."
 msgstr ""
 "Si este directorio está presente, el programa usara automáticamente "
-"L<po2debconf(1)> para generar ficheros de fusión de plantillas que incluyen "
+"L<po2debconf(1)> para generar ficheros de plantilla fusionados que incluyen "
 "las traducciones ahí contenidas."
 
 # type: textblock
@@ -4412,14 +4438,14 @@ msgstr "No modifica el script «postrm»."
 #. type: textblock
 #: dh_installdebconf:71
 msgid "Pass the params to po2debconf."
-msgstr "Introduce los parámetros a po2debconf."
+msgstr "Introduce los «parámetros» a po2debconf."
 
 # type: textblock
 #. type: textblock
 #: dh_installdirs:5
 msgid "dh_installdirs - create subdirectories in package build directories"
 msgstr ""
-"dh_installdirs - Crea subdirectorios en directorios de construcción de "
+"dh_installdirs - Crea subdirectorios en los directorios de construcción del "
 "paquete"
 
 # type: textblock
@@ -4448,7 +4474,7 @@ msgstr "debian/I<paquete>.dirs"
 #. type: textblock
 #: dh_installdirs:27
 msgid "Lists directories to be created in I<package>."
-msgstr "Lista los directorios a crear en I<package>."
+msgstr "Lista los directorios a crear en I<paquete>."
 
 # type: textblock
 #. type: textblock
@@ -4458,7 +4484,7 @@ msgid ""
 "acted on, not just the first."
 msgstr ""
 "Crea cualquier directorio especificado mediante los parámetros de la línea "
-"de órdenes en TODOS los paquetes sobre los que actúe, no sólo en el primero."
+"de órdenes en TODOS los paquetes sobre los que actúa, no sólo en el primero."
 
 # type: =item
 #. type: =item
@@ -4474,14 +4500,14 @@ msgid ""
 "acted on. (Or in all packages if -A is specified.)"
 msgstr ""
 "Crea estos directorios en el directorio de construcción del primer paquete "
-"sobre el que se actúe. (O en todos los paquetes si se especifica «-A»)."
+"sobre el que actúa (o en todos los paquetes si se especifica «-A»)."
 
 # type: textblock
 #. type: textblock
 #: dh_installdocs:5
 msgid "dh_installdocs - install documentation into package build directories"
 msgstr ""
-"dh_installdocs - Instala documentación en los directorios de construcción de "
+"dh_installdocs - Instala documentación en los directorios de construcción del "
 "paquete"
 
 # type: textblock
@@ -4577,7 +4603,7 @@ msgid ""
 "Installed as doc-base control files. Note that the doc-id will be determined "
 "from the \"Document:\" entry in the doc-base control file in question."
 msgstr ""
-"Instalado como ficheros de control de doc-base. Tenga en cuenta que el "
+"Se instala como un fichero de control de doc-base. Tenga en cuenta que el "
 "identificador del documento, doc-id, se determinará de la entrada "
 "«Document:» en el fichero de control de doc-base en cuestión."
 
@@ -4604,7 +4630,7 @@ msgid ""
 "on."
 msgstr ""
 "Instala todos los ficheros especificados en los parámetros de la línea de "
-"órdenes en TODOS los paquetes sobre los que actúe."
+"órdenes en TODOS los paquetes sobre los que actúa."
 
 # type: textblock
 #. type: textblock
@@ -4635,8 +4661,8 @@ msgstr ""
 "se actúa sea un enlace simbólico al directorio de documentación del "
 "I<paquete>. No tiene efecto cuando se actúa sobre el mismo I<paquete>, o si "
 "el directorio de documentación a crear ya existe al ejecutar "
-"B<dh_installdocs>. Para cumplir las normas, el I<<paquete> debe ser un "
-"paquete binario que se origina del mismo paquete de fuentes."
+"B<dh_installdocs>. Para cumplir las normas, el I<paquete> debe ser un "
+"paquete binario que se origina del mismo paquete fuente."
 
 #. type: textblock
 #: dh_installdocs:82
@@ -4671,7 +4697,7 @@ msgid ""
 "all packages if B<-A> is specified)."
 msgstr ""
 "Instala esos ficheros como documentación en el primer paquete sobre el que "
-"actúe. (O en todos si se especifica B<-A>)."
+"actúa (o en todos si se especifica B<-A>)."
 
 # type: textblock
 #. type: textblock
@@ -5290,8 +5316,8 @@ msgid ""
 "normally installs."
 msgstr ""
 "Usa «nombre-script» como nombre del script de init a instalar en «etc/init."
-"d/» (y también usa este nombre para el fichero de valores predeterminados, 
-"si se instala). Si "usa este parámetro, dh_installinit mirará si existe un "
+"d/» (y también usa este nombre para el fichero de valores predeterminados, "
+"si se instala). Si usa este parámetro, dh_installinit mirará si existe un "
 "fichero cuyo nombre se parezca a «paquete.nombre-script» en el directorio "
 "«debian»/ y si es así lo instalará preferentemente como el script de init en "
 "lugar de los ficheros que instala habitualmente."
@@ -5517,11 +5543,11 @@ msgid ""
 "language=C to avoid this."
 msgstr ""
 "Si parece que dh_installman instala una página de manual en una sección "
-"incorrecta o con la extensión equivocada es porque la página del manual "
+"incorrecta o con la extensión equivocada es porque la página de manual "
 "tiene una sección incorrecta en su línea .TH. Edite la página de manual y "
 "corrija la sección, y dh_installman hará lo correcto. Para más detalles "
 "acerca de la sección .TH consulte L<man(7)> . Si parece que dh_installman "
-"instala la página del manual en un directorio como "
+"instala la página de manual en un directorio como "
 "«/usr/share/man/pl/man1/», es porque su programa tiene un nombre como "
 "«tal.pl», y dh_installman asume que significa que está traducida al "
 "polaco. Para evitar esto use «--language=C»."
@@ -5674,7 +5700,7 @@ msgid ""
 "that you do not want to be installed."
 msgstr ""
 "Todos los fichero especificados como parámetros serán omitidos por "
-"dh_installmanpages. Esto es útil si por omisión instala alguna página del "
+"dh_installmanpages. Esto es útil si por omisión instala alguna página de "
 "manual que no quiere instalar."
 
 # type: textblock
@@ -6917,7 +6943,7 @@ msgstr ""
 "dh_movefiles es un programa de debhelper que es responsable de mover "
 "ficheros en «debian/tmp» o algún otro directorio y ubicarlos dentro de otros "
 "directorios de construcción de paquetes. Esto podría ser útil si su paquete "
-"tiene un «Makefile» que instala todo en «debian/tmp», y usted necesita "
+"tiene un «Makefile» que instala todo en «debian/tmp», y necesita "
 "dividirlos en subpaquetes."
 
 # type: textblock
@@ -7041,7 +7067,7 @@ msgstr ""
 "El programa buscará scripts y módulos de Perl en su paquete, y usará esta "
 "información para generar una dependencia sobre perl o perlapi. La dependencia "
 "será substituida en el fichero de control de su paquete dondequiera que "
-"usted ubique el comodín «${perl:Depends}»."
+"ubique el comodín «${perl:Depends}»."
 
 # type: textblock
 #. type: textblock
@@ -7068,7 +7094,7 @@ msgid ""
 "generate a dependency on the correct base package. This is only necessary "
 "for some packages that are included in the base system."
 msgstr ""
-"En algunos casos específicos usted podría querer depender de perl-base en "
+"En algunos casos específicos podría querer depender de perl-base en "
 "lugar de todo el paquete de perl. De ser así, puede especificar la "
 "opción «-d» para que dh_perl genere una dependencia en el paquete base "
 "correcto. Sólo es necesario para algunos paquete que están "
