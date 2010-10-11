@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debhelper 8.0.0\n"
 "POT-Creation-Date: 2010-08-07 11:36-0300\n"
-"PO-Revision-Date: 2010-10-01 20:08+0200\n"
+"PO-Revision-Date: 2010-10-11 14:33+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -4938,10 +4938,8 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_installifupdown:5
-#, fuzzy
-#| msgid "dh_installppp - install ppp ip-up and ip-down files"
 msgid "dh_installifupdown - install if-up and if-down hooks"
-msgstr "dh_installifupdown - install if-up and if-down hooks"
+msgstr "dh_installifupdown - Instala «hooks» para if-up e if-down "
 
 # type: textblock
 #. type: textblock
@@ -4952,15 +4950,14 @@ msgstr "B<dh_installifupdown> [S<I<opciones-de-debhelper>>] [B<--name=>I<nombre>
 # type: textblock
 #. type: textblock
 #: dh_installifupdown:18
-#, fuzzy
 msgid ""
 "dh_installifupdown is a debhelper program that is responsible for installing "
 "if-up, if-down, if-pre-up, and if-post-down hook scripts into package build "
 "directories."
 msgstr ""
-"dh_installppp es un programa de debhelper responsable de instalar los "
-"scripts if-up e if-down de ppp en los directorios de construcción del "
-"paquete."
+"dh_installifupdown es un programa de debhelper responsable de instalar "
+"scripts «hook» para if-up, if-down, if-pre-up, e if-post-down en los  "
+"directorios de construcción de paquete."
 
 # type: =item
 #. type: =item
