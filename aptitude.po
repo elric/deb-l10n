@@ -26,17 +26,19 @@
 #   - La guía de traducción de po's de debconf:
 #     /usr/share/doc/po-debconf/README-trans
 #     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+# Omar Campagne Polaino <ocampagne@gmail.com>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: aptitude doc es 0.6\n"
 "POT-Creation-Date: 2010-06-18 23:06-0600\n"
-"PO-Revision-Date: 2009-11-13 22:23+0100\n"
-"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"PO-Revision-Date: 2010-10-11 19:58+0200\n"
+"Last-Translator: Omar Campagne Polaino <ocampagne@gmail.com>\n"
 "Language-Team: Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. type: Content of the aptitude entity
 #: en/aptitude.xml:5
@@ -1248,7 +1250,7 @@ msgstr ""
 #. type: Content of: <book><preface><section><title>
 #: en/aptitude.xml:388
 msgid "How can I get &aptitude;?"
-msgstr "¿Como puedo conseguir &aptitude;?"
+msgstr "¿Cómo puedo conseguir &aptitude;?"
 
 #. type: Content of: <book><preface><section><para>
 #: en/aptitude.xml:392
@@ -1614,7 +1616,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:651
 msgid "&aptitude; basics"
-msgstr "Introducción al uso de &aptitude;."
+msgstr "Introducción al uso de &aptitude;"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:653
@@ -1847,7 +1849,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:773
 msgid "Navigating the &aptitude; package list"
-msgstr "Explorar la lista de paquetes de &aptitude;."
+msgstr "Explorar la lista de paquetes de &aptitude;"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:776
@@ -2135,7 +2137,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:985
 msgid "Finding packages by name"
-msgstr "Encontrar paquetes por nombre."
+msgstr "Encontrar paquetes por nombre"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:988
@@ -2757,10 +2759,11 @@ msgid ""
 "presented:"
 msgstr ""
 "A partir de aquí puede ver más soluciones si pulsa «<keycap>.</keycap>», o "
-"volver a las soluciones previamente examinadas si pulsa «<keycap>,</keycap>». "
-"Para aplicar la solución seleccionada en ese momento y volver a la lista de "
-"paquetes, pulse <keycap>!</keycap>. Por ejemplo, si pulsase «<keycap>.</"
-"keycap>» en la pantalla anterior, se le presentaría la siguiente solución:"
+"volver a las soluciones previamente examinadas si pulsa «<keycap>,</"
+"keycap>». Para aplicar la solución seleccionada en ese momento y volver a la "
+"lista de paquetes, pulse <keycap>!</keycap>. Por ejemplo, si pulsase "
+"«<keycap>.</keycap>» en la pantalla anterior, se le presentaría la siguiente "
+"solución:"
 
 #. type: Content of: <book><chapter><section><section><section><screenshot><mediaobject>
 #: en/aptitude.xml:1364
@@ -3156,7 +3159,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:1594
 msgid "Updating the package list and installing packages"
-msgstr "Actualizar la lista de paquetes e instalar paquetes."
+msgstr "Actualizar la lista de paquetes e instalar paquetes"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:1597
@@ -3440,9 +3443,9 @@ msgstr ""
 #. type: Content of: <book><chapter><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:1789
 msgid ""
-"These commands install, remove, or purge<placeholder type=\"footnote\" id=\"0"
-"\"/> the specified packages.  <quote>Installing</quote> a package which is "
-"already installed but can be upgraded will cause it to be upgraded."
+"These commands install, remove, or purge<placeholder type=\"footnote\" id="
+"\"0\"/> the specified packages.  <quote>Installing</quote> a package which "
+"is already installed but can be upgraded will cause it to be upgraded."
 msgstr ""
 "Estas órdenes instalan, eliminan o purgan <placeholder type=\"footnote\" id="
 "\"0\"/> los paquetes especificados. <quote>Instalar</quote> un paquete que "
@@ -3850,8 +3853,8 @@ msgstr ""
 "veces es difícil recordar como hacer alguna operación, o incluso si es "
 "posible. De hecho, muchas de las peticiones que llegan al autor acerca de la "
 "implementación de más características describen características ya "
-"presentes, pero difíciles de encontrar.<placeholder type=\"footnote\" id=\"0"
-"\"/>"
+"presentes, pero difíciles de encontrar.<placeholder type=\"footnote\" id="
+"\"0\"/>"
 
 #. type: Content of: <book><chapter><para>
 #: en/aptitude.xml:2028
@@ -3897,7 +3900,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:2054
 msgid "Using the menus"
-msgstr "Usar los menús."
+msgstr "Usar los menús"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:2057
@@ -3970,7 +3973,7 @@ msgstr "El menú Acciones."
 #. type: Content of: <book><chapter><section><section><section><figure><title>
 #: en/aptitude.xml:2098
 msgid "Commands available in the Actions menu"
-msgstr "Órdenes disponibles en el menú Acciones."
+msgstr "Órdenes disponibles en el menú Acciones"
 
 #. type: Content of: <book><chapter><section><section><informaltable><tgroup><thead><row><entry>
 #: en/aptitude.xml:2104 en/aptitude.xml:2221 en/aptitude.xml:2252
@@ -4143,7 +4146,7 @@ msgstr "El menú Deshacer"
 #. type: Content of: <book><chapter><section><section><section><figure><title>
 #: en/aptitude.xml:2215
 msgid "Commands available in the Undo menu"
-msgstr "Órdenes disponibles en el menú Deshacer."
+msgstr "Órdenes disponibles en el menú Deshacer"
 
 #. type: Content of: <book><chapter><section><section><section><figure><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:2228
@@ -4169,7 +4172,7 @@ msgstr "El menú Paquete"
 #. type: Content of: <book><chapter><section><section><section><figure><title>
 #: en/aptitude.xml:2246
 msgid "Commands available in the Package menu"
-msgstr "Órdenes disponibles en el menú Paquete."
+msgstr "Órdenes disponibles en el menú Paquete"
 
 #. type: Content of: <book><chapter><section><section><section><figure><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:2259
@@ -4323,8 +4326,8 @@ msgstr ""
 "Cuando explora la lista de paquetes, varía la información que puede ver en "
 "el área de información (la mitad inferior de la pantalla). El área de "
 "información puede mostrar una larga descripción del paquete seleccionado "
-"(predefinido), un resumen de las dependencias relacionadas con ese "
-"paquete o un análisis de qué otros paquetes requieren o sugieren el paquete "
+"(predefinido), un resumen de las dependencias relacionadas con ese paquete o "
+"un análisis de qué otros paquetes requieren o sugieren el paquete "
 "seleccionado."
 
 #. type: Content of: <book><chapter><section><section><section><figure><informaltable><tgroup><tbody><row><entry>
@@ -4351,7 +4354,7 @@ msgstr "El menú Solucionador"
 #. type: Content of: <book><chapter><section><section><section><figure><title>
 #: en/aptitude.xml:2386
 msgid "Commands available in the Resolver menu"
-msgstr "Órdenes disponibles en el menú Solucionador."
+msgstr "Órdenes disponibles en el menú Solucionador"
 
 #. type: Content of: <book><chapter><section><section><section><figure><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:2399
@@ -4486,8 +4489,8 @@ msgid ""
 "reject them manually at any time."
 msgstr ""
 "Rechazar (al igual que con &resolver-reject;) todas las acciones que rompen "
-"una retención o que instalan una versión prohibida. De manera "
-"predefinida, estas acciones se rechazan a menos que defina <link "
+"una retención o que instalan una versión prohibida. De manera predefinida, "
+"estas acciones se rechazan a menos que defina <link "
 "linkend='configProblemResolver-Allow-Break-Holds'><literal>Aptitude::"
 "ProblemResolver::Allow-Break-Holds</literal></link> como <literal>true</"
 "literal>."
@@ -4500,7 +4503,7 @@ msgstr "El menú Buscar"
 #. type: Content of: <book><chapter><section><section><section><figure><title>
 #: en/aptitude.xml:2512
 msgid "Commands available in the Search menu"
-msgstr "Órdenes disponibles en el menú Buscar."
+msgstr "Órdenes disponibles en el menú Buscar"
 
 #. type: Content of: <book><chapter><section><section><section><figure><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:2525
@@ -4600,7 +4603,7 @@ msgstr "El menú Opciones"
 #. type: Content of: <book><chapter><section><section><section><figure><title>
 #: en/aptitude.xml:2600
 msgid "Commands available in the Options menu"
-msgstr "Órdenes disponibles en el menú Opciones."
+msgstr "Órdenes disponibles en el menú Opciones"
 
 #. type: Content of: <book><chapter><section><section><section><figure><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:2613
@@ -4648,7 +4651,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><section><figure><title>
 #: en/aptitude.xml:2653
 msgid "Commands available in the Views menu"
-msgstr "Órdenes disponibles en el menú Vistas."
+msgstr "Órdenes disponibles en el menú Vistas"
 
 #. type: Content of: <book><chapter><section><section><section><figure><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:2666
@@ -4766,7 +4769,7 @@ msgstr "El menú Ayuda"
 #. type: Content of: <book><chapter><section><section><section><figure><title>
 #: en/aptitude.xml:2755
 msgid "Commands available in the Help menu"
-msgstr "Órdenes disponibles en el menú Ayuda."
+msgstr "Órdenes disponibles en el menú Ayuda"
 
 #. type: Content of: <book><chapter><section><section><section><figure><informaltable><tgroup><tbody><row><entry>
 #: en/aptitude.xml:2768
@@ -4836,7 +4839,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:2825
 msgid "Working with multiple views"
-msgstr "Trabajar con varias vistas."
+msgstr "Trabajar con varias vistas"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:2828
@@ -4955,7 +4958,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:2895
 msgid "Becoming &root;"
-msgstr "Convertirse en &root;."
+msgstr "Convertirse en &root;"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:2898
@@ -5063,9 +5066,9 @@ msgid ""
 "linkend='configGet-Root-Command'><literal>Aptitude::Get-Root-Command</"
 "literal></link>."
 msgstr ""
-"De manera predefinida, aptitude usará la orden <systemitem>su</"
-"systemitem> para obtener privilegios de superusuario. Si desea usar otra "
-"orden, (como por ejemplo <systemitem>sudo</systemitem>), defina la opción de "
+"De manera predefinida, aptitude usará la orden <systemitem>su</systemitem> "
+"para obtener privilegios de superusuario. Si desea usar otra orden, (como "
+"por ejemplo <systemitem>sudo</systemitem>), defina la opción de "
 "configuración <link linkend='configGet-Root-Command'><literal>Aptitude::Get-"
 "Root-Command</literal></link>."
 
@@ -5081,7 +5084,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:2975
 msgid "Managing the package list"
-msgstr "Gestionar la lista de paquetes."
+msgstr "Gestionar la lista de paquetes"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:2978
@@ -5095,7 +5098,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:2985
 msgid "Accessing package information"
-msgstr "Acceso a la información de los paquetes."
+msgstr "Acceso a la información de los paquetes"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:2988
@@ -5636,7 +5639,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:3389
 msgid "Modifying package states"
-msgstr "Modificar los estados de los paquete."
+msgstr "Modificar los estados de los paquetes"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:3392
@@ -5883,7 +5886,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:3596
 msgid "Downloading, installing, and removing packages"
-msgstr "Descargar, instalar y eliminar paquetes."
+msgstr "Descargar, instalar y eliminar paquetes"
 
 #. type: Content of: <book><chapter><section><section><para><footnote><para>
 #: en/aptitude.xml:3604
@@ -5960,7 +5963,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:3640
 msgid "Understanding and managing package trust"
-msgstr "Llaves GPG: Entender y gestionar la confianza de los paquetes."
+msgstr "Llaves GPG: Entender y gestionar la confianza de los paquetes"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:3643
@@ -6232,15 +6235,15 @@ msgid ""
 "and competent."
 msgstr ""
 "Una vez que se añade un archivo de una llave al anillo de llaves de APT, !se "
-"le otorgara la misma confianza que a los propios servidores réplica de "
-"Debian¡ Haga esto sólo si está muy seguro de que la llave que está añadiendo "
-"es la correcta <emphasis>y</emphasis> si la persona que posee la llave es "
+"le otorgara la misma confianza que a los propios servidores réplica de Debian"
+"¡ Haga esto sólo si está muy seguro de que la llave que está añadiendo es la "
+"correcta <emphasis>y</emphasis> si la persona que posee la llave es "
 "competente y de toda confianza."
 
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:3814
 msgid "Managing automatically installed packages"
-msgstr "Gestionar paquetes automáticamente instalados."
+msgstr "Gestionar paquetes automáticamente instalados"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:3817
@@ -6271,10 +6274,10 @@ msgid ""
 "a Suggests relationship is also enough to keep a package installed."
 msgstr ""
 "Más exactamente: se desinstalarán cuando nada conduzca a ellos a través de "
-"«Depende», «Predepende» o «Recomienda» desde un paquete instalado manualmente. "
-"Si <link linkend='configKeep-Suggests'>Aptitude::Keep-Suggests</link> es "
-"«true», una relación de «Sugiere» es también suficiente para mantener un "
-"paquete instalado."
+"«Depende», «Predepende» o «Recomienda» desde un paquete instalado "
+"manualmente. Si <link linkend='configKeep-Suggests'>Aptitude::Keep-Suggests</"
+"link> es «true», una relación de «Sugiere» es también suficiente para "
+"mantener un paquete instalado."
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:3830
@@ -6291,8 +6294,8 @@ msgstr ""
 "instalará automáticamente cualquier otro paquete sobre el cual éste dependa. "
 "Estos paquetes se marcan como <quote>automáticamente instalados</quote>; "
 "&aptitude; los registrará y eliminará cuando ya no sean dependencia de "
-"cualquier paquete manualmente instalado <placeholder type=\"footnote\" id=\"0"
-"\"/> . Aparecerán en la previsualización como <quote>paquetes que se "
+"cualquier paquete manualmente instalado <placeholder type=\"footnote\" id="
+"\"0\"/> . Aparecerán en la previsualización como <quote>paquetes que se "
 "eliminarán porque ya no se usan.</quote>"
 
 #. type: Content of: <book><chapter><section><section><para>
@@ -6320,7 +6323,7 @@ msgstr "Resolver las dependencias de los paquetes"
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:3867
 msgid "Dependency resolution in &aptitude;"
-msgstr "Resolución de dependencias de &aptitude;."
+msgstr "Resolución de dependencias de &aptitude;"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:3870
@@ -6372,7 +6375,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:3898
 msgid "Immediate dependency resolution"
-msgstr "Resolución inmediata de dependencias."
+msgstr "Resolución inmediata de dependencias"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:3901
@@ -6905,8 +6908,8 @@ msgstr ""
 "izquierda de la pantalla: si hay un número entre paréntesis, muestra el "
 "número de soluciones generadas. Siendo esto así, cuando el numero que se "
 "encuentra frente al paréntesis y el que está dentro son idénticos (como "
-"aparece arriba), pulsar «<keycap>.</keycap>» genera una nueva solución. Si no "
-"hay ningún número entre paréntesis, (por ejemplo, si el indicador muestra "
+"aparece arriba), pulsar «<keycap>.</keycap>» genera una nueva solución. Si "
+"no hay ningún número entre paréntesis, (por ejemplo, si el indicador muestra "
 "<literal>[1/5]</literal>), entonces no quedan más soluciones por generar. En "
 "cualquier momento, puede seleccionar la última solución generada pulsando "
 "<keycap>&gt;</keycap>, o <keycap>&lt;</keycap> para ver la primera solución "
@@ -7033,13 +7036,14 @@ msgid ""
 "linkend='configProblemResolver-SolutionCost'><literal>Aptitude::"
 "ProblemResolver::SolutionCost</literal></link>."
 msgstr ""
-"El <firstterm>coste</firstterm> de una solución producida por el solucionador "
-"interactivo de dependencias es un valor que &aptitude; usa para determinar "
-"cuán <quote>mala</quote> es una solución. Las <quote>mejores</quote> "
-"soluciones siempre aparecen antes de las <quote>peores</quote> soluciones. "
-"El coste de las soluciones se definen con la opción de configuración <link "
-"linkend='configProblemResolver-SolutionCost'><literal>Aptitude::"
-"ProblemResolver::SolutionCost</literal></link>."
+"El <firstterm>coste</firstterm> de una solución producida por el "
+"solucionador interactivo de dependencias es un valor que &aptitude; usa para "
+"determinar cuán <quote>mala</quote> es una solución. Las <quote>mejores</"
+"quote> soluciones siempre aparecen antes de las <quote>peores</quote> "
+"soluciones. El coste de las soluciones se definen con la opción de "
+"configuración <link linkend='configProblemResolver-"
+"SolutionCost'><literal>Aptitude::ProblemResolver::SolutionCost</literal></"
+"link>."
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4401
@@ -7138,8 +7142,8 @@ msgid ""
 "components and <emphasis>compound</emphasis> cost components."
 msgstr ""
 "Los componentes del coste son de dos tipos: componentes de coste "
-"<emphasis>básicos</emphasis> y componentes de coste "
-"<emphasis>compuestos</emphasis>."
+"<emphasis>básicos</emphasis> y componentes de coste <emphasis>compuestos</"
+"emphasis>."
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4456
@@ -7157,9 +7161,9 @@ msgstr ""
 "literal></quote>. Puede ver una lista de los componentes básicos integrados "
 "que &aptitude; ofrece en <xref linkend='tableBasicCostComponents'/>. También "
 "puede crear sus propios componentes de coste usando las indicaciones "
-"<literal>add-to-cost-component</literal> y <literal>raise-cost-component"
-"</literal>; para más detalles consulte "
-"<xref linkend='secDependencyResolutionHints'/>."
+"<literal>add-to-cost-component</literal> y <literal>raise-cost-component</"
+"literal>; para más detalles consulte <xref "
+"linkend='secDependencyResolutionHints'/>."
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4469
@@ -7214,8 +7218,8 @@ msgid ""
 msgstr ""
 "Enumera el número de retenciones que la solución rompe, si es que se permite "
 "que el solucionador los rompa (<link linkend='configProblemResolver-Allow-"
-"Break-Holds'><literal>Aptitude::ProblemResolver::Allow-Break-Holds</literal></"
-"link>)."
+"Break-Holds'><literal>Aptitude::ProblemResolver::Allow-Break-Holds</"
+"literal></link>)."
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4503
@@ -7311,8 +7315,8 @@ msgid ""
 "see <xref linkend='secDependencyResolutionCostsSafetyCosts'/> for details."
 msgstr ""
 "Una amplia heurística que aumenta a medida que las acciones son menos "
-"<quote>seguras</quote>; para más detalles consulte "
-"<xref linkend='secDependencyResolutionCostsSafetyCosts'/>."
+"<quote>seguras</quote>; para más detalles consulte <xref "
+"linkend='secDependencyResolutionCostsSafetyCosts'/>."
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4572
@@ -7337,13 +7341,12 @@ msgid ""
 msgstr ""
 "Los componentes compuestos se generan combinando los valores de componentes "
 "básicos. Por ejemplo, <literal>removals + canceled-actions</literal> "
-"(eliminaciones + acciones canceladas) suma los componentes "
-"<literal>removal</literal> y <literal>canceled-actions</literal>, resultando "
-"en un componente que enumera el número de eliminaciones <emphasis>y</emphasis> "
-"de acciones canceladas. Los componentes compuestos combinan contadores "
-"mediante la suma, y escoge el nivel tomando el valor máximo "
-"tal y como se ve en <xref linkend='figureCompoundCostComponents'/>."
-
+"(eliminaciones + acciones canceladas) suma los componentes <literal>removal</"
+"literal> y <literal>canceled-actions</literal>, resultando en un componente "
+"que enumera el número de eliminaciones <emphasis>y</emphasis> de acciones "
+"canceladas. Los componentes compuestos combinan contadores mediante la suma, "
+"y escoge el nivel tomando el valor máximo tal y como se ve en <xref "
+"linkend='figureCompoundCostComponents'/>."
 
 #. type: Content of: <book><chapter><section><section><section><note><para><footnote><para>
 #: en/aptitude.xml:4603
@@ -7420,12 +7423,11 @@ msgstr ""
 "Tenga en cuenta que cada componente básico individual se puede multiplicar "
 "por un factor de escala antes de su combinación con otros componentes. Se "
 "puede usar para controlar las negociaciones que el solucionador realiza "
-"entre costes. Por ejemplo, un coste de "
-"<literal>2*removals + 3*upgrades</literal> dice que dos eliminaciones son "
-"igualmente <quote>malas</quote> que tres actualizaciones. Las soluciones que "
-"contienen cuatro eliminaciones y una actualización se considerarán "
-"equivalentes a soluciones que contienen una eliminación y tres "
-"actualizaciones, ya que ambos tiene un coste de once."
+"entre costes. Por ejemplo, un coste de <literal>2*removals + 3*upgrades</"
+"literal> dice que dos eliminaciones son igualmente <quote>malas</quote> que "
+"tres actualizaciones. Las soluciones que contienen cuatro eliminaciones y "
+"una actualización se considerarán equivalentes a soluciones que contienen "
+"una eliminación y tres actualizaciones, ya que ambos tiene un coste de once."
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:4648
@@ -7461,13 +7463,13 @@ msgid ""
 "higher numbers.  <xref linkend='figureSafetyCostLevels'/> shows how this "
 "works with &aptitude;'s default settings."
 msgstr ""
-"El componente de coste <literal>safety</literal> es una estimación heurística "
-"de lo <quote>segura</quote> o <quote>insegura</quote> que es una solución. "
-"Los costes de seguridad se pueden imaginar como una forma de dividir "
-"soluciones en varios <quote>niveles</quote>, donde los niveles "
-"<quote>menos seguros</quote> reciben número más altos. "
-"<xref linkend='figureSafetyCostLevels'/> muestra cómo esto funciona "
-"con la configuración predefinida de &aptitude;."
+"El componente de coste <literal>safety</literal> es una estimación "
+"heurística de lo <quote>segura</quote> o <quote>insegura</quote> que es una "
+"solución. Los costes de seguridad se pueden imaginar como una forma de "
+"dividir soluciones en varios <quote>niveles</quote>, donde los niveles "
+"<quote>menos seguros</quote> reciben número más altos. <xref "
+"linkend='figureSafetyCostLevels'/> muestra cómo esto funciona con la "
+"configuración predefinida de &aptitude;."
 
 #. type: Content of: <book><chapter><section><section><section><tip><para>
 #: en/aptitude.xml:4673
@@ -7477,10 +7479,10 @@ msgid ""
 "for a full description of how to change the order in which &aptitude; sorts "
 "solutions."
 msgstr ""
-"Los niveles de coste de seguridad son sólo una forma de controlar en el orden "
-"en que aparecen las soluciones de dependencia. Consulte "
-"<xref linkend='secDependencyResolutionCosts'/> para una descripción completa "
-"de como modificar el orden en que &aptitude; ordena las soluciones."
+"Los niveles de coste de seguridad son sólo una forma de controlar en el "
+"orden en que aparecen las soluciones de dependencia. Consulte <xref "
+"linkend='secDependencyResolutionCosts'/> para una descripción completa de "
+"como modificar el orden en que &aptitude; ordena las soluciones."
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4682
@@ -7587,8 +7589,8 @@ msgid ""
 "Solutions that install packages from non-default versions (such as "
 "<quote><literal>experimental</literal></quote>, for instance)."
 msgstr ""
-"Soluciones que instalan paquetes con versiones no predefinidas (tales "
-"como <quote><literal>experimental</literal></quote>, por ejemplo)."
+"Soluciones que instalan paquetes con versiones no predefinidas (tales como "
+"<quote><literal>experimental</literal></quote>, por ejemplo)."
 
 #. type: Content of: <book><chapter><section><section><section><table><tgroup><tbody><row><entry>
 #: en/aptitude.xml:4736
@@ -7620,7 +7622,6 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:4751
-#, fuzzy
 msgid ""
 "If a solution qualifies for several safety cost levels, it will be placed in "
 "the highest one, that is, the one that appears last.  For example, a "
@@ -7630,18 +7631,18 @@ msgid ""
 "linkend='secDependencyResolutionHints'/> for details.  The default levels "
 "are illustrated in <xref linkend='figureSafetyCostLevels'/>."
 msgstr ""
-"Si una solución entra dentro de diferentes grados, se muestra en el grado "
-"superior (el último). Por ejemplo, una solución que actualiza un paquete a "
-"su versión predefinida y que elimina un segundo paquete correspondería al "
-"grado 30.000. Puede ajustar los grados de versiones de manera individual "
-"usando las indicaciones del solucionador; para más detalles, véase <xref "
-"linkend='secDependencyResolutionHints'/>. Los grados predefinidos se "
-"ilustran en <xref linkend='figureSearchTiers'/>."
+"Si una solución entra dentro de diferentes niveles de seguridad, aparecerá "
+"en el nivel más alto (el último). Por ejemplo, una solución que actualiza un "
+"paquete a su versión predefinida y que elimina un segundo paquete "
+"correspondería al nivel 40.000. Puede ajustar los niveles de versiones de "
+"manera individual usando las indicaciones del solucionador; para más "
+"detalles, véase <xref linkend='secDependencyResolutionHints'/>. Los niveles "
+"predefinidos se ilustran en <xref linkend='figureSafetyCostLevels'/>."
 
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:4765
 msgid "Configuring the interactive dependency resolver"
-msgstr "Configurar el solucionador interactivo de dependencias."
+msgstr "Configurar el solucionador interactivo de dependencias"
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:4768
@@ -7745,13 +7746,12 @@ msgid ""
 "it is not visible to the user and cannot be modified interactively."
 msgstr ""
 "<quote><literal>discard</literal></quote>: Descarta cada solución que "
-"contenga la versión. Se diferencia con <quote><literal>reject</literal>"
-"</quote> en que no es visible, de forma que el usuario no lo puede modificar "
+"contenga la versión. Se diferencia con <quote><literal>reject</literal></"
+"quote> en que no es visible, de forma que el usuario no lo puede modificar "
 "interactivamente."
 
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><para>
 #: en/aptitude.xml:4842
-#, fuzzy
 msgid ""
 "<quote><literal>increase-safety-cost-to <replaceable>number</replaceable></"
 "literal></quote>: increase the safety cost of any solution that contains the "
@@ -7762,13 +7762,15 @@ msgid ""
 "linkend='secDependencyResolutionCostsAndCostComponents'/> and <xref "
 "linkend='secDependencyResolutionCostsSafetyCosts'/> for details."
 msgstr ""
-"<quote><literal>increase-tier <replaceable>número</replaceable></literal></"
-"quote>: aumentar el grado de cualquier solución que contenga la versión a "
-"<replaceable>número</replaceable>; si el grado de la solución ya es superior "
-"al <replaceable>número</replaceable>, esta indicación no tendrá efecto. Las "
-"soluciones que contienen versiones con el grado más alto aparecen después de "
-"aquellas que contienen únicamente versiones con un grado más bajo; véase  "
-"<xref linkend='secDependencyResolutionSearchTiers'/> para más detalles."
+"<quote><literal>increase-safety-cost-to <replaceable>número</replaceable></"
+"literal></quote>: aumenta el coste de seguridad de cualquier solución que "
+"contenga la versión a <replaceable>número</replaceable>; si el nivel de "
+"seguridad ya es superior al <replaceable>número</replaceable>, esta "
+"indicación no tendrá efecto. El coste de seguridad se puede usar (se usa de "
+"forma predefinida) para controlar el orden de aparición de las soluciones; "
+"para más detalles consulte <xref "
+"linkend='secDependencyResolutionCostsAndCostComponents'/> y <xref "
+"linkend='secDependencyResolutionCostsSafetyCosts'/>."
 
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><para><orderedlist><listitem><para>
 #: en/aptitude.xml:4863
@@ -7780,8 +7782,8 @@ msgid ""
 msgstr ""
 "<literal>conflict</literal>, <literal>discard</literal>: en lugar de cambiar "
 "el coste de seguridad, descarta soluciones que contienen la versión como si "
-"se hubiese aplicado la indicación "
-"<quote><link linkend='hintDiscard'><literal>discard</literal></link></quote>."
+"se hubiese aplicado la indicación <quote><link "
+"linkend='hintDiscard'><literal>discard</literal></link></quote>."
 
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><para><orderedlist><listitem><para>
 #: en/aptitude.xml:4874
@@ -7790,7 +7792,6 @@ msgstr "<literal>maximum</literal>: El coste máximo de seguridad."
 
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><para><orderedlist><listitem><para>
 #: en/aptitude.xml:4881
-#, fuzzy
 msgid ""
 "<literal>minimum</literal>: the lowest safety cost. All searches start at "
 "this cost, so <quote>increasing</quote> a version to this cost has no "
@@ -7800,14 +7801,15 @@ msgid ""
 "link> to <quote><literal>minimum</literal></quote> will cause removed "
 "packages to have no effect on the safety cost of a solution."
 msgstr ""
-"<literal>minimum</literal>: el grado más bajo posible. Todas las búsquedas "
-"comienzan en este grado, así que <quote>aumentar</quote> una versión a este "
-"grado no tiene ningún efecto. Por otro lado, también puede emplear este "
-"valor para ajustar los grados predefinidos: por ejemplo, configurar <link "
-"linkend='configProblemResolver-Remove-Tier'><literal>Aptitude::"
-"ProblemResolver::Remove-Tier</literal></link> a <quote><literal>minimum</"
-"literal></quote> hace que los paquetes desinstalados no tengan ningún efecto "
-"en el grado de una solución."
+"<literal>minimum</literal>: El coste de seguridad más bajo. Todas las "
+"búsquedas comienzan con este coste, así que <quote>aumentar</quote> una "
+"versión a este coste no tiene ningún efecto. Por otro lado, también puede "
+"emplear este valor para ajustar los niveles de coste predefinidos: por "
+"ejemplo, definir <link linkend='configProblemResolver-Remove-"
+"Level'><literal>Aptitude::ProblemResolver::Remove-Level</literal></link> "
+"como <quote><literal>minimum</literal></quote> hace que los paquetes "
+"desinstalados no tengan ningún efecto en el coste de seguridad de una "
+"solución."
 
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><para>
 #: en/aptitude.xml:4858
@@ -7820,7 +7822,6 @@ msgstr ""
 
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><note><para>
 #: en/aptitude.xml:4898
-#, fuzzy
 msgid ""
 "The <literal>increase-safety-cost-to</literal> hint is applied <emphasis>in "
 "addition</emphasis> to any default safety cost that is due to the selected "
@@ -7830,13 +7831,14 @@ msgid ""
 "already has a safety cost of 50,000 (assuming that this version of "
 "<systemitem>hal</systemitem> is not the default candidate version)."
 msgstr ""
-"La indicación <literal>increase-tier</literal> se aplica <emphasis>en "
-"adición</emphasis> a cualquier grado predefinido correspondiente a la "
-"acción seleccionada. Por ejemplo, una indicación que aumenta el grado de "
-"<quote>instalar <systemitem>hal</systemitem> desde <systemitem>experimental</"
-"systemitem></quote> a 15.000 no tiene efecto alguno, porque la acción ya se "
-"encuentra en el grado 15.000 (suponiendo que esta versión de "
-"<systemitem>hal</systemitem> no es la versión candidata predefinida)."
+"La indicación <literal>increase-safety-cost-to</literal> se aplica "
+"<emphasis>en adición</emphasis> a cualquier coste de seguridad predefinido "
+"que se corresponda con la acción seleccionada. Por ejemplo, una indicación "
+"que aumenta el coste de seguridad de <quote>instalar <systemitem>hal</"
+"systemitem> desde <systemitem>experimental</systemitem></quote> a 15.000 no "
+"tiene efecto alguno, porque la acción ya tiene un coste de seguridad de "
+"15.000 (suponiendo que esta versión de <systemitem>hal</systemitem> no es la "
+"versión candidata predefinida)."
 
 #. type: Content of: <book><chapter><section><section><section><orderedlist><listitem><para>
 #: en/aptitude.xml:4915
@@ -8075,7 +8077,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:5085
 msgid "Searching for strings"
-msgstr "Buscar cadenas de caracteres."
+msgstr "Buscar cadenas de caracteres"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:5088
@@ -8244,7 +8246,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:5204
 msgid "Shorthand for search terms"
-msgstr "Abreviaturas de términos de búsqueda."
+msgstr "Abreviaturas de términos de búsqueda"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:5207
@@ -8348,7 +8350,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:5273
 msgid "Searches and versions"
-msgstr "Búsquedas y versiones."
+msgstr "Búsquedas y versiones"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:5276
@@ -8369,21 +8371,20 @@ msgid ""
 "<literal>&Sversion;(2\\.0)</literal>, and hence <literal>foo</literal> will "
 "not be found by this search."
 msgstr ""
-"De manera predefinida, un patrón se corresponde con un paquete si "
-"cualquier versión del paquete encaja con el patrón. De todas formas, algunos "
-"patrones restringen sus sub-patrones para emparejarse solo con algunas "
-"versiones de un paquete. Por ejemplo, el término de búsqueda "
-"<literal>&Sdepends;(<replaceable>patrón</replaceable>)</literal> selecciona "
-"cualquier paquete que dependa de un paquete que encaja con "
-"<replaceable>patrón</replaceable>. De todas formas, <replaceable>patrón</"
-"replaceable> solo encaja con las versiones de un paquete que satisfacen la "
-"dependencia. Esto significa que si <literal>foo</literal> depende de "
-"<literal>bar (>= 3.0)</literal>, estando disponibles <literal>2.0</literal>, "
-"<literal>3.0</literal>, y <literal>4.0</literal>, en el patrón de búsqueda "
-"<literal>&Sdepends;(&Sversion;(2\\.0))</literal> sólo las versiones "
-"<literal>3.0</literal> y <literal>4.0</literal> se compararían con "
-"<literal>&Sversion;(2\\.0)</literal>, conduciendo a que no se encontraría "
-"<literal>foo</literal> en esta búsqueda."
+"De manera predefinida, un patrón se corresponde con un paquete si cualquier "
+"versión del paquete encaja con el patrón. De todas formas, algunos patrones "
+"restringen sus sub-patrones para emparejarse solo con algunas versiones de "
+"un paquete. Por ejemplo, el término de búsqueda <literal>&Sdepends;"
+"(<replaceable>patrón</replaceable>)</literal> selecciona cualquier paquete "
+"que dependa de un paquete que encaja con <replaceable>patrón</replaceable>. "
+"De todas formas, <replaceable>patrón</replaceable> solo encaja con las "
+"versiones de un paquete que satisfacen la dependencia. Esto significa que si "
+"<literal>foo</literal> depende de <literal>bar (>= 3.0)</literal>, estando "
+"disponibles <literal>2.0</literal>, <literal>3.0</literal>, y <literal>4.0</"
+"literal>, en el patrón de búsqueda <literal>&Sdepends;(&Sversion;(2\\.0))</"
+"literal> sólo las versiones <literal>3.0</literal> y <literal>4.0</literal> "
+"se compararían con <literal>&Sversion;(2\\.0)</literal>, conduciendo a que "
+"no se encontraría <literal>foo</literal> en esta búsqueda."
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:5298
@@ -8467,19 +8468,19 @@ msgstr ""
 msgid ""
 "For example: suppose that version <literal>3.0-1</literal> of the package "
 "<literal>aardvark</literal> is installed, but that version <literal>4.0-1</"
-"literal> is available.  Then the search expression <literal>&Sversion;(4\\.0-"
-"1)&Sinstalled;</literal> matches <literal>aardvark</literal>, because "
-"<literal>&Sversion;(4\\.0-1)</literal> matches against version <literal>4.0-"
-"1</literal> of <literal>aardvark</literal>, while &Sinstalled; matches "
-"against version <literal>3.0-1</literal>.  On the other hand, this "
+"literal> is available.  Then the search expression <literal>&Sversion;"
+"(4\\.0-1)&Sinstalled;</literal> matches <literal>aardvark</literal>, because "
+"<literal>&Sversion;(4\\.0-1)</literal> matches against version "
+"<literal>4.0-1</literal> of <literal>aardvark</literal>, while &Sinstalled; "
+"matches against version <literal>3.0-1</literal>.  On the other hand, this "
 "expression <emphasis>does not</emphasis> match against all the versions of "
 "<literal>aardvark</literal>, because no single version is installed and also "
 "has a version number of <literal>4.0-1</literal>."
 msgstr ""
 "Por ejemplo: suponga que la versión <literal>3.0-1</literal> del paquete "
 "<literal>aardvark</literal> está instalado, pero está disponible la versión "
-"<literal>4.0-1</literal>. La expresión de búsqueda <literal>&Sversion;(4\\.0-"
-"1)&Sinstalled;</literal> muestra <literal>aardvark</literal>, porque "
+"<literal>4.0-1</literal>. La expresión de búsqueda <literal>&Sversion;"
+"(4\\.0-1)&Sinstalled;</literal> muestra <literal>aardvark</literal>, porque "
 "<literal>&Sversion;(4\\.0-1)</literal> encaja con la versión <literal>4.0-1</"
 "literal> de <literal>aardvark</literal>, mientras que &Sinstalled; encaja "
 "con la versión <literal>3.0-1</literal>. Por otra parte, esta expresión "
@@ -8490,7 +8491,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:5370
 msgid "Explicit search targets"
-msgstr "Objetivos explícitos de búsqueda."
+msgstr "Objetivos explícitos de búsqueda"
 
 #. type: Content of: <book><chapter><section><section><para><footnote><para>
 #: en/aptitude.xml:5392
@@ -8645,7 +8646,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:5469
 msgid "Search term reference"
-msgstr "Referencia de los términos de búsqueda."
+msgstr "Referencia de los términos de búsqueda"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:5472
@@ -9590,7 +9591,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><example><title>
 #: en/aptitude.xml:5993
 msgid "Use of the <literal>?=</literal> term."
-msgstr "Uso del término <literal>?=</literal>."
+msgstr "Uso del término <literal>?=</literal>"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><example><para>
 #: en/aptitude.xml:5997
@@ -9878,7 +9879,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><example><title>
 #: en/aptitude.xml:6211
 msgid "Use of the <literal>?bind</literal> term"
-msgstr "Uso del término <literal>?bind</literal>."
+msgstr "Uso del término <literal>?bind</literal>"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><example><para>
 #: en/aptitude.xml:6214
@@ -10125,7 +10126,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><example><title>
 #: en/aptitude.xml:6379
 msgid "Use of the <literal>?exact-name</literal> term"
-msgstr "Uso del término <literal>?exact-name</literal>."
+msgstr "Uso del término <literal>?exact-name</literal>"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><example><para>
 #: en/aptitude.xml:6381
@@ -10145,8 +10146,8 @@ msgstr "Esto se ha implementado principalmente por simetría con &Strue;."
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:6392
 msgid ""
-"This term does not match any package.  <placeholder type=\"footnote\" id=\"0"
-"\"/>"
+"This term does not match any package.  <placeholder type=\"footnote\" id="
+"\"0\"/>"
 msgstr ""
 "Este término no encaja con ningún paquete. <placeholder type=\"footnote\" id="
 "\"0\"/>"
@@ -10195,7 +10196,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><example><title>
 #: en/aptitude.xml:6433
 msgid "Use of the <literal>?for</literal> term"
-msgstr "Uso del término <literal>?for</literal>."
+msgstr "Uso del término <literal>?for</literal>"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><example><para>
 #: en/aptitude.xml:6435
@@ -10641,7 +10642,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><example><title>
 #: en/aptitude.xml:6765
 msgid "Use of the <literal>?term-prefix</literal> term"
-msgstr "Uso del término <literal>?term-prefix</literal>."
+msgstr "Uso del término <literal>?term-prefix</literal>"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><listitem><example><para>
 #: en/aptitude.xml:6767
@@ -10810,7 +10811,7 @@ msgstr "Personalizar &aptitude;"
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:6915
 msgid "Customizing the package list"
-msgstr "Personalizar la lista de paquetes."
+msgstr "Personalizar la lista de paquetes"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:6918
@@ -10946,8 +10947,8 @@ msgstr ""
 "<literal><link linkend='configPackage-Status-Format'>Aptitude::UI::Package-"
 "Status-Format</link></literal>, y <literal><link linkend='configPackage-"
 "Header-Format'>Aptitude::UI::Package-Header-Format</link></literal> definen "
-"la forma predefinida de la lista de paquetes, la cabecera en lo alto de "
-"la lista de paquetes, y la línea de estado debajo de la lista de paquetes, "
+"la forma predefinida de la lista de paquetes, la cabecera en lo alto de la "
+"lista de paquetes, y la línea de estado debajo de la lista de paquetes, "
 "respectivamente. Para cambiar la manera en que se muestran los resultados  "
 "de una orden <literal><link linkend='cmdlineSearch'>aptitude search</link></"
 "literal>, use la opción <literal><link linkend='cmdlineOptionFormat'>-F</"
@@ -11698,8 +11699,8 @@ msgstr ""
 "regla. Una regla terminal, por otra parte, también genera parte del árbol "
 "(por lo general, elementos correspondientes al paquete), pero no filtra el "
 "paquete con otra regla posterior. Si no especifica una regla terminal, "
-"&aptitude; usará la regla predefinida, que es crear los <quote>elementos "
-"de paquete</quote> estándar."
+"&aptitude; usará la regla predefinida, que es crear los <quote>elementos de "
+"paquete</quote> estándar."
 
 # Los siguientes términos no están localizados en la interfaz visual
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term><synopsis>
@@ -11833,7 +11834,7 @@ msgstr ""
 msgid "Use of <literal>pattern</literal> to group packages by their maintainer"
 msgstr ""
 "Uso de <literal>pattern</literal> (patrón) para agrupar paquetes en base a "
-"su desarrollador."
+"su desarrollador"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><example><para>
 #: en/aptitude.xml:7512
@@ -11873,7 +11874,7 @@ msgstr ""
 msgid ""
 "Use of <literal>pattern</literal> with some packages placed at the top level"
 msgstr ""
-"Uso de <literal>pattern</literal> con algunos paquetes del nivel superior."
+"Uso de <literal>pattern</literal> con algunos paquetes del nivel superior"
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><example><para>
 #: en/aptitude.xml:7543
@@ -12159,12 +12160,12 @@ msgid ""
 "least once (with tagless packages listed separately from packages that have "
 "tags)."
 msgstr ""
-"Agrupar paquetes de acuerdo a la información «Tag» (etiqueta) guardado en los "
-"archivos de paquetes Debian. Si introduce <replaceable>faceta</replaceable> "
-"solo se mostrarán las marcas correspondientes a esta faceta, y se ocultarán "
-"los paquetes que no poseen esta faceta; de otra forma, se muestran todos los "
-"paquetes al menos una vez (con paquetes sin etiquetar listados separadamente "
-"de los paquetes etiquetados)."
+"Agrupar paquetes de acuerdo a la información «Tag» (etiqueta) guardado en "
+"los archivos de paquetes Debian. Si introduce <replaceable>faceta</"
+"replaceable> solo se mostrarán las marcas correspondientes a esta faceta, y "
+"se ocultarán los paquetes que no poseen esta faceta; de otra forma, se "
+"muestran todos los paquetes al menos una vez (con paquetes sin etiquetar "
+"listados separadamente de los paquetes etiquetados)."
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:7766
@@ -12268,13 +12269,13 @@ msgid ""
 "link></literal> command-line option."
 msgstr ""
 "Para modificar la directriz de ordenación en una lista de paquetes activa, "
-"pulse <keycap>S</keycap>. Para modificar la ordenación predefinida de "
-"todas las listas de paquetes, configure la opción de configuración "
-"<literal><link linkend='configDefault-Sorting'>Aptitude::UI::Default-"
-"Sorting</link></literal>. Para modificar la directriz de ordenación de "
-"<literal><link linkend='cmdlineSearch'>búsqueda en aptitude</link></"
-"literal>, use la opción de línea de órdenes <literal><link "
-"linkend='cmdlineOptionSort'>--sort</link></literal>."
+"pulse <keycap>S</keycap>. Para modificar la ordenación predefinida de todas "
+"las listas de paquetes, configure la opción de configuración <literal><link "
+"linkend='configDefault-Sorting'>Aptitude::UI::Default-Sorting</link></"
+"literal>. Para modificar la directriz de ordenación de <literal><link "
+"linkend='cmdlineSearch'>búsqueda en aptitude</link></literal>, use la opción "
+"de línea de órdenes <literal><link linkend='cmdlineOptionSort'>--sort</"
+"link></literal>."
 
 #. type: Content of: <book><chapter><section><section><section><para>
 #: en/aptitude.xml:7845
@@ -12322,7 +12323,7 @@ msgstr "Ordenar paquetes de acuerdo a su número de versión."
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:7894
 msgid "Customizing keybindings"
-msgstr "Personalizar teclas rápidas."
+msgstr "Personalizar atajos de teclado"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:7897
@@ -14572,7 +14573,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:9181
 msgid "Customizing text colors and styles"
-msgstr "Personalizar los colores del texto y estilos."
+msgstr "Personalizar los colores del texto y estilos"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:9184
@@ -14721,20 +14722,20 @@ msgid ""
 "The colors that &aptitude; recognizes are <literal>black</literal>, "
 "<literal>blue</literal>, <literal>cyan</literal>, <literal>green</literal>, "
 "<literal>magenta</literal>, <literal>red</literal>, <literal>white</"
-"literal>, and <literal>yellow</literal> <placeholder type=\"footnote\" id=\"0"
-"\"/>.  In addition, you may specify <literal>default</literal> in place of a "
-"background color to use the default terminal background (this could be the "
-"default color, an image file, or even <quote>transparent</quote>).  The "
+"literal>, and <literal>yellow</literal> <placeholder type=\"footnote\" id="
+"\"0\"/>.  In addition, you may specify <literal>default</literal> in place "
+"of a background color to use the default terminal background (this could be "
+"the default color, an image file, or even <quote>transparent</quote>).  The "
 "styles that &aptitude; recognizes are:"
 msgstr ""
 "Los colores que &aptitude; reconoce son el <literal>negro</literal>, "
 "<literal>azul</literal>, <literal>cían</literal>, <literal>verde</literal>, "
 "<literal>magenta</literal>, <literal>rojo</literal>, <literal>blanco</"
-"literal> y <literal>amarillo</literal> <placeholder type=\"footnote\" id=\"0"
-"\"/>. Además, puede especificar <literal>default</literal> en lugar de un "
-"color de fondo para usar el fondo predefinido de la terminal (esto puede "
-"ser el color predefinido, un archivo de imagen, o incluso "
-"<quote>transparente</quote>). Los estilos que &aptitude; reconoce son:"
+"literal> y <literal>amarillo</literal> <placeholder type=\"footnote\" id="
+"\"0\"/>. Además, puede especificar <literal>default</literal> en lugar de un "
+"color de fondo para usar el fondo predefinido de la terminal (esto puede ser "
+"el color predefinido, un archivo de imagen, o incluso <quote>transparente</"
+"quote>). Los estilos que &aptitude; reconoce son:"
 
 #. type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:9300
@@ -15553,7 +15554,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:9808
 msgid "Customizing the display layout"
-msgstr "Personalizar el diseño de la interfaz."
+msgstr "Personalizar el diseño de la interfaz"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:9811
@@ -15966,8 +15967,8 @@ msgstr ""
 "linkend='layoutStatic'>Static</link></literal>. "
 "<replaceable>nombre_de_color</replaceable> es el nombre de un color (por "
 "ejemplo, <literal><link linkend='colorScreenStatusColor'>ScreenStatusColor</"
-"link></literal>) que se debe usar como el color <quote>predefinido</"
-"quote> para este elemento de pantalla."
+"link></literal>) que se debe usar como el color <quote>predefinido</quote> "
+"para este elemento de pantalla."
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><listitem><para>
 #: en/aptitude.xml:10090
@@ -16281,8 +16282,7 @@ msgstr ""
 #: en/aptitude.xml:10330
 msgid "If this option is not present, it defaults to <literal>true</literal>."
 msgstr ""
-"Si no configura esta opción, <literal>true</literal> es la forma "
-"predefinida."
+"Si no configura esta opción, <literal>true</literal> es la forma predefinida."
 
 #. type: Content of: <book><chapter><section><section><section><variablelist><varlistentry><term>
 #: en/aptitude.xml:10337
@@ -16302,7 +16302,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:10352
 msgid "Configuration file reference"
-msgstr "Referencia del archivo de configuración."
+msgstr "Referencia del archivo de configuración"
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:10355
@@ -16459,9 +16459,9 @@ msgstr ""
 "Cuando se activa una opción, estas fuentes se examinan por orden, y se "
 "emplea el primero que provee el valor para la opción usada. Por ejemplo, si "
 "configura una opción en <filename>/etc/apt/apt.conf</filename>, esto "
-"sobreescribe los valores predefinidos de &aptitude; para esa opción, pero "
-"no sobreescribe las configuraciones de usuario en <filename>~/.aptitude/"
-"config</filename>."
+"sobreescribe los valores predefinidos de &aptitude; para esa opción, pero no "
+"sobreescribe las configuraciones de usuario en <filename>~/.aptitude/config</"
+"filename>."
 
 #. type: Content of: <book><chapter><section><section><section><title>
 #: en/aptitude.xml:10458
@@ -16853,11 +16853,11 @@ msgid ""
 "documentation for more description of what the values mean)."
 msgstr ""
 "Se puede definir con <literal>auto</literal>, <literal>none</literal>, "
-"<literal>package</literal>, o <literal>source-package</literal> para  "
-"si se muestra la salida de <link linkend='cmdlineVersions'><literal>aptitude "
+"<literal>package</literal>, o <literal>source-package</literal> para  si se "
+"muestra la salida de <link linkend='cmdlineVersions'><literal>aptitude "
 "versions</literal></link>, y la forma en que se agrupa. Equivale a la opción "
-"de línea de órdenes <link linkend='cmdlineGroupBy'><literal>--group-by"
-"</literal></link> (consulte la documentación para una mejor descripción del "
+"de línea de órdenes <link linkend='cmdlineGroupBy'><literal>--group-by</"
+"literal></link> (consulte la documentación para una mejor descripción del "
 "significado de los valores)."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
@@ -16912,10 +16912,10 @@ msgid ""
 "size, or for an 80-column display if the terminal size cannot be determined."
 msgstr ""
 "Esta opción proporciona el ancho de los caracteres que aparecen en una "
-"búsqueda en línea de órdenes. De estar vacía (predefinido; p.ej., "
-"<literal>\"\"</literal>), los resultados de búsqueda se formatearán en "
-"relación al tamaño de la terminal, o para una exposición de 80 columnas si "
-"no se puede determinar el tamaño de la terminal."
+"búsqueda en línea de órdenes. De estar vacía (predefinido; p.ej., <literal>"
+"\"\"</literal>), los resultados de búsqueda se formatearán en relación al "
+"tamaño de la terminal, o para una exposición de 80 columnas si no se puede "
+"determinar el tamaño de la terminal."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10758
@@ -16949,8 +16949,8 @@ msgid ""
 "terminal.  This option does not affect download progress indicators."
 msgstr ""
 "Si este valor se define como <literal>false</literal>, los indicadores de "
-"progreso de línea de órdenes se eliminarán y sobreescribirán una vez que "
-"la tarea que representan haya finalizado. Si es <literal>true</literal>, "
+"progreso de línea de órdenes se eliminarán y sobreescribirán una vez que la "
+"tarea que representan haya finalizado. Si es <literal>true</literal>, "
 "permanecerán en la terminal. Esta opción no afecta a los indicadores de "
 "progreso de descarga."
 
@@ -17203,7 +17203,6 @@ msgstr "<literal>%c%a%M %p# %t %i</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:10941
-#, fuzzy
 msgid ""
 "This is a format string, as described in <xref linkend='secDisplayFormat'/>, "
 "which is used to display the output of <literal>aptitude versions</"
@@ -17211,8 +17210,8 @@ msgid ""
 "option."
 msgstr ""
 "Esta es una cadena formato, tal y como se describe en <xref "
-"linkend='secDisplayFormat'/>, que se emplea para mostrar los resultados de "
-"una búsqueda en la línea de órdenes. Esto equivale a la opción de línea en "
+"linkend='secDisplayFormat'/>, que se emplea para mostrar la salida de "
+"<literal>aptitude versions</literal>. Esto equivale a la opción de línea en "
 "órdenes <literal>-F</literal>."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
@@ -17231,9 +17230,9 @@ msgid ""
 "link> (see its documentation for more description of what the values mean)."
 msgstr ""
 "Se puede definir con <literal>always</literal>, <literal>auto</literal>, o "
-"<literal>never</literal> para controlar cuando se muestran nombres de paquete "
-"en la salida de <link linkend='cmdlineVersions'><literal>aptitude versions</"
-"literal></link>. Equivale a la opción en línea de órdenes <link "
+"<literal>never</literal> para controlar cuando se muestran nombres de "
+"paquete en la salida de <link linkend='cmdlineVersions'><literal>aptitude "
+"versions</literal></link>. Equivale a la opción en línea de órdenes <link "
 "linkend='cmdlineShowPackageNames'><literal>--show-package-names</literal></"
 "link> (consulte su documentación para una descripción más amplia del "
 "significado de los valores)."
@@ -17745,7 +17744,6 @@ msgstr "<filename></filename>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11309
-#, fuzzy
 msgid ""
 "If this is set to a nonempty string, &aptitude; will write logging messages "
 "to it; setting it to <quote><literal>-</literal></quote> causes logging "
@@ -17766,11 +17764,10 @@ msgstr ""
 "utiliza para registrar las instalaciones y eliminaciones, mientras que éste "
 "se utiliza para registrar eventos de programas, errores y mensajes de "
 "depuración de fallos (si está activado). Esta opción equivale al argumento "
-"en línea de órdenes <link linkend='cmdlineOptionLogFile'><literal>--log-"
+"de línea de órdenes  <link linkend='cmdlineOptionLogFile'><literal>--log-"
 "file</literal></link>. Véase también <link "
 "linkend='configLoggingLevels'><literal>Aptitude::Logging::Levels</literal></"
-"link> y <link linkend='configLoggingConfigFile'><literal>Aptitude::Logging::"
-"Config-File</literal></link>."
+"link>."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11327
@@ -17916,17 +17913,16 @@ msgstr "<literal>50000</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11417
-#, fuzzy
 msgid ""
 "The safety cost assigned to actions that break a hold set by the user (by "
 "upgrading a held package or by installing a forbidden version of a "
 "package).  See <xref linkend='secDependencyResolutionCostsSafetyCosts'/> for "
 "a description of safety costs."
 msgstr ""
-"El grado de búsqueda asignado a acciones que rompen una retención creada por "
-"el usuario (p. ej, actualizar un paquete retenido, o instalar una versión "
-"prohibida). Véase <xref linkend='secDependencyResolutionSearchTiers'/> para "
-"una descripción del funcionamiento de los grados de búsqueda."
+"El coste de seguridad asignado a acciones que rompen una retención creada "
+"por el usuario (p. ej, actualizar un paquete retenido, o instalar una "
+"versión prohibida). Para una descripción del funcionamiento de los grados de "
+"búsqueda consulte <xref linkend='secDependencyResolutionCostsSafetyCosts'/>."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11426
@@ -18192,17 +18188,16 @@ msgstr "<literal>20000</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11572
-#, fuzzy
 msgid ""
 "The safety cost assigned to the single solution that cancels all of the "
 "actions selected by the user.  See <xref "
 "linkend='secDependencyResolutionCostsSafetyCosts'/> for a description of "
 "safety costs."
 msgstr ""
-"El grado de búsqueda asignado a la única solución que cancela todas las "
-"acciones seleccionadas por el usuario. Véase <xref "
-"linkend='secDependencyResolutionSearchTiers'/> para una descripción del "
-"funcionamiento de los grados de búsqueda."
+"El coste de seguridad asignado a la única solución que cancela todas las "
+"acciones seleccionadas por el usuario.Para una descripción del "
+"funcionamiento de los grados de búsqueda consulte <xref "
+"linkend='secDependencyResolutionCostsSafetyCosts'/>."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11580
@@ -18248,7 +18243,6 @@ msgstr "<literal>Aptitude::ProblemResolver::Non-Default-Level</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11605
-#, fuzzy
 msgid ""
 "The safety cost assigned to actions that install non-default versions of a "
 "package.  For instance, if version 5 of a package is installed, versions 6, "
@@ -18257,12 +18251,13 @@ msgid ""
 "linkend='secDependencyResolutionCostsSafetyCosts'/> for a description of "
 "safety costs."
 msgstr ""
-"El grado de búsqueda asignado a acciones que instalan versiones no "
+"El coste de seguridad asignado a acciones que instalan versiones no "
 "predefinidas de un paquete. Por ejemplo, su la versión 5 de un paquete se "
 "encuentra instalada, están disponibles las versiones 6,7 y 8, y la versión "
-"predefinida es la 7, entonces las versiones 6 y 8 se hallarían en este "
-"grado. Véase <xref linkend='secDependencyResolutionSearchTiers'/> para una "
-"descripción del funcionamiento de los grados de búsqueda."
+"predefinida es la 7,  las versiones 6 y 8 recibirían un coste de seguridad "
+"al menos tan alto como esto. Para una descripción del funcionamiento de los "
+"grados de búsqueda consulte <xref "
+"linkend='secDependencyResolutionCostsSafetyCosts'/>."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11617
@@ -18337,15 +18332,14 @@ msgstr "<literal>Aptitude::ProblemResolver::Remove-Level</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11659
-#, fuzzy
 msgid ""
 "The safety cost assigned to actions that remove a package.  See <xref "
 "linkend='secDependencyResolutionCostsSafetyCosts'/> for a description of "
 "safety costs."
 msgstr ""
-"El grado de búsqueda asignado a acciones que eliminan un paquete. Véase "
-"<xref linkend='secDependencyResolutionSearchTiers'/> para una descripción "
-"del funcionamiento de los grados de búsqueda."
+"El coste de seguridad asignado a acciones que eliminan un paquete. Para una "
+"descripción del funcionamiento de los grados de búsqueda consulte <xref "
+"linkend='secDependencyResolutionCostsSafetyCosts'/>."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11667
@@ -18388,7 +18382,6 @@ msgstr "<literal>Aptitude::ProblemResolver::Safe-Level</literal>"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11692
-#, fuzzy
 msgid ""
 "The safety cost assigned to actions that install the default version of a "
 "package, upgrade a package to its default version, or cancel installing or "
@@ -18397,13 +18390,13 @@ msgid ""
 "link>.  See <xref linkend='secDependencyResolutionCostsSafetyCosts'/> for a "
 "description of safety costs."
 msgstr ""
-"El grado de búsqueda asignado a acciones que instalan la versión "
-"predefinida de un paquete, actualizan un paquete a su versión "
-"predefinida, o cancelan instalar o actualizar un paquete. Las soluciones "
-"generadas en este grado también se pueden generar mediante <link "
+"El coste de seguridad asignado a acciones que instalan la versión "
+"predefinida de un paquete, actualizan un paquete a su versión predefinida, o "
+"cancelan instalar o actualizar un paquete. Las soluciones que reciben este "
+"coste también se pueden generar mediante <link "
 "linkend='manpageSafeUpgrade'><literal>aptitude safe-upgrade</literal></"
-"link>. Véase <xref linkend='secDependencyResolutionSearchTiers'/> para una "
-"descripción del funcionamiento de los grados de búsqueda."
+"link>. Para una descripción del funcionamiento de los grados de búsqueda "
+"consulte <xref linkend='secDependencyResolutionCostsSafetyCosts'/>."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11705
@@ -18423,11 +18416,11 @@ msgid ""
 "costs are, what they do, and the syntax used to specify them.  If the cost "
 "cannot be parsed, an error is issued and the default cost is used instead."
 msgstr ""
-"Describe como determinar el coste de una solución. Consulte "
-"<xref linkend='secDependencyResolutionCosts'/> para una descripción de los "
-"costes de una solución, lo que hacen y la sintaxis para definirlas. Si el "
-"coste no se puede analizar, se mostrará un error y en su lugar se usará el "
-"coste predefinido ."
+"Describe como determinar el coste de una solución. Consulte <xref "
+"linkend='secDependencyResolutionCosts'/> para una descripción de los costes "
+"de una solución, lo que hacen y la sintaxis para definirlas. Si el coste no "
+"se puede analizar, se mostrará un error y en su lugar se usará el coste "
+"predefinido ."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11719
@@ -18479,12 +18472,11 @@ msgstr ""
 "vencido</quote>; si lo aumenta, permitirá que la búsqueda de una solución "
 "pueda tomar más tiempo y memoria antes de interrumpirse. Si define el valor "
 "de <literal>StepLimit</literal> como 0, desactivaría totalmente el "
-"solucionador de problemas. El valor predefinido es suficientemente alto "
-"para gestionar cómodamente las situaciones más comunes, a la vez que impide "
-"que &aptitude; <quote>explote</quote> en caso de encontrarse con un problema "
-"más complicado. (Nota: ésto sólo afecta a las búsquedas en línea de órdenes; "
-"en la interfaz gráfica el solucionador continuará hasta encontrar una "
-"solución)"
+"solucionador de problemas. El valor predefinido es suficientemente alto para "
+"gestionar cómodamente las situaciones más comunes, a la vez que impide que "
+"&aptitude; <quote>explote</quote> en caso de encontrarse con un problema más "
+"complicado. (Nota: ésto sólo afecta a las búsquedas en línea de órdenes; en "
+"la interfaz gráfica el solucionador continuará hasta encontrar una solución)"
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:11752
@@ -18951,9 +18943,9 @@ msgid ""
 "&aptitude;'s display.  See <xref linkend='secDisplayLayout'/> for more "
 "information."
 msgstr ""
-"Esta opción es un grupo cuyos miembros definen la presentación "
-"predefinida de la interfaz de &aptitude;. Para más información, véase "
-"<xref linkend='secDisplayLayout'/>."
+"Esta opción es un grupo cuyos miembros definen la presentación predefinida "
+"de la interfaz de &aptitude;. Para más información, véase <xref "
+"linkend='secDisplayLayout'/>."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:12090
@@ -18987,8 +18979,8 @@ msgid ""
 "The default sorting policy of package views.  See <xref "
 "linkend='secSortingPolicy'/> for more information."
 msgstr ""
-"La directriz de ordenación predefinida para la vista de paquetes. Para "
-"más información, véase <xref linkend='secSortingPolicy'/>."
+"La directriz de ordenación predefinida para la vista de paquetes. Para más "
+"información, véase <xref linkend='secSortingPolicy'/>."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:12114
@@ -19283,9 +19275,8 @@ msgid ""
 "The default filter applied to the preview screen; see <xref "
 "linkend='secSearchPatterns'/> for details about its format."
 msgstr ""
-"El filtro predefinido que se aplica a la pantalla de previsualización.  "
-"Para más detalles acerca de su formato, véase <xref "
-"linkend='secSearchPatterns'/>."
+"El filtro predefinido que se aplica a la pantalla de previsualización.  Para "
+"más detalles acerca de su formato, véase <xref linkend='secSearchPatterns'/>."
 
 #. type: Content of: <book><chapter><section><section><section><segmentedlist><seglistitem><seg>
 #: en/aptitude.xml:12346
@@ -19405,7 +19396,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: en/aptitude.xml:12433
 msgid "Themes"
-msgstr "Temas."
+msgstr "Temas"
 
 #. type: Content of: <book><chapter><section><section><para>
 #: en/aptitude.xml:12436
@@ -19419,10 +19410,10 @@ msgid ""
 msgstr ""
 "En &aptitude; un <firstterm>tema</firstterm> es simplemente un conjunto de "
 "configuraciones que <quote>están agrupados</quote>. Los temas funcionan "
-"invalidando los valores predefinidos de las opciones: si una opción no "
-"está definida en el archivo de configuración del sistema, o en su propio "
-"archivo personal de configuración, &aptitude; utilizará la configuración del "
-"tema presente de haber uno disponible, antes de utilizar el valor estándar "
+"invalidando los valores predefinidos de las opciones: si una opción no está "
+"definida en el archivo de configuración del sistema, o en su propio archivo "
+"personal de configuración, &aptitude; utilizará la configuración del tema "
+"presente de haber uno disponible, antes de utilizar el valor estándar "
 "predefinido."
 
 #. type: Content of: <book><chapter><section><section><para>
@@ -20547,7 +20538,6 @@ msgstr ""
 
 #. type: Content of: <refentry><refsynopsisdiv><cmdsynopsis>
 #: en/manpage.xml:92
-#, fuzzy
 msgid ""
 "<command>aptitude</command> <arg choice='opt' "
 "rep='repeat'><replaceable>options</replaceable></arg> <group choice='req'> "
@@ -20563,15 +20553,15 @@ msgid ""
 msgstr ""
 "<command>aptitude</command> <arg choice='opt' "
 "rep='repeat'><replaceable>opciones</replaceable></arg> <group choice='req'> "
+"<arg choice='plain'>build-dep</arg> <arg choice='plain'>build-depends</arg> "
 "<arg choice='plain'>changelog</arg> <arg choice='plain'>download</arg> <arg "
 "choice='plain'>forbid-version</arg> <arg choice='plain'>hold</arg> <arg "
 "choice='plain'>install</arg> <arg choice='plain'>markauto</arg> <arg "
 "choice='plain'>purge</arg> <arg choice='plain'>reinstall</arg> <arg "
 "choice='plain'>remove</arg> <arg choice='plain'>show</arg> <arg "
 "choice='plain'>unhold</arg> <arg choice='plain'>unmarkauto</arg> <arg "
-"choice='plain'>build-dep</arg> <arg choice='plain'>build-depends</arg> </"
-"group> <arg choice='plain' rep='repeat'><replaceable>paquetes</replaceable></"
-"arg>"
+"choice='plain'>versions</arg> </group> <arg choice='plain' "
+"rep='repeat'><replaceable>paquetes</replaceable></arg>"
 
 #. type: Content of: <refentry><refsynopsisdiv><cmdsynopsis>
 #: en/manpage.xml:118
@@ -21028,8 +21018,8 @@ msgid ""
 msgstr ""
 "Prohibir que un paquete se actualice a un versión determinada. Esto evita "
 "que aptitude lo actualice a esa versión, pero permitiría una actualización "
-"automática a otra versión futura. De manera predefinida aptitude escogerá "
-"la versión a la que se actualizaría el paquete en cualquier circunstancia; "
+"automática a otra versión futura. De manera predefinida aptitude escogerá la "
+"versión a la que se actualizaría el paquete en cualquier circunstancia; "
 "puede invalidar esta selección añadiendo "
 "<quote><literal>=<replaceable>versión</replaceable></literal></quote> al "
 "nombre del paquete: por ejemplo <quote><literal>aptitude forbid-version "
@@ -21147,7 +21137,6 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:538
-#, fuzzy
 msgid ""
 "If no <replaceable>package</replaceable>s are listed on the command line, "
 "&aptitude; will attempt to upgrade every package that can be upgraded.  "
@@ -21162,12 +21151,12 @@ msgstr ""
 "Si no introduce ningún <replaceable>paquete</replaceable> en la línea de "
 "órdenes, &aptitude; intentará actualizar todos los paquetes susceptibles de "
 "ello. De no ser así, &aptitude; intentará actualizar sólo aquellos paquetes "
-"que se deben actualizar. Puede extender <replaceable>paquete</replaceable> "
-"con sufijos de la misma manera que da argumentos a <literal>aptitude "
-"install</literal>, lo que le permite dar a &aptitude; instrucciones "
-"adicionales. Por ejemplo, <literal>aptitude safe-upgrade bash dash-</"
-"literal> intentaría actualizar el paquete <systemitem>bash</systemitem> y "
-"eliminar el paquete <systemitem>dash</systemitem>."
+"que le indica actualizar. Puede extender el o los <replaceable>paquetes</"
+"replaceable> con sufijos de la misma manera que da argumentos a "
+"<literal>aptitude install</literal>, lo que le permite dar a &aptitude; "
+"instrucciones adicionales. Por ejemplo, <literal>aptitude safe-upgrade bash "
+"dash-</literal> intentaría actualizar el paquete <systemitem>bash</"
+"systemitem> y eliminar el paquete <systemitem>dash</systemitem>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><note><para>
 #: en/manpage.xml:555
@@ -21233,8 +21222,8 @@ msgstr ""
 "cualquier patrón introducido; por ejemplo <quote><literal>aptitude search "
 "'~N' edit</literal></quote> listaría todos los paquetes <quote>nuevos</"
 "quote> y todos aquellos paquetes cuyo nombre contenga <quote>edit</quote>. "
-"Para más información acerca de patrones de búsqueda consulte la "
-"sección en la guía de referencia de &aptitude; <quote><link "
+"Para más información acerca de patrones de búsqueda consulte la sección en "
+"la guía de referencia de &aptitude; <quote><link "
 "linkend='secSearchPatterns'>Patrones de búsqueda</link></quote>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><note><para>
@@ -21253,15 +21242,14 @@ msgid ""
 msgstr ""
 "En el ejemplo anterior, <quote><literal>aptitude search '~N' edit</literal></"
 "quote> tiene dos argumentos después de <literal>search</literal>, y por ello "
-"busca <emphasis>dos</emphasis> patrones: <quote><literal>~N</"
-"literal></quote> y <quote><literal>edit</literal></quote>. Como se describe "
-"en la <link linkend='secSearchPatterns'>referencia de patrones de "
-"búsqueda</link>, un <emphasis>único</emphasis> patrón compuesto de dos "
-"patrones separados por un espacio (como <quote><literal>~N edit</literal>"
-"</quote>), sólo encuentra una coincidencia si <emphasis>ambos</emphasis> "
-"patrones encajan. Por ello, <quote><literal>aptitude search '~N edit' "
-"</literal></quote> sólo mostrará paquetes <quote>nuevos</quote> cuyo nombre "
-"contenga <quote>edit</quote>."
+"busca <emphasis>dos</emphasis> patrones: <quote><literal>~N</literal></"
+"quote> y <quote><literal>edit</literal></quote>. Como se describe en la "
+"<link linkend='secSearchPatterns'>referencia de patrones de búsqueda</link>, "
+"un <emphasis>único</emphasis> patrón compuesto de dos patrones separados por "
+"un espacio (como <quote><literal>~N edit</literal></quote>), sólo encuentra "
+"una coincidencia si <emphasis>ambos</emphasis> patrones encajan. Por ello, "
+"<quote><literal>aptitude search '~N edit' </literal></quote> sólo mostrará "
+"paquetes <quote>nuevos</quote> cuyo nombre contenga <quote>edit</quote>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:626
@@ -21448,13 +21436,12 @@ msgstr ""
 "izquierda indican el estado actual, el estado planeado (de existir), y si el "
 "paquete se ha instalado automáticamente; para más información acerca de sus "
 "significados, consulte <link linkend='cmdlineSearch'>la documentación de "
-"<literal>aptitude search</literal></link>. A la derecha del número de versión "
-"puede ver las publicaciones en que disponen de esa versión, y la prioridad "
-"de anclaje de la versión."
+"<literal>aptitude search</literal></link>. A la derecha del número de "
+"versión puede ver las publicaciones en que disponen de esa versión, y la "
+"prioridad de anclaje de la versión."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:750
-#, fuzzy
 msgid ""
 "If a package name contains a tilde character (<quote><literal>~</literal></"
 "quote>) or a question mark (<quote><literal>?</literal></quote>), it will be "
@@ -21466,13 +21453,15 @@ msgid ""
 "installed on the system and nothing else, not even other versions of the "
 "same packages."
 msgstr ""
-"Mostrar información detallada relativa a uno o más paquetes, listados de "
-"acuerdo a la orden «search». Si el nombre de un paquete contiene un carácter "
-"de tilde (<quote><literal>~</literal></quote>) o un signo de interrogación "
+"En el caso de que un nombre de paquete contenga un carácter de tilde "
+"(<quote><literal>~</literal></quote>) o signo de interrogación "
 "(<quote><literal>?</literal></quote>), se tomará como un patrón de búsqueda "
-"y verá todos aquellos paquetes coincidentes (véase la sección <quote><link "
-"linkend='secSearchPatterns'>Patrones de búsqueda</link></quote> en el manual "
-"de referencia de &aptitude;)."
+"y mostrarán todas las <emphasis>versiones</emphasis> coincidentes (consulte "
+"la sección <quote><link linkend='secSearchPatterns'>Patrones de búsqueda</"
+"link></quote> en el manual de referencia de &aptitude;. Por ejemplo, "
+"<literal>aptitude versions '~i'</literal> mostrará todas las versiones "
+"actualmente instaladas en el sistema, y nada más, ni siquiera otras "
+"versiones del mismo paquete."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><screen>
 #: en/manpage.xml:763
@@ -21505,8 +21494,8 @@ msgid ""
 "and automatically include the package name in each output line:"
 msgstr ""
 "Si la entrada es un patrón de búsqueda o si se mostrará más de una de las "
-"versiones del paquete, &aptitude; agrupará automáticamente la salida según el "
-"paquete, como se puede ver más arriba. Puede desactivar esto mediante "
+"versiones del paquete, &aptitude; agrupará automáticamente la salida según "
+"el paquete, como se puede ver más arriba. Puede desactivar esto mediante "
 "<literal><link linkend='cmdlineGroupBy'>--group-by</link>=none</literal>, en "
 "cuyo caso &aptitude; mostrará una única lista de todas las versiones que se "
 "han encontrado, incluyendo automáticamente el nombre del paquete en cada "
@@ -21566,11 +21555,11 @@ msgstr ""
 "Además de las opciones anteriores, puede controlar la información que se "
 "muestra para cada versión mediante la opción de línea de órdenes <link "
 "linkend='cmdlineOptionFormat'><literal>-F</literal></link>. La orden en el "
-"se muestran las versiones se puede controlar mediante la opción de línea "
-"de órdenes <link linkend='cmdlineOptionSort'><literal>--sort</literal></link>."
-" Para evitar que &aptitude; dé formato a la salida en forma de columnas, use "
-"<link linkend='cmdlineOptionDisableColumns'><literal>--disable-columns"
-"</literal></link>."
+"se muestran las versiones se puede controlar mediante la opción de línea de "
+"órdenes <link linkend='cmdlineOptionSort'><literal>--sort</literal></link>. "
+"Para evitar que &aptitude; dé formato a la salida en forma de columnas, use "
+"<link linkend='cmdlineOptionDisableColumns'><literal>--disable-columns</"
+"literal></link>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:814
@@ -21759,8 +21748,8 @@ msgstr ""
 "<quote>con más paquetes instalados, la más fuerte, precisa y corta</quote>. "
 "Esto significa que busca una cadena que solo contiene paquetes instalados y "
 "que se van a instalar; busca las dependencias más fuertes posibles bajo esa "
-"restricción; busca cadenas que evitan dependencias «OR» y «Provee»; y busca la "
-"cadena de dependencias más corta que se ajusta a estos criterios. Estas "
+"restricción; busca cadenas que evitan dependencias «OR» y «Provee»; y busca "
+"la cadena de dependencias más corta que se ajusta a estos criterios. Estas "
 "reglas se debilitan de manera progresiva hasta encontrar una correspondencia."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
@@ -21843,8 +21832,8 @@ msgid ""
 "<replaceable>release</replaceable></literal> to the package name (for "
 "instance, <literal>/unstable</literal> or <literal>/sid</literal>)."
 msgstr ""
-"De manera predefinida, se descarga el registro de cambios de la versión "
-"que se va a instalar con <quote><literal>aptitude install</literal></quote>. "
+"De manera predefinida, se descarga el registro de cambios de la versión que "
+"se va a instalar con <quote><literal>aptitude install</literal></quote>. "
 "Puede seleccionar una versión en particular de un paquete añadiendo "
 "<literal>=<replaceable>versión</replaceable></literal> al nombre del "
 "paquete; puede seleccionar una versión de un archivo o distribución en "
@@ -22131,12 +22120,12 @@ msgid ""
 "be ignored."
 msgstr ""
 "Esta opción provoca que no se de ningún formato especial a la salida de "
-"resultados de <literal>aptitude search</literal> y "
-"<literal>aptitude version</literal>. En particular: generalmente &aptitude; "
-"añade espacios en blanco o trunca los resultados de una búsqueda para encajar "
-"éstos en <quote>columnas</quote> verticales. Con esta opción, cada línea se "
-"formará reemplazando cualquier escape de formato en la cadena formato con el "
-"texto correspondiente; se ignorará el ancho de las columnas."
+"resultados de <literal>aptitude search</literal> y <literal>aptitude "
+"version</literal>. En particular: generalmente &aptitude; añade espacios en "
+"blanco o trunca los resultados de una búsqueda para encajar éstos en "
+"<quote>columnas</quote> verticales. Con esta opción, cada línea se formará "
+"reemplazando cualquier escape de formato en la cadena formato con el texto "
+"correspondiente; se ignorará el ancho de las columnas."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1201
@@ -22232,8 +22221,8 @@ msgid ""
 "cache/apt/archives</filename>."
 msgstr ""
 "Descargar cuántos paquetes se necesitan al almacén de paquetes, pero no "
-"instalar o eliminar nada. De manera predefinida, el almacén de paquetes "
-"se guarda en <filename>/var/cache/apt/archives</filename>."
+"instalar o eliminar nada. De manera predefinida, el almacén de paquetes se "
+"guarda en <filename>/var/cache/apt/archives</filename>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1257
@@ -22257,7 +22246,6 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1270
-#, fuzzy
 msgid ""
 "Specify the format which should be used to display output from the "
 "<literal>search</literal> and <literal>version</literal> commands.  For "
@@ -22268,11 +22256,12 @@ msgid ""
 "displayed</link></quote> in the &aptitude; reference manual for more "
 "information)."
 msgstr ""
-"Especificar el formato que se debería emplear para mostrar la salida de la "
-"orden <literal>search</literal>. Por ejemplo, introducir <quote><literal>%p %"
-"V %v</literal></quote> como <replaceable>formato</replaceable> muestra el "
-"nombre de un paquete, seguido de la versión actualmente instalada, así como "
-"la versión disponible (para más información, véase la sección <quote><link "
+"Especifica el formato que se debería emplear para mostrar la salida de las "
+"órdenes <literal>search</literal> y <literal>version</literal>. Por ejemplo, "
+"introducir <quote><literal>%p %V %v</literal></quote> como "
+"<replaceable>formato</replaceable> muestra el nombre de un paquete, seguido "
+"de la versión actualmente instalada, así como la versión disponible (para "
+"más información, consulte la sección <quote><link "
 "linkend='secDisplayFormat'>Personalizar la presentación de los paquetes</"
 "link></quote>) en el manual de referencia de &aptitude;)."
 
@@ -22289,7 +22278,6 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1286
-#, fuzzy
 msgid ""
 "For <literal>search</literal>, this corresponds to the configuration option "
 "<literal><link linkend='configCmdLine-Package-Display-Format'>Aptitude::"
@@ -22298,11 +22286,12 @@ msgid ""
 "linkend='configCmdLine-Version-Display-Format'>Aptitude::CmdLine::Version-"
 "Display-Format</link></literal>."
 msgstr ""
-"Esta opción se corresponde con el elemento de configuración <link "
-"linkend='configCmdLine-Show-Summary'><literal>Aptitude::CmdLine::Show-"
-"Summary</literal></link>; de estar presente <literal>--show-summary</"
-"literal> en la línea de órdenes, invalidaría <link linkend='configCmdLine-"
-"Show-Summary'><literal>Aptitude::CmdLine::Show-Summary</literal></link>."
+"Para <literal>search</literal>, esto se corresponde con la opción de "
+"configuración <literal><link linkend='configCmdLine-Package-Display-"
+"Format'>Aptitude::CmdLine::Package-Display-Format</link></literal>; para "
+"<literal>versions</literal>, se corresponde con la opción de configuración "
+"<literal><link linkend='configCmdLine-Version-Display-Format'>Aptitude::"
+"CmdLine::Version-Display-Format</link></literal>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:1294
@@ -22372,7 +22361,8 @@ msgstr ""
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:1338
 msgid "<literal>--group-by</literal> <replaceable>grouping-mode</replaceable>"
-msgstr "<literal>--group-by</literal> <replaceable>modo-de-agrupación</replaceable>"
+msgstr ""
+"<literal>--group-by</literal> <replaceable>modo-de-agrupación</replaceable>"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1343
@@ -22393,8 +22383,8 @@ msgid ""
 msgstr ""
 "<literal>archive</literal> para agrupar paquetes según su archivo "
 "(<quote><literal>stable</literal></quote>, <quote><literal>unstable</"
-"literal></quote>, etc). Si un paquete aparece en más de un archivo,"
-"se mostrará en cada uno de ellos."
+"literal></quote>, etc). Si un paquete aparece en más de un archivo,se "
+"mostrará en cada uno de ellos."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/manpage.xml:1363
@@ -22424,8 +22414,8 @@ msgstr "<literal>paquete</literal> para agrupar versiones por su paquete."
 msgid ""
 "<literal>source-package</literal> to group versions by their source package."
 msgstr ""
-"<literal>source-package</literal> para agrupar versiones según su paquete "
-"de fuentes."
+"<literal>source-package</literal> para agrupar versiones según su paquete de "
+"fuentes."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/manpage.xml:1392
@@ -22483,7 +22473,6 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1435
-#, fuzzy
 msgid ""
 "This does not affect the log of installations that aptitude has performed "
 "(<filename>/var/log/aptitude</filename>); the log messages written using "
@@ -22495,12 +22484,9 @@ msgstr ""
 "Esto no afecta al registro de las instalaciones ejecutadas por aptitude "
 "(<filename>/var/log/aptitude</filename>); los mensajes del registro que se "
 "escriben con esta configuración incluyen programas internos, eventos, "
-"errores, y mensajes de depuración de fallos. Véase las opciones en línea de "
-"órdenes <link linkend='cmdlineOptionLogFile'><literal>--log-file</literal></"
-"link> y <link linkend='cmdlineOptionLogLevel'><literal>--log-level</"
-"literal></link> para una manera más sencilla, pero menos flexible, de "
-"configurar el modo de registro desde la línea de órdenes; invalidan "
-"cualquier configuración realizada en este archivo de configuración."
+"errores, y mensajes de depuración de fallos. Consulte las opciones en línea "
+"de órdenes <link linkend='cmdlineOptionLogFile'><literal>--log-level</"
+"literal></link> para controlar qué se registra."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1446
@@ -22586,7 +22572,6 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1497
-#, fuzzy
 msgid ""
 "This does not affect the log of installations that aptitude has performed "
 "(<filename>/var/log/aptitude</filename>); the log messages written using "
@@ -22595,15 +22580,12 @@ msgid ""
 "linkend='cmdlineOptionLogLevel'><literal>--log-file</literal></link> to "
 "change where log messages go."
 msgstr ""
-"Esto no afecta al registro de las instalaciones ejecutadas por aptitude "
+"No afecta al registro de las instalaciones ejecutadas por aptitude "
 "(<filename>/var/log/aptitude</filename>); los mensajes del registro que se "
 "escriben con esta configuración incluyen programas internos, eventos, "
-"errores, y mensajes de depuración de fallos. Véase las opciones en línea de "
-"órdenes <link linkend='cmdlineOptionLogFile'><literal>--log-file</literal></"
-"link> y <link linkend='cmdlineOptionLogLevel'><literal>--log-level</"
-"literal></link> para una manera más sencilla, pero menos flexible, de "
-"configurar el modo de registro desde la línea de órdenes; invalidan "
-"cualquier configuración realizada en este archivo de configuración."
+"errores, y mensajes de depuración de fallos. Consulte las opciones en línea "
+"de órdenes <link linkend='cmdlineOptionLogFile'><literal>--log-file</"
+"literal></link> para cambiar dónde se escriben los mensajes de registro."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1508
@@ -22735,7 +22717,6 @@ msgstr ""
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1599
-#, fuzzy
 msgid ""
 "Specify the order in which output from the <link "
 "linkend='cmdlineSearch'><literal>search</literal></link> and <link "
@@ -22746,9 +22727,10 @@ msgid ""
 "linkend='secSortingPolicy'>Customizing how packages are sorted</link></"
 "quote> in the &aptitude; reference manual for more information)."
 msgstr ""
-"Especificar el orden en que se debería mostrar la salida de la orden <link "
-"linkend='cmdlineSearch'><literal>search</literal></link>. Por ejemplo, si "
-"introduce <quote><literal>installsize</literal></quote> como "
+"Especifica el orden en que se debería mostrar la salida de las órdenes <link "
+"linkend='cmdlineSearch'><literal>search</literal></link> y <link "
+"linkend='cmdlineVersions'><literal>versions</literal></link>. Por ejemplo, "
+"si introduce <quote><literal>installsize</literal></quote> como la "
 "<replaceable>orden</replaceable>, mostraría los paquetes de acuerdo a su "
 "tamaño una vez instalados (dispone de más información en la sección "
 "<quote><link linkend='secSortingPolicy'>Personalizar el orden de los "
@@ -22757,7 +22739,8 @@ msgstr ""
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1606
 msgid "The default sort order is <literal>name,version</literal>."
-msgstr "El orden de ordenamiento predefinido es <literal>name,version</literal>."
+msgstr ""
+"El orden de ordenamiento predefinido es <literal>name,version</literal>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:1612
@@ -23132,7 +23115,8 @@ msgstr ""
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
 #: en/manpage.xml:1860
 msgid "<literal>--show-package-names</literal> <replaceable>when</replaceable>"
-msgstr "<literal>--show-package-names</literal> <replaceable>when</replaceable>"
+msgstr ""
+"<literal>--show-package-names</literal> <replaceable>when</replaceable>"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: en/manpage.xml:1864
@@ -23151,8 +23135,8 @@ msgid ""
 "<literal>always</literal>: display package names every time that "
 "<literal>aptitude versions</literal> runs."
 msgstr ""
-"<literal>always</literal>: muestra nombres de paquete cada vez que se ejecuta "
-"<literal>aptitude versions</literal>."
+"<literal>always</literal>: muestra nombres de paquete cada vez que se "
+"ejecuta <literal>aptitude versions</literal>."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: en/manpage.xml:1880
@@ -23250,8 +23234,8 @@ msgid ""
 "present."
 msgstr ""
 "<literal>first-package</literal>: mostrar el primer paquete de cada cadena. "
-"Este es el valor predefinido de <replaceable>MODO</replaceable> si no "
-"está presente."
+"Este es el valor predefinido de <replaceable>MODO</replaceable> si no está "
+"presente."
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><orderedlist><listitem><para>
 #: en/manpage.xml:1955
@@ -23300,7 +23284,7 @@ msgstr ""
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><example><title>
 #: en/manpage.xml:1987
 msgid "Usage of <literal>--show-summary</literal>"
-msgstr "Uso de <literal>--show-summary</literal>."
+msgstr "Uso de <literal>--show-summary</literal>"
 
 #. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><example><para>
 #: en/manpage.xml:1990
@@ -23880,9 +23864,9 @@ msgid ""
 "refentrytitle><manvolnum>2</manvolnum></citerefentry> and place its "
 "configuration file there."
 msgstr ""
-"Si existe «$HOME/.aptitude», aptitude guardará su archivo de configuración en "
-"«$HOME/.aptitude/config». De no ser así, buscará en el directorio de inicio "
-"del usuario actual usando <citerefentry><refentrytitle>getpwuid</"
+"Si existe «$HOME/.aptitude», aptitude guardará su archivo de configuración "
+"en «$HOME/.aptitude/config». De no ser así, buscará en el directorio de "
+"inicio del usuario actual usando <citerefentry><refentrytitle>getpwuid</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry>, y guardará ahí su "
 "archivo de configuración."
 
@@ -24751,8 +24735,8 @@ msgstr ""
 #~ msgstr ""
 #~ "</footnote> Por ejemplo, «<quote><literal>aptitude search gnome kde</"
 #~ "literal></quote>» crearía un listado de todos los paquetes cuyos nombres "
-#~ "contengan «<quote><literal>gnome</literal></quote>» o «<quote><literal>kde</"
-#~ "literal></quote>»."
+#~ "contengan «<quote><literal>gnome</literal></quote>» o "
+#~ "«<quote><literal>kde</literal></quote>»."
 
 #~ msgid ""
 #~ "In the remainder of the manual, menu commands will be written like this: "
