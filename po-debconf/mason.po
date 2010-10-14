@@ -31,9 +31,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mason 1.0.0-12.1\n"
-"Report-Msgid-Bugs-To: mason@packages.debian.org\n"
-"POT-Creation-Date: 2010-04-23 10:58+0200\n"
-"PO-Revision-Date: 2010-07-18 10:23+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-29 22:07+0200\n"
+"PO-Revision-Date: 2010-10-14 12:07+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -46,8 +46,24 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../templates:1001 ../templates:2001
-msgid "accept, reject, deny"
-msgstr "aceptar, rechazar, denegar"
+msgid "accept"
+msgstr "aceptar"
+
+#. Type: select
+#. Choices
+#. Type: select
+#. Choices
+#: ../templates:1001 ../templates:2001
+msgid "reject"
+msgstr "rechazar"
+
+#. Type: select
+#. Choices
+#. Type: select
+#. Choices
+#: ../templates:1001 ../templates:2001
+msgid "deny"
+msgstr "denegar"
 
 #. Type: select
 #. Description
@@ -103,3 +119,5 @@ msgstr ""
 "De nuevo, «aceptar» permite pasar el paquete, «rechazar» rechaza el paquete "
 "con una respuesta, y «denegar» rechaza el paquete silenciosamente."
 
+#~ msgid "accept, reject, deny"
+#~ msgstr "aceptar, rechazar, denegar"

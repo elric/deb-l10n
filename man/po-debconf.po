@@ -1,12 +1,30 @@
-# SOME DESCRIPTIVE TITLE
-# Copyright (C) YEAR Free Software Foundation, Inc.
-# This file is distributed under the same license as the PACKAGE package.
+# po-debconf po manpages translation to Spanish
+# Copyright (C) 2010 Software in the Public Interest
+# This file is distributed under the same license as the po-debconf package.
+# Changes:
+# - Initial translation
 # Omar Campagne <ocampagne@gmail.com>, 2010.
+# - Updates
+# TRANSLATOR
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+# info -n '(gettext)PO Files'
+# info -n '(gettext)Header Entry'
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+# - El proyecto de traducción de Debian al español
+# http://www.debian.org/intl/spanish/
+# especialmente las notas y normas de traducción en
+# http://www.debian.org/intl/spanish/notas
+# - La guía de traducción de po's de debconf:
+# /usr/share/doc/po-debconf/README-trans
+# o http://www.debian.org/intl/l10n/po-debconf/README-trans
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: podebconf 1.0.16\n"
 "POT-Creation-Date: 2009-04-05 15:29+0300\n"
-"PO-Revision-Date: 2010-10-11 15:52+0200\n"
+"PO-Revision-Date: 2010-10-14 14:50+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -25,6 +43,8 @@ msgstr "NOMBRE"
 #: en/debconf-gettextize.1.pod:4
 msgid "debconf-gettextize - extract translations of debconf templates into PO files"
 msgstr ""
+"debconf-gettextize - Extrae traducciones desde una plantilla de debconf a "
+"ficheros PO"
 
 #. type: =head1
 #: en/debconf-gettextize.1.pod:6 en/debconf-updatepo.1.pod:6 en/po2debconf.1.pod:6 en/podebconf-display-po.1.pod:6 en/podebconf-report-po.1.pod:6
@@ -37,6 +57,8 @@ msgid ""
 "B<debconf-gettextize> [B<-v>] [B<-h>] [B<--podir=I<DIR>>] [B<--choices>] "
 "[B<--merge>] I<master> [I<master> ...]"
 msgstr ""
+"B<debconf-gettextize> [B<-v>] [B<-h>] [B<--podir=I<directorio>>] "
+"[B<--choices>] [B<--merge>] I<original> [I<original> ...]"
 
 #. type: =head1
 #: en/debconf-gettextize.1.pod:15 en/debconf-updatepo.1.pod:15 en/po2debconf.1.pod:15 en/po-debconf.7.pod:6 en/podebconf-display-po.1.pod:13 en/podebconf-report-po.1.pod:10
@@ -54,6 +76,14 @@ msgid ""
 "strings for the language I<xx>.  The B<debconf-mergetemplate> program was "
 "merging master and translated templates files."
 msgstr ""
+"Los ficheros F</var/lib/dpkg/info/*.templates> analizados por debconf "
+"contienen texto en inglés y su traducción en el mismo fichero. Pero en los "
+"paquetes fuente, las traducciones se manipulan en ficheros separados para "
+"ayudar a los traductores. Con la implementación inicial, un fichero original "
+"de plantillas, F<templates>, sólo contenía texto en inglés, y los ficheros "
+" F<templates.I<xx>> contenían las cadenas originales y traducidas del "
+"idioma I<xx>. El programa B<debconf-mergetemplate> fusionaba los ficheros de "
+"plantilla original y traducidos."
 
 #. type: textblock
 #: en/debconf-gettextize.1.pod:25
@@ -64,6 +94,12 @@ msgid ""
 "work on normal PO files, and B<po2debconf> generates a merged templates file "
 "with the same structure."
 msgstr ""
+"La nueva implementación con C<po-debconf> está basada en C<gettext>.  Los "
+"desarrolladores marcan los campos a traducir añadiendo un guión bajo al "
+"principio de estas, las cadenas en inglés se extraen de forma automática a "
+"un fichero POT, los traductores trabajan con los ficheros PO, y "
+"B<po2debconf> genera un fichero de plantillas fusionado con la misma "
+"estructura."
 
 #. type: textblock
 #: en/debconf-gettextize.1.pod:31
@@ -71,6 +107,8 @@ msgid ""
 "The B<debconf-gettextize> program was initially designed to help migrating "
 "to the new implementation."
 msgstr ""
+"El programa B<debconf-gettextize> se diseñó en principio para asistir en la "
+"adaptación a la nueva implementación."
 
 #. type: textblock
 #: en/debconf-gettextize.1.pod:38
@@ -78,6 +116,9 @@ msgid ""
 "It reads a list of master files and their associated translations, and "
 "generates F<po/*.po> files for each language containing translated strings."
 msgstr ""
+"Analiza una lista de ficheros originales y sus traducciones asociadas, "
+"generando un fichero F<po/*.po> por cada idioma que contenga cadenas "
+"traducidas."
 
 #. type: textblock
 #: en/debconf-gettextize.1.pod:44
@@ -88,6 +129,12 @@ msgid ""
 "which fields translators have to work on and which ones are skipped because "
 "their values are not locale-dependent."
 msgstr ""
+"Cada fichero en la entrada recibe un sufijo C<.old>, y el nuevo fichero "
+"original sobreescribe el antiguo, es idéntico al fichero original anterior a "
+"excepción de que se añade un guión bajo al principio de las cadenas a "
+"traducir. En este momento, los desarrolladores pueden elegir los campos que "
+"los traductores traducirán, y cuales se omiten porque sus valores no "
+"dependen de la localización."
 
 #. type: textblock
 #: en/debconf-gettextize.1.pod:53
@@ -95,6 +142,8 @@ msgid ""
 "A F<po/POTFILES.in> file is also created, it contains the list of "
 "F<templates> files B<debconf-updatepo> has to process."
 msgstr ""
+"También se crea un fichero F<po/POTFILES.in>, que contiene la lista de "
+"ficheros F<templates> que B<debconf-updatepo> debe procesar."
 
 #. type: textblock
 #: en/debconf-gettextize.1.pod:58
@@ -108,6 +157,14 @@ msgid ""
 "into a temporary template file, which is passed to B<debconf-gettextize> as "
 "an argument.  Then the following steps are performed:"
 msgstr ""
+"Habitualmente, el programa B<debconf-gettextize> sólo se ejecuta una vez, al "
+"migrar desde la primera implementación al formato de C<po-debconf>, pero "
+"también se puede usar después para transformar un campo  C<_Choices> a  "
+"C<__Choices> (o vice-versa) sin perder las traducciones, al usar la opción "
+"C<--merge> (junto con C<--choices> o no). La plantilla deseada que contiene "
+"los campos C<_Choices> o C<__Choices> a modificar se debe copiar al fichero "
+"de plantilla temporal, que se introduce como argumento a B<debconf-"
+"gettextize>. A continuación se realizan los siguientes pasos:"
 
 #. type: =item
 #: en/debconf-gettextize.1.pod:70 en/po-debconf.7.pod:75
@@ -120,6 +177,8 @@ msgid ""
 "B<po2debconf> is run on this template file to generate a translated "
 "templates file."
 msgstr ""
+"B<po2debconf> se ejecuta sobre este fichero de plantillas para generar un "
+"fichero de plantillas traducido."
 
 #. type: =item
 #: en/debconf-gettextize.1.pod:74 en/po-debconf.7.pod:81
@@ -132,6 +191,8 @@ msgid ""
 "This translated templates file is processed as described above and PO files "
 "are generated."
 msgstr ""
+"Este fichero de plantillas traducido se procesa como se ha descrito "
+"anteriormente, y se generan los ficheros PO."
 
 #. type: =item
 #: en/debconf-gettextize.1.pod:79
@@ -141,7 +202,7 @@ msgstr "3."
 #. type: textblock
 #: en/debconf-gettextize.1.pod:81
 msgid "Newly created PO files are merged with existing ones."
-msgstr ""
+msgstr "Los ficheros PO generados se fusionan con los ya existentes."
 
 #. type: textblock
 #: en/debconf-gettextize.1.pod:85
@@ -150,6 +211,10 @@ msgid ""
 "C<__Choices> (or vice-versa) in the original templates file before running "
 "B<debconf-updatepo>, otherwise new translations will be fuzzy."
 msgstr ""
+"Al fusionar los ficheros PO, los campos C<_Choices> se tienen que reemplazar "
+"con C<__Choices> (o viceversa) en el fichero de plantillas original antes "
+"de ejecutar B<debconf-updatepo>. De no ser así, las traducciones nuevas se "
+"marcarán como difusas."
 
 #. type: =head1
 #: en/debconf-gettextize.1.pod:89 en/debconf-updatepo.1.pod:24 en/po2debconf.1.pod:37 en/podebconf-display-po.1.pod:28 en/podebconf-report-po.1.pod:30
@@ -159,12 +224,12 @@ msgstr "OPCIONES"
 #. type: =item
 #: en/debconf-gettextize.1.pod:93 en/debconf-updatepo.1.pod:28 en/po2debconf.1.pod:41 en/podebconf-display-po.1.pod:32 en/podebconf-report-po.1.pod:162
 msgid "B<-h>, B<--help>"
-msgstr ""
+msgstr "B<-h>, B<--help>"
 
 #. type: textblock
 #: en/debconf-gettextize.1.pod:95
 msgid "Display a usage summary for the program and exit."
-msgstr ""
+msgstr "Muestra un resumen de uso del programa y cierra."
 
 #. type: =item
 #: en/debconf-gettextize.1.pod:97 en/debconf-updatepo.1.pod:32 en/po2debconf.1.pod:45 en/podebconf-report-po.1.pod:293
@@ -174,12 +239,12 @@ msgstr "B<-v>, B<--verbose>"
 #. type: textblock
 #: en/debconf-gettextize.1.pod:99 en/debconf-updatepo.1.pod:34 en/po2debconf.1.pod:47
 msgid "Process in verbose mode."
-msgstr ""
+msgstr "Procesa en modo informativo."
 
 #. type: =item
 #: en/debconf-gettextize.1.pod:101 en/debconf-updatepo.1.pod:36 en/po2debconf.1.pod:49 en/podebconf-report-po.1.pod:220
 msgid "B<--podir=I<DIR>>"
-msgstr ""
+msgstr "B<--podir=I<directorio>>"
 
 #. type: textblock
 #: en/debconf-gettextize.1.pod:103
@@ -187,11 +252,14 @@ msgid ""
 "Set directory for PO files.  Default is to search for PO files in the F<po> "
 "subdirectory below the location of the first master file."
 msgstr ""
+"Define el directorio de los ficheros PO. El comportamiento predefinido es "
+"buscar ficheros PO en el subdirectorio F<po> bajo la ubicación del primer "
+"fichero original."
 
 #. type: =item
 #: en/debconf-gettextize.1.pod:106
 msgid "B<--choices>"
-msgstr ""
+msgstr "B<--choices>"
 
 #. type: textblock
 #: en/debconf-gettextize.1.pod:108
@@ -199,11 +267,13 @@ msgid ""
 "By default, B<debconf-gettextize> replaces C<Choices> fields by "
 "C<_Choices>.  With this flag, C<__Choices> fields are written instead."
 msgstr ""
+"Por omisión, B<debconf-gettextize> reemplaza campos C<Choices> con "
+"C<_Choices>.  Con esta opción, se escriben campos C<__Choices> en su lugar."
 
 #. type: =item
 #: en/debconf-gettextize.1.pod:112
 msgid "B<--merge>"
-msgstr ""
+msgstr "B<--merge>"
 
 #. type: textblock
 #: en/debconf-gettextize.1.pod:114
@@ -211,6 +281,8 @@ msgid ""
 "When this flag is set, the strings are merged with existing PO files.  The "
 "templates files and F<po/POTFILES.in> are not modified."
 msgstr ""
+"Si se define esta opción, se fusionan las cadenas  con ficheros PO "
+"existentes. No se modifican el fichero de plantillas y F<po/POTFILES.in>."
 
 #. type: =head1
 #: en/debconf-gettextize.1.pod:119 en/po-debconf.7.pod:302 en/podebconf-display-po.1.pod:42
@@ -228,11 +300,19 @@ msgid ""
 "know that this localized C<Default> field is special, you must by convention "
 "call it C<_DefaultChoice> instead of C<_Default>."
 msgstr ""
+"El campo  C<Default> es especial cuando el tipo de plantilla es C<Select> o "
+"C<Multiselect>, ya que se debe seleccionar un valor en la lista B<English> "
+"de elecciones, incluso para valores localizados. Habitualmente, no se debe "
+"modificar este campo, pero en algunas circunstancias, los valores "
+"localizados tiene sentido (por ejemplo, para seleccionar el idioma "
+"predefinido de una aplicación). Para que los traductores sepan que este "
+"campo C<Default> localizado es especial, debe denominarlo C<_DefaultChoice> "
+"en lugar de C<_Default> por convención."
 
 #. type: =head1
 #: en/debconf-gettextize.1.pod:130 en/debconf-updatepo.1.pod:80 en/po2debconf.1.pod:103 en/po-debconf.7.pod:420 en/podebconf-display-po.1.pod:83 en/podebconf-report-po.1.pod:486
 msgid "SEE ALSO"
-msgstr ""
+msgstr "VÉASE TAMBIÉN"
 
 #. type: textblock
 #: en/debconf-gettextize.1.pod:132
@@ -240,11 +320,13 @@ msgid ""
 "L<debconf-updatepo(1)>, L<po2debconf(1)>, L<debconf-devel(7)>, "
 "L<po-debconf(7)>."
 msgstr ""
+"L<debconf-updatepo(1)>, L<po2debconf(1)>, L<debconf-devel(7)>, L<po-"
+"debconf(7)>."
 
 #. type: =head1
 #: en/debconf-gettextize.1.pod:137 en/po-debconf.7.pod:429
 msgid "AUTHORS"
-msgstr ""
+msgstr "AUTORES"
 
 #. type: verbatim
 #: en/debconf-gettextize.1.pod:139
@@ -254,11 +336,15 @@ msgid ""
 "  Martin Quinson <martin.quinson@ens-lyon.fr>\n"
 "\n"
 msgstr ""
+"  Denis Barbier <barbier@linuxfr.org>\n"
+"  Martin Quinson <martin.quinson@ens-lyon.fr>\n"
+"\n"
 
 #. type: textblock
 #: en/debconf-updatepo.1.pod:4
 msgid "debconf-updatepo - update PO files about debconf templates"
 msgstr ""
+"debconf-updatepo - Actualiza ficheros PO a partir de plantillas de debconf"
 
 #. type: textblock
 #: en/debconf-updatepo.1.pod:8
@@ -266,6 +352,8 @@ msgid ""
 "B<debconf-updatepo> [B<-v>] [B<-h>] [B<--podir=I<DIR>>] [B<--skip-pot>] "
 "[B<--skip-merge>] [B<--msgid-bugs-address=I<EMAIL>>]"
 msgstr ""
+"B<debconf-updatepo> [B<-v>] [B<-h>] [B<--podir=I<directorio>>] [B<--skip-"
+"pot>] [B<--skip-merge>] [B<--msgid-bugs-address=I<correo-electrónico>>]"
 
 #. type: textblock
 #: en/debconf-updatepo.1.pod:17
@@ -277,11 +365,18 @@ msgid ""
 "is run by developer and/or translator to update PO files when the English "
 "text is modified in F<templates> files."
 msgstr ""
+"Este programa analiza F<po/POTFILES.in> para determinar los ficheros "
+"originales a procesar, extrae las cadenas de gettext nuevas a "
+"F<po/templates.pot>, y actualiza todos los ficheros F<po/*.po>. Este script "
+"se puede invocar desde el directorio de nivel superior, o desde los "
+"subdirectorios F<debian> o F<debian/po>. El desarrollador o el traductor lo "
+"ejecutan para actualizar ficheros PO cuando se ha modificado el texto en "
+"inglés en los ficheros F<templates>."
 
 #. type: textblock
 #: en/debconf-updatepo.1.pod:30 en/po2debconf.1.pod:43 en/podebconf-display-po.1.pod:34
 msgid "Display a usage summary and exit."
-msgstr ""
+msgstr "Muestra un resumen del uso y cierra."
 
 #. type: textblock
 #: en/debconf-updatepo.1.pod:38
@@ -289,31 +384,33 @@ msgid ""
 "Set directory for PO files.  By default PO files are searched in "
 "F<debian/po>, F<po> and F<../po> directories in that order."
 msgstr ""
+"Define el directorio de ficheros PO. Por omisión, se buscan ficheros PO en "
+"los directorios F<debian/po>, F<po> y F<../po>, en este orden."
 
 #. type: =item
 #: en/debconf-updatepo.1.pod:41
 msgid "B<--skip-pot>"
-msgstr ""
+msgstr "B<--skip-pot>"
 
 #. type: textblock
 #: en/debconf-updatepo.1.pod:43
 msgid "Do not generate a new F<po/templates.pot> file."
-msgstr ""
+msgstr "No genera un nuevo fichero F<po/templates.pot>."
 
 #. type: =item
 #: en/debconf-updatepo.1.pod:45
 msgid "B<--skip-merge>"
-msgstr ""
+msgstr "B<--skip-merge>"
 
 #. type: textblock
 #: en/debconf-updatepo.1.pod:47
 msgid "Do not merge existing PO files with F<po/templates.pot>."
-msgstr ""
+msgstr "No fusiona los ficheros PO existentes con F<po/templates.pot>."
 
 #. type: =item
 #: en/debconf-updatepo.1.pod:49
 msgid "B<--msgid-bugs-address=I<EMAIL>>"
-msgstr ""
+msgstr "B<--msgid-bugs-address=I<correo-electrónico>>"
 
 #. type: textblock
 #: en/debconf-updatepo.1.pod:51
@@ -321,11 +418,13 @@ msgid ""
 "Set the email address that will be specified in the POT's "
 "Report-Msgid-Bugs-To field."
 msgstr ""
+"Define la dirección de correo electrónico que se insertará en el campo "
+"«Report-Msgid-Bugs-To» del fichero POT."
 
 #. type: textblock
 #: en/debconf-updatepo.1.pod:54
 msgid "By default, this field is set to <package>@package.debian.org."
-msgstr ""
+msgstr "Por omisión, este campo se define como <paquete>@package.debian.org."
 
 #. type: textblock
 #: en/debconf-updatepo.1.pod:56
@@ -333,11 +432,13 @@ msgid ""
 "It is intended for the maintainers of Debian based distributions, and should "
 "be used in the following cases:"
 msgstr ""
+"Esta pensado para los desarrolladores de distribuciones basadas en Debian, y "
+"se debería usar en los siguientes casos:"
 
 #. type: =item
 #: en/debconf-updatepo.1.pod:61 en/debconf-updatepo.1.pod:66
 msgid "o"
-msgstr ""
+msgstr "o"
 
 #. type: textblock
 #: en/debconf-updatepo.1.pod:63
@@ -345,6 +446,8 @@ msgid ""
 "The package is not present in Debian (and thus the "
 "<package>@packages.debian.org address does not exist)."
 msgstr ""
+"El paquete no está presente en Debian (y por ello, la dirección "
+"<package>@packages.debian.org no existe)."
 
 #. type: textblock
 #: en/debconf-updatepo.1.pod:68
@@ -354,6 +457,10 @@ msgid ""
 "bother the Debian maintainer with bug reports that won't be relevant for the "
 "Debian maintainer."
 msgstr ""
+"El desarrollador original hizo cambios significativos en las plantillas de "
+"debconf (o añadió plantillas a un paquete de Debian sin plantillas), y no "
+"desea incordiar al encargado del paquete de Debian con informes de fallo que "
+"no son relevantes para el encargado de Debian."
 
 #. type: textblock
 #: en/debconf-updatepo.1.pod:75
@@ -361,6 +468,8 @@ msgid ""
 "The default address is preferred to avoid corrections in the Debian based "
 "distribution without a notification to the Debian maintainer."
 msgstr ""
+"Se prefiere la dirección predefinida para evitar correcciones en la "
+"distribución basada en Debian sin notificar al encargado de paquetes Debian."
 
 #. type: textblock
 #: en/debconf-updatepo.1.pod:82
@@ -368,11 +477,13 @@ msgid ""
 "L<debconf-gettextize(1)>, L<po2debconf(1)>, L<podebconf-report-po(1)>, "
 "L<po-debconf(7)>."
 msgstr ""
+"L<debconf-gettextize(1)>, L<po2debconf(1)>, L<podebconf-report-po(1)>, L<po-"
+"debconf(7)>."
 
 #. type: =head1
 #: en/debconf-updatepo.1.pod:87 en/po2debconf.1.pod:109 en/podebconf-display-po.1.pod:87 en/podebconf-report-po.1.pod:490
 msgid "AUTHOR"
-msgstr ""
+msgstr "AUTOR"
 
 #. type: verbatim
 #: en/debconf-updatepo.1.pod:89 en/po2debconf.1.pod:111 en/podebconf-display-po.1.pod:89
@@ -381,6 +492,8 @@ msgid ""
 "  Denis Barbier <barbier@linuxfr.org>\n"
 "\n"
 msgstr ""
+"  Denis Barbier <barbier@linuxfr.org>\n"
+"\n"
 
 #. type: textblock
 #: en/po2debconf.1.pod:4

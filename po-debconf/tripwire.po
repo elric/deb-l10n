@@ -38,7 +38,7 @@ msgstr ""
 "Project-Id-Version: tripwire\n"
 "Report-Msgid-Bugs-To: tripwire@packages.debian.org\n"
 "POT-Creation-Date: 2010-06-25 12:44+0200\n"
-"PO-Revision-Date: 2010-10-11 12:38+0200\n"
+"PO-Revision-Date: 2010-10-12 13:02+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian L10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -59,9 +59,9 @@ msgid ""
 "The format of the Tripwire database and configuration files have changed "
 "substantially between previous versions and this release."
 msgstr ""
-"El formato de la base de datos y de los ficheros de configuración ha "
-"cambiado sustancialmente entre las versiones anteriores y esta versión de "
-"Tripwire."
+"El formato de la base de datos y de los ficheros de configuración de "
+"Tripwire han cambiado sustancialmente entre las versiones anteriores y esta "
+"versión."
 
 #. Type: boolean
 #. Description
@@ -85,7 +85,7 @@ msgid ""
 "However, as no conversion of the old configuration file and database is "
 "attempted, you may prefer not to upgrade."
 msgstr ""
-"En cualquier caso, puede que no desee actualizar debido a que no es posible "
+"En cualquier caso, puede que no desee actualizar debido a que no se realizará "
 "la conversión del fichero de configuración anterior y la base de datos."
 
 #. Type: boolean
@@ -99,14 +99,14 @@ msgid ""
 msgstr ""
 "Si elije actualizar debe utilizar la nueva versión «/etc/cron.daily/tripwire» "
 "para que se generen los informes periódicos. Esto se debe a la forma en que "
-"Debian gestiona los ficheros de configuración. A pesar de todo, la tarea de "
-"cron asociada a la versión anterior seguirá ejecutándose."
+"Debian gestiona los ficheros de configuración. A pesar de todo, seguirá "
+"ejecutándose la tarea de cron asociada a la versión anterior."
 
 #. Type: boolean
 #. Description
 #: ../templates:2001
 msgid "Do you wish to create/use your site key passphrase during installation?"
-msgstr "¿Desea crear/usar su clave de sitio durante la instalación?"
+msgstr "¿Desea crear o usar su clave de sitio durante la instalación?"
 
 #. Type: boolean
 #. Description
@@ -141,7 +141,7 @@ msgid ""
 msgstr ""
 "Desafortunadamente, debido al proceso de instalación de Debian, hay un "
 "intervalo de tiempo en que existe la clave pero esta no está cifrada. "
-"Durante este tiempo, un atacante que tenga acceso a su máquina puede "
+"Durante este tiempo, un atacante que tenga acceso a su máquina podría "
 "conseguir la contraseña y utilizarla más adelante."
 
 #. Type: boolean
@@ -190,9 +190,9 @@ msgid ""
 "need to create a local key file by hand.  See twadmin(8) for more "
 "information."
 msgstr ""
-"Si prefiere no exponerse a está vulnerabilidad no acepte esta opción. "
-"Necesitará crear el fichero de clave local manualmente. Para más información "
-"consulte twadmin(8)."
+"Si prefiere no exponerse, no acepte esta opción. Necesitará crear el "
+"fichero de clave local manualmente. Para más información consulte "
+"twadmin(8)."
 
 #. Type: password
 #. Description
@@ -231,27 +231,28 @@ msgstr ""
 #. Description
 #: ../templates:4001 ../templates:7001
 msgid "Remember this passphrase; it is not stored anywhere!"
-msgstr "Recuerde su contraseña. ¡No se guarda en ningún lugar!"
+msgstr "Recuerde su contraseña. ¡No se almacenará en ningún lugar!"
 
 #. Type: password
 #. Description
 #: ../templates:5001
 msgid "Repeat the site-key passphrase:"
-msgstr "Repita la clave de sitio:"
+msgstr "Vuelva a introducir la clave de sitio:"
 
 #. Type: password
 #. Description
 #: ../templates:5001
 msgid "Please repeat the site pass phrase to be sure you didn't mistype."
 msgstr ""
-"Por favor, vuelva a introducir la clave de sitio para asegurarse que "
-"coinciden."
+"Por favor, vuelva a introducir la clave de sitio para comprobar que "
+"la ha introducido correctamente."
 
 #. Type: boolean
 #. Description
 #: ../templates:6001
 msgid "Your site passphrase is incorrect. Retry operation?"
-msgstr "La contraseña introducida es incorrecta. ¿Desea intentarlo de nuevo?"
+msgstr "La contraseña de sitio introducida es incorrecta. ¿Desea intentarlo "
+"de nuevo?"
 
 #. Type: boolean
 #. Description
@@ -263,8 +264,8 @@ msgid ""
 "will terminate gracefully.  When you remember the site passphrase continue "
 "the installation process by running"
 msgstr ""
-"La contraseña introducida es incorrecta. Si piensa que la tecleó mal y "
-"desea repetir la operación acepte esta opción. Si no puede recordar la "
+"La contraseña de sitio introducida es incorrecta. Si piensa que la tecleó "
+"mal y desea repetir la operación acepte esta opción. Si no puede recordar la "
 "clave, rechace esta opción y la instalación de Tripwire concluirá "
 "correctamente. Continúe con el proceso de instalación cuando recuerde la "
 "clave de sitio."
@@ -296,8 +297,8 @@ msgid ""
 "If you have completely forgotten your site passphrase, generate a new site "
 "key with a new passphrase by running"
 msgstr ""
-"Cree una nueva clave de sitio con una nueva contraseña si ha olvidado la "
-"clave y no puede recordarla."
+"Si ha olvidado por completo la clave de sitio, puede generar una nueva con "
+"una nueva contraseña ejecutando"
 
 #. Type: boolean
 #. Description
@@ -320,7 +321,7 @@ msgid ""
 "machine, such as the Tripwire database.  The local key may also be used for "
 "signing integrity check reports."
 msgstr ""
-"Tripwrire utiliza dos claves diferentes para los ficheros de autentificación "
+"Tripwire utiliza dos claves diferentes para los ficheros de autentificación "
 "y cifrado. La clave local se usa para proteger los ficheros específicos al "
 "equipo local, como p.ej, la base de datos de Tripwire. La clave local "
 "también se puede utilizar para firmar los informes generados tras las "
@@ -333,27 +334,29 @@ msgid ""
 "You are being prompted for this passphrase because no local key file "
 "currently exists."
 msgstr ""
-"Se le está solicitando la clave local porque no existe ninguna clave "
-"actualmente."
+"Se le está solicitando esta contraseña porque no existe ningún fichero de "
+"clave local."
 
 #. Type: password
 #. Description
 #: ../templates:8001
 msgid "Repeat the local key passphrase:"
-msgstr "Repita la clave local:"
+msgstr "Vuelva a introducir la contraseña para la clave local:"
 
 #. Type: password
 #. Description
 #: ../templates:8001
 msgid "Please repeat the local pass phrase to be sure you didn't mistype."
 msgstr ""
-"Por favor, repita la clave local para asegurarse que no la escribió mal."
+"Por favor, vuelva a introducir la contraseña para la clave local para "
+"comprobar que la ha introducido correctamente."
 
 #. Type: boolean
 #. Description
 #: ../templates:9001
 msgid "Your local passphrase is incorrect. Retry operation?"
-msgstr "La clave local introducida es incorrecta. ¿Desea intentarlo de nuevo?"
+msgstr "La contraseña local introducida es incorrecta. ¿Desea intentarlo "
+"de nuevo?"
 
 #. Type: boolean
 #. Description
@@ -377,14 +380,14 @@ msgid ""
 "If you have completely forgotten your local passphrase, generate a new site "
 "key with a new passphrase by running"
 msgstr ""
-"Cree un nueva clave de sitio con una nueva contraseña si ha olvidado "
-"completamente su clave local."
+"Si ha olvidado completamente su clave local debería generar una nueva "
+"clave de sitio ejecutando"
 
 #. Type: boolean
 #. Description
 #: ../templates:9001
 msgid "  twadmin -m G -L /etc/tripwire/${hostname}-local.key"
-msgstr " «/usr/share/doc/tripwire/README.Debian»"
+msgstr "  twadmin -m G -L /etc/tripwire/${hostname}-local.key"
 
 #. Type: boolean
 #. Description
@@ -399,7 +402,7 @@ msgid ""
 "Tripwire keeps its configuration in a encrypted database that is generated, "
 "by default, from /etc/tripwire/twcfg.txt"
 msgstr ""
-"Tripwrite guarda su configuración en una base de datos cifrada y generada, "
+"Tripwire guarda su configuración en una base de datos cifrada y generada, "
 "por omisión, a partir de «/etc/tripwire/twcfg.txt»."
 
 #. Type: boolean
@@ -412,8 +415,8 @@ msgid ""
 msgstr ""
 "Debe regenerar la base de datos cifrada si se realiza cualquier cambio a «/"
 "etc/tripwire/twcfg.txt», bien porque este paquete haya cambiado o bien "
-"porque el administrador lo haya hecho. Hasta que no se regenere la base de "
-"datos los cambios no tendrán efecto."
+"porque el administrador haya hecho algo. No tendrán efecto los cambios hasta "
+"que se regenere."
 
 #. Type: boolean
 #. Description
@@ -425,7 +428,7 @@ msgid ""
 "passphrase during the post-installation process of this package."
 msgstr ""
 "Si elige está opción se le pedirá la contraseña de la clave de sitio durante "
-"el proceso de postinstalación del paquete."
+"el proceso de post-instalación del paquete."
 
 #. Type: boolean
 #. Description
@@ -441,9 +444,9 @@ msgid ""
 "monitored in a encrypted database that is generated, by default, from /etc/"
 "tripwire/twpol.txt"
 msgstr ""
-"Tripwire mantiene sus directrices con los atributos que deberían supervisarse "
-"en los ficheros en la base de datos que se generó, por omisión, a partir de «/"
-"etc/tripwire/twpol.txt»."
+"Tripwire mantiene sus directrices que indican los atributos que se "
+"deberían supervisar en los ficheros en la base de datos que se generó, por "
+"omisión, a partir de «/etc/tripwire/twpol.txt»."
 
 #. Type: boolean
 #. Description
@@ -462,7 +465,7 @@ msgstr ""
 #. Description
 #: ../templates:12001
 msgid "Tripwire no longer emails reports by default"
-msgstr "Por omisión, Tripwire no enviará informes por correo electrónico"
+msgstr "Por omisión, Tripwire ya no envía informes por correo electrónico"
 
 #. Type: note
 #. Description
@@ -523,7 +526,7 @@ msgstr ""
 #. Description
 #: ../templates:14001
 msgid "Your Tripwire installation may be misconfigured"
-msgstr "Su instalación de Tripwire puede no estar bien configurada"
+msgstr "Su instalación de Tripwire puede estar mal configurada"
 
 #. Type: note
 #. Description
@@ -557,7 +560,7 @@ msgstr ""
 #. Description
 #: ../templates:15001
 msgid "The default Tripwire policy has changed"
-msgstr "Las normas predefinidas de Tripwire han cambiado"
+msgstr "Han cambiado las directrices predefinidas de Tripwire"
 
 #. Type: note
 #. Description
@@ -569,10 +572,10 @@ msgid ""
 "will fail until you update your tripwire database."
 msgstr ""
 "En la versión ${release}, han cambiado las directrices predefinidas de "
-"tripwire. La tarea diaria de tripwire en el cron fallará hasta que actualice "
-"la base de datos si acepta la opción de dpkg de actualizar "
-"«/etc/tripwire/twpol.txt» y antes había seleccionado que la directriz se "
-"regenerara de forma automática,."
+"tripwire. Si acepta el ofrecimiento de dpkg de actualizar "
+"«/etc/tripwire/twpol.txt» y anteriormente había elegido que sus directrices "
+"se regenerarán automáticamente, la tarea diaria de tripwire de cron fallará "
+"hasta que se actualice la base de datos de tripwire."
 
 #. Type: note
 #. Description
