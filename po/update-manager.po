@@ -1,0 +1,2948 @@
+# translation of update-manager to Spanish
+# This file is distributed under the same license as the update-manager package.
+#  Copyright (c) 2004 Canonical
+#                2004 Michiel Sikkes
+# Jorge Bernal <koke@amedias.org>, 2005.
+# Jorge Bernal <koke@sindominio.net>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: es\n"
+"Report-Msgid-Bugs-To: sebastian.heinlein@web.de\n"
+"POT-Creation-Date: 2009-09-21 10:40+0200\n"
+"PO-Revision-Date: 2009-03-29 10:49+0000\n"
+"Last-Translator: Ricardo Pérez López <ricpelo@gmail.com>\n"
+"Language-Team: Spanish <traductores@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2009-04-08 12:12+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../UpdateManager/Application.py:127
+msgid "sets the log level"
+msgstr ""
+
+#: ../UpdateManager/Application.py:130
+msgid "sets the log level to debug"
+msgstr ""
+
+#: ../UpdateManager/Application.py:134
+msgid "starts an update check"
+msgstr ""
+
+#. TRANSLATORS: download size is 0
+#: ../UpdateManager/Util/humanize.py:38
+msgid "0 KB"
+msgstr "0 KB"
+
+#. TRANSLATORS: download size of very small updates
+#: ../UpdateManager/Util/humanize.py:41
+msgid "1 KB"
+msgstr "1 KB"
+
+#. TRANSLATORS: download size of small updates, e.g. "250 KB"
+#: ../UpdateManager/Util/humanize.py:44
+#, python-format
+msgid "%.0f KB"
+msgstr "%.0f KB"
+
+#. TRANSLATORS: download size of updates, e.g. "2.3 MB"
+#: ../UpdateManager/Util/humanize.py:47
+#, python-format
+msgid "%.1f MB"
+msgstr "%.1f MB"
+
+#: ../UpdateManager/Util/humanize.py:56
+#, fuzzy
+msgid "< 5 seconds"
+msgstr "%li segundo"
+
+#: ../UpdateManager/Util/humanize.py:58
+#, fuzzy, python-format
+msgid "%d seconds"
+msgstr "%li segundo"
+
+#: ../UpdateManager/Util/humanize.py:62 ../UpdateManager/Util/humanize.py:76
+#, fuzzy, python-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%li minuto"
+msgstr[1] "%li minutos"
+
+#: ../UpdateManager/Util/humanize.py:64 ../UpdateManager/Util/humanize.py:82
+#, fuzzy, python-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%li segundo"
+msgstr[1] "%li segundos"
+
+#: ../UpdateManager/Util/humanize.py:74
+#, fuzzy, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%li hora"
+msgstr[1] "%li horas"
+
+#: ../UpdateManager/Backend/PythonApt.py:675
+#, fuzzy
+msgid "Could not download packages information."
+msgstr "No se ha podido inicializar la información de los paquetes"
+
+#: ../UpdateManager/Backend/PythonApt.py:809
+msgid ""
+"Internal error: the commit progress handler did not handle "
+"requires_removal_or_installation correctly."
+msgstr ""
+
+#: ../UpdateManager/Frontend/GtkCommon/GtkExceptionHandler.py:78
+#: ../UpdateManager/Frontend/GtkCommon/GtkExceptionHandler.py:85
+msgid "A fatal error has been detected in update-manager."
+msgstr ""
+
+#: ../UpdateManager/Frontend/GtkCommon/GtkExceptionHandler.py:80
+#, fuzzy
+msgid "Do you want to submit a bug report?"
+msgstr "¿Desea comenzar la actualización?"
+
+#: ../UpdateManager/Frontend/GtkCommon/GtkExceptionHandler.py:81
+msgid "Selecting No will close the application."
+msgstr ""
+
+#: ../UpdateManager/Frontend/GtkCommon/GtkExceptionHandler.py:86
+msgid "The program will now exit."
+msgstr ""
+
+#: ../UpdateManager/Frontend/Newt.py:47 ../UpdateManager/Frontend/Newt.py:106
+#, fuzzy
+msgid "Loading package cache."
+msgstr "Descargando actualizaciones de paquetes"
+
+#: ../UpdateManager/Frontend/Newt.py:51 ../UpdateManager/Frontend/Newt.py:104
+#, fuzzy
+msgid "Finished loading package cache."
+msgstr "Descargando actualizaciones de paquetes"
+
+#: ../UpdateManager/Frontend/Newt.py:80
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../UpdateManager/Frontend/Newt.py:81
+msgid "Install"
+msgstr "Instalar"
+
+#: ../UpdateManager/Frontend/Newt.py:130
+msgid "Building Updates List"
+msgstr "Construyendo lista de actualizaciones"
+
+#: ../UpdateManager/Frontend/Gtk/ChangelogViewer.py:84
+msgid "Open Link in Browser"
+msgstr "Abrir vínculo en el navegador"
+
+#: ../UpdateManager/Frontend/Gtk/ChangelogViewer.py:87
+msgid "Copy Link to Clipboard"
+msgstr "Copiar vínculo en el portapapeles"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:159
+msgid "_Uncheck All"
+msgstr "_Desmarcar todo"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:163
+#, fuzzy
+msgid "_Check all"
+msgstr "_Marcar todo"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:258
+#, python-format
+msgid "(Size: %s)"
+msgstr "(Tamaño: %s)"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:263
+#, python-format
+msgid "From version %(old_version)s to %(new_version)s"
+msgstr "De la versión %(old_version)s a la %(new_version)s"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:267
+#, fuzzy, python-format
+msgid "Version: %s"
+msgstr "Versión %s"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:273
+msgid "Requires installation of: "
+msgstr ""
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:275
+#: ../UpdateManager/Frontend/Gtk/ui.py:439
+msgid "None"
+msgstr "Ninguno"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:286
+msgid "Depends on: "
+msgstr ""
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:295
+msgid "Depends on (strict): "
+msgstr ""
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:304
+msgid "Is depended on by: "
+msgstr ""
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:314
+msgid "Is depended on by (strict): "
+msgstr ""
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:322
+msgid "Conflicts with: "
+msgstr ""
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:443
+#, python-format
+msgid "Download size: %s"
+msgstr "Tamaño de descarga: %s"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:463
+#: ../UpdateManager/Frontend/Gtk/ui.py:530
+msgid "Downloading list of changes..."
+msgstr "Descargando la lista de cambios..."
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:493
+#, fuzzy
+msgid "Downloading list of changes failed."
+msgstr "Descargando la lista de cambios..."
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:585
+#, fuzzy, python-format
+msgid "Version %s: "
+msgstr "Versión %s: \n"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:776
+#, fuzzy
+msgid "Gathering information about updates..."
+msgstr "Recargar la última información sobre actualizaciones"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:802
+#, fuzzy
+msgid "Upgrading may require removal or installation of new packages."
+msgstr "¿Desinstalar los paquetes obsoletos?"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:804
+#, fuzzy
+msgid ""
+"Do you want to perform a safe-upgrade, which does not remove packages or "
+"install new ones?"
+msgstr "¿Desea comenzar la actualización?"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:848
+msgid "Your system is up-to-date"
+msgstr "Su sistema está actualizado"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:873
+#, fuzzy, python-format
+msgid "Welcome to %s!"
+msgstr "Bienvenido a Ubuntu"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:874
+#, fuzzy, python-format
+msgid "These software updates have been issued since %s was released."
+msgstr "No hay actualizaciones disponibles."
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:883
+#, fuzzy
+msgid "Software updates are available for this computer."
+msgstr "Hay actualizaciones de software disponibles para este equipo"
+
+#: ../UpdateManager/Frontend/Gtk/ui.py:885
+#, fuzzy
+msgid ""
+"If you don't want to install them now, choose \"Update Manager\" from the "
+"Administraion menu later."
+msgstr ""
+"Si no desea instalarlas ahora, podrá hacerlo luego seleccionando «Gestor de "
+"actualizaciones» en el menú de Administración."
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:357
+msgid "Progress"
+msgstr ""
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:360
+#, fuzzy
+msgid "Source"
+msgstr "Editar origen"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:362
+msgid "Filename"
+msgstr ""
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:366
+#, fuzzy
+msgid "Downloaded"
+msgstr "Tamaño de descarga: %s"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:372
+msgid "Size"
+msgstr ""
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:381
+msgid "Checking for updates"
+msgstr "Comprobando actualizaciones"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:432
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:451
+msgid "Unknown"
+msgstr ""
+
+#. TRANSLATORS: This is the download rate in bytes, kilobytes
+#. or megabytes per second (hence the trailing /s).
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:471
+#, fuzzy, python-format
+msgid "Download rate: %s/s"
+msgstr "Tamaño de descarga: %s"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:501
+#, fuzzy
+msgid "Checking for updates..."
+msgstr "Comprobando actualizaciones"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:543
+msgid "An internal error has occured and the operation has been aborted."
+msgstr ""
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:546
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:827
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:921
+#, fuzzy
+msgid "Error message:"
+msgstr "El mensaje de error es «%s»"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:704
+#, fuzzy
+msgid "Downloading updates"
+msgstr "Descargando actualizaciones de paquetes"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:722
+msgid "Changes"
+msgstr "Cambios"
+
+#. ## TRANSLATORS: This is an entry in the package removal or
+#. new installation dialog's changes list.
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:728
+#, python-format
+msgid "Remove %s"
+msgstr "Quitar %s"
+
+#. ## TRANSLATORS: This is an entry in the package removal or
+#. new installation dialog's changes list.
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:734
+#, python-format
+msgid "Install %s"
+msgstr "Instalar %s"
+
+#. ... and now the dialog
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:738
+#, fuzzy
+msgid "Removal or installation of packages"
+msgstr "¿Desinstalar los paquetes obsoletos?"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:747
+#, fuzzy
+msgid ""
+"Installation of the selected upgrades requires removal or installation of "
+"new packages."
+msgstr "Instalando las actualizaciones"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:748
+msgid "You can find a list of these changes below."
+msgstr ""
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:749
+#, fuzzy
+msgid "Do you want to continue?"
+msgstr "¿Desea comenzar la actualización?"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:771
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:774
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:789
+#, fuzzy
+msgid "Preparing upgrade"
+msgstr "Preparando la actualización"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:775
+#, fuzzy
+msgid "This operation may take some time."
+msgstr "Por favor, espere; esto puede tardar un poco."
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:803
+#, fuzzy
+msgid "Downloading finished"
+msgstr "Descargando el informe de cambios"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:824
+msgid "An error has occured and downloading has been aborted."
+msgstr ""
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:851
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:967
+#, fuzzy
+msgid "Installing updates"
+msgstr "_Instalar actualizaciones"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:852
+msgid "Preparing installation..."
+msgstr ""
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:886
+#, fuzzy, python-format
+msgid "Applied %d update"
+msgid_plural "Applied %d updates"
+msgstr[0] "Actualizaciones propuestas"
+msgstr[1] "Actualizaciones propuestas"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:894
+#, fuzzy
+msgid "Your system is now up-to-date."
+msgstr "Su sistema está actualizado"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:896
+#, fuzzy, python-format
+msgid "There is %d more update available."
+msgid_plural "There are %d more updates available."
+msgstr[0] "No hay actualizaciones disponibles."
+msgstr[1] "No hay actualizaciones disponibles."
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:900
+#, fuzzy
+msgid "Software updates correct errors and eliminate security vulnerabilities."
+msgstr ""
+"Las actualizaciones de software corrigen errores, eliminan fallos de "
+"seguridad y proporcionan nuevas funcionalidades."
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:901
+#, fuzzy
+msgid "Please consider installing all available updates."
+msgstr "No se han podido instalar todas las actualizaciones disponibles"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:918
+msgid "An error has occured and installing has been aborted."
+msgstr ""
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:953
+msgid "Show progress of individual files"
+msgstr "Mostrar el progreso de cada archivo individual"
+
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:966
+#: ../UpdateManager/Frontend/Gtk/GtkProgress.py:981
+#, fuzzy
+msgid "Show terminal"
+msgstr "Mostrar terminal >>>"
+
+#: ../UpdateManager/DistSpecific/__init__.py:37
+msgid "Important security updates"
+msgstr "Actualizaciones importantes de seguridad"
+
+#: ../UpdateManager/DistSpecific/__init__.py:38
+msgid "Recommended updates"
+msgstr "Actualizaciones recomendadas"
+
+#: ../UpdateManager/DistSpecific/__init__.py:39
+msgid "Distribution updates"
+msgstr "Actualizaciones de la distribución"
+
+#: ../UpdateManager/DistSpecific/__init__.py:40
+msgid "Proposed updates"
+msgstr "Actualizaciones propuestas"
+
+#: ../UpdateManager/DistSpecific/__init__.py:41
+msgid "Backports"
+msgstr "«Backports»"
+
+#: ../UpdateManager/DistSpecific/__init__.py:42
+#, fuzzy
+msgid "Third-party updates"
+msgstr "Desactivados los orígenes de terceros"
+
+#: ../data/update-manager.schemas.in.h:1
+msgid "*deprecated* Check for new distribution releases"
+msgstr ""
+"*obsoleto* Comprobar si existen nuevas publicaciones de la distribución"
+
+#: ../data/update-manager.schemas.in.h:2
+msgid "Auto close the install window after successful install"
+msgstr ""
+"Cerrar automáticamente la ventana de instalación tras una instalación "
+"correcta"
+
+#: ../data/update-manager.schemas.in.h:3
+msgid "First run welcome message"
+msgstr "Mensaje de bienvenida en la primera ejecución"
+
+#: ../data/update-manager.schemas.in.h:4
+msgid ""
+"If automatic checking for updates is disabled, you have to reload the "
+"channel list manually. This option allows to hide the reminder shown in this "
+"case."
+msgstr ""
+"Si desactiva la comprobación automática de actualizaciones, deberá recargar "
+"la lista de canales manualmente. Esta opción le permite ocultar la "
+"notificación que se muestra en este caso."
+
+#: ../data/update-manager.schemas.in.h:5
+msgid "If this key is set a first run welcome message will be presented."
+msgstr ""
+"Si se establece esta clave, se mostrará un mensaje de bienvenida la primera "
+"vez que se ejecute."
+
+#: ../data/update-manager.schemas.in.h:6
+msgid ""
+"If this key is set the install window will be automatically closed on "
+"successful installation."
+msgstr ""
+"Si se establece esta clave, la ventana de instalación se cerrará "
+"automáticamente tras una instalación correcta."
+
+#: ../data/update-manager.schemas.in.h:7
+msgid ""
+"If this key is set the main update list window will show version information "
+"(from version to version)."
+msgstr ""
+"Si se establece esta valor, la ventana principal que muestra la lista de "
+"actualizaciones mostrará también la información de la versión («de 'versión' "
+"a 'versión'»)."
+
+#: ../data/update-manager.schemas.in.h:8
+msgid "Remind to reload the channel list"
+msgstr "Recordar la recarga de la lista de canales"
+
+#: ../data/update-manager.schemas.in.h:9
+msgid "Show details of an update"
+msgstr "Mostrar detalles de una actualización"
+
+#: ../data/update-manager.schemas.in.h:10
+msgid "Show version in update list"
+msgstr "Mostrar la versión en la lista de actualizaciones"
+
+#: ../data/update-manager.schemas.in.h:11
+msgid "Stores the size of the update-manager dialog"
+msgstr "Almacena el tamaño de la ventana del gestor de actualizaciones"
+
+#: ../data/update-manager.schemas.in.h:12
+msgid ""
+"Stores the state of the expander that contains the list of changes and the "
+"description"
+msgstr ""
+"Almacena el estado del expansor que contiene la lista de cambios y sus "
+"descripciones"
+
+#: ../data/update-manager.schemas.in.h:13
+msgid "The window size"
+msgstr "El tamaño de la ventana"
+
+#: ../data/update-manager.schemas.in.h:14
+msgid ""
+"This key is deprecated in favor of the file /etc/update-manager/release-"
+"upgrades Check automatically if a new version of the current distribution is "
+"available and offer to upgrade (if possible)."
+msgstr ""
+"Esta clave está marcada como obsoleta en beneficio del archivo /etc/update-"
+"manager/release-upgrades. Comprobar automáticamente si se encuentra "
+"disponible una nueva versión de la distribución actual, y proponer su "
+"actualización (si es posible)."
+
+#: ../data/update-manager.desktop.in.h:1
+msgid "Show and install available updates"
+msgstr "Mostrar e instalar las actualizaciones disponibles"
+
+#: ../data/update-manager.desktop.in.h:2
+msgid "Software Updates"
+msgstr "Actualizaciones de software"
+
+#: ../data/update-manager.desktop.in.h:3
+msgid "Update Manager"
+msgstr "Gestor de actualizaciones"
+
+#, fuzzy
+#~ msgid "Current package: %s"
+#~ msgstr "Paquetes rotos"
+
+#~ msgid "Server for %s"
+#~ msgstr "Servidor para %s"
+
+#~ msgid "Main server"
+#~ msgstr "Servidor principal"
+
+#~ msgid "Custom servers"
+#~ msgstr "Servidores personalizados"
+
+#~ msgid "Could not calculate sources.list entry"
+#~ msgstr "No se puede calcular la entrada sources.list"
+
+#~ msgid ""
+#~ "Unable to locate any package files, perhaps this is not a Ubuntu Disc or "
+#~ "the wrong architecture?"
+#~ msgstr ""
+#~ "Imposible localizar ningún paquete, quizás no es un disco de Ubuntu o no "
+#~ "es la arquitectura correcta."
+
+#~ msgid "Failed to add the CD"
+#~ msgstr "Error al añadir el CD"
+
+#~ msgid ""
+#~ "There was a error adding the CD, the upgrade will abort. Please report "
+#~ "this as a bug if this is a valid Ubuntu CD.\n"
+#~ "\n"
+#~ "The error message was:\n"
+#~ "'%s'"
+#~ msgstr ""
+#~ "Ha habido un error al añadir el CD; se ha interrumpido la actualización. "
+#~ "Por favor, informe de esto como un fallo si este es un CD válido de "
+#~ "Ubuntu.\n"
+#~ "\n"
+#~ "El mensaje de error fue:\n"
+#~ "«%s»"
+
+#~ msgid "Remove package in bad state"
+#~ msgid_plural "Remove packages in bad state"
+#~ msgstr[0] "Eliminar paquete en mal estado"
+#~ msgstr[1] "Eliminar paquetes en mal estado"
+
+#~ msgid ""
+#~ "The package '%s' is in an inconsistent state and needs to be reinstalled, "
+#~ "but no archive can be found for it. Do you want to remove this package "
+#~ "now to continue?"
+#~ msgid_plural ""
+#~ "The packages '%s' are in an inconsistent state and need to be "
+#~ "reinstalled, but no archives can be found for them. Do you want to remove "
+#~ "these packages now to continue?"
+#~ msgstr[0] ""
+#~ "El paquete «%s» está en un estado inconsistente y debe reinstalarse, pero "
+#~ "no se encuentra en ningún repositorio. ¿Desea desinstalar este paquete "
+#~ "ahora para continuar?"
+#~ msgstr[1] ""
+#~ "Los paquetes «%s» están en un estado inconsistente y deben reinstalarse, "
+#~ "pero no se encuentran en ningún repositorio. ¿Desea desinstalar estos "
+#~ "paquetes ahora para continuar?"
+
+#~ msgid ""
+#~ "Your system contains broken packages that couldn't be fixed with this "
+#~ "software. Please fix them first using synaptic or apt-get before "
+#~ "proceeding."
+#~ msgstr ""
+#~ "Su sistema contiene paquetes rotos que no pueden ser arreglados con este "
+#~ "software. Por favor, arréglelos primero usando Synaptic o apt-get antes "
+#~ "de continuar."
+
+#~ msgid ""
+#~ "An unresolvable problem occurred while calculating the upgrade:\n"
+#~ "%s\n"
+#~ "\n"
+#~ " This can be caused by:\n"
+#~ " * Upgrading to a pre-release version of Ubuntu\n"
+#~ " * Running the current pre-release version of Ubuntu\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Ha ocurrido un error irresoluble mientras se calculaba la actualización:\n"
+#~ "%s\n"
+#~ "\n"
+#~ " Esto puede deberse a:\n"
+#~ " * Que se está actualizando a una versión de Ubuntu aún no publicada\n"
+#~ " * Que se está usando la actual versión aún no publicada de Ubuntu\n"
+#~ " * Paquetes de software no oficiales, no suministrados por Ubuntu\n"
+#~ "\n"
+
+#~ msgid "This is most likely a transient problem, please try again later."
+#~ msgstr ""
+#~ "Probablemente sea un problema transitorio, inténtelo de nuevo más tarde."
+
+#~ msgid ""
+#~ "If none of this applies, then please report this bug against the 'update-"
+#~ "manager' package and include the files in /var/log/dist-upgrade/ in the "
+#~ "bug report."
+#~ msgstr ""
+#~ "Si no se corresponde con ninguno, informe de este fallo sobre el paquete "
+#~ "«update-manager» e incluya en el informe los archivos situados en /var/log/"
+#~ "dis-upgrade/."
+
+#~ msgid "Could not calculate the upgrade"
+#~ msgstr "No se ha podido calcular la actualización"
+
+#~ msgid "Error authenticating some packages"
+#~ msgstr "Error al autenticar algunos paquetes"
+
+#~ msgid ""
+#~ "It was not possible to authenticate some packages. This may be a "
+#~ "transient network problem. You may want to try again later. See below for "
+#~ "a list of unauthenticated packages."
+#~ msgstr ""
+#~ "No ha sido posible autenticar algunos paquetes. Esto puede ser debido a "
+#~ "un problema transitorio en la red. Pruebe de nuevo más tarde. Vea abajo "
+#~ "una lista de los paquetes no autenticados."
+
+#~ msgid ""
+#~ "The package '%s' is marked for removal but it is in the removal blacklist."
+#~ msgstr ""
+#~ "El paquete «%s» está marcado para desinstalarse pero está en la lista "
+#~ "negra de desinstalación."
+
+#~ msgid "The essential package '%s' is marked for removal."
+#~ msgstr "El paquete esencial «%s» ha sido marcado para su desinstalación."
+
+#~ msgid "Can not mark '%s' for upgrade"
+#~ msgstr "No se ha podido marcar «%s» para actualización"
+
+#~ msgid "Can't install '%s'"
+#~ msgstr "No se ha podido instalar «%s»"
+
+#~ msgid ""
+#~ "It was impossible to install a required package. Please report this as a "
+#~ "bug. "
+#~ msgstr ""
+#~ "No ha sido posible instalar un paquete requerido. Por favor, informe de "
+#~ "esto como un fallo. "
+
+#~ msgid "Can't guess meta-package"
+#~ msgstr "No se ha podido determinar el meta-paquete"
+
+#~ msgid ""
+#~ "Your system does not contain a ubuntu-desktop, kubuntu-desktop, xubuntu-"
+#~ "desktop or edubuntu-desktop package and it was not possible to detect "
+#~ "which version of Ubuntu you are running.\n"
+#~ " Please install one of the packages above first using synaptic or apt-get "
+#~ "before proceeding."
+#~ msgstr ""
+#~ "Su sistema no contiene el paquete ubuntu-desktop,  kubuntu-desktop, "
+#~ "xubuntu-desktop o edubuntu-desktop, y no ha sido posible detectar qué "
+#~ "versión de Ubuntu está ejecutando.\n"
+#~ " Por favor, instale uno de los paquetes anteriores usando Synaptic o apt-"
+#~ "get antes de proceder."
+
+#~ msgid "Reading cache"
+#~ msgstr "Leyendo caché"
+
+#~ msgid "Unable to get exclusive lock"
+#~ msgstr "No se ha podido obtener un bloqueo exclusivo"
+
+#~ msgid ""
+#~ "This usually means that another package management application (like apt-"
+#~ "get or aptitude) already running. Please close that application first."
+#~ msgstr ""
+#~ "Esto normalmente significa que ya se está ejecutando otra aplicación de "
+#~ "gestión de paquetes (como apt-get o aptitude). Por favor, cierre esa "
+#~ "aplicación primero."
+
+#~ msgid "Upgrading over remote connection not supported"
+#~ msgstr "Actualizando sobre conexión remota no soportada"
+
+#~ msgid ""
+#~ "You are running the upgrade over a remote ssh connection with a frontend "
+#~ "that does not support this. The upgrade will abort now. Please try "
+#~ "without ssh."
+#~ msgstr ""
+#~ "Esta corriendo la actualización sobre una conexión ssh remota con una "
+#~ "interfaz que no está soportada. La actualización se cancelará. Inténtelo "
+#~ "sin ssh."
+
+#~ msgid "Continue running under SSH?"
+#~ msgstr "¿Continuar la ejecución bajo SSH?"
+
+#~ msgid ""
+#~ "This session appears to be running under ssh. It is not recommended to "
+#~ "perform a upgrade over ssh currently because in case of failure it is "
+#~ "harder to recover.\n"
+#~ "\n"
+#~ "If you continue, a additional ssh daemon will be started at port '%s'.\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Parece que esta sesión se está ejecutando bajo ssh. Actualmente, no se "
+#~ "recomienda llevar a cabo una actualización sobre ssh, porque en caso de "
+#~ "fallo sería más difícil de recuperar.\n"
+#~ "\n"
+#~ "Si continua, se iniciará un demonio ssh adicional en el puerto «%s».\n"
+#~ "¿Desea continuar?"
+
+#~ msgid "Starting additional sshd"
+#~ msgstr "Iniciando sshd adicional"
+
+#~ msgid ""
+#~ "To make recovery in case of failure easier, an additional sshd will be "
+#~ "started on port '%s'. If anything goes wrong with the running ssh you can "
+#~ "still connect to the additional one.\n"
+#~ msgstr ""
+#~ "Para facilitar la recuperación en caso de fallo, se iniciará un sshd "
+#~ "adicional en el puerto «%s». Si algo va mal con el ssh en ejecución, aún "
+#~ "podrá conectarse al adicional.\n"
+
+#~ msgid "Can not upgrade"
+#~ msgstr "No se puede actualizar"
+
+#~ msgid "An upgrade from '%s' to '%s' is not supported with this tool."
+#~ msgstr "Esta herramienta no soporta actualizaciones de «%s» a «%s»."
+
+#~ msgid "Sandbox setup failed"
+#~ msgstr "Falló la configuración de Sandbox"
+
+#~ msgid "It was not possible to create the sandbox environment."
+#~ msgstr "No ha sido posible crear un entorno sandbox."
+
+#~ msgid "Sandbox mode"
+#~ msgstr "Modo Sandbox"
+
+#~ msgid ""
+#~ "This upgrade is running in sandbox (test) mode. All changes are written "
+#~ "to '%s' and will be lost on the next reboot.\n"
+#~ "\n"
+#~ "*No* changes written to a systemdir from now until the next reboot are "
+#~ "permanent."
+#~ msgstr ""
+#~ "Esta actualización está ejecutándose en un modo caja de arena (test). "
+#~ "Todos los cambios se escriben en «%s» y se perderán en el próximo "
+#~ "reinicio.\n"
+#~ "\n"
+#~ "*No* se escribirán cambios permanentes a una carpeta de sistema desde "
+#~ "ahora hasta el próximo reinicio."
+
+#~ msgid ""
+#~ "Your python install is corrupted. Please fix the '/usr/bin/python' "
+#~ "symlink."
+#~ msgstr ""
+#~ "Su instalación de python está dañada. Por favor, repare el enlace "
+#~ "simbólico «/usr/bin/python»."
+
+#~ msgid "Package 'debsig-verify' is installed"
+#~ msgstr "El paquete 'debsig-verify' esta instalado"
+
+#~ msgid ""
+#~ "The upgrade can not continue with that package installed.\n"
+#~ "Please remove it with synaptic or 'apt-get remove debsig-verify' first "
+#~ "and run the upgrade again."
+#~ msgstr ""
+#~ "La actualización no puede continuar con ese paquete instalado.\n"
+#~ "Desinstálelo con synaptic o «apt-get remove debsig-verify» primero y luego "
+#~ "intente actualizar nuevamente."
+
+#~ msgid "Include latest updates from the Internet?"
+#~ msgstr "¿Incluir las últimas actualizaciones desde Internet?"
+
+#~ msgid ""
+#~ "The upgrade system can use the internet to automatically download the "
+#~ "latest updates and install them during the upgrade.  If you have a "
+#~ "network connection this is highly recommended.\n"
+#~ "\n"
+#~ "The upgrade will take longer, but when it is complete, your system will "
+#~ "be fully up to date.  You can choose not to do this, but you should "
+#~ "install the latest updates soon after upgrading.\n"
+#~ "If you answer 'no' here, the network is not used at all."
+#~ msgstr ""
+#~ "El sistema de actualización a una nueva versión puede usar Internet para "
+#~ "descargar automáticamente las actualizaciones más recientes e instalarlas "
+#~ "durante el proceso. Si dispone de una conexión a la red, esto es muy "
+#~ "recomendable.\n"
+#~ "\n"
+#~ "La actualización llevará más tiempo, pero una vez terminada, el sistema "
+#~ "estará completamente actualizado. Puede elegir no hacerlo, pero deberá "
+#~ "instalar las nuevas actualizaciones inmediatamente después de pasar a la "
+#~ "nueva versión.\n"
+#~ "Si responde «no» ahora, la red no se usará para nada."
+
+#~ msgid "disabled on upgrade to %s"
+#~ msgstr "(desactivado en la actualización a %s)"
+
+#~ msgid "No valid mirror found"
+#~ msgstr "No se ha encontrado un servidor espejo válido"
+
+#~ msgid ""
+#~ "While scanning your repository information no mirror entry for the "
+#~ "upgrade was found.This can happen if you run a internal mirror or if the "
+#~ "mirror information is out of date.\n"
+#~ "\n"
+#~ "Do you want to rewrite your 'sources.list' file anyway? If you choose "
+#~ "'Yes' here it will update all '%s' to '%s' entries.\n"
+#~ "If you select 'no' the update will cancel."
+#~ msgstr ""
+#~ "Al examinar la información de sus repositorios no se ha encontrado "
+#~ "ninguna entrada de servidor espejo para la actualización. Esto puede "
+#~ "ocurrir si está usando un servidor espejo interno, o si la información "
+#~ "del servidor espejo está desactualizada.\n"
+#~ "\n"
+#~ "¿Desea reescribir su archivo «sources.list» de todos modos? Si selecciona "
+#~ "«Sí», se actualizarán todas las entradas '%s' a '%s'.\n"
+#~ "Si selecciona «No» se cancelará la actualización."
+
+#~ msgid "Generate default sources?"
+#~ msgstr "¿Generar orígenes predeterminados?"
+
+#~ msgid ""
+#~ "After scanning your 'sources.list' no valid entry for '%s' was found.\n"
+#~ "\n"
+#~ "Should default entries for '%s' be added? If you select 'No', the update "
+#~ "will cancel."
+#~ msgstr ""
+#~ "Tras examinar su «sources.list», no se han encontrado entradas válidas "
+#~ "para «%s».\n"
+#~ "\n"
+#~ "¿Deben añadirse entradas predeterminadas para «%s»? Si selecciona «No» se "
+#~ "cancelará la actualización."
+
+#~ msgid "Repository information invalid"
+#~ msgstr "Información de repositorio no válida"
+
+#~ msgid ""
+#~ "Upgrading the repository information resulted in a invalid file. Please "
+#~ "report this as a bug."
+#~ msgstr ""
+#~ "La actualización de la información del repositorio generó un archivo "
+#~ "incorrecto. Por favor, informe de esto como un error."
+
+#~ msgid ""
+#~ "Some third party entries in your sources.list were disabled. You can re-"
+#~ "enable them after the upgrade with the 'software-properties' tool or your "
+#~ "package manager."
+#~ msgstr ""
+#~ "Se han desactivado algunas entradas de otros proveedores en su «sources."
+#~ "list». Puede volver a activarlas tras la actualización con la herramienta "
+#~ "«Orígenes del software», o con su gestor de paquetes."
+
+#~ msgid "Package in inconsistent state"
+#~ msgid_plural "Packages in inconsistent state"
+#~ msgstr[0] "Paquete en un estado inconsistente"
+#~ msgstr[1] "Paquetes en un estado inconsistente"
+
+#~ msgid ""
+#~ "The package '%s' is in an inconsistent state and needs to be reinstalled, "
+#~ "but no archive can be found for it. Please reinstall the package manually "
+#~ "or remove it from the system."
+#~ msgid_plural ""
+#~ "The packages '%s' are in an inconsistent state and need to be "
+#~ "reinstalled, but no archive can be found for them. Please reinstall the "
+#~ "packages manually or remove them from the system."
+#~ msgstr[0] ""
+#~ "El paquete «%s» está en un estado inconsistente y debe reinstalarse, pero "
+#~ "no se encuentra en ningún repositorio. Por favor, reinstale el paquete "
+#~ "manualmente o desinstálelo del sistema."
+#~ msgstr[1] ""
+#~ "Los paquetes «%s» están en un estado inconsistente y deben reinstalarse, "
+#~ "pero no se encuentran en ningún repositorio. Por favor, reinstale los "
+#~ "paquetes manualmente o desinstálelos del sistema."
+
+#~ msgid "Error during update"
+#~ msgstr "Error durante la actualización"
+
+#~ msgid ""
+#~ "A problem occurred during the update. This is usually some sort of "
+#~ "network problem, please check your network connection and retry."
+#~ msgstr ""
+#~ "Ocurrió un problema durante la actualización. Normalmente es debido a "
+#~ "algún tipo de problema en la red, por lo que le recomendamos que "
+#~ "compruebe su conexión de red y vuelva a intentarlo."
+
+#~ msgid "Not enough free disk space"
+#~ msgstr "No hay espacio suficiente en el disco"
+
+#~ msgid ""
+#~ "The upgrade is now aborted. The upgrade needs a total of %s free space on "
+#~ "disk '%s'. Please free at least an additional %s of disk space on '%s'. "
+#~ "Empty your trash and remove temporary packages of former installations "
+#~ "using 'sudo apt-get clean'."
+#~ msgstr ""
+#~ "Se ha cancelado la actualización. Ésta necesita un total de %s de espacio "
+#~ "libre en el disco «%s». Por favor, libere como mínimo %s de espacio de "
+#~ "disco en «%s». Vacíe su papelera y desinstale los paquetes temporales de "
+#~ "instalaciones anteriores mediante «sudo apt-get clean»."
+
+#~ msgid "Support for some applications ended"
+#~ msgstr "Algunas aplicaciones han dejado de tener soporte"
+
+#~ msgid ""
+#~ "Canonical Ltd. no longer provides support for the following software "
+#~ "packages. You can still get support from the community.\n"
+#~ "\n"
+#~ "If you have not enabled community maintained software (universe), these "
+#~ "packages will be suggested for removal at the end of the upgrade."
+#~ msgstr ""
+#~ "Canonical Ltd. ya no soporta oficialmente los siguientes paquetes de "
+#~ "software. Aunque puede obtener soporte de la comunidad.\n"
+#~ "\n"
+#~ "Si no tiene activado el software mantenido por la comunidad («universe»), "
+#~ "se le sugerirá que desinstale estos paquetes al final del proceso de "
+#~ "actualización."
+
+#~ msgid "Calculating the changes"
+#~ msgstr "Calculando los cambios"
+
+#~ msgid "Could not download the upgrades"
+#~ msgstr "No se han podido descargar las actualizaciones"
+
+#~ msgid ""
+#~ "The upgrade is now aborted. Please check your Internet connection or "
+#~ "installation media and try again. All files downloaded so far are kept."
+#~ msgstr ""
+#~ "Se ha cancelado la actualización. Por favor, compruebe su conexión a "
+#~ "Internet o el soporte de la instalación y vuelva a intentarlo. Se "
+#~ "conservarán todos los archivos descargados hasta ahora."
+
+#~ msgid "Error during commit"
+#~ msgstr "Error durante la confirmación"
+
+#~ msgid "Restoring original system state"
+#~ msgstr "Restaurando el estado original del sistema"
+
+#~ msgid "Could not install the upgrades"
+#~ msgstr "No se han podido instalar las actualizaciones"
+
+#~ msgid ""
+#~ "The upgrade is now aborted. Your system could be in an unusable state. A "
+#~ "recovery will run now (dpkg --configure -a)."
+#~ msgstr ""
+#~ "Se ha cancelado la actualización. Su sistema puede haber quedado en un "
+#~ "estado no utilizable. A continuación se iniciará una recuperación (dpkg --"
+#~ "configure -a)."
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "Please report this bug against the 'update-manager' package and include "
+#~ "the files in /var/log/dist-upgrade/ in the bug report.\n"
+#~ "%s"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "Por favor, informe de este fallo sobre el paquete «update-manager» e "
+#~ "incluya en el informe los archivos situados en /var/log/dist-upgrade/.\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The upgrade is now aborted. Please check your Internet connection or "
+#~ "installation media and try again. "
+#~ msgstr ""
+#~ "Se ha cancelado la actualización. Por favor, compruebe su conexión a "
+#~ "Internet o su soporte de instalación y vuelva a intentarlo. "
+
+#~ msgid "_Keep"
+#~ msgstr "_Conservar"
+
+#~ msgid "_Remove"
+#~ msgstr "_Quitar"
+
+#~ msgid ""
+#~ "A problem occurred during the clean-up. Please see the below message for "
+#~ "more information. "
+#~ msgstr ""
+#~ "Ha ocurrido algún problema durante el limpiado. Por favor, lea el mensaje "
+#~ "siguiente para más información. "
+
+#~ msgid "Required depends is not installed"
+#~ msgstr "Dependencia requerida no está instalada"
+
+#~ msgid "The required dependency '%s' is not installed. "
+#~ msgstr "La dependencia requerida «%s» no está instalada. "
+
+#~ msgid "Checking package manager"
+#~ msgstr "Comprobando el gestor de paquetes"
+
+#~ msgid "Preparing the upgrade failed"
+#~ msgstr "Falló la preparación de la actualización"
+
+#~ msgid ""
+#~ "Preparing the system for the upgrade failed. Please report this as a bug "
+#~ "against the 'update-manager' package and include the files in /var/log/"
+#~ "dist-upgrade/ in the bug report."
+#~ msgstr ""
+#~ "Ha ocurrido un problema durante la preparación del sistema para la "
+#~ "actualización. Por favor, informe de este fallo sobre el paquete «update-"
+#~ "manager» e incluya en el informe los archivos situados en /var/log/dist-"
+#~ "upgrade/."
+
+#~ msgid "Getting upgrade prerequisites failed"
+#~ msgstr ""
+#~ "Ha fallado la obtención de los requisitos previos de la actualización"
+
+#~ msgid ""
+#~ "The system was unable to get the prerequisites for the upgrade. The "
+#~ "upgrade will abort now and restore the original system state.\n"
+#~ "\n"
+#~ "Please report this as a bug against the 'update-manager' package and "
+#~ "include the files in /var/log/dist-upgrade/ in the bug report."
+#~ msgstr ""
+#~ "El sistema no cumple con los requisitos necesarios para la actualización. "
+#~ "Se cancelará ésta y se procederá a restaurar el estado original del "
+#~ "sistema.\n"
+#~ "\n"
+#~ "Por favor, informe de este fallo sobre el paquete «update-manager» e "
+#~ "incluya en el informe los archivos situados en /var/log/dist-upgrade/."
+
+#~ msgid "Updating repository information"
+#~ msgstr "Actualizando la información del repositorio"
+
+#~ msgid "Invalid package information"
+#~ msgstr "Información sobre los paquetes no válida"
+
+#~ msgid ""
+#~ "After your package information was updated the essential package '%s' can "
+#~ "not be found anymore.\n"
+#~ "This indicates a serious error, please report this bug against the "
+#~ "'update-manager' package and include the files in /var/log/dist-upgrade/ "
+#~ "in the bug report."
+#~ msgstr ""
+#~ "Después de actualizar la información sobre los paquetes, ya no aparece el "
+#~ "paquete esencial «%s».\n"
+#~ "Esto indica un error serio; por favor, informe del fallo sobre el paquete "
+#~ "«update-manager» e incluya en el informe los archivos situados en /var/log/"
+#~ "dist-upgrade/."
+
+#~ msgid "Fetching"
+#~ msgstr "Descargando"
+
+#~ msgid "Upgrading"
+#~ msgstr "Actualizando"
+
+#~ msgid "Upgrade complete"
+#~ msgstr "Actualización completada"
+
+#~ msgid ""
+#~ "The upgrade is completed but there were errors during the upgrade process."
+#~ msgstr ""
+#~ "La actualización se ha terminado pero ocurrieron errores en el proceso."
+
+#~ msgid "Searching for obsolete software"
+#~ msgstr "Buscando paquetes obsoletos"
+
+#~ msgid "System upgrade is complete."
+#~ msgstr "La actualización del sistema se ha completado."
+
+#~ msgid "The partial upgrade was completed."
+#~ msgstr "La actualización parcial se ha completado."
+
+#~ msgid ""
+#~ "Upgrading may reduce desktop effects, and performance in games and other "
+#~ "graphically intensive programs."
+#~ msgstr ""
+#~ "La actualización puede reducir los efectos de escritorio, así como el "
+#~ "rendimiento de los juegos y otros programas que usen gráficos de forma "
+#~ "intensiva."
+
+#~ msgid ""
+#~ "This computer is currently using the AMD 'fglrx' graphics driver. No "
+#~ "version of this driver is available that works with your hardware in "
+#~ "Ubuntu 9.04.\n"
+#~ "\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Este equipo está usando actualmente el controlador gráfico «fglrx» de AMD. "
+#~ "No existe ninguna versión de este controlador que funcione con su "
+#~ "hardware en Ubuntu 9.04.\n"
+#~ "\n"
+#~ "¿Desea continuar?"
+
+#~ msgid ""
+#~ "This computer is currently using the NVIDIA 'nvidia' graphics driver. No "
+#~ "version of this driver is available that works with your video card in "
+#~ "Ubuntu 8.10.\n"
+#~ "\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Este equipo está usando el controlador gráfico «nvidia» de NVIDIA. No hay "
+#~ "ninguna versión disponible de este controlador que funcione con su "
+#~ "tarjeta gráfica en Ubuntu 8.10.\n"
+#~ "\n"
+#~ "¿Desea continuar?"
+
+#~ msgid "evms in use"
+#~ msgstr "Se está usando «evms»"
+
+#~ msgid ""
+#~ "Your system uses the 'evms' volume manager in /proc/mounts. The 'evms' "
+#~ "software is no longer supported, please switch it off and run the upgrade "
+#~ "again when this is done."
+#~ msgstr ""
+#~ "Su sistema está usando el gestor de volúmenes «evms» en /proc/mounts. El "
+#~ "software «evms» ya no está soportado; por favor, desactívelo y vuelva a "
+#~ "ejecutar de nuevo la actualización."
+
+#~ msgid "Sandbox upgrade using aufs"
+#~ msgstr "Actualización de prueba usando aufs"
+
+#~ msgid "Use the given path to search for a cdrom with upgradable packages"
+#~ msgstr "Usar la ruta dada para buscar un CD-ROM con paquetes actualizables"
+
+#~ msgid ""
+#~ "Use frontend. Currently available: \n"
+#~ "DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE"
+#~ msgstr ""
+#~ "Usar interfaz de usuario. Actualmente disponibles: \n"
+#~ "DistUpgradeViewText, DistUpgradeViewGtk, DistUpgradeViewKDE"
+
+#~ msgid "*DEPRECATED* this option will be ignore"
+#~ msgstr "*OBSOLETA* esta opción será ignorada"
+
+#~ msgid "Perform a partial upgrade only (no sources.list rewriting)"
+#~ msgstr ""
+#~ "Realizar sólo una actualización parcial (no se reescribirá el «sources."
+#~ "list»)"
+
+#~ msgid "Set datadir"
+#~ msgstr "Establecer datadir"
+
+#~ msgid "Please insert '%s' into the drive '%s'"
+#~ msgstr "Por favor, inserte «%s» en la unidad «%s»"
+
+#~ msgid "Fetching is complete"
+#~ msgstr "La descarga se ha completado"
+
+#~ msgid "Fetching file %li of %li at %sB/s"
+#~ msgstr "Descargando archivo %li de %li a %sB/s"
+
+#~ msgid "About %s remaining"
+#~ msgstr "Faltan %s aproximadamente"
+
+#~ msgid "Fetching file %li of %li"
+#~ msgstr "Descargando archivo %li de %li"
+
+#~ msgid "Applying changes"
+#~ msgstr "Aplicando los cambios"
+
+#~ msgid "dependency problems - leaving unconfigured"
+#~ msgstr "problemas de dependencias - se deja sin configurar"
+
+#~ msgid "Could not install '%s'"
+#~ msgstr "No se ha podido instalar «%s»"
+
+#~ msgid ""
+#~ "The upgrade will continue but the '%s' package may be in a not working "
+#~ "state. Please consider submitting a bug report about it."
+#~ msgstr ""
+#~ "La actualización continuará pero es posible que el paquete «%s» no haya "
+#~ "quedado en un estado funcional. Por favor, considere la posibilidad de "
+#~ "enviar un informe de fallo sobre este problema."
+
+#~ msgid ""
+#~ "Replace the customized configuration file\n"
+#~ "'%s'?"
+#~ msgstr ""
+#~ "¿Desea sustituir el archivo de configuración modificado\n"
+#~ "«%s»?"
+
+#~ msgid ""
+#~ "You will lose any changes you have made to this configuration file if you "
+#~ "choose to replace it with a newer version."
+#~ msgstr ""
+#~ "Perderá todos los cambios que haya realizado en este archivo de "
+#~ "configuración si decide sustituirlo por una nueva versión."
+
+#~ msgid "The 'diff' command was not found"
+#~ msgstr "No se ha encontrado el comando «diff»"
+
+#~ msgid "A fatal error occurred"
+#~ msgstr "Ha ocurrido un error fatal"
+
+#~ msgid ""
+#~ "Please report this as a bug (if you haven't already) and include the "
+#~ "files /var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in "
+#~ "your report. The upgrade is now aborted.\n"
+#~ "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
+#~ msgstr ""
+#~ "Por favor, informe de este fallo (si no lo ha hecho ya) e incluya en su "
+#~ "informe los archivos /var/log/dist-upgrade/main.log y /var/log/dist-"
+#~ "upgrade/apt.log. La actualización va a cancelarse ahora.\n"
+#~ "Su archivo sources.list original se guardó en /etc/apt/sources.list."
+#~ "distUpgrade."
+
+#~ msgid "Ctrl-c pressed"
+#~ msgstr "Se ha pulsado Ctrl-C"
+
+#~ msgid ""
+#~ "This will abort the operation and may leave the system in a broken state. "
+#~ "Are you sure you want to do that?"
+#~ msgstr ""
+#~ "Esto cancelará la operación y puede dejar al sistema en un estado "
+#~ "defectuoso. ¿Seguro que desea hacer eso?"
+
+#~ msgid "To prevent data loss close all open applications and documents."
+#~ msgstr ""
+#~ "Para prevenir la pérdida de datos, cierre todas las aplicaciones y "
+#~ "documentos."
+
+#~ msgid "<b>Downgrade %s</b>"
+#~ msgstr "<b>Desactualizar %s</b>"
+
+#~ msgid "Upgrade %s"
+#~ msgstr "Actualizar %s"
+
+#~ msgid "Media Change"
+#~ msgstr "Cambio de soporte"
+
+#~ msgid "Show Difference >>>"
+#~ msgstr "Mostrar diferencias >>>"
+
+#~ msgid "<<< Hide Difference"
+#~ msgstr "<<< Ocultar diferencias"
+
+#~ msgid "Error"
+#~ msgstr "Error"
+
+#~ msgid "&Cancel"
+#~ msgstr "&Cancelar"
+
+#~ msgid "&Close"
+#~ msgstr "&Cerrar"
+
+#~ msgid "<<< Hide Terminal"
+#~ msgstr "<<< Ocultar terminal"
+
+#~ msgid "Information"
+#~ msgstr "Información"
+
+#~ msgid "Details"
+#~ msgstr "Detalles"
+
+#~ msgid "Restart required"
+#~ msgstr "Se requiere reiniciar"
+
+#~ msgid "<b><big>Restart the system to complete the upgrade</big></b>"
+#~ msgstr ""
+#~ "<b><big>Reinicie el sistema para completar la actualización</big></b>"
+
+#~ msgid "_Restart Now"
+#~ msgstr "_Reiniciar ahora"
+
+#~ msgid ""
+#~ "<b><big>Cancel the running upgrade?</big></b>\n"
+#~ "\n"
+#~ "The system could be in an unusable state if you cancel the upgrade. You "
+#~ "are strongly advised to resume the upgrade."
+#~ msgstr ""
+#~ "<b><big>¿Cancelar la actualización en curso?</big></b>\n"
+#~ "\n"
+#~ "El sistema podría quedar en un estado no utilizable si cancela la "
+#~ "actualización. Le recomendamos encarecidamente que continúe la "
+#~ "actualización."
+
+#~ msgid "Cancel Upgrade?"
+#~ msgstr "¿Cancelar la actualización?"
+
+#~ msgid "%li day"
+#~ msgid_plural "%li days"
+#~ msgstr[0] "%li día"
+#~ msgstr[1] "%li días"
+
+#~ msgid "%(str_days)s %(str_hours)s"
+#~ msgstr "%(str_days)s %(str_hours)s"
+
+#~ msgid "%(str_hours)s %(str_minutes)s"
+#~ msgstr "%(str_hours)s %(str_minutes)s"
+
+#~ msgid ""
+#~ "This download will take about %s with a 1Mbit DSL connection and about %s "
+#~ "with a 56k modem."
+#~ msgstr ""
+#~ "Esta descarga tardará %s aproximadamente con una conexión DSL de 1Mbit y %"
+#~ "s aproximadamente con un módem de 56k."
+
+#~ msgid "This download will take about %s with your connection. "
+#~ msgstr "Esta descarga tardará aproximadamente %s con su conexión actual. "
+
+#~ msgid "Getting new software channels"
+#~ msgstr "Obteniendo nuevos canales de software"
+
+#~ msgid "Getting new packages"
+#~ msgstr "Obteniendo paquetes nuevos"
+
+#~ msgid "Cleaning up"
+#~ msgstr "Limpiando"
+
+#~ msgid "%d package is going to be removed."
+#~ msgid_plural "%d packages are going to be removed."
+#~ msgstr[0] "Se va a desinstalar %d paquete."
+#~ msgstr[1] "Se van a desinstalar %d paquetes."
+
+#~ msgid "%d new package is going to be installed."
+#~ msgid_plural "%d new packages are going to be installed."
+#~ msgstr[0] "Se va a instalar %d paquete nuevo."
+#~ msgstr[1] "Se van a instalar %d paquetes nuevos."
+
+#~ msgid "%d package is going to be upgraded."
+#~ msgid_plural "%d packages are going to be upgraded."
+#~ msgstr[0] "Se va a actualizar %d paquete."
+#~ msgstr[1] "Se van a actualizar %d paquetes."
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "You have to download a total of %s. "
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "Debe descargar un total de %s. "
+
+#~ msgid ""
+#~ "Fetching and installing the upgrade can take several hours. Once the "
+#~ "download has finished, the process cannot be cancelled."
+#~ msgstr ""
+#~ "Descargar e instalar la actualización puede llevar varias horas. Una vez "
+#~ "haya finalizada la descarga, el proceso no podrá ser cancelado."
+
+#~ msgid ""
+#~ "There are no upgrades available for your system. The upgrade will now be "
+#~ "canceled."
+#~ msgstr ""
+#~ "No hay actualizaciones disponibles para su sistema. Se ha cancelado la "
+#~ "actualización."
+
+#~ msgid "Reboot required"
+#~ msgstr "Se requiere reiniciar el equipo"
+
+#~ msgid ""
+#~ "The upgrade is finished and a reboot is required. Do you want to do this "
+#~ "now?"
+#~ msgstr ""
+#~ "La actualización ha finalizado y se requiere reiniciar el equipo. ¿Desea "
+#~ "hacerlo ahora?"
+
+#~ msgid "Could not run the upgrade tool"
+#~ msgstr "No se ha podido ejecutar la herramienta de actualización"
+
+#~ msgid ""
+#~ "This is most likely a bug in the upgrade tool. Please report it as a bug"
+#~ msgstr ""
+#~ "Lo más probable es que se trate de un fallo en la herramienta de "
+#~ "actualización. Por favor, informe de esto como un error."
+
+#~ msgid "Upgrade tool signature"
+#~ msgstr "Firma de la herramienta de actualización"
+
+#~ msgid "Upgrade tool"
+#~ msgstr "Herramienta de actualización"
+
+#~ msgid "Failed to fetch"
+#~ msgstr "Error al descargar"
+
+#~ msgid "Fetching the upgrade failed. There may be a network problem. "
+#~ msgstr ""
+#~ "Ha fallado la descarga de la actualización. Puede haber un problema con "
+#~ "la red. "
+
+#~ msgid "Failed to extract"
+#~ msgstr "Error al extraer"
+
+#~ msgid ""
+#~ "Extracting the upgrade failed. There may be a problem with the network or "
+#~ "with the server. "
+#~ msgstr ""
+#~ "Ha fallado la extracción de la actualización. Puede haber un problema con "
+#~ "la red o el servidor. "
+
+#~ msgid "Verfication failed"
+#~ msgstr "Error de verificación"
+
+#~ msgid ""
+#~ "Verifying the upgrade failed.  There may be a problem with the network or "
+#~ "with the server. "
+#~ msgstr ""
+#~ "Ha fallado la verificación de la actualización. Puede haber un problema "
+#~ "con la red o con el servidor. "
+
+#~ msgid "Authentication failed"
+#~ msgstr "Error de autenticación"
+
+#~ msgid ""
+#~ "Authenticating the upgrade failed. There may be a problem with the "
+#~ "network or with the server. "
+#~ msgstr ""
+#~ "Ha fallado la autenticación de la actualización. Es posible que exista un "
+#~ "problema con la red o el servidor. "
+
+#~ msgid "Can not run the upgrade"
+#~ msgstr "No se ha podido ejecutar la actualización"
+
+#~ msgid ""
+#~ "This usually is caused by a system were /tmp is mounted noexec. Please "
+#~ "remount without noexec and run the upgrade again."
+#~ msgstr ""
+#~ "Esto normalmente lo provocan los sistemas cuyo /tmp se montan con la "
+#~ "opción noexec. Por favor, vuelva a montarlo sin el noexec y ejecute de "
+#~ "nuevo la actualización."
+
+#~ msgid ""
+#~ "Please report this as a bug and include the files /var/log/dist-upgrade/"
+#~ "main.log and /var/log/dist-upgrade/apt.log in your report. The upgrade is "
+#~ "now aborted.\n"
+#~ "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
+#~ msgstr ""
+#~ "Por favor, informe de este fallo e incluya en su informe los archivos /"
+#~ "var/log/dist-upgrade/main.log y /var/log/dist-upgrade/apt.log. La "
+#~ "actualización va a cancelarse ahora.\n"
+#~ "Su archivo sources.list original se guardó en /etc/apt/sources.list."
+#~ "distUpgrade."
+
+#~ msgid "Aborting"
+#~ msgstr "Cancelando"
+
+#~ msgid "Demoted:\n"
+#~ msgstr "Para quitar:\n"
+
+#~ msgid "Continue [yN] "
+#~ msgstr "Continuar [sN] "
+
+#~ msgid "Details [d]"
+#~ msgstr "Detalles [d]"
+
+#~ msgid "y"
+#~ msgstr "s"
+
+#~ msgid "n"
+#~ msgstr "n"
+
+#~ msgid "d"
+#~ msgstr "d"
+
+#~ msgid "Remove: %s\n"
+#~ msgstr "Quitar: %s\n"
+
+#~ msgid "Install: %s\n"
+#~ msgstr "Instalar: %s\n"
+
+#~ msgid "Upgrade: %s\n"
+#~ msgstr "Actualizar: %s\n"
+
+#~ msgid "Continue [Yn] "
+#~ msgstr "Continuar [Sn] "
+
+#~ msgid ""
+#~ "To finish the upgrade, a restart is required.\n"
+#~ "If you select 'y' the system will be restarted."
+#~ msgstr ""
+#~ "Para finalizar la actualización se necesita reiniciar.\n"
+#~ "Si selecciona «s» el sistema reiniciará."
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid ""
+#~ "<b><big>Cancel the running upgrade?</big></b>\n"
+#~ "\n"
+#~ "The system could be in an unusable state if you cancel the upgrade. You "
+#~ "are strongly adviced to resume the upgrade."
+#~ msgstr ""
+#~ "<b><big>¿Cancelar la actualización en curso?</big></b>\n"
+#~ "\n"
+#~ "El sistema podría quedar en un estado no utilizable si cancela la "
+#~ "actualización. Le recomendamos encarecidamente que continúe la "
+#~ "actualización."
+
+#~ msgid "<b><big>Start the upgrade?</big></b>"
+#~ msgstr "<b><big>¿Comenzar la actualización?</big></b>"
+
+#~ msgid "<b><big>Upgrading Ubuntu to version 9.04</big></b>"
+#~ msgstr "<b><big>Actualizando Ubuntu a la versión 9.04</big></b>"
+
+#~ msgid "Difference between the files"
+#~ msgstr "Diferencia entre los archivos"
+
+#~ msgid "Distribution Upgrade"
+#~ msgstr "Actualización completa de la distribución"
+
+#~ msgid "Restarting the computer"
+#~ msgstr "Reiniciando el equipo"
+
+#~ msgid "Setting new software channels"
+#~ msgstr "Configurando nuevos canales de software"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminal"
+
+#~ msgid "_Cancel Upgrade"
+#~ msgstr "_Cancelar la actualización"
+
+#~ msgid "_Continue"
+#~ msgstr "_Continuar"
+
+#~ msgid "_Replace"
+#~ msgstr "_Sustituir"
+
+#~ msgid "_Report Bug"
+#~ msgstr "_Informar de un error"
+
+#~ msgid "_Resume Upgrade"
+#~ msgstr "_Continuar la actualización"
+
+#~ msgid "_Start Upgrade"
+#~ msgstr "_Iniciar la actualización"
+
+#~ msgid "Could not find the release notes"
+#~ msgstr "No se han podido encontrar las notas de publicación"
+
+#~ msgid "The server may be overloaded. "
+#~ msgstr "Puede que el servidor esté sobrecargado. "
+
+#~ msgid "Could not download the release notes"
+#~ msgstr "No se han podido descargar las notas de publicación"
+
+#~ msgid "Please check your internet connection."
+#~ msgstr "Por favor, compruebe su conexión a Internet."
+
+#~ msgid "Upgrade"
+#~ msgstr "Actualizar"
+
+#~ msgid "Release Notes"
+#~ msgstr "Notas de la versión"
+
+#~ msgid "Downloading additional package files..."
+#~ msgstr "Descargando archivos de paquetes adicionales..."
+
+#~ msgid "File %s of %s at %sB/s"
+#~ msgstr "Archivo %s de %s a %sB/s"
+
+#~ msgid "File %s of %s"
+#~ msgstr "Archivo %s de %s"
+
+#~ msgid "Downloading file %(current)li of %(total)li with %(speed)s/s"
+#~ msgstr "Descargando archivo %(current)li de %(total)li a %(speed)s/s"
+
+#~ msgid "Downloading file %(current)li of %(total)li"
+#~ msgstr "Descargando archivo %(current)li de %(total)li"
+
+#~ msgid "Unknown download size"
+#~ msgstr "Tamaño de descarga desconocido"
+
+#~ msgid ""
+#~ "It is unknown when the package information was updated last. Please try "
+#~ "clicking on the 'Check' button to update the information."
+#~ msgstr ""
+#~ "Se desconoce cuándo se actualizó por última vez la información de los "
+#~ "paquetes. Pulse el botón «Comprobar» para actualizar la información."
+
+#~ msgid "The package information was last updated %s day ago."
+#~ msgid_plural "The package information was last updated %s days ago."
+#~ msgstr[0] ""
+#~ "La información de paquetes se actualizó por última vez hace %s día."
+#~ msgstr[1] ""
+#~ "La información de paquetes se actualizó por última vez hace %s días."
+
+#~ msgid "The package information was last updated %s hour ago."
+#~ msgid_plural "The package information was last updated %s hours ago."
+#~ msgstr[0] ""
+#~ "La información de paquetes se actualizó por última vez hace %s horas."
+#~ msgstr[1] ""
+#~ "La información de paquetes se actualizó por última vez hace %s horas."
+
+#~ msgid "The package information was last updated less than one hour ago."
+#~ msgstr ""
+#~ "La información sobre los paquetes se actualizó por última vez hace menos "
+#~ "de una hora."
+
+#~ msgid ""
+#~ "These software updates have been issued since Ubuntu was released. If you "
+#~ "don't want to install them now, choose \"Update Manager\" from the "
+#~ "Administration Menu later."
+#~ msgstr ""
+#~ "Estas actualizaciones de software son posteriores a la salida de Ubuntu. "
+#~ "Si no desea instalarlas ahora, podrá hacerlo luego seleccionando «Gestor "
+#~ "de actualizaciones» en el menú de Administración."
+
+#~ msgid "Update is complete"
+#~ msgstr "La actualización se ha completado"
+
+#~ msgid ""
+#~ "The upgrade needs a total of %s free space on disk '%s'. Please free at "
+#~ "least an additional %s of disk space on '%s'. Empty your trash and remove "
+#~ "temporary packages of former installations using 'sudo apt-get clean'."
+#~ msgstr ""
+#~ "La actualización necesita un total de %s de espacio libre en el disco «%"
+#~ "s». Por favor, libere un espacio de disco adicional de, al menos, %s en «%"
+#~ "s». Vacíe su papelera y elimine paquetes temporales de instalaciones "
+#~ "anteriores usando «sudo apt-get clean»."
+
+#~ msgid "Reading package information"
+#~ msgstr "Leyendo información de paquete"
+
+#~ msgid ""
+#~ "An unresolvable problem occurred while initializing the package "
+#~ "information.\n"
+#~ "\n"
+#~ "Please report this bug against the 'update-manager' package and include "
+#~ "the following error message:\n"
+#~ msgstr ""
+#~ "Ha ocurrido un problema imposible de corregir cuando se inicializaba la "
+#~ "información de los paquetes.\n"
+#~ "\n"
+#~ "Por favor, informe de ésto como un fallo en el paquete «update-manager» e "
+#~ "incluya el siguiente mensaje de error:\n"
+
+#~ msgid ""
+#~ "An unresolvable problem occurred while calculating the upgrade.\n"
+#~ "\n"
+#~ "Please report this bug against the 'update-manager' package and include "
+#~ "the following error message:"
+#~ msgstr ""
+#~ "Ha ocurrido un problema imposible de corregir cuando se calculaba la "
+#~ "actualización.\n"
+#~ "\n"
+#~ "Por favor, informe de ésto como un fallo del paquete «update-manager» e "
+#~ "incluya el siguiente mensaje de error:"
+
+#~ msgid "Your distribution is not supported anymore"
+#~ msgstr "Su distribución ya no está soportada"
+
+#~ msgid ""
+#~ "You will not get any further security fixes or critical updates. Upgrade "
+#~ "to a later version of Ubuntu Linux. See http://www.ubuntu.com for more "
+#~ "information on upgrading."
+#~ msgstr ""
+#~ "No podrá obtener nuevas correcciones de seguridad ni actualizaciones "
+#~ "críticas. Actualícese a una versión posterior de Ubuntu Linux. Visite "
+#~ "http://www.ubuntu.com para más información sobre la actualización."
+
+#~ msgid "<b>New distribution release '%s' is available</b>"
+#~ msgstr "<b>Está disponible la nueva versión «%s» de la distribución</b>"
+
+#~ msgid "Software index is broken"
+#~ msgstr "El índice de software está dañado"
+
+#~ msgid ""
+#~ "It is impossible to install or remove any software. Please use the "
+#~ "package manager \"Synaptic\" or run \"sudo apt-get install -f\" in a "
+#~ "terminal to fix this issue at first."
+#~ msgstr ""
+#~ "Es imposible instalar o desinstalar ningún programa. Por favor, utilice "
+#~ "el gestor de paquetes «Synaptic», o ejecute «sudo apt-get install -f» en "
+#~ "una terminal, para corregir este problema primero."
+
+#~ msgid "Downloading Package Information"
+#~ msgstr "Descargando información de paquetes"
+
+#~ msgid ""
+#~ "The repositories are being checked for new, removed, or updated software "
+#~ "packages"
+#~ msgstr ""
+#~ "Se han comprobado los repositorios en busca de paquetes de software "
+#~ "nuevos, eliminados o actualizados"
+
+#~ msgid ""
+#~ "The selected package updates are being downloaded and installed on the "
+#~ "system"
+#~ msgstr ""
+#~ "Las actualizaciones de paquetes seleccionados se han descargado e "
+#~ "instalado en el sistema."
+
+#~ msgid "run_synaptic called with unknown action"
+#~ msgstr "run_synaptic llamado con una acción desconocida"
+
+#~ msgid ""
+#~ "\n"
+#~ "A normal upgrade can not be calculated, please run: \n"
+#~ "  sudo apt-get dist-upgrade\n"
+#~ "\n"
+#~ "\n"
+#~ "This can be caused by:\n"
+#~ " ◦ A previous upgrade which didn't complete\n"
+#~ " ◦ Problems with some of the installed software\n"
+#~ " ◦ Unofficial software packages not provided by Ubuntu\n"
+#~ " ◦ Normal changes of a pre-release version of Ubuntu"
+#~ msgstr ""
+#~ "\n"
+#~ "No se puede llevar a cabo una actualización normal, por favor ejecute: \n"
+#~ "  sudo apt-get dist-upgrade\n"
+#~ "\n"
+#~ "\n"
+#~ "Esto puede estar provocado por:\n"
+#~ " ◦ Una actualización anterior incompleta\n"
+#~ " ◦ Problemas con algún software instalado\n"
+#~ " ◦ Paquetes no oficiales de software, no provistos por Ubuntu\n"
+#~ " ◦ Cambios normales en una versión de pre-lanzamiento de Ubuntu"
+
+#~ msgid "Failed to detect distribution"
+#~ msgstr "Error al detectar la distribución"
+
+#~ msgid ""
+#~ "The changelog does not contain any relevant changes.\n"
+#~ "\n"
+#~ "Please use http://launchpad.net/ubuntu/+source/%s/%s/+changelog\n"
+#~ "until the changes become available or try again later."
+#~ msgstr ""
+#~ "El registro de cambios no contiene ningún cambio relevante.\n"
+#~ "\n"
+#~ "Por favor, use http://launchpad.net/ubuntu/+source/%s/%s/+changelog\n"
+#~ "hasta que los cambios estén disponibles, o pruebe de nuevo más tarde."
+
+#~ msgid ""
+#~ "The list of changes is not available yet.\n"
+#~ "\n"
+#~ "Please use http://launchpad.net/ubuntu/+source/%s/%s/+changelog\n"
+#~ "until the changes become available or try again later."
+#~ msgstr ""
+#~ "La lista de cambios no está disponible todavía.\n"
+#~ "\n"
+#~ "Por favor, use http://launchpad.net/ubuntu/+source/%s/%s/+changelog\n"
+#~ "hasta que los cambios estén disponibles, o inténtelo más tarde."
+
+#~ msgid ""
+#~ "Failed to download the list of changes. \n"
+#~ "Please check your Internet connection."
+#~ msgstr ""
+#~ "Hubo un fallo al descargar la lista de cambios. \n"
+#~ "Compruebe su conexión a Internet."
+
+#~ msgid "A error '%s' occurred while checking what system you are using."
+#~ msgstr ""
+#~ "Ha ocurrido un error «%s» mientras se comprobaba qué sistema está usando."
+
+#~ msgid "Other updates"
+#~ msgstr "Otras actualizaciones"
+
+#~ msgid "Previous selected"
+#~ msgstr "Selección anterior"
+
+#~ msgid ""
+#~ "<b><big>You must check for updates manually</big></b>\n"
+#~ "\n"
+#~ "Your system does not check for updates automatically. You can configure "
+#~ "this behavior in <i>Software Sources</i> on the <i>Updates</i> tab."
+#~ msgstr ""
+#~ "<b><big>Debe comprobar las actualizaciones manualmente</big></b>\n"
+#~ "\n"
+#~ "Su sistema no comprueba las actualizaciones manualmente. Puede configurar "
+#~ "este comportamiento en <i>Orígenes del software</i>, en la solapa "
+#~ "<i>Actualizaciones por Internet</i>."
+
+#~ msgid "<big><b>Not all updates can be installed</b></big>"
+#~ msgstr "<big><b>No se pueden instalar todas las actualizaciones</b></big>"
+
+#~ msgid "<big><b>Starting Update Manager</b></big>"
+#~ msgstr "<big><b>Iniciando el gestor de actualizaciones</b></big>"
+
+#~ msgid "Chec_k"
+#~ msgstr "C_omprobar"
+
+#~ msgid "Check the software channels for new updates"
+#~ msgstr "Comprobar si hay nuevas actualizaciones en los canales de software"
+
+#~ msgid "Description"
+#~ msgstr "Descripción"
+
+#~ msgid "Description of update"
+#~ msgstr "Descripción de la actualización"
+
+#~ msgid ""
+#~ "Run a partial upgrade, to install as many updates as possible. \n"
+#~ "\n"
+#~ "This can be caused by:\n"
+#~ " ◦ A previous upgrade which didn't complete\n"
+#~ " ◦ Problems with some of the installed software\n"
+#~ " ◦ Unofficial software packages not provided by Ubuntu\n"
+#~ " ◦ Normal changes of a pre-release version of Ubuntu"
+#~ msgstr ""
+#~ "Ejecute una actualización parcial, para instalar tantas actualizaciones "
+#~ "como sea posible. \n"
+#~ "\n"
+#~ "Esto puede deberse a:\n"
+#~ " ◦ Una actualización anterior que no se completó correctamente\n"
+#~ " ◦ Problemas con algún programa instalado\n"
+#~ " ◦ Paquetes de software no oficiales, no proporcionados por Ubuntu\n"
+#~ " ◦ Cambios normales de una versión de desarrollo de Ubuntu"
+
+#~ msgid "Settings…"
+#~ msgstr "Preferencias..."
+
+#~ msgid "U_pgrade"
+#~ msgstr "_Actualizar"
+
+#~ msgid "Upgrade to the latest version of Ubuntu"
+#~ msgstr "Actualizar a la última versión de Ubuntu"
+
+#~ msgid "_Hide this information in the future"
+#~ msgstr "_Ocultar esta información en el futuro"
+
+#~ msgid "_Partial Upgrade"
+#~ msgstr "_Actualización parcial"
+
+#~ msgid "_Upgrade"
+#~ msgstr "_Actualizar"
+
+#~ msgid "updates"
+#~ msgstr "actualizaciones"
+
+#~ msgid "Show version and exit"
+#~ msgstr "Mostrar la versión y salir"
+
+#~ msgid "Check if a new distribution release is available"
+#~ msgstr "Comprobar si hay disponible una nueva versión de la distribución"
+
+#~ msgid "Check if upgrading to the latest devel release is possible"
+#~ msgstr ""
+#~ "Comprobar si es posible actualizar a la última versión de desarrollo"
+
+#~ msgid "Upgrade using the latest proposed version of the release upgrader"
+#~ msgstr ""
+#~ "Actualizar usando la versión más reciente propuesta por el actualizador"
+
+#~ msgid "Do not focus on map when starting"
+#~ msgstr "No poner el foco sobre el mapa cuando se inicie"
+
+#~ msgid "Try to run a dist-upgrade"
+#~ msgstr "Intente ejecutar dist-upgrade"
+
+#~ msgid "Test upgrade with a sandbox aufs overlay"
+#~ msgstr "Comprobar la actualización en una capa aufs de caja de arena"
+
+#~ msgid "Running partial upgrade"
+#~ msgstr "Ejecutando una actualización parcial"
+
+#~ msgid ""
+#~ "Try upgrading to the latest release using the upgrader from $distro-"
+#~ "proposed"
+#~ msgstr ""
+#~ "Intente actualizar a la última versión usando el actualizador de $distro-"
+#~ "proposed"
+
+#~ msgid ""
+#~ "Run in a special upgrade mode.\n"
+#~ "Currently 'desktop' for regular upgrades of a desktop system and 'server' "
+#~ "for server systems are supported."
+#~ msgstr ""
+#~ "Ejecutar en un modo especial de actualización.\n"
+#~ "Actualmente se soportan los modos «desktop» (para actualizaciones normales "
+#~ "de un sistema de escritorio) y «server» (para servidores)."
+
+#~ msgid "Run the specified frontend"
+#~ msgstr "Ejecutar la interfaz especificada"
+
+#~ msgid "Checking for a new ubuntu release"
+#~ msgstr "Comprobar si existe un nueva versión de Ubuntu"
+
+#~ msgid "No new release found"
+#~ msgstr "No se ha encontrado ninguna edición nueva"
+
+#~ msgid ""
+#~ "Do not output anything, just return %s if there is a new release and %s "
+#~ "if there is none."
+#~ msgstr ""
+#~ "No produce ninguna salida; tan sólo devuelve %s si hay una nueva versión "
+#~ "y %s si no hay ninguna."
+
+#~ msgid "New release '%s' available."
+#~ msgstr "Está disponible la nueva versión «%s»."
+
+#~ msgid "Run 'do-release-upgrade' to upgrade to it."
+#~ msgstr "Ejecute «do-release-upgrade» para actualizarse a ella."
+
+#~ msgid "Unimplemented method: %s"
+#~ msgstr "Método no implementado: %s"
+
+#~ msgid "A file on disk"
+#~ msgstr "Un archivo en disco"
+
+#~ msgid ".deb package"
+#~ msgstr "paquete .deb"
+
+#~ msgid "Install missing package."
+#~ msgstr "Instalar paquete que falta."
+
+#~ msgid "Package %s should be installed."
+#~ msgstr "Debe instalarse el paquete %s"
+
+#~ msgid "%i obsolete entries in the status file"
+#~ msgstr "%i entradas obsoletas en el archivo de estado"
+
+#~ msgid "Obsolete entries in dpkg status"
+#~ msgstr "Entradas obsoletas en estado de dpkg"
+
+#~ msgid "Obsolete dpkg status entries"
+#~ msgstr "Entradas de estado dpkg obsoletas"
+
+#~ msgid ""
+#~ "When upgrading, if kdelibs4-dev is installed, kdelibs5-dev needs to be "
+#~ "installed. See bugs.launchpad.net, bug ##279621 for details."
+#~ msgstr ""
+#~ "Cuando se actualice, si está instalado kdelibs4-dev, deberá instalarse el "
+#~ "paquete kdelibs5-dev. Consulte el bug ##279621 en bugs.launchpad.net para "
+#~ "más información."
+
+#~ msgid "%s needs to be marked as manually installed."
+#~ msgstr "Se debe marcar %s como instalado manualmente."
+
+#~ msgid ""
+#~ "Remove lilo since grub is also installed.(See bug #314004 for details.)"
+#~ msgstr ""
+#~ "Se elimina LILO ya que GRUB también está instalado (Consulte el bug "
+#~ "#314004 para más información.)"
+
+#~ msgid ""
+#~ "If none of this applies, then please report this bug against the 'update-"
+#~ "manager' package and include the files in /var/log/dist-upgrade/ in the "
+#~ "bugreport."
+#~ msgstr ""
+#~ "Si nada de esto es aplicable, informe de este error del paquete «update-"
+#~ "manager» e incluya los archivos de /var/log/dist-upgrade/ en el informe."
+
+#~ msgid "The upgrade tool will guide you through the upgrade process."
+#~ msgstr ""
+#~ "La herramienta de actualización le guiará a través del proceso de "
+#~ "actualización."
+
+#~ msgid "Can't upgrade required meta-packages"
+#~ msgstr "No se han podido actualizar los meta-paquetes requeridos"
+
+#~ msgid "A essential package would have to be removed"
+#~ msgstr "Tendría que desinstalarse un paquete esencial"
+
+#~ msgid ""
+#~ "An unresolvable problem occurred while calculating the upgrade.\n"
+#~ "\n"
+#~ " This can be caused by:\n"
+#~ " * Upgrading to a pre-release version of Ubuntu\n"
+#~ " * Running the current pre-release version of Ubuntu\n"
+#~ " * Unofficial software packages not provided by Ubuntu\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Ha ocurrido un problema mientras se calculaba la actualización.\n"
+#~ "\n"
+#~ " Eso pudo ser causado por:\n"
+#~ " * Actualizar a una versión de Ubuntu aún no publicada\n"
+#~ " * Estar ejecutando la versión actual, aún no publicada, de Ubuntu\n"
+#~ " * Paquetes no oficiales de software no proporcionados por Ubuntu\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "The upgrade aborts now. The upgrade needs a total of %s free space on "
+#~ "disk '%s'. Please free at least an additional %s of disk space on '%s'. "
+#~ "Empty your trash and remove temporary packages of former installations "
+#~ "using 'sudo apt-get clean'."
+#~ msgstr ""
+#~ "La actualización se interrumpirá ahora. La instalación precisa de %s de "
+#~ "espacio libre en el disco «%s». Por favor, libere al menos %s de espacio "
+#~ "en el disco «%s». Vacíe su papelera y elimine los paquetes temporales de "
+#~ "anteriores instalaciones tecleando «sudo apt-get clean» en una terminal."
+
+#~ msgid ""
+#~ "The upgrade aborts now. Please check your Internet connection or "
+#~ "installation media and try again. All files downloaded so far are kept."
+#~ msgstr ""
+#~ "La actualización se interrumpirá ahora. Por favor, compruebe su conexión "
+#~ "a Internet o medio de instalación y vuelva a intentarlo. Todos los "
+#~ "archivos descargados hasta el momento son conservados."
+
+#~ msgid ""
+#~ "The upgrade aborts now. Your system could be in an unusable state. A "
+#~ "recovery will run now (dpkg --configure -a)."
+#~ msgstr ""
+#~ "La actualización se interrumpirá ahora. Su sistema puede haber quedado en "
+#~ "un estado inutilizable. Se está llevando a cabo una recuperación (dpkg --"
+#~ "configure -a)."
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "Please report this bug against the 'update-manager' package and include "
+#~ "the files in /var/log/dist-upgrade/ in the bugreport.\n"
+#~ "%s"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "Por favor, informe de esto como un fallo en el paquete «update-manager» e "
+#~ "incluya en el informe de error los archivos contenidos en /var/log/dist-"
+#~ "upgrade/.\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The upgrade aborts now. Please check your Internet connection or "
+#~ "installation media and try again. "
+#~ msgstr ""
+#~ "La actualización se interrumpirá ahora. Por favor, compruebe su conexión "
+#~ "a Internet o medio de instalación y vuelva a intentarlo. "
+
+#~ msgid ""
+#~ "The upgrade is completed but there were errors during the ugprade process."
+#~ msgstr ""
+#~ "La actualización fue completada pero hubo errores durante el proceso de "
+#~ "actualización."
+
+#~ msgid ""
+#~ "Please report this as a bug (if you haven't already) and include the "
+#~ "files /var/log/dist-upgrade/main.log and /var/log/dist-upgrade/apt.log in "
+#~ "your report. The upgrade aborts now.\n"
+#~ "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
+#~ msgstr ""
+#~ "Por favor, informe de esto como un fallo (si no lo ha hecho ya) e incluya "
+#~ "los archivos /var/log/dist-upgrade/main.log y /var/log/dist-upgrade/apt."
+#~ "log en su informe. La actualización se cancelará ahora.\n"
+#~ "Su archivo «sources.list» original se ha guardado en /etc/apt/sources.list."
+#~ "distUpgrade."
+
+#~ msgid "%(str_days)s %(str_hours)s %(str_minutes)s"
+#~ msgstr "%(str_days)s %(str_hours)s %(str_minutes)s"
+
+#~ msgid ""
+#~ "This download will take about %s with a 1Mbit DSL connection and about %s "
+#~ "with a 56k modem"
+#~ msgstr ""
+#~ "Esta descarga llevará aprox. %s con una conexión DSL de 1Mbit, y %s con "
+#~ "un módem de 56k."
+
+#~ msgid ""
+#~ "Please report this as a bug and include the files /var/log/dist-upgrade/"
+#~ "main.log and /var/log/dist-upgrade/apt.log in your report. The upgrade "
+#~ "aborts now.\n"
+#~ "Your original sources.list was saved in /etc/apt/sources.list.distUpgrade."
+#~ msgstr ""
+#~ "Por favor, informe de esto como un fallo e incluya los archivos /var/log/"
+#~ "dist-upgrade/main.log y /var/log/dist-upgrade/apt.log en su informe. La "
+#~ "actualización se cancelará ahora.\n"
+#~ "Su archivo sources.list original se ha guardado como /etc/apt/sources."
+#~ "list.distUpgrade."
+
+#~ msgid "Restart the system now [yN] "
+#~ msgstr "Reiniciar ahora el sistema [sN] "
+
+#~ msgid "<b><big>Upgrading Ubuntu to version 8.10</big></b>"
+#~ msgstr "<b><big>Actualizando Ubuntu a la versión 8.10</big></b>"
+
+#~ msgid "The list of changes is not available"
+#~ msgstr "La lista de cambios no está disponible."
+
+#~ msgid "You can install %s update."
+#~ msgid_plural "You can install %s updates."
+#~ msgstr[0] "Puede instalar %s actualización."
+#~ msgstr[1] "Puede instalar %s actualizaciones."
+
+#~ msgid "<big><b>Keep your system up-to-date</b></big>"
+#~ msgstr "<big><b>Mantenga su sistema actualizado</b></big>"
+
+#~ msgid ""
+#~ "Preparing the system for the upgrade failed. Please report this as a bug "
+#~ "against the 'update-manager' package and include the files in /var/log/"
+#~ "dist-upgrade/ in the bugreport."
+#~ msgstr ""
+#~ "Ha ocurrido un problema imposible de resolver cuando se calculaba la "
+#~ "actualización. Por favor, informe de esto como un fallo en el paquete "
+#~ "«update-manager», e incluya en el informe los archivos contenidos en el "
+#~ "directorio /var/log/dist-upgrade/."
+
+#~ msgid ""
+#~ "The system was unable to get the prerequisites for the upgrade. The "
+#~ "upgrade will abort now and restore the original system state.\n"
+#~ "\n"
+#~ "Please report this as a bug against the 'update-manager' package and "
+#~ "include the files in /var/log/dist-upgrade/ in the bugreport."
+#~ msgstr ""
+#~ "El sistema ha sido incapaz de obtener los requisitos previos para la "
+#~ "actualización. La actualización se cancelará y el sistema volverá a su "
+#~ "estado original.\n"
+#~ "\n"
+#~ "Informe de esto como un fallo en el paquete «update-manager», e incluya en "
+#~ "el informe los archivos contenidos en el directorio /var/log/dist-"
+#~ "upgrade/."
+
+#~ msgid ""
+#~ "After your package information was updated the essential package '%s' can "
+#~ "not be found anymore.\n"
+#~ "This indicates a serious error, please report this bug against the "
+#~ "'update-manager' package and include the files in /var/log/dist-upgrade/ "
+#~ "in the bugreport."
+#~ msgstr ""
+#~ "Después de haberse actualizado la información de sus paquetes, ya no es "
+#~ "posible encontrar el paquete esencial «%s».\n"
+#~ "Esto indica un problema serio. Por favor, informe de esto como un fallo "
+#~ "en el paquete «update-manager» e incluya en el informe de error los "
+#~ "archivos contenidos en /var/log/dist-upgrade/."
+
+#~ msgid ""
+#~ "The upgrade will continue but the '%s' package may be in a not working "
+#~ "state. Please consider submitting a bugreport about it."
+#~ msgstr ""
+#~ "La actualización continuará pero el paquete «%s» podría no funcionar. "
+#~ "Considere enviar un informe de error sobre esto."
+
+#~ msgid "Downloading the upgrade tool"
+#~ msgstr "Descargando la herramienta de actualización"
+
+#~ msgid "Daily"
+#~ msgstr "Una vez al día"
+
+#~ msgid "Every two days"
+#~ msgstr "Cada dos días"
+
+#~ msgid "Weekly"
+#~ msgstr "Una vez a la semana"
+
+#~ msgid "Every two weeks"
+#~ msgstr "Cada dos semanas"
+
+#~ msgid "After one week"
+#~ msgstr "Después de una semana"
+
+#~ msgid "After two weeks"
+#~ msgstr "Después de dos semanas"
+
+#~ msgid "After one month"
+#~ msgstr "Después de un mes"
+
+#~ msgid "Fetching file %li of %li at %sb/s"
+#~ msgstr "Descargando archivo %li de %li a %sb/s"
+
+#~ msgid "%li days %li hours %li minutes"
+#~ msgstr "%li días %li horas %li minutos"
+
+#~ msgid "_Check"
+#~ msgstr "_Comprobar"
+
+#~ msgid "Import key"
+#~ msgstr "Importar clave"
+
+#~ msgid "Error importing selected file"
+#~ msgstr "Hubo un error al importar el fichero seleccionado"
+
+#~ msgid "Error removing the key"
+#~ msgstr "Hubo un error al quitar la clave"
+
+#~ msgid "Every %s days"
+#~ msgstr "Cada %s días"
+
+#~ msgid "After %s days"
+#~ msgstr "Después de %s días"
+
+#~ msgid "Please enter a name for the disc"
+#~ msgstr "Por favor, introduzca un nombre para el disco"
+
+#~ msgid "Please insert a disc in the drive:"
+#~ msgstr "Por favor, inserte un disco en la unidad:"
+
+#~ msgid "Authentication"
+#~ msgstr "Autentificación"
+
+#~ msgid "_Check for updates automatically:"
+#~ msgstr "_Comprobar actualizaciones automáticamente:"
+
+#~ msgid "_Import Key File"
+#~ msgstr "_Importar clave"
+
+#~ msgid "<b>Comment:</b>"
+#~ msgstr "<b>Comentario:</b>"
+
+#~ msgid ""
+#~ "Binary\n"
+#~ "Source"
+#~ msgstr ""
+#~ "Binario\n"
+#~ "Fuente"
+
+#~ msgid "Scanning CD-ROM"
+#~ msgstr "Analizando el CD-ROM"
+
+#~ msgid "_Reload"
+#~ msgstr "_Recargar"
+
+#~ msgid "Officially supported"
+#~ msgstr "Soportado oficialmente"
+
+#~ msgid "Restricted copyright"
+#~ msgstr "Copyright restringido"
+
+#~ msgid "     "
+#~ msgstr "     "
+
+#~ msgid ""
+#~ "Use special upgrade mode. Available:\n"
+#~ "desktop, server"
+#~ msgstr ""
+#~ "Usar un modo especial de actualización. Disponibles:\n"
+#~ "desktop, server"
+
+#~ msgid "_Skip This Step"
+#~ msgstr "_Saltar este paso"
+
+#~ msgid "Asking for confirmation"
+#~ msgstr "Solicitando confirmación"
+
+#~ msgid "<b>Remove %s</b>"
+#~ msgstr "<b>Desinstalar %s</b>"
+
+#~ msgid "Fetch data from the network for the upgrade?"
+#~ msgstr "¿Obtener datos desde la red para la actualización?"
+
+#~ msgid ""
+#~ "The key you selected could not be removed. Please report this as a bug."
+#~ msgstr ""
+#~ "No se puede quitar la clave que ha seleccionado. Por favor, avise de esto "
+#~ "como un fallo."
+
+#~ msgid "<p>You have to download a total of %s. "
+#~ msgstr "<p>Debe descargar un total de %s. "
+
+#~ msgid "The selected file may not be a GPG key file or it might be corrupt."
+#~ msgstr ""
+#~ "Puede que el fichero seleccionado no sea un fichero de clave GPG o que "
+#~ "esté corrupto."
+
+#~ msgid "<b>Internet updates</b>"
+#~ msgstr "<b>Actualizaciones por Internet</b>"
+
+#~ msgid "Internet Updates"
+#~ msgstr "Actualizaciones por Internet"
+
+#~ msgid "<b>URI:</b>"
+#~ msgstr "<b>URI:</b>"
+
+#~ msgid "System Update Tool"
+#~ msgstr "Herramienta de actualización del sistema"
+
+#~ msgid "Fetching the upgrades"
+#~ msgstr "Preparando la actualización"
+
+#~ msgid ""
+#~ "A unresolvable problem occurred while calculating the upgrade.\n"
+#~ "\n"
+#~ "Please report this bug against the 'update-manager' package and include "
+#~ "the files in /var/log/dist-upgrade/ in the bugreport."
+#~ msgstr ""
+#~ "Ha ocurrido un problema irresoluble mientras se calculaba la "
+#~ "actualización.\n"
+#~ "\n"
+#~ "Por favor, notifique este fallo sobre el paquete «update-manager» e "
+#~ "incluya los archivos de /var/log/dist-upgrade/ en el informe."
+
+#~ msgid "Fetching backport of '%s'"
+#~ msgstr "Descargando «backport» de '%s'"
+
+#~ msgid "changes"
+#~ msgstr "cambios"
+
+#~ msgid "Software Channel"
+#~ msgstr "Canal de software"
+
+#~ msgid "(Source Code)"
+#~ msgstr "(Código fuente)"
+
+#~ msgid "<b>Automatic updates</b>"
+#~ msgstr "<b>Actualizaciones automáticas</b>"
+
+#~ msgid "<b>Internet</b>"
+#~ msgstr "<b>Internet</b>"
+
+#~ msgid "D_elete downloaded software files:"
+#~ msgstr "_Borrar archivos de software descargados:"
+
+#~ msgid "Download from:"
+#~ msgstr "Descargar desde:"
+
+#~ msgid "Import the public key from a trusted software provider"
+#~ msgstr "Importar la clave pública desde un proveedor de confianza"
+
+#~ msgid ""
+#~ "Only security updates from the official Ubuntu servers will be installed "
+#~ "automatically"
+#~ msgstr ""
+#~ "Sólo se instalarán automáticamente las actualizaciones de seguridad que "
+#~ "provengan de los servidores oficiales de Ubuntu."
+
+#~ msgid "Restore _Defaults"
+#~ msgstr "Restaurar valores predeterminados"
+
+#~ msgid "Restore the default keys of your distribution"
+#~ msgstr "Restaurar las claves predeterminadas de su distribución"
+
+#~ msgid "Software Sources"
+#~ msgstr "Orígenes del software"
+
+#~ msgid "_Install security updates without confirmation"
+#~ msgstr "_Instalar actualizaciones de seguridad sin requerir confirmación"
+
+#~ msgid "<b>Components:</b>"
+#~ msgstr "<b>Componentes:</b>"
+
+#~ msgid "<b>Distribution:</b>"
+#~ msgstr "<b>Distribución:</b>"
+
+#~ msgid "<b>Type:</b>"
+#~ msgstr "<b>Tipo:</b>"
+
+#~ msgid "APT line:"
+#~ msgstr "Línea de APT:"
+
+#~ msgid "_Add Source"
+#~ msgstr "_Añadir origen"
+
+#~ msgid "Configure the sources for installable software and updates"
+#~ msgstr ""
+#~ "Configura los orígenes para el software instalable y las actualizaciones"
+
+#~ msgid ""
+#~ "http://changelogs.ubuntu.com/changelogs/pool/%s/%s/%s/%s_%s/changelog"
+#~ msgstr ""
+#~ "http://changelogs.ubuntu.com/changelogs/pool/%s/%s/%s/%s_%s/changelog"
+
+#~ msgid "Ubuntu 6.10 'Edgy Eft'"
+#~ msgstr "Ubuntu 6.10 «Edgy Eft»"
+
+#~ msgid "Community maintained"
+#~ msgstr "Mantenido por la comunidad"
+
+#~ msgid "Restricted software"
+#~ msgstr "Software restringido"
+
+#~ msgid "Cdrom with Ubuntu 6.10 'Edgy Eft'"
+#~ msgstr "CD-ROM con Ubuntu 6.10 «Edgy Eft»"
+
+#~ msgid "Ubuntu 6.06 LTS 'Dapper Drake'"
+#~ msgstr "Ubuntu 6.06 LTS «Dapper Drake»"
+
+#~ msgid "Canonical supported Open Source software"
+#~ msgstr "Software libre soportado por Canonical"
+
+#~ msgid "Community maintained (universe)"
+#~ msgstr "Mantenido por la comunidad (universe)"
+
+#~ msgid "Community maintained Open Source software"
+#~ msgstr "Software libre mantenido por la comunidad"
+
+#~ msgid "Non-free drivers"
+#~ msgstr "Controladores no libres"
+
+#~ msgid "Restricted software (Multiverse)"
+#~ msgstr "Software restringido (multiverse)"
+
+#~ msgid "Cdrom with Ubuntu 6.06 LTS 'Dapper Drake'"
+#~ msgstr "CD-ROM con Ubuntu 6.06 LTS «Dapper Drake»"
+
+#~ msgid "Ubuntu 5.10 'Breezy Badger'"
+#~ msgstr "Ubuntu 5.10 «Breezy Badger»"
+
+#~ msgid "Cdrom with Ubuntu 5.10 'Breezy Badger'"
+#~ msgstr "CD-ROM con Ubuntu 5.10 «Breezy Badger»"
+
+#~ msgid "Ubuntu 5.10 Security Updates"
+#~ msgstr "Actualizaciones de seguridad de Ubuntu 5.10"
+
+#~ msgid "Ubuntu 5.10 Updates"
+#~ msgstr "Actualizaciones de Ubuntu 5.10"
+
+#~ msgid "Ubuntu 5.10 Backports"
+#~ msgstr "«Backports» de Ubuntu 5.10"
+
+#~ msgid "Ubuntu 5.04 'Hoary Hedgehog'"
+#~ msgstr "Ubuntu 5.04 «Hoary Hedgehog»"
+
+#~ msgid "Cdrom with Ubuntu 5.04 'Hoary Hedgehog'"
+#~ msgstr "CD-ROM con Ubuntu 5.04 «Hoary Hedgehog»"
+
+#~ msgid "Ubuntu 5.04 Security Updates"
+#~ msgstr "Actualizaciones de seguridad de Ubuntu 5.04"
+
+#~ msgid "Ubuntu 5.04 Updates"
+#~ msgstr "Actualizaciones de Ubuntu 5.04"
+
+#~ msgid "Ubuntu 5.04 Backports"
+#~ msgstr "«Backports» de Ubuntu 5.04"
+
+#~ msgid "Ubuntu 4.10 'Warty Warthog'"
+#~ msgstr "Ubuntu 4.10 «Warty Warthog»"
+
+#~ msgid "Community maintained (Universe)"
+#~ msgstr "Mantenido por la comunidad (Universe)"
+
+#~ msgid "Non-free (Multiverse)"
+#~ msgstr "Software no libre (Multiverse)"
+
+#~ msgid "Cdrom with Ubuntu 4.10 'Warty Warthog'"
+#~ msgstr "CD-ROM con Ubuntu 4.10 «Warty Warthog»"
+
+#~ msgid "No longer officially supported"
+#~ msgstr "Sin más soporte oficial"
+
+#~ msgid "Ubuntu 4.10 Security Updates"
+#~ msgstr "Ubuntu 4.10 Actualizaciones de seguridad"
+
+#~ msgid "Ubuntu 4.10 Updates"
+#~ msgstr "Actualizaciones de Ubuntu 4.10"
+
+#~ msgid "Ubuntu 4.10 Backports"
+#~ msgstr "«Backports» de Ubuntu 4.10"
+
+#~ msgid "http://packages.debian.org/changelogs/pool/%s/%s/%s/%s_%s/changelog"
+#~ msgstr "http://packages.debian.org/changelogs/pool/%s/%s/%s/%s_%s/changelog"
+
+#~ msgid "Debian 3.1 \"Sarge\""
+#~ msgstr "Debian 3.1 «Sarge»"
+
+#~ msgid "http://security.debian.org/"
+#~ msgstr "http://security.debian.org/"
+
+#~ msgid "Debian 3.1 \"Sarge\" Security Updates"
+#~ msgstr "Actualizaciones de seguridad de Debian 3.1 «Sarge»"
+
+#~ msgid "Debian \"Etch\" (testing)"
+#~ msgstr "Debian «Etch» (pruebas)"
+
+#~ msgid "http://http.us.debian.org/debian/"
+#~ msgstr "http://http.us.debian.org/debian/"
+
+#~ msgid "Debian \"Sid\" (unstable)"
+#~ msgstr "Debian «Sid» (inestable)"
+
+#~ msgid "DFSG-compatible Software with Non-Free Dependencies"
+#~ msgstr "Software compatible con la DFSG con dependencias no libres"
+
+#~ msgid "Non-DFSG-compatible Software"
+#~ msgstr "Software no compatible con la DFSG"
+
+#~ msgid "Downloading file %li of %li with unknown speed"
+#~ msgstr "Descargando archivo %li de %li a velocidad desconocida"
+
+#~ msgid "Cancel _Download"
+#~ msgstr "Cancelar _descarga"
+
+#~ msgid "Could not find any upgrades"
+#~ msgstr "No se ha podido encontrar ninguna actualización"
+
+#~ msgid "Your system has already been upgraded."
+#~ msgstr "Su sistema ya ha sido actualizado."
+
+#~ msgid ""
+#~ "<big><b>Examining your system</b></big>\n"
+#~ "\n"
+#~ "Software updates correct errors, eliminate security vulnerabilities and "
+#~ "provide new features."
+#~ msgstr ""
+#~ "<big><b>Analizando su sistema</b></big>\n"
+#~ "\n"
+#~ "Las actualizaciones de software corrigen errores, eliminan fallos de "
+#~ "seguridad y proporcionan nuevas funcionalidades."
+
+#~ msgid ""
+#~ "Some updates require the removal of further software. Use the function "
+#~ "\"Mark All Upgrades\" of the package manager \"Synaptic\" or run \"sudo "
+#~ "apt-get dist-upgrade\" in a terminal to update your system completely."
+#~ msgstr ""
+#~ "Algunas actualizaciones requieren la desinstalación de software. Utilice "
+#~ "la función «Marcar todas las actualizaciones» del gestor de paquetes "
+#~ "«Synaptic», o ejecute «sudo apt-get dist-upgrade» en una terminal, para "
+#~ "actualizar completamente su sistema."
+
+#~ msgid "The following updates will be skipped:"
+#~ msgstr "Se pasarán por alto las siguientes actualizaciones:"
+
+#~ msgid "Download is complete"
+#~ msgstr "La descarga se ha completado"
+
+#~ msgid "The upgrade aborts now. Please report this bug."
+#~ msgstr ""
+#~ "La actualización se cancelará ahora. Por favor, informe de esto como un "
+#~ "fallo."
+
+#~ msgid "Upgrading Ubuntu"
+#~ msgstr "Actualizando Ubuntu"
+
+#~ msgid "Hide details"
+#~ msgstr "Ocultar detalles"
+
+#~ msgid "Show details"
+#~ msgstr "Mostrar detalles"
+
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr ""
+#~ "Sólo se permite la ejecución simultánea de una única herramienta de "
+#~ "gestión de software"
+
+#~ msgid ""
+#~ "Please close the other application e.g. 'aptitude' or 'Synaptic' first."
+#~ msgstr ""
+#~ "Por favor, cierre primero la otra aplicación (ej: «aptitude» o «Synaptic»)."
+
+#~ msgid "<b>Channels</b>"
+#~ msgstr "<b>Canales</b>"
+
+#~ msgid "<b>Keys</b>"
+#~ msgstr "<b>Claves</b>"
+
+#~ msgid "Installation Media"
+#~ msgstr "Soporte de la instalación"
+
+#~ msgid "Software Preferences"
+#~ msgstr "Preferencias de software"
+
+#~ msgid "<b>Channel</b>"
+#~ msgstr "<b>Canales</b>"
+
+#~ msgid "<b>Components</b>"
+#~ msgstr "<b>Componentes</b>"
+
+#~ msgid "Add Channel"
+#~ msgstr "Añadir un canal"
+
+#~ msgid "_Add Channel"
+#~ msgid_plural "_Add Channels"
+#~ msgstr[0] "_Añadir un canal"
+#~ msgstr[1] "_Añadir canales"
+
+#~ msgid "_Custom"
+#~ msgstr "_Personalizado"
+
+#~ msgid "Ubuntu 6.06 LTS Security Updates"
+#~ msgstr "Actualizaciones de seguridad de Ubuntu 6.06 LTS"
+
+#~ msgid "Ubuntu 6.06 LTS Updates"
+#~ msgstr "Actualizaciones de Ubuntu 6.06 LTS"
+
+#~ msgid "Ubuntu 6.06 LTS Backports"
+#~ msgstr "«Backports» de Ubuntu 6.06 LTS"
+
+#~ msgid "<b>Sections</b>"
+#~ msgstr "<b>Secciones</b>"
+
+#~ msgid "<b>Sections:</b>"
+#~ msgstr "<b>Secciones:</b>"
+
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"larger\">Downloading changes</span>\n"
+#~ "\n"
+#~ "Need to get the changes from the central server"
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">Descargando informe de cambios</"
+#~ "span>\n"
+#~ "\n"
+#~ "Se necesita descargar los cambios del servidor central"
+
+#~ msgid "Show available updates and choose which to install"
+#~ msgstr "Mostrar actualizaciones disponibles y elegir cuáles instalar"
+
+#~ msgid "Edit software sources and settings"
+#~ msgstr "Editar fuentes de software y preferencias"
+
+#~ msgid "<b>Repository</b>"
+#~ msgstr "<b>Repositorio</b>"
+
+#~ msgid "<b>Temporary files</b>"
+#~ msgstr "<b>Ficheros temporales</b>"
+
+#~ msgid "<b>User Interface</b>"
+#~ msgstr "<b>Interfaz de usuario</b>"
+
+#~ msgid "Automatically clean _temporary packages files"
+#~ msgstr "Limpiar _temporalmente los archivos de paquetes"
+
+#~ msgid "Clean interval in days: "
+#~ msgstr "Intervalo de limpieza en días: "
+
+#~ msgid "Delete _old packages in the package cache"
+#~ msgstr "_Borrar paquetes viejos del caché de paquetes"
+
+#~ msgid "Edit Repository..."
+#~ msgstr "Editar repositorio..."
+
+#~ msgid "Maximum age in days:"
+#~ msgstr "Edad máxima en días:"
+
+#~ msgid "Maximum size in MB:"
+#~ msgstr "Tamaño máximo en MB:"
+
+#~ msgid "Set _maximum size for the package cache"
+#~ msgstr "Establecer tamaño _máximo para el caché de paquetes"
+
+#~ msgid "Show disabled software sources"
+#~ msgstr "Mostrar orígenes de software desactivados"
+
+#~ msgid "Update interval in days: "
+#~ msgstr "Intervalo de actualización en días: "
+
+#~ msgid "_Add Repository"
+#~ msgstr "_Añadir repositorio"
+
+#~ msgid "_Download upgradable packages"
+#~ msgstr "_Descargar paquetes actualizables"
+
+#~ msgid ""
+#~ "<big><b>Available Updates</b></big>\n"
+#~ "\n"
+#~ "The following packages are found to be upgradable. You can upgrade them "
+#~ "by using the Install button."
+#~ msgstr ""
+#~ "<big><b>Actualizaciones disponibles</b></big>\n"
+#~ "\n"
+#~ "El gestor de actualizaciones encontró los siguientes paquetes "
+#~ "actualizables. Puede actualizarlos usando el botón Instalar."
+
+#~ msgid "You need to be root to run this program"
+#~ msgstr "Necesita ser root para ejecutar este programa"
+
+#~ msgid "Binary"
+#~ msgstr "Binario"
+
+#~ msgid "Non-free software"
+#~ msgstr "Software no libre"
+
+#~ msgid "Ubuntu Archive Automatic Signing Key <ftpmaster@ubuntu.com>"
+#~ msgstr ""
+#~ "Clave de firmado automático del archivo de Ubuntu <ftpmaster@ubuntu.com>"
+
+#~ msgid "Ubuntu CD Image Automatic Signing Key <cdimage@ubuntu.com>"
+#~ msgstr ""
+#~ "Clave de firmado automático de las imágenes de CD de Ubuntu "
+#~ "<cdimage@ubuntu.com>"
+
+#~ msgid "Choose a key-file"
+#~ msgstr "Elija un fichero de clave"
+
+#~ msgid "The updates are being applied."
+#~ msgstr "Se están aplicando las actualizaciones."
+
+#~ msgid "Updating package list..."
+#~ msgstr "Actualizando lista de paquetes..."
+
+#~ msgid ""
+#~ "Please upgrade to a newer version of Ubuntu Linux. The version you are "
+#~ "running will no longer get security fixes or other critical updates. "
+#~ "Please see http://www.ubuntulinux.org for upgrade information."
+#~ msgstr ""
+#~ "Actualícese a una nueva versión de Ubuntu Linux. La versión que está "
+#~ "usando no obtendrá más actualizaciones de seguridad ni otras "
+#~ "actualizaciones críticas. Visite http://www.ubuntulinux.org para "
+#~ "información acerca de cómo actualizar."
+
+#~ msgid "There is a new release of Ubuntu available!"
+#~ msgstr "Hay una nueva versión de Ubuntu disponible"
+
+#~ msgid ""
+#~ "A new release with the codename '%s' is available. Please see http://www."
+#~ "ubuntulinux.org/ for upgrade instructions."
+#~ msgstr ""
+#~ "Está disponible una nueva versión con el nombre '%s'. Visite http://www."
+#~ "ubuntulinux.org/ para recibir instrucciones acerca de cómo actualizar."
+
+#~ msgid "Never show this message again"
+#~ msgstr "No mostrar más este mensaje"
+
+#~ msgid "Changes not found, the server may not be updated yet."
+#~ msgstr ""
+#~ "No se ha encontrado el informe de cambios, puede que el servidor no este "
+#~ "actualizado aún."
+
+#~ msgid "Ubuntu 6.06 LTS"
+#~ msgstr "Ubuntu 6.06 LTS"
+
+#~ msgid "Some software no longer officially supported"
+#~ msgstr "Algunos programas ya no están soportados oficialmente"
+
+#~ msgid "About %li seconds remaining"
+#~ msgstr "Faltan %li segundos"
+
+#~ msgid "Source Code"
+#~ msgstr "Código fuente"
+
+#~ msgid ""
+#~ "<big><b>Error scanning the CD</b></big>\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "<big><b>Error examinando el CD</b></big>\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Add Cdrom"
+#~ msgstr "Añadir CD-ROM"
+
+#~ msgid "Source code"
+#~ msgstr "Código fuente"
+
+#~ msgid "_Download updates automatically, but do not install them"
+#~ msgstr "_Descargar actualizaciones automáticamente, pero sin instalarlas"
+
+#~ msgid ""
+#~ "<b><big>The information about available software is out-of-date</big></"
+#~ "b>\n"
+#~ "\n"
+#~ "To install software and updates from newly added or changed sources, you "
+#~ "have to reload the information about available software.\n"
+#~ "\n"
+#~ "You need a working internet connection to continue."
+#~ msgstr ""
+#~ "<b><big>La información acerca del software disponible está obsoleta</"
+#~ "big></b>\n"
+#~ "\n"
+#~ "Para poder instalar software y actualizaciones a partir de los orígenes "
+#~ "que se hayan añadido o cambiado recientemente, es necesario recargar la "
+#~ "información acerca del software disponible.\n"
+#~ "\n"
+#~ "Necesita una conexión a Internet para continuar."
+
+#~ msgid ""
+#~ "<big><b>Enter the complete APT line of the repository that you want to "
+#~ "add as source</b></big>\n"
+#~ "\n"
+#~ "The APT line includes the type, location and components of a repository, "
+#~ "for example <i>\"deb http://ftp.debian.org sarge main\"</i>."
+#~ msgstr ""
+#~ "<big><b>Introduzca la línea de APT completa del repositorio que quiera "
+#~ "añadir como origen</b></big>\n"
+#~ "\n"
+#~ "La línea de APT contiene el tipo, la ubicación y los componentes de un "
+#~ "repositorio, por ejemplo «<i>deb http://ftp.debian.org sarge main</i>»."
+
+#~ msgid "Run in a special upgrade mode"
+#~ msgstr "Ejecutar en un modo especial de actualización"
+
+#~ msgid "%s updates"
+#~ msgstr "Actualizaciones de %s"
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "Nearest server"
+#~ msgstr "Servidor más cercano"
+
+#~ msgid "Active"
+#~ msgstr "Activo"
+
+#~ msgid ""
+#~ "The upgrade can use the network to check the latest updates and to fetch "
+#~ "packages that are not on the current CD.\n"
+#~ "If you have fast or inexpensive network access you should answer 'Yes' "
+#~ "here. If networking is expensive for you choose 'No'."
+#~ msgstr ""
+#~ "La actualización puede usar la red para comprobar las últimas "
+#~ "actualizaciones y para obtener los paquetes que no se encuentren en el CD "
+#~ "actual.\n"
+#~ "Si dispone de una conexión rápida o barata, debería responder «Sí». Si la "
+#~ "conexión es cara para usted, seleccione «No»."
+
+#~ msgid "Changes and description of the update"
+#~ msgstr "Cambios y descripción de la actualización"
+
+#~ msgid "<b>CDROM/DVD</b>"
+#~ msgstr "<b>CDROM/DVD</b>"
+
+#~ msgid ""
+#~ "<i>To improve the user experience of Ubuntu please take part in the "
+#~ "popularity contest. If you do so the list of installed software and how "
+#~ "often it was used will be collected and sent anonymously to the Ubuntu "
+#~ "project  on a weekly basis.\n"
+#~ "\n"
+#~ "The results are used to improve the support for popular applications and "
+#~ "to rank applications in the search results.</i>"
+#~ msgstr ""
+#~ "<i>Para mejorar la experiencia del usuario de Ubuntu, por favor, "
+#~ "participe en la encuesta de popularidad. Al hacerlo, se creará una lista "
+#~ "con las aplicaciones que tenga instaladas y con qué frecuencia las "
+#~ "utiliza, y se enviará de forma anónima al proyecto Ubuntu todas las "
+#~ "semanas.\n"
+#~ "\n"
+#~ "Los resultados se usarán para mejorar el soporte de las aplicaciones "
+#~ "populares y para ordenar las aplicaciones en los resultados de las "
+#~ "búsquedas.</i>"
+
+#~ msgid "Statistics"
+#~ msgstr "Estadísticas"
+
+#~ msgid "Submit statistical information"
+#~ msgstr "Enviar información estadística"
+
+#~ msgid "Third Party"
+#~ msgstr "Otros proveedores"
+
+#~ msgid "Proprietary drivers for devices"
+#~ msgstr "Controladores privativos para dispositivos"
+
+#~ msgid "Proprietary drivers for devices "
+#~ msgstr "Controladores privativos para dispositivos "
+
+#~ msgid "Software restricted by copyright or legal issues"
+#~ msgstr "Software restringido por copyright o cuestiones legales"
+
+#~ msgid "Backported updates"
+#~ msgstr "Actualizaciones «backport»"
+
+#~ msgid "By copyright or legal issues restricted software"
+#~ msgstr "Software restringido por copyright o cuestiones legales"
+
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"x-large\">Upgrading to Ubuntu 6.10</span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"x-large\">Actualizando a Ubuntu 6.10</span>"
+
+#~ msgid "Important security updates of Ubuntu"
+#~ msgstr "Actualizaciones de seguridad importantes para Ubuntu"
+
+#~ msgid "Updates of Ubuntu"
+#~ msgstr "Actualizaciones de Ubuntu"
+
+#~ msgid "Oficially supported"
+#~ msgstr "Soportado oficialmente"
+
+#~ msgid ""
+#~ "While scanning your repository information no valid entry for the upgrade "
+#~ "was found.\n"
+#~ msgstr ""
+#~ "Cuando se exploraba la información de su repositorio, se encontró una "
+#~ "entrada no válida para la actualización.\n"
+
+#~ msgid "<b>Packages to install:</b>"
+#~ msgstr "<b>Paquetes a instalar:</b>"
+
+#~ msgid "A_uthentication"
+#~ msgstr "A_utenticación"
+
+#~ msgid ""
+#~ "This means that some dependencies of the installed packages are not "
+#~ "satisfied. Please use \"Synaptic\" or \"apt-get\" to fix the situation."
+#~ msgstr ""
+#~ "Ésto significa que no se satisfacen algunas dependencias de los paquetes "
+#~ "instalados. Utilice la \"Actualización inteligente\" de synaptic o \"apt-"
+#~ "get dist-upgrade\" para arreglar la situación."
+
+#~ msgid "It is not possible to upgrade all packages."
+#~ msgstr "No es posible actualizar todos los paquetes."
+
+#~ msgid ""
+#~ "This means that besides the actual upgrade of the packages some further "
+#~ "action (such as installing or removing packages) is required. Please use "
+#~ "Synaptic \"Smart Upgrade\" or \"apt-get dist-upgrade\" to fix the "
+#~ "situation."
+#~ msgstr ""
+#~ "Ésto significa que además de la actualización de los paquetes será "
+#~ "necesaria alguna acción adicional (como instalar o quitar paquetes). "
+#~ "Utilice la \"Actualización inteligente\" de synaptic o \"apt-get dist-"
+#~ "upgrade\" para arreglar la situación."
+
+#~ msgid ""
+#~ "You can run only one package management application at the same time. "
+#~ "Please close this other application first."
+#~ msgstr ""
+#~ "Solo puede ejecutar una aplicación de gestión de paquetes al mismo "
+#~ "tiempo. Cierre la otra aplicación primero."
+
+#~ msgid "Initializing and getting list of updates..."
+#~ msgstr "Inicializando y obteniendo lista de actualizaciones..."
+
+#~ msgid "Ubuntu Update Manager"
+#~ msgstr "Gestor de actualizaciones de Ubuntu"
+
+#~ msgid "CD"
+#~ msgstr "CD"
+
+#~ msgid "Normal updates"
+#~ msgstr "Actualizaciones normales"
+
+#~ msgid "Repositories changed"
+#~ msgstr "Hay cambios en los repositorios"
+
+#~ msgid "%d package is going to be downgraded."
+#~ msgid_plural "%d packages are going to be downgraded."
+#~ msgstr[0] "Se va a actualizar %d paquete."
+#~ msgstr[1] "Se van a actualizar %d paquetes."
+
+#~ msgid ""
+#~ "You need to reload the package list from the servers for your changes to "
+#~ "take effect. Do you want to do this now?"
+#~ msgstr ""
+#~ "Necesita recargar la lista de paquetes desde los servidores para que sus "
+#~ "cambios tengan efecto. ¿Quiere hacer esto ahora?"
+
+#~ msgid ""
+#~ "This computer is currently using the AMD 'fglrx' graphics driver. No "
+#~ "version of this driver is available that works with Ubuntu 8.10.\n"
+#~ "\n"
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Este equipo está usando el controlador gráfico «fglrx» para AMD. No hay "
+#~ "ninguna versión disponible de este controlador que funcione con Ubuntu "
+#~ "8.10.\n"
+#~ "\n"
+#~ "¿Desea continuar?"
