@@ -30,7 +30,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: sensible-utils 0.0.4\n"
-"POT-Creation-Date: 2009-02-16 11:34-0500\n"
+"POT-Creation-Date: 2010-11-14 01:14-0500\n"
 "PO-Revision-Date: 2010-10-22 14:00+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
@@ -42,30 +42,34 @@ msgstr ""
 "X-Generator: Virtaal 0.6.1\n"
 
 # type: TH
+#. type: TH
 #: ../sensible-editor.1:2
 #, no-wrap
 msgid "SENSIBLE-EDITOR"
 msgstr "SENSIBLE-EDITOR"
 
-# type: TH
+#. type: TH
 #: ../sensible-editor.1:2
 #, no-wrap
-msgid "03 Mar 2004"
-msgstr "3 de Marzo, 2004"
+msgid "14 Nov 2010"
+msgstr ""
 
 # type: TH
+#. type: TH
 #: ../sensible-editor.1:2
 #, no-wrap
 msgid "Debian"
 msgstr "Debian"
 
 # type: SH
+#. type: SH
 #: ../sensible-editor.1:3
 #, no-wrap
 msgid "NAME"
 msgstr "NOMBRE"
 
 # type: Plain text
+#. type: Plain text
 #: ../sensible-editor.1:5
 msgid ""
 "sensible-editor, sensible-pager, sensible-browser - sensible editing, "
@@ -75,33 +79,39 @@ msgstr ""
 "ficheros así como explorar la red con la herramienta adecuada"
 
 # type: SH
+#. type: SH
 #: ../sensible-editor.1:5
 #, no-wrap
 msgid "SYNOPSIS"
 msgstr "SINOPSIS"
 
 # type: Plain text
+#. type: Plain text
 #: ../sensible-editor.1:7
 msgid "B<sensible-editor> [OPTIONS...]"
 msgstr "B<sensible-editor> [opciones...]"
 
 # type: Plain text
+#. type: Plain text
 #: ../sensible-editor.1:9
 msgid "B<sensible-pager> [OPTIONS...]"
 msgstr "B<sensible-pager> [opciones...]"
 
 # type: Plain text
+#. type: Plain text
 #: ../sensible-editor.1:11
 msgid "B<sensible-browser> url"
 msgstr "B<sensible-browser> url"
 
 # type: SH
+#. type: SH
 #: ../sensible-editor.1:12
 #, no-wrap
 msgid "DESCRIPTION"
 msgstr "DESCRIPCIÓN"
 
 # type: Plain text
+#. type: Plain text
 #: ../sensible-editor.1:17
 msgid ""
 "B<sensible-editor>, B<sensible-pager> and B<sensible-browser> make sensible "
@@ -111,19 +121,30 @@ msgid ""
 msgstr ""
 "B<sensible-editor>, B<sensible-pager> y B<sensible-browser> realizan las "
 "decisiones adecuadas sobre qué editor, paginador o navegador de Internet "
-"invocar, respectivamente. Los programas en Debian pueden "
-"usar estos scripts como su editor, paginador o explorador predeterminado, o "
-"emular su comportamiento."
+"invocar, respectivamente. Los programas en Debian pueden usar estos scripts "
+"como su editor, paginador o explorador predeterminado, o emular su "
+"comportamiento."
 
 # type: SH
+#. type: SH
 #: ../sensible-editor.1:17
 #, no-wrap
 msgid "SEE ALSO"
 msgstr "VÉASE TAMBIÉN"
 
 # type: Plain text
+#. type: Plain text
 #: ../sensible-editor.1:19
-msgid "Documentation of the EDITOR, PAGER, and BROWSER variables in B<environ>(7)"
+#, fuzzy
+#| msgid ""
+#| "Documentation of the EDITOR, PAGER, and BROWSER variables in B<environ>(7)"
+msgid ""
+"Documentation of the EDITOR, VISUAL, PAGER, and BROWSER variables in "
+"B<environ>(7)"
 msgstr ""
 "Consulte la documentación de las variables de entorno EDITOR, PAGER y "
 "BROWSER en B<environ>(7)."
+
+# type: TH
+#~ msgid "03 Mar 2004"
+#~ msgstr "3 de Marzo, 2004"
