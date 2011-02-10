@@ -1,14 +1,14 @@
 # debhelper man/po translation to Spanish
-# Copyright (C) 2005 - 2010 Software in the Public Interest
+# Copyright (C) 2005 - 2011 Software in the Public Interest
 # This file is distributed under the same license as the deborphan package.
 #
 # Changes:
 #   - Initial translation
-# 	Rubén Porras Campo, 2005
-# 	Rudy Godoy, 2005
+#       Rubén Porras Campo, 2005
+#       Rudy Godoy, 2005
 #
 #   - Updates
-# 	Omar Campagne, 2010
+#       Omar Campagne <ocampagne@gmail.com>, 2010, 2011.
 #
 # Traductores, si no conocen el formato PO, merece la pena leer la
 # documentación de gettext, especialmente las secciones dedicadas a este
@@ -32,7 +32,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debhelper 8.0.0\n"
 "POT-Creation-Date: 2011-02-05 11:54-0400\n"
-"PO-Revision-Date: 2010-11-11 22:28+0100\n"
+"PO-Revision-Date: 2011-02-10 20:11+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -40,7 +40,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.6.1\n"
+"X-Generator: Virtaal 0.7.0-beta4\n"
+"X-Project-Style: default\n"
 
 # type: =head1
 #. type: =head1
@@ -1726,7 +1727,6 @@ msgstr ""
 
 #. type: textblock
 #: dh:18
-#, fuzzy
 #| msgid ""
 #| "B<dh> runs a sequence of debhelper commands. The supported I<sequence>s "
 #| "correspond to the targets of a F<debian/rules> file: B<build>, B<clean>, "
@@ -1738,12 +1738,12 @@ msgid ""
 "B<binary-arch>, B<binary-indep>, and B<binary>."
 msgstr ""
 "B<dh> ejecuta una secuencia de órdenes de debhelper. Las I<secuencias> "
-"aceptadas se corresponden con los objetivos de un fichero F<debian/rules>: "
-"B<build>, B<clean>, B<install>, B<binary-arch>, B<binary-indep> y B<binary>."
+"aceptadas se corresponden con los objetivos de un fichero F<debian/rules>: B"
+"<build-arch>, B<build-indep>, B<build>, B<clean>, B<install-indep>, B"
+"<install-arch>, B<install>, B<binary-arch>, B<binary-indep>, y B<binary>."
 
 #. type: textblock
 #: dh:23
-#, fuzzy
 #| msgid ""
 #| "Commands in the B<binary-indep> sequence are passed the B<-i> option to "
 #| "ensure they only work on binary independent packages, and commands in the "
@@ -1757,9 +1757,10 @@ msgid ""
 "ensure they only work on architecture dependent packages."
 msgstr ""
 "La opción B<-i> se introduce a las órdenes en la secuencia B<binary-indep> "
-"para asegurar que sólo actúan sobre paquetes binarios independientes, y la "
-"opción B<-a> se introduce a órdenes en la secuencia B<binary-arch> para "
-"asegurar que sólo actúan sobre paquetes dependientes de la arquitectura."
+"para asegurar que sólo actúan sobre paquetes independientes de la "
+"arquitectura, y la opción B<-a> se introduce a órdenes en las secuencias B"
+"<build-arch>, B<install-arch> y B<binary-arch> para asegurar que sólo actúan "
+"sobre paquetes dependientes de la arquitectura."
 
 #. type: textblock
 #: dh:29
@@ -2280,7 +2281,7 @@ msgstr ""
 
 #. type: verbatim
 #: dh:236
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid ""
 #| "\toverride_dh_fixperms:\n"
 #| "\t\tdh_fixperms\n"
@@ -2298,7 +2299,7 @@ msgid ""
 msgstr ""
 "\toverride_dh_fixperms:\n"
 "\t\tdh_fixperms\n"
-"\tifneq (,$(findstring foo, $(shell dh_listpackages)))\n"
+"\tifneq (,$(filter foo, $(shell dh_listpackages)))\n"
 "\t\tchmod 4755 debian/foo/usr/bin/foo\n"
 "\tendif\n"
 "\n"
@@ -3156,7 +3157,6 @@ msgstr ""
 # type: textblock
 #. type: textblock
 #: dh_compress:24
-#, fuzzy
 #| msgid ""
 #| "By default, B<dh_compress> compresses files that Debian policy mandates "
 #| "should be compressed, namely all files in F<usr/share/info>, F<usr/share/"
@@ -3175,10 +3175,10 @@ msgstr ""
 "Por omisión, B<dh_compress> comprime los ficheros que las normas de Debian "
 "obligan a comprimir, es decir, todos los ficheros en F<usr/share/info>, "
 "F<usr/share/man>, ficheros en F<usr/share/doc> mayores de 4k, (excepto el "
-"fichero F<copyright>, ficheros F<.html> y F<.css>, y ficheros que ya "
-"parezcan estar comprimidos basándose en sus extensiones), y todos los "
-"ficheros F<changelog>. Además de los tipos de letra PCF debajo de F<usr/"
-"share/fonts/X11/>."
+"fichero F<copyright>, ficheros F<.html>, y otros ficheros web, de imágenes y "
+"otros que parezcan estar comprimidos basándose en sus extensiones), y todos "
+"los ficheros F<changelog>. Además de los tipos de letra PCF debajo de "
+"F<usr/share/fonts/X11/>."
 
 #. type: =item
 #: dh_compress:35
@@ -4650,6 +4650,8 @@ msgid ""
 "The copyright file is installed into all packages, unless a more specific "
 "copyright file is available."
 msgstr ""
+"El fichero «copyright» se instala en todos los paquetes a menos exista un "
+"fichero de derechos de autor más específico."
 
 #. type: =item
 #: dh_installdocs:34
@@ -4668,16 +4670,14 @@ msgstr "debian/I<paquete>.TODO"
 
 #. type: textblock
 #: dh_installdocs:40
-#, fuzzy
 #| msgid ""
 #| "Each of these files is automatically installed if present. Use the "
 #| "package specific name if I<package> needs a different version of the file."
 msgid ""
 "Each of these files is automatically installed if present for a I<package>."
 msgstr ""
-"Se instalará automáticamente cada uno de estos ficheros si están presentes. "
-"Use el nombre específico del paquete si el I<paquete> necesita una versión "
-"diferente del fichero."
+"Se instalará automáticamente cada uno de los siguientes ficheros si están "
+"presentes para un I<paquete> dado."
 
 #. type: =item
 #: dh_installdocs:43
@@ -4692,7 +4692,6 @@ msgstr "F<debian/TODO>"
 # type: textblock
 #. type: textblock
 #: dh_installdocs:47
-#, fuzzy
 #| msgid ""
 #| "These files are installed into etc/network/if-*.d/I<package> in the "
 #| "package build directory."
@@ -4700,12 +4699,11 @@ msgid ""
 "These files are installed into the first binary package listed in debian/"
 "control."
 msgstr ""
-"Estos ficheros se instalan en «etc/network/if-*.d/I<paquete>» en el "
-"directorio de construcción del paquete."
+"Estos ficheros se instalan en el primer paquete binario listado en "
+"«debian/control."
 
 #. type: textblock
 #: dh_installdocs:50
-#, fuzzy
 #| msgid ""
 #| "Note that F<debian/README.debian> is also installed as F<README.Debian>, "
 #| "and F<debian/TODO> will be installed as F<TODO.Debian> in non-native "
@@ -4714,9 +4712,9 @@ msgid ""
 "Note that F<README.debian> files are also installed as F<README.Debian>, and "
 "F<TODO> files will be installed as F<TODO.Debian> in non-native packages."
 msgstr ""
-"Tenga en cuenta que F<debian/README.debian> también se instala como F<README."
-"Debian>, y que F<debian/TODO> se instalará como F<TODO.Debian> en paquetes "
-"no nativos."
+"Tenga en cuenta que F<README.debian> también se instala como "
+"F<README.Debian>, y que los ficheros F<TODO> se instalarán como "
+"F<TODO.Debian> en paquetes no nativos."
 
 #. type: =item
 #: dh_installdocs:53
