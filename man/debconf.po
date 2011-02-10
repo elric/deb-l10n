@@ -4,7 +4,7 @@
 #
 # Changes:
 #   - Initial translation
-#       Omar Campagne <ocampagne@gmail.com>, 2010
+#       Omar Campagne <ocampagne@gmail.com>, 2010, 2011.
 #
 #   - Updates
 #       TRANSLATOR
@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debconf 1.5.32\n"
 "POT-Creation-Date: 2010-10-17 18:53+0000\n"
-"PO-Revision-Date: 2010-10-17 21:03+0200\n"
+"PO-Revision-Date: 2011-02-10 19:59+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -39,7 +39,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.6.1\n"
+"X-Generator: Virtaal 0.7.0-beta4\n"
+"X-Project-Style: default\n"
 
 #. type: SH
 #: ../../debconf:3 ../../Debconf/Client/ConfModule.pm:3
@@ -5955,7 +5956,6 @@ msgstr "OTROS SCRIPTS"
 
 #. type: Plain text
 #: debconf-devel.7:502
-#, fuzzy
 #| msgid ""
 #| "Besides the config script and postinst, you can use debconf in any of the "
 #| "other maintainer scripts. Most commonly, you'll be using debconf in your "
@@ -5971,7 +5971,7 @@ msgid ""
 msgstr ""
 "Aparte del script «config» y «postinst», puede usar debconf en cualquier "
 "otro script de encargado de paquetes. Habitualmente, usará debconf en su "
-"«postrm» para invocar la orden «PURGE» cuando se elimine su paquete y así "
+"«postrm» para invocar la orden «PURGE» cuando se purgue su paquete y así "
 "eliminar sus entradas de la base de datos debconf. (Por cierto, está "
 "configurado automáticamente mediante B<dh_installdebconf>(1).)"
 
@@ -6211,7 +6211,6 @@ msgstr "B<DEBCONF_C_VALUES>"
 
 #. type: Plain text
 #: debconf-devel.7:599
-#, fuzzy
 #| msgid ""
 #| "If this environment variable is set to 'true', the frontend will display "
 #| "the values in Choices-C field (if present) of select and multiselect "
@@ -7113,7 +7112,6 @@ msgstr ""
 
 #. type: Plain text
 #: debconf-devel.7:958
-#, fuzzy
 #| msgid ""
 #| "Debconf sets DEBCONF_RECONFIGURE=1 before running postinst scripts, so a "
 #| "postinst script that needs to avoid some expensive operation when "
@@ -7138,7 +7136,7 @@ msgstr ""
 "romper todos los «postinst» que usan debconf es difícil. La vía para "
 "abandonar este arreglo es animar a la gente a que escriban ficheros "
 "«postinst» que acepten «reconfigure», y una vez que todos lo hagan, empezar "
-"a introducir esa variable."
+"a introducir ese parámetro."
 
 #. type: Plain text
 #: debconf-devel.7:961
