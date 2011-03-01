@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debconf 1.5.32\n"
 "POT-Creation-Date: 2010-10-17 18:53+0000\n"
-"PO-Revision-Date: 2011-02-10 19:59+0100\n"
+"PO-Revision-Date: 2011-02-26 11:28+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -54,11 +54,13 @@ msgstr ""
 msgid "NAME"
 msgstr "NOMBRE"
 
+# sfsadsad
 #. type: textblock
 #: ../../debconf:5
 msgid "debconf - run a debconf-using program"
 msgstr "debconf - Ejecuta un programa que hace uso de debconf"
 
+# asdasdasdas
 #. type: SH
 #: ../../debconf:9 ../../Debconf/Client/ConfModule.pm:7
 #: ../../debconf-apt-progress:7 ../../debconf-escape:7
