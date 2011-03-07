@@ -21,11 +21,12 @@
 # /usr/share/doc/po-debconf/README-trans
 # o http://www.debian.org/intl/l10n/po-debconf/README-trans
 # Omar Campagne, 2011.
+# Omar Campagne <ocampagne@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: sensible-utils 0.0.4\n"
 "POT-Creation-Date: 2010-11-14 01:14-0500\n"
-"PO-Revision-Date: 2011-03-01 18:25+0100\n"
+"PO-Revision-Date: 2011-03-03 02:15+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -47,7 +48,7 @@ msgstr "SENSIBLE-EDITOR"
 #: ../sensible-editor.1:2
 #, no-wrap
 msgid "14 Nov 2010"
-msgstr ""
+msgstr "14 de noviembre de 2010"
 
 # type: TH
 #. type: TH
@@ -114,6 +115,11 @@ msgid ""
 "Programs in Debian can use these scripts as their default editor, pager, or "
 "web browser or emulate their behavior."
 msgstr ""
+"B<sensible-editor>, B<sensible-pager> y B<sensible-browser> realizan las "
+"decisiones adecuadas sobre qué editor, paginador o navegador de Internet "
+"invocar, respectivamente. Los programas en Debian pueden usar estos scripts "
+"como su editor, paginador o explorador predeterminado, o emular su "
+"comportamiento."
 
 # type: SH
 #. type: SH
