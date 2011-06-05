@@ -1,0 +1,745 @@
+# software-center po translation to Spanish
+# Copyright (C) 2011 Software in the Public Interest
+# This file is distributed under the same license as the software-center package.
+#
+# Changes:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com> 2011
+#
+#   - Updates
+#       TRANSLATOR
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+msgid ""
+msgstr ""
+"Project-Id-Version: software-center 2.0.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-11-21 21:04+0100\n"
+"PO-Revision-Date: 2011-03-24 11:22+0100\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.0-beta4\n"
+"X-Launchpad-Export-Date: 2010-11-21 19:32+0000\n"
+"X-Project-Style: default\n"
+
+#: ../data/ui/SoftwareCenter.ui.h:1
+msgid "&#xA9;2009-2010 Canonical"
+msgstr "&#xA9;2009-2010 Canonical"
+
+#: ../data/ui/SoftwareCenter.ui.h:2
+msgid "Copy _Web Link"
+msgstr "Copiar enlace de _web"
+
+#: ../data/ui/SoftwareCenter.ui.h:3
+msgid "Rebuilding application catalog..."
+msgstr "Reconstruyendo el catálogo de aplicaciones..."
+
+#: ../data/ui/SoftwareCenter.ui.h:4
+msgid "Search..."
+msgstr "Buscar..."
+
+#: ../data/ui/SoftwareCenter.ui.h:5
+msgid "Software Center _Help"
+msgstr "Ay_uda del Centro de software"
+
+#: ../data/ui/SoftwareCenter.ui.h:6
+msgid "_All Software"
+msgstr "Todo el softw_are"
+
+#: ../data/ui/SoftwareCenter.ui.h:7
+msgid "_Canonical-Maintained Software"
+msgstr "Software mantenido por _Canonical"
+
+#: ../data/ui/SoftwareCenter.ui.h:8
+msgid "_Edit"
+msgstr "_Editar"
+
+#: ../data/ui/SoftwareCenter.ui.h:9
+msgid "_File"
+msgstr "_Archivo"
+
+#: ../data/ui/SoftwareCenter.ui.h:10
+msgid "_Help"
+msgstr "Ay_uda"
+
+#: ../data/ui/SoftwareCenter.ui.h:11
+msgid "_Install"
+msgstr "_Instalar"
+
+#: ../data/ui/SoftwareCenter.ui.h:12
+msgid "_Software Sources..."
+msgstr "_Orígenes del software..."
+
+#: ../data/ui/SoftwareCenter.ui.h:13
+msgid "_View"
+msgstr "_Ver"
+
+#: ../data/ubuntu-software-center.desktop.in.h:1
+msgid ""
+"Lets you choose from thousands of free applications available for Ubuntu"
+msgstr ""
+"Le permite elegir entre miles de aplicaciones libres disponibles para Ubuntu"
+
+#: ../data/ubuntu-software-center.desktop.in.h:2
+#: ../data/unbranded-software-center.desktop.in.h:2
+#: ../softwarecenter/distro/__init__.py:39
+msgid "Software Center"
+msgstr "Centro de software"
+
+#: ../data/ubuntu-software-center.desktop.in.h:3
+#: ../softwarecenter/distro/Ubuntu.py:39
+msgid "Ubuntu Software Center"
+msgstr "Centro de software de Ubuntu"
+
+#: ../data/unbranded-software-center.desktop.in.h:1
+msgid ""
+"Lets you choose from thousands of free applications available for your "
+"system "
+msgstr ""
+"Le permite elegir entre miles de aplicaciones libres disponibles para su "
+"sistema"
+
+#: ../data/software-center.menu.in.h:1
+msgid "3D"
+msgstr "3D"
+
+#: ../data/software-center.menu.in.h:2
+msgid "Accessories"
+msgstr "Accesorios"
+
+#: ../data/software-center.menu.in.h:3
+msgid "Arcade"
+msgstr "Arcade"
+
+#: ../data/software-center.menu.in.h:4
+msgid "Astronomy"
+msgstr "Astronomía"
+
+#: ../data/software-center.menu.in.h:5
+msgid "Biology"
+msgstr "Biología"
+
+#: ../data/software-center.menu.in.h:6
+msgid "Board Games"
+msgstr "Juegos de mesa"
+
+#: ../data/software-center.menu.in.h:7
+msgid "Card Games"
+msgstr "Juegos de cartas"
+
+#: ../data/software-center.menu.in.h:8
+msgid "Chat"
+msgstr "Charla"
+
+#: ../data/software-center.menu.in.h:9
+msgid "Chemistry"
+msgstr "Química"
+
+#: ../data/software-center.menu.in.h:10
+msgid "Computer Science &amp; Robotics"
+msgstr "Computación y robótica"
+
+#: ../data/software-center.menu.in.h:11
+msgid "Debugging"
+msgstr "Depuración"
+
+#: ../data/software-center.menu.in.h:12
+msgid "Developer Tools"
+msgstr "Herramientas para desarrolladores"
+
+#: ../data/software-center.menu.in.h:13
+msgid "Drawing"
+msgstr "Dibujo"
+
+#: ../data/software-center.menu.in.h:14
+msgid "Education"
+msgstr "Educación"
+
+#: ../data/software-center.menu.in.h:15
+msgid "Electronics"
+msgstr "Electrónica"
+
+#: ../data/software-center.menu.in.h:16
+msgid "Engineering"
+msgstr "Ingeniería"
+
+#: ../data/software-center.menu.in.h:17
+msgid "File Sharing"
+msgstr "Compartir archivos"
+
+#: ../data/software-center.menu.in.h:18
+msgid "Fonts"
+msgstr "Tipografías"
+
+#: ../data/software-center.menu.in.h:19
+msgid "Games"
+msgstr "Juegos"
+
+#: ../data/software-center.menu.in.h:20
+msgid "Geography"
+msgstr "Geografía"
+
+#: ../data/software-center.menu.in.h:21
+msgid "Geology"
+msgstr "Geología"
+
+#: ../data/software-center.menu.in.h:22
+msgid "Graphic Interface Design"
+msgstr "Diseño de interfaz gráfica"
+
+#: ../data/software-center.menu.in.h:23
+msgid "Graphics"
+msgstr "Gráficos"
+
+#: ../data/software-center.menu.in.h:24
+msgid "Haskell"
+msgstr "Haskell"
+
+#: ../data/software-center.menu.in.h:25
+msgid "IDEs"
+msgstr "IDE"
+
+#: ../data/software-center.menu.in.h:26
+msgid "Internet"
+msgstr "Internet"
+
+#: ../data/software-center.menu.in.h:27
+msgid "Java"
+msgstr "Java"
+
+#: ../data/software-center.menu.in.h:28
+msgid "Libraries"
+msgstr "Bibliotecas"
+
+#: ../data/software-center.menu.in.h:29
+msgid "Lisp"
+msgstr "Lisp"
+
+#: ../data/software-center.menu.in.h:30
+msgid "Localization"
+msgstr "Localización"
+
+#: ../data/software-center.menu.in.h:31
+msgid "Mail"
+msgstr "Correo"
+
+#: ../data/software-center.menu.in.h:32
+msgid "Mathematics"
+msgstr "Matemáticas"
+
+#: ../data/software-center.menu.in.h:33
+msgid "Mono/CLI"
+msgstr "Mono/CLI"
+
+#: ../data/software-center.menu.in.h:34
+msgid "Multimedia"
+msgstr "Multimedia"
+
+#: ../data/software-center.menu.in.h:35
+msgid "OCaml"
+msgstr "OCaml"
+
+#: ../data/software-center.menu.in.h:36
+msgid "Office"
+msgstr "Oficina"
+
+#: ../data/software-center.menu.in.h:37
+msgid "Painting &amp; Editing"
+msgstr "Pintura y edición"
+
+#: ../data/software-center.menu.in.h:38
+msgid "Perl"
+msgstr "Perl"
+
+#: ../data/software-center.menu.in.h:39
+msgid "Photography"
+msgstr "Fotografía"
+
+#: ../data/software-center.menu.in.h:40
+msgid "Physics"
+msgstr "Física"
+
+#: ../data/software-center.menu.in.h:41
+msgid "Profiling"
+msgstr "Perfilado"
+
+#: ../data/software-center.menu.in.h:42
+msgid "Publishing"
+msgstr "Maquetación"
+
+#: ../data/software-center.menu.in.h:43
+msgid "Puzzles"
+msgstr "Rompecabezas"
+
+#: ../data/software-center.menu.in.h:44
+msgid "Python"
+msgstr "Python"
+
+#: ../data/software-center.menu.in.h:45
+msgid "Role Playing"
+msgstr "Juegos de rol"
+
+#: ../data/software-center.menu.in.h:46
+msgid "Ruby"
+msgstr "Ruby"
+
+#: ../data/software-center.menu.in.h:47
+msgid "Scanning &amp; OCR"
+msgstr "Escáner y OCR"
+
+#: ../data/software-center.menu.in.h:48
+msgid "Science &amp; Engineering"
+msgstr "Ciencia e Ingeniería"
+
+#: ../data/software-center.menu.in.h:49
+msgid "Simulation"
+msgstr "Simulación"
+
+#: ../data/software-center.menu.in.h:50
+msgid "Sports"
+msgstr "Deportes"
+
+#: ../data/software-center.menu.in.h:51
+msgid "System"
+msgstr "Sistema"
+
+#: ../data/software-center.menu.in.h:52
+msgid "Themes &amp; Tweaks"
+msgstr "Temas y ajustes"
+
+#: ../data/software-center.menu.in.h:53
+msgid "Universal Access"
+msgstr "Acceso universal"
+
+#: ../data/software-center.menu.in.h:54
+msgid "Version Control"
+msgstr "Control de versiones"
+
+#: ../data/software-center.menu.in.h:55
+msgid "Viewers"
+msgstr "Visores"
+
+#: ../data/software-center.menu.in.h:56
+msgid "Web Browsers"
+msgstr "Navegadores web"
+
+#: ../data/software-center.menu.in.h:57
+msgid "Web Development"
+msgstr "Desarrollo web"
+
+#: ../data/featured.menu.in.h:1
+msgid "Featured Applications"
+msgstr "Aplicaciones destacadas"
+
+#: ../softwarecenter/app.py:148
+msgid "Sorry, can not open the software database"
+msgstr "No se puede abrir la base de datos de software"
+
+#: ../softwarecenter/app.py:149
+msgid "Please re-install the 'software-center' package."
+msgstr "Vuelva a instalar el paquete «software-center»"
+
+#: ../softwarecenter/backend/aptd.py:219
+msgid "Error"
+msgstr "Error"
+
+#: ../softwarecenter/backend/channel.py:92
+msgid "Canonical Partners"
+msgstr "Socios de Canonical"
+
+#: ../softwarecenter/backend/channel.py:94
+msgid "Other"
+msgstr "Otros"
+
+#. TRANSLATORS: List of "grey-listed" words sperated with ";"
+#. Do not translate this list directly. Instead,
+#. provide a list of words in your language that people are likely
+#. to include in a search but that should normally be ignored in
+#. the search.
+#: ../softwarecenter/db/database.py:39
+msgid "app;application;package;program;programme;suite;tool"
+msgstr "app;aplicación;paquete;programa;programe;suite:herramienta"
+
+#. if we don't have a package and it has no arch/component its
+#. not available for us
+#: ../softwarecenter/db/database.py:171
+#: ../softwarecenter/view/appdetailsview.py:212
+#, python-format
+msgid "Sorry, '%s' is not available for this type of computer (%s)."
+msgstr "«%s» no está disponible para este tipo de sistema (%s)."
+
+#: ../softwarecenter/distro/__init__.py:45
+msgid ""
+"Lets you choose from thousands of free applications available for your "
+"system."
+msgstr ""
+"Le permite elegir entre miles de aplicaciones libres disponibles para para "
+"su sistema."
+
+#: ../softwarecenter/distro/Debian.py:44
+msgid "Provided by Debian"
+msgstr "Suministrado por Debian"
+
+#: ../softwarecenter/distro/Debian.py:47 ../softwarecenter/distro/Ubuntu.py:53
+#, python-format
+msgid "To remove %s, these items must be removed as well:"
+msgstr "Para eliminar %s, también se deben desinstalar estos elementos:"
+
+#: ../softwarecenter/distro/Debian.py:49 ../softwarecenter/distro/Ubuntu.py:55
+msgid "Remove All"
+msgstr "Eliminar todo"
+
+#: ../softwarecenter/distro/Debian.py:56 ../softwarecenter/distro/Ubuntu.py:62
+#, python-format
+msgid ""
+"If you uninstall %s, future updates will not include new items in <b>%s</b> "
+"set. Are you sure you want to continue?"
+msgstr ""
+"Si desinstala %s, las futuras actualizaciones no incluirán elementos del "
+"conjunto <b>%s</b>. ¿Desea continuar?"
+
+#: ../softwarecenter/distro/Debian.py:59 ../softwarecenter/distro/Debian.py:70
+#: ../softwarecenter/distro/Ubuntu.py:65 ../softwarecenter/distro/Ubuntu.py:76
+msgid "Remove Anyway"
+msgstr "Desinstalar de todos modos"
+
+#: ../softwarecenter/distro/Debian.py:66
+#, python-format
+msgid ""
+"%s is a core application in Debian. Uninstalling it may cause future "
+"upgrades to be incomplete. Are you sure you want to continue?"
+msgstr ""
+"%s es una aplicación esencial en Debian. Desinstalarla puede provocar que "
+"las futuras actualizaciones queden incompletas. ¿Seguro que desea continuar?"
+
+#. generic message
+#: ../softwarecenter/distro/Debian.py:79 ../softwarecenter/distro/Ubuntu.py:85
+msgid "Installed"
+msgstr "Instalado"
+
+#: ../softwarecenter/distro/Debian.py:91 ../softwarecenter/distro/Ubuntu.py:97
+msgid "Unknown"
+msgstr "Desconocido"
+
+#: ../softwarecenter/distro/Debian.py:93 ../softwarecenter/distro/Ubuntu.py:99
+msgid "Open Source"
+msgstr "Código abierto"
+
+#: ../softwarecenter/distro/Debian.py:95
+msgid "Open Source with proprietary parts"
+msgstr "Software libre con componentes privativos"
+
+#: ../softwarecenter/distro/Debian.py:97
+#: ../softwarecenter/distro/Ubuntu.py:101
+msgid "Proprietary"
+msgstr "Privativo"
+
+#: ../softwarecenter/distro/Debian.py:98
+#: ../softwarecenter/distro/Ubuntu.py:102
+#, python-format
+msgid "License: %s"
+msgstr "Licencia: %s"
+
+#: ../softwarecenter/distro/Ubuntu.py:42
+msgid ""
+"Lets you choose from thousands of free applications available for Ubuntu."
+msgstr ""
+"Permite elegir entre miles de aplicaciones libres disponibles para Ubuntu."
+
+#: ../softwarecenter/distro/Ubuntu.py:50
+msgid "Provided by Ubuntu"
+msgstr "Suministrado por Ubuntu"
+
+#: ../softwarecenter/distro/Ubuntu.py:72
+#, python-format
+msgid ""
+"%s is a core application in Ubuntu. Uninstalling it may cause future "
+"upgrades to be incomplete. Are you sure you want to continue?"
+msgstr ""
+"%s es una aplicación principal de Ubuntu. Desinstalarla podría causar que "
+"futuras actualizaciones queden incompletas. ¿Quiere continuar?"
+
+#. TRANSLATORS: This text will be showed as price of the software
+#. its free
+#: ../softwarecenter/distro/Ubuntu.py:126
+#: ../softwarecenter/view/appdetailsview.py:500
+msgid "Free"
+msgstr "Gratuito"
+
+#: ../softwarecenter/distro/Ubuntu.py:173
+#: ../softwarecenter/distro/Ubuntu.py:185
+#, python-format
+msgid ""
+"Canonical does no longer provide updates for %s in Ubuntu %s. Updates may be "
+"available in a newer version of Ubuntu."
+msgstr ""
+"Canonical ya no proporciona actualizaciones para «%s» en Ubuntu %s. Podrían "
+"aparecer actualizaciones en una próxima versión de Ubuntu."
+
+#: ../softwarecenter/distro/Ubuntu.py:178
+#, python-format
+msgid ""
+"Canonical provides critical updates for %(appname)s until "
+"%(support_end_month_str)s %(support_end_year)s."
+msgstr ""
+"Canonical proporciona actualizaciones críticas para «%(appname)s» hasta "
+"%(support_end_month_str)s de %(support_end_year)s."
+
+#: ../softwarecenter/distro/Ubuntu.py:190
+#, python-format
+msgid ""
+"Canonical provides critical updates supplied by the developers of "
+"%(appname)s until %(support_end_month_str)s %(support_end_year)s."
+msgstr ""
+"Canonical proporciona actualizaciones críticas suministradas por los "
+"desarrolladores de «%(appname)s» hasta %(support_end_month_str)s de "
+"%(support_end_year)s."
+
+#: ../softwarecenter/distro/Ubuntu.py:200
+#, python-format
+msgid ""
+"Canonical does not provide updates for %s. Some updates may be provided by "
+"the third party vendor."
+msgstr ""
+"Canonical no proporciona actualizaciones para «%s». Otros proveedores pueden "
+"suministrar algunas actualizaciones."
+
+#: ../softwarecenter/distro/Ubuntu.py:204
+#, python-format
+msgid "Canonical provides critical updates for %s."
+msgstr "Canonical proporciona actualizaciones críticas para «%s»."
+
+#: ../softwarecenter/distro/Ubuntu.py:206
+#, python-format
+msgid "Canonical provides critical updates supplied by the developers of %s."
+msgstr ""
+"Canonical proporciona actualizaciones críticas proporcionadas por los "
+"desarrolladores de «%s»."
+
+#: ../softwarecenter/distro/Ubuntu.py:209
+#, python-format
+msgid ""
+"Canonical does not provide updates for %s. Some updates may be provided by "
+"the Ubuntu community."
+msgstr ""
+"Canonical no proporciona actualizaciones para «%s». La comunidad de Ubuntu "
+"puede proporcionar algunas actualizaciones."
+
+#: ../softwarecenter/distro/Ubuntu.py:212
+#, python-format
+msgid "Application %s has an unknown maintenance status."
+msgstr "La aplicación %s tiene un estado de mantenimiento desconocido."
+
+#: ../softwarecenter/view/appdetailsview.py:85
+msgid "Description"
+msgstr "Descripción"
+
+#: ../softwarecenter/view/appdetailsview.py:202
+#, python-format
+msgid ""
+"This software is available from the '%s' source, which you are not currently "
+"using."
+msgstr ""
+"Este software está disponible desde el origen «%s», que no se está usando "
+"actualmente."
+
+#: ../softwarecenter/view/appdetailsview.py:207
+msgid ""
+"To show information about this item, the software catalog needs updating."
+msgstr ""
+"Para mostrar información acerca de este elemento, es necesario actualizar el "
+"catálogo de programas."
+
+#: ../softwarecenter/view/appdetailsview.py:264
+#: ../softwarecenter/view/appdetailsview.py:268
+msgid "Application Screenshot"
+msgstr "Captura de pantalla"
+
+#: ../softwarecenter/view/appdetailsview.py:296
+#, python-format
+msgid "Version: %s (%s)"
+msgstr "Versión: %s (%s)"
+
+#: ../softwarecenter/view/appdetailsview.py:311
+msgid "Website"
+msgstr "Sitio web"
+
+#: ../softwarecenter/view/appdetailsview.py:317
+#, python-format
+msgid "Price: %s"
+msgstr "Precio: %s"
+
+#: ../softwarecenter/view/appdetailsview.py:331
+msgid "No screenshot available"
+msgstr "No hay una captura de pantalla disponible"
+
+#: ../softwarecenter/view/appdetailsview.py:369
+#, python-format
+msgid "%s - Screenshot"
+msgstr "%s - Captura de pantalla"
+
+#: ../softwarecenter/view/appdetailsview.py:492
+#: ../softwarecenter/view/appview.py:1146
+msgid "Remove"
+msgstr "Eliminar"
+
+#. 32, the pixbufoverlay height
+#: ../softwarecenter/view/appdetailsview.py:498
+#: ../softwarecenter/view/appview.py:1146
+msgid "Install"
+msgstr "Instalar"
+
+#: ../softwarecenter/view/appdetailsview.py:501
+msgid "Install - Free"
+msgstr "Instalar - Libre"
+
+#. FIXME: deal with the EULA stuff
+#. FIXME: use a proper message here, but we are in string freeze
+#: ../softwarecenter/view/appdetailsview.py:515
+#: ../softwarecenter/view/appdetailsview.py:520
+msgid "Use This Source"
+msgstr "Usar este origen"
+
+#: ../softwarecenter/view/appdetailsview.py:523
+msgid "Update Now"
+msgstr "Actualizar ahora"
+
+# estaba traducido como «revisión», crítica me parece
+# más acertado
+#. draw number of reviews
+#: ../softwarecenter/view/appview.py:657
+#, python-format
+msgid "%s review"
+msgid_plural "%s reviews"
+msgstr[0] "%s reseña"
+msgstr[1] "%s reseñas"
+
+#: ../softwarecenter/view/appview.py:1147
+msgid "More Info"
+msgstr "Más información"
+
+#. home button
+#: ../softwarecenter/view/availablepane.py:123
+#: ../softwarecenter/view/viewswitcher.py:201
+msgid "Get Software"
+msgstr "Obtener programas"
+
+#: ../softwarecenter/view/availablepane.py:242
+#: ../softwarecenter/view/installedpane.py:79
+#: ../softwarecenter/view/channelpane.py:86
+msgid "Search Results"
+msgstr "Resultados de la búsqueda"
+
+#: ../softwarecenter/view/availablepane.py:290
+#: ../softwarecenter/view/installedpane.py:158
+#: ../softwarecenter/view/channelpane.py:199
+#, python-format
+msgid "%s matching item"
+msgid_plural "%s matching items"
+msgstr[0] "%s coincidencia"
+msgstr[1] "%s coincidencias"
+
+#: ../softwarecenter/view/availablepane.py:294
+#: ../softwarecenter/view/channelpane.py:203
+#, python-format
+msgid "%s item available"
+msgid_plural "%s items available"
+msgstr[0] "%s elemento disponible"
+msgstr[1] "%s elementos disponibles"
+
+#: ../softwarecenter/view/catview.py:82 ../softwarecenter/view/catview.py:88
+msgid "Departments"
+msgstr "Secciones"
+
+#: ../softwarecenter/view/dialogs.py:45
+msgid "Details"
+msgstr "Detalles"
+
+#: ../softwarecenter/view/dialogs.py:83
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. FIXME: make this a generic pkgview widget
+#: ../softwarecenter/view/dialogs.py:96
+msgid "Dependency"
+msgstr "Dependencia"
+
+#: ../softwarecenter/view/installedpane.py:84
+#: ../softwarecenter/view/viewswitcher.py:207
+msgid "Installed Software"
+msgstr "Software instalado"
+
+#: ../softwarecenter/view/installedpane.py:162
+#, python-format
+msgid "%s item installed"
+msgid_plural "%s items installed"
+msgstr[0] "%s elemento instalado"
+msgstr[1] "%s elementos instalados"
+
+#: ../softwarecenter/view/viewswitcher.py:77
+msgid "Software sources"
+msgstr "Orígenes del software"
+
+#: ../softwarecenter/view/viewswitcher.py:227
+#: ../softwarecenter/view/viewswitcher.py:232
+#, python-format
+msgid "In Progress (%i)"
+msgstr "En progreso (%i)"
+
+#: ../softwarecenter/view/widgets/backforward.py:61
+msgid "History Navigation"
+msgstr "Historial de navegación"
+
+#: ../softwarecenter/view/widgets/backforward.py:62
+msgid "Navigate forwards and backwards."
+msgstr "Navegue hacia delante y hacia atrás."
+
+#: ../softwarecenter/view/widgets/backforward.py:76
+#: ../softwarecenter/view/widgets/backforward.py:90
+msgid "Back Button"
+msgstr "Botón de retroceso"
+
+#: ../softwarecenter/view/widgets/backforward.py:77
+#: ../softwarecenter/view/widgets/backforward.py:91
+msgid "Navigates back."
+msgstr "Vuelve al punto anterior."
+
+#: ../softwarecenter/view/widgets/backforward.py:82
+#: ../softwarecenter/view/widgets/backforward.py:96
+msgid "Forward Button"
+msgstr "Botón de avance"
+
+#: ../softwarecenter/view/widgets/backforward.py:83
+#: ../softwarecenter/view/widgets/backforward.py:97
+msgid "Navigates forward."
+msgstr "Lleva al siguiente punto."
+
+#: ../softwarecenter/view/widgets/pathbar_gtk_atk.py:54
+msgid "You are here:"
+msgstr "Usted está aquí:"
+
+#: ../softwarecenter/view/widgets/pathbar_gtk_atk.py:445
+#, python-format
+msgid "Navigates to the %s page."
+msgstr "Navegue a la página %s."

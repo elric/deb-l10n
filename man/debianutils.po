@@ -29,10 +29,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: debianutils 3.4.4\n"
+"Project-Id-Version: debianutils 3.4.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-18 15:43-0500\n"
-"PO-Revision-Date: 2011-03-12 00:31+0100\n"
+"POT-Creation-Date: 2011-05-12 22:52-0300\n"
+"PO-Revision-Date: 2011-05-17 20:12+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -40,28 +40,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.0-beta4\n"
+"X-Generator: Virtaal 0.7.0-beta5\n"
 "X-Project-Style: default\n"
 
 #. type: TH
 #: ../add-shell.8:1
+#, no-wrap
 msgid "ADD-SHELL"
 msgstr "ADD-SHELL"
 
 #. type: TH
 #: ../add-shell.8:1
-#: ../remove-shell.8:1
-msgid "7 Apr 2005"
-msgstr "7 de abril de 2005"
+#, no-wrap
+msgid "12 May 2011"
+msgstr "12 de mayo de 2011"
 
 #. type: SH
-#: ../add-shell.8:2
-#: ../installkernel.8:2
-#: ../remove-shell.8:2
-#: ../run-parts.8:9
-#: ../savelog.8:3
-#: ../tempfile.1:3
-#: ../which.1:3
+#: ../add-shell.8:2 ../installkernel.8:2 ../remove-shell.8:2 ../run-parts.8:9 ../savelog.8:3 ../tempfile.1:3 ../which.1:3
+#, no-wrap
 msgid "NAME"
 msgstr "NOMBRE"
 
@@ -71,13 +67,8 @@ msgid "add-shell - add shells to the list of valid login shells"
 msgstr "add-shell - Añade consolas a la lista de consolas de sesión aceptadas"
 
 #. type: SH
-#: ../add-shell.8:4
-#: ../installkernel.8:4
-#: ../remove-shell.8:4
-#: ../run-parts.8:11
-#: ../savelog.8:5
-#: ../tempfile.1:5
-#: ../which.1:5
+#: ../add-shell.8:4 ../installkernel.8:4 ../remove-shell.8:4 ../run-parts.8:11 ../savelog.8:5 ../tempfile.1:5 ../which.1:5
+#, no-wrap
 msgid "SYNOPSIS"
 msgstr "SINOPSIS"
 
@@ -87,22 +78,17 @@ msgid "B<add-shell> I<shellname> [I<shellname>...]"
 msgstr "B<add-shell> I<nombre-consola> [I<nombre-consola>...]"
 
 #. type: SH
-#: ../add-shell.8:8
-#: ../installkernel.8:6
-#: ../remove-shell.8:8
-#: ../run-parts.8:20
-#: ../savelog.8:9
-#: ../tempfile.1:9
-#: ../which.1:7
+#: ../add-shell.8:8 ../installkernel.8:6 ../remove-shell.8:8 ../run-parts.8:20 ../savelog.8:9 ../tempfile.1:9 ../which.1:7
+#, no-wrap
 msgid "DESCRIPTION"
 msgstr "DESCRIPCIÓN"
 
 #. type: Plain text
 #: ../add-shell.8:13
 msgid ""
-"B<add-shell> copy I</etc/shells> to I</etc/shells.tmp>, add the given shells "
-"to this file if they are not already present, and copy this temporary file "
-"back to I</etc/shells>."
+"B<add-shell> copies I</etc/shells> to I</etc/shells.tmp>, adds the given "
+"shells to this file if they are not already present, and copies this "
+"temporary file back to I</etc/shells>."
 msgstr ""
 "B<add-shell> copia I</etc/shells> a I</etc/shells.tmp>, añade las consolas a "
 "este fichero si no están presentes, y copia este fichero temporal  a "
@@ -114,31 +100,31 @@ msgid "The shells must be provided by their full pathnames."
 msgstr "Las consolas se deben introducir con sus nombres de ruta completos."
 
 #. type: SH
-#: ../add-shell.8:15
-#: ../remove-shell.8:13
-#: ../savelog.8:158
-#: ../tempfile.1:89
+#: ../add-shell.8:15 ../remove-shell.8:13 ../savelog.8:158 ../tempfile.1:89
+#, no-wrap
 msgid "SEE ALSO"
 msgstr "VÉASE TAMBIÉN"
 
 #. type: Plain text
-#: ../add-shell.8:16
-#: ../remove-shell.8:14
+#: ../add-shell.8:16 ../remove-shell.8:14
 msgid "B<shells>(5)"
 msgstr "B<shells>(5)"
 
 #. type: TH
 #: ../installkernel.8:1
+#, no-wrap
 msgid "INSTALLKERNEL"
 msgstr "INSTALLKERNEL"
 
 #. type: TH
 #: ../installkernel.8:1
+#, no-wrap
 msgid "7 Jan 2001"
 msgstr "7 de enero de 2001"
 
 #. type: TH
 #: ../installkernel.8:1
+#, no-wrap
 msgid "Debian Linux"
 msgstr "Debian Linux"
 
@@ -179,9 +165,8 @@ msgstr ""
 ""
 
 #. type: SH
-#: ../installkernel.8:22
-#: ../savelog.8:151
-#: ../tempfile.1:73
+#: ../installkernel.8:22 ../savelog.8:151 ../tempfile.1:73
+#, no-wrap
 msgid "BUGS"
 msgstr "FALLOS"
 
@@ -198,8 +183,15 @@ msgstr ""
 
 #. type: TH
 #: ../remove-shell.8:1
+#, no-wrap
 msgid "REMOVE-SHELL"
 msgstr "REMOVE-SHELL"
+
+#. type: TH
+#: ../remove-shell.8:1
+#, no-wrap
+msgid "7 Apr 2005"
+msgstr "7 de abril de 2005"
 
 #. type: Plain text
 #: ../remove-shell.8:4
@@ -225,19 +217,19 @@ msgstr ""
 
 #. type: TH
 #: ../run-parts.8:8
+#, no-wrap
 msgid "RUN-PARTS"
 msgstr "RUN-PARTS"
 
 #. type: TH
 #: ../run-parts.8:8
+#, no-wrap
 msgid "14 Nov 2010"
 msgstr "14 de noviembre de 2010"
 
 #. type: TH
-#: ../run-parts.8:8
-#: ../savelog.8:2
-#: ../tempfile.1:2
-#: ../which.1:2
+#: ../run-parts.8:8 ../savelog.8:2 ../tempfile.1:2 ../which.1:2
+#, no-wrap
 msgid "Debian"
 msgstr "Debian"
 
@@ -287,11 +279,12 @@ msgstr ""
 #. type: Plain text
 #: ../run-parts.8:38
 msgid ""
-"If the --lsbsysinit option is given, then the names must not end in .dpkg-"
-"old or .dpkg-dist or .dpkg-new or .dpkg-tmp, and must belong to one or more "
-"of the following namespaces: the LANANA-assigned namespace (^[a-z0-9]+$); "
-"the LSB hierarchical and reserved namespaces (^_?([a-z0-9_.]+-)+[a-z0-9]+$); "
-"and the Debian cron script namespace (^[a-zA-Z0-9_-]+$)."
+"If the --lsbsysinit option is given, then the names must not end in "
+".dpkg-old or .dpkg-dist or .dpkg-new or .dpkg-tmp, and must belong to one or "
+"more of the following namespaces: the LANANA-assigned namespace "
+"(^[a-z0-9]+$); the LSB hierarchical and reserved namespaces "
+"(^_?([a-z0-9_.]+-)+[a-z0-9]+$); and the Debian cron script namespace "
+"(^[a-zA-Z0-9_-]+$)."
 msgstr ""
 "SI se introduce la opción «--lsbsysinit», los nombres no pueden finalizar "
 "con «.dpkg-old», «.dpkg-dist», «.dpkg-new» o «dpkg-tmp». Además, deben "
@@ -319,15 +312,14 @@ msgstr ""
 "opción «--reverse», en cuyo caso se ejecutan en orden inverso."
 
 #. type: SH
-#: ../run-parts.8:46
-#: ../savelog.8:92
-#: ../tempfile.1:46
-#: ../which.1:14
+#: ../run-parts.8:46 ../savelog.8:92 ../tempfile.1:46 ../which.1:14
+#, no-wrap
 msgid "OPTIONS"
 msgstr "OPCIONES"
 
 #. type: TP
 #: ../run-parts.8:47
+#, no-wrap
 msgid "B<--test>"
 msgstr "B<--test>"
 
@@ -340,6 +332,7 @@ msgstr "Muestra los nombres de los scripts que se ejecutarían, sin ejecutarlos.
 
 #. type: TP
 #: ../run-parts.8:51
+#, no-wrap
 msgid "B<--list>"
 msgstr "B<--list>"
 
@@ -355,6 +348,7 @@ msgstr ""
 
 #. type: TP
 #: ../run-parts.8:55
+#, no-wrap
 msgid "B<-v, --verbose>"
 msgstr "B<-v, --verbose>"
 
@@ -367,6 +361,7 @@ msgstr ""
 
 #. type: TP
 #: ../run-parts.8:58
+#, no-wrap
 msgid "B<--report>"
 msgstr "B<--report>"
 
@@ -383,6 +378,7 @@ msgstr ""
 
 #. type: TP
 #: ../run-parts.8:63
+#, no-wrap
 msgid "B<--reverse>"
 msgstr "B<--reverse>"
 
@@ -393,6 +389,7 @@ msgstr "Invierte el orden de ejecución de los scripts"
 
 #. type: TP
 #: ../run-parts.8:66
+#, no-wrap
 msgid "B<--exit-on-error>"
 msgstr "B<--exit-on-error>"
 
@@ -405,6 +402,7 @@ msgstr ""
 
 #. type: TP
 #: ../run-parts.8:69
+#, no-wrap
 msgid "B<--lsbsysinit>"
 msgstr "B<--lsbsysinit>"
 
@@ -415,6 +413,7 @@ msgstr "Utiliza espacios de nombre LSB en lugar del comportamiento clásico."
 
 #. type: TP
 #: ../run-parts.8:72
+#, no-wrap
 msgid "B<--new-session>"
 msgstr "B<--new-session>"
 
@@ -431,6 +430,7 @@ msgstr ""
 
 #. type: TP
 #: ../run-parts.8:77
+#, no-wrap
 msgid "B<--regex=>I<RE>"
 msgstr "B<--regex=>I<expresión-regular>"
 
@@ -446,6 +446,7 @@ msgstr ""
 
 #. type: TP
 #: ../run-parts.8:82
+#, no-wrap
 msgid "B<-u, --umask=>I<umask>"
 msgstr "B<-u, --umask=>I<umask>"
 
@@ -461,6 +462,7 @@ msgstr ""
 
 #. type: TP
 #: ../run-parts.8:89
+#, no-wrap
 msgid "B<-a, --arg=>I<argument>"
 msgstr "B<-a, --arg=>I<argumento>"
 
@@ -475,6 +477,7 @@ msgstr ""
 
 #. type: TP
 #: ../run-parts.8:96
+#, no-wrap
 msgid "B<-->"
 msgstr "B<-->"
 
@@ -490,6 +493,7 @@ msgstr ""
 
 #. type: TP
 #: ../run-parts.8:102
+#, no-wrap
 msgid "B<-h, --help>"
 msgstr "B<-h, --help>"
 
@@ -500,6 +504,7 @@ msgstr "Muestra la información de uso y cierra."
 
 #. type: TP
 #: ../run-parts.8:105
+#, no-wrap
 msgid "B<-V, --version>"
 msgstr "B<-V, --version>"
 
@@ -510,13 +515,13 @@ msgstr "Muestra la versión e información acerca del copyright y cierra."
 
 #. type: SH
 #: ../run-parts.8:109
+#, no-wrap
 msgid "EXAMPLES"
 msgstr "EJEMPLOS"
 
 #. type: Plain text
 #: ../run-parts.8:112
-msgid ""
-"Print the names of all files in /etc that start with `p' and end with `d':"
+msgid "Print the names of all files in /etc that start with `p' and end with `d':"
 msgstr ""
 "Lo siguiente muestra los nombres de todos los ficheros bajo «/etc» que "
 "empiezan con «p», y terminan con «d»."
@@ -528,6 +533,7 @@ msgstr "run-parts --list --regex \\[aq]^p.*d$\\[aq] /etc"
 
 #. type: SH
 #: ../run-parts.8:115
+#, no-wrap
 msgid "COPYRIGHT"
 msgstr "COPYRIGHT"
 
@@ -548,8 +554,7 @@ msgstr "Copyright (C) 1996, 1997, 1998 Guy Maor"
 
 #. type: Plain text
 #: ../run-parts.8:124
-msgid ""
-"Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Clint Adams"
+msgid "Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Clint Adams"
 msgstr ""
 "Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Clint Adams"
 
@@ -558,17 +563,20 @@ msgstr ""
 msgid ""
 "B<run-parts> is free software; see the GNU General Public License version 2 "
 "or later for copying conditions.  There is I<no> warranty."
-msgstr "B<run-parts> es software libre; consulte la versión 2 o posterior de la "
+msgstr ""
+"B<run-parts> es software libre; consulte la versión 2 o posterior de la "
 "Licencia Pública General GNU para condiciones de copia. I<No> hay ninguna "
 "garantía."
 
 #. type: TH
 #: ../savelog.8:2
+#, no-wrap
 msgid "SAVELOG"
 msgstr "SAVELOG"
 
 #. type: TH
 #: ../savelog.8:2
+#, no-wrap
 msgid "30 Jun 2010"
 msgstr "30 de junio de 2010"
 
@@ -591,8 +599,8 @@ msgstr ""
 #. type: Plain text
 #: ../savelog.8:16
 msgid ""
-"The B<savelog> command saves and optionally compresses old copies of files. "
-" Older versions of I<file> are named:"
+"The B<savelog> command saves and optionally compresses old copies of files.  "
+"Older versions of I<file> are named:"
 msgstr ""
 "La orden B<savelog> guarda y, de forma opcional, comprime copias antiguas de "
 "ficheros. Las versiones anteriores del I<fichero> se nombran de la "
@@ -633,6 +641,7 @@ msgstr ""
 
 #. type: IP
 #: ../savelog.8:40
+#, no-wrap
 msgid "1)"
 msgstr "1)"
 
@@ -654,6 +663,7 @@ msgstr ""
 
 #. type: IP
 #: ../savelog.8:60
+#, no-wrap
 msgid "2)"
 msgstr "2)"
 
@@ -669,6 +679,7 @@ msgstr ""
 
 #. type: IP
 #: ../savelog.8:69
+#, no-wrap
 msgid "3)"
 msgstr "3)"
 
@@ -679,6 +690,7 @@ msgstr "El I<fichero> principal se renombra como I<fichero>.I<0>."
 
 #. type: IP
 #: ../savelog.8:75
+#, no-wrap
 msgid "4)"
 msgstr "4)"
 
@@ -695,6 +707,7 @@ msgstr ""
 
 #. type: IP
 #: ../savelog.8:85
+#, no-wrap
 msgid "5)"
 msgstr "5)"
 
@@ -707,6 +720,7 @@ msgstr "Las opciones B<-m>, B<-u> y B<-g> modifican el nuevo I<fichero>.I<0>."
 
 #. type: TP
 #: ../savelog.8:93
+#, no-wrap
 msgid "B<-m mode>"
 msgstr "B<-m modo>"
 
@@ -717,6 +731,7 @@ msgstr "Define el modo para los ficheros de registro, implica B<-t>"
 
 #. type: TP
 #: ../savelog.8:97
+#, no-wrap
 msgid "B<-u user>"
 msgstr "B<-u usuario>"
 
@@ -729,6 +744,7 @@ msgstr ""
 
 #. type: TP
 #: ../savelog.8:101
+#, no-wrap
 msgid "B<-g group>"
 msgstr "B<-g grupo>"
 
@@ -740,6 +756,7 @@ msgstr ""
 
 #. type: TP
 #: ../savelog.8:105
+#, no-wrap
 msgid "B<-c cycle>"
 msgstr "B<-c ciclo>"
 
@@ -754,6 +771,7 @@ msgstr ""
 
 #. type: TP
 #: ../savelog.8:110
+#, no-wrap
 msgid "B<-t>"
 msgstr "B<-t>"
 
@@ -764,6 +782,7 @@ msgstr "Ejecuta «touch», creando un nuevo fichero de registro de eventos"
 
 #. type: TP
 #: ../savelog.8:113
+#, no-wrap
 msgid "B<-l>"
 msgstr "B<-l>"
 
@@ -776,6 +795,7 @@ msgstr ""
 
 #. type: TP
 #: ../savelog.8:116
+#, no-wrap
 msgid "B<-p>"
 msgstr "B<-p>"
 
@@ -786,6 +806,7 @@ msgstr "Preserva el propietario, grupo y permisos del fichero de registro"
 
 #. type: TP
 #: ../savelog.8:119
+#, no-wrap
 msgid "B<-j>"
 msgstr "B<-j>"
 
@@ -796,6 +817,7 @@ msgstr "Comprime con bzip2, en lugar de gzip"
 
 #. type: TP
 #: ../savelog.8:122
+#, no-wrap
 msgid "B<-J>"
 msgstr "B<-J>"
 
@@ -818,6 +840,7 @@ msgstr ""
 
 #. type: TP
 #: ../savelog.8:127
+#, no-wrap
 msgid "B<-1\\ .\\|.\\ -9>"
 msgstr "B<-1\\ .\\|.\\ -9>"
 
@@ -829,6 +852,7 @@ msgstr ""
 
 #. type: TP
 #: ../savelog.8:130
+#, no-wrap
 msgid "B<-C>"
 msgstr "B<-C>"
 
@@ -839,6 +863,7 @@ msgstr "Fuerza la limpieza de ficheros de registro que han completado un ciclo"
 
 #. type: TP
 #: ../savelog.8:133
+#, no-wrap
 msgid "B<-d>"
 msgstr "B<-d>"
 
@@ -849,6 +874,7 @@ msgstr "Usa la fecha estándar al iterar los ficheros"
 
 #. type: TP
 #: ../savelog.8:136
+#, no-wrap
 msgid "B<-D dateformat>"
 msgstr "B<-D formato-fecha>"
 
@@ -861,6 +887,7 @@ msgstr ""
 
 #. type: TP
 #: ../savelog.8:140
+#, no-wrap
 msgid "B<-r>"
 msgstr "B<-r>"
 
@@ -871,6 +898,7 @@ msgstr "Usa I<directorio> en lugar del directorio actual para iterar ficheros"
 
 #. type: TP
 #: ../savelog.8:145
+#, no-wrap
 msgid "B<-n>"
 msgstr "B<-n>"
 
@@ -881,6 +909,7 @@ msgstr "No rota ficheros vacíos"
 
 #. type: TP
 #: ../savelog.8:148
+#, no-wrap
 msgid "B<-q>"
 msgstr "B<-q>"
 
@@ -905,12 +934,13 @@ msgstr "B<logrotate>(8)"
 
 #. type: TH
 #: ../tempfile.1:2
+#, no-wrap
 msgid "TEMPFILE"
 msgstr "TEMPFILE"
 
 #. type: TH
-#: ../tempfile.1:2
-#: ../which.1:2
+#: ../tempfile.1:2 ../which.1:2
+#, no-wrap
 msgid "1 May 2009"
 msgstr "1 de mayo de 2009"
 
@@ -955,6 +985,7 @@ msgstr ""
 
 #. type: TP
 #: ../tempfile.1:23
+#, no-wrap
 msgid "a)"
 msgstr "a)"
 
@@ -969,6 +1000,7 @@ msgstr ""
 
 #. type: TP
 #: ../tempfile.1:29
+#, no-wrap
 msgid "b)"
 msgstr "b)"
 
@@ -983,6 +1015,7 @@ msgstr ""
 
 #. type: TP
 #: ../tempfile.1:34
+#, no-wrap
 msgid "c)"
 msgstr "c)"
 
@@ -997,6 +1030,7 @@ msgstr ""
 
 #. type: TP
 #: ../tempfile.1:41
+#, no-wrap
 msgid "d)"
 msgstr "d)"
 
@@ -1007,6 +1041,7 @@ msgstr "Por último, se puede utilizar el directorio implementado I<(/tmp)>. "
 
 #. type: TP
 #: ../tempfile.1:47
+#, no-wrap
 msgid "B<-d, --directory >I<DIR>"
 msgstr "B<-d, --directory >I<DIRECTORIO>"
 
@@ -1017,41 +1052,23 @@ msgstr "Copia el fichero al DIRECTORIO."
 
 #. type: TP
 #: ../tempfile.1:50
-msgid "B<-p, --prefix >I<STRING>"
-msgstr "B<-p, --prefix >I<CADENA>"
-
-#. type: Plain text
-#: ../tempfile.1:53
-msgid "Use up to five letters of STRING to generate the name."
-msgstr "Utiliza hasta cinco letras de la CADENA para generar el nombre."
-
-#. type: TP
-#: ../tempfile.1:53
-msgid "B<-s, --suffix >I<STRING>"
-msgstr "B<-s, --suffix >I<CADENA>"
-
-#. type: Plain text
-#: ../tempfile.1:56
-msgid "Generate the file with STRING as the suffix."
-msgstr "Genera el fichero con la CADENA como sufijo."
-
-#. type: TP
-#: ../tempfile.1:56
+#, no-wrap
 msgid "B<-m, --mode >I<MODE>"
 msgstr "B<-m, --mode >I<MODO>"
 
 #. type: Plain text
-#: ../tempfile.1:59
+#: ../tempfile.1:53
 msgid "Open the file with MODE instead of 0600."
 msgstr "Abre el fichero usando el MODO, en lugar de 0600."
 
 #. type: TP
-#: ../tempfile.1:59
+#: ../tempfile.1:53
+#, no-wrap
 msgid "B<-n, --name >I<FILE>"
 msgstr "B<-n, --name >I<FICHERO>"
 
 #. type: Plain text
-#: ../tempfile.1:64
+#: ../tempfile.1:58
 msgid ""
 "Use FILE for the name instead of B<tempnam>(3)B<.> The options -d, -p, and "
 "-s are ignored if this option is given."
@@ -1060,7 +1077,30 @@ msgstr ""
 "las opciones «-d», «-p» y «-s» si se introduce ésta."
 
 #. type: TP
+#: ../tempfile.1:58
+#, no-wrap
+msgid "B<-p, --prefix >I<STRING>"
+msgstr "B<-p, --prefix >I<CADENA>"
+
+#. type: Plain text
+#: ../tempfile.1:61
+msgid "Use up to five letters of STRING to generate the name."
+msgstr "Utiliza hasta cinco letras de la CADENA para generar el nombre."
+
+#. type: TP
+#: ../tempfile.1:61
+#, no-wrap
+msgid "B<-s, --suffix >I<STRING>"
+msgstr "B<-s, --suffix >I<CADENA>"
+
+#. type: Plain text
 #: ../tempfile.1:64
+msgid "Generate the file with STRING as the suffix."
+msgstr "Genera el fichero con la CADENA como sufijo."
+
+#. type: TP
+#: ../tempfile.1:64
+#, no-wrap
 msgid "B<--help>"
 msgstr "B<--help>"
 
@@ -1071,6 +1111,7 @@ msgstr "Muestra información de uso por la salida estándar y cierra con éxito.
 
 #. type: TP
 #: ../tempfile.1:67
+#, no-wrap
 msgid "B<--version>"
 msgstr "B<--version>"
 
@@ -1082,6 +1123,7 @@ msgstr ""
 
 #. type: SH
 #: ../tempfile.1:70
+#, no-wrap
 msgid "RETURN VALUES"
 msgstr "ESTADOS DE SALIDA"
 
@@ -1096,18 +1138,19 @@ msgstr ""
 
 #. type: Plain text
 #: ../tempfile.1:76
-msgid ""
-"Exclusive creation is not guaranteed when creating files on NFS partitions."
+msgid "Exclusive creation is not guaranteed when creating files on NFS partitions."
 msgstr ""
 "No se garantiza la creación exclusiva al crear ficheros en particiones NFS."
 
 #. type: SH
 #: ../tempfile.1:76
+#, no-wrap
 msgid "EXAMPLE"
 msgstr "EJEMPLO"
 
 #. type: Plain text
 #: ../tempfile.1:88
+#, no-wrap
 msgid ""
 "#!/bin/sh\n"
 "#[...]\n"
@@ -1134,6 +1177,7 @@ msgstr "B<tempnam>(3), B<mktemp>(1)"
 
 #. type: TH
 #: ../which.1:2
+#, no-wrap
 msgid "WHICH"
 msgstr "WHICH"
 
@@ -1165,6 +1209,7 @@ msgstr ""
 
 #. type: TP
 #: ../which.1:15
+#, no-wrap
 msgid "B<-a>"
 msgstr "B<-a>"
 
@@ -1175,11 +1220,13 @@ msgstr "Muestra todos los nombres de ruta que coincidan con cada argumento."
 
 #. type: SH
 #: ../which.1:18
+#, no-wrap
 msgid "EXIT STATUS"
 msgstr "ESTADO DE SALIDA"
 
 #. type: TP
 #: ../which.1:19
+#, no-wrap
 msgid "B<0>"
 msgstr "B<0>"
 
@@ -1190,6 +1237,7 @@ msgstr "Se han encontrado las órdenes definidas, y son ejecutables."
 
 #. type: TP
 #: ../which.1:22
+#, no-wrap
 msgid "B<1>"
 msgstr "B<1>"
 
@@ -1200,6 +1248,7 @@ msgstr "Una o más órdenes no existen, o no son ejecutables."
 
 #. type: TP
 #: ../which.1:25
+#, no-wrap
 msgid "B<2>"
 msgstr "B<2>"
 
@@ -1207,3 +1256,12 @@ msgstr "B<2>"
 #: ../which.1:27
 msgid "if an invalid option is specified"
 msgstr "La opción definida no es válida."
+
+#~ msgid ""
+#~ "B<add-shell> copy I</etc/shells> to I</etc/shells.tmp>, add the given shells "
+#~ "to this file if they are not already present, and copy this temporary file "
+#~ "back to I</etc/shells>."
+#~ msgstr ""
+#~ "B<add-shell> copia I</etc/shells> a I</etc/shells.tmp>, añade las consolas a "
+#~ "este fichero si no están presentes, y copia este fichero temporal  a "
+#~ "I</etc/shells>."
