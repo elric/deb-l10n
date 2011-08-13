@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.18.8.5\n"
 "POT-Creation-Date: 2011-07-17 07:41+0000\n"
-"PO-Revision-Date: 2011-07-19 20:49+0200\n"
+"PO-Revision-Date: 2011-07-21 10:49+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -41,7 +41,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.0\n"
+"X-Generator: Virtaal 0.7.1-beta1\n"
 
 #. type: TH
 #: deb.5:1
@@ -995,7 +995,7 @@ msgstr ""
 "menos un espacio al principio de la línea. Habitualmente, las herramientas "
 "unen un campo de varias líneas en una sola (a excepción del campo "
 "B<Description>, a continuación). Para insertar líneas en blanco en un campo "
-"de varias líenas, inserte un punto a continuación del espacio. Las lineas "
+"de varias líneas, inserte un punto a continuación del espacio. Las líneas "
 "que comienzan con B<«#»> se tratan como comentarios."
 
 #. type: SH
@@ -1414,10 +1414,10 @@ msgstr ""
 "paquete. Para paquetes que se ejecutan en todas las arquitecturas, utilice "
 "el valor B<any>. Para paquetes independientes de la arquitectura, como "
 "scripts de intérprete de órdenes, de Perl, o documentación, utilice el valor "
-"B<all>. Para limitar los paquetes a un conjuntode arquitecturas, defina los "
-"nombres de arquitectura separados por espacio. También es posible utilizar "
-"comodines de arquitectura en esta lista. Para más información sobre ellos "
-"consulte B<dpkg-architecture>(1)."
+"B<all>. Para limitar los paquetes a un conjunto de arquitecturas, defina "
+"los nombres de arquitectura separados por espacio. También es posible "
+"utilizar comodines de arquitectura en esta lista. Para más información sobre "
+"ellos consulte B<dpkg-architecture>(1)."
 
 #. type: TP
 #: deb-src-control.5:203
@@ -3114,12 +3114,12 @@ msgstr "15 de Marzo de 2009"
 #. type: Plain text
 #: deb-triggers.5:4
 msgid "deb-triggers - package triggers"
-msgstr "deb-triggers - Disparadores de paquetes"
+msgstr "deb-triggers - Activadores de paquetes"
 
 #. type: Plain text
 #: deb-triggers.5:7
 msgid "triggers"
-msgstr "disparadores"
+msgstr "activadores"
 
 #. type: Plain text
 #: deb-triggers.5:12
@@ -3128,9 +3128,9 @@ msgid ""
 "I<triggers> file in its control archive (i.e. I<DEBIAN/triggers> during "
 "package creation)."
 msgstr ""
-"Un paquete declara su relación con algún disparador(es) incluyendo un "
-"fichero I<triggers> en su archivo de control (por ejemplo, I<DEBIAN/"
-"triggers> durante la creación del paquete)."
+"Un paquete declara su relación con algún activador(es) incluyendo un fichero "
+"I<triggers> en su archivo de control (por ejemplo, I<DEBIAN/triggers> "
+"durante la creación del paquete)."
 
 #. type: Plain text
 #: deb-triggers.5:16
@@ -3146,18 +3146,18 @@ msgstr ""
 #. type: Plain text
 #: deb-triggers.5:18
 msgid "The trigger control directives currently supported are:"
-msgstr "Las directivas de control de disparadores actualmente aceptadas son:"
+msgstr "Las directivas de control de activadores actualmente permitidas son:"
 
 #. type: Plain text
 #: deb-triggers.5:22
 msgid "B<interest> I<trigger-name>"
-msgstr "B<interest> I<nombre-disparador>"
+msgstr "B<interest> I<nombre-activador>"
 
 #. type: Plain text
 #: deb-triggers.5:26
 #| msgid "B<interest> I<trigger-name>"
 msgid "B<interest-noawait> I<trigger-name>"
-msgstr "B<interest-noawait> I<nombre-disparador>"
+msgstr "B<interest-noawait> I<nombre-activador>"
 
 #. type: Plain text
 #: deb-triggers.5:33
@@ -3172,23 +3172,22 @@ msgid ""
 "packages in triggers-awaited state. This should be used when the "
 "functionality provided by the trigger is not crucial."
 msgstr ""
-"Define que el paquete tiene un interés en el disparador nombrado. Todos los "
-"disparadores por los que un paquete tiene interés se deben listar usando "
-"esta directiva en el fichero de control de disparadores. La variante "
-"«noawait» no pone los paquetes de disparador en un estado «triggers-"
-"awaited». Se debe utilizar cuando la funcionalidad ofrecida por el "
-"disparador no es crucial."
+"Define que el paquete tiene un interés en el activador nombrado. Todos los "
+"activadores por los que un paquete tiene interés se deben listar usando esta "
+"directiva en el fichero de control de activadores. La variante «noawait» no "
+"pone los paquetes de activador en un estado «triggers-awaited». Se debe "
+"utilizar cuando la funcionalidad ofrecida por el activador no es crucial."
 
 #. type: Plain text
 #: deb-triggers.5:37
 msgid "B<activate> I<trigger-name>"
-msgstr "B<activate> I<nombre-disparador>"
+msgstr "B<activate> I<nombre-activador>"
 
 #. type: Plain text
 #: deb-triggers.5:41
 #| msgid "B<activate> I<trigger-name>"
 msgid "B<activate-noawait> I<trigger-name>"
-msgstr "B<activate-noawait> I<nombre-disparador>"
+msgstr "B<activate-noawait> I<nombre-activador>"
 
 #. type: Plain text
 #: deb-triggers.5:50
@@ -3205,12 +3204,12 @@ msgid ""
 "not put the triggering packages in triggers-awaited state. This should be "
 "used when the functionality provided by the trigger is not crucial."
 msgstr ""
-"Especifica que el disparador definido se activará si el estado de este "
-"paquete cambia. El disparador se activará al inicio de las siguientes "
+"Especifica que el activador definido se activará si el estado de este "
+"paquete cambia. El activador se activará al inicio de las siguientes "
 "operaciones: unpack, configure, remove (incluyendo en beneficio de un "
 "paquete conflictivo), purge y deconfigure. La variante «noawait» no pone los "
-"paquetes de disparador en un estado «triggers-awaited». Se debe utilizar "
-"cuando la funcionalidad ofrecida por el disparador no es crucial."
+"paquetes de activador en un estado «triggers-awaited». Se debe utilizar "
+"cuando la funcionalidad ofrecida por el activador no es crucial."
 
 #. type: Plain text
 #: deb-triggers.5:58
@@ -3221,12 +3220,12 @@ msgid ""
 "installed, does not cause activations.  In the case of unpack, triggers "
 "mentioned in both the old and new versions of the package will be activated."
 msgstr ""
-"Si este paquete desaparece al desempaquetar otro paquete el disparador se "
+"Si este paquete desaparece al desempaquetar otro paquete el activador se "
 "activará al detectar la desaparición, al final del desempaquetado. El "
-"procesamiento de disparadores y la transición de «triggers-awaited» a "
-"«installed» no provocan la activación de disparadores. En caso de procesar "
-"un desempaquetado, se activarán los disparadores mencionados en las "
-"versiones nuevas y viejas del paquete."
+"procesamiento de activadores y la transición de «triggers-awaited» a "
+"«installed» no provocan la activación de activadores. En caso de procesar un "
+"desempaquetado, se activarán los activadores mencionados en las versiones "
+"nuevas y viejas del paquete."
 
 #. type: Plain text
 #: deb-triggers.5:61
@@ -3446,7 +3445,7 @@ msgstr "B<triggers-awaited>"
 #. type: Plain text
 #: dpkg.1:60
 msgid "The package awaits trigger processing by another package."
-msgstr "El paquete aguarda al proceso de los disparadores de otro paquete."
+msgstr "El paquete aguarda al proceso de los activadores de otro paquete."
 
 #. type: TP
 #: dpkg.1:60
@@ -3457,7 +3456,7 @@ msgstr "B<triggers-pending>"
 #. type: Plain text
 #: dpkg.1:63
 msgid "The package has been triggered."
-msgstr "Los disparadores del paquete se han activado."
+msgstr "Los activadores del paquete se han activado."
 
 #. type: TP
 #: dpkg.1:63
@@ -3721,8 +3720,8 @@ msgid ""
 "improper B<triggers-awaited> and B<triggers-pending> states. This can be "
 "fixed later by running: B<dpkg --configure --pending>."
 msgstr ""
-"Procesa sólo los disparadores. Todos los disparadores pendientes (pending) "
-"se procesarán a menos que especifique el(los) paquete(s), uno por uno de ser "
+"Procesa sólo los activadores. Todos los activadores pendientes (pending) se "
+"procesarán a menos que especifique el(los) paquete(s), uno por uno de ser "
 "necesario. El uso de esta opción puede dejar paquetes con los estados no "
 "deseados de B<triggers-awaited> y B<triggers-pending>. Puede arreglar esto "
 "más tarde ejecutando B<dpkg --configure --pending>."
@@ -4295,9 +4294,9 @@ msgstr ""
 "   200   Mucha salida por cada «conffile»\n"
 "    40   Dependencias y conflictos\n"
 "   400   Mucha salida sobre dependencias y conflictos\n"
-" 10000   Activación de los disparadores y procesado\n"
-" 20000   Una gran información de los disparadores\n"
-" 40000   Niveles ridículos de información de los disparadores\n"
+" 10000   Activación de los activadores y procesado\n"
+" 20000   Una gran información de los activadores\n"
+" 40000   Niveles ridículos de información de los activadores\n"
 "  1000   Parrafadas sobre el directorio dpkg/info\n"
 "  2000   Montañas de parrafadas (perjudica la salud)\n"
 
@@ -5044,13 +5043,13 @@ msgid ""
 "awaited> and B<triggers-pending> states. This can be fixed later by running: "
 "B<dpkg --configure --pending>."
 msgstr ""
-"No ejecuta ningún disparador durante esta ejecución (se grabarán las "
+"No ejecuta ningún activador durante esta ejecución (se grabarán las "
 "activaciones). Si se usa con B<--configure> I<paquete> o B<--triggers-only> "
 "I<paquete>, el script «postinst» del paquete nombrado tendrá permisos de "
-"ejecución aunque sólo se necesite ejecutar un disparador. El uso de esta "
+"ejecución aunque sólo se necesite ejecutar un activador. El uso de esta "
 "opción puede dejar paquetes con el estado no deseado de B<triggers-awaited> "
-"y B<triggers-pending>. Puede arreglar esto más tarde ejecutando B<dpkg --"
-"configure --pending>."
+"y B<triggers-pending>. Puede arreglar esto más tarde ejecutando B<dpkg "
+"--configure --pending>."
 
 #. type: TP
 #: dpkg.1:623
@@ -8582,7 +8581,7 @@ msgid ""
 "I<package> is the name of a package whose copy of I<file> will not be "
 "diverted. i.e. I<file> will be diverted for all packages except I<package>."
 msgstr ""
-"E<lt>paqueteE<gt> es el nombre de un paquete cuya copia del I<fichero> no se "
+"I<paquete> es el nombre de un paquete cuya copia del I<fichero> no se "
 "redirigirá. Por ejemplo, el I<fichero> se redirigirá para todos los paquetes "
 "a excepción de I<paquete>."
 
@@ -11721,8 +11720,8 @@ msgstr ""
 "  H = Parcialmente instalado\n"
 "  U = Desempaquetado\n"
 "  F = Parcialmente configurado\n"
-"  W = Disparadores esperando\n"
-"  t = Disparadores pendientes\n"
+"  W = Activadores esperando\n"
+"  t = Activadores pendientes\n"
 "  i = Instalado\n"
 
 #. type: Plain text
@@ -15751,12 +15750,12 @@ msgstr "dpkg-trigger"
 #. type: Plain text
 #: dpkg-trigger.1:4
 msgid "dpkg-trigger - a package trigger utility"
-msgstr "dpkg-trigger - Herramienta de disparadores de paquete"
+msgstr "dpkg-trigger - Herramienta de activadores de paquete"
 
 #. type: Plain text
 #: dpkg-trigger.1:8
 msgid "B<dpkg-trigger> [I<option>...] I<trigger-name>"
-msgstr "B<dpkg-trigger> [I<opción>...] I<nombre-disparador>"
+msgstr "B<dpkg-trigger> [I<opción>...] I<nombre-activador>"
 
 #. type: Plain text
 #: dpkg-trigger.1:11
@@ -15770,7 +15769,7 @@ msgid ""
 "B<dpkg-trigger> is a tool to explicitly activate triggers and check for its "
 "support on the running B<dpkg>."
 msgstr ""
-"B<dpkg-trigger> es una herramienta para activar disparadores "
+"B<dpkg-trigger> es una herramienta para activar activadores "
 "intencionadamente y revisar su compatibilidad con la versión de B<dpkg> en "
 "ejecución."
 
@@ -15784,18 +15783,18 @@ msgid ""
 "by B<dpkg-trigger>)."
 msgstr ""
 "Se puede usar mediante scripts del desarrollador en situaciones complejas y "
-"condicionales en las que los ficheros de disparadores, o la declaración de "
-"la directiva B<activate> en el fichero de control, no son suficientemente "
+"condicionales en las que los ficheros de activadores, o la declaración de la "
+"directiva B<activate> en el fichero de control, no son suficientemente "
 "informativos. También se puede usar para comprobaciones y administradores de "
 "sistemas (pero tenga en cuenta que B<dpkg-trigger> no accionará los "
-"disparadores)."
+"activadores)."
 
 #. type: Plain text
 #: dpkg-trigger.1:23
 msgid "Unrecognised trigger name syntaxes are an error for B<dpkg-trigger>."
 msgstr ""
-"La sintaxis no reconocida de nombres de disparadores son un error para "
-"B<dpkg-trigger>."
+"La sintaxis no reconocida de nombres de activadores son un error para B"
+"<dpkg-trigger>."
 
 #. type: TP
 #: dpkg-trigger.1:25
@@ -15841,7 +15840,7 @@ msgid ""
 "naming the package to which the script belongs, and this will be used by "
 "default)."
 msgstr ""
-"Invalida la espera al inicio del disparador (habitualmente definido con "
+"Invalida la espera al inicio del activador (habitualmente definido con "
 "B<dpkg> a través de la variable de entorno B<DPKG_MAINTSCRIPT_PACKAGE> en "
 "los scripts del desarrollador, nombrando el paquete al que el script "
 "pertenece. Este es el comportamiento por omisión.)"
@@ -15861,10 +15860,10 @@ msgid ""
 "be considered installed even though I may not yet have processed the trigger."
 msgstr ""
 "Esta opción define que la invocación al paquete T (de existir) no necesita "
-"esperar al procesamiento de este disparador; el paquete(s) interesado I no "
-"se añadirá a la lista de espera del procesado del disparador, sin cambiar el "
+"esperar al procesamiento de este activador; el paquete(s) interesado I no se "
+"añadirá a la lista de espera del procesado del activador, sin cambiar el "
 "estado de T. Puede que se considere que T está instalado aunque no se haya "
-"procesado el disparador."
+"procesado el activador."
 
 #. type: TP
 #: dpkg-trigger.1:56
