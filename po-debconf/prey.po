@@ -1,0 +1,149 @@
+# prey po-debconf translation to Spanish
+# Copyright (C) 2011 Software in the Public Interest
+# This file is distributed under the same license as the prey package.
+#
+# Changes:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com>, 2011
+#
+#   - Updates
+#       TRANSLATOR
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: prey 0.5.3-4\n"
+"Report-Msgid-Bugs-To: prey@packages.debian.org\n"
+"POT-Creation-Date: 2011-05-17 09:49+0200\n"
+"PO-Revision-Date: 2011-07-16 18:28+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.0-beta4\n"
+"X-Project-Style: default\n"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Frequency of Prey reports and actions (minutes):"
+msgstr "Frecuencia de informes y acciones de Prey en minutos:"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid ""
+"Please enter the time to wait before waking up Prey. Control Panel users can "
+"change this setting later through the web interface."
+msgstr ""
+"Introduzca el tiempo de espera antes de iniciar Prey. Los usuarios del Panel "
+"de Control pueden modificar esta opción en otro momento a través la interfaz "
+"web."
+
+#. Type: multiselect
+#. Description
+#: ../templates:3001
+msgid "Modules to enable:"
+msgstr "Módulos que activar:"
+
+#. Type: multiselect
+#. Description
+#: ../templates:3001
+msgid ""
+"Prey has many optional modules; if enabled they will be triggered "
+"automatically if prey recognizes that the device is stolen."
+msgstr ""
+"Prey ofrece varios módulos opcionales. Si están activos, se iniciarán "
+"automáticamente si Prey detecta que el dispositivo ha sido robado."
+
+#. Type: multiselect
+#. Description
+#: ../templates:3001
+msgid ""
+" * alarm:   plays a loud sound for 30 seconds;\n"
+" * alert:   shows the thief a short message (and may change the\n"
+"            wallpaper);\n"
+" * geo:     attempts to geolocate the device by using its internal\n"
+"            GPS or the nearest WiFi access points as reference;\n"
+" * lock:    locks the device and asks for a password;\n"
+" * network: collects information about the Internet connection;\n"
+" * secure:  deletes browser cookies and stored passwords;\n"
+" * session: takes a screenshot, collects information about modified\n"
+"            files and running programs;\n"
+" * system:  collects information about the hardware configuration of\n"
+"            the machine;\n"
+" * webcam:  tries to take a picture using the webcam."
+msgstr ""
+" * alarm:   Emite un fuerte sonido durante 30 segundos.\n"
+" * alert:   Muestra un corto mensaje al ladrón (y puede que cambie\n"
+"            el fondo de escritorio).\n"
+" * geo:     Intenta geolocalizar el dispositivo utilizando el sistema\n"
+"            GPS integrado, o los puntos de acceso WiFi más cercanos\n"
+"            como referencia.\n"
+" * lock:    Bloquea el dispositivo y pide una contraseña.\n"
+" * network: Reúne información de la conexión a Internet.\n"
+" * secure:  Elimina «cookies» de explorador y contraseñas guardadas.\n"
+" * session: Guarda la sesión, reuniendo información de ficheros\n"
+"            modificados y de los programas en ejecución.\n"
+" * system:  Reúne información de la configuración de hardware\n"
+"            del sistema."
+" * webcam:  Intenta tomar una fotografía usando la cámara web."
+
+#. Type: note
+#. Description
+#: ../templates:4001
+msgid "Configuration required"
+msgstr "Requisitos de configuración"
+
+#. Type: note
+#. Description
+#: ../templates:4001
+msgid ""
+"To finish configuring Prey, you need to edit \"/etc/prey/config\" and choose "
+"its running mode. The options are:"
+msgstr ""
+"Para finalizar la configuración de Prey, debe editar «/etc/prey/config» y "
+"seleccionar el modo de funcionamiento. Las opciones son:"
+
+#. Type: note
+#. Description
+#: ../templates:4001
+msgid ""
+" * Control Panel: reports are sent to preyproject.com. Go to\n"
+"                  http://control.preyproject.com/signup and create\n"
+"                  an account, then set \"apt_key\" and \"device_key\"\n"
+"                  appropriately in the configuration file.\n"
+" * Standalone:    reports are sent directly to the owner at a\n"
+"                  specified mail or SSH (scp/sftp) server when\n"
+"                  activated via a trigger URL under your control."
+msgstr ""
+" * Control Panel: Los informes se envían a «preyproject.com».\n"
+"                  Visite «http://control.preyproject.com/signup» y cree\n"
+"                  una cuenta. A continuación, defina «apt_key» y "
+"«device_key»\n"
+"                  adecuadamente en el fichero de configuración.\n"
+" * Standalone:    Los informes se envían directamente al propietario\n"
+"                  mediante una dirección definida, o servidor SSH (scp/"
+"sftp)\n"
+"                  cuando se inicie mediante una URL de activado bajo su "
+"control."
