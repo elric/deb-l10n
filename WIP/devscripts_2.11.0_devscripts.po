@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2011-05-25 03:58+0000\n"
-"PO-Revision-Date: 2011-07-18 19:02+0200\n"
+"PO-Revision-Date: 2011-10-24 17:48+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.0\n"
+"X-Generator: Virtaal 0.7.1-rc1\n"
 
 #. type: TH
 #: ../scripts/annotate-output.1:1
@@ -430,6 +430,12 @@ msgid ""
 "is surrounded by whitespace so it is not mistaken for part of a command.  "
 "For example (quoting where necessary so that B<bts> sees the comment):"
 msgstr ""
+"Puede definir varias órdenes separándolas con un punto, un lugar de B"
+"<update-rc.d>; también se puede utilizar una coma; todas las órdenes se "
+"enviarán en un solo correo electrónico. Es importante que el punto o la coma "
+"se delimiten con espacios en blanco para no confundirlos con una orden. Por "
+"ejemplo (se comenta donde sea necesario para que B<bts> detecte el "
+"comentario):"
 
 #. type: verbatim
 #: ../scripts/bts.pl:210
@@ -438,7 +444,7 @@ msgid ""
 " % bts severity 95672 normal , merge 95672 95673 \\#they are the same!\n"
 "\n"
 msgstr ""
-" % bts severity 95672 normal , merge 95672 95673¡ \\#they are the same!\n"
+" % bts severity 95672 normal , merge 95672 95673 \\#¡Son idénticos!\n"
 "\n"
 
 #. type: textblock
@@ -2869,11 +2875,13 @@ msgid ""
 "build-rdeps - find packages that depend on a specific package to build "
 "(reverse build depends)"
 msgstr ""
+"build-rdeps - Busca paquetes que dependen de un paquete específico para su "
+"construcción(dependencias de construcción inversas)"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:24
 msgid "B<build-rdeps> I<package>"
-msgstr ""
+msgstr "B<build-rdeps> I<paquete>"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:28
@@ -2881,114 +2889,120 @@ msgid ""
 "B<build-rdeps> searches for all packages that build-depend on the specified "
 "package."
 msgstr ""
+"B<build-rdeps> Busca todos los paquetes con una dependencia de construcción "
+"sobre el paquete especificado."
 
 #. type: =item
 #: ../scripts/build-rdeps.pl:34
 msgid "B<-u>, B<--update>"
-msgstr ""
+msgstr "B<-u>, B<--update>"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:36
 msgid "Run apt-get update before searching for build-depends."
 msgstr ""
+"Ejecuta «apt-get update» antes de buscar las dependencias de construcción."
 
 #. type: =item
 #: ../scripts/build-rdeps.pl:38
 msgid "B<-s>, B<--sudo>"
-msgstr ""
+msgstr "B<-s>, B<--sudo>"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:40
 msgid "Use sudo when running apt-get update. Has no effect if -u is omitted."
 msgstr ""
+"Utiliza sudo al ejecutar «apt-get update». No tiene efecto si se omite «-u»."
 
 #. type: =item
 #: ../scripts/build-rdeps.pl:42
 msgid "B<--distribution>"
-msgstr ""
+msgstr "B<--distribution>"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:44
 msgid "Select another distribution, which is searched for build-depends."
 msgstr ""
+"Selecciona otra publicación, la cual se analiza en busca de dependencias de "
+"construcción."
 
 #. type: =item
 #: ../scripts/build-rdeps.pl:46
 msgid "B<--only-main>"
-msgstr ""
+msgstr "B<--only-main>"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:48
 msgid "Ignore contrib and non-free"
-msgstr ""
+msgstr "Ignora las secciones «contrib» y «non-free»."
 
 #. type: =item
 #: ../scripts/build-rdeps.pl:50
 msgid "B<--exclude-component>"
-msgstr ""
+msgstr "B<--exclude-component>"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:52
 msgid "Ignore the given component (e.g. main, contrib, non-free)."
-msgstr ""
+msgstr "Ignora la sección dada (por ejemplo, main, contrib, non-free)."
 
 #. type: =item
 #: ../scripts/build-rdeps.pl:54
 msgid "B<--origin>"
-msgstr ""
+msgstr "B<--origin>"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:56
 msgid "Restrict the search to only the specified origin (such as \"Debian\")."
-msgstr ""
+msgstr "Limita la búsqueda al origen especificado (como «Debian»)."
 
 #. type: =item
 #: ../scripts/build-rdeps.pl:58
 msgid "B<-m>, B<--print-maintainer>"
-msgstr ""
+msgstr "B<-m>, B<--print-maintainer>"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:60
 msgid "Print the value of the maintainer field for each package."
-msgstr ""
+msgstr "Muestra el valor del campo de desarrollador de cada paquete."
 
 #. type: =item
 #: ../scripts/build-rdeps.pl:62 ../scripts/dcontrol.pl:253
 msgid "B<-d>, B<--debug>"
-msgstr ""
+msgstr "B<-d>, B<--debug>"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:64
 msgid "Run the debug mode"
-msgstr ""
+msgstr "Ejecuta el modo de depuración de fallos."
 
 #. type: TP
 #: ../scripts/build-rdeps.pl:66 ../scripts/cowpoke.1:78 ../scripts/debclean.1:84 ../scripts/diff2patches.1:22 ../scripts/grep-excuses.1:22 ../scripts/mass-bug.pl:117 ../scripts/nmudiff.1:73 ../scripts/plotchangelog.1:92 ../scripts/uscan.1:442
 #, no-wrap
 msgid "B<--help>"
-msgstr ""
+msgstr "B<--help>"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:68
 msgid "Show the usage information."
-msgstr ""
+msgstr "Muestra información de uso."
 
 #. type: TP
 #: ../scripts/build-rdeps.pl:70 ../scripts/chdist.pl:49 ../scripts/cowpoke.1:82 ../scripts/debchange.1:367 ../scripts/debclean.1:87 ../scripts/debrelease.1:102 ../scripts/debsign.1:108 ../scripts/debsnap.1:59 ../scripts/diff2patches.1:25 ../scripts/dscverify.1:39 ../scripts/grep-excuses.1:25 ../scripts/mass-bug.pl:121 ../scripts/nmudiff.1:76 ../scripts/plotchangelog.1:95 ../scripts/pts-subscribe.1:31 ../scripts/rmadison.pl:278 ../scripts/uscan.1:445 ../scripts/uupdate.1:85 ../scripts/who-uploads.1:47
 #, no-wrap
 msgid "B<--version>"
-msgstr ""
+msgstr "B<--version>"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:72
 msgid "Show the version information."
-msgstr ""
+msgstr "Muestra información de la versión."
 
 #. type: SH
 #: ../scripts/build-rdeps.pl:76 ../scripts/debpkg.1:12
 #, no-wrap
 msgid "REQUIREMENTS"
-msgstr ""
+msgstr "REQUISITOS"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:78
@@ -2997,6 +3011,10 @@ msgid ""
 "components.  In the default case this means that in /var/lib/apt/lists files "
 "need to be around for main, contrib and non-free."
 msgstr ""
+"Esta herramienta requiere que los ficheros de fuentes de APT contengan las "
+"secciones definidas. En la situación predefinida, requiere que los ficheros "
+"en «/var/lib/apt/lists» contengan las secciones «main», «contrib» y «non-"
+"free»."
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:82
@@ -3004,21 +3022,25 @@ msgid ""
 "In practice this means one needs to add one deb-src line for each component, "
 "e.g."
 msgstr ""
+"En la práctica, significa que se debe añadir una línea «deb-src» para cada "
+"sección, por ejemplo:"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:85
 msgid "deb-src http://<mirror>/debian <dist> main contrib non-free"
-msgstr ""
+msgstr "deb-src http://<réplica>/debian <publicación> main contrib non-free"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:87
 msgid "and run apt-get update afterwards or use the update option of this tool."
 msgstr ""
+"y ejecute «apt-get update» a continuación o utilice la opción de "
+"actualización de esta herramienta."
 
 #. type: =head1
 #: ../scripts/build-rdeps.pl:338 ../scripts/debcommit.pl:842 ../scripts/desktop2menu.pl:43 ../scripts/licensecheck.pl:111 ../scripts/namecheck.pl:36 ../scripts/svnpath.pl:93 ../scripts/transition-check.pl:72
 msgid "LICENSE"
-msgstr ""
+msgstr "LICENCIA"
 
 #. type: textblock
 #: ../scripts/build-rdeps.pl:340
@@ -3032,7 +3054,7 @@ msgstr ""
 #. type: textblock
 #: ../scripts/build-rdeps.pl:348
 msgid "Patrick Schoenfeld <schoenfeld@debian.org>"
-msgstr ""
+msgstr "Patrick Schoenfeld <schoenfeld@debian.org>"
 
 #. type: textblock
 #: ../scripts/chdist.pl:20
