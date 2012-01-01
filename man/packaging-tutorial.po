@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: packaging-tutorial 0.4\n"
 "POT-Creation-Date: 2011-10-19 01:23+0300\n"
-"PO-Revision-Date: 2011-10-27 17:28+0200\n"
+"PO-Revision-Date: 2011-11-17 21:42+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -53,7 +53,8 @@ msgstr "\\mode<presentation> \\usetheme{debian}"
 #. type: Plain text
 #: packaging-tutorial.tex:10
 msgid "\\usepackage{debiantutorial}"
-msgstr "\\usepackage{debiantutorial.es}"
+msgstr "\\usepackage{debiantutorial.es} \\usepackage[spanish]{babel}"
+"\\frenchbsetup {og=«,fg=»"
 
 #. type: title{#2}
 #: packaging-tutorial.tex:20

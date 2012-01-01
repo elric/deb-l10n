@@ -26,12 +26,13 @@
 #   - La guía de traducción de po's de debconf:
 #     /usr/share/doc/po-debconf/README-trans
 #     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debianutils 4.0.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-30 10:55-0300\n"
-"PO-Revision-Date: 2011-10-18 16:58+0200\n"
+"PO-Revision-Date: 2011-11-02 10:12+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -92,9 +93,9 @@ msgid ""
 "shells to this file if they are not already present, and copies this "
 "temporary file back to I</etc/shells>."
 msgstr ""
-"B<add-shell> copia I</etc/shells> a I</etc/shells.tmp>, añade las consolas a "
-"este fichero si no están presentes, y copia este fichero temporal a "
-"I</etc/shells>."
+"B<add-shell> copia I</etc/shells> a I</etc/shells.tmp>, añade los "
+"intérpretes de órdenes dados a este fichero si no están presentes, y copia "
+"este fichero temporal  a I</etc/shells>."
 
 #. type: Plain text
 #: ../add-shell.8:15
@@ -190,7 +191,8 @@ msgstr "ISCHROOT"
 
 #. type: TH
 #: ../ischroot.1:2 ../tempfile.1:2
-#, no-wrap
+#, no-wrap, no-wrap
+#| msgid "12 May 2011"
 msgid "30 May 2011"
 msgstr "30 de mayo de 2011"
 
@@ -233,7 +235,8 @@ msgstr "Si se está ejecutando desde una jaula chroot."
 
 #. type: TP
 #: ../ischroot.1:15
-#, no-wrap
+#, no-wrap, no-wrap
+#| msgid "1)"
 msgid "1"
 msgstr "1"
 
@@ -244,7 +247,8 @@ msgstr "Si no se está ejecutando desde una jaula chroot."
 
 #. type: TP
 #: ../ischroot.1:18
-#, no-wrap
+#, no-wrap, no-wrap
+#| msgid "2)"
 msgid "2"
 msgstr "2"
 
@@ -394,8 +398,8 @@ msgid ""
 "directories are silently ignored."
 msgstr ""
 "B<run-parts> ejecuta todos los ficheros con permisos de ejecución, dentro de "
-"los limites descritos a continuación, que se encuentran en el "
-"I<directorio>. Se ignorarán otros ficheros o directorios."
+"los limites descritos a continuación, que se encuentran en el I<directorio>. "
+"Se ignorarán otros ficheros o directorios."
 
 #. type: Plain text
 #: ../run-parts.8:31
@@ -782,12 +786,12 @@ msgid ""
 "version I<file> is deleted.  Both compressed names and uncompressed names "
 "are cycled, regardless of B<-l>.  Missing version files are ignored."
 msgstr ""
-"Los ficheros con número de versión pasan por un ciclo. La versión "
-"I<fichero>.I<2> se renombra como I<fichero>.I<3>, la versión I<fichero>.I<1> "
-"pasa a ser I<fichero>.I<2>, y así sucesivamente. Por último, la versión "
-"I<fichero>.I<0> se renombra como la versión I<fichero>.I<1>, y se elimina la "
-"versión I<fichero>. Los nombres, comprimidos o descomprimidos, pasan por el "
-"ciclo, sin importar el uso de B<-l>. Se ignoran los ficheros sin versión."
+"Los ficheros con número de versión pasan por un ciclo. La versión I<fichero>."
+"I<2> se renombra como I<fichero>.I<3>, la versión I<fichero>.I<1> pasa a ser "
+"I<fichero>.I<2>, y así sucesivamente. Por último, la versión I<fichero>.I<0> "
+"se renombra como la versión I<fichero>.I<1>, y se elimina la versión "
+"I<fichero>. Los nombres, comprimidos o descomprimidos, pasan por el ciclo, "
+"sin importar el uso de B<-l>. Se ignoran los ficheros sin versión."
 
 #. type: IP
 #: ../savelog.8:60
@@ -1234,6 +1238,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../tempfile.1:77
+#| msgid ""
+#| "Exclusive creation is not guaranteed when creating files on NFS "
+#| "partitions."
 msgid ""
 "Exclusive creation is not guaranteed when creating files on NFS partitions.  "
 "tempfile is deprecated; you should use mktemp(1)  instead."
