@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: cwidget 0.5.16\n"
 "Report-Msgid-Bugs-To: dburrows@debian.org\n"
 "POT-Creation-Date: 2009-11-29 18:35-0800\n"
-"PO-Revision-Date: 2012-01-01 19:07+0100\n"
+"PO-Revision-Date: 2012-01-02 11:59+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -48,7 +48,7 @@ msgstr "Formato de parámetro incorrecto"
 #: src/cwidget/dialogs.cc:115 src/cwidget/dialogs.cc:128
 #: src/cwidget/dialogs.cc:311 src/cwidget/dialogs.cc:351
 msgid "Ok"
-msgstr "Ok"
+msgstr "Aceptar"
 
 #: src/cwidget/dialogs.cc:201 src/cwidget/dialogs.cc:239
 msgid "Yes"
@@ -64,22 +64,22 @@ msgstr "Cancelar"
 
 #: src/cwidget/generic/threads/threads.cc:33
 msgid "Not enough resources to create thread"
-msgstr "Recursos insuficientes para crear proceso"
+msgstr "No hay suficientes recursos para crear el hilo"
 
 #: src/cwidget/toplevel.cc:157
 #, c-format
 msgid "Ouch!  Got SIGTERM, dying..\n"
-msgstr "¡Ay! SIGTERM recibido, cerrando..\n"
+msgstr "¡Ay! Se ha recibido SIGTERM, cerrando..\n"
 
 #: src/cwidget/toplevel.cc:160
 #, c-format
 msgid "Ouch!  Got SIGSEGV, dying..\n"
-msgstr "¡Ay! SIGSEGV recibido, cerrando..\n"
+msgstr "¡Ay! Se ha recibido SIGSEGV, cerrando..\n"
 
 #: src/cwidget/toplevel.cc:163
 #, c-format
 msgid "Ouch!  Got SIGABRT, dying..\n"
-msgstr "¡Ay! SIGABRT recibido, cerrando..\n"
+msgstr "¡Ay! Se ha recibido SIGABRT, cerrando..\n"
 
 #: src/cwidget/toplevel.cc:166
 #, c-format
@@ -99,8 +99,8 @@ msgstr "n"
 msgid ""
 "Unable to load filename: the string %ls has no multibyte representation."
 msgstr ""
-"No se pudo cargar el nombre de fichero: la cadena «%ls» no tiene "
-"representación multibit"
+"No se puede cargar el fichero: la cadena «%ls» no tiene "
+"representación multi-byte."
 
 #: src/cwidget/widgets/tree.cc:1009
 msgid "TOP LEVEL"

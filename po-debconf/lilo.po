@@ -1,0 +1,162 @@
+# lilo po-debconf translation to Spanish
+# Copyright (C) 2006-2012 Software in the Public Interest
+# This file is distributed under the same license as the lilo package.
+#
+# Changes:
+#   - Initial translation
+#     Andrés Roldán <aroldan@debian.org>, 2006
+#     Felipe Caminos Echeverría <felipem@gigared.com>, 2006
+#
+#   - Updates
+#     Venturi, 2007
+#     Fernando Cerezal, 2007
+#     Francisco Javier Cuadrado <fcocuadrado@gmail.com>, 2009, 2011
+#     Omar Campagne, 2012
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lilo 1:23.2-2\n"
+"Report-Msgid-Bugs-To: lilo@packages.debian.org\n"
+"POT-Creation-Date: 2011-03-14 15:48+0100\n"
+"PO-Revision-Date: 2012-01-03 17:13+0100\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: note
+#. Description
+#: ../lilo.templates:1001
+msgid "LILO configuration"
+msgstr "Configuración de LILO"
+
+#. Type: note
+#. Description
+#: ../lilo.templates:1001
+msgid ""
+"It seems to be your first LILO installation. It is absolutely necessary to "
+"run liloconfig(8) when you complete this process and execute /sbin/lilo "
+"after this."
+msgstr ""
+"Parece que ésta es su primera instalación de LILO. Cuando complete este "
+"proceso es absolutamente necesario ejecutar liloconfig(8) y después "
+"«/sbin/lilo»."
+
+
+#. Type: note
+#. Description
+#: ../lilo.templates:1001
+msgid "LILO won't work if you don't do this."
+msgstr "LILO no funcionará si no hace esto."
+
+#. Type: boolean
+#. Description
+#: ../lilo.templates:2001
+msgid "Do you want to add the large-memory option?"
+msgstr "¿Desea añadir la opción «large-memory»?"
+
+#. Type: boolean
+#. Description
+#: ../lilo.templates:2001
+msgid ""
+"Usually LILO loads the initrd file into the first 15MB of memory to avoid a "
+"BIOS limitation with older systems (earlier than 2001 and few systems until "
+"2004)."
+msgstr ""
+"Habitualmente, LILO carga el archivo initrd en los primeros 15 MB "
+"de memoria para evitar una limitación de la BIOS en sistemas antiguos "
+"(previos a 2001 y unos pocos sistemas hasta el 2004)."
+
+#. Type: boolean
+#. Description
+#: ../lilo.templates:2001
+msgid ""
+"With newer kernels the combination of kernel and initrd may not fit into the "
+"first 15MB of memory. LILO compute the needed size of memory and will "
+"automatically use the memory above 15MB, too, if there is enough physical "
+"memory."
+msgstr ""
+"Con los núcleos nuevos la combinación del núcleo e initrd puede que no quepa "
+"en los primeros 15 MB de la memoria. LILO calcula el tamaño de memoria "
+"necesario y también utilizará automáticamente la memoria por encima de los "
+"15 MB, si hay suficiente memoria física."
+
+#. Type: boolean
+#. Description
+#: ../lilo.templates:2001
+msgid ""
+"If this machine has a recent BIOS without a 15MB limitation and you want to "
+"use memory above 15MB for all kernels, set the 'large-memory' option."
+msgstr ""
+"Si este equipo tiene una BIOS reciente sin la limitación de 15 MB y quiere "
+"usar memoria que esté por encima de los 15 MB para todos los núcleos, "
+"configure la opción «large-memory»."
+
+#. Type: boolean
+#. Description
+#: ../lilo.templates:3001
+msgid "Do you want to run /sbin/lilo now?"
+msgstr "¿Desea ejecutar «/sbin/lilo» ahora?"
+
+#. Type: boolean
+#. Description
+#: ../lilo.templates:3001
+msgid ""
+"It was detected that it's necessary to run /sbin/lilo in order to activate "
+"the new LILO configuration."
+msgstr ""
+"Se ha detectado que hay que ejecutar «/sbin/lilo» para poder activar la "
+"nueva configuración de LILO."
+
+#. Type: boolean
+#. Description
+#: ../lilo.templates:3001
+msgid ""
+"WARNING: This procedure will write data in your MBR and may overwrite some "
+"data there. If you skip this step, you must run /sbin/lilo before rebooting "
+"your computer, or your system may not boot again."
+msgstr ""
+"AVISO: este procedimiento escribirá datos en el registro maestro de "
+"arranque (MBR) y podría sobrescribir datos en ese lugar. Si omite este paso, "
+"tendrá que ejecutar «/sbin/lilo» antes de reiniciar el equipo, o puede que "
+"el sistema no arranque de nuevo."
+
+#. Type: boolean
+#. Description
+#: ../lilo.templates:4001
+msgid "Do you want to convert boot and root options?"
+msgstr "¿Desea convertir las opciones «boot» y de «root»?"
+
+#. Type: boolean
+#. Description
+#: ../lilo.templates:4001
+msgid ""
+"Since kernel using the newer disk interface 'libata' you need the newer "
+"DiskID and/or UUID in your /etc/lilo.conf for the boot and root options. For "
+"the most modern systems you should use this conversion and then run '/sbin/"
+"lilo'."
+msgstr ""
+"Tiene que utilizar los valores de  DiskID y/o el UUID en el archivo "
+"«/etc/lilo.conf» desde que el núcleo utiliza la nueva interfaz de disco "
+"«libata». En la mayoría de los sistemas modernos debería utilizar "
+"esta conversión y ejecutar a continuación «/sbin/lilo»."
