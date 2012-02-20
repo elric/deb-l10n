@@ -30,10 +30,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: glibc 2.10.2-6\n"
+"Project-Id-Version: glibc 2.13-24\n"
 "Report-Msgid-Bugs-To: eglibc@packages.debian.org\n"
 "POT-Creation-Date: 2011-10-30 11:52-0700\n"
-"PO-Revision-Date: 2012-01-01 21:45+0100\n"
+"PO-Revision-Date: 2012-01-14 11:44+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian L10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"

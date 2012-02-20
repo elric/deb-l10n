@@ -1,21 +1,46 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Free Software Foundation, Inc.
-# This file is distributed under the same license as the PACKAGE package.
-# Omar Campagne <ocampagne@gmail.com>, 2011.
+# debfoster po translation to Spanish
+# Copyright (C) 2012 Software in the Public Interest
+# This file is distributed under the same license as the debfoster package.
+#
+# Changes:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com>, 2012.
+#
+#   - Updates
+#       TRANSLATOR
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: debfoster xxx\n"
+"Project-Id-Version: debfoster 2.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-20 22:54+0200\n"
-"PO-Revision-Date: 2011-03-11 10:24+0200\n"
+"PO-Revision-Date: 2012-01-05 17:54+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.0-beta4\n"
+"X-Generator: Virtaal 0.7.1-rc1\n"
 "X-Project-Style: default\n"
 
 #: src/debfoster.c:175
@@ -26,7 +51,7 @@ msgstr "El paquete se ha eliminado: %s\n"
 #: src/debfoster.c:386
 #, c-format
 msgid "Not a dependency: \"%s\"\n"
-msgstr "No es una dependencia : «%s»\n"
+msgstr "No es una dependencia : \"%s\"\n"
 
 #: src/debfoster.c:391
 #, c-format
@@ -36,7 +61,7 @@ msgstr "%s es un paquete instalado.\n"
 #: src/debfoster.c:393
 #, c-format
 msgid "Dependency %s is met by:"
-msgstr "Paquete que propor la dependencia %s:"
+msgstr "Paquete que proporciona la dependencia %s:"
 
 #: src/debfoster.c:395
 #, c-format
@@ -46,7 +71,7 @@ msgstr "Ningún paquete proporciona la dependencia %s.\n"
 #: src/debfoster.c:405 src/debfoster.c:431 src/debfoster.c:506
 #, c-format
 msgid "Not an installed package: \"%s\"\n"
-msgstr "No es un paquete instalado: «%s»\n"
+msgstr "No es un paquete instalado: \"%s\"\n"
 
 #: src/debfoster.c:417
 #, c-format
@@ -61,17 +86,19 @@ msgstr "El paquete %s no tiene dependencias.\n"
 #: src/debfoster.c:446
 #, c-format
 msgid "The following %d packages on keeper list rely on %s:"
-msgstr "Los siguientes %d paquetes en la lista «keeper list» dependen de %s:"
+msgstr ""
+"Los siguientes %d paquetes en la lista de paquetes a mantener dependen de %"
+"s:"
 
 #: src/debfoster.c:447
 #, c-format
 msgid "Packages on keeper list do not rely on %s.\n"
-msgstr "Los paquetes en la lista «keeper list» no dependen de %s.\n"
+msgstr "Los paquetes en la lista de paquetes a mantener no dependen de %s.\n"
 
 #: src/debfoster.c:448
 #, c-format
 msgid "Packages kept by default rules %s %s.\n"
-msgstr ""
+msgstr "Paquetes mantenidos por opciones predeterminadas %s %s.\n"
 
 #: src/debfoster.c:448
 msgid "rely on"
@@ -84,12 +111,12 @@ msgstr "no depende de"
 #: src/debfoster.c:512
 #, c-format
 msgid "The following %d packages are brought in by %s:"
-msgstr "Los siguientes %d paquetes se proporcionan mediante %s:"
+msgstr "Los siguientes %d paquetes se instalan debido a %s:"
 
 #: src/debfoster.c:513
 #, c-format
 msgid "No packages are brought in by %s.\n"
-msgstr ""
+msgstr "%s no instala ningún paquete adicional.\n"
 
 #: src/debfoster.c:571
 #, c-format
@@ -108,7 +135,7 @@ msgstr ""
 #: src/debfoster.c:573
 #, c-format
 msgid "-v, --verbose                  Be a loudmouth\n"
-msgstr "-v, --verbose                  Ofrece una salida informativa\n"
+msgstr "-v, --verbose                  Muestra una salida informativa\n"
 
 #: src/debfoster.c:574
 #, c-format
@@ -124,17 +151,19 @@ msgstr "-h, --help                      Muestra este mensaje\n"
 #: src/debfoster.c:576
 #, c-format
 msgid "-q, --quiet                    Silently build keeper file\n"
-msgstr ""
+msgstr "-q, --quiet                    Genera silenciosamente el fichero «keepers» "
+"de paquetes a mantener\n"
 
 #: src/debfoster.c:577
 #, c-format
 msgid "-f, --force                    Force system to conform to keeper file\n"
-msgstr ""
+msgstr "-f, --force                   Fuerza el sistema a coincidir con el fichero "
+"de paquetes a mantener\n"
 
 #: src/debfoster.c:578
 #, c-format
 msgid "-m, --mark-only                Do not install or delete packages\n"
-msgstr "-m, --mark-only                No instala o elimina paquetes\n"
+msgstr "-m, --mark-only                No instala ni elimina paquetes\n"
 
 #: src/debfoster.c:579
 #, c-format
@@ -144,27 +173,28 @@ msgstr "-u, --upgrade                   Intenta actualizar las dependencias\n"
 #: src/debfoster.c:580
 #, c-format
 msgid "-c, --config FILE              Specify configuration file\n"
-msgstr "-c, --config FICHERO               Define un fichero de configuración\n"
+msgstr "-c, --config FICHERO          Especifica un fichero de configuración\n"
 
 #: src/debfoster.c:581
 #, c-format
 msgid "-k, --keeperfile FILE          Specify keeper file\n"
-msgstr ""
+msgstr "-k, --keeperfile FICHERO      Especifica un fichero de paquetes a mantener\n"
 
 #: src/debfoster.c:582
 #, c-format
 msgid "-n, --no-keeperfile            Don't read keeper file\n"
-msgstr ""
+msgstr "-n, --no-keeperfile            No lee el fichero de paquetes a mantener\n"
 
 #: src/debfoster.c:583
 #, c-format
 msgid "-i, --ignore-default-rules     Ignore default rules\n"
-msgstr "-i, --ignore-default-rules     Ignora las reglas predeterminadas\n"
+msgstr "-i, --ignore-default-rules     Ignora las opciones predeterminadas\n"
 
 #: src/debfoster.c:584
 #, c-format
 msgid "-a, --show-keepers             Show packages on keeper list\n"
-msgstr ""
+msgstr "-a, --show-keepers             Muestra los paquetes en la lista de paquetes "
+"a mantener\n"
 
 #: src/debfoster.c:585
 #, c-format
@@ -174,32 +204,32 @@ msgstr "-s, --show-orphans             Muestra paquetes huérfanos\n"
 #: src/debfoster.c:586
 #, c-format
 msgid "-d, --show-depends PACKAGE     Show all depends of PACKAGE\n"
-msgstr "-d, --show-depends PAQUETE       Muestra todas las dependencias de PAQUETE\n"
+msgstr "-d, --show-depends PAQUETE       Muestra todas las dependencias del PAQUETE\n"
 
 #: src/debfoster.c:587
 #, c-format
 msgid "-e, --show-dependents PACKAGE  Show dependents of PACKAGE\n"
-msgstr "-e, --show-dependents PAQUETE   Muestra los paquetes que dependen de PAQUETE\n"
+msgstr "-e, --show-dependents PAQUETE   Muestra los paquetes que dependen del PAQUETE\n"
 
 #: src/debfoster.c:588
 #, c-format
 msgid "-p, --show-providers PACKAGE   Show packages providing PACKAGE\n"
-msgstr ""
+msgstr "-p, --show-providers PAQUETE   Muestra los paquetes que proporcionan PAQUETE\n"
 
 #: src/debfoster.c:589
 #, c-format
 msgid "-r, --show-related PACKAGE     Show packages brought in by PACKAGE\n"
-msgstr ""
+msgstr "-r, --show-related PAQUETE   Muestra los paquetes instalados por PAQUETE\n"
 
 #: src/debfoster.c:590
 #, c-format
 msgid "-t, --use-tasks                Make tasks visible as packages\n"
-msgstr "-t, --use-tasks                Muestra tareas (tasks) como paquetes\n"
+msgstr "-t, --use-tasks                Muestra las tareas como paquetes\n"
 
 #: src/debfoster.c:591
 #, c-format
 msgid "-o, --option OPT=VAL           Override any configuration option\n"
-msgstr ""
+msgstr "-o, --option OPCIÓN=VALOR      Sustituye cualquier opción de configuración\n"
 
 #: src/debfoster.c:592
 #, c-format
@@ -213,45 +243,46 @@ msgstr ""
 #: src/debfoster.c:594
 #, c-format
 msgid "debfoster %s -- Copyright (C) 2000,2001 Wessel Dankers.\n"
-msgstr ""
+msgstr "debfoster %s -- Derechos de autor (C) 2000,2001 Wessel Dankers.\n"
 
 #: src/debfoster.c:595
 #, c-format
 msgid "Distributed under the GNU General Public License.\n"
-msgstr ""
+msgstr "Distribuido bajo la licencia GNU General Public Licence.\n"
 
 #: src/debfoster.c:633
 #, c-format
 msgid "%s: Invalid config option -- \"%s\"\n"
-msgstr ""
+msgstr "%s: Opción de configuración no válida -- \"%s\"\n"
 
 #: src/debfoster.c:684
 #, c-format
 msgid "Not a package: \"%s\"\n"
-msgstr ""
+msgstr "No es un paquete: \"%s\"\n"
 
 #: src/debfoster.c:706
 msgid "The following packages are on keeper list:"
-msgstr ""
+msgstr "Los siguientes paquetes están en la lista de paquetes a mantener:"
 
 #: src/debfoster.c:707
 #, c-format
 msgid "The keeper list is empty.\n"
-msgstr ""
+msgstr "La lista de paquetes a mantener está vacía.\n"
 
 #: src/debfoster.c:708
 msgid "The following packages are marked as non-keepers:"
 msgstr ""
+"Los siguientes paquetes están marcados como paquetes que no se mantendrán:"
 
 #: src/debfoster.c:735
 #, c-format
 msgid "Installing package: %s\n"
-msgstr ""
+msgstr "Instalando paquete: %s\n"
 
 #: src/debfoster.c:865
 #, c-format
 msgid "Keeping package: %s\n"
-msgstr ""
+msgstr "Manteniendo paquete: %s\n"
 
 #: src/debfoster.c:876
 #, c-format
@@ -259,115 +290,117 @@ msgid ""
 "\n"
 "%s is keeping the following %d packages installed:"
 msgstr ""
+"\n"
+"%s mantiene instalados los siguientes %d paquetes:"
 
 #: src/debfoster.c:879
 msgid "ynpshiuqx?"
-msgstr ""
+msgstr "¿ynpshiuqx?"
 
 #: src/debfoster.c:879
 #, c-format
 msgid "Keep %s? [Ynpsiuqx?], [H]elp: "
-msgstr ""
+msgstr "¿Desea mantener %s? [Ynpsiuqx?], [H] Ayuda: "
 
 #: src/debfoster.c:882
 #, c-format
 msgid "  Yes        Keep %s. [default]\n"
-msgstr ""
+msgstr "  Yes        Mantiene %s (predeterminado).\n"
 
 #: src/debfoster.c:883
 #, c-format
 msgid "  No         Delete %s.\n"
-msgstr ""
+msgstr "  No         Elimina %s.\n"
 
 #: src/debfoster.c:884
 #, c-format
 msgid "  Prune      Delete %s and the packages it is keeping installed.\n"
-msgstr ""
+msgstr "  Prune      Elimina %s y los paquetes que mantiene instalados.\n"
 
 #: src/debfoster.c:885
 #, c-format
 msgid "  Skip       Skip this question.\n"
-msgstr ""
+msgstr "  Skip       Omite esta pregunta.\n"
 
 #: src/debfoster.c:886
 #, c-format
 msgid "  Help       Print this message.\n"
-msgstr ""
+msgstr "  Help       Muestra este mensaje.\n"
 
 #: src/debfoster.c:887
 #, c-format
 msgid "  Info or ?  Show information about %s.\n"
-msgstr ""
+msgstr "  Info o ?  Muestra información acerca de %s.\n"
 
 #: src/debfoster.c:888
 #, c-format
 msgid "  Undo       Undo last response.\n"
-msgstr ""
+msgstr "  Undo       Deshace la última respuesta.\n"
 
 #: src/debfoster.c:889
 #, c-format
 msgid "  Quit       Exit without removing packages.\n"
-msgstr ""
+msgstr "  Quit       Cierra sin eliminar paquetes.\n"
 
 #: src/debfoster.c:890
 #, c-format
 msgid "  Exit       Remove unwanted packages and exit.\n"
-msgstr ""
+msgstr "  Exit       Elimina paquetes no deseados y cierra.\n"
 
 #: src/debfoster.c:903
 msgid "This is a task containing the following installed packages:"
-msgstr ""
+msgstr "Esta tarea contiene los siguientes paquetes instalados:"
 
 #: src/debfoster.c:925
 #, c-format
 msgid "Nothing to undo.\n"
-msgstr ""
+msgstr "Nada que deshacer.\n"
 
 #: src/debfoster.c:959
 msgid "The following packages have been orphaned:"
-msgstr ""
+msgstr "Los siguientes paquetes han quedado huérfanos:"
 
 #: src/debfoster.c:960
 #, c-format
 msgid "There are no orphaned packages.\n"
-msgstr ""
+msgstr "No hay paquetes huérfanos.\n"
 
 #: src/debfoster.c:980
 #, c-format
 msgid "Package is not installed: %s\n"
-msgstr ""
+msgstr "El paquete no está instalado: %s\n"
 
 #: src/debfoster.c:983
 #, c-format
 msgid "Package is a dependency: %s\n"
-msgstr ""
+msgstr "El paquete es una dependencia: %s\n"
 
 #: src/debfoster.c:986
 #, c-format
 msgid "Removing package: %s\n"
-msgstr ""
+msgstr "Eliminando paquete: %s\n"
 
 #: src/asktty.c:28 src/asktty.c:74
 #, c-format
 msgid "Interrupted\n"
-msgstr ""
+msgstr "Interrumpido\n"
 
 #: src/conffile.c:49
 #, c-format
 msgid "Not a truth value: \"%s\"\n"
-msgstr ""
+msgstr "No es un valor verdadero: \"%s\"\n"
 
 #: src/conffile.c:161
 #, c-format
 msgid "Syntax error in %s:%d\n"
-msgstr ""
+msgstr "Error de sintaxis en %s:%d\n"
 
 #: src/conffile.c:165
 #, c-format
 msgid "Unknown option `%s' at %s:%d\n"
-msgstr ""
+msgstr "Opción desconocida `%s' en %s:%d\n"
 
 #: src/status.c:420
 #, c-format
 msgid "Unknown priority \"%s\"\n"
-msgstr ""
+msgstr "Prioridad desconocida \"%s\"\n"

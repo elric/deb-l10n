@@ -28,10 +28,10 @@
 #     o http://www.debian.org/intl/l10n/po-debconf/README-trans
 msgid ""
 msgstr ""
-"Project-Id-Version: cwidget 0.5.16\n"
+"Project-Id-Version: cwidget 0.5.16-3.1\n"
 "Report-Msgid-Bugs-To: dburrows@debian.org\n"
 "POT-Creation-Date: 2009-11-29 18:35-0800\n"
-"PO-Revision-Date: 2012-01-02 11:59+0100\n"
+"PO-Revision-Date: 2012-01-14 11:40+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -100,7 +100,7 @@ msgid ""
 "Unable to load filename: the string %ls has no multibyte representation."
 msgstr ""
 "No se puede cargar el fichero: la cadena «%ls» no tiene "
-"representación multi-byte."
+"representación multibyte."
 
 #: src/cwidget/widgets/tree.cc:1009
 msgid "TOP LEVEL"

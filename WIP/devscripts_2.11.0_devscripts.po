@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Omar Campagne <ocampagne@gmail.com>, 2011.
+# Omar Campagne <ocampagne@gmail.com>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2011-05-25 03:58+0000\n"
-"PO-Revision-Date: 2011-10-24 17:48+0200\n"
+"PO-Revision-Date: 2012-02-20 13:56+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1-rc1\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 #. type: TH
 #: ../scripts/annotate-output.1:1
@@ -2575,7 +2575,7 @@ msgstr ""
 "son analizados en este orden por el intérprete de órdenes para definir las "
 "variables de configuración. Las opciones de línea de órdenes se pueden "
 "utilizar para anular la configuración en los ficheros. Para ello, se ignoran "
-"las variables de entorno. Las variable actualmente reconocidas son:"
+"las variables de entorno. Las variables actualmente reconocidas son:"
 
 #. type: =item
 #: ../scripts/bts.pl:4001
@@ -3206,22 +3206,22 @@ msgstr ""
 #: ../scripts/checkbashisms.1:1
 #, no-wrap
 msgid "CHECKBASHISMS"
-msgstr ""
+msgstr "CHECKBASHISMS"
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:4
 msgid "checkbashisms - check for bashisms in /bin/sh scripts"
-msgstr ""
+msgstr "checkbashisms - Comprueba «bashisms» en scripts /bin/sh"
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:6
 msgid "B<checkbashisms> I<script> ..."
-msgstr ""
+msgstr "B<checkbashisms> I<script> ..."
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:8
 msgid "B<checkbashisms --help>|B<--version>"
-msgstr ""
+msgstr "B<checkbashisms --help>|B<--version>"
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:14
@@ -3231,6 +3231,10 @@ msgid ""
 "of bashisms.  It takes the names of the shell scripts on the command line, "
 "and outputs warnings if possible bashisms are detected."
 msgstr ""
+"B<checkbashisms> se basa en una de las pruebas del sistema B<lintian> y "
+"realiza comprobaciones básicas de scripts I</bin/sh> para intérprete de "
+"órdenes. Analiza los nombres de los scripts de consola en la línea de "
+"órdenes y muestra advertencias si se detecta sintaxis Bash."
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:19
@@ -3240,6 +3244,11 @@ msgid ""
 "that some issues flagged may be permitted under optional sections of POSIX, "
 "such as XSI or User Portability."
 msgstr ""
+"Tenga en cuenta que, en este contexto, la definición de «bashism» equivale "
+"en términos generales a una funcionalidad del intérprete de órdenes no "
+"admitida bajo el estándar POSIX; esto es, algunos problemas mostrados pueden "
+"estar admitidos bajo secciones opcionales de POSIX, como XSI o «User "
+"Portability»."
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:23
@@ -3248,23 +3257,26 @@ msgid ""
 "allows extensions permitted by Policy but may also provide options for "
 "stricter checking."
 msgstr ""
+"En las situaciones donde POSIX y las Normas de Debian discrepan, "
+"B<checkbashisms> permite por omisión extensiones permitidas por las normas, "
+"pero puede proporcionar opciones para un análisis más completo."
 
 #. type: TP
 #: ../scripts/checkbashisms.1:24 ../scripts/debchange.1:364 ../scripts/debdiff.1:155 ../scripts/debrelease.1:99 ../scripts/debsign.1:105 ../scripts/dscverify.1:36 ../scripts/pts-subscribe.1:28 ../scripts/rc-alert.1:21 ../scripts/uupdate.1:82 ../scripts/whodepends.1:11 ../scripts/who-uploads.1:44 ../scripts/wnpp-alert.1:23 ../scripts/wnpp-check.1:17
 #, no-wrap
 msgid "B<--help>, B<-h>"
-msgstr ""
+msgstr "B<--help>, B<-h>"
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:27 ../scripts/debdiff.1:158 ../scripts/mk-build-deps.pl:81 ../scripts/rc-alert.1:24 ../scripts/wnpp-alert.1:26 ../scripts/wnpp-check.1:20
 msgid "Show a summary of options."
-msgstr ""
+msgstr "Muestra un resumen de las opciones."
 
 #. type: TP
 #: ../scripts/checkbashisms.1:27
 #, no-wrap
 msgid "B<--newline>, B<-n>"
-msgstr ""
+msgstr "B<--newline>, B<-n>"
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:30
@@ -3272,12 +3284,14 @@ msgid ""
 "Check for \"B<echo -n>\" usage (non POSIX but required by Debian Policy "
 "10.4.)"
 msgstr ""
+"Comprueba el uso de «B<echo -n> (no admitido bajo POSIX pero requerido por "
+"las Normas de Debian 10.4)."
 
 #. type: TP
 #: ../scripts/checkbashisms.1:30
 #, no-wrap
 msgid "B<--posix>, B<-p>"
-msgstr ""
+msgstr "B<--posix>, B<-p>"
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:34
@@ -3285,12 +3299,14 @@ msgid ""
 "Check for issues which are non POSIX but required to be supported by Debian "
 "Policy 10.4 (implies B<-n>)."
 msgstr ""
+"Comprueba sintaxis no POSIX pero requerida para el cumplimiento con Normas "
+"de Debian 10.4 (implica B<-n>)."
 
 #. type: TP
 #: ../scripts/checkbashisms.1:34
 #, no-wrap
 msgid "B<--force>, B<-f>"
-msgstr ""
+msgstr "B<--force>, B<-f>"
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:39
@@ -3299,12 +3315,15 @@ msgid ""
 "instance, it has a bash or non POSIX shell shebang or appears to be a shell "
 "wrapper)."
 msgstr ""
+"Fuerza el análisis de cada scripts, incluso si no es así habitualmente (por "
+"ejemplo, tiene un «shebang» de intérprete de órdenes para Bash o no POSIX o "
+"aparenta ser una interfaz para intérprete de órdenes)."
 
 #. type: TP
 #: ../scripts/checkbashisms.1:39
 #, no-wrap
 msgid "B<--extra>, B<-x>"
-msgstr ""
+msgstr "B<--extra>, B<-x>"
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:46
@@ -3314,23 +3333,27 @@ msgid ""
 "ignored.  For example, the use of \"B<$BASH_ENV>\" may be preceded by "
 "checking whether \"B<$BASH>\" is set."
 msgstr ""
+"Destaca las líneas que, aunque no contengan «bashisms», pueden ser útiles "
+"para dilucidar si un problema particular es un positivo falso que puede ser "
+"ignorado. Por ejemplo, se puede comprobar el uso de B<$BASH> previamente a "
+"la prueba de uso de B<$BASH_ENV>."
 
 #. type: TP
 #: ../scripts/checkbashisms.1:46 ../scripts/debdiff.1:158 ../scripts/manpage-alert.1:17 ../scripts/rc-alert.1:24 ../scripts/whodepends.1:14 ../scripts/wnpp-alert.1:26 ../scripts/wnpp-check.1:20
 #, no-wrap
 msgid "B<--version>, B<-v>"
-msgstr ""
+msgstr "B<--version>, B<-v>"
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:49 ../scripts/debdiff.1:161 ../scripts/getbuildlog.1:31 ../scripts/grep-excuses.1:28 ../scripts/manpage-alert.1:20 ../scripts/mk-build-deps.pl:85 ../scripts/rc-alert.1:27 ../scripts/whodepends.1:17 ../scripts/wnpp-alert.1:29 ../scripts/wnpp-check.1:23
 msgid "Show version and copyright information."
-msgstr ""
+msgstr "Muestra la versión e información de derechos de autor."
 
 #. type: SH
 #: ../scripts/checkbashisms.1:49 ../scripts/debdiff.1:211
 #, no-wrap
 msgid "EXIT VALUES"
-msgstr ""
+msgstr "VALORES DE SALIDA"
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:53
@@ -3338,23 +3361,25 @@ msgid ""
 "The exit value will be 0 if no possible bashisms or other problems were "
 "detected.  Otherwise it will be the sum of the following error values:"
 msgstr ""
+"El valor de salida es cero si no se detectan «bashisms» u otros problemas. "
+"De lo contrario, el valor será la suma de los siguientes valores de error:"
 
 #. type: TP
 #: ../scripts/checkbashisms.1:53 ../scripts/transition-check.pl:66 ../scripts/uscan.1:506 ../scripts/wnpp-check.1:29
 #, no-wrap
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:56
 msgid "A possible bashism was detected."
-msgstr ""
+msgstr "Se ha detectado un posible «bashism»."
 
 #. type: TP
 #: ../scripts/checkbashisms.1:56
 #, no-wrap
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:60
@@ -3362,11 +3387,13 @@ msgid ""
 "A file was skipped for some reason, for example, because it was unreadable "
 "or not found.  The warning message will give details."
 msgstr ""
+"Se ha omitido un fichero debido a algo, por ejemplo, no se podía leer o no "
+"se ha encontrado. El mensaje de aviso proporcionará detalles."
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:62
 msgid "B<lintian>(1)."
-msgstr ""
+msgstr "B<lintian>(1)."
 
 #. type: Plain text
 #: ../scripts/checkbashisms.1:65
@@ -3375,6 +3402,9 @@ msgid ""
 "E<lt>I<dirson@debian.org>E<gt> and rewritten in Perl with many more features "
 "by Julian Gilbey E<lt>I<jdg@debian.org>E<gt>."
 msgstr ""
+"B<checkbashisms> fue creado originalmente como un script de intérprete de "
+"órdenes por Yann Dirson E<lt>I<dirson@debian.org>E<gt>, y reescrito en Perl "
+"con más funcionalidades por Julian Gilbey E<lt>I<jdg@debian.org>E<gt>."
 
 #. type: TH
 #: ../scripts/cowpoke.1:5
@@ -3921,17 +3951,19 @@ msgstr ""
 #: ../scripts/cvs-debc.1:1 ../scripts/cvs-debrelease.1:1
 #, no-wrap
 msgid "CVS-DEBC"
-msgstr ""
+msgstr "CVS-DEBC"
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:4
 msgid "cvs-debc - view contents of a cvs-buildpackage/cvs-debuild generated package"
 msgstr ""
+"cvs-debc - Muestra el contenido de un paquete generado mediante cvs-"
+"buildpackage/cvs-debuild"
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:6
 msgid "B<cvs-debc> [I<options>] [I<package> ...]"
-msgstr ""
+msgstr "B<cvs-debc> [I<opciones>] [I<paquete> ...]"
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:17
@@ -3945,6 +3977,15 @@ msgid ""
 "I<.changes> file.  It is useful for ensuring that the expected files have "
 "ended up in the Debian package."
 msgstr ""
+"B<cvs-debc> se ejecuta desde el directorio de trabajo CVS a continuación de "
+"B<cvs-buildpackage> or B<cvs-debuild>. Utiliza el sistema de B<cvs-"
+"buildpackage> para ubicar el fichero I<.changes> generado en esa ejecución. "
+"A continuación muestra información de los ficheros «.deb» generados en esa "
+"ejecución, ejecutando B<dpkg-deb -I> y B<dpkg-deb -c> sobre cada fichero "
+"I<.deb> listado en el fichero I<.changes>, suponiendo que todos los ficheros "
+"I<.deb> se encuentran en el mismo directorio que el fichero I<.changes>. Es "
+"útil para garantizar que los ficheros deseados se encuentren finalmente en "
+"el paquete Debian."
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:20
@@ -3952,6 +3993,8 @@ msgid ""
 "If a list of packages is given on the command line, then only those debs "
 "with names in this list of packages will be processed."
 msgstr ""
+"Si se proporciona una lista de paquete en la línea de órdenes, solo se "
+"procesan aquellos «deb» con nombres en esta lista."
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:24 ../scripts/cvs-debi.1:23 ../scripts/cvs-debrelease.1:21
@@ -3960,6 +4003,9 @@ msgid ""
 "package name is with the B<-P> option; you cannot simply have it as the last "
 "command-line parameter."
 msgstr ""
+"Tenga en cuenta que, a diferencia de B<cvs-buildpackage>, la única forma de "
+"especificar un nombre de paquete fuente es con la opción B<-P>; no puede "
+"simplemente añadirlo como el último parámetro de línea de órdenes."
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:28 ../scripts/cvs-debi.1:32
@@ -3968,12 +4014,16 @@ msgid ""
 "the ones listed below have any effect.  For more details on all of them, see "
 "the B<cvs-buildpackage>(1) manpage."
 msgstr ""
+"Todas las opciones actuales de B<cvs-buildpackage> se admiten de forma "
+"silenciosa; sin embargo, solo las enumeradas a continuación tienen algún "
+"efecto. Para más detalles consulta la página de manual B<cvs-"
+"buildpackage>(1)."
 
 #. type: TP
 #: ../scripts/cvs-debc.1:28 ../scripts/cvs-debi.1:32 ../scripts/cvs-debrelease.1:30 ../scripts/debc.1:65 ../scripts/debi.1:66 ../scripts/debrelease.1:67 ../scripts/debrsign.1:35 ../scripts/debsign.1:77
 #, no-wrap
 msgid "B<-a>I<debian-architecture>, B<-t>I<GNU-system-type>"
-msgstr ""
+msgstr "B<-a>I<debian-architecture>, B<-t>I<tipo-de-sistema-GNU>"
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:34 ../scripts/cvs-debi.1:38 ../scripts/cvs-debrelease.1:36 ../scripts/debc.1:71 ../scripts/debi.1:72 ../scripts/debrsign.1:41 ../scripts/debsign.1:83
@@ -3983,99 +4033,105 @@ msgid ""
 "behaviour of B<dpkg-buildpackage> when determining the name of the "
 "I<.changes> file."
 msgstr ""
+"Para una descripción de estas opciones consulte B<dpkg-architecture>(1). "
+"Afectan a la búsqueda del fichero I<.changes>. Se oferecen para imitar el "
+"comportamiento de B<dpkg-buildpackage> al determinar el nombre del fichero "
+"I<.changes>."
 
 #. type: TP
 #: ../scripts/cvs-debc.1:34 ../scripts/cvs-debi.1:38 ../scripts/cvs-debrelease.1:36
 #, no-wrap
 msgid "B<-M>I<module>"
-msgstr ""
+msgstr "B<-M>I<módulo>"
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:37 ../scripts/cvs-debi.1:41 ../scripts/cvs-debrelease.1:39
 msgid "The name of the CVS module."
-msgstr ""
+msgstr "El nombre del módulo CVS."
 
 #. type: TP
 #: ../scripts/cvs-debc.1:37 ../scripts/cvs-debi.1:41 ../scripts/cvs-debrelease.1:39
 #, no-wrap
 msgid "B<-P>I<package>"
-msgstr ""
+msgstr "B<-P>I<paquete>"
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:40 ../scripts/cvs-debi.1:44 ../scripts/cvs-debrelease.1:42
 msgid "The name of the package."
-msgstr ""
+msgstr "El nombre del paquete."
 
 #. type: TP
 #: ../scripts/cvs-debc.1:40 ../scripts/cvs-debi.1:44 ../scripts/cvs-debrelease.1:42
 #, no-wrap
 msgid "B<-V>I<version>"
-msgstr ""
+msgstr "B<-V>I<versión>"
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:43 ../scripts/cvs-debi.1:47 ../scripts/cvs-debrelease.1:45
 msgid "The version number of the package."
-msgstr ""
+msgstr "El número de versión del paquete."
 
 #. type: TP
 #: ../scripts/cvs-debc.1:43 ../scripts/cvs-debi.1:47 ../scripts/cvs-debrelease.1:45
 #, no-wrap
 msgid "B<-T>I<tag>"
-msgstr ""
+msgstr "B<-T>I<etiqueta>"
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:46 ../scripts/cvs-debi.1:50 ../scripts/cvs-debrelease.1:48
 msgid "The CVS tag to use for exporting sources."
-msgstr ""
+msgstr "La etiqueta CVS empleada para exportar las fuentes."
 
 #. type: TP
 #: ../scripts/cvs-debc.1:46 ../scripts/cvs-debi.1:50 ../scripts/cvs-debrelease.1:48
 #, no-wrap
 msgid "B<-R>I<root\\ directory>"
-msgstr ""
+msgstr "B<-R>I<directorio-raíz>"
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:49 ../scripts/cvs-debi.1:53 ../scripts/cvs-debrelease.1:51
 msgid "Root of the original sources archive."
-msgstr ""
+msgstr "Directorio raíz del archivo de las fuentes originales."
 
 #. type: TP
 #: ../scripts/cvs-debc.1:49 ../scripts/cvs-debi.1:53 ../scripts/cvs-debrelease.1:51
 #, no-wrap
 msgid "B<-W>I<work directory>"
-msgstr ""
+msgstr "B<-W>I<directorio-de-trabajo>"
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:52 ../scripts/cvs-debi.1:56 ../scripts/cvs-debrelease.1:54
 msgid "The full path name for the cvs-buildpackage working directory."
 msgstr ""
+"El nombre de la ruta absoluta del directorio de trabajo de cvs-buildpackage."
 
 #. type: TP
 #: ../scripts/cvs-debc.1:52 ../scripts/cvs-debi.1:56 ../scripts/cvs-debrelease.1:54
 #, no-wrap
 msgid "B<-x>I<prefix>"
-msgstr ""
+msgstr "B<-x>I<prefijo>"
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:55 ../scripts/cvs-debi.1:59 ../scripts/cvs-debrelease.1:57
 msgid "This option provides the CVS default module prefix."
-msgstr ""
+msgstr "Esta opción proporciona el prefijo de módulo predefinido de CVS."
 
 #. type: TP
 #: ../scripts/cvs-debc.1:55 ../scripts/cvs-debi.1:59 ../scripts/cvs-debrelease.1:61 ../scripts/debc.1:89 ../scripts/debi.1:96 ../scripts/debrsign.1:50
 #, no-wrap
 msgid "B<--help>, B<--version>"
-msgstr ""
+msgstr "B<--help>, B<--version>"
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:58 ../scripts/cvs-debi.1:62 ../scripts/cvs-debrelease.1:64 ../scripts/debc.1:92 ../scripts/debi.1:99 ../scripts/debrsign.1:53
 msgid "Show help message and version information respectively."
 msgstr ""
+"Muestran un mensaje de ayuda e información de la versión respectivamente."
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:64
 msgid "B<cvs-buildpackage>(1), B<cvs-debi>(1), B<cvs-debuild>(1)  and B<debc>(1)."
-msgstr ""
+msgstr "B<cvs-buildpackage>(1), B<cvs-debi>(1), B<cvs-debuild>(1) y B<debc>(1)."
 
 #. type: Plain text
 #: ../scripts/cvs-debc.1:68 ../scripts/cvs-debi.1:72
@@ -4084,22 +4140,25 @@ msgid ""
 "of B<debi> was written by Julian Gilbey E<lt>jdg@debian.orgE<gt>.  They have "
 "been combined into this program by Julian Gilbey."
 msgstr ""
+"B<cvs-buildpackage> fue creado por Manoj Srivastava, y la versión actual de "
+"B<debi> fue creada por Julian Gilbey E<lt>jdg@debian.orgE<gt>. Se han "
+"combinado en este programa gracias a Julian Gilbey."
 
 #. type: TH
 #: ../scripts/cvs-debi.1:1
 #, no-wrap
 msgid "CVS-DEBI"
-msgstr ""
+msgstr "CVS-DEBI"
 
 #. type: Plain text
 #: ../scripts/cvs-debi.1:4
 msgid "cvs-debi - install cvs-buildpackage/cvs-debuild generated package"
-msgstr ""
+msgstr "cvs-debi - Instala un paquete generado con cvs-buildpackage/cvs-debuild"
 
 #. type: Plain text
 #: ../scripts/cvs-debi.1:6
 msgid "B<cvs-debi> [I<options>] [I<package> ...]"
-msgstr ""
+msgstr "B<cvs-debi> [I<opciones>] [I<paquete> ...]"
 
 #. type: Plain text
 #: ../scripts/cvs-debi.1:16
@@ -4113,6 +4172,15 @@ msgid ""
 "a I<.changes> file relating to a different architecture after "
 "cross-compiling the package!"
 msgstr ""
+"B<cvs-debi> se ejecuta en el directorio de trabajo de CVS después de B<cvs-"
+"buildpackage> o B<cvs-debuild>. Utiliza el sistema B<cvs-buildpackage> para "
+"ubicar el fichero I<.changes> generado en esa ejecución. A continuación, "
+"ejecuta B<debpkg -i> sobre cada fichero I<.deb> enumerado en el fichero "
+"I<.changes> para su instalación, suponiendo que cada fichero I<.deb> se "
+"encuentra en el mismo directorio que el fichero I<.changes>. Tenga en cuenta "
+"que posiblemente no le interese ejecuta este programa sobre un fichero "
+"I<.changes> relativa a otra arquitectura después de una compilación cruzada "
+"del paquete."
 
 #. type: Plain text
 #: ../scripts/cvs-debi.1:19 ../scripts/debi.1:24
@@ -4120,6 +4188,8 @@ msgid ""
 "If a list of packages is given on the command line, then only those debs "
 "with names in this list of packages will be installed."
 msgstr ""
+"Si se proporciona una lista de paquete en la línea de órdenes, solo se "
+"instalan aquellos «deb» con nombres en esta lista."
 
 #. type: Plain text
 #: ../scripts/cvs-debi.1:28 ../scripts/debi.1:29
@@ -4129,16 +4199,22 @@ msgid ""
 "either being run as root or B<debpkg> can be run as root.  See B<debpkg>(1) "
 "for more details."
 msgstr ""
+"Debido a que la instalación de un paquete requiere permisos de usuario "
+"«root», B<debi> invoca B<debpkg> en lugar de invocar B<dpkg> directamente. "
+"Por ello, B<debi> solo es útil si se ejecuta como el usuario «root» o si "
+"B<debpkg> se puede ejecutar con permisos de usuario root. Para más detalles "
+"consulte B<debpkg>(1)."
 
 #. type: Plain text
 #: ../scripts/cvs-debi.1:68
 msgid "B<cvs-buildpackage>(1), B<cvs-debc>(1)  B<cvs-debuild>(1)  and B<debi>(1)."
-msgstr ""
+msgstr "B<cvs-buildpackage>(1), B<cvs-debc>(1) B<cvs-debuild>(1) y B<debi>(1)."
 
 #. type: Plain text
 #: ../scripts/cvs-debrelease.1:4
 msgid "cvs-debrelease - upload a cvs-buildpackage/cvs-debuild generated package"
 msgstr ""
+"cvs-debrelease - Envía un paquete generado con cvs-buildpackage/cvs-debuild"
 
 #. type: Plain text
 #: ../scripts/cvs-debrelease.1:7
@@ -4146,6 +4222,8 @@ msgid ""
 "B<cvs-debrelease> [I<cvs-debrelease options>] [B<--dopts> [I<dupload/dput "
 "options>]]"
 msgstr ""
+"B<cvs-debrelease> [I<opciones-de-cvs-debrelease>] [B<--dopts> [I<opciones-"
+"de-dupload/dput>]]"
 
 #. type: Plain text
 #: ../scripts/cvs-debrelease.1:17
@@ -4159,6 +4237,15 @@ msgid ""
 "options.  Also, the B<devscripts> configuration files will be read, as "
 "described in the B<debrelease>(1) manpage."
 msgstr ""
+"B<cvs-debrelease> se ejecuta desde el directorio de trabajo de CVS a "
+"continuación de B<cvs-buildpackage> o B<cvs-debuild>. Utiliza el sistema B"
+"<cvs-buildpackage> para ubicar el fichero I<.changes> generado en esa "
+"ejecución. A continuación envía el paquete mediante B<debrelease>(1),  que a "
+"su vez invoca B<dupload> o B<dput>. Tenga en cuenta que se debe especificar "
+"la opción B<--dopts> para distinguir las opciones de  B<cvs-debrelease> de "
+"las opciones de B<dupload> o B<dput>. Así mismo, se analizan los ficheros de "
+"configuración de B<devscripts>, tal y como se describe en la página de "
+"manual B<debrelease>(1)."
 
 #. type: Plain text
 #: ../scripts/cvs-debrelease.1:26
@@ -4168,22 +4255,29 @@ msgid ""
 "the B<cvs-buildpackage>(1) manpage.  All B<debrelease> options (as listed "
 "below) are also accepted."
 msgstr ""
+"Todas las opciones actuales de B<cvs-buildpackage> se admiten de forma "
+"silenciosa; sin embargo, solo las enumeradas a continuación tienen algún "
+"efecto. Para más detalles consulta la página de manual B<cvs-"
+"buildpackage>(1). Se admiten todas las opciones de B<debrelease> (tal y como "
+"se enumeran a continuación)."
 
 #. type: TP
 #: ../scripts/cvs-debrelease.1:26 ../scripts/debrelease.1:57
 #, no-wrap
 msgid "B<--dupload>, B<--dput>"
-msgstr ""
+msgstr "B<--dupload>, B<--dput>"
 
 #. type: Plain text
 #: ../scripts/cvs-debrelease.1:30 ../scripts/debrelease.1:61
 msgid "This specifies which uploader program to use; the default is B<dupload>."
 msgstr ""
+"Especifica el programa de subida de datos a utilizar; el valor predefinido "
+"es B<dupload>."
 
 #. type: Plain text
 #: ../scripts/cvs-debrelease.1:69
 msgid "B<cvs-buildpackage>(1), B<debrelease>(1)  and B<cvs-debuild>(1)."
-msgstr ""
+msgstr "B<cvs-buildpackage>(1), B<debrelease>(1)  y B<cvs-debuild>(1)."
 
 #. type: Plain text
 #: ../scripts/cvs-debrelease.1:73
@@ -4192,17 +4286,22 @@ msgid ""
 "of B<debrelease> was written by Julian Gilbey E<lt>jdg@debian.orgE<gt>.  "
 "They have been combined into this program by Julian Gilbey."
 msgstr ""
+"B<cvs-buildpackage> fue creado por Manoj Srivastava, y la versión actual de "
+"B<debrelease> fue creada por Julian Gilbey E<lt>jdg@debian.orgE<gt>. Se han "
+"combinado en este programa gracias a Julian Gilbey."
 
 #. type: TH
 #: ../scripts/cvs-debuild.1:1
 #, no-wrap
 msgid "CVS-DEBUILD"
-msgstr ""
+msgstr "CVS-DEBUILD"
 
 #. type: Plain text
 #: ../scripts/cvs-debuild.1:4
 msgid "cvs-debuild - build a Debian package using cvs-buildpackage and debuild"
 msgstr ""
+"cvs-debuild - Construye un paquete Debian utilizando cvs-buildpackage y "
+"debuild"
 
 #. type: Plain text
 #: ../scripts/cvs-debuild.1:7
@@ -4210,6 +4309,8 @@ msgid ""
 "B<cvs-debuild> [I<debuild options>] [I<cvs-buildpackage options>] "
 "[B<--lintian-opts> I<lintian options>]"
 msgstr ""
+"B<cvs-debuild> [I<opciones-de-debuild>] [I<opciones-de-cvs-buildpackage>] [B"
+"<--lintian-opts> I<opciones-de-lintian>]"
 
 #. type: Plain text
 #: ../scripts/cvs-debuild.1:13
@@ -4219,6 +4320,10 @@ msgid ""
 "accomplished using the B<-C> option of B<cvs-buildpackage>, as it does not "
 "know how to handle all of the special B<debuild> options.)"
 msgstr ""
+"B<cvs-debuild> es un interfaz para B<cvs-buildpackage> para ejecutarlo con "
+"B<debuild> como el programa de construcción de paquete. (Esto no es posible "
+"utilizando la opción B<-C> de B<cvs-buildpackage>, ya que no es capaz de "
+"manejar todas las opciones especiales de B<debuild>.)"
 
 #. type: Plain text
 #: ../scripts/cvs-debuild.1:22
@@ -4230,6 +4335,14 @@ msgid ""
 "be passed as an option to B<cvs-buildpackage>.  The first non-B<debuild> "
 "option detected will signal the start of the B<cvs-buildpackage> options."
 msgstr ""
+"El programa simplemente agrupa las opciones de B<debuild> y B<lintian>, y "
+"las introduce a B<debuild> cuando es invocado por B<cvs-buildpackage>. Se "
+"permite utilizar todas las opciones de B<debuild> (como se muestran a "
+"continuación), pero tenga en cuenta que la orden para obtener privilegios de "
+"usuario «root» definido con la opción de línea de órdenes B<--rootcmd> o "
+"B<-r> se introduce como opción a B<cvs-buildpackage>. La primera opción "
+"detectada que no sea de B<debuild> señala el inicio de las opciones para B"
+"<cvs-buildpackage>."
 
 #. type: Plain text
 #: ../scripts/cvs-debuild.1:29
@@ -4241,6 +4354,12 @@ msgid ""
 "its procedures to determine an appropriate command, as described in its "
 "documentation."
 msgstr ""
+"La selección de la orden para «root» es un tanto sutil: si hay alguna opción "
+"de línea de órdenes, se utilizarán. De lo contrario, B<cvs-buildpackage> se "
+"configura para utilizar una orden de «root»  predefinida. Por último, si no "
+"se cumple ninguna de estas situaciones, B<debuild> utiliza sus "
+"procedimientos para determinar una orden adecuada de la forma descrita en su "
+"documentación."
 
 #. type: Plain text
 #: ../scripts/cvs-debuild.1:32
@@ -4248,6 +4367,8 @@ msgid ""
 "See the manpages for B<debuild>(1) and B<cvs-buildpackage> for more "
 "information about the behaviour of each."
 msgstr ""
+"Para más información de estás órdenes consulte las páginas de manual de "
+"B<debuild>(1) y B<cvs-buildpackage>."
 
 #. type: Plain text
 #: ../scripts/cvs-debuild.1:38
@@ -4257,47 +4378,53 @@ msgid ""
 "appropriate program.  For explanations of the meanings of these variables, "
 "see B<debuild>(1)."
 msgstr ""
+"A continuación se muestran las opciones de B<debuild> reconocidas por B<cvs-"
+"debuild>. Todas las opciones de B<cvs-buildpackage> y B<lintian> se "
+"introducen al programa adecuada. Para una explicación del significado de "
+"estas variables, consulte B<debuild>(1)."
 
 #. type: TP
 #: ../scripts/cvs-debuild.1:40 ../scripts/debuild.1:225
 #, no-wrap
 msgid "B<--rootcmd=>I<gain-root-command>, B<-r>I<gain-root-command>"
 msgstr ""
+"B<--rootcmd=>I<orden-para-permisos-de-root>, B<-r>I<orden-para-permisos-de-"
+"root>"
 
 #. type: TP
 #: ../scripts/cvs-debuild.1:42 ../scripts/debuild.1:228
 #, no-wrap
 msgid "B<--preserve-env>"
-msgstr ""
+msgstr "B<--preserve-env>"
 
 #. type: TP
 #: ../scripts/cvs-debuild.1:44 ../scripts/debuild.1:231
 #, no-wrap
 msgid "B<--preserve-envvar=>I<var>, B<-e>I<var>"
-msgstr ""
+msgstr "B<--preserve-envvar=>I<variable>, B<-e>I<variable>"
 
 #. type: TP
 #: ../scripts/cvs-debuild.1:46 ../scripts/debuild.1:238
 #, no-wrap
 msgid "B<--set-envvar=>I<var>B<=>I<value>, B<-e>I<var>B<=>I<value>"
-msgstr ""
+msgstr "B<--set-envvar=>I<variable>B<=>I<valor>, B<-e>I<variable>B<=>I<valor>"
 
 #. type: TP
 #: ../scripts/cvs-debuild.1:48
 #, no-wrap
 msgid "B<--lintian>, B<--no-lintian>"
-msgstr ""
+msgstr "B<--lintian>, B<--no-lintian>"
 
 #. type: TP
 #: ../scripts/cvs-debuild.1:50
 #, no-wrap
 msgid "B<--ignore-dirname>, B<--check-dirname>"
-msgstr ""
+msgstr "B<--ignore-dirname>, B<--check-dirname>"
 
 #. type: Plain text
 #: ../scripts/cvs-debuild.1:53
 msgid "These should not be needed, but it is provided nevertheless."
-msgstr ""
+msgstr "No se deben utilizar, para aún así se proporcionan."
 
 #. type: Plain text
 #: ../scripts/cvs-debuild.1:59
@@ -4305,27 +4432,33 @@ msgid ""
 "B<cvs-buildpackage>(1), B<debuild>(1), B<dpkg-buildpackage>(1)  and "
 "B<lintian>(1)."
 msgstr ""
+"B<cvs-buildpackage>(1), B<debuild>(1), B<dpkg-buildpackage>(1) y "
+"B<lintian>(1)."
 
 #. type: Plain text
 #: ../scripts/cvs-debuild.1:60
 msgid "This program was written by Julian Gilbey E<lt>jdg@debian.orgE<gt>."
-msgstr ""
+msgstr "Este programa fue creado por Julian Gilbey E<lt>jdg@debian.orgE<gt>."
 
 #. type: TH
 #: ../scripts/dcmd.1:1
 #, no-wrap
 msgid "DCMD"
-msgstr ""
+msgstr "DCMD"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:4
 msgid "dcmd - expand file lists of .dsc/.changes files in the command line"
 msgstr ""
+"dcmd - Expande las listas de ficheros en los ficheros «.dsc/.changes» enla "
+"línea de órdenes"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:7
 msgid "B<dcmd> [I<options>] [I<command>] [I<changes-file>|I<dsc-file>] [I<...>]"
 msgstr ""
+"B<dcmd> [I<opciones>] [I<orden>] [I<fichero-changes>|I<fichero-dsc>] "
+"[I<...>]"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:12
@@ -4335,6 +4468,11 @@ msgid ""
 "It allows easy manipulation of all the files involved in an upload (for "
 "changes files) or a source package (for dsc files)."
 msgstr ""
+"B<dcmd> sustituye toda referencia a un fichero «.dsc» o «.changes» en la "
+"línea de órdenes con la lista de ficheros en la sección «Files», además del "
+"fichero específico. Permite una sencilla manipulación de todos los ficheros "
+"incluidos en un envío (para ficheros «changes») o un paquete fuentes (para "
+"ficheros «.dsc»)."
 
 #. type: Plain text
 #: ../scripts/dcmd.1:16
@@ -4343,6 +4481,9 @@ msgid ""
 ".changes file), the expanded list of files is printed to stdout, one file by "
 "line. Useful for usage in backticks."
 msgstr ""
+"Si se omite I<orden> (el primer argumento es un fichero «.dsc» o «.changes» "
+"existente), la lista expandida de ficheros se muestra por la salida "
+"estándar, un fichero por línea. Es útil para su uso con tildes."
 
 #. type: Plain text
 #: ../scripts/dcmd.1:20
@@ -4351,138 +4492,148 @@ msgid ""
 "subset of the files listed in the .dsc or .changes file. If a requested file "
 "is not found, an error message will be printed."
 msgstr ""
+"Hay una serie de opciones que se pueden utilizar para seleccionar solo un "
+"subconjunto de los ficheros enumerados en un fichero «.dsc» o «.changes». Si "
+"no se encuentra un fichero requerido, se muestra un mensaje de error."
 
 #. type: TP
 #: ../scripts/dcmd.1:20
 #, no-wrap
 msgid "B<--dsc>"
-msgstr ""
+msgstr "B<--dsc>"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:23
 msgid "Select the .dsc file."
-msgstr ""
+msgstr "Selecciona el fichero «.dsc»."
 
 #. type: TP
 #: ../scripts/dcmd.1:23
 #, no-wrap
 msgid "B<--schanges>"
-msgstr ""
+msgstr "B<--schanges>"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:26
 msgid "Select .changes files for the 'source' architecture."
-msgstr ""
+msgstr "Selecciona ficheros «.changes» de la arquitectura «fuente»."
 
 #. type: TP
 #: ../scripts/dcmd.1:26
 #, no-wrap
 msgid "B<--bchanges>"
-msgstr ""
+msgstr "B<--bchanges>"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:29
 msgid "Select .changes files for binary architectures."
-msgstr ""
+msgstr "Selecciona ficheros «.changes» arquitecturas binarias."
 
 #. type: TP
 #: ../scripts/dcmd.1:29
 #, no-wrap
 msgid "B<--changes>"
-msgstr ""
+msgstr "B<--changes>"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:32
 msgid "Select .changes files. Implies --schanges and --bchanges."
-msgstr ""
+msgstr "Selecciona ficheros «.changes». Implica «--schanges» y «--bchanges»."
 
 #. type: TP
 #: ../scripts/dcmd.1:32
 #, no-wrap
 msgid "B<--archdeb>"
-msgstr ""
+msgstr "B<--archdeb>"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:35
 msgid "Select architecture-dependent binary packages (.deb files)."
 msgstr ""
+"Selecciona paquetes binarios (ficheros «.deb») dependientes de la "
+"arquitectura."
 
 #. type: TP
 #: ../scripts/dcmd.1:35
 #, no-wrap
 msgid "B<--indepdeb>"
-msgstr ""
+msgstr "B<--indepdeb>"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:38
 msgid "Select architecture-independent binary packages (.deb files)."
 msgstr ""
+"Selecciona paquetes binarios (ficheros «.deb») independientes de la "
+"arquitectura."
 
 #. type: TP
 #: ../scripts/dcmd.1:38
 #, no-wrap
 msgid "B<--deb>"
-msgstr ""
+msgstr "B<--deb>"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:41
 msgid "Select binary packages (.deb files). Implies --archdeb and --indepdeb."
 msgstr ""
+"Selecciona paquetes binarios (ficheros «.deb»). Implica «--archdeb» e "
+"«--indepdeb»."
 
 #. type: TP
 #: ../scripts/dcmd.1:41
 #, no-wrap
 msgid "B<--archudeb>"
-msgstr ""
+msgstr "B<--archudeb>"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:44
 msgid "Select architecture-dependent udeb binary packages."
-msgstr ""
+msgstr "Selecciona paquetes binarios udeb dependientes de la arquitectura."
 
 #. type: TP
 #: ../scripts/dcmd.1:44
 #, no-wrap
 msgid "B<--indepudeb>"
-msgstr ""
+msgstr "B<--indepudeb>"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:47
 msgid "Select architecture-independent udeb binary packages."
-msgstr ""
+msgstr "Selecciona paquetes binarios udeb independientes de la arquitectura."
 
 #. type: TP
 #: ../scripts/dcmd.1:47
 #, no-wrap
 msgid "B<--udeb>"
-msgstr ""
+msgstr "B<--udeb>"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:50
 msgid "Select udeb binary packages. Implies --archudeb and --indepudeb."
 msgstr ""
+"Selecciona paquetes binarios udeb. Implica «--archudeb» e «--indepudeb»."
 
 #. type: TP
 #: ../scripts/dcmd.1:50
 #, no-wrap
 msgid "B<--tar, --orig>"
-msgstr ""
+msgstr "B<--tar, --orig>"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:53
 msgid "Select the tar file."
-msgstr ""
+msgstr "Selecciona el fichero tar."
 
 #. type: TP
 #: ../scripts/dcmd.1:53
 #, no-wrap
 msgid "B<--diff>"
-msgstr ""
+msgstr "B<--diff>"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:56
 msgid "Select the Debian diff file."
-msgstr ""
+msgstr "Selecciona el fichero de diferencias de Debian."
 
 #. type: Plain text
 #: ../scripts/dcmd.1:59
@@ -4490,6 +4641,8 @@ msgid ""
 "Each option may be prefixed by B<--no> to indicate that all files I<not> "
 "matching the specification should be selected."
 msgstr ""
+"Se permite antepiner B<--no> para indicar la selección de todos los ficheros "
+"que I<no> coinciden con la especificación."
 
 #. type: Plain text
 #: ../scripts/dcmd.1:63
@@ -4498,28 +4651,32 @@ msgid ""
 "negative filtering options (e.g. --no-changes) in the same B<dcmd> "
 "invocation."
 msgstr ""
+"No se permite combinar opciones de filtrado positivo (por ejemplo, «--dsc») "
+"con opciones de filtrado negativo (por ejemplo, «--no-changes») en la misma "
+"invocación de B<dcmd>."
 
 #. type: TP
 #: ../scripts/dcmd.1:63
 #, no-wrap
 msgid "B<--no-fail-on-missing>, B<-r>"
-msgstr ""
+msgstr "B<--no-fail-on-missing>, B<-r>"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:66
 msgid "If any of the requested files were not found, do not output an error."
 msgstr ""
+"No muestra un error si no se encuentra alguno de los ficheros requeridos."
 
 #. type: SH
 #: ../scripts/dcmd.1:66 ../scripts/debuild.1:367 ../scripts/getbuildlog.1:31 ../scripts/rc-alert.1:96
 #, no-wrap
 msgid "EXAMPLES"
-msgstr ""
+msgstr "EJEMPLOS"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:68
 msgid "Copy the result of a build to another machine:"
-msgstr ""
+msgstr "Copia del resultado de una compilación a otro sistema:"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:76
@@ -4532,6 +4689,12 @@ msgid ""
 "rcs_5.7-23_amd64.changes        100% 1095     1.1KB/s   00:00\n"
 "$\n"
 msgstr ""
+"$ dcmd scp rcs_5.7-23_amd64.changes elegiac:/tmp\n"
+"rcs_5.7-23.dsc                  100%  490     0.5KB/s   00:00\n"
+"rcs_5.7-23.diff.gz              100%   12KB  11.7KB/s   00:00\n"
+"rcs_5.7-23_amd64.deb            100%  363KB 362.7KB/s   00:00\n"
+"rcs_5.7-23_amd64.changes        100% 1095     1.1KB/s   00:00\n"
+"$\n"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:81
@@ -4542,11 +4705,15 @@ msgid ""
 "rcs_5.7-23_amd64.deb            100%  363KB 362.7KB/s   00:00\n"
 "$\n"
 msgstr ""
+"$ dcmd --diff --deb scp rcs_5.7-23_amd64.changes elegiac:/tmp\n"
+"rcs_5.7-23.diff.gz              100%   12KB  11.7KB/s   00:00\n"
+"rcs_5.7-23_amd64.deb            100%  363KB 362.7KB/s   00:00\n"
+"$\n"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:84
 msgid "Check the contents of a source package:"
-msgstr ""
+msgstr "Comprobación de los contenidos de un paquete fuente:"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:91
@@ -4558,6 +4725,11 @@ msgid ""
 "5241db1e231b1f43ae5514b63d2523f8  rcs_5.7-23.dsc\n"
 "$\n"
 msgstr ""
+"$ dcmd md5sum rcs_5.7-23.dsc\n"
+"8fd09ea9654cda128f8d5c337d3b8de7  rcs_5.7.orig.tar.gz\n"
+"f0ceeae96603e823eacba6721a30b5c7  rcs_5.7-23.diff.gz\n"
+"5241db1e231b1f43ae5514b63d2523f8  rcs_5.7-23.dsc\n"
+"$\n"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:96
@@ -4568,11 +4740,15 @@ msgid ""
 "5241db1e231b1f43ae5514b63d2523f8  rcs_5.7-23.dsc\n"
 "$\n"
 msgstr ""
+"$ dcmd --no-diff md5sum rcs_5.7-23.dsc\n"
+"8fd09ea9654cda128f8d5c337d3b8de7  rcs_5.7.orig.tar.gz\n"
+"5241db1e231b1f43ae5514b63d2523f8  rcs_5.7-23.dsc\n"
+"$\n"
 
 #. type: Plain text
 #: ../scripts/dcmd.1:101
 msgid "B<dpkg-source>(1), B<dpkg-genchanges>(1)."
-msgstr ""
+msgstr "B<dpkg-source>(1), B<dpkg-genchanges>(1)."
 
 #. type: Plain text
 #: ../scripts/dcmd.1:103
@@ -4580,6 +4756,9 @@ msgid ""
 "This program was written by Romain Francoise E<lt>rfrancoise@debian.orgE<gt> "
 "and is released under the GPL, version 2 or later."
 msgstr ""
+"Este programa fue creado por Romain Francoise "
+"E<lt>rfrancoise@debian.orgE<gt> y se ha publicado bajo la licencia GPL, "
+"versión 2 o posterior."
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:201
@@ -4587,11 +4766,13 @@ msgid ""
 "dcontrol -- Query package and source control files for all Debian "
 "distributions"
 msgstr ""
+"dcontrol -- Realiza consultas a ficheros de control de paquete y de fuente "
+"en todas las distribuciones de Debian"
 
 #. type: =item
 #: ../scripts/dcontrol.pl:207
 msgid "B<dcontrol> [I<options>] I<package>[I<modifiers>] [I<...>]"
-msgstr ""
+msgstr "B<dcontrol> [I<opciones>] I<paquete>[I<modificadores>] [I<...>]"
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:213
@@ -4601,31 +4782,37 @@ msgid ""
 "operates for distributions and architectures different from the local "
 "machine."
 msgstr ""
+"B<dcontrol> realiza consultas a una base de datos remota de ficheros de "
+"control de paquete Debian binario y de fuentes. Se puede entender como un "
+"servicio web de B<apt-cache> que también funciona con distribuciones y "
+"arquitecturas distintas a la sistema local."
 
 #. type: =head1
 #: ../scripts/dcontrol.pl:217
 msgid "MODIFIERS"
-msgstr ""
+msgstr "MODIFICADORES"
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:219
 msgid "Like B<apt-cache>, packages can be suffixed by modifiers:"
 msgstr ""
+"Al igual que con B<apt-cache>, se pueden posponer modificadores a los "
+"paquetes:"
 
 #. type: =item
 #: ../scripts/dcontrol.pl:223
 msgid "B<=>I<version>"
-msgstr ""
+msgstr "B<=>I<version>"
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:225
 msgid "Exact version match"
-msgstr ""
+msgstr "Búsqueda de versión exacta"
 
 #. type: =item
 #: ../scripts/dcontrol.pl:227
 msgid "B<@>I<architecture>"
-msgstr ""
+msgstr "B<@>I<arquitectura>"
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:229
@@ -4633,11 +4820,13 @@ msgid ""
 "Query this only architecture. Use B<@source> for source packages, B<@binary> "
 "excludes source packages."
 msgstr ""
+"Consulta solo esta arquitectura. Utilice B<@source> para paquetes fuente ya "
+"que B<@binary> los excluye."
 
 #. type: =item
 #: ../scripts/dcontrol.pl:232
 msgid "B</>[I<archive>B<:>][I<suite>][B</>I<component>]"
-msgstr ""
+msgstr "B</>[I<archivo>B<:>][I<distribución>][B</>I<sección>]"
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:234
@@ -4648,6 +4837,12 @@ msgid ""
 "slashes (B<//>) to separate suite and component if the suite name contains "
 "slashes.  (Component can be left empty.)"
 msgstr ""
+"Limita la búsqueda al I<archivo> (debian, debian-backports, debian-security, "
+"debian-volatile), la  I<distribución> (siempre el nombre clave, con la "
+"excepción de la distribución «experimental»), y/o I<sección> (main, "
+"updates/main, ...). Utilice dos barras (B<//>) para separar la distribución "
+"y la sección si el nombre clave contiene barras. (Se puede omitir el "
+"componente)."
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:242
@@ -4655,37 +4850,42 @@ msgid ""
 "By default, all versions, suites, and architectures are queried. Refer to "
 "B<http://qa.debian.org/cgi-bin/dcontrol> for currently supported values."
 msgstr ""
+"De forma predefinida, se realizan consultas en todas las versiones, "
+"distribuciones y arquitecturas. Para ver los valores actualmente permitidos "
+"consulte B<http://qa.debian.org/cgi-bin/dcontrol>."
 
 #. type: =item
 #: ../scripts/dcontrol.pl:249
 msgid "B<-s>, B<--show-suites>"
-msgstr ""
+msgstr "B<-s>, B<--show-suites>"
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:251
 msgid "Add headers showing which distribution the control file is from."
 msgstr ""
+"Añade cabeceras que indican la distribución de origen del fichero de "
+"control."
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:255
 msgid "Print URL queried."
-msgstr ""
+msgstr "Muestra la URL consultada."
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:259 ../scripts/dget.pl:594
 msgid "Show a help message."
-msgstr ""
+msgstr "Muestra un mensaje de ayuda."
 
 #. type: TP
 #: ../scripts/dcontrol.pl:261 ../scripts/dget.pl:596 ../scripts/getbuildlog.1:28
 #, no-wrap
 msgid "B<-V>, B<--version>"
-msgstr ""
+msgstr "B<-V>, B<--version>"
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:263 ../scripts/dget.pl:598
 msgid "Show version information."
-msgstr ""
+msgstr "Muestra información de la versión."
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:269 ../scripts/dget.pl:604
@@ -4696,21 +4896,29 @@ msgid ""
 "Environment variable settings are ignored for this purpose.  The currently "
 "recognised variable is:"
 msgstr ""
+"Los dos ficheros de configuración F</etc/devscripts.conf> y F<~/.devscripts> "
+"son analizados en este orden por el intérprete de órdenes para definir las "
+"variables de configuración. Las opciones de línea de órdenes se pueden "
+"utilizar para anular la configuración en los ficheros. Para ello, se ignoran "
+"las variables de entorno. La variable actualmente reconocida es:"
 
 #. type: =item
 #: ../scripts/dcontrol.pl:277
 msgid "DCONTROL_URL"
-msgstr ""
+msgstr "DCONTROL_URL"
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:279
 msgid "URL to query. Default is B<http://qa.debian.org/cgi-bin/dcontrol>."
 msgstr ""
+"URL a consultar. El valor predefinido es B<http://qa.debian.org/cgi-"
+"bin/dcontrol>."
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:285
 msgid "This program is Copyright (C) 2009 by Christoph Berg <myon@debian.org>."
 msgstr ""
+"Este programa fue creado por Christoph Berg <myon@debian.org>, (C) 2009."
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:287 ../scripts/dget.pl:643 ../scripts/tagpending.pl:440
@@ -4718,35 +4926,37 @@ msgid ""
 "This program is licensed under the terms of the GPL, either version 2 of the "
 "License, or (at your option) any later version."
 msgstr ""
+"Este programa está publicado bajo los términos de la licencia GPL, sea la "
+"versión 2 o (si lo desea) cualquier versión posterior."
 
 #. type: textblock
 #: ../scripts/dcontrol.pl:292
 msgid "B<apt-cache>(1)."
-msgstr ""
+msgstr "B<apt-cache>(1)."
 
 #. type: TH
 #: ../scripts/dd-list.1:16
 #, no-wrap
 msgid "DD-LIST"
-msgstr ""
+msgstr "DD-LIST"
 
 #. type: TH
 #: ../scripts/dd-list.1:16
 #, no-wrap
 msgid "2005-06-28"
-msgstr ""
+msgstr "2005-06-28"
 
 #. type: TH
 #: ../scripts/dd-list.1:16
 #, no-wrap
 msgid "Debian"
-msgstr ""
+msgstr "Debian"
 
 #.  --------------------------------------------------------------------
 #. type: Plain text
 #: ../scripts/dd-list.1:21
 msgid "dd-list - nicely list .deb packages and their maintainers"
-msgstr ""
+msgstr "dd-list - Muestra una lista de paquetes «.deb» y sus responsables"
 
 #.  --------------------------------------------------------------------
 #. type: Plain text
@@ -4755,6 +4965,8 @@ msgid ""
 "B<dd-list> [B<-hiuV>] [B<--help>] [B<--stdin>] [B<--dctrl>] [B<--version>] "
 "[B<--uploaders>] [I<package> ...]"
 msgstr ""
+"B<dd-list> [B<-hiuV>] [B<--help>] [B<--stdin>] [B<--dctrl>] [B<--version>] "
+"[B<--uploaders>] [I<paquete> ...]"
 
 #. type: Plain text
 #: ../scripts/dd-list.1:29
@@ -4762,6 +4974,7 @@ msgid ""
 "B<dd-list> produces nicely formatted lists of Debian (.deb) packages and "
 "their maintainers."
 msgstr ""
+"B<dd-list> genera una lista de paquetes Debian (.deb) y sus responsables."
 
 #. type: Plain text
 #: ../scripts/dd-list.1:36
@@ -4770,12 +4983,16 @@ msgid ""
 "the standard input if B<--stdin> is given).  Output is a list of the "
 "following format, where package names are source packages by default:"
 msgstr ""
+"La entrada es una lista de nombres de paquete fuente o binario en la línea "
+"de órdenes ( o la entrada estándar si se define B<--stdin>). La salida es "
+"una lista con el formato siguiente, en el que de forma predefinida los "
+"nombres de paquete son paquetes fuente:"
 
 #. type: Plain text
 #: ../scripts/dd-list.1:40
 #, no-wrap
 msgid "J. Random Developer E<lt>jrandom@debian.orgE<gt>\n"
-msgstr ""
+msgstr "J. Nadie E<lt>jrandom@debian.orgE<gt>\n"
 
 #. type: Plain text
 #: ../scripts/dd-list.1:43
@@ -4784,12 +5001,14 @@ msgid ""
 "j-random-package\n"
 "j-random-other\n"
 msgstr ""
+"paquete1-J. Nadie\n"
+"paquete2-J. Nadie\n"
 
 #. type: Plain text
 #: ../scripts/dd-list.1:46
 #, no-wrap
 msgid "Diana Hacker E<lt>diana@example.orgE<gt>\n"
-msgstr ""
+msgstr "Diana Hacker E<lt>diana@example.orgE<gt>\n"
 
 #. type: Plain text
 #: ../scripts/dd-list.1:49
@@ -4798,6 +5017,8 @@ msgid ""
 "fun-package\n"
 "more-fun-package\n"
 msgstr ""
+"paquete1\n"
+"paquete2\n"
 
 #.  --------------------------------------------------------------------
 #. type: Plain text
@@ -4807,23 +5028,26 @@ msgid ""
 "that need to attention from their maintainers, e.g., to be rebuilt when a "
 "library version transition happens."
 msgstr ""
+"Es útil cuando desea, por ejemplo, generar una lista de paquetes que "
+"requieren la atención de sus responsables; por ejemplo, para su "
+"reconstrucción durante una transición de versión de biblioteca."
 
 #. type: TP
 #: ../scripts/dd-list.1:58
 #, no-wrap
 msgid "B<-h>,B<--help>"
-msgstr ""
+msgstr "B<-h>,B<--help>"
 
 #. type: Plain text
 #: ../scripts/dd-list.1:61
 msgid "Print brief help message."
-msgstr ""
+msgstr "Muestra un corto mensaje de ayuda."
 
 #. type: TP
 #: ../scripts/dd-list.1:61
 #, no-wrap
 msgid "B<-i>,B<--stdin>"
-msgstr ""
+msgstr "B<-i>,B<--stdin>"
 
 #. type: Plain text
 #: ../scripts/dd-list.1:65
@@ -4831,12 +5055,15 @@ msgid ""
 "Read package names from the standard input, instead of taking them from the "
 "command line. Package names are whitespace delimited."
 msgstr ""
+"Lee los nombres de paquete de la entrada estándar en lugar de tomarlos de la "
+"línea de órdenes. Los nombres de paquete se delimitan con espacios en "
+"blanco."
 
 #. type: TP
 #: ../scripts/dd-list.1:65
 #, no-wrap
 msgid "B<-d>,B<--dctrl>"
-msgstr ""
+msgstr "B<-d>,B<--dctrl>"
 
 #. type: Plain text
 #: ../scripts/dd-list.1:72
@@ -4846,6 +5073,11 @@ msgid ""
 "the fastest way to use dd-list, as it uses the maintainer information from "
 "the input instead of looking up the maintainer of each listed package."
 msgstr ""
+"Lee la lista de paquetes desde la entrada estándar con el formato de un "
+"fichero de control de paquete Debian. Esto incluye el fichero de estado o la "
+"salida de apt-cache. Es la forma más rápida de utilizar dd-list, ya que "
+"utiliza la información del responsable desde la entrada en lugar de buscar "
+"el responsable de cada paquete enumerado."
 
 #. type: Plain text
 #: ../scripts/dd-list.1:75
@@ -4853,12 +5085,14 @@ msgid ""
 "If no I<Source:> line is given, the I<Package:> name is used for output, "
 "which might be a binary package name."
 msgstr ""
+"Si no se proporciona una línea I<Source:>, se utilizar el nombre I<Package:> "
+"para la salida, que puede ser un nombre de paquete binario."
 
 #. type: TP
 #: ../scripts/dd-list.1:75
 #, no-wrap
 msgid "B<-u>,B<--uploaders>"
-msgstr ""
+msgstr "B<-u>,B<--uploaders>"
 
 #. type: Plain text
 #: ../scripts/dd-list.1:80
@@ -4867,23 +5101,29 @@ msgid ""
 "maintainers; this is the default behaviour, use --nouploaders to prevent "
 "it. Uploaders are indicated with \"(U)\" appended to the package name."
 msgstr ""
+"Muestra también la lista de desarrolladores denominados «uploaders» (con "
+"permisos de envío de paquete al archivo Debian), y no solo los responsables "
+"del paquete. Este es el comportamiento predefinido, utilice «--nouploaders» "
+"para anularlo. Los responsables del envío se indican con una «(U)» al final "
+"del nombre de paquete."
 
 #. type: TP
 #: ../scripts/dd-list.1:80
 #, no-wrap
 msgid "B<-nou>,B<--nouploaders>"
-msgstr ""
+msgstr "B<-nou>,B<--nouploaders>"
 
 #. type: Plain text
 #: ../scripts/dd-list.1:83
 msgid "Only list package Maintainers, do not list Uploaders."
 msgstr ""
+"Solo muestra los responsables del paquete, no los responsables del envío."
 
 #. type: TP
 #: ../scripts/dd-list.1:83
 #, no-wrap
 msgid "B<-b>,B<--print-binary>"
-msgstr ""
+msgstr "B<-b>,B<--print-binary>"
 
 #. type: Plain text
 #: ../scripts/dd-list.1:88
@@ -4892,44 +5132,47 @@ msgid ""
 "no effect with B<--dctrl> if the I<Package:> line contains source package "
 "names)."
 msgstr ""
+"Utiliza nombres de paquete binario en la salida en lugar de nombres de "
+"paquete fuente (no tiene efecto con B>--dctrl> si la línea I<Package:> "
+"contiene nombres de paquete fuente)."
 
 #. type: TP
 #: ../scripts/dd-list.1:88
 #, no-wrap
 msgid "B<-V>,B<--version>"
-msgstr ""
+msgstr "B<-V>,B<--version>"
 
 #.  --------------------------------------------------------------------
 #. type: Plain text
 #: ../scripts/dd-list.1:92
 msgid "Print the version."
-msgstr ""
+msgstr "Muestra la versión."
 
 #. type: Plain text
 #: ../scripts/dd-list.1:94
 msgid "Lars Wirzenius E<lt>liw@iki.fiE<gt>"
-msgstr ""
+msgstr "Lars Wirzenius E<lt>liw@iki.fiE<gt>"
 
 #. type: Plain text
 #: ../scripts/dd-list.1:95
 msgid "Joey Hess E<lt>joeyh@debian.orgE<gt>"
-msgstr ""
+msgstr "Joey Hess E<lt>joeyh@debian.orgE<gt>"
 
 #. type: TH
 #: ../scripts/debc.1:1
 #, no-wrap
 msgid "DEBC"
-msgstr ""
+msgstr "DEBC"
 
 #. type: Plain text
 #: ../scripts/debc.1:4
 msgid "debc - view contents of a generated Debian package"
-msgstr ""
+msgstr "debc - Muestra el contenido de un paquete Debian generado"
 
 #. type: Plain text
 #: ../scripts/debc.1:6
 msgid "B<debc> [I<options>] [I<changes file>] [I<package> ...]"
-msgstr ""
+msgstr "B<debc> [I<opciones>] [I<fichero-changes>] [I<paquete> ...]"
 
 #. type: Plain text
 #: ../scripts/debc.1:25
@@ -4950,6 +5193,23 @@ msgid ""
 "archives live in the same directory as the I<.changes> file.  It is useful "
 "for ensuring that the expected files have ended up in the Debian package."
 msgstr ""
+"B<debc> averigua versión actual del paquete y muestra información de los "
+"ficheros «.deb» y «.udeb» generados por el proceso de construcción presente. "
+"Si se especifica un fichero I<.changes> en la línea de órdenes, el nombre "
+"de fichero debe terminar con I<.changes>, ya que así el programa lo "
+"distingue de un nombre de paquete. En caso contrario, se debe invocar "
+"B<debc> desde el árbol del código fuente. En este caso, buscará un fichero "
+"I<.changes> que se corresponda con la versión actual del paquete "
+"(determinando el nombre y número de versión a partir del fichero de registro "
+"de cambios, «changelog»,  y la arquitectura de la forma que lo hace B<dpkg-"
+"buildpackage>(1)). A continuación ejecuta B<dpkg-deb -I> y B<dpkg-deb -c> "
+"sobre cada fichero I<.deb> y I<.udeb> enumerado en el fichero I<.changes> "
+"para mostrar información del contenido de ficehros I<.deb> / I<.udeb>. "
+"Prefija cada fichero I<.deb> o I<.udeb> con el nombre del fichero. Supone "
+"que todos los ficheros I<.deb> y I<.udeb> se encuentran en el mismo "
+"directorio que el fichero I<.changes>. Es útil para garantizar que los "
+"ficheros deseados se incluyen en el paquete Debian al finalizar el proceso "
+"de construcción."
 
 #. type: Plain text
 #: ../scripts/debc.1:28
@@ -4957,12 +5217,14 @@ msgid ""
 "If a list of packages is given on the command line, then only those debs or "
 "udebs with names in this list of packages will be processed."
 msgstr ""
+"Si se proporciona una lista de paquete en la línea de órdenes, solo se "
+"procesan aquellos «deb» o «udeb» enumerados en esta lista."
 
 #. type: SH
 #: ../scripts/debc.1:28 ../scripts/debchange.1:106 ../scripts/debclean.1:24 ../scripts/debi.1:29 ../scripts/debrelease.1:20 ../scripts/debuild.1:49 ../scripts/uscan.1:276
 #, no-wrap
 msgid "Directory name checking"
-msgstr ""
+msgstr "Comprobación del nombre de directorio"
 
 #. type: Plain text
 #: ../scripts/debc.1:39
@@ -4977,28 +5239,37 @@ msgid ""
 "corresponding command-line options B<--check-dirname-level> and "
 "B<--check-dirname-regex>."
 msgstr ""
+"Al igual que otros scripts del paquete B<devscripts>, B<debc> subirá por el "
+"árbol de directorios hasta encontrar un fichero I<debian/changelog>. Como "
+"precaución frente a ficheros residuales que puedan provocar problemas, "
+"examina el nombre del directorio superior una vez que encuentra el fichero "
+"I<debian/changelog>, y comprueba que el nombre de directorio concuerda con "
+"el nombre de paquete. Las variables «DEVSCRIPTS_CHECK_DIRNAME_LEVEL» y "
+"«DEVSCRIPTS_CHECK_DIRNAME_REGEX» del fichero de configuración permiten "
+"controlar el comportamiento, así como las opciones de línea de órdenes "
+"correspondientes, B<--check-dirname-level> y B<--check-dirname-regex>."
 
 #. type: Plain text
 #: ../scripts/debc.1:41 ../scripts/debclean.1:37 ../scripts/debi.1:42 ../scripts/debrelease.1:33 ../scripts/uscan.1:293
 msgid "DEVSCRIPTS_CHECK_DIRNAME_LEVEL can take the following values:"
-msgstr ""
+msgstr "DEVSCRIPTS_CHECK_DIRNAME_LEVEL acepta los siguientes valores:"
 
 #. type: TP
 #: ../scripts/debc.1:41 ../scripts/debchange.1:119 ../scripts/debclean.1:37 ../scripts/debi.1:42 ../scripts/debrelease.1:33 ../scripts/debuild.1:63 ../scripts/uscan.1:293
 #, no-wrap
 msgid "B<0>"
-msgstr ""
+msgstr "B<0>"
 
 #. type: Plain text
 #: ../scripts/debc.1:44 ../scripts/debchange.1:122 ../scripts/debclean.1:40 ../scripts/debi.1:45 ../scripts/debrelease.1:36 ../scripts/debuild.1:66 ../scripts/uscan.1:296
 msgid "Never check the directory name."
-msgstr ""
+msgstr "Nunca comprueba el nombre de directorio."
 
 #. type: TP
 #: ../scripts/debc.1:44 ../scripts/debchange.1:122 ../scripts/debclean.1:40 ../scripts/debi.1:45 ../scripts/debrelease.1:36 ../scripts/debuild.1:66 ../scripts/uscan.1:296
 #, no-wrap
 msgid "B<1>"
-msgstr ""
+msgstr "B<1>"
 
 #. type: Plain text
 #: ../scripts/debc.1:48 ../scripts/debchange.1:126 ../scripts/debclean.1:44 ../scripts/debi.1:49 ../scripts/debrelease.1:40 ../scripts/debuild.1:70
@@ -5006,17 +5277,20 @@ msgid ""
 "Only check the directory name if we have had to change directory in our "
 "search for I<debian/changelog>.  This is the default behaviour."
 msgstr ""
+"Solo comprueba el nombre de directorio si hemos tenido que cambiar de "
+"directorio durante la búsqueda de I<debian/changelog>. Este es el "
+"comportamiento predefinido."
 
 #. type: TP
 #: ../scripts/debc.1:48 ../scripts/debchange.1:126 ../scripts/debclean.1:44 ../scripts/debi.1:49 ../scripts/debrelease.1:40 ../scripts/debuild.1:70 ../scripts/uscan.1:302
 #, no-wrap
 msgid "B<2>"
-msgstr ""
+msgstr "B<2>"
 
 #. type: Plain text
 #: ../scripts/debc.1:51 ../scripts/debchange.1:129 ../scripts/debclean.1:47 ../scripts/debi.1:52 ../scripts/debrelease.1:43 ../scripts/debuild.1:73 ../scripts/uscan.1:305
 msgid "Always check the directory name."
-msgstr ""
+msgstr " Siempre comprueba el nombre de directorio."
 
 #. type: Plain text
 #: ../scripts/debc.1:64 ../scripts/debclean.1:60 ../scripts/debi.1:65 ../scripts/debrelease.1:56
@@ -5033,12 +5307,24 @@ msgid ""
 "\\'PACKAGE(-.+)?', thus matching directory names such as PACKAGE and "
 "PACKAGE-version."
 msgstr ""
+"El nombre de directorio se detecta comprobando si el nombre del directorio "
+"actual (tal y como determina B<pwd>(1)) coincide con la expresión regular "
+"definida en el fichero de configuración para la opción "
+"«DEVSCRIPTS_CHECK_DIRNAME_REGEX» o la opción de línea de órdenes B<--check-"
+"dirname-regex>. En este caso, I<regex> es una expresión regular de Perl "
+"(consulte B<perlre>(3perl)), que se delimitada al principio y al final. Si "
+"I<regex> incluye un «/», debe coincidir con la ruta absoluta del directorio. "
+"En caso contrario, debe coincidir con el nombre de directorio completo. Si "
+"I<regex> incluye la cadena «\\'PACKAGE'», éste se sustituye por el nombre de "
+"paquete fuente, como indica el fichero «changelog». El valor predefinido de "
+"la expresión regular es \\'PACKAGE(-.+)?', que concide con nombres de "
+"directorio como PAQUETE y PAQUETE-versión."
 
 #. type: TP
 #: ../scripts/debc.1:71 ../scripts/debi.1:72 ../scripts/debrelease.1:81 ../scripts/debsign.1:95
 #, no-wrap
 msgid "B<--debs-dir> I<DIR>"
-msgstr ""
+msgstr "B<--debs-dir> I<directorio>"
 
 #. type: Plain text
 #: ../scripts/debc.1:77
@@ -5047,12 +5333,15 @@ msgid ""
 "instead of the parent of the source directory.  This should either be an "
 "absolute path or relative to the top of the source directory."
 msgstr ""
+"Busca los ficheros I<.changes>, I<.deb> y I<.udeb> en el I<directorio> en "
+"lugar del directorio superior al directorio de fuentes. Debe ser una ruta "
+"absoluta o relativa al directorio superior del directorio de fuentes."
 
 #. type: TP
 #: ../scripts/debc.1:77 ../scripts/debchange.1:347 ../scripts/debclean.1:69 ../scripts/debi.1:84 ../scripts/debrelease.1:87 ../scripts/debuild.1:276 ../scripts/uscan.1:427
 #, no-wrap
 msgid "B<--check-dirname-level> I<N>"
-msgstr ""
+msgstr "B<--check-dirname-level> I<número>"
 
 #. type: Plain text
 #: ../scripts/debc.1:81 ../scripts/debc.1:85 ../scripts/debclean.1:73 ../scripts/debclean.1:77 ../scripts/debi.1:88 ../scripts/debi.1:92 ../scripts/debrelease.1:91 ../scripts/debrelease.1:95
@@ -5060,12 +5349,14 @@ msgid ""
 "See the above section \"Directory name checking\" for an explanation of this "
 "option."
 msgstr ""
+"Para una explicación de esta opción consulte la sección anterior "
+"«Comprobación del nombre de directorio»."
 
 #. type: TP
 #: ../scripts/debc.1:81 ../scripts/debchange.1:351 ../scripts/debclean.1:73 ../scripts/debi.1:88 ../scripts/debrelease.1:91 ../scripts/debuild.1:280 ../scripts/uscan.1:431
 #, no-wrap
 msgid "B<--check-dirname-regex> I<regex>"
-msgstr ""
+msgstr "B<--check-dirname-regex> I<expresión-regular>"
 
 #. type: Plain text
 #: ../scripts/debc.1:98 ../scripts/debchange.1:376 ../scripts/debclean.1:96 ../scripts/debi.1:105 ../scripts/debrelease.1:111 ../scripts/debrsign.1:63 ../scripts/debsign.1:117 ../scripts/nmudiff.1:85 ../scripts/pts-subscribe.1:48 ../scripts/uupdate.1:94 ../scripts/who-uploads.1:56
@@ -5076,12 +5367,17 @@ msgid ""
 "settings are ignored for this purpose.  The currently recognised variables "
 "are:"
 msgstr ""
+"Los dos ficheros de configuración I</etc/devscripts.conf> y I<~/.devscripts> "
+"son analizados en este orden para definir las variables de configuración. "
+"Las opciones de línea de órdenes se pueden utilizar para anular la "
+"configuración en los ficheros. Para ello, se ignoran las variables de "
+"entorno. Las variables actualmente reconocidas son:"
 
 #. type: TP
 #: ../scripts/debc.1:98 ../scripts/debi.1:105 ../scripts/debrelease.1:116 ../scripts/debsign.1:133
 #, no-wrap
 msgid "B<DEBRELEASE_DEBS_DIR>"
-msgstr ""
+msgstr "B<DEBRELEASE_DEBS_DIR>"
 
 #. type: Plain text
 #: ../scripts/debc.1:108
@@ -5094,12 +5390,19 @@ msgid ""
 "also affects B<debrelease>(1) in the same way, hence the strange name of the "
 "option."
 msgstr ""
+"Especifica el directorio a analizar durante la búsqueda de los ficheros "
+"I<.changes>, I<.deb> and I<.udeb>, y puede se la ruta absoluta o la relativa "
+"al directorio superior del árbol de fuentes. Se corresponde con la opción "
+"línea de órdenes B<--debs-dir>. Esta opción se puede utilizar, por ejemplo, "
+"si siempre utiliza B<pbuilder> o B<svn-buildpackage> para construir sus "
+"paquetes. Tenga en cuenta que también afecta a B<debrelease>(1) de la misma "
+"forma, de ahí el extraño nombre de esta opción."
 
 #. type: TP
 #: ../scripts/debc.1:108 ../scripts/debchange.1:384 ../scripts/debclean.1:100 ../scripts/debi.1:115 ../scripts/debrelease.1:125 ../scripts/debuild.1:360 ../scripts/devscripts.conf.5:42
 #, no-wrap
 msgid "B<DEVSCRIPTS_CHECK_DIRNAME_LEVEL>, B<DEVSCRIPTS_CHECK_DIRNAME_REGEX>"
-msgstr ""
+msgstr "B<DEVSCRIPTS_CHECK_DIRNAME_LEVEL>, B<DEVSCRIPTS_CHECK_DIRNAME_REGEX>"
 
 #. type: Plain text
 #: ../scripts/debc.1:115 ../scripts/debclean.1:107 ../scripts/debi.1:122 ../scripts/debrelease.1:132
@@ -5109,11 +5412,16 @@ msgid ""
 "and will therefore affect all B<devscripts> scripts which check their value, "
 "as described in their respective manpages and in B<devscripts.conf>(5)."
 msgstr ""
+"Para una explicación de estas variables consulte la sección anterior "
+"«Comprobación del nombre de directorio». Tenga en cuenta que son variables "
+"de configuración para todo el paquete, y por ello afectan a los scripts en "
+"B<devscripts> que comprueban su valor, tal y como se describe en sus páginas "
+"de manual respectivas y B<devscripts.conf>(5)."
 
 #. type: Plain text
 #: ../scripts/debc.1:120
 msgid "B<dpkg-deb>(1), B<debdiff>(1)  and B<devscripts.conf>(5)."
-msgstr ""
+msgstr "B<dpkg-deb>(1), B<debdiff>(1) y B<devscripts.conf>(5)."
 
 #. type: Plain text
 #: ../scripts/debc.1:122
@@ -5121,6 +5429,8 @@ msgid ""
 "Julian Gilbey E<lt>jdg@debian.orgE<gt>, based on an original script by "
 "Christoph Lameter E<lt>clameter@debian.orgE<gt>."
 msgstr ""
+"Julian Gilbey E<lt>jdg@debian.orgE<gt>, basado originalmente en el script "
+"creado por Christoph Lameter E<lt>clameter@debian.orgE<gt>."
 
 #. type: TH
 #: ../scripts/debchange.1:1
@@ -6391,17 +6701,17 @@ msgstr ""
 #: ../scripts/debclean.1:1
 #, no-wrap
 msgid "DEBCLEAN"
-msgstr ""
+msgstr "DEBCLEAN"
 
 #. type: Plain text
 #: ../scripts/debclean.1:4
 msgid "debclean - clean up a sourcecode tree"
-msgstr ""
+msgstr "debclean - Limpia un árbol de fuentes"
 
 #. type: Plain text
 #: ../scripts/debclean.1:6
 msgid "B<debclean> [I<options>]"
-msgstr ""
+msgstr "B<debclean> [I<opciones>]"
 
 #. type: Plain text
 #: ../scripts/debclean.1:13
@@ -6412,6 +6722,11 @@ msgid ""
 "containing a debian/changelog file for a package whose name matches that of "
 "the directory.  Name matching is described below."
 msgstr ""
+"B<debclean> examina el árbol de directorios empezando por aquél desde el que "
+"se invoca y ejecuta I<debian/rules clean> en cada directorio de fuentes "
+"Debian detectado. Estos directorios se reconocen ya que contienen el fichero "
+"«debian/changelog» para un paquete cuyo nombre coincide con el nombre de "
+"directorio. A continuación se describe la correspondencia de nombres."
 
 #. type: Plain text
 #: ../scripts/debclean.1:22
@@ -6424,11 +6739,20 @@ msgid ""
 "B<--nocleandebs> option prevents this extra cleaning behaviour and the "
 "B<--cleandebs> option forces it.  The default is not to clean these files."
 msgstr ""
+"Así mismo, si se define la opción B<--cleandebs» se eliminan todos los "
+"ficheros  «*.deb»,« *.changes» y «*.build» presentes en cada directorio que "
+"contenga un árbol de fuentes Debian. Los ficheros «.dsc», «.diff.gz» y "
+"«(.orig).tar.gz» no se eliminan para permitir la reconstrucción de la "
+"publicación si fuera necesario, y también se respetan los ficheros «.upload» "
+"para el correcto funcionamiento de B<debchange>. La opción B<--nocleandebs> "
+"impide esta funcionalidad de limpieza adicional, mientras que la opción "
+"B<--cleandebs> lo fuerza. El comportamiento predefinido es respetar estos "
+"ficheros."
 
 #. type: Plain text
 #: ../scripts/debclean.1:24
 msgid "B<debclean> uses B<debuild>(1) to clean the source tree."
-msgstr ""
+msgstr "B<debclean> utiliza B<debuild>(1) para limpiar el árbol de fuentes."
 
 #. type: Plain text
 #: ../scripts/debclean.1:35
@@ -6443,23 +6767,34 @@ msgid ""
 "DEVSCRIPTS_CHECK_DIRNAME_REGEX, and their corresponding command-line options "
 "B<--check-dirname-level> and B<--check-dirname-regex>."
 msgstr ""
+"Al igual que otros scripts del paquete B<devscripts>, B<debclean> subirá por "
+"el árbol de directorios hasta encontrar un fichero I<debian/changelog>. "
+"Como precaución frente a ficheros residuales que puedan provocar problemas, "
+"examina el nombre del directorio superior una vez que encuentra el fichero "
+"I<debian/changelog>, y comprueba que el nombre de directorio concuerda con "
+"el nombre de paquete. Las variables «DEVSCRIPTS_CHECK_DIRNAME_LEVEL» y "
+"«DEVSCRIPTS_CHECK_DIRNAME_REGEX» del fichero de configuración permiten "
+"controlar el comportamiento, así como las opciones de línea de órdenes "
+"correspondientes, B<--check-dirname-level> y B<--check-dirname-regex>."
 
 #. type: TP
 #: ../scripts/debclean.1:61
 #, no-wrap
 msgid "B<--cleandebs>"
-msgstr ""
+msgstr "B<--cleandebs>"
 
 #. type: Plain text
 #: ../scripts/debclean.1:65
 msgid "Also remove all .deb, .changes and .build files from the parent directory."
 msgstr ""
+"Elimina también todos los ficheros «.deb», «.changes» y «.build» del "
+"directorio superior."
 
 #. type: TP
 #: ../scripts/debclean.1:65
 #, no-wrap
 msgid "B<--nocleandebs>"
-msgstr ""
+msgstr "B<--nocleandebs>"
 
 #. type: Plain text
 #: ../scripts/debclean.1:69
@@ -6467,23 +6802,27 @@ msgid ""
 "Do not remove the .deb, .changes and .build files from the parent directory; "
 "this is the default behaviour."
 msgstr ""
+"No elimina los ficheros «.deb», «.changes» y «.build» del directorio "
+"superior. Este es el comportamiento predefinido."
 
 #. type: TP
 #: ../scripts/debclean.1:81 ../scripts/debuild.1:284
 #, no-wrap
 msgid "B<-d>"
-msgstr ""
+msgstr "B<-d>"
 
 #. type: Plain text
 #: ../scripts/debclean.1:84
 msgid "Do not run dpkg-checkbuilddeps to check build dependencies."
 msgstr ""
+"No ejecuta «dpkg-checkbuilddeps» para la comprobación de las dependencias de "
+"construcción."
 
 #. type: TP
 #: ../scripts/debclean.1:96
 #, no-wrap
 msgid "B<DEBCLEAN_CLEANDEBS>"
-msgstr ""
+msgstr "B<DEBCLEAN_CLEANDEBS>"
 
 #. type: Plain text
 #: ../scripts/debclean.1:100
@@ -6491,11 +6830,13 @@ msgid ""
 "If this is set to I<yes>, then it is the same as the B<--cleandebs> command "
 "line parameter being used."
 msgstr ""
+"Si se define como I<yes>, es igual a utilizar el parámetro de línea de "
+"órdenes B<--cleandebs>."
 
 #. type: Plain text
 #: ../scripts/debclean.1:111
 msgid "B<debuild>(1)  and B<devscripts.conf>(5)."
-msgstr ""
+msgstr "B<debuild>(1)  y B<devscripts.conf>(5)."
 
 #. type: Plain text
 #: ../scripts/debclean.1:113
@@ -6503,6 +6844,8 @@ msgid ""
 "Christoph Lameter E<lt>clameter@debian.orgE<gt>; modifications by Julian "
 "Gilbey E<lt>jdg@debian.orgE<gt>."
 msgstr ""
+"Christoph Lameter E<lt>clameter@debian.orgE<gt>; modificaciones por Julian "
+"Gilbey E<lt>jdg@debian.orgE<gt>."
 
 #. type: textblock
 #: ../scripts/debcommit.pl:5
@@ -7360,17 +7703,17 @@ msgstr ""
 #: ../scripts/debi.1:1
 #, no-wrap
 msgid "DEBI"
-msgstr ""
+msgstr "DEBI"
 
 #. type: Plain text
 #: ../scripts/debi.1:4
 msgid "debi - install current version of generated Debian package"
-msgstr ""
+msgstr "debi - Instala la versión actual de un paquete Debian generado"
 
 #. type: Plain text
 #: ../scripts/debi.1:6
 msgid "B<debi> [I<options>] [I<changes file>] [I<package> ...]"
-msgstr ""
+msgstr "B<debi> [I<opciones>] [I<fichero-changes>] [I<paquete> ...]"
 
 #. type: Plain text
 #: ../scripts/debi.1:21
@@ -7388,6 +7731,19 @@ msgid ""
 "Note that you probably don't want to run this program on a I<.changes> file "
 "relating to a different architecture after cross-compiling the package!"
 msgstr ""
+"B<debi> averigua la versión actual de un paquete y lo instala. Si se define "
+"un fichero I<.changes> en la línea de órdenes, el nombre de fichero debe "
+"terminar con I<.changes> para permitir que el programa lo distinga de "
+"nombres de paquete. De otra forma, B<debi> se debe invocar desde el árbol de "
+"directorios del código fuente. En este caso, busca un fichero I<.changes> "
+"que coincida con la versión actual del paquete (determinando el nombre y el "
+"número de versión a partir del fichero I<changelog>, y la arquitectura de la "
+"misma forma que B<dpkg-buildpackage>(1)). A continuación, ejecuta <debpkg "
+"-i> sobre cada fichero I<.deb> enumerado en el fichero I<.changes> para su "
+"instalación, suponiendo que todos los arhcivos I<.deb> se encuentran en el "
+"mismo directorio que el fichero I<.changes>. Tenga en cuenta que "
+"probablemente no quiera ejecutar este programa con un fichero I<.changes> "
+"relativa a otra arquitectura después de una compilación cruzada del paquete."
 
 #. type: Plain text
 #: ../scripts/debi.1:40
@@ -7402,6 +7758,15 @@ msgid ""
 "corresponding command-line options B<--check-dirname-level> and "
 "B<--check-dirname-regex>."
 msgstr ""
+"Al igual que otros scripts del paquete B<devscripts>, B<debi> subirá por el "
+"árbol de directorios hasta encontrar un fichero I<debian/changelog>. Como "
+"precaución frente a ficheros residuales que puedan provocar problemas, "
+"examina el nombre del directorio superior una vez que encuentra el fichero "
+"I<debian/changelog>, y comprueba que el nombre de directorio concuerda con "
+"el nombre de paquete. Las variables «DEVSCRIPTS_CHECK_DIRNAME_LEVEL» y "
+"«DEVSCRIPTS_CHECK_DIRNAME_REGEX» del fichero de configuración permiten "
+"controlar el comportamiento, así como las opciones de línea de órdenes "
+"correspondientes, B<--check-dirname-level> y B<--check-dirname-regex>."
 
 #. type: Plain text
 #: ../scripts/debi.1:78 ../scripts/debrelease.1:87
@@ -7410,12 +7775,15 @@ msgid ""
 "the parent of the source directory.  This should either be an absolute path "
 "or relative to the top of the source directory."
 msgstr ""
+"Busca los ficheros I<.changes>, I<.deb> en el I<directorio> en lugar del "
+"directorio superior al directorio de fuentes. Debe ser una ruta absoluta o "
+"relativa al directorio superior del directorio de fuentes."
 
 #. type: TP
 #: ../scripts/debi.1:78
 #, no-wrap
 msgid "B<--upgrade>"
-msgstr ""
+msgstr "B<--upgrade>"
 
 #. type: Plain text
 #: ../scripts/debi.1:84
@@ -7425,6 +7793,10 @@ msgid ""
 "multi-binary packages when you don't want to have all the binaries installed "
 "at once."
 msgstr ""
+"Solo actualiza paquetes ya instalados en el sistema, en lugar de instalar "
+"todos los paquetes enumerados en el fichero I<.changes>. Útil con paquetes "
+"de varios binarios cuando no quiera instalar todos los paquetes binarios de "
+"una vez."
 
 #. type: Plain text
 #: ../scripts/debi.1:115
@@ -7436,11 +7808,18 @@ msgid ""
 "B<svn-buildpackage> to build your packages.  Note that it also affects "
 "B<debrelease>(1) in the same way, hence the strange name of the option."
 msgstr ""
+"Especifica el directorio a analizar durante la búsqueda de los ficheros "
+"I<.changes>, I<.deb>, y puede ser la ruta absoluta o la relativa al "
+"directorio superior del árbol de fuentes. Se corresponde con la opción línea "
+"de órdenes B<--debs-dir>. Esta opción se puede utilizar, por ejemplo, si "
+"siempre utiliza B<pbuilder> o B<svn-buildpackage> para construir sus "
+"paquetes. Tenga en cuenta que también afecta a B<debrelease>(1) de la misma "
+"forma, de ahí el extraño nombre de esta opción."
 
 #. type: Plain text
 #: ../scripts/debi.1:126
 msgid "B<debpkg>(1)  and B<devscripts.conf>(5)."
-msgstr ""
+msgstr "B<debpkg>(1) y B<devscripts.conf>(5)."
 
 #. type: Plain text
 #: ../scripts/debi.1:131
@@ -7451,6 +7830,11 @@ msgid ""
 "They have been moulded into one script together with B<debc>(1) and parts "
 "extensively modified by Julian Gilbey E<lt>jdg@debian.orgE<gt>."
 msgstr ""
+"B<debi> fue creado originalmente por Christoph Lameter "
+"E<lt>clameter@debian.orgE<gt>. El ya obsoleto script B<debit> fue creado "
+"originalmente por James R. Van Zandt E<lt>jrv@vanzandt.mv.comE<gt>. "
+"Combinación de ambos scripts en B<debc>(1) y profunda modicación por Julian "
+"Gilbey E<lt>jdg@debian.orgE<gt>."
 
 #. type: TH
 #: ../scripts/debpkg.1:1
@@ -14972,17 +15356,19 @@ msgstr ""
 #: ../scripts/whodepends.1:1
 #, no-wrap
 msgid "WHODEPENDS"
-msgstr ""
+msgstr "WHODEPENDS"
 
 #. type: Plain text
 #: ../scripts/whodepends.1:4
 msgid "whodepends - check which maintainers' packages depend on a package"
 msgstr ""
+"whodepends - Muestra desarrolladores de paquetes que dependen de un paquete "
+"específico"
 
 #. type: Plain text
 #: ../scripts/whodepends.1:6
 msgid "B<whodepends> [I<package>] [I<options>]"
-msgstr ""
+msgstr "B<whodepends> [I<paquete>] [I<opciones>]"
 
 #. type: Plain text
 #: ../scripts/whodepends.1:10
@@ -14991,32 +15377,37 @@ msgid ""
 "maintain of all maintainers who have packages depending on the given "
 "package."
 msgstr ""
+"B<whodepends> proporciona los nombres, las direcciones de correo electrónico "
+"y los paquetes de todos los responsables de paquetes que dependen del "
+"paquete dado."
 
 #. type: Plain text
 #: ../scripts/whodepends.1:19
 msgid "B<whodepends> is not very efficient."
-msgstr ""
+msgstr "B<whodepends> no es muy eficiente."
 
 #. type: Plain text
 #: ../scripts/whodepends.1:20
 msgid "B<whodepends> has been written by Moshe Zadka E<lt>moshez@debian.orgE<gt>."
-msgstr ""
+msgstr "B<whodepends> fue creado por Moshe Zadka E<lt>moshez@debian.orgE<gt>."
 
 #. type: TH
 #: ../scripts/who-uploads.1:1
 #, no-wrap
 msgid "WHO-UPLOADS"
-msgstr ""
+msgstr "WHO-UPLOADS"
 
 #. type: Plain text
 #: ../scripts/who-uploads.1:4
 msgid "who-uploads - identify the uploaders of Debian source packages"
 msgstr ""
+"who-uploads - Identifica al desarrollador responsable del envío de un "
+"paquete fuente de Debian"
 
 #. type: Plain text
 #: ../scripts/who-uploads.1:6
 msgid "B<who-uploads> [I<options>] I<source_package> ..."
-msgstr ""
+msgstr "B<who-uploads> [I<opciones>] I<paquete-fuente> ..."
 
 #. type: Plain text
 #: ../scripts/who-uploads.1:12
@@ -15027,6 +15418,12 @@ msgid ""
 "installing a recent version of the I<debian-keyring> package should provide "
 "most of the required keys."
 msgstr ""
+"B<who-uploads> utiliza el sistema de seguimiento de paquetes («Package "
+"Tracking System», PTS) para identificar los desarrolladores responsables del "
+"envío de las versiones más recientes de los paquetes fuente dados. Tenga en "
+"cuenta que los desarrolladores se identifican mediante sus claves "
+"B<gpg>(1); la instalación de una versión reciente del paquete I<debian-"
+"keyring> debería proporcionar la mayoría de las claves requeridas."
 
 #. type: Plain text
 #: ../scripts/who-uploads.1:15
@@ -15034,12 +15431,15 @@ msgid ""
 "Note that because the PTS uses source packages, you must give the source "
 "package names, not the binary package names."
 msgstr ""
+"Tenga en cuenta que debido a que PTS utiliza paquetes fuentes, debe "
+"introducir los nombres de paquetes fuente, no lo nombres de paquetes "
+"binarios."
 
 #. type: TP
 #: ../scripts/who-uploads.1:16
 #, no-wrap
 msgid "B<-M>, B<--max-uploads=>I<N>"
-msgstr ""
+msgstr "B<-M>, B<--max-uploads=>I<N>"
 
 #. type: Plain text
 #: ../scripts/who-uploads.1:21
@@ -15048,12 +15448,15 @@ msgid ""
 "default is 3.  Note that you may not see this many uploads if there are not "
 "this many recorded in the PTS."
 msgstr ""
+"Define el número máximo de envíos a mostrar por cada paquete; el valor "
+"predefinido es 3. Tenga en cuenta que puede no ver este número de envíos si "
+"el PTS no ha registrado tantos."
 
 #. type: TP
 #: ../scripts/who-uploads.1:21
 #, no-wrap
 msgid "B<--keyring >I<keyring>"
-msgstr ""
+msgstr "B<--keyring >I<registro-de-claves>"
 
 #. type: Plain text
 #: ../scripts/who-uploads.1:25
@@ -15061,6 +15464,8 @@ msgid ""
 "Add I<keyring> to the list of keyrings to be searched for the uploader's GPG "
 "key."
 msgstr ""
+"Añade I<keyring> a la lista de registros de claves para la búsqueda de la "
+"clave GPG del desarrollador."
 
 #. type: Plain text
 #: ../scripts/who-uploads.1:33
@@ -15072,23 +15477,29 @@ msgid ""
 "that the default keyrings will not be examined.  The B<--keyring> option "
 "overrides this one."
 msgstr ""
+"De forma predefinda, B<who-uploads> utiliza los tres registros de claves de "
+"Debian, I</usr/share/keyrings/debian-keyring.{gpg,pgp}> y "
+"I</usr/share/keyrings/debian-maintainers.gpg> (este valor predefinido se "
+"puede modificar con el fichero de configuración, vea a continuación). Si se "
+"define esta opción no se examinarán los registros de claves predefinidos. La "
+"opción B<--keyring> anula esta opción."
 
 #. type: TP
 #: ../scripts/who-uploads.1:33
 #, no-wrap
 msgid "B<--date>"
-msgstr ""
+msgstr "B<--date>"
 
 #. type: Plain text
 #: ../scripts/who-uploads.1:36
 msgid "Show the date of the upload alongside the uploader's details"
-msgstr ""
+msgstr "Muestra la fecha del envío y los detalles del responsable."
 
 #. type: TP
 #: ../scripts/who-uploads.1:36
 #, no-wrap
 msgid "B<--nodate>, B<--no-date>"
-msgstr ""
+msgstr "B<--nodate>, B<--no-date>"
 
 #. type: Plain text
 #: ../scripts/who-uploads.1:40
@@ -15096,12 +15507,14 @@ msgid ""
 "Do not show the date of the upload alongside the uploader's details.  This "
 "is the default behaviour."
 msgstr ""
+"No muestra la fecha del envío junto con los detalles del responsable. Este "
+"es el comportamiento predefinido."
 
 #. type: TP
 #: ../scripts/who-uploads.1:56
 #, no-wrap
 msgid "B<WHOUPLOADS_DATE>"
-msgstr ""
+msgstr "B<WHOUPLOADS_DATE>"
 
 #. type: Plain text
 #: ../scripts/who-uploads.1:60
@@ -15109,12 +15522,14 @@ msgid ""
 "Show the date of the upload alongside the uploader's details.  By default, "
 "this is \"no\"."
 msgstr ""
+"Muestra la fecha del envío y los detalles del responsable. El valor "
+"predefinido es «no»."
 
 #. type: TP
 #: ../scripts/who-uploads.1:60
 #, no-wrap
 msgid "B<WHOUPLOADS_MAXUPLOADS>"
-msgstr ""
+msgstr "B<WHOUPLOADS_MAXUPLOADS>"
 
 #. type: Plain text
 #: ../scripts/who-uploads.1:64
@@ -15122,12 +15537,14 @@ msgid ""
 "The maximum number of uploads to display for each package.  By default, this "
 "is 3."
 msgstr ""
+"El número máximo de envío a mostrar por cada paquete. El valor predefinido "
+"es 3."
 
 #. type: TP
 #: ../scripts/who-uploads.1:64
 #, no-wrap
 msgid "B<WHOUPLOADS_KEYRINGS>"
-msgstr ""
+msgstr "B<WHOUPLOADS_KEYRINGS>"
 
 #. type: Plain text
 #: ../scripts/who-uploads.1:71
@@ -15137,6 +15554,10 @@ msgid ""
 "I</usr/share/keyrings/debian-keyring.{gpg,pgp}> and "
 "I</usr/share/keyrings/debian-maintainers.gpg>."
 msgstr ""
+"Una lista de registros de claves predefinidos separados por punto y coma. De "
+"forma predefinida, son los tres registros de  claves de Debian, "
+"I</usr/share/keyrings/debian-keyring.{gpg,pgp}> and I</usr/share/keyrings"
+"/debian-maintainers.gpg>."
 
 #. type: Plain text
 #: ../scripts/who-uploads.1:74
@@ -15145,27 +15566,32 @@ msgid ""
 "E<lt>dato@net.com.org.esE<gt>.  The current version is by Julian Gilbey "
 "E<lt>jdg@debian.orgE<gt>."
 msgstr ""
+"La versión original de B<who-uploads> fue creada por Adeodato Sim\\['o] "
+"E<lt>dato@net.com.org.esE<gt>.  La versión actual fue creada por Julian "
+"Gilbey E<lt>jdg@debian.orgE<gt>."
 
 #. type: TH
 #: ../scripts/wnpp-alert.1:1
 #, no-wrap
 msgid "WNPP-ALERT"
-msgstr ""
+msgstr "WNPP-ALERT"
 
 #. type: Plain text
 #: ../scripts/wnpp-alert.1:4
 msgid "wnpp-alert - check for installed packages up for adoption or orphaned"
 msgstr ""
+"wnpp-alert - Busca paquetes instalados listados como huérfanos o con "
+"solicitud de adopción"
 
 #. type: Plain text
 #: ../scripts/wnpp-alert.1:6
 msgid "B<wnpp-alert >[B<--diff>] [I<package> ...]"
-msgstr ""
+msgstr "B<wnpp-alert >[B<--diff>] [I<paquete> ...]"
 
 #. type: Plain text
 #: ../scripts/wnpp-alert.1:8
 msgid "B<wnpp-alert --help>|B<--version>"
-msgstr ""
+msgstr "B<wnpp-alert --help>|B<--version>"
 
 #. type: Plain text
 #: ../scripts/wnpp-alert.1:14
@@ -15175,6 +15601,11 @@ msgid ""
 "the WNPP webpages, and then outputs a list of packages installed on the "
 "system, or matching the listed packages, which are in those lists."
 msgstr ""
+"B<wnpp-alert> descarga la lista de paquetes que huérfanos (O), disponibles "
+"para su adopción (RFA), o cuyo responsable ha solicitado ayuda (RFH) desde "
+"las páginas web WNPP, y muestra por la salida una lista de paquetes "
+"instalados en el sistema, o que coinciden con los paquetes introducidos, "
+"presentes en la lista."
 
 #. type: Plain text
 #: ../scripts/wnpp-alert.1:17
@@ -15182,12 +15613,14 @@ msgid ""
 "Note that WNPP, and therefore B<wnpp-alert>'s output, is source package "
 "based."
 msgstr ""
+"Tenga en cuenta que la salida de WNPP, y por ello también de B<wnpp-alert>, "
+"se basa en paquetes fuente."
 
 #. type: TP
 #: ../scripts/wnpp-alert.1:18
 #, no-wrap
 msgid "B<--diff>, B<-d>"
-msgstr ""
+msgstr "B<--diff>, B<-d>"
 
 #. type: Plain text
 #: ../scripts/wnpp-alert.1:23
@@ -15196,11 +15629,14 @@ msgid ""
 "B<wnpp-alert> to the previous output (cached in the file I<wnpp-diff>) and "
 "output the differences."
 msgstr ""
+"Si el directorio I<~/.devscripts_cache> existe, compara la salida de B<wnpp-"
+"alert> con la salida anterior (almacenada en el fichero I<wnpp-diff>) y "
+"muestra las diferencias."
 
 #. type: Plain text
 #: ../scripts/wnpp-alert.1:31 ../scripts/wnpp-check.1:25
 msgid "http://www.debian.org/devel/wnpp"
-msgstr ""
+msgstr "http://www.debian.org/devel/wnpp"
 
 #. type: Plain text
 #: ../scripts/wnpp-alert.1:34
@@ -15209,12 +15645,15 @@ msgid ""
 "modified by Julian Gilbey E<lt>jdg@debian.orgE<gt> for the devscripts "
 "package.  It is in the public domain."
 msgstr ""
+"B<wnpp-alert> fue creado por Arthur Korn E<lt>arthur@korn.chE<gt> y "
+"modificado por Julian Gilbey E<lt>jdg@debian.orgE<gt> para el paquete "
+"devscripts.  Es de dominio público."
 
 #. type: TH
 #: ../scripts/wnpp-check.1:1
 #, no-wrap
 msgid "WNPP-CHECK"
-msgstr ""
+msgstr "WNPP-CHECK"
 
 #. type: Plain text
 #: ../scripts/wnpp-check.1:4
@@ -15222,16 +15661,18 @@ msgid ""
 "wnpp-check - check if a package is being packaged or if this has been "
 "requested"
 msgstr ""
+"wnpp-check - Comprueba si un paquete está siendo empaquetado o si se ha "
+"solicitado"
 
 #. type: Plain text
 #: ../scripts/wnpp-check.1:6
 msgid "B<wnpp-check >I<package >..."
-msgstr ""
+msgstr "B<wnpp-check >I<paquete >..."
 
 #. type: Plain text
 #: ../scripts/wnpp-check.1:8
 msgid "B<wnpp-check --help>|B<--version>"
-msgstr ""
+msgstr "B<wnpp-check --help>|B<--version>"
 
 #. type: Plain text
 #: ../scripts/wnpp-check.1:13
@@ -15241,6 +15682,10 @@ msgid ""
 "WNPP website and lists any packages supplied on the command line which "
 "appear in those lists."
 msgstr ""
+"B<wnpp-check> descarga la lista de paquetes listados como trabajo en curso "
+"(ITP) o aquellos cuya creación se ha solicitado (RFP) desde el sitio web "
+"WNPP, y muestra cualquier paquete introducido en línea de órdenes que "
+"aparezca en tales listas."
 
 #. type: Plain text
 #: ../scripts/wnpp-check.1:16
@@ -15248,11 +15693,13 @@ msgid ""
 "Note that WNPP, and therefore B<wnpp-check>'s output, is source package "
 "based."
 msgstr ""
+"Tenga en cuenta que la salida de WNPP, y por ello también de B<wnpp-check>, "
+"se basa en paquetes fuente."
 
 #. type: Plain text
 #: ../scripts/wnpp-check.1:29
 msgid "None of the packages supplied has an open ITP or RFP"
-msgstr ""
+msgstr "No se ha iniciado ningún ITP o RFP para los paquetes introducidos "
 
 #. type: Plain text
 #: ../scripts/wnpp-check.1:33
@@ -15260,6 +15707,8 @@ msgid ""
 "Either an error occurred or at least one package supplied has an open ITP or "
 "RFP"
 msgstr ""
+"Puede que se haya detectado un fallo o que se ha iniciado un ITP o RFP para "
+"al menos un paquete introducido"
 
 #. type: Plain text
 #: ../scripts/wnpp-check.1:39
@@ -15272,17 +15721,24 @@ msgid ""
 "E<lt>jdg@debian.orgE<gt> for the devscripts package.  Both scripts are in "
 "the public domain."
 msgstr ""
+"B<wnpp-check> fue creado por David Paleino E<lt>d.paleino@gmail.comE<gt>; "
+"esta página de manual fue escrita por Adam D. Barratt E<lt>adam@adam-"
+"barratt.org.ukE<gt> para el paquete devscripts.  Originalmente, B<wnpp-"
+"check> estaba basado en B<wnpp-alert>, creado por Arthur Korn "
+"E<lt>arthur@korn.chE<gt> y modificado por Julian Gilbey "
+"E<lt>jdg@debian.orgE<gt> para el paquete devscripts. Ambos scripts son de "
+"dominio público."
 
 #. type: TH
 #: ../scripts/devscripts.conf.5:1
 #, no-wrap
 msgid "DEVSCRIPTS.CONF"
-msgstr ""
+msgstr "DEVSCRIPTS.CONF"
 
 #. type: Plain text
 #: ../scripts/devscripts.conf.5:4
 msgid "devscripts.conf - configuration file for the devscripts package"
-msgstr ""
+msgstr "devscripts.conf - Fichero de configuración para el paquete devscripts"
 
 #. type: Plain text
 #: ../scripts/devscripts.conf.5:9
@@ -15292,6 +15748,10 @@ msgid ""
 "of these have options which can be configured on a system-wide and per-user "
 "basis."
 msgstr ""
+"El paquete B<devscripts> proporciona una colección de scripts que pueden ser "
+"útiles a desarrolladores de Debian y otros que quieran construir paquetes "
+"Debian. Muchos de estos scripts ofrecen opciones que se pueden configurar a "
+"nivel de sistema o para cada usuario."
 
 #. type: Plain text
 #: ../scripts/devscripts.conf.5:15
@@ -15302,6 +15762,11 @@ msgid ""
 "I</usr/share/doc/devscripts/README.gz> or look at the output of I<dpkg -L "
 "devscripts | grep /usr/bin>.)"
 msgstr ""
+"Cada script en el paquete B<devscripts> que utiliza los valores en estos "
+"ficheros de configuración describe las opciones específicas definidas en "
+"cada página de manual. (Para una lista de los scripts consulte "
+"I</usr/share/doc/devscripts/README.gz> o la salida de I<dpkg -L devscripts | "
+"grep /usr/bin>.)"
 
 #. type: Plain text
 #: ../scripts/devscripts.conf.5:24
@@ -15314,6 +15779,14 @@ msgid ""
 "have one of the values I<yes> and I<no>; any other setting is regarded as "
 "equivalent to the default setting."
 msgstr ""
+"Los dos ficheros de configuración son I</etc/devscripts.conf> para los "
+"valores predefinidos y I<~/.devscripts> para opciones específicas a cada "
+"usuario. Se han escrito con sintaxis B<bash>(1), pero solo debe contener "
+"comentarios y asignación de variables de configuración. Ambos son analizados "
+"(si existen) por varios de los scripts B<devscripts>. Las variables que se "
+"corresponden con opciones de conmutación deben incluir los valores I<yes> o "
+"I<no>; cualquier otra opción se toma como el equivalente a la opción "
+"predefinida."
 
 #. type: Plain text
 #: ../scripts/devscripts.conf.5:28
@@ -15322,6 +15795,10 @@ msgid ""
 "name.  Package-wide variables begin with \"DEVSCRIPTS\", and are listed "
 "below, as well as in the relevant manpages."
 msgstr ""
+"Todos los nombres de variable se escriben en mayúscula, y empiezan con el "
+"nombre del script. Las variables para todo el paquete empiezan con "
+"«DEVSCRIPTS» , y se enumeran a continuación así como las páginas de manual "
+"relevantes."
 
 #. type: Plain text
 #: ../scripts/devscripts.conf.5:36
@@ -15334,6 +15811,13 @@ msgid ""
 "package will be appended to I</etc/devscripts.conf> when the package is "
 "upgraded."
 msgstr ""
+"Para una lista de todas las variables opcionales disponibles así como sus "
+"opciones predefinidas, consulte el fichero de configuración de ejemplo "
+"I</usr/share/doc/devscripts/devscripts.conf.ex>. Se copia a "
+"I</etc/devscripts.conf> durante la primera instalación del paquete "
+"B<devscripts>. La información relativa a opciones introducidas en versiones "
+"más recientes del paquete se añaden al final de I</etc/devscripts.conf> "
+"durante la actualización del paquete."
 
 #. type: Plain text
 #: ../scripts/devscripts.conf.5:40
@@ -15341,17 +15825,20 @@ msgid ""
 "Every script which reads the configuration files can be forced to ignore "
 "them by using B<--no-conf> as the I<first> command-line option."
 msgstr ""
+"Se puede forzar que los scripts que leen los ficheros de configuración los "
+"ignoren utilizando B<--no-conf> como la I<primera> opción de línea de "
+"órdenes."
 
 #. type: SH
 #: ../scripts/devscripts.conf.5:40
 #, no-wrap
 msgid "PACKAGE-WIDE VARIABLES"
-msgstr ""
+msgstr "VARIABLES PARA TODO EL PAQUETE"
 
 #. type: Plain text
 #: ../scripts/devscripts.conf.5:42
 msgid "The currently recognised package-wide variables are:"
-msgstr ""
+msgstr "Las variables admitidas para todo el paquete actualmente son:"
 
 #. type: Plain text
 #: ../scripts/devscripts.conf.5:54
@@ -15369,7 +15856,7 @@ msgstr ""
 #. type: Plain text
 #: ../scripts/devscripts.conf.5:58
 msgid "B<devscripts>(1)  and I</usr/share/doc/devscripts/README.gz.>"
-msgstr ""
+msgstr "B<devscripts>(1) y I</usr/share/doc/devscripts/README.gz.>"
 
 #. type: Plain text
 #: ../scripts/devscripts.conf.5:60
@@ -15377,3 +15864,5 @@ msgid ""
 "This manpage was written for the B<devscripts> package by the package "
 "maintainer Julian Gilbey E<lt>jdg@debian.orgE<gt>."
 msgstr ""
+"Esta página de manual fue escrita por el desarrollador Julian Gilbey "
+"E<lt>jdg@debian.orgE<gt> para el paquete B<devscripts>."
