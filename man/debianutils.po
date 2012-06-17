@@ -1,10 +1,10 @@
 # debianutils manpages translation to Spanish
-# Copyright (C) 2011 Software in the Public Interest
+# Copyright (C) 2011 - 2012 Software in the Public Interest
 # This file is distributed under the same license as the debianutils package.
 #
 # Changes:
 #   - Initial translation
-#       Omar Campagne <ocampagne@gmail.com>, 2011
+#       Omar Campagne <ocampagne@gmail.com>, 2011, 2012
 #
 #   - Updates
 #       TRANSLATOR
@@ -29,10 +29,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: debianutils 4.0.4\n"
+"Project-Id-Version: debianutils 4.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-30 10:55-0300\n"
-"PO-Revision-Date: 2011-11-02 10:12+0100\n"
+"PO-Revision-Date: 2012-05-10 18:33+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -40,7 +40,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1-rc1\n"
+"X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: default\n"
 
 #. type: TH
@@ -65,7 +65,7 @@ msgstr "NOMBRE"
 #. type: Plain text
 #: ../add-shell.8:4
 msgid "add-shell - add shells to the list of valid login shells"
-msgstr "add-shell - Añade consolas a la lista de consolas de sesión aceptadas"
+msgstr "add-shell - Añade consolas a la lista de consolas de sesión admitidas"
 
 #. type: SH
 #: ../add-shell.8:4 ../installkernel.8:4 ../ischroot.1:5 ../remove-shell.8:4
@@ -93,9 +93,9 @@ msgid ""
 "shells to this file if they are not already present, and copies this "
 "temporary file back to I</etc/shells>."
 msgstr ""
-"B<add-shell> copia I</etc/shells> a I</etc/shells.tmp>, añade los "
-"intérpretes de órdenes dados a este fichero si no están presentes, y copia "
-"este fichero temporal  a I</etc/shells>."
+"B<add-shell> copia I</etc/shells> a I</etc/shells.tmp>, añade las consolas a "
+"este fichero si no están presentes, y copia este fichero temporal  a "
+"I</etc/shells>."
 
 #. type: Plain text
 #: ../add-shell.8:15
@@ -161,10 +161,11 @@ msgid ""
 "making a link from I<{directory}/vmlinuz> to the new kernel, and the "
 "previously installed kernel is available as I<{directory}/vmlinuz.old>."
 msgstr ""
-"El núcleo nuevo se instalará en I<{directorio}/vmlinuz-{versión}>. Si ya "
-"existe un enlace simbólico  I<{directorio}/vmlinuz>, se actualizará, creando "
-"un enlace desde el I<{directory}/vmlinuz> al nuevo núcleo. El núcleo "
-"anteriormente instalado seguirá disponible como I<{directorio}/vmlinuz.old>. "
+"El núcleo nuevo se instala en I<{directorio}/vmlinuz-{versión}>. Si ya "
+"existe un enlace simbólico  I<{directorio}/vmlinuz>, este se actualiza, "
+"creando un enlace desde el I<{directory}/vmlinuz> al núcleo nuevo. El núcleo "
+"anteriormente instalado seguirá disponible como "
+"I<{directorio}/vmlinuz.old>. "
 
 #. type: SH
 #: ../installkernel.8:22 ../ischroot.1:35 ../savelog.8:151 ../tempfile.1:73
@@ -191,8 +192,7 @@ msgstr "ISCHROOT"
 
 #. type: TH
 #: ../ischroot.1:2 ../tempfile.1:2
-#, no-wrap, no-wrap
-#| msgid "12 May 2011"
+#, no-wrap
 msgid "30 May 2011"
 msgstr "30 de mayo de 2011"
 
@@ -219,8 +219,8 @@ msgid ""
 "B<ischroot> detects if it is currently running in a chroot. The exit status "
 "is:"
 msgstr ""
-"B<ischroot> detecta si se está ejecutando actualmente desde una jaula "
-"chroot. El estado de salida es:"
+"B<ischroot> detecta si se ha ejecutado en el momento presente desde una "
+"jaula chroot. El estado de salida es:"
 
 #. type: TP
 #: ../ischroot.1:12
@@ -231,24 +231,22 @@ msgstr "0"
 #. type: Plain text
 #: ../ischroot.1:15
 msgid "if currently running in a chroot"
-msgstr "Si se está ejecutando desde una jaula chroot."
+msgstr "Si se ejecuta desde una jaula chroot."
 
 #. type: TP
 #: ../ischroot.1:15
-#, no-wrap, no-wrap
-#| msgid "1)"
+#, no-wrap
 msgid "1"
 msgstr "1"
 
 #. type: Plain text
 #: ../ischroot.1:18
 msgid "if currently not running in a chroot"
-msgstr "Si no se está ejecutando desde una jaula chroot."
+msgstr "Si no se ejecuta desde una jaula chroot."
 
 #. type: TP
 #: ../ischroot.1:18
-#, no-wrap, no-wrap
-#| msgid "2)"
+#, no-wrap
 msgid "2"
 msgstr "2"
 
@@ -258,7 +256,7 @@ msgid ""
 "if the detection is not possible (On GNU/Linux this happens if the script is "
 "not run as root)."
 msgstr ""
-"Se no es posible detectarlo (Ocurre en sistemas GNU/Linux si el script no se "
+"Si no es posible detectarlo (Ocurre en sistemas GNU/Linux si el script no se "
 "ejecuta como administrador). "
 
 #. type: SH
@@ -277,7 +275,7 @@ msgstr "B<-f, --default-false >"
 #. type: Plain text
 #: ../ischroot.1:26
 msgid "Exit with status 1 if the detection is not possible."
-msgstr "Cierra con una estado de salida 1 si la detección no es posible."
+msgstr "Cierra con un estado de salida 1 si la detección no es posible."
 
 #. type: TP
 #: ../ischroot.1:26
@@ -288,7 +286,7 @@ msgstr "B<-t, --default-true >"
 #. type: Plain text
 #: ../ischroot.1:29
 msgid "Exit with status 0 if the detection is not possible."
-msgstr "Cierra con una estado de salida 0 si la detección no es posible."
+msgstr "Cierra con un estado de salida 0 si la detección no es posible."
 
 #. type: TP
 #: ../ischroot.1:29 ../tempfile.1:64
@@ -339,7 +337,7 @@ msgstr "7 de abril de 2005"
 #: ../remove-shell.8:4
 msgid "remove-shell - remove shells from the list of valid login shells"
 msgstr ""
-"remove-shell - Elimina consolas de la lista de consolas de sesión aceptadas"
+"remove-shell - Elimina consolas de la lista de consolas de sesión admitidas"
 
 #. type: Plain text
 #: ../remove-shell.8:8
@@ -353,9 +351,9 @@ msgid ""
 "etc/shells.tmp2> to remove the given shells from the list of valid login "
 "shells, and copy the result back to I</etc/shells>."
 msgstr ""
-"B<remove-shell> modifica los archivos temporales I</etc/shells.tmp> y I</etc/"
-"shells.tmp2> para eliminar las consolas introducidas de la lista de consolas "
-"de sesión aceptadas, y copia el resultado a I</etc/shells>."
+"B<remove-shell> modifica los archivos temporales I</etc/shells.tmp> y "
+"I</etc/shells.tmp2> para eliminar las consolas introducidas de la lista de "
+"consolas de sesión admitidas, y copia el resultado a I</etc/shells>."
 
 #. type: TH
 #: ../run-parts.8:8
@@ -398,8 +396,8 @@ msgid ""
 "directories are silently ignored."
 msgstr ""
 "B<run-parts> ejecuta todos los ficheros con permisos de ejecución, dentro de "
-"los limites descritos a continuación, que se encuentran en el I<directorio>. "
-"Se ignorarán otros ficheros o directorios."
+"los limites descritos a continuación, que se encuentran en el "
+"I<directorio>. Se ignoran otros ficheros o directorios."
 
 #. type: Plain text
 #: ../run-parts.8:31
@@ -423,10 +421,10 @@ msgid ""
 msgstr ""
 "SI se introduce la opción «--lsbsysinit», los nombres no pueden finalizar "
 "con «.dpkg-old», «.dpkg-dist», «.dpkg-new» o «dpkg-tmp». Además, deben "
-"pertenecer a uno de los siguientes espacios de nombre («namespaces»): el "
-"espacio asignado por LANANA , (^[a-z0-9]+$); los espacios de nombre "
-"jerárquicos y reservados LSB, (^_?([a-z0-9_.]+-)+[a-z0-9]+$); y el espacio "
-"de nombre del script para cron de Debian, (^[a-zA-Z0-9_-]+$)."
+"pertenecer a uno de los siguientes espacios de nombre: el espacio asignado "
+"por LANANA , (^[a-z0-9]+$); los espacios de nombre jerárquicos y reservados "
+"LSB, (^_?([a-z0-9_.]+-)+[a-z0-9]+$); y el espacio de nombre del script para "
+"cron de Debian, (^[a-zA-Z0-9_-]+$)."
 
 #. type: Plain text
 #: ../run-parts.8:41
@@ -435,7 +433,7 @@ msgid ""
 "regular expression specified as that option's argument."
 msgstr ""
 "Si se introduce la opción «--regex», los nombres deben coincidir con la "
-"expresión regular extendida especificada como argumento a esa opción."
+"expresión regular extendida definida como argumento a esa opción."
 
 #. type: Plain text
 #: ../run-parts.8:45
@@ -457,8 +455,7 @@ msgstr "B<--test>"
 msgid ""
 "print the names of the scripts which would be run, but don't actually run "
 "them."
-msgstr ""
-"Muestra los nombres de los scripts que se ejecutarían, sin ejecutarlos."
+msgstr "Muestra los nombres de los scripts que se ejecutarían, sin ejecutarlos."
 
 #. type: TP
 #: ../run-parts.8:51
@@ -472,9 +469,9 @@ msgid ""
 "print the names of the all matching files (not limited to executables), but "
 "don't actually run them. This option cannot be used with --test."
 msgstr ""
-"Muestra los nombres de todos los ficheros encontrados (no se limita a "
-"ejecutables), sin ejecutarlos. Esta opción no se puede utilizar junto con «--"
-"test»."
+"Muestra los nombres de todos los ficheros coincidentes (no se limita a "
+"ejecutables), sin ejecutarlos. Esta opción no se puede utilizar junto con "
+"«--test»."
 
 #. type: TP
 #: ../run-parts.8:55
@@ -555,8 +552,8 @@ msgid ""
 "until completion."
 msgstr ""
 "Ejecuta cada script en una sesión diferente. Si usa esta opción, cancelar el "
-"proceso de «run-parts» no cancelará el script en ejecución, sino que "
-"continuaría hasta su finalización."
+"proceso de «run-parts» no cancela el script en ejecución, sino que este "
+"continua hasta su finalización."
 
 #. type: TP
 #: ../run-parts.8:77
@@ -587,8 +584,8 @@ msgid ""
 "specified in octal.  By default the umask is set to 022."
 msgstr ""
 "Define umask con el valor I<umask> antes de ejecutar los scripts. I<umask> "
-"se debería especificar con un valor octal. El valor predeterminado de umask "
-"es 022."
+"se debe especificar con un valor octal. El valor predeterminado de umask es "
+"022."
 
 #. type: TP
 #: ../run-parts.8:89
@@ -735,8 +732,8 @@ msgid ""
 "Older versions of I<file> are named:"
 msgstr ""
 "La orden B<savelog> guarda y, de forma opcional, comprime copias antiguas de "
-"ficheros. Las versiones anteriores del I<fichero> se nombran de la siguiente "
-"forma:"
+"ficheros. Las versiones anteriores del I<fichero> se nombran de la "
+"siguiente forma:"
 
 #. type: Plain text
 #: ../savelog.8:19
@@ -754,13 +751,13 @@ msgstr ""
 "I<E<lt>númeroE<gt>> representa el número de versión, siendo cero el más "
 "reciente. Los números de versión  E<gt> 0 se comprimen, a menos que B<-l> lo "
 "impida. El número de versión cero no se comprime, ya que puede que un "
-"proceso mantenga el I<fichero> abierto para la E/S. Sólo si preservan las "
+"proceso mantenga el I<fichero> abierto para la E/S. Sólo se preservan las "
 "versiones I<ciclo> del fichero."
 
 #. type: Plain text
 #: ../savelog.8:36
 msgid "If the file does not exist and B<-t> was given, it will be created."
-msgstr "Si el fichero no existe y se introduce B<-t>, este será creado."
+msgstr "Si el fichero no existe y se introduce B<-t>, este se crea."
 
 #. type: Plain text
 #: ../savelog.8:39
@@ -786,12 +783,12 @@ msgid ""
 "version I<file> is deleted.  Both compressed names and uncompressed names "
 "are cycled, regardless of B<-l>.  Missing version files are ignored."
 msgstr ""
-"Los ficheros con número de versión pasan por un ciclo. La versión I<fichero>."
-"I<2> se renombra como I<fichero>.I<3>, la versión I<fichero>.I<1> pasa a ser "
-"I<fichero>.I<2>, y así sucesivamente. Por último, la versión I<fichero>.I<0> "
-"se renombra como la versión I<fichero>.I<1>, y se elimina la versión "
-"I<fichero>. Los nombres, comprimidos o descomprimidos, pasan por el ciclo, "
-"sin importar el uso de B<-l>. Se ignoran los ficheros sin versión."
+"Los ficheros con número de versión pasan por un ciclo. La versión "
+"I<fichero>.I<2> se renombra como I<fichero>.I<3>, la versión I<fichero>.I<1> "
+"pasa a ser I<fichero>.I<2>, y así sucesivamente. Por último, la versión "
+"I<fichero>.I<0> se renombra como la versión I<fichero>.I<1>, y se elimina la "
+"versión I<fichero>. Los nombres, comprimidos o descomprimidos, pasan por el "
+"ciclo, sin importar el uso de B<-l>. Se ignoran los ficheros sin versión."
 
 #. type: IP
 #: ../savelog.8:60
@@ -805,8 +802,9 @@ msgid ""
 "The new I<file>.I<1> is compressed unless the B<-l> flag was given.  It is "
 "changed subject to the B<-m>, B<-u>, and B<-g> flags."
 msgstr ""
-"El I<fichero>.I<1> nuevo se comprime, a menos que se introduzca la opción B<-"
-"l>. Puede cambiar el comportamiento con las opciones B<-m>, B<-u>, y B<-g>."
+"El I<fichero>.I<1> nuevo se comprime, a menos que se introduzca la opción "
+"B<-l>. Puede cambiar el funcionamiento con las opciones B<-m>, B<-u>, y "
+"B<-g>."
 
 #. type: IP
 #: ../savelog.8:69
@@ -832,9 +830,9 @@ msgid ""
 "I<file> is created subject to the given flags.  With the B<-p> flag, the "
 "file is created with the same owner, group, and permissions as before."
 msgstr ""
-"Si se introducen las opciones B<-m>, B<-u>, B<-g>, B<-t> o B<-p>, se creará "
-"un I<fichero>, de acuerdo a las opciones dadas. Con la opción B<-p>, el "
-"fichero se creará con el mismo propietario, grupo y permisos originales."
+"Si se introducen las opciones B<-m>, B<-u>, B<-g>, B<-t> o B<-p>, se crea un "
+"I<fichero>, de acuerdo a las opciones dadas. Con la opción B<-p>, el "
+"fichero se crea con el mismo propietario, grupo y permisos originales."
 
 #. type: IP
 #: ../savelog.8:85
@@ -999,7 +997,7 @@ msgstr "B<-d>"
 #. type: Plain text
 #: ../savelog.8:136
 msgid "use standard date for rolling"
-msgstr "Usa la fecha estándar al iterar los ficheros"
+msgstr "Utiliza la fecha estándar al iterar los ficheros"
 
 #. type: TP
 #: ../savelog.8:136
@@ -1011,8 +1009,8 @@ msgstr "B<-D formato-fecha>"
 #: ../savelog.8:140
 msgid "override date format, in the form of I<[MMDDhhmm[[CC]YY][.ss]]>"
 msgstr ""
-"Sobreescribe el formato de fecha, con el siguiente formato I<[MMDDhhmm[[CC]"
-"YY][.ss]]>"
+"Sobreescribe el formato de fecha, con el siguiente formato "
+"I<[MMDDhhmm[[CC]YY][.ss]]>"
 
 #. type: TP
 #: ../savelog.8:140
@@ -1034,7 +1032,7 @@ msgstr "B<-n>"
 #. type: Plain text
 #: ../savelog.8:148
 msgid "do not rotate empty files"
-msgstr "No rota ficheros vacíos"
+msgstr "No itera ficheros vacíos"
 
 #. type: TP
 #: ../savelog.8:148
@@ -1054,7 +1052,7 @@ msgid ""
 "I<file.1> and compresses it, data could be lost."
 msgstr ""
 "Si un proceso aún está editando I<fichero.0>, y «savelog» lo renombra como "
-"I<fichero.1>, comprimiéndolo."
+"I<fichero.1>, comprimiéndolo, se pueden perder datos."
 
 #. type: Plain text
 #: ../savelog.8:159
@@ -1092,8 +1090,8 @@ msgid ""
 "steps involved in directory selection."
 msgstr ""
 "B<tempfile> crea un fichero temporal de manera segura. Utiliza B<tempnam>(3) "
-"para seleccionar un nombre, y lo abre con « O_RDWR | O_CREAT | O_EXCL». EL "
-"nombre de fichero se mostrará por la salida estándar. Consulte B<tempnam>(3) "
+"para seleccionar un nombre, y lo abre con « O_RDWR | O_CREAT | O_EXCL». El "
+"nombre de fichero se muestra por la salida estándar. Consulte B<tempnam>(3) "
 "para ver los pasos que se toman para la selección del directorio."
 
 #. type: Plain text
@@ -1102,8 +1100,8 @@ msgid ""
 "The directory in which to create the file might be searched for in this "
 "order (but refer to B<tempnam>(3)  for authoritative answers):"
 msgstr ""
-"Se buscará el directorio en el que crear el fichero en el siguiente orden "
-"(sin embargo, consulte B<tempnam>(3) para ver información de la fuente "
+"Se busca el directorio en el que crear el fichero en el siguiente orden (sin "
+"embargo, consulte B<tempnam>(3) para ver información de la fuente "
 "original):"
 
 #. type: TP
@@ -1119,7 +1117,7 @@ msgid ""
 "an appropriate directory, that is used."
 msgstr ""
 "Si existe la variable de entorno B<TMPDIR>, y contiene el nombre de un "
-"directorio adecuado, se utilizará."
+"directorio adecuado, se utiliza."
 
 #. type: TP
 #: ../tempfile.1:29
@@ -1134,7 +1132,7 @@ msgid ""
 "is used."
 msgstr ""
 "En caso contrario, si se define el argumento I<--directory>, y es adecuado, "
-"se utilizará éste."
+"se utiliza este."
 
 #. type: TP
 #: ../tempfile.1:34
@@ -1148,8 +1146,8 @@ msgid ""
 "Otherwise, I<P_tmpdir> (as defined in I<E<lt>stdio.hE<gt>>)  is used when "
 "appropriate."
 msgstr ""
-"De no ser así, se usará I<P_tmpdir> (tal y como se define en I<E<lt>stdio."
-"hE<gt>>) cuando sea apropiado."
+"De no ser así, se utiliza I<P_tmpdir> (tal y como se define en "
+"I<E<lt>stdio.hE<gt>>) cuando es apropiado."
 
 #. type: TP
 #: ../tempfile.1:41
@@ -1182,7 +1180,7 @@ msgstr "B<-m, --mode >I<MODO>"
 #. type: Plain text
 #: ../tempfile.1:53
 msgid "Open the file with MODE instead of 0600."
-msgstr "Abre el fichero usando el MODO, en lugar de 0600."
+msgstr "Utiliza el MODO para abrir el fichero, en lugar de 0600."
 
 #. type: TP
 #: ../tempfile.1:53
@@ -1196,8 +1194,8 @@ msgid ""
 "Use FILE for the name instead of B<tempnam>(3)B<.> The options -d, -p, and -"
 "s are ignored if this option is given."
 msgstr ""
-"Usa el FICHERO para el nombre, en lugar de B<tempnam>(3)B<.> Se ignorarán "
-"las opciones «-d», «-p» y «-s» si se introduce ésta."
+"Utiliza el FICHERO para el nombre, en lugar de B<tempnam>(3)B<.> Si se "
+"introduce esta opción, se ignoran las opciones «-d», «-p» y «-s»."
 
 #. type: TP
 #: ../tempfile.1:58
@@ -1238,9 +1236,6 @@ msgstr ""
 
 #. type: Plain text
 #: ../tempfile.1:77
-#| msgid ""
-#| "Exclusive creation is not guaranteed when creating files on NFS "
-#| "partitions."
 msgid ""
 "Exclusive creation is not guaranteed when creating files on NFS partitions.  "
 "tempfile is deprecated; you should use mktemp(1)  instead."

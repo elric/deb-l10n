@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2011-05-25 03:58+0000\n"
-"PO-Revision-Date: 2012-02-20 13:56+0200\n"
+"PO-Revision-Date: 2012-05-18 11:46+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -137,7 +137,6 @@ msgstr "FALLOS"
 
 #. type: Plain text
 #: ../scripts/annotate-output.1:36
-#, fuzzy
 msgid ""
 "Since stdout and stderr are processed in parallel, it can happen that some "
 "lines received on stdout will show up before later-printed stderr lines (and "
@@ -145,7 +144,8 @@ msgid ""
 msgstr ""
 "Debido que la salida estándar y la salida de error estándar se procesan en "
 "paralelo, puede que algunas líneas mostradas por la salida estándar "
-"aparezcan antes que líneas impresas de la salida de error estándar."
+"aparezcan antes que líneas mostradas por la salida de error estándar (y "
+"viceversa)."
 
 #. type: Plain text
 #: ../scripts/annotate-output.1:41
@@ -768,6 +768,13 @@ msgid ""
 "should not be used as an SMTP server for B<bts> under the circumstances "
 "described in this paragraph."
 msgstr ""
+"Tenga en cuenta que el uso de la orden B<reassign> puede, si se activa "
+"B<--interactive> o B<--force-interactive>, añadir de forma automática una "
+"copia carbón a I<$paquete-nuevo>@packages.debian.org. En estos casos, se "
+"aplica el comentario anterior acerca del reenvío. La interfaz de envío "
+"(puerto 587) en «reportbug.debian.org» no permite el reenvío y, por ello, no "
+"se debe utilizar como servidor SMTP para B<bts> bajo las circunstancias "
+"descritas en este párrafo. "
 
 #. type: =item
 #: ../scripts/bts.pl:334
@@ -2034,16 +2041,18 @@ msgid ""
 "If no I<claim> is specified, the environment variable B<DEBEMAIL> or "
 "B<EMAIL> (checked in that order) is used."
 msgstr ""
+"Si no se especifica I<identificación>, se utiliza la variable de entorno "
+"B<DEBEMAIL> o B<EMAIL> (en ese orden)."
 
 #. type: =item
 #: ../scripts/bts.pl:1741
 msgid "B<unclaim> I<bug> [I<claim>]"
-msgstr ""
+msgstr "B<unclaim> I<bug> [I<identificación>]"
 
 #. type: textblock
 #: ../scripts/bts.pl:1743
 msgid "Remove the record that you have claimed a bug."
-msgstr ""
+msgstr "Elimina la identificación de señala que solicita el informe de fallo."
 
 #. type: =item
 #: ../scripts/bts.pl:1761
@@ -2741,7 +2750,7 @@ msgstr ""
 #. type: =item
 #: ../scripts/bts.pl:4060
 msgid "B<BTS_SMTP_HELO>"
-msgstr ""
+msgstr "B<BTS_SMTP_HELO>"
 
 #. type: textblock
 #: ../scripts/bts.pl:4062
@@ -3059,12 +3068,12 @@ msgstr "Patrick Schoenfeld <schoenfeld@debian.org>"
 #. type: textblock
 #: ../scripts/chdist.pl:20
 msgid "chdist - script to easily play with several distributions"
-msgstr ""
+msgstr "chdist - Script para utilizar varias distribuciones de forma fácil"
 
 #. type: textblock
 #: ../scripts/chdist.pl:24
 msgid "B<chdist> [I<options>] [I<command>] [I<command parameters>]"
-msgstr ""
+msgstr "B<chdist> [I<opciones>] [I<orden>] [I<parámetros-de-la-orden>]"
 
 #. type: textblock
 #: ../scripts/chdist.pl:28
@@ -3074,46 +3083,53 @@ msgid ""
 "easy to query the status of packages in other distribution without using "
 "chroots, for instance."
 msgstr ""
+"B<chdist> es una nueva implementación de «MultiDistroTools» (o mdt). Crea "
+"«árboles de APT» para varias distribuciones, lo que facilita consultar el "
+"estado de paquetes de otra distribución sin utilizar, por ejemplo, un "
+"chroot."
 
 #. type: textblock
 #: ../scripts/chdist.pl:39 ../scripts/mass-bug.pl:119
 msgid "Provide a usage message."
-msgstr ""
+msgstr "Muestra un mensaje de uso."
 
 #. type: =item
 #: ../scripts/chdist.pl:41
 msgid "B<-d>, B<--data-dir> I<DIR>"
-msgstr ""
+msgstr "B<-d>, B<--data-dir> I<DIRECTORIO>"
 
 #. type: textblock
 #: ../scripts/chdist.pl:43
 msgid "Choose data directory (default: $HOME/.chdist/)."
-msgstr ""
+msgstr "Define el directorio de datos (por omisión «$HOME/.chdist/»)."
 
 #. type: =item
 #: ../scripts/chdist.pl:45
 msgid "B<-a>, B<--arch> I<ARCH>"
-msgstr ""
+msgstr "B<-a>, B<--arch> I<ARQUITECTURA>"
 
 #. type: textblock
 #: ../scripts/chdist.pl:47
 msgid "Choose architecture (default: `B<dpkg --print-architecture>`)."
-msgstr ""
+msgstr "Define la arquitectura (por omisión: «B<dpkg --print-architecture>»)."
 
 #. type: Plain text
 #: ../scripts/chdist.pl:51 ../scripts/deb-reversion.dbk:239 ../scripts/mass-bug.pl:123 ../scripts/uscan.1:448
 msgid "Display version information."
-msgstr ""
+msgstr "Muestra información de la versión."
 
 #. type: =item
 #: ../scripts/chdist.pl:59
 msgid "B<create> I<DIST> : prepare a new tree named I<DIST>"
 msgstr ""
+"B<create> I<DISTRIBUCIÓN> : prepara un árbol nuevo llamado I<DISTRIBUCIÓN>"
 
 #. type: =item
 #: ../scripts/chdist.pl:61
 msgid "B<apt-get> I<DIST> (B<update>|B<source>|...) : run B<apt-get> inside I<DIST>"
 msgstr ""
+"B<apt-get> I<DISTRIBUCIÓN> (B<update>|B<source>|...) : ejecuta B<apt-get> "
+"dentro de I<DISTRIBUCIÓN>"
 
 #. type: =item
 #: ../scripts/chdist.pl:63
@@ -3121,21 +3137,29 @@ msgid ""
 "B<apt-cache> I<DIST> (B<show>|B<showsrc>|...) : run B<apt-cache> inside "
 "I<DIST>"
 msgstr ""
+"B<apt-cache> I<DISTRIBUCIÓN> (B<show>|B<showsrc>|...) : ejecuta B<apt-cache> "
+"dentro de I<DISTRIBUCIÓN>"
 
 #. type: =item
 #: ../scripts/chdist.pl:65
 msgid "B<apt-rdepends> I<DIST> [...] : run B<apt-rdepends> inside I<DIST>"
 msgstr ""
+"B<apt-rdepends> I<DISTRIBUCIÓN> [...] : ejecuta B<apt-rdepends> dentro de "
+"I<DISTRIBUCIÓN>"
 
 #. type: =item
 #: ../scripts/chdist.pl:67
 msgid "B<src2bin> I<DIST PKG> : get binary packages for a source package in I<DIST>"
 msgstr ""
+"B<src2bin> I<PAQUETE DISTRIBUCIÓN> : obtiene los paquetes binarios de un "
+"paquete fuente en I<DISTRIBUCIÓN>"
 
 #. type: =item
 #: ../scripts/chdist.pl:69
 msgid "B<bin2src> I<DIST PKG> : get source package for a binary package in I<DIST>"
 msgstr ""
+"B<bin2src> I<PAQUETE DISTRIBUCIÓN> : obtiene un paquete fuente de un paquete "
+"binario en  I<DISTRIBUCIÓN>"
 
 #. type: =item
 #: ../scripts/chdist.pl:71
@@ -3143,11 +3167,15 @@ msgid ""
 "B<compare-packages> I<DIST1 DIST2> [I<DIST3>, ...] : list versions of "
 "packages in several I<DIST>ributions"
 msgstr ""
+"B<compare-packages> I<DISTRIBUCIÓN1 DISTRIBUCIÓN2> [I<DISTRIBUCIÓN3>, ...] : "
+"muestra las versiones de los paquetes en distintas I<DISTRIBUCIONES>"
 
 #. type: =item
 #: ../scripts/chdist.pl:73
 msgid "B<compare-bin-packages> I<DIST1 DIST2> [I<DIST3>, ...]"
 msgstr ""
+"B<compare-bin-packages> I<DISTRIBUCIÓN1 DISTRIBUCIÓN2> [I<DISTRIBUCIÓN3>, "
+"...]"
 
 #. type: =item
 #: ../scripts/chdist.pl:75
@@ -3155,11 +3183,14 @@ msgid ""
 "B<compare-versions> I<DIST1 DIST2> : same as B<compare-packages>, but also "
 "run B<dpkg --compare-versions> and display where the package is newer."
 msgstr ""
+"B<compare-versions> I<DISTRIBUCIÓN1 DISTRIBUCIÓN2> : similar a B<compare-"
+"packages>, pero también ejecuta B<dpkg --compare-versions> y muestra dónde "
+"se encuentra el paquete más reciente."
 
 #. type: =item
 #: ../scripts/chdist.pl:77
 msgid "B<compare-bin-versions> I<DIST1 DIST2>"
-msgstr ""
+msgstr "B<compare-bin-versions> I<DISTRIBUCIÓN1 DISTRIBUCIÓN2>"
 
 #. type: =item
 #: ../scripts/chdist.pl:79
@@ -3167,6 +3198,8 @@ msgid ""
 "B<compare-src-bin-packages> I<DIST> : compare sources and binaries for "
 "I<DIST>"
 msgstr ""
+"B<compare-src-bin-packages> I<DISTRIBUCIÓN> : compara paquetes fuente y "
+"binarios de una I<DISTRIBUCIÓN>"
 
 #. type: =item
 #: ../scripts/chdist.pl:81
@@ -3175,6 +3208,9 @@ msgid ""
 "but also run I<dpkg --compare-versions> and display where the package is "
 "newer"
 msgstr ""
+"B<compare-src-bin-versions> I<DISTRIBUCIÓN> : similar a B<compare-src-bin-"
+"versions>, pero también ejecuta I<dpkg --compare-versions> y muestra dónde "
+"se encuentra el paquete más reciente."
 
 #. type: =item
 #: ../scripts/chdist.pl:83
@@ -3182,6 +3218,8 @@ msgid ""
 "B<grep-dctrl-packages> I<DIST> [...] : run B<grep-dctrl> on F<*_Packages> "
 "inside I<DIST>"
 msgstr ""
+"B<grep-dctrl-packages> I<DISTRIBUCIÓN> [...] : ejecuta B<grep-dctrl> sobre "
+"F<*_Packages> dentro de I<DISTRIBUCIÓN>"
 
 #. type: =item
 #: ../scripts/chdist.pl:85
@@ -3189,11 +3227,13 @@ msgid ""
 "B<grep-dctrl-sources> I<DIST> [...] : run B<grep-dctrl> on F<*_Sources> "
 "inside I<DIST>"
 msgstr ""
+"B<grep-dctrl-sources> I<DISTRIBUCIÓN> [...] : ejecuta B<grep-dctrl> sobre "
+"F<*_Sources> dentro de I<DISTRIBUCIÓN>"
 
 #. type: =item
 #: ../scripts/chdist.pl:87
 msgid "B<list> : list available I<DIST>s"
-msgstr ""
+msgstr "B<list> : muestra las I<DISTRIBUCIONES> disponibles"
 
 #. type: textblock
 #: ../scripts/chdist.pl:93
@@ -3201,6 +3241,8 @@ msgid ""
 "This program is copyright 2007 by Lucas Nussbaum and Luk Claes. This program "
 "comes with ABSOLUTELY NO WARRANTY."
 msgstr ""
+"Este programa tiene derechos de autor de Lucas Nussbaum y Luk Claes, 2007. "
+"Este programa se proporciona SIN NINGUNA GARANTÍA."
 
 #. type: TH
 #: ../scripts/checkbashisms.1:1
@@ -3410,23 +3452,25 @@ msgstr ""
 #: ../scripts/cowpoke.1:5
 #, no-wrap
 msgid "COWPOKE"
-msgstr ""
+msgstr "COWPOKE"
 
 #. type: TH
 #: ../scripts/cowpoke.1:5
 #, no-wrap
 msgid "April 28, 2008"
-msgstr ""
+msgstr "28 de abril del 2008"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:20
 msgid "cowpoke - Build a Debian source package in a remote cowbuilder instance"
 msgstr ""
+"cowpoke - Construye un paquete fuente de Debian con una instancia remota de "
+"cowbuilder"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:23
 msgid "B<cowpoke> [I<options>]I< packagename.dsc>"
-msgstr ""
+msgstr "B<cowpoke> [I<opciones>]I< nombre-paquete.dsc>"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:27
@@ -3434,17 +3478,20 @@ msgid ""
 "Uploads a Debian source package to a B<cowbuilder> host and builds it, "
 "optionally also signing and uploading the result to an incoming queue."
 msgstr ""
+"Envía un paquete fuente de Debian a un sistema anfitrión con B<cowbuilder> y "
+"lo construye, de forma opcional firma y sube el resultado a una cola de "
+"entrada."
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:31 ../scripts/debsnap.1:28
 msgid "The following options are available:"
-msgstr ""
+msgstr "Se admiten las siguientes opciones:"
 
 #. type: TP
 #: ../scripts/cowpoke.1:32
 #, no-wrap
 msgid "B<--arch=>I<architecture>"
-msgstr ""
+msgstr "B<--arch=>I<arquitectura>"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:38
@@ -3454,12 +3501,16 @@ msgid ""
 "arch names are those returned by B<dpkg-architecture>(1) for "
 "B<DEB_BUILD_ARCH>."
 msgstr ""
+"Especifica una o varias arquitecturas de Debian para construcción. Se puede "
+"utilizar una lista separada por espacios de arquitecturas para las que "
+"construir en la misma ejecución. Los nombres de arquitectura admitidos son "
+"los que muestra  B<dpkg-architecture>(1) para la variable B<DEB_BUILD_ARCH>."
 
 #. type: TP
 #: ../scripts/cowpoke.1:39
 #, no-wrap
 msgid "B<--dist=>I<distribution>"
-msgstr ""
+msgstr "B<--dist=>I<distribución>"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:47
@@ -3471,34 +3522,41 @@ msgid ""
 "to using one or the other consistently as this name may be used in file "
 "paths and to locate old packages for comparison reporting."
 msgstr ""
+"Especifica una o varias distribuciones de Debian para las que construir. Se "
+"puede utilizar una lista separada por espacios distribuciones para las que "
+"construir en la misma ejecución. Se puede utilizar los nombres código (como "
+"B<sid> o B<squeeze>) o nombres de distribución (como B<unstable> o "
+"B<experimental>), pero se recomienda utilizar uno de forma consistente ya "
+"que se podría utilizar en rutas de fichero para ubicar paquetes antiguos con "
+"propósitos de información."
 
 #. type: TP
 #: ../scripts/cowpoke.1:48
 #, no-wrap
 msgid "B<--buildd=>I<host>"
-msgstr ""
+msgstr "B<--buildd=>I<sistema-anfitrión>"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:51
 msgid "Specify the remote host to build on."
-msgstr ""
+msgstr "Especifica el sistema anfitrión."
 
 #. type: TP
 #: ../scripts/cowpoke.1:52
 #, no-wrap
 msgid "B<--buildd-user=>I<name>"
-msgstr ""
+msgstr "B<--buildd-user=>I<nombre>"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:55
 msgid "Specify the remote user to build as."
-msgstr ""
+msgstr "Especifica el usuario remoto para la construcción."
 
 #. type: TP
 #: ../scripts/cowpoke.1:56 ../scripts/debchange.1:185
 #, no-wrap
 msgid "B<--create>"
-msgstr ""
+msgstr "B<--create>"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:61
@@ -3507,12 +3565,15 @@ msgid ""
 "option is not passed it is an error for the specified B<--dist> or B<--arch> "
 "to not have an existing B<cowbuilder> root in the expected location."
 msgstr ""
+"Crea el usuario «root» remoto de B<cowbuilder> si no existe. Si no se "
+"introduce esta opción, genera un error de las opciones B<--dist> o B<--arch> "
+"ya que suponen un usuario «root» en B<cowbuilder> en la ubicación esperada."
 
 #. type: TP
 #: ../scripts/cowpoke.1:62
 #, no-wrap
 msgid "B<--return=>[I<path>]"
-msgstr ""
+msgstr "B<--return=>[I<ruta>]"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:66
@@ -3521,12 +3582,15 @@ msgid ""
 "return them to the current directory. The given I<path> must exist, it will "
 "not be created."
 msgstr ""
+"Copia los resultados de la construcción a la I<path>. Si no se especifica la "
+"I<path>, los devuelve al directorio actual. La I<path> especificada debe "
+"existir anteriormente, ya que no se creará en el proceso."
 
 #. type: TP
 #: ../scripts/cowpoke.1:67
 #, no-wrap
 msgid "B<--no-return>"
-msgstr ""
+msgstr "B<--no-return>"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:71
@@ -3534,12 +3598,14 @@ msgid ""
 "Do not copy results of the build to B<RETURN_DIR> (overriding a path set for "
 "it in the configuration files)."
 msgstr ""
+"No copia los resultados de la construcción a B<RETURN_DIR> (también anula la "
+"ruta definida para ellos en los ficheros de configuración)."
 
 #. type: TP
 #: ../scripts/cowpoke.1:72
 #, no-wrap
 msgid "B<--dpkg-opts=>I<'opt1 opt2 ...'>"
-msgstr ""
+msgstr "B<--dpkg-opts=>I<'opción1 opción2 ...'>"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:77
@@ -3548,22 +3614,27 @@ msgid ""
 "Multiple options are delimited with spaces.  This will override any options "
 "specified in B<DEBBUILDOPTS> in the build host's I<pbuilderrc>."
 msgstr ""
+"Especifica opciones adicionales que introducir a B<dpkg-buildpackage>(1). Se "
+"pueden especificar varias opciones separadas por espacios. Esto anula "
+"cualquier opción especificada para B<DEBBUILDOPTS> en el fichero "
+"I<pbuilderrc> del sistema anfitrión."
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:81
 msgid "Display a brief summary of the available options and current configuration."
 msgstr ""
+"Muestra un resumen de las opciones disponibles y la configuración actual."
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:85
 msgid "Display the current version information."
-msgstr ""
+msgstr "Muestra información de la versión actual."
 
 #. type: SH
 #: ../scripts/cowpoke.1:87 ../scripts/debsnap.1:64
 #, no-wrap
 msgid "CONFIGURATION OPTIONS"
-msgstr ""
+msgstr "OPCIONES DE CONFIGURACIÓN"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:93
@@ -3574,23 +3645,30 @@ msgid ""
 "B<BUILDD_USER>'s home directory.  Since the paths are typically quoted when "
 "used, tilde expansion will B<not> be performed on them."
 msgstr ""
+"Cuando se ejecuta B<cowpoke>, se analizan las siguientes opciones de "
+"configuración contenidas en los ficheros de configuración globales, de "
+"usuario y de proyecto, si existen. Las rutas de fichero pueden ser absolutas "
+"o relativas al directorio de inicio de B<BUILDD_USER>. Debido a que "
+"habitualmente se entrecomillan las rutas, B<no> se realizará la expansión de "
+"la tilde."
 
 #. type: SS
 #: ../scripts/cowpoke.1:94
 #, no-wrap
 msgid "Global defaults"
-msgstr ""
+msgstr "Opciones predefinidas globales"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:96
 msgid "These apply to every arch and dist in a single cowpoke invocation."
 msgstr ""
+"Afectan a cada arquitectura y distribución de la misma ejecución de cowpoke."
 
 #. type: TP
 #: ../scripts/cowpoke.1:97
 #, no-wrap
 msgid "B<BUILDD_HOST>"
-msgstr ""
+msgstr "B<BUILDD_HOST>"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:101
@@ -3598,12 +3676,15 @@ msgid ""
 "The network address or fqdn of the build machine where B<cowbuilder> is "
 "configured.  This may be overridden by the B<--buildd> command line option."
 msgstr ""
+"La dirección de red o fqdn de la máquina de construcción donde se ha "
+"configurado B<cowbuilder>. Se puede anular con la opción de línea de órdenes "
+"B<--buildd>."
 
 #. type: TP
 #: ../scripts/cowpoke.1:101
 #, no-wrap
 msgid "B<BUILDD_USER>"
-msgstr ""
+msgstr "B<BUILDD_USER>"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:107
@@ -3613,12 +3694,17 @@ msgid ""
 "username that is specified in your SSH configuration for B<BUILDD_HOST>), "
 "and may be overridden by the B<--buildd-user> command line option."
 msgstr ""
+"El nombre de usuario sin privilegios para tareas en la máquina de "
+"construcción. Por omisión, es el nombre local del usuario que ejecuta "
+"B<cowpoke> (o un nombre de usuario definido en la configuración de SSH para "
+"B<BUILDD_HOST>), se puede anular con la opción de línea de órdenes B"
+"<--buildd-user>."
 
 #. type: TP
 #: ../scripts/cowpoke.1:107
 #, no-wrap
 msgid "B<BUILDD_ARCH>"
-msgstr ""
+msgstr "B<BUILDD_ARCH>"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:114
@@ -3629,12 +3715,18 @@ msgid ""
 "the B<--arch> command line option.  A (quoted) space separated list of "
 "architectures may be used here to build for all of them in a single pass."
 msgstr ""
+"Especifica una o varias arquitecturas de Debian para las que construir. Debe "
+"coincidir con la opción B<DEB_BUILD_ARCH> del chroot de construcción "
+"utilizado. Por omisión, es la arquitectura de la máquina local donde se "
+"ejecuta B<cowpoke>, se puede anular con la opción de línea de órdenes "
+"B<--arch>. Se puede introducir una lista separada por espacios "
+"(entrecomillada) para varias construcciones en una misma ejecución."
 
 #. type: TP
 #: ../scripts/cowpoke.1:114
 #, no-wrap
 msgid "B<BUILDD_DIST>"
-msgstr ""
+msgstr "B<BUILDD_DIST>"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:119
@@ -3643,12 +3735,16 @@ msgid ""
 "distributions may be used to build for all of them in a single pass.  This "
 "may be overridden by the B<--dist> command line option."
 msgstr ""
+"Especifica una o varias distribuciones de Debian para las que construir. Se "
+"puede utilizar una lista separada por espacios de distribuciones para "
+"construir para varias distribuciones en una misma ejecución. Se puede anular "
+"con la opción de línea de órdenes B<--dist>."
 
 #. type: TP
 #: ../scripts/cowpoke.1:120
 #, no-wrap
 msgid "B<INCOMING_DIR>"
-msgstr ""
+msgstr "B<INCOMING_DIR>"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:124
@@ -3656,12 +3752,15 @@ msgid ""
 "The directory path on the build machine where the source package will "
 "initially be placed.  This must be writable by the B<BUILDD_USER>."
 msgstr ""
+"La ruta del directorio de la máquina de construcción donde se encuentra "
+"inicialmente el paquete. El B<BUILDD_USER> debe tener permisos de escritura "
+"en este directorio."
 
 #. type: TP
 #: ../scripts/cowpoke.1:124
 #, no-wrap
 msgid "B<PBUILDER_BASE>"
-msgstr ""
+msgstr "B<PBUILDER_BASE>"
 
 #. type: Plain text
 #: ../scripts/cowpoke.1:129
@@ -7840,17 +7939,17 @@ msgstr ""
 #: ../scripts/debpkg.1:1
 #, no-wrap
 msgid "DEBPKG"
-msgstr ""
+msgstr "DEBPKG"
 
 #. type: Plain text
 #: ../scripts/debpkg.1:4
 msgid "debpkg - wrapper for dpkg"
-msgstr ""
+msgstr "debpkg - Interfaz para dpkg"
 
 #. type: Plain text
 #: ../scripts/debpkg.1:6
 msgid "B<debpkg> I<dpkg-options>"
-msgstr ""
+msgstr "B<debpkg> I<opciones-dpkg>"
 
 #. type: Plain text
 #: ../scripts/debpkg.1:12
@@ -7861,15 +7960,26 @@ msgid ""
 "\"/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/X11\" so that local versions of "
 "programs are not run by accident."
 msgstr ""
+"B<debpkg> invoca B<dpkg>(1), pero primero adopta privilegios de "
+"administrador para que B<dpkg> pueda instalar y eliminar paquetes. También "
+"limpia el entorno y restablece «PATH» a un valor predefinido adecuado: "
+"«/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/X11», de forma que no se puedan "
+"ejecutar versiones locales de los programas de forma accidental."
 
 #. type: Plain text
 #: ../scripts/debpkg.1:17
+#, fuzzy
 msgid ""
 "B<debpkg> must be given superuser privileges in some way to function "
 "properly.  B<Access to debpkg with those privileges is the same as having "
 "superuser access to your machine.> B<debpkg> will abort if it finds that it "
 "neither being run by root nor setuid root."
 msgstr ""
+"Para un funcionamiento adecuado, se deben otorgar privilegios de "
+"administrador a B<debpkg>. B<Ejecutar debpkg con esos privilegios es "
+"idéntico a tener acceso de administrador en su máquina.> B<debpkg> "
+"interrumpe su funcionamiento si detecta que no se ejecuta por el usuario "
+"«root» o con el setuid de «root»."
 
 #. type: Plain text
 #: ../scripts/debpkg.1:23
@@ -7880,6 +7990,11 @@ msgid ""
 "to make this program setuid root.  B<sudo> or B<super> could also "
 "conceivably be used."
 msgstr ""
+"El paquete B<devscripts> se ha diseñado para permitir a B<debpkg> que tenga "
+"el setuid del usuario «root». Funciona utilizando un script de interfaz "
+"compilado, lo que implica que no se requiere B<suidperl>. Consulte B<dpkg-"
+"statoverride>(8) si desea que este programa utilice el setuid de «root». "
+"También se puede utilizar B<sudo> o B<super>."
 
 #. type: Plain text
 #: ../scripts/debpkg.1:25
@@ -7887,6 +8002,8 @@ msgid ""
 "Christoph Lameter E<lt>clameter@debian.orgE<gt>; minor modifications made by "
 "Julian Gilbey E<lt>jdg@debian.orgE<gt>."
 msgstr ""
+"Christoph Lameter E<lt>clameter@debian.orgE<gt>; modificaciones "
+"superficiales por Julian Gilbey E<lt>jdg@debian.orgE<gt>."
 
 #. type: TH
 #: ../scripts/debrelease.1:1
@@ -9888,12 +10005,13 @@ msgstr ""
 #: ../scripts/devscripts.1:1
 #, no-wrap
 msgid "DEVSCRIPTS"
-msgstr ""
+msgstr "DEVSCRIPTS"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:4
 msgid "devscripts - scripts to ease the lives of Debian developers"
 msgstr ""
+"devscripts - Scripts que facilitan la vida de los desarrolladores de Debian"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:12
@@ -9905,6 +10023,13 @@ msgid ""
 "individual manpages.  They are contributed by multiple developers; for "
 "details of the authors, please see the code or manpages."
 msgstr ""
+"El paquete B<devscripts> proporciona un conjunto de scripts que pueden ser "
+"de utilidad para desarrolladores de Debian y otros que quieran construir "
+"paquetes de Debian. Para un resumen de los scripts disponibles, consulte el "
+"fichero I</usr/share/doc/devscripts/README.gz>, y para una información más "
+"completa, consulte las páginas de manual individuales. Son la contribución "
+"de varios desarrolladores; para información del autor, consulte el código o "
+"las páginas de manual."
 
 #. type: Plain text
 #: ../scripts/devscripts.1:16
@@ -9913,6 +10038,9 @@ msgid ""
 "of B<procmail> and B<exim> scripts for sorting mail arriving to Debian "
 "mailing lists."
 msgstr ""
+"El directorio I</usr/share/doc/devscripts/examples> también contiene "
+"ejemplos de scripts de B<procmail> y B<exim> para organizar el correo "
+"recibido en las listas de correo de Debian."
 
 #. type: Plain text
 #: ../scripts/devscripts.1:20
@@ -9921,47 +10049,52 @@ msgid ""
 "variables. Check the man page of individual scripts for more details on how "
 "the variables are used."
 msgstr ""
+"Diferentes scripts del conjunto devscripts utilizan las siguientes variable "
+"de entorno. Compruebe la página de manual de cada script para más "
+"información del uso de las variables."
 
 #. type: IX
 #: ../scripts/devscripts.1:20
 #, no-wrap
 msgid "Header"
-msgstr ""
+msgstr "Cabecera"
 
 #. type: IP
 #: ../scripts/devscripts.1:21
 #, no-wrap
 msgid "\\s-1DEBEMAIL\\s0"
-msgstr ""
+msgstr "\\s-1DEBEMAIL\\s0"
 
 #. type: IX
 #: ../scripts/devscripts.1:22 ../scripts/devscripts.1:25
 #, no-wrap
 msgid "Item"
-msgstr ""
+msgstr "Elemento"
 
 #. type: IX
 #: ../scripts/devscripts.1:22
 #, no-wrap
 msgid "DEBEMAIL"
-msgstr ""
+msgstr "DEBEMAIL"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:24
 msgid "Email of the person acting on a given Debian package via devscripts."
 msgstr ""
+"Correo electrónico de la persona que trabaja en un paquete Debian mediante "
+"devscripts."
 
 #. type: IP
 #: ../scripts/devscripts.1:24
 #, no-wrap
 msgid "\\s-1DEBFULLNAME\\s0"
-msgstr ""
+msgstr "\\s-1DEBFULLNAME\\s0"
 
 #. type: IX
 #: ../scripts/devscripts.1:25
 #, no-wrap
 msgid "DEBFULLNAME"
-msgstr ""
+msgstr "DEBFULLNAME"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:28
@@ -9969,12 +10102,14 @@ msgid ""
 "Full name (first + family) of the person acting on a given Debian package "
 "via devscripts."
 msgstr ""
+"Nombre completo (primero nombre + apellido) de la persona que trabaja en un "
+"paquete Debian mediante devscripts."
 
 #. type: SH
 #: ../scripts/devscripts.1:28
 #, no-wrap
 msgid "SCRIPTS"
-msgstr ""
+msgstr "SCRIPTS"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:31
@@ -9982,12 +10117,14 @@ msgid ""
 "Here is the complete list of available devscripts. See their man pages for "
 "additional documentation."
 msgstr ""
+"A continuación se muestra una lista de los devscripts disponibles. Para más "
+"información consulta sus páginas de manual."
 
 #. type: IP
 #: ../scripts/devscripts.1:31
 #, no-wrap
 msgid "I<annotate-output>(1)"
-msgstr ""
+msgstr "I<annotate-output>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:33
@@ -9995,23 +10132,26 @@ msgid ""
 "run a command and prepend time and stream (O for stdout, E for stderr) for "
 "every line of output"
 msgstr ""
+"Ejecuta una orden y añade la hora y la salida (O para salida estándar, E "
+"para salida de errores) a cada línea de la salida."
 
 #. type: IP
 #: ../scripts/devscripts.1:33
 #, no-wrap
 msgid "I<archpath>(1)"
-msgstr ""
+msgstr "I<archpath>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:35
+#, fuzzy
 msgid "print tla/Bazaar package names [tla | bazaar]"
-msgstr ""
+msgstr "Muestra  nombres de paquete tla/Bazaar. [tla | bazaar]"
 
 #. type: IP
 #: ../scripts/devscripts.1:35
 #, no-wrap
 msgid "I<bts>(1)"
-msgstr ""
+msgstr "I<bts>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:37
@@ -10020,45 +10160,54 @@ msgid ""
 "libauthen-sasl-perl, libnet-smtp-ssl-perl, libsoap-lite-perl, libwww-perl, "
 "bsd-mailx | mailx]"
 msgstr ""
+"Una herramienta de línea de órdenes para interactuar con el sistema de "
+"seguimiento de fallos («BTS»). [www-browser, libauthen-sasl-perl, libnet-"
+"smtp-ssl-perl, libsoap-lite-perl, libwww-perl, bsd-mailx | mailx]"
 
 #. type: IP
 #: ../scripts/devscripts.1:37
 #, no-wrap
 msgid "I<build-rdeps>(1)"
-msgstr ""
+msgstr "I<build-rdeps>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:39
 msgid "Searches for all packages that build-depend on a given package [dctrl-tools]"
 msgstr ""
+"Busca paquetes que tengan una dependencia de construcción sobre un paquete "
+"dado. [dctrl-tools]"
 
 #. type: IP
 #: ../scripts/devscripts.1:39
 #, no-wrap
 msgid "I<chdist>(1)"
-msgstr ""
+msgstr "I<chdist>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:41
 msgid "tool to easily play with several distributions [dctrl-tools]"
 msgstr ""
+"Una herramienta para utilizar varias distribuciones de forma fácil. [dctrl-"
+"tools]"
 
 #. type: IP
 #: ../scripts/devscripts.1:41
 #, no-wrap
 msgid "I<checkbashisms>(1)"
-msgstr ""
+msgstr "I<checkbashisms>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:43
 msgid "check whether a /bin/sh script contains any common bash-specific contructs"
 msgstr ""
+"Compruebe si un script «/bin/sh» contiene construcciones comunes específicas "
+"a Bash."
 
 #. type: IP
 #: ../scripts/devscripts.1:43
 #, no-wrap
 msgid "I<cowpoke>(1)"
-msgstr ""
+msgstr "I<cowpoke>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:45
@@ -10066,12 +10215,15 @@ msgid ""
 "upload a Debian source package to a cowbuilder host and build it, optionally "
 "also signing and uploading the result to an incoming queue [ssh-client]"
 msgstr ""
+"Envía un paquete fuente de Debian a un sistema anfitrión con cowbuilder y lo "
+"construye, de forma opcional firma y sube el resultado a una cola de "
+"entrada."
 
 #. type: IP
 #: ../scripts/devscripts.1:45
 #, no-wrap
 msgid "I<cvs-debi, cvs-debc>(1)"
-msgstr ""
+msgstr "I<cvs-debi, cvs-debc>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:47
@@ -10079,12 +10231,14 @@ msgid ""
 "wrappers around debi and debc respectively (see below) which allow them to "
 "be called from the CVS working directory. [cvs-buildpackage]"
 msgstr ""
+"Interfaces para debi y debc, respectivamente (consulte a continuación) que "
+"permiten ejecutarlos desde el directorio de trabajo CVS. [cvs-buildpackage]"
 
 #. type: IP
 #: ../scripts/devscripts.1:47
 #, no-wrap
 msgid "I<cvs-debrelease>(1)"
-msgstr ""
+msgstr "I<cvs-debrelease>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:49
@@ -10092,12 +10246,14 @@ msgid ""
 "wrapper around debrelease which allows it to be called from the CVS working "
 "directory. [cvs-buildpackage, dupload | dput, ssh-client]"
 msgstr ""
+"Interfaz para debrelease que permite ejecutarlo desde el directorio de "
+"trabajo CVS. [cvs-buildpackage, dupload | dput, ssh-client]"
 
 #. type: IP
 #: ../scripts/devscripts.1:49
 #, no-wrap
 msgid "I<cvs-debuild>(1)"
-msgstr ""
+msgstr "I<cvs-debuild>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:51
@@ -10105,12 +10261,14 @@ msgid ""
 "A wrapper for cvs-buildpackage to use debuild as its package building "
 "program. [cvs-buildpackage, fakeroot, lintian, gnupg]"
 msgstr ""
+"Una interfaz para cvs-buildpackage para utilizar debuild como el programa de "
+"construcción de paquete. [cvs-buildpackage, fakeroot, lintian, gnupg]"
 
 #. type: IP
 #: ../scripts/devscripts.1:51
 #, no-wrap
 msgid "I<dcmd>(1)"
-msgstr ""
+msgstr "I<dcmd>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:53
@@ -10118,12 +10276,14 @@ msgid ""
 "run a given command replacing the name of a .changes or .dsc file with each "
 "of the files referenced therein"
 msgstr ""
+"Ejecuta una orden sustituyendo el nombre de un fichero «.changes» o «.dsc» "
+"con cada uno de los ficheros especificados."
 
 #. type: IP
 #: ../scripts/devscripts.1:53
 #, no-wrap
 msgid "I<dcontrol>(1)"
-msgstr ""
+msgstr "I<dcontrol>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:55
@@ -10131,34 +10291,37 @@ msgid ""
 "remotely query package and source control files for all Debian "
 "distributions. [liburl-perl, libwww-perl]"
 msgstr ""
+"Solicita de forma remota los ficheros de control de paquete y fuentes en "
+"todas las distribuciones de Debian. [liburl-perl, libwww-perl]"
 
 #. type: IP
 #: ../scripts/devscripts.1:55
 #, no-wrap
 msgid "I<dd-list>(1)"
-msgstr ""
+msgstr "I<dd-list>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:57
 msgid "given a list of packages, pretty-print it ordered by maintainer"
 msgstr ""
+"Muestra una lista ordenada por desarrollador de los paquetes introducidos."
 
 #. type: IP
 #: ../scripts/devscripts.1:57
 #, no-wrap
 msgid "I<debc>(1)"
-msgstr ""
+msgstr "I<debc>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:59
 msgid "display the contents of just-built .debs"
-msgstr ""
+msgstr "Muestra el contenido de ficheros «.deb» recién creados."
 
 #. type: IP
 #: ../scripts/devscripts.1:59
 #, no-wrap
 msgid "I<debchange/dch>(1)"
-msgstr ""
+msgstr "I<debchange/dch>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:61
@@ -10166,34 +10329,36 @@ msgid ""
 "automagically add entries to debian/changelog files "
 "[libparse-debcontrol-perl, libsoap-lite-perl]"
 msgstr ""
+"Añade entradas de forma automática a ficheros «debian/changelog». [libparse-"
+"debcontrol-perl, libsoap-lite-perl]"
 
 #. type: IP
 #: ../scripts/devscripts.1:61
 #, no-wrap
 msgid "I<debcheckout>(1)"
-msgstr ""
+msgstr "I<debcheckout>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:63
 msgid "checkout the development repository of a Debian package"
-msgstr ""
+msgstr "Obtiene el repositorio de desarrollo de un paquete Debian."
 
 #. type: IP
 #: ../scripts/devscripts.1:63
 #, no-wrap
 msgid "I<debclean>(1)"
-msgstr ""
+msgstr "I<debclean>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:65
 msgid "purge a Debian source tree [fakeroot]"
-msgstr ""
+msgstr "Limpia un árbol de fuentes de Debian. [fakeroot]"
 
 #. type: IP
 #: ../scripts/devscripts.1:65
 #, no-wrap
 msgid "I<debcommit>(1)"
-msgstr ""
+msgstr "I<debcommit>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:67
@@ -10202,12 +10367,15 @@ msgid ""
 "message on changelog [cvs | darcs | subversion | svk | tla | bzr | git-core "
 "| mercurial]"
 msgstr ""
+"Envía cambios a sistemas cvs, darcs, svn, svk, tla, bzr, git, or hg, y crea "
+"un mensaje de envío en base al fichero «changelog». [cvs | darcs | "
+"subversion | svk | tla | bzr | git-core | mercurial]"
 
 #. type: IP
 #: ../scripts/devscripts.1:67
 #, no-wrap
 msgid "I<debdiff>(1)"
-msgstr ""
+msgstr "I<debdiff>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:69
@@ -10215,45 +10383,47 @@ msgid ""
 "compare two versions of a Debian package to check for added and removed "
 "files [wdiff, patchutils]"
 msgstr ""
+"Compara dos versiones de un paquete Debian para detectar la adición o "
+"eliminación de ficheros. [wdiff, patchutils]"
 
 #. type: IP
 #: ../scripts/devscripts.1:69
 #, no-wrap
 msgid "I<debi>(1)"
-msgstr ""
+msgstr "I<debi>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:71
 msgid "install a just-built package"
-msgstr ""
+msgstr "Instala un paquete recién creado."
 
 #. type: IP
 #: ../scripts/devscripts.1:71
 #, no-wrap
 msgid "I<debpkg>(1)"
-msgstr ""
+msgstr "I<debpkg>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:73
 msgid "dpkg wrapper to be able to manage/test packages without su"
-msgstr ""
+msgstr "Interfaz para dpkg para manipular/probar paquetes sin «su». "
 
 #. type: IP
 #: ../scripts/devscripts.1:73
 #, no-wrap
 msgid "I<debrelease>(1)"
-msgstr ""
+msgstr "I<debrelease>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:75
 msgid "wrapper around dupload or dput [dupload | dput, ssh-client]"
-msgstr ""
+msgstr "Interfaz para dupload o dput. [dupload | dput, ssh-client]"
 
 #. type: IP
 #: ../scripts/devscripts.1:75
 #, no-wrap
 msgid "I<debsign, debrsign>(1)"
-msgstr ""
+msgstr "I<debsign, debrsign>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:77
@@ -10262,23 +10432,28 @@ msgid ""
 "be present; can sign the pair remotely or fetch the pair from a remote "
 "machine for signing [gnupg, debian-keyring, ssh-client]"
 msgstr ""
+"Firma una pareja de ficheros «.changes/.dsc» sin la presencia del resto del "
+"paquete; puede firmar la pareja de forma remota, u obtenerla de una máquina "
+"remota para la firma. [gnupg, debian-keyring, ssh-client]"
 
 #. type: IP
 #: ../scripts/devscripts.1:77
 #, no-wrap
 msgid "I<debsnap>(1)"
-msgstr ""
+msgstr "I<debsnap>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:79
 msgid "grab packages from http://snapshot.debian.org [libwww-perl, libjson-perl]"
 msgstr ""
+"Obtiene paquetes desde http://snapshot.debian.org [libwww-perl, libjson-"
+"perl]"
 
 #. type: IP
 #: ../scripts/devscripts.1:79
 #, no-wrap
 msgid "I<debuild>(1)"
-msgstr ""
+msgstr "I<debuild>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:81
@@ -10287,23 +10462,28 @@ msgid ""
 "dpkg to build using fakeroot.  Also deals with common environment problems, "
 "umask etc. [fakeroot, lintian, gnupg]"
 msgstr ""
+"Interfaz para construir un paquete sin «su» o para no preocuparse de cómo "
+"ejecutar dpkg para una construcción mediante fakeroot. También se ocupa de "
+"los problemas de entorno más habituales, umask, etc. [fakeroot, lintian, "
+"gnupg]"
 
 #. type: IP
 #: ../scripts/devscripts.1:81
 #, no-wrap
 msgid "I<deb-reversion>(1)"
-msgstr ""
+msgstr "I<deb-reversion>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:83
 msgid "increases a binary package version number and repacks the archive"
 msgstr ""
+"Aumenta el número de versión de un paquete binario y reempaqueta el archivo."
 
 #. type: IP
 #: ../scripts/devscripts.1:83
 #, no-wrap
 msgid "I<desktop2menu>(1)"
-msgstr ""
+msgstr "I<desktop2menu>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:85
@@ -10311,23 +10491,25 @@ msgid ""
 "produce a skeleton menu file from a freedesktop.org desktop file "
 "[libfile-desktopentry-perl]"
 msgstr ""
+"Genera un fichero básico de menú a partir de un fichero «.desktop» de "
+"freedesktop.org. [libfile-desktopentry-perl]"
 
 #. type: IP
 #: ../scripts/devscripts.1:85
 #, no-wrap
 msgid "I<dget>(1)"
-msgstr ""
+msgstr "I<dget>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:87
 msgid "downloads Debian source and binary packages [wget | curl]"
-msgstr ""
+msgstr "Descarga paquetes fuente y binarios de Debian. [wget | curl]"
 
 #. type: IP
 #: ../scripts/devscripts.1:87
 #, no-wrap
 msgid "I<dpkg-depcheck, dpkg-genbuilddeps>(1)"
-msgstr ""
+msgstr "I<dpkg-depcheck, dpkg-genbuilddeps>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:89
@@ -10335,12 +10517,15 @@ msgid ""
 "determine the packages used during the build of a Debian package; useful for "
 "determining the Build-Depends control field needed [build-essential, strace]"
 msgstr ""
+"Detecta los paquetes utilizados durante la construcción de un paquete "
+"Debian; útil para determinar el campo de control «Build-Depends» necesario. "
+"[build-essential, strace]"
 
 #. type: IP
 #: ../scripts/devscripts.1:89
 #, no-wrap
 msgid "I<diff2patches>(1)"
-msgstr ""
+msgstr "I<diff2patches>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:91
@@ -10348,12 +10533,14 @@ msgid ""
 "extract patches from a .diff.gz file placing them under debian/ or, if "
 "present, debian/patches [patchutils]"
 msgstr ""
+"Extrae parches de un fichero «.diff.gz», y los ubica bajo «debian/» o, si "
+"existe, «debian/patches». [patchutils]"
 
 #. type: IP
 #: ../scripts/devscripts.1:91
 #, no-wrap
 msgid "I<dscverify>(1)"
-msgstr ""
+msgstr "I<dscverify>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:93
@@ -10361,12 +10548,14 @@ msgid ""
 "verify the integrity of a Debian package from the .changes or .dsc files "
 "[gnupg, debian-keyring, libdigest-md5-perl]"
 msgstr ""
+"Comprueba la integridad de un paquete Debian mediante los ficheros "
+"«.changes» o «.dsc». [gnupg, debian-keyring, libdigest-md5-perl]"
 
 #. type: IP
 #: ../scripts/devscripts.1:93
 #, no-wrap
 msgid "I<edit-patch>(1)"
-msgstr ""
+msgstr "I<edit-patch>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:95
@@ -10374,23 +10563,27 @@ msgid ""
 "add/edit a patch for a source package and commit the changes [quilt | dpatch "
 "| cdbs]"
 msgstr ""
+"Añade/edita un parche de un paquete fuente y envía los cambios. [quilt | "
+"dpatch | cdbs]"
 
 #. type: IP
 #: ../scripts/devscripts.1:95
 #, no-wrap
 msgid "I<getbuildlog>(1)"
-msgstr ""
+msgstr "I<getbuildlog>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:97
 msgid "download package build logs from Debian auto-builders [wget]"
 msgstr ""
+"Descarga los registros de construcción de los sistemas de construcción "
+"automática de Debian- [dget]"
 
 #. type: IP
 #: ../scripts/devscripts.1:97
 #, no-wrap
 msgid "I<grep-excuses>(1)"
-msgstr ""
+msgstr "I<grep-excuses>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:99
@@ -10398,67 +10591,72 @@ msgid ""
 "grep the update_excuses.html file for your packages [libterm-size-perl, "
 "wget, w3m]"
 msgstr ""
+"Ejecuta grep sobre el fichero update_excuses.html de sus paquetes. [libterm-"
+"size-perl, wget, w3m]"
 
 #. type: IP
 #: ../scripts/devscripts.1:99
 #, no-wrap
 msgid "I<licensecheck>(1)"
-msgstr ""
+msgstr "I<licensecheck>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:101
 msgid "attempt to determine the license of source files"
-msgstr ""
+msgstr "Intenta averiguar la licencia de los ficheros de fuentes."
 
 #. type: IP
 #: ../scripts/devscripts.1:101
 #, no-wrap
 msgid "I<list-unreleased>(1)"
-msgstr ""
+msgstr "I<list-unreleased>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:103
 msgid "searches for unreleased packages"
-msgstr ""
+msgstr "Busca paquetes no publicados."
 
 #. type: IP
 #: ../scripts/devscripts.1:103
 #, no-wrap
 msgid "I<manpage-alert>(1)"
-msgstr ""
+msgstr "I<manpage-alert>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:105
 msgid "locate binaries without corresponding manpages [man-db]"
 msgstr ""
+"Busca ficheros binarios sin una página de manual correspondiente. [man-db]"
 
 #. type: IP
 #: ../scripts/devscripts.1:105
 #, no-wrap
 msgid "I<mass-bug>(1)"
-msgstr ""
+msgstr "I<mass-bug>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:107
 msgid "mass-file bug reports [bsd-mailx | mailx]"
-msgstr ""
+msgstr "Envía informes de fallo en masa. [bsd-mailx | mailx]"
 
 #. type: IP
 #: ../scripts/devscripts.1:107
 #, no-wrap
 msgid "I<mergechanges>(1)"
-msgstr ""
+msgstr "I<mergechanges>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:109
 msgid "merge .changes files from a package built on different architectures"
 msgstr ""
+"Fusiona cambios en ficheros «.changes» de un paquete construido sobre "
+"distintas arquitecturas."
 
 #. type: IP
 #: ../scripts/devscripts.1:109
 #, no-wrap
 msgid "I<mk-build-deps>(1)"
-msgstr ""
+msgstr "I<mk-build-deps>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:111
@@ -10467,23 +10665,26 @@ msgid ""
 "may be installed to satisfy the build-dependencies of the given "
 "packages. [equivs]"
 msgstr ""
+"Con un nombre de paquete y/o fichero de control dado, genera un paquete "
+"binario que se puede instalar para satisfacer las dependencias de "
+"construcción de los paquetes dados. [equivs]"
 
 #. type: IP
 #: ../scripts/devscripts.1:111
 #, no-wrap
 msgid "I<namecheck>(1)"
-msgstr ""
+msgstr "I<namecheck>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:113
 msgid "Check project names are not already taken."
-msgstr ""
+msgstr "Comprueba que los nombres de proyecto no han sido seleccionados."
 
 #. type: IP
 #: ../scripts/devscripts.1:113
 #, no-wrap
 msgid "I<nmudiff>(1)"
-msgstr ""
+msgstr "I<nmudiff>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:115
@@ -10491,12 +10692,15 @@ msgid ""
 "mail a diff of the current package against the previous version to the BTS "
 "to assist in tracking NMUs [patchutils, mutt]"
 msgstr ""
+"Envía por correo electrónico un fichero «diff», que compara el paquete "
+"actual y su versión anterior, al sistema de seguimiento de fallos, para "
+"facilitar el seguimiento de NMUs. [patchutils, mutt]"
 
 #. type: IP
 #: ../scripts/devscripts.1:115
 #, no-wrap
 msgid "I<plotchangelog>(1)"
-msgstr ""
+msgstr "I<plotchangelog>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:117
@@ -10507,29 +10711,33 @@ msgstr ""
 #: ../scripts/devscripts.1:117
 #, no-wrap
 msgid "I<pts-subscribe>(1)"
-msgstr ""
+msgstr "I<pts-subscribe>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:119
 msgid "subscribe to the PTS for a limited period of time [bsd-mailx | mailx, at]"
 msgstr ""
+"Crea una suscripción al PTS durante un periodo limitado. [bsd-mailx | mailx, "
+"at]"
 
 #. type: IP
 #: ../scripts/devscripts.1:119
 #, no-wrap
 msgid "I<rc-alert>(1)"
-msgstr ""
+msgstr "I<rc-alert>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:121
 msgid "list installed packages which have release-critical bugs [wget]"
 msgstr ""
+"Muestra los paquetes instalados con fallos etiquetados como «release-"
+"critical». [wget]"
 
 #. type: IP
 #: ../scripts/devscripts.1:121
 #, no-wrap
 msgid "I<rmadison>(1)"
-msgstr ""
+msgstr "I<rmadison>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:123
@@ -10537,34 +10745,38 @@ msgid ""
 "remotely query the Debian archive database about packages [wget | curl, "
 "liburi-perl]"
 msgstr ""
+"Solicita de forma remota información de paquetes a la base de datos de un "
+"archivo Debian. [wget | curl, liburi-perl]"
 
 #. type: IP
 #: ../scripts/devscripts.1:123
 #, no-wrap
 msgid "I<suspicious-source>(1)"
-msgstr ""
+msgstr "I<suspicious-source>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:125
 msgid "outputs a list of files which are not common source files [python-magic]."
 msgstr ""
+"Muestra una lista de ficheros que no son ficheros de fuentes habituales. "
+"[python-magic]"
 
 #. type: IP
 #: ../scripts/devscripts.1:125
 #, no-wrap
 msgid "I<svnpath>(1)"
-msgstr ""
+msgstr "I<svnpath>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:127
 msgid "print svn repository paths [subversion]"
-msgstr ""
+msgstr "Muestra las rutas del repositorio svn. [subversion]"
 
 #. type: IP
 #: ../scripts/devscripts.1:127
 #, no-wrap
 msgid "I<tagpending>(1)"
-msgstr ""
+msgstr "I<tagpending>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:129
@@ -10572,6 +10784,9 @@ msgid ""
 "runs from a Debian source tree and tags bugs that are to be closed in the "
 "latest changelog as pending. [libsoap-lite-perl]"
 msgstr ""
+"Se ejecuta desde un árbol de fuentes de Debian, y etiqueta informes de fallo "
+"que se cierran en el último fichero de registro de cambios como «pending». "
+"[libsoap-lite-perl]"
 
 #. type: IP
 #: ../scripts/devscripts.1:129
@@ -10590,7 +10805,7 @@ msgstr ""
 #: ../scripts/devscripts.1:131
 #, no-wrap
 msgid "I<uscan>(1)"
-msgstr ""
+msgstr "I<uscan>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:133
@@ -10598,45 +10813,50 @@ msgid ""
 "scan upstream sites for new releases of packages [libcrypt-ssleay-perl, "
 "libwww-perl, unzip, xz-utils]"
 msgstr ""
+"Analiza sitios de fuentes de software original en busca de versiones nuevas. "
+"[libcrypt-ssleay-perl, libwww-perl, unzip, xz-utils]"
 
 #. type: IP
 #: ../scripts/devscripts.1:133
 #, no-wrap
 msgid "I<uupdate>(1)"
-msgstr ""
+msgstr "I<uupdate>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:135
 msgid "integrate upstream changes into a source package [patch]"
-msgstr ""
+msgstr "Integra cambios de la fuente original en el paquete fuente. [patch]"
 
 #. type: IP
 #: ../scripts/devscripts.1:135
 #, no-wrap
 msgid "I<what-patch>(1)"
-msgstr ""
+msgstr "I<what-patch>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:137
 msgid "determines what patch system, if any, a source package is using [patchutils]"
 msgstr ""
+"Detecta el sistema de parches, si existe, que utiliza un paquete fuente. "
+"[patchutils]"
 
 #. type: IP
 #: ../scripts/devscripts.1:137
 #, no-wrap
 msgid "I<whodepends>(1)"
-msgstr ""
+msgstr "I<whodepends>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:139
 msgid "check which maintainers' packages depend on a package"
 msgstr ""
+"Muestra desarrolladores de paquetes que dependen de un paquete específico."
 
 #. type: IP
 #: ../scripts/devscripts.1:139
 #, no-wrap
 msgid "I<who-uploads>(1)"
-msgstr ""
+msgstr "I<who-uploads>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:141
@@ -10644,23 +10864,25 @@ msgid ""
 "determine the most recent uploaders of a package to the Debian archive "
 "[gnupg, debian-keyring, debian-maintainers, wget]"
 msgstr ""
+"Determina los últimos responsables del envío de un paquete al archivo "
+"Debian. [gnupg, debian-keyring, debian-maintainers, wget]"
 
 #. type: IP
 #: ../scripts/devscripts.1:141
 #, no-wrap
 msgid "I<wnpp-alert>(1)"
-msgstr ""
+msgstr "I<wnpp-alert>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:143
 msgid "list installed packages which are orphaned or up for adoption [wget]"
-msgstr ""
+msgstr "Muestra paquetes instalados huérfanos o que solicitan adopción. [wget]"
 
 #. type: IP
 #: ../scripts/devscripts.1:143
 #, no-wrap
 msgid "I<wnpp-check>(1)"
-msgstr ""
+msgstr "I<wnpp-check>(1)"
 
 #. type: Plain text
 #: ../scripts/devscripts.1:144
@@ -10668,21 +10890,23 @@ msgid ""
 "check whether there is an open request for packaging or intention to package "
 "bug for a package [wget]"
 msgstr ""
+"Compruebe si se ha abierto un informe de fallo de paquete que solicite o "
+"muestre una intención de empaquetar un paquete. [wget]"
 
 #. type: textblock
 #: ../scripts/dget.pl:488
 msgid "dget -- Download Debian source and binary packages"
-msgstr ""
+msgstr "dget -- Descarga paquetes Debian de fuentes y binarios"
 
 #. type: =item
 #: ../scripts/dget.pl:494
 msgid "B<dget> [I<options>] I<URL> ..."
-msgstr ""
+msgstr "B<dget> [I<opciones>] I<URL> ..."
 
 #. type: =item
 #: ../scripts/dget.pl:496
 msgid "B<dget> [I<options>] I<package>[B<=>I<version>]"
-msgstr ""
+msgstr "B<dget> [I<opciones>] I<paquete>[B<=>I<versión>]"
 
 #. type: textblock
 #: ../scripts/dget.pl:502
@@ -10693,6 +10917,12 @@ msgid ""
 "in the .dsc/.changes file.  The downloaded source is then checked with "
 "B<dscverify> and, if successful, unpacked by B<dpkg-source>."
 msgstr ""
+"B<dget> descarga paquetes de Debian. Con la primera forma, B<dget> obtiene "
+"las direcciones URL solicitadas. Si es un fichero «.dsc» o «.changes», "
+"B<dget> como B<wget> con detección de paquetes fuente: también obtiene "
+"cualquier fichero mencionado en los ficheros «.dsc/.changes». Las fuentes "
+"descargadas se comprueban con B<dscverify> y, si es correcto, se "
+"desempaquetan con B<dpkg-source>."
 
 #. type: textblock
 #: ../scripts/dget.pl:509
@@ -10703,6 +10933,12 @@ msgid ""
 "the current directory, and does not download dependencies.  If a version "
 "number is specified, this version of the package is requested."
 msgstr ""
+"En la segunda forma, B<dget> descarga un paquete I<binary> (esto es, un "
+"fichero I<.deb>) desde la réplica de Debian configurada en "
+"«/etc/apt/sources.list(.d)». Al contrario que B<apt-get install -d>, no "
+"requiere permisos de administrador, escribe en el directorio actual, y no "
+"descarga dependencias. Si se especifica un número de versión, se solicita "
+"esa versión del paquete."
 
 #. type: textblock
 #: ../scripts/dget.pl:516
@@ -10710,15 +10946,22 @@ msgid ""
 "In both cases dget is capable of getting several packages and/or URLs at "
 "once."
 msgstr ""
+"En ambos casos, dget puede obtener varios paquetes y/o direcciones URL de "
+"forma simultánea."
 
 #. type: textblock
 #: ../scripts/dget.pl:519
+#, fuzzy
 msgid ""
 "(Note that I<.udeb> packages used by debian-installer are located in "
 "separate packages files from I<.deb> packages. In order to use I<.udebs> "
 "with B<dget>, you will need to have configured B<apt> to use a packages file "
 "for I<component>/I<debian-installer>)."
 msgstr ""
+"(Tenga en cuenta que los paquetes I<.udeb> utilizados por debian-installer "
+"se encuentran en ficheros de paquete distintos a los paquetes I<.deb>. Para "
+"utilizar ficheros I<.udeb> con B<dget>, necesita configurar B<apt> para que "
+"un fichero de paquetes para I<component>/I<debian-installer>)."
 
 #. type: textblock
 #: ../scripts/dget.pl:524
@@ -10733,6 +10976,16 @@ msgid ""
 "source --print-uris>.  Download backends used are B<curl> and B<wget>, "
 "looked for in that order."
 msgstr ""
+"Antes de descargar los ficheros enumerados en los ficheros «.dsc» y "
+"«.changes», y después de descargar paquetes binarios, B<dget> compruebe si "
+"alguno de estos ficheros ya existe. De ser así, se comparan las sumas de "
+"control md5 para evitar descargar los mismos ficheros de forma innecesaria. "
+"B<dget> también busca ficheros coincidentes en I</var/cache/apt/archives> y "
+"los directorios introducidos con la opción B<--path>, o definidos en los "
+"ficheros de configuración (consulte a continuación). Por último, si no puede "
+"descargar un fichero «(.orig).tar.gz» o «.diff.gz», dget consulta B<apt-get "
+"source --print-uris>. Los sistemas externos de descarga utilizados son "
+"B<curl> y B<wget>, en ese orden."
 
 #. type: textblock
 #: ../scripts/dget.pl:534
@@ -10742,26 +10995,31 @@ msgid ""
 "binary version is available via B<dget> I<package>, the last source version "
 "via B<apt-get source> I<package>."
 msgstr ""
+"B<dget> se ha creado para facilitar la obtención de paquetes fuente desde "
+"Internet para envíos de paquete patrocinados por un desarrollador. Para "
+"comprobar el paquete con B<debdiff>, la última versión binaria está "
+"disponible mediante B<dget> I<paquete>, y la última versión de las fuentes "
+"mediante B<apt-get source> I<paquete>."
 
 #. type: =item
 #: ../scripts/dget.pl:543
 msgid "B<-b>, B<--backup>"
-msgstr ""
+msgstr "B<-b>, B<--backup>"
 
 #. type: textblock
 #: ../scripts/dget.pl:545
 msgid "Move files that would be overwritten to I<./backup>."
-msgstr ""
+msgstr "Mueve los ficheros que se sobrescribirán a I<./backup>."
 
 #. type: textblock
 #: ../scripts/dget.pl:549
 msgid "Suppress B<wget>/B<curl> non-error output."
-msgstr ""
+msgstr "Elimina la salida de B<wget>/B<curl> que no haga referencia a errores."
 
 #. type: =item
 #: ../scripts/dget.pl:551
 msgid "B<-d>, B<--download-only>"
-msgstr ""
+msgstr "B<-d>, B<--download-only>"
 
 #. type: textblock
 #: ../scripts/dget.pl:553
@@ -10769,11 +11027,13 @@ msgid ""
 "Do not run B<dpkg-source -x> on the downloaded source package.  This can "
 "only be used with the first method of calling B<dget>."
 msgstr ""
+"No ejecuta B<dpkg-source -x> sobre el paquete fuente descargado. Solo se "
+"puede utilizar con la primera forma de ejecución de B<dget>."
 
 #. type: =item
 #: ../scripts/dget.pl:556
 msgid "B<-x>, B<--extract>"
-msgstr ""
+msgstr "B<-x>, B<--extract>"
 
 #. type: textblock
 #: ../scripts/dget.pl:558
@@ -10782,11 +11042,14 @@ msgid ""
 "option is the default and can only be used with the first method of calling "
 "B<dget>."
 msgstr ""
+"Ejecuta B<dpkg-source -x> sobre el paquete fuente descargado para "
+"desempaquetarlo. Este es el comportamiento predefinido, y solo se puede "
+"utilizar con la primera forma de ejecución de B<dget>."
 
 #. type: =item
 #: ../scripts/dget.pl:562
 msgid "B<-u>, B<--allow-unauthenticated>"
-msgstr ""
+msgstr "B<-u>, B<--allow-unauthenticated>"
 
 #. type: textblock
 #: ../scripts/dget.pl:564
@@ -10794,21 +11057,23 @@ msgid ""
 "Do not attempt to verify the integrity of downloaded source packages using "
 "B<dscverify>."
 msgstr ""
+"No intenta comprobar la integridad de los paquetes fuente descargados "
+"utilizando B<dscverify>."
 
 #. type: =item
 #: ../scripts/dget.pl:567
 msgid "B<--build>"
-msgstr ""
+msgstr "B<--build>"
 
 #. type: textblock
 #: ../scripts/dget.pl:569
 msgid "Run B<dpkg-buildpackage -b -uc> on the downloaded source package."
-msgstr ""
+msgstr "Ejecuta B<dpkg-buildpackage -b -uc> sobre el paquete fuente descargado."
 
 #. type: =item
 #: ../scripts/dget.pl:571
 msgid "B<--path> I<DIR>[B<:>I<DIR> ...]"
-msgstr ""
+msgstr "B<--path> I<DIRECTORIO>[B<:>I<DIRECTORIO> ...]"
 
 #. type: textblock
 #: ../scripts/dget.pl:573
@@ -10823,31 +11088,42 @@ msgid ""
 "been written as: \"--path /srv/pbuilder/result --path "
 "/home/cb/UploadQueue\"."
 msgstr ""
+"Además de I</var/cache/apt/archives>, B<dget> admite una lista separada por "
+"dos puntos como argumento a la opción B<--path> para encontrar ficheros con "
+"la misma suma de control md5. Por ejemplo: «--path "
+"/srv/pbuilder/result:/home/cb/UploadQueue». Si DIRECTORIO está vació (esto "
+"es, se especifica «--path»), se ignora cualquier directorio enumerado "
+"anteriormente o especificado en los ficheros de configuración. Esta opción "
+"se puede especificar varias veces, y se buscará en todos los directorios "
+"enumerados; por ello, el ejemplo anterior se puede escribir como: «--path "
+"/srv/pbuilder/result --path /home/cb/UploadQueue»."
 
 #. type: =item
 #: ../scripts/dget.pl:584
 msgid "B<--insecure>"
-msgstr ""
+msgstr "B<--insecure>"
 
 #. type: textblock
 #: ../scripts/dget.pl:586
 msgid "Allow SSL connections to untrusted hosts."
-msgstr ""
+msgstr "Permite conexiones SSL a anfitriones no de confianza."
 
 #. type: =item
 #: ../scripts/dget.pl:588
 msgid "B<--no-cache>"
-msgstr ""
+msgstr "B<--no-cache>"
 
 #. type: textblock
 #: ../scripts/dget.pl:590
 msgid "Bypass server-side HTTP caches by sending a B<Pragma: no-cache> header."
 msgstr ""
+"Envía una cabecera B<Pragma: no-cache> para omitir la caché de la dirección "
+"HTTP del servidor."
 
 #. type: =item
 #: ../scripts/dget.pl:612
 msgid "B<DGET_PATH>"
-msgstr ""
+msgstr "B<DGET_PATH>"
 
 #. type: textblock
 #: ../scripts/dget.pl:614
@@ -10856,11 +11132,15 @@ msgid ""
 "for files in addition to the default I</var/cache/apt/archives>.  It has the "
 "same effect as the B<--path> command line option.  It is not set by default."
 msgstr ""
+"Se puede definir como una lista separada por dos puntos de directorios dónde "
+"buscar ficheros, además del valor predefinido I</var/cache/apt/archives>. "
+"Tiene el mismo efecto que la opción de línea de órdenes B<--path>. "
+"Desactivado por omisión."
 
 #. type: =item
 #: ../scripts/dget.pl:619
 msgid "B<DGET_UNPACK>"
-msgstr ""
+msgstr "B<DGET_UNPACK>"
 
 #. type: textblock
 #: ../scripts/dget.pl:621
@@ -10868,28 +11148,33 @@ msgid ""
 "Set to 'no' to disable extracting downloaded source packages.  Default is "
 "'yes'."
 msgstr ""
+"Defina como «no» para desactivar la extracción de paquetes fuente "
+"descargados. Por omisión, «si»."
 
 #. type: =item
 #: ../scripts/dget.pl:624
 msgid "B<DGET_VERIFY>"
-msgstr ""
+msgstr "B<DGET_VERIFY>"
 
 #. type: textblock
 #: ../scripts/dget.pl:626
+#, fuzzy
 msgid ""
 "Set to 'no' to disable checking signatures of downloaded source packages.  "
 "Default is 'yes'."
 msgstr ""
+"Defina como «no» para desactivar la comprobación de firmas de paquetes "
+"fuente descargados. Por omisión, «si»."
 
 #. type: =head1
 #: ../scripts/dget.pl:631
 msgid "BUGS AND COMPATIBILITY"
-msgstr ""
+msgstr "FALLOS Y COMPATIBILIDAD"
 
 #. type: textblock
 #: ../scripts/dget.pl:633
 msgid "B<dget> I<package> should be implemented in B<apt-get install -d>."
-msgstr ""
+msgstr "B<dget> I<paquete> se debería implementar en B<apt-get install -d>."
 
 #. type: textblock
 #: ../scripts/dget.pl:635
@@ -10897,6 +11182,9 @@ msgid ""
 "Before devscripts version 2.10.17, the default was not to extract the "
 "downloaded source. Set DGET_UNPACK=no to revert to the old behaviour."
 msgstr ""
+"Anteriormente a la versión 2.10.17 de devscripts, el funcionamiento "
+"predefinido era no extraer las fuentes descargadas. Defina «DGET_UNPACK=no» "
+"para obtener el funcionamiento anterior."
 
 #. type: textblock
 #: ../scripts/dget.pl:640

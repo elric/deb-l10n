@@ -1,5 +1,5 @@
 # gitalist po-debconf translation to Spanish
-# Copyright (C) 2011-2012 Software in the Public Interest
+# Copyright (C) 2011 - 2012 Software in the Public Interest
 # This file is distributed under the same license as the gitalist package.
 #
 # Changes:
@@ -29,10 +29,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gitalist 0.003005+dfsg-3\n"
+"Project-Id-Version: gitalist 0.003006+dfsg-2\n"
 "Report-Msgid-Bugs-To: gitalist@packages.debian.org\n"
 "POT-Creation-Date: 2011-10-08 14:21+0200\n"
-"PO-Revision-Date: 2012-01-03 16:51+0100\n"
+"PO-Revision-Date: 2012-05-09 18:03+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -40,13 +40,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1-rc1\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 #. Type: string
 #. Description
 #: ../gitalist-common.templates:2001
 msgid "Path to Git repositories:"
-msgstr "Ruta a los repositorios Git:"
+msgstr "Ruta a los repositorios de Git:"
 
 #. Type: string
 #. Description
@@ -54,7 +54,8 @@ msgstr "Ruta a los repositorios Git:"
 msgid ""
 "Please specify the path from which Gitalist should serve Git repositories."
 msgstr ""
-"Indique la ruta desde la que Gitalist debería servir los repositorios Git."
+"Indique la ruta desde la que Gitalist debería servir los repositorios de "
+"Git."
 
 #. Type: string
 #. Description
@@ -77,11 +78,10 @@ msgid ""
 "Gitalist can show these \"avatars\" for users who have registered with "
 "Gravatar."
 msgstr ""
-"Gravatar es un servicio web que asocia «avatares» a las direcciones de "
-"correo electrónico de los usuarios. Este servicio es independiente y los "
-"autores de Gitalist no tienen ninguna relación con éste. Las páginas que "
-"genera Gitalist pueden mostrar estos «avatares» para los usuarios que estén "
-"registrados en Gravatar."
+"Gravatar es un servicio web que asocia a las direcciones de correo "
+"electrónico de los usuarios unos «avatares». No tiene nada que ver con los "
+"autores de Gitalist. Las páginas que genera Gitalist pueden mostrar estos "
+"«avatares» para los usuarios que estén registrados en Gravatar."
 
 #. Type: boolean
 #. Description
@@ -93,8 +93,7 @@ msgid ""
 msgstr ""
 "El uso de Gravatar en Gitalist está desactivado de forma predeterminada, "
 "porque puede filtrar información sobre los repositorios, directorios y "
-"archivos a través de la información que se incluye en un navegador web "
-"al acceder, por referencia, al servicio de Gravatar."
+"archivos mediante las referencias del navegador al servicio de Gravatar."
 
 #. Type: select
 #. Description
@@ -110,9 +109,9 @@ msgid ""
 "server, such as Gitolite, you can specify the whitelist file that defines "
 "what repositories get presented in the webfrontend."
 msgstr ""
-"Si utiliza un controlador de acceso SSH que mantiene sus repositorios git "
-"en el servidor, como pueda ser Gitolite, puede definir un archivo de lista "
-"blanca que define los repositorios que se muestran en la interfaz web."
+"Si utiliza un controlador de acceso SSH para sus repositorios git en el "
+"servidor, como Gitolite, puede definir un archivo de lista blanca que define "
+"los repositorios que se muestran en la interfaz web."
 
 #. Type: select
 #. Description
@@ -128,7 +127,7 @@ msgstr ""
 #. Description
 #: ../gitalist-common.templates:5001
 msgid "Path to file that contains a whitelist of repositories:"
-msgstr "Ruta al archivo que contiene la lista blanca de repositorios:"
+msgstr "Ruta al fichero que contiene una lista blanca de repositorios:"
 
 #. Type: string
 #. Description
@@ -137,8 +136,8 @@ msgid ""
 "Please specify the path to the whiteliste file. This file contains an list "
 "of repositories that will be served by Gitalist."
 msgstr ""
-"Introduzca una ruta al archivo de lista blanca. Este archivo contiene una "
-"lista de repositorios que Gitalist mostrará."
+"Defina una ruta al archivo de lista blanca. Este archivo contiene una lista "
+"de repositorios servidos por Gitalist."
 
 #. Type: boolean
 #. Description
@@ -164,6 +163,6 @@ msgid ""
 "On. This could cause problems with your other webapplication for more "
 "information, please have a look at the Apache manual."
 msgstr ""
-"Gitalist requiere que la opción «AllowEncodedSlashes» se defina como «On» en "
-"la configuración global de Apache. Esto puede provocar problemas con otras "
-"aplicaciones web. Para más detalles consulte el manual de Apache."
+"Gitalist requiere que la opción AllowEncodedSlashes se defina como On en la "
+"configuración global de Apache. Esto puede provocar problemas con otra "
+"aplicación web. Para más detalles consulte el manual de Apache."
