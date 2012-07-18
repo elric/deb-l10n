@@ -33,7 +33,7 @@ msgstr ""
 "Project-Id-Version: collectd 5.1.0-1\n"
 "Report-Msgid-Bugs-To: collectd@packages.debian.org\n"
 "POT-Creation-Date: 2012-05-19 17:59+0200\n"
-"PO-Revision-Date: 2012-06-17 18:17+0200\n"
+"PO-Revision-Date: 2012-06-27 17:16+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -47,7 +47,7 @@ msgstr ""
 #. Description
 #: ../collectd-core.templates:1001
 msgid "Layout of RRD files has changed"
-msgstr "Ha cambiado la distribución de los archivos RRD"
+msgstr "La distribución de los archivos RRD ha cambiado"
 
 #. Type: note
 #. Description
@@ -62,7 +62,7 @@ msgstr ""
 "La distribución de los archivos RRD creados por collectd ha cambiado "
 "significativamente desde la versión 3.x. Los datos antiguos se deben migrar "
 "para que se puedan seguir utilizando. Puede hacer esto ejecutando el "
-"programa «/usr/lib/collectd-core/utils/migrate-3-4.px». "
+"programa «/usr/lib/collectd-core/utils/migrate-3-4.px»."
 
 #. Type: note
 #. Description
@@ -127,7 +127,7 @@ msgstr ""
 "La distribución de los archivos RRD creados por collectd ha cambiado "
 "desde la versión 4.x. Los datos antiguos se deben migrar "
 "para que se puedan seguir utilizando. Puede hacer esto utilizando el "
-"programa «/usr/lib/collectd-core/utils/migrate-4-5.px». "
+"programa «/usr/lib/collectd-core/utils/migrate-4-5.px»."
 
 #. Type: note
 #. Description
@@ -139,7 +139,7 @@ msgid ""
 "<http://collectd.org/wiki/index.php/V4_to_v5_migration_guide> for details."
 msgstr ""
 "Para más detalles consulte «/usr/share/doc/collectd-core/NEWS.Debian» y la "
-"página wiki de  collectd en "
+"página wiki de collectd en "
 "<http://collectd.org/wiki/index.php/V4_to_v5_migration_guide>."
 
 #. Type: boolean

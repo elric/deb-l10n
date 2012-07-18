@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apt-show-versions 0.18\n"
 "POT-Creation-Date: 2012-06-13 14:19+0000\n"
-"PO-Revision-Date: 2012-06-17 17:52+0200\n"
+"PO-Revision-Date: 2012-06-25 11:22+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -223,7 +223,7 @@ msgstr "B<-v>, B<--verbose>"
 #. type: textblock
 #: man/apt-show-versions.pod:63
 msgid "Prints out messages about which Package files are parsed."
-msgstr "Muestra mensajes relativos a qué ficheros Package se analizan."
+msgstr "Muestra mensajes relativos a qué ficheros Packages se analizan."
 
 # type: =item
 #. type: =item
@@ -234,9 +234,6 @@ msgstr "B<-i>, B<--initialize>"
 # type: textblock
 #. type: textblock
 #: man/apt-show-versions.pod:67
-#| msgid ""
-#| "Initialize or update package cache only (as root). Do this every time "
-#| "when the status of the installed or available packages has changed."
 msgid ""
 "Initialize or update package cache only (as root). Do this every time when "
 "the status of the installed or available packages has changed. "
@@ -336,7 +333,7 @@ msgid ""
 msgstr ""
 "apt-show-versions fue invocado con exactamente un paquete y con la opción "
 "actualizable activada, sin embargo el paquete está actualizado. Ya que no se "
-"solicitó ninguna salida, esta situación se señala con un código de salida"
+"solicitó ninguna salida, esta situación se señala con un código de salida."
 
 # type: =item
 #. type: =item

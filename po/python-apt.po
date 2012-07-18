@@ -4,12 +4,11 @@
 #
 # Changes:
 #   - Initial translation
-#       2004 Michiel Sikkes
-#        Jorge Bernal <koke@amedias.org>, 2005.
-#        Jorge Bernal <koke@sindominio.net>, 2005.
-#
+#	 2004 Michiel Sikkes
+#	 Jorge Bernal <koke@amedias.org>, 2005.   
+#	 Jorge Bernal <koke@sindominio.net>, 2005.
 #   - Updates
-#       Omar Campagne <ocampagne@gmail.com>
+#       Omar Campagne <ocampagne@gmail.com>, 2012.
 #
 # Traductores, si no conocen el formato PO, merece la pena leer la
 # documentación de gettext, especialmente las secciones dedicadas a este
@@ -28,13 +27,13 @@
 #   - La guía de traducción de po's de debconf:
 #     /usr/share/doc/po-debconf/README-trans
 #     o http://www.debian.org/intl/l10n/po-debconf/README-trans
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: python-apt 0.8.4+nmu1\n"
+"Project-Id-Version: python-apt 0.8.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-06 14:56+0100\n"
-"PO-Revision-Date: 2012-06-17 18:06+0200\n"
+"PO-Revision-Date: 2012-06-27 17:24+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -210,7 +209,7 @@ msgstr "Software restringido"
 #. Description
 #: ../data/templates/Ubuntu.info.in:912
 msgid "Cdrom with Ubuntu 6.10 'Edgy Eft'"
-msgstr "CD-ROM con Ubuntu 6.10 «Edgy Eft»"
+msgstr "Cdrom con Ubuntu 6.10 «Edgy Eft»"
 
 #. Description
 #: ../data/templates/Ubuntu.info.in:954
@@ -255,7 +254,7 @@ msgstr "Software restringido por copyright o cuestiones legales"
 #. Description
 #: ../data/templates/Ubuntu.info.in:973
 msgid "Cdrom with Ubuntu 6.06 LTS 'Dapper Drake'"
-msgstr "CD-ROM con Ubuntu 6.06 LTS «Dapper Drake»"
+msgstr "Cdrom con Ubuntu 6.06 LTS «Dapper Drake»"
 
 #. Description
 #: ../data/templates/Ubuntu.info.in:989
@@ -274,7 +273,6 @@ msgstr "Actualizaciones previas a la publicación"
 
 #. Description
 #: ../data/templates/Ubuntu.info.in:1004
-#, fuzzy
 msgid "Unsupported updates"
 msgstr "Actualizaciones de paquetes no oficiales"
 
@@ -286,7 +284,7 @@ msgstr "Ubuntu 5.10 «Breezy Badger»"
 #. Description
 #: ../data/templates/Ubuntu.info.in:1030
 msgid "Cdrom with Ubuntu 5.10 'Breezy Badger'"
-msgstr "CD-ROM con Ubuntu 5.10 «Breezy Badger»"
+msgstr "Cdrom con Ubuntu 5.10 «Breezy Badger»"
 
 #. Description
 #: ../data/templates/Ubuntu.info.in:1046
@@ -311,7 +309,7 @@ msgstr "Ubuntu 5.04 «Hoary Hedgehog»"
 #. Description
 #: ../data/templates/Ubuntu.info.in:1082
 msgid "Cdrom with Ubuntu 5.04 'Hoary Hedgehog'"
-msgstr "CD-ROM con Ubuntu 5.04 «Hoary Hedgehog»"
+msgstr "Cdrom con Ubuntu 5.04 «Hoary Hedgehog»"
 
 #. CompDescription
 #: ../data/templates/Ubuntu.info.in:1085 ../data/templates/Debian.info.in:149
@@ -351,7 +349,7 @@ msgstr "Software no libre (Multiverse)"
 #. Description
 #: ../data/templates/Ubuntu.info.in:1129
 msgid "Cdrom with Ubuntu 4.10 'Warty Warthog'"
-msgstr "CD-ROM con Ubuntu 4.10 «Warty Warthog»"
+msgstr "Cdrom con Ubuntu 4.10 «Warty Warthog»"
 
 #. CompDescription
 #: ../data/templates/Ubuntu.info.in:1132
@@ -417,27 +415,27 @@ msgstr "Actualizaciones de seguridad"
 #. Description
 #: ../data/templates/Debian.info.in:108
 msgid "Debian current stable release"
-msgstr "Publicación estable actual Debian"
+msgstr "Publicación estable actual de Debian"
 
 #. Description
 #: ../data/templates/Debian.info.in:121
 msgid "Debian testing"
-msgstr "Debian testing (pruebas)"
+msgstr "Debian testing («en pruebas»)"
 
 #. Description
 #: ../data/templates/Debian.info.in:147
 msgid "Debian 'Sid' (unstable)"
-msgstr "Debian «Sid» (inestable)"
+msgstr "Debian «Sid» («inestable»)"
 
 #. CompDescription
 #: ../data/templates/Debian.info.in:151
 msgid "DFSG-compatible Software with Non-Free Dependencies"
-msgstr "Software compatible con la DFSG con dependencias no libres"
+msgstr "Software compatible con las «DFSG» con dependencias no libres"
 
 #. CompDescription
 #: ../data/templates/Debian.info.in:153
 msgid "Non-DFSG-compatible Software"
-msgstr "Software no compatible con la DFSG"
+msgstr "Software no compatible con las «DFSG»"
 
 #. TRANSLATORS: %s is a country
 #: ../aptsources/distro.py:206 ../aptsources/distro.py:434
@@ -502,7 +500,7 @@ msgstr ""
 "La lista de cambios aún no está disponible.\n"
 "\n"
 "Utilice «http://launchpad.net/ubuntu/+source/%s/%s/+changelog»\n"
-"hasta que la lista está disponible o inténtelo en otro momento."
+"hasta que la lista esté disponible o inténtelo en otro momento."
 
 #: ../apt/package.py:1204
 msgid ""
