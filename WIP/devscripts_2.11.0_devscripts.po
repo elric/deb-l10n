@@ -5864,7 +5864,7 @@ msgstr ""
 #: ../scripts/debchange.1:209
 #, no-wrap
 msgid "B<--nmu>, B<-n>"
-msgstr ""
+msgstr "B<--nmu>, B<-n>"
 
 #. type: Plain text
 #: ../scripts/debchange.1:218
@@ -5882,7 +5882,7 @@ msgstr ""
 #: ../scripts/debchange.1:218
 #, no-wrap
 msgid "B<--bin-nmu>"
-msgstr ""
+msgstr "B<--bin-nmu>"
 
 #. type: Plain text
 #: ../scripts/debchange.1:223
@@ -5896,7 +5896,7 @@ msgstr ""
 #: ../scripts/debchange.1:223
 #, no-wrap
 msgid "B<--qa>, B<-q>"
-msgstr ""
+msgstr "B<--qa>, B<-q>"
 
 #. type: Plain text
 #: ../scripts/debchange.1:227
@@ -8907,8 +8907,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../scripts/debsnap.1:5
+#, fuzzy
 msgid "debsnap - retrieve old snapshots of Debian packages"
-msgstr ""
+msgstr "debsnap - retrieve old snapshots of Debian packages"
 
 #. type: Plain text
 #: ../scripts/debsnap.1:9
@@ -9220,6 +9221,9 @@ msgid ""
 "B<debuild> also reads the B<devscripts> configuration files as described "
 "below.  This allows default options to be given."
 msgstr ""
+"B<debuild> también analiza los ficheros de configuración de B<devscripts> "
+"como se describe a continuación. Esto permite introducir opciones de forma "
+"predefinida."
 
 #. type: Plain text
 #: ../scripts/debuild.1:61
@@ -9957,17 +9961,18 @@ msgstr ""
 #. type: textblock
 #: ../scripts/desktop2menu.pl:26
 msgid "desktop2menu - create a menu file skeleton from a desktop file"
-msgstr ""
+msgstr "desktop2menu - Crea un fichero básico de menú a partir de un fichero "
+"de escritorio"
 
 #. type: textblock
 #: ../scripts/desktop2menu.pl:30
 msgid "B<desktop2menu> B<--help>|B<--version>"
-msgstr ""
+msgstr "B<desktop2menu> B<--help>|B<--version>"
 
 #. type: textblock
 #: ../scripts/desktop2menu.pl:32
 msgid "B<desktop2menu> I<desktop file> [I<package name>]"
-msgstr ""
+msgstr "B<desktop2menu> I<fichero-de-escritorio> [I<nombre-de-paquete>]"
 
 #. type: textblock
 #: ../scripts/desktop2menu.pl:36
@@ -9975,6 +9980,8 @@ msgid ""
 "B<desktop2menu> generates a skeleton menu file from the supplied "
 "freedesktop.org desktop file."
 msgstr ""
+"B<desktop2menu> genera un fichero básico de menú a partir de un fichero"
+"de escritorio («.desktop») proporcionado por freedesktop.org."
 
 #. type: textblock
 #: ../scripts/desktop2menu.pl:39
@@ -9983,6 +9990,9 @@ msgid ""
 "argument. If it is not supplied then B<desktop2menu> will attempt to derive "
 "the package name from the data in the desktop file."
 msgstr ""
+"El nombre de paquete que utilizar en el fichero de menú se puede introducir "
+"como un argumento adicional. Si no se proporciona, B<desktop2menu> averiguar "
+"el nombre de paquete a partir de los datos en el fichero de escritorio."
 
 #. type: textblock
 #: ../scripts/desktop2menu.pl:45
