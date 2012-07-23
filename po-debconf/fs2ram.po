@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Omar Campagne <ocampagne@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: fs2ram\n"
+"Report-Msgid-Bugs-To: fs2ram@packages.debian.org\n"
+"POT-Creation-Date: 2012-07-11 08:07-0600\n"
+"PO-Revision-Date: 2012-07-23 18:44+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: ç\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+
+#. Type: select
+#. Choices
+#: ../templates:2001
+msgid "Content-preserving"
+msgstr "Conservación de contenido"
+
+#. Type: select
+#. Choices
+#: ../templates:2001
+msgid "Structure-preserving"
+msgstr "Conservación de estructura"
+
+#. Type: select
+#. Choices
+#: ../templates:2001
+msgid "Unconfigured"
+msgstr "Sin configuración"
+
+#. Type: select
+#. Description
+#: ../templates:2002
+msgid "Configuration for fs2ram:"
+msgstr "Configuración para fs2ram:"
+
+#. Type: select
+#. Description
+#: ../templates:2002
+msgid "Please select the fs2ram configuration that best meets your needs."
+msgstr ""
+"Seleccione la configuración para fs2ram que mejor se adapta a sus "
+"necesidades."
+
+#. Type: select
+#. Description
+#: ../templates:2002
+msgid ""
+" * Content-preserving: /var/tmp, /var/cache, and /var/log will be in\n"
+"   RAM, reducing writes to the hard drive, and fs2ram will preserve the\n"
+"   contents of these file systems across reboots.\n"
+" * Structure-preserving: /var/tmp, /var/cache, and /var/log will be in\n"
+"   RAM, but fs2ram will only preserve their directory structures across\n"
+"   reboots, not their (potentially private) contents.\n"
+" * Unconfigured: the fs2ram configuration file will be left empty and\n"
+"   must be filled manually."
+msgstr ""
+" * Conservación de contenido: «/var/tmp, /var/cache», y «/var/log» se ubican\n"
+"   en la RAM, lo que reduce las escrituras en el disco duro, y fs2ram "
+"conserva\n"
+"   el contenido de estos sistemas de ficheros entre cada reinicio.\n"
+" * Conservación de estructura: «/var/tmp», «/var/cache», y «/var/log» se "
+"ubican\n"
+"   en la RAM, pero fs2ram solo conserva la estructura de directorios entre\n"
+"   cada reinicio, y no su contenido (potencialmente privado).\n"
+" * Sin configuración: el fichero de configuración de fs2ram se deja vacío\n"
+"   y la edición debe ser manual."
+
+#. Type: boolean
+#. Description
+#: ../templates:3001
+msgid "Turn /tmp into a RAM file system?"
+msgstr "¿Desea convertir «/tmp» a un sistema de ficheros RAM?"
+
+#. Type: boolean
+#. Description
+#: ../templates:3001
+msgid ""
+"Please choose whether /tmp should be converted into a tmpfs mount point. "
+"This is not the default for freshly installed systems."
+msgstr ""
+"Seleccione si desea convertir «/tmp» a un punto de montaje tmpfs. No es el "
+"comportamiento predefinido para sistemas recién instalados."
+
+#. Type: boolean
+#. Description
+#: ../templates:4001
+msgid "Turn /var/lock into a RAM file system?"
+msgstr "¿Desea convertir «/var/lock» a un sistema de ficheros RAM?"
+
+#. Type: boolean
+#. Description
+#: ../templates:4001
+msgid ""
+"Please choose whether /var/lock should be converted into a tmpfs mount "
+"point. This is the default for freshly installed systems."
+msgstr ""
+"Seleccione si desea convertir «/var/lock» a un punto de montaje tmpfs. No es "
+"el comportamiento predefinido para sistemas recién instalados."
