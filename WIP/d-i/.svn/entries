@@ -1,15 +1,15 @@
 10
 
 dir
-67068
+67851
 svn+ssh://elric-guest@svn.debian.org/svn/d-i/trunk/manual/po/es
 svn+ssh://elric-guest@svn.debian.org/svn/d-i
 
 
 
-2011-06-19T16:23:53.833228Z
-66600
-elric-guest
+2012-07-20T12:29:06.640202Z
+67851
+holger-guest
 
 
 
@@ -23,12 +23,114 @@ elric-guest
 
 
 
-incomplete
+
 48c42b26-1dd6-0310-b98f-a58d8bce7237
+
+hardware.po
+file
+
+
+
+
+2012-07-20T12:39:42.000000Z
+41a228a84fb6e48e6832ec796521458b
+2012-07-20T12:29:06.640202Z
+67851
+holger-guest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+121869
+
+boot-installer.po
+file
+
+
+
+
+2012-07-20T12:39:42.000000Z
+67c6673ce601d4a14bef565eee18cf40
+2012-07-20T12:29:06.640202Z
+67851
+holger-guest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+216923
+
+installation-howto.po
+file
+
+
+
+
+2012-07-20T12:39:42.000000Z
+a66e1a59c66ba00ea8bc3c5169bb388a
+2012-07-20T12:29:06.640202Z
+67851
+holger-guest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+32977
 
 administrivia.po
 file
-66609
+
 
 
 
@@ -62,7 +164,7 @@ holger-guest
 
 preface.po
 file
-66609
+
 
 
 
@@ -96,7 +198,7 @@ elric-guest
 
 bookinfo.po
 file
-66609
+
 
 
 
@@ -134,11 +236,33 @@ file
 
 
 
+2012-07-20T12:39:42.000000Z
+d4b7adbb68351d23d84542b1795f1127
+2012-07-20T12:29:06.640202Z
+67851
+holger-guest
 
-8a3b2778806838444707cfaddeee7109
-2011-06-29T17:57:27.138569Z
-66627
-elric-guest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+116842
 
 partitioning.po
 file
@@ -146,11 +270,11 @@ file
 
 
 
-2011-12-01T18:21:52.000000Z
-9b6653e5fb444e4435db46d48611aea3
-2011-10-08T15:38:13.258739Z
-66973
-sthibault
+2012-07-20T12:39:42.000000Z
+b8f5de2e261fc9b3aa3bfdfe4bac7e3f
+2012-07-20T12:29:06.640202Z
+67851
+holger-guest
 
 
 
@@ -172,7 +296,7 @@ sthibault
 
 
 
-73441
+73592
 
 random-bits.po
 file
@@ -180,11 +304,11 @@ file
 
 
 
-2011-12-01T18:21:52.000000Z
-86f24ae17aa000c737131f054c691356
-2011-07-21T22:42:33.454565Z
-66668
-sthibault
+2012-07-20T12:39:42.000000Z
+262df733e5838a8d601e946066a564fe
+2012-07-20T12:29:06.640202Z
+67851
+holger-guest
 
 
 
@@ -206,11 +330,11 @@ sthibault
 
 
 
-99157
+100803
 
 gpl.po
 file
-66609
+
 
 
 
@@ -244,19 +368,15 @@ elric-guest
 
 preparing.po
 file
-66609
-
-
-
-2010-10-31T19:45:04.000000Z
-c201f79bcbbdfa6d750db9fe90d5dd0b
-2010-10-31T19:01:28.795292Z
-65234
-elric-guest
 
 
 
 
+2012-07-20T12:39:42.000000Z
+d28ab5b3b3b5791f552ccad14d1f71e4
+2012-07-20T12:29:06.640202Z
+67851
+holger-guest
 
 
 
@@ -274,7 +394,11 @@ elric-guest
 
 
 
-119930
+
+
+
+
+120627
 
 preseed.po
 file
@@ -282,11 +406,11 @@ file
 
 
 
-2011-12-01T18:21:52.000000Z
-a7760da6165ecb6a86ac95f5fc594a6c
-2011-06-29T17:57:27.138569Z
-66627
-elric-guest
+2012-07-20T12:39:42.000000Z
+a415b8c691ef249368dabc59c47a4ab2
+2012-07-20T12:29:06.640202Z
+67851
+holger-guest
 
 
 
@@ -308,23 +432,19 @@ elric-guest
 
 
 
-132408
+135932
 
 post-install.po
 file
-66609
-
-
-
-2010-10-28T14:24:22.000000Z
-58ab463a300729f2e894b90419d33091
-2010-10-13T22:05:14.561434Z
-64961
-elric-guest
 
 
 
 
+2012-07-20T12:39:42.000000Z
+b39c5e985d411dc232738c35f3fbdae2
+2012-07-20T12:29:06.640202Z
+67851
+holger-guest
 
 
 
@@ -342,11 +462,15 @@ elric-guest
 
 
 
-58551
+
+
+
+
+59126
 
 boot-new.po
 file
-66609
+
 
 
 
@@ -380,7 +504,7 @@ elric-guest
 
 welcome.po
 file
-66609
+
 
 
 
@@ -418,11 +542,11 @@ file
 
 
 
-2011-12-01T18:21:52.000000Z
-19945c0d60fbdf9e381e50fdf8b3713e
-2011-06-29T17:57:27.138569Z
-66627
-elric-guest
+2012-07-20T12:39:42.000000Z
+80694668a6c00198f45602b1ed8b4ca5
+2012-07-20T12:29:06.640202Z
+67851
+holger-guest
 
 
 
@@ -444,85 +568,5 @@ elric-guest
 
 
 
-261803
-
-hardware.po
-file
-
-
-
-
-
-0ee3fd1f44e2b5a21a54e7b4cd312359
-2011-06-29T17:57:27.138569Z
-66627
-elric-guest
-
-boot-installer.po
-file
-66609
-
-
-
-2011-06-05T21:25:24.000000Z
-69d7858732a723ac0f1e2ef869c65d14
-2011-06-05T21:26:45.154098Z
-66588
-elric-guest
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-216537
-
-installation-howto.po
-file
-66609
-
-
-
-2011-06-05T21:25:24.000000Z
-1785de1a4a863778406be512a69dcbdd
-2011-06-05T21:26:45.154098Z
-66588
-elric-guest
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-31831
+263211
 
