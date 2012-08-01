@@ -165,7 +165,6 @@ msgid "Usage: %s [<command>]"
 msgstr "Uso: %s [<orden>]"
 
 #: scripts/dpkg-buildflags.pl:44
-#, fuzzy
 msgid ""
 "Commands:\n"
 "  --get <flag>       output the requested flag to stdout.\n"
@@ -187,24 +186,24 @@ msgid ""
 "  --version          show the version.\n"
 msgstr ""
 "Órdenes:\n"
-"  --get <opción>       Muestra la opción solicitada por la salida estándar.\n"
-"  --origin <opción>    Muestra el origen de la opción por la salida "
-"estándar:\n"
-"                     el valor puede ser vendor, system, user, env.\n"
+"  --get <opción>     Muestra la opción solicitada por la salida estándar.\n"
+"  --origin <opción>  Muestra el origen de la opción por la salida\n"
+"                     estándar:\n"
+"                     El valor puede ser vendor, system, user, env.\n"
 "  --query-features <area>\n"
-"                     output the status of features for the given area.\n"
-"  --list             output a list of the flags supported by the current "
-"vendor.\n"
+"                     Muestra el estado de las funcionalidades del área dada.\n"
+"  --list             Muestra una lista de las opciones permitidas por el\n"
+"                     proveedor actual.\n"
 "  --export=(sh|make|configure)\n"
-"                     output something convenient to import the\n"
-"                     compilation flags in a shell script, in make,\n"
-"                     or on a ./configure command line.\n"
-"  --dump             output all compilation flags with their values\n"
-"  --status           print a synopsis with all parameters affecting the\n"
-"                     behaviour of dpkg-buildflags and the resulting flags\n"
-"                     and their origin.\n"
-"  --help             show this help message.\n"
-"  --version          show the version.\n"
+"                     Muestra algo adecuado para importar las opciones de\n"
+"                     compilación a un script en make,\n"
+"                     o en una línea de órdenes de «./configure».\n"
+"  --dump             Muestra todas las opciones de compilación y sus valores\n"
+"  --status           Muestra un resumen de todos los parámetros que modifican\n"
+"                     el comportamiento de dpkg-buildflags, las opciones\n"
+"                     resultantes y su origen.\n"
+"  --help             Muestra este mensaje de ayuda.\n"
+"  --version          Muestra la versión.\n"
 
 #: scripts/dpkg-buildflags.pl:69 scripts/dpkg-buildflags.pl:75
 #: scripts/dpkg-buildflags.pl:80
@@ -516,6 +515,20 @@ msgid ""
 "  -?, --help     show this help message.\n"
 "      --version  show the version."
 msgstr ""
+"Opciones:\n"
+"  -A             Ignora Build-Depends-Arch y Build-Conflicts-Arch\n"
+"  -B             Ignora Build-Depends-Indep y Build-Conflicts-Indep\n"
+"  -d dependencias-de-construcción\n"
+"                 Utiliza la cadena dada como dependencias de construcción en\n"
+"                 lugar de obtenerlos del fichero de control\n"
+"  -c conflictos-de-construcción\n"
+"                 Utiliza la cadena dada como conflictos de construcción en\n"
+"                 lugar de obtenerlos del fichero de control\n"
+"  -a arquitectura Supone la arquitectura dada para el sistema actual\n"
+"  --admindir=<directorio>\n"
+"                 Cambia el directorio administrativo\n"
+"  -?, --help     Muestra este mensaje de ayuda\n"
+"      --version  Muestra la versión"
 
 #: scripts/dpkg-checkbuilddeps.pl:59
 msgid ""
@@ -816,9 +829,9 @@ msgid "package %s not in control info"
 msgstr "el paquete %s no está en la información de control"
 
 #: scripts/dpkg-gencontrol.pl:172 scripts/dpkg-gensymbols.pl:159
-#, fuzzy
 msgid "no package stanza found in control info"
-msgstr "el paquete %s no está en la información de control"
+msgstr "no se ha encontrado la declaración del paquete en la información "
+"de control"
 
 #: scripts/dpkg-gencontrol.pl:174 scripts/dpkg-gensymbols.pl:161
 #, perl-format
@@ -1550,7 +1563,6 @@ msgid "Usage: %s [<option>...] <executable>|-e<executable> [<option>...]"
 msgstr "Uso: %s [<opción>...] <ejecutable>|-e<ejecutable> [<opción>...]"
 
 #: scripts/dpkg-shlibdeps.pl:554
-#, fuzzy
 msgid ""
 "Positional options (order is significant):\n"
 "  <executable>             include dependencies for <executable>,\n"
@@ -1560,8 +1572,8 @@ msgstr ""
 "Opciones posicionales (el orden importa):\n"
 "  <ejecutable>             Incluye las dependencias para <ejecutable>,\n"
 "  -e<ejecutable>           (Utilice -e si el <ejecutable> empieza con «-»)\n"
-"  -d<campo-de-dependencia>     next executable(s) set shlibs:<dependency-"
-"field>."
+"  -d<campo-de-dependencia> La o las siguientes órdenes definen\n"
+"                           shlibs:<campo-de-dependencia>."
 
 #: scripts/dpkg-shlibdeps.pl:559
 msgid ""
@@ -1927,6 +1939,33 @@ msgid ""
 "                                <number> is lower than 0)\n"
 "    --all                       include all changes\n"
 msgstr ""
+"Uso: %s [<opción>...] [<fichero-changelog>]\n"
+"\n"
+"Opciones:\n"
+"    -?, --help                  Muestra información de uso\n"
+"    --version, -V               Muestra información de la versión\n"
+"    --label, -l <fichero>       Nombre del fichero «changelog» que utilizar\n"
+"                                para los mensajes de error\n"
+"    --file <fichero>            Fichero «changelog» que analizar, por\n"
+"                                omisión, «-» (entrada estándar)\n"
+"    --format <formato-salida>   Consulte la página de manual para los\n"
+"                                formatos de salida disponibles. Por omisión,\n"
+"                                «dpkg», para la compatibilidad con dpkg-dev\n"
+"    --since, -s, -v <versión>   Incluye todos los cambios posteriores a la\n"
+"                                versión\n"
+"    --until, -u <versión>       Incluye todos los cambios anteriores a la\n"
+"                                versión\n"
+"    --from, -f <versión>        Incluye todos los cambios de la misma\n"
+"                                versión o posterior\n"
+"    --to, -t <versión>          Incluye todos los cambios de la misma\n"
+"                                versión o anterior\n"
+"    --count, -c, -n <número>    Incluye el <número> de entradas desde el\n"
+"                                principio (o el final si el <número> es\n"
+"                                inferior a cero)\n"
+"    --offset, -o <número>       Modifica el punto inicial para «--count»,\n"
+"                                calculado desde el principio (o el final si\n"
+"                                el <número> es inferior a cero)\n"
+"    --all                       Incluye todos los cambios\n"
 
 #: scripts/changelog/debian.pl:87
 #, perl-format
@@ -2254,9 +2293,9 @@ msgid "parsed version of changelog"
 msgstr "versión analizada del registro de cambios"
 
 #: scripts/Dpkg/Control.pm:156 scripts/Dpkg/Control.pm:158
-#, fuzzy, perl-format
+#, perl-format
 msgid "entry in repository's %s file"
-msgstr "entrada en el fichero de estado «status» de dpkg "
+msgstr "entrada en el fichero %s de repositorio"
 
 #: scripts/Dpkg/Control.pm:160 scripts/Dpkg/Control.pm:164
 #, perl-format
@@ -2804,7 +2843,7 @@ msgid "%s is not a plain file"
 msgstr "«%s» no es un fichero simple"
 
 #: scripts/Dpkg/Source/Package.pm:527
-#, fuzzy, perl-format
+#, perl-format
 msgid "'%s' is not supported by the source format '%s'"
 msgstr "no se permite «%s» con el formato de fuente «%s»"
 
@@ -3246,7 +3285,8 @@ msgstr "fichero no reconocido para un paquete fuente nativo: %s"
 
 #: scripts/Dpkg/Source/Package/V3/git.pm:55
 msgid "cannot unpack git-format source package because git is not in the PATH"
-msgstr ""
+msgstr "no se puede desempaquetar el formato de paquete git porque git no está "
+"presente en «PATH»"
 
 #: scripts/Dpkg/Source/Package/V3/git.pm:63
 #, perl-format
@@ -3395,14 +3435,14 @@ msgid "unknown host architecture '%s'"
 msgstr "arquitectura del sistema desconocida «%s»"
 
 #: scripts/Dpkg/Vendor/Debian.pm:113
-#, fuzzy, perl-format
+#, perl-format
 msgid "unknown hardening feature: %s"
-msgstr "el valor de clave %s es desconocida"
+msgstr "funcionalidad de seguridad desconocida: %s"
 
 #: scripts/Dpkg/Vendor/Debian.pm:117
 #, perl-format
 msgid "incorrect value in hardening option of DEB_BUILD_MAINT_OPTIONS: %s"
-msgstr ""
+msgstr "valor incorrecto en la opción de seguridad de DEB_BUILD_MAINT_OPTIONS: %s"
 
 #: scripts/Dpkg/Vendor/Ubuntu.pm:62 scripts/Dpkg/Vendor/Ubuntu.pm:64
 msgid ""

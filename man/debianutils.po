@@ -29,12 +29,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: debianutils 4.3\n"
+"Project-Id-Version: debianutils 4.3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-30 10:55-0300\n"
-"PO-Revision-Date: 2012-05-10 18:33+0200\n"
+"POT-Creation-Date: 2012-07-28 21:29-0400\n"
+"PO-Revision-Date: 2012-07-29 11:12+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: Debian l10n <debian-l10n-spanish@lists.debian.org>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -94,8 +94,8 @@ msgid ""
 "temporary file back to I</etc/shells>."
 msgstr ""
 "B<add-shell> copia I</etc/shells> a I</etc/shells.tmp>, añade las consolas a "
-"este fichero si no están presentes, y copia este fichero temporal  a "
-"I</etc/shells>."
+"este fichero si no están presentes, y copia este fichero temporal  a I</etc/"
+"shells>."
 
 #. type: Plain text
 #: ../add-shell.8:15
@@ -162,10 +162,9 @@ msgid ""
 "previously installed kernel is available as I<{directory}/vmlinuz.old>."
 msgstr ""
 "El núcleo nuevo se instala en I<{directorio}/vmlinuz-{versión}>. Si ya "
-"existe un enlace simbólico  I<{directorio}/vmlinuz>, este se actualiza, "
+"existe un enlace simbólico I<{directorio}/vmlinuz>, este se actualiza, "
 "creando un enlace desde el I<{directory}/vmlinuz> al núcleo nuevo. El núcleo "
-"anteriormente instalado seguirá disponible como "
-"I<{directorio}/vmlinuz.old>. "
+"anteriormente instalado seguirá disponible como I<{directorio}/vmlinuz.old>. "
 
 #. type: SH
 #: ../installkernel.8:22 ../ischroot.1:35 ../savelog.8:151 ../tempfile.1:73
@@ -191,7 +190,7 @@ msgid "ISCHROOT"
 msgstr "ISCHROOT"
 
 #. type: TH
-#: ../ischroot.1:2 ../tempfile.1:2
+#: ../ischroot.1:2
 #, no-wrap
 msgid "30 May 2011"
 msgstr "30 de mayo de 2011"
@@ -260,7 +259,7 @@ msgstr ""
 "ejecuta como administrador). "
 
 #. type: SH
-#: ../ischroot.1:22 ../run-parts.8:46 ../savelog.8:92 ../tempfile.1:46
+#: ../ischroot.1:22 ../run-parts.8:47 ../savelog.8:92 ../tempfile.1:46
 #: ../which.1:14
 #, no-wrap
 msgid "OPTIONS"
@@ -351,9 +350,9 @@ msgid ""
 "etc/shells.tmp2> to remove the given shells from the list of valid login "
 "shells, and copy the result back to I</etc/shells>."
 msgstr ""
-"B<remove-shell> modifica los archivos temporales I</etc/shells.tmp> y "
-"I</etc/shells.tmp2> para eliminar las consolas introducidas de la lista de "
-"consolas de sesión admitidas, y copia el resultado a I</etc/shells>."
+"B<remove-shell> modifica los archivos temporales I</etc/shells.tmp> y I</etc/"
+"shells.tmp2> para eliminar las consolas introducidas de la lista de consolas "
+"de sesión admitidas, y copia el resultado a I</etc/shells>."
 
 #. type: TH
 #: ../run-parts.8:8
@@ -362,10 +361,10 @@ msgid "RUN-PARTS"
 msgstr "RUN-PARTS"
 
 #. type: TH
-#: ../run-parts.8:8
+#: ../run-parts.8:8 ../tempfile.1:2
 #, no-wrap
-msgid "14 Nov 2010"
-msgstr "14 de noviembre de 2010"
+msgid "27 Jun 2012"
+msgstr "27 de junio de 2012"
 
 #. type: Plain text
 #: ../run-parts.8:11
@@ -396,8 +395,8 @@ msgid ""
 "directories are silently ignored."
 msgstr ""
 "B<run-parts> ejecuta todos los ficheros con permisos de ejecución, dentro de "
-"los limites descritos a continuación, que se encuentran en el "
-"I<directorio>. Se ignoran otros ficheros o directorios."
+"los limites descritos a continuación, que se encuentran en el I<directorio>. "
+"Se ignoran otros ficheros o directorios."
 
 #. type: Plain text
 #: ../run-parts.8:31
@@ -436,64 +435,67 @@ msgstr ""
 "expresión regular extendida definida como argumento a esa opción."
 
 #. type: Plain text
-#: ../run-parts.8:45
+#: ../run-parts.8:46
 msgid ""
-"Files are run in the lexical sort order of their names unless the --reverse "
-"option is given, in which case they are run in the opposite order."
+"Files are run in the lexical sort order (according to the C/POSIX locale "
+"character collation rules) of their names unless the --reverse option is "
+"given, in which case they are run in the opposite order."
 msgstr ""
-"Los ficheros se ejecutan en orden alfabético, a menos que se introduzca la "
+"Los ficheros se ejecutan en orden alfabético (de acuerdo a las reglas de "
+"ordenación de caracteres de locale C/POSIX) a menos que se introduzca la "
 "opción «--reverse», en cuyo caso se ejecutan en orden inverso."
 
 #. type: TP
-#: ../run-parts.8:47
+#: ../run-parts.8:48
 #, no-wrap
 msgid "B<--test>"
 msgstr "B<--test>"
 
 #. type: Plain text
-#: ../run-parts.8:51
+#: ../run-parts.8:52
 msgid ""
 "print the names of the scripts which would be run, but don't actually run "
 "them."
-msgstr "Muestra los nombres de los scripts que se ejecutarían, sin ejecutarlos."
+msgstr ""
+"Muestra los nombres de los scripts que se ejecutarían, sin ejecutarlos."
 
 #. type: TP
-#: ../run-parts.8:51
+#: ../run-parts.8:52
 #, no-wrap
 msgid "B<--list>"
 msgstr "B<--list>"
 
 #. type: Plain text
-#: ../run-parts.8:55
+#: ../run-parts.8:56
 msgid ""
 "print the names of the all matching files (not limited to executables), but "
 "don't actually run them. This option cannot be used with --test."
 msgstr ""
 "Muestra los nombres de todos los ficheros coincidentes (no se limita a "
-"ejecutables), sin ejecutarlos. Esta opción no se puede utilizar junto con "
-"«--test»."
+"ejecutables), sin ejecutarlos. Esta opción no se puede utilizar junto con «--"
+"test»."
 
 #. type: TP
-#: ../run-parts.8:55
+#: ../run-parts.8:56
 #, no-wrap
 msgid "B<-v, --verbose>"
 msgstr "B<-v, --verbose>"
 
 #. type: Plain text
-#: ../run-parts.8:58
+#: ../run-parts.8:59
 msgid "print the name of each script to stderr before running."
 msgstr ""
 "Muestra el nombre de cada script por la salida de error estándar antes de su "
 "ejecución."
 
 #. type: TP
-#: ../run-parts.8:58
+#: ../run-parts.8:59
 #, no-wrap
 msgid "B<--report>"
 msgstr "B<--report>"
 
 #. type: Plain text
-#: ../run-parts.8:63
+#: ../run-parts.8:64
 msgid ""
 "similar to B<--verbose>, but only prints the name of scripts which produce "
 "output.  The script's name is printed to whichever of stdout or stderr the "
@@ -504,48 +506,48 @@ msgstr ""
 "sea la salida estándar o la salida de error estándar."
 
 #. type: TP
-#: ../run-parts.8:63
+#: ../run-parts.8:64
 #, no-wrap
 msgid "B<--reverse>"
 msgstr "B<--reverse>"
 
 #. type: Plain text
-#: ../run-parts.8:66
+#: ../run-parts.8:67
 msgid "reverse the scripts' execution order."
 msgstr "Invierte el orden de ejecución de los scripts"
 
 #. type: TP
-#: ../run-parts.8:66
+#: ../run-parts.8:67
 #, no-wrap
 msgid "B<--exit-on-error>"
 msgstr "B<--exit-on-error>"
 
 #. type: Plain text
-#: ../run-parts.8:69
+#: ../run-parts.8:70
 msgid "exit as soon as a script returns with a non-zero exit code."
 msgstr ""
 "Cancela el proceso si un script devuelve un código de salida distinto de "
 "cero."
 
 #. type: TP
-#: ../run-parts.8:69
+#: ../run-parts.8:70
 #, no-wrap
 msgid "B<--lsbsysinit>"
 msgstr "B<--lsbsysinit>"
 
 #. type: Plain text
-#: ../run-parts.8:72
+#: ../run-parts.8:73
 msgid "use LSB namespaces instead of classical behavior."
 msgstr "Utiliza espacios de nombre LSB en lugar del comportamiento clásico."
 
 #. type: TP
-#: ../run-parts.8:72
+#: ../run-parts.8:73
 #, no-wrap
 msgid "B<--new-session>"
 msgstr "B<--new-session>"
 
 #. type: Plain text
-#: ../run-parts.8:77
+#: ../run-parts.8:78
 msgid ""
 "run each script in a separate process session.  If you use this option, "
 "killing run-parts will not kill the currently running script, it will run "
@@ -556,13 +558,13 @@ msgstr ""
 "continua hasta su finalización."
 
 #. type: TP
-#: ../run-parts.8:77
+#: ../run-parts.8:78
 #, no-wrap
 msgid "B<--regex=>I<RE>"
 msgstr "B<--regex=>I<expresión-regular>"
 
 #. type: Plain text
-#: ../run-parts.8:82
+#: ../run-parts.8:83
 msgid ""
 "validate filenames against custom extended regular expression I<RE>.  See "
 "the EXAMPLES section for an example."
@@ -572,13 +574,13 @@ msgstr ""
 "uno."
 
 #. type: TP
-#: ../run-parts.8:82
+#: ../run-parts.8:83
 #, no-wrap
 msgid "B<-u, --umask=>I<umask>"
 msgstr "B<-u, --umask=>I<umask>"
 
 #. type: Plain text
-#: ../run-parts.8:89
+#: ../run-parts.8:90
 msgid ""
 "sets the umask to I<umask> before running the scripts.  I<umask> should be "
 "specified in octal.  By default the umask is set to 022."
@@ -588,13 +590,13 @@ msgstr ""
 "022."
 
 #. type: TP
-#: ../run-parts.8:89
+#: ../run-parts.8:90
 #, no-wrap
 msgid "B<-a, --arg=>I<argument>"
 msgstr "B<-a, --arg=>I<argumento>"
 
 #. type: Plain text
-#: ../run-parts.8:96
+#: ../run-parts.8:97
 msgid ""
 "pass I<argument> to the scripts.  Use B<--arg> once for each argument you "
 "want passed."
@@ -603,13 +605,13 @@ msgstr ""
 "precedido de B<--arg>."
 
 #. type: TP
-#: ../run-parts.8:96
+#: ../run-parts.8:97
 #, no-wrap
 msgid "B<-->"
 msgstr "B<-->"
 
 #. type: Plain text
-#: ../run-parts.8:102
+#: ../run-parts.8:103
 msgid ""
 "specifies that this is the end of the options.  Any filename after B<--> "
 "will be not be interpreted as an option even if it starts with a hyphen."
@@ -619,35 +621,35 @@ msgstr ""
 "guión."
 
 #. type: TP
-#: ../run-parts.8:102
+#: ../run-parts.8:103
 #, no-wrap
 msgid "B<-h, --help>"
 msgstr "B<-h, --help>"
 
 #. type: Plain text
-#: ../run-parts.8:105
+#: ../run-parts.8:106
 msgid "display usage information and exit."
 msgstr "Muestra la información de uso y cierra."
 
 #. type: TP
-#: ../run-parts.8:105
+#: ../run-parts.8:106
 #, no-wrap
 msgid "B<-V, --version>"
 msgstr "B<-V, --version>"
 
 #. type: Plain text
-#: ../run-parts.8:108
+#: ../run-parts.8:109
 msgid "display version and copyright and exit."
 msgstr "Muestra la versión e información acerca del copyright y cierra."
 
 #. type: SH
-#: ../run-parts.8:109
+#: ../run-parts.8:110
 #, no-wrap
 msgid "EXAMPLES"
 msgstr "EJEMPLOS"
 
 #. type: Plain text
-#: ../run-parts.8:112
+#: ../run-parts.8:113
 msgid ""
 "Print the names of all files in /etc that start with `p' and end with `d':"
 msgstr ""
@@ -655,40 +657,40 @@ msgstr ""
 "empiezan con «p», y terminan con «d»."
 
 #. type: Plain text
-#: ../run-parts.8:114
+#: ../run-parts.8:115
 msgid "run-parts --list --regex \\[aq]^p.*d$\\[aq] /etc"
 msgstr "run-parts --list --regex \\[aq]^p.*d$\\[aq] /etc"
 
 #. type: SH
-#: ../run-parts.8:115
+#: ../run-parts.8:116
 #, no-wrap
 msgid "COPYRIGHT"
 msgstr "COPYRIGHT"
 
 #. type: Plain text
-#: ../run-parts.8:118
+#: ../run-parts.8:119
 msgid "Copyright (C) 1994 Ian Jackson."
 msgstr "Copyright (C) 1994 Ian Jackson."
 
 #. type: Plain text
-#: ../run-parts.8:120
+#: ../run-parts.8:121
 msgid "Copyright (C) 1996 Jeff Noxon."
 msgstr "Copyright (C) 1996 Jeff Noxon."
 
 #. type: Plain text
-#: ../run-parts.8:122
+#: ../run-parts.8:123
 msgid "Copyright (C) 1996, 1997, 1998 Guy Maor"
 msgstr "Copyright (C) 1996, 1997, 1998 Guy Maor"
 
 #. type: Plain text
-#: ../run-parts.8:124
+#: ../run-parts.8:125
 msgid ""
 "Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Clint Adams"
 msgstr ""
 "Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Clint Adams"
 
 #. type: Plain text
-#: ../run-parts.8:129
+#: ../run-parts.8:130
 msgid ""
 "B<run-parts> is free software; see the GNU General Public License version 2 "
 "or later for copying conditions.  There is I<no> warranty."
@@ -732,8 +734,8 @@ msgid ""
 "Older versions of I<file> are named:"
 msgstr ""
 "La orden B<savelog> guarda y, de forma opcional, comprime copias antiguas de "
-"ficheros. Las versiones anteriores del I<fichero> se nombran de la "
-"siguiente forma:"
+"ficheros. Las versiones anteriores del I<fichero> se nombran de la siguiente "
+"forma:"
 
 #. type: Plain text
 #: ../savelog.8:19
@@ -749,7 +751,7 @@ msgid ""
 "for I/O.  Only I<cycle> versions of the file are kept."
 msgstr ""
 "I<E<lt>númeroE<gt>> representa el número de versión, siendo cero el más "
-"reciente. Los números de versión  E<gt> 0 se comprimen, a menos que B<-l> lo "
+"reciente. Los números de versión E<gt> 0 se comprimen, a menos que B<-l> lo "
 "impida. El número de versión cero no se comprime, ya que puede que un "
 "proceso mantenga el I<fichero> abierto para la E/S. Sólo se preservan las "
 "versiones I<ciclo> del fichero."
@@ -783,12 +785,12 @@ msgid ""
 "version I<file> is deleted.  Both compressed names and uncompressed names "
 "are cycled, regardless of B<-l>.  Missing version files are ignored."
 msgstr ""
-"Los ficheros con número de versión pasan por un ciclo. La versión "
-"I<fichero>.I<2> se renombra como I<fichero>.I<3>, la versión I<fichero>.I<1> "
-"pasa a ser I<fichero>.I<2>, y así sucesivamente. Por último, la versión "
-"I<fichero>.I<0> se renombra como la versión I<fichero>.I<1>, y se elimina la "
-"versión I<fichero>. Los nombres, comprimidos o descomprimidos, pasan por el "
-"ciclo, sin importar el uso de B<-l>. Se ignoran los ficheros sin versión."
+"Los ficheros con número de versión pasan por un ciclo. La versión I<fichero>."
+"I<2> se renombra como I<fichero>.I<3>, la versión I<fichero>.I<1> pasa a ser "
+"I<fichero>.I<2>, y así sucesivamente. Por último, la versión I<fichero>.I<0> "
+"se renombra como la versión I<fichero>.I<1>, y se elimina la versión "
+"I<fichero>. Los nombres, comprimidos o descomprimidos, pasan por el ciclo, "
+"sin importar el uso de B<-l>. Se ignoran los ficheros sin versión."
 
 #. type: IP
 #: ../savelog.8:60
@@ -802,9 +804,8 @@ msgid ""
 "The new I<file>.I<1> is compressed unless the B<-l> flag was given.  It is "
 "changed subject to the B<-m>, B<-u>, and B<-g> flags."
 msgstr ""
-"El I<fichero>.I<1> nuevo se comprime, a menos que se introduzca la opción "
-"B<-l>. Puede cambiar el funcionamiento con las opciones B<-m>, B<-u>, y "
-"B<-g>."
+"El I<fichero>.I<1> nuevo se comprime, a menos que se introduzca la opción B<-"
+"l>. Puede cambiar el funcionamiento con las opciones B<-m>, B<-u>, y B<-g>."
 
 #. type: IP
 #: ../savelog.8:69
@@ -831,8 +832,8 @@ msgid ""
 "file is created with the same owner, group, and permissions as before."
 msgstr ""
 "Si se introducen las opciones B<-m>, B<-u>, B<-g>, B<-t> o B<-p>, se crea un "
-"I<fichero>, de acuerdo a las opciones dadas. Con la opción B<-p>, el "
-"fichero se crea con el mismo propietario, grupo y permisos originales."
+"I<fichero>, de acuerdo a las opciones dadas. Con la opción B<-p>, el fichero "
+"se crea con el mismo propietario, grupo y permisos originales."
 
 #. type: IP
 #: ../savelog.8:85
@@ -1009,8 +1010,8 @@ msgstr "B<-D formato-fecha>"
 #: ../savelog.8:140
 msgid "override date format, in the form of I<[MMDDhhmm[[CC]YY][.ss]]>"
 msgstr ""
-"Sobreescribe el formato de fecha, con el siguiente formato "
-"I<[MMDDhhmm[[CC]YY][.ss]]>"
+"Sobreescribe el formato de fecha, con el siguiente formato I<[MMDDhhmm[[CC]"
+"YY][.ss]]>"
 
 #. type: TP
 #: ../savelog.8:140
@@ -1101,8 +1102,7 @@ msgid ""
 "order (but refer to B<tempnam>(3)  for authoritative answers):"
 msgstr ""
 "Se busca el directorio en el que crear el fichero en el siguiente orden (sin "
-"embargo, consulte B<tempnam>(3) para ver información de la fuente "
-"original):"
+"embargo, consulte B<tempnam>(3) para ver información de la fuente original):"
 
 #. type: TP
 #: ../tempfile.1:23
@@ -1146,8 +1146,8 @@ msgid ""
 "Otherwise, I<P_tmpdir> (as defined in I<E<lt>stdio.hE<gt>>)  is used when "
 "appropriate."
 msgstr ""
-"De no ser así, se utiliza I<P_tmpdir> (tal y como se define en "
-"I<E<lt>stdio.hE<gt>>) cuando es apropiado."
+"De no ser así, se utiliza I<P_tmpdir> (tal y como se define en I<E<lt>stdio."
+"hE<gt>>) cuando es apropiado."
 
 #. type: TP
 #: ../tempfile.1:41
@@ -1238,10 +1238,12 @@ msgstr ""
 #: ../tempfile.1:77
 msgid ""
 "Exclusive creation is not guaranteed when creating files on NFS partitions.  "
-"tempfile is deprecated; you should use mktemp(1)  instead."
+"tempfile cannot make temporary directories.  tempfile is deprecated; you "
+"should use mktemp(1) instead."
 msgstr ""
 "No se garantiza la creación exclusiva al crear ficheros en particiones NFS. "
-"tempfile está obsoleto, debe utilizar mktemp(1) en su lugar."
+"tempfile no puede crear directorios temporales. tempfile está obsoleto, debe "
+"utilizar mktemp(1) en su lugar."
 
 #. type: SH
 #: ../tempfile.1:77
@@ -1364,11 +1366,3 @@ msgstr "B<2>"
 msgid "if an invalid option is specified"
 msgstr "La opción definida no es válida."
 
-#~ msgid ""
-#~ "B<add-shell> copy I</etc/shells> to I</etc/shells.tmp>, add the given "
-#~ "shells to this file if they are not already present, and copy this "
-#~ "temporary file back to I</etc/shells>."
-#~ msgstr ""
-#~ "B<add-shell> copia I</etc/shells> a I</etc/shells.tmp>, añade las "
-#~ "consolas a este fichero si no están presentes, y copia este fichero "
-#~ "temporal  a I</etc/shells>."

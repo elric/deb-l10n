@@ -36,10 +36,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: dpkg 1.18.8.5\n"
+"Project-Id-Version: dpkg 1.16.8\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-06-30 04:20+0300\n"
-"PO-Revision-Date: 2012-07-09 19:24+0200\n"
+"PO-Revision-Date: 2012-08-01 13:21+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -2153,13 +2153,13 @@ msgid ""
 "may be multiple lines in length, but the tools will join lines when "
 "processing the body of the field."
 msgstr ""
-"Los ficheros en B</etc/dpkg/origins> ofrecen información de varios "
-"proveedores que ofrecen paquetes de Debian. Estos ficheros contienen varios "
-"campos, o comentarios en aquellas líneas que empiezan con «B<#>». Cada campo "
-"empieza con una etiqueta, como B<Vendor> o B<Parent>, seguido de dos puntos "
-"y el cuerpo del campo. Sólo las etiquetas limitan los campos. En otras "
-"palabras, el texto de los campos puede tener una longitud de varias líneas, "
-"pero las herramientas de instalación las juntarán todas en una sola al "
+"Los ficheros en B</etc/dpkg/origins> pueden ofrecer información de varios "
+"proveedores que proporcionan paquetes de Debian. Estos ficheros contienen "
+"varios campos, o comentarios en aquellas líneas que empiezan con «B<#>». "
+"Cada campo empieza con una etiqueta, como B<Vendor> o B<Parent>, seguido de "
+"dos puntos y el cuerpo del campo. Sólo las etiquetas limitan los campos. "
+"En otras palabras, el texto de los campos puede tener una longitud de varias  "
+"líneas,pero las herramientas de instalación las juntarán todas en una sola al "
 "procesar el cuerpo del campo."
 
 #. type: TP
@@ -6437,7 +6437,7 @@ msgid ""
 "for the current user with B<$XDG_CONFIG_HOME/dpkg/buildflags.conf> where B<"
 "$XDG_CONFIG_HOME> defaults to B<$HOME/.config>;"
 msgstr ""
-"Para el usuario actual con B<$XDG_CONFIG_HOME/dpkg/buildflags.conf>, dónde B<"
+"Para el usuario actual con B<$XDG_CONFIG_HOME/dpkg/buildflags.conf>, donde B<"
 "$XDG_CONFIG_HOME> tiene como valor predefinido B<$HOME/.config>."
 
 #. type: IP
@@ -6497,7 +6497,7 @@ msgstr "B<STRIP>I< opción valor>"
 msgid ""
 "Strip from the flag named I<flag> all the build flags listed in I<value>."
 msgstr ""
-"Elimina del I<opción> todas las opciones de compilación enumeradas en "
+"Elimina de la I<opción> todas las opciones de compilación enumeradas en "
 "I<valor>."
 
 #. type: TP
@@ -6991,10 +6991,10 @@ msgid ""
 "enabled by default for architectures that support them."
 msgstr ""
 "Se pueden utilizar varias opciones de tiempo de compilación (explicadas a "
-"continuación) para aumentar la seguridad de un binario resultante frente a "
-"ataques de corrupción de memoria, u ofrecer mensajes de aviso durante la "
-"compilación. A menos que se especifique lo contrario, están activas por "
-"omisión para las arquitecturas que las admiten."
+"continuación) para aumentar la seguridad (hardening) de un binario "
+"resultante frente a ataques de corrupción de memoria, u ofrecer mensajes de "
+"aviso durante la compilación. A menos que se especifique lo contrario, "
+"están activas por omisión para las arquitecturas que las admiten."
 
 #. type: Plain text
 #: dpkg-buildflags.1:221
@@ -16264,7 +16264,7 @@ msgstr "dpkg-vendor"
 #: dpkg-vendor.1:21
 msgid "dpkg-vendor - queries information about distribution vendors"
 msgstr ""
-"dpkg-vendor - Consulta información relativa al proveedor de la publicación"
+"dpkg-vendor - Consulta información relativa a proveedores de la distribución"
 
 #. type: Plain text
 #: dpkg-vendor.1:25
