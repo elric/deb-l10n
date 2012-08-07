@@ -1,0 +1,469 @@
+# apt-listbugs po translation to Spanish
+# Copyright (C) 2012 Software in the Public Interest
+# This file is distributed under the same license as the apt-listbugs package.
+#
+# Changes:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com>, 2012.
+#
+#   - Updates
+#       TRANSLATOR
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: apt-listbugs 0.1.8\n"
+"Report-Msgid-Bugs-To: invernomuto@paranoici.org\n"
+"POT-Creation-Date: 2012-07-28 23:06+0200\n"
+"PO-Revision-Date: 2012-08-07 12:24+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+
+#: apt-listbugs:301
+msgid "E: apt Pre-Install-Pkgs is not giving me expected 'VERSION 2' string.\n"
+msgstr "E: apt Pre-Install-Pkgs no devuelve la cadena esperada «VERSION 2».\n"
+
+#: apt-listbugs:326
+msgid "E: apt Pre-Install-Pkgs is giving me fewer fields than expected.\n"
+msgstr "E: apt Pre-Install-Pkgs devuelve menos campos de los esperados.\n"
+
+#: apt-listbugs:350
+msgid "E: apt Pre-Install-Pkgs is giving me an invalid direction of version change.\n"
+msgstr "E: apt Pre-Install-Pkgs devuelve una dirección no válida de cambio de "
+"versión.\n"
+
+#: apt-listbugs:416
+msgid "****** Exiting with an error in order to stop the installation. ******"
+msgstr "****** Cerrando con error para detener la instalación. ******"
+
+#: lib/apt-listbugs/logic.rb:40
+msgid "Usage: "
+msgstr "Uso:"
+
+#: lib/apt-listbugs/logic.rb:41
+msgid " [options] <command> [arguments]"
+msgstr " [opciones] <orden> [argumentos]"
+
+#: lib/apt-listbugs/logic.rb:43
+msgid "Options:\n"
+msgstr "Opciones:\n"
+
+#: lib/apt-listbugs/logic.rb:44
+msgid " -h               : Display this help and exit.\n"
+msgstr " -h               : Muestra esta ayuda y cierra.\n"
+
+#: lib/apt-listbugs/logic.rb:45
+msgid " -v               : Show version number and exit.\n"
+msgstr " -v               : Muestra el número de versión y cierra.\n"
+
+#: lib/apt-listbugs/logic.rb:46
+#, python-format
+msgid " -s <severities>  : Severities you want to see [%s], or [all].\n"
+msgstr " -s <severidades>  : Severidades que desea ver [%s], o [all] (todas).\n"
+
+#: lib/apt-listbugs/logic.rb:47
+msgid " -T <tags>        : Tags you want to see.\n"
+msgstr " -T <etiquetas>        : Etiquetas que desea ver.\n"
+
+#: lib/apt-listbugs/logic.rb:48
+#, python-format
+msgid " -S <stats>       : Stats you want to see [%s].\n"
+msgstr " -S <estadísticas>       : Estadísticas que desea ver [%s].\n"
+
+#: lib/apt-listbugs/logic.rb:49
+msgid " -B <bug#>        : Restrict reporting to specified bug#s only.\n"
+msgstr " -B <número-de-fallo>        : Limita los informes al número de fallo "
+"definido.\n"
+
+#: lib/apt-listbugs/logic.rb:50
+msgid " -D               : Show downgraded packages, too.\n"
+msgstr " -D               : Muestra también paquetes desactualizados.\n"
+
+#: lib/apt-listbugs/logic.rb:51
+#, python-format
+msgid " -H <hostname>    : Hostname of Debian Bug Tracking System [%s].\n"
+msgstr " -H <nombre-servidor>    : Nombre de servidor del sistema de seguimiento de "
+"fallos de Debian [%s].\n"
+
+#: lib/apt-listbugs/logic.rb:52
+#, python-format
+msgid " -p <port>        : Port number of the server [%s].\n"
+msgstr " -p <puerto>        : Número de puerto del servidor [%s].\n"
+
+#: lib/apt-listbugs/logic.rb:53
+#, python-format
+msgid " -P <priority>    : Specifies Pin-Priority value [%s].\n"
+msgstr " -P <prioridad>    : Define el valor de la prioridad de anclaje [%s].\n"
+
+#: lib/apt-listbugs/logic.rb:54
+msgid " -E <title>       : Specifies the title of RSS output.\n"
+msgstr " -E <título>       : Define el título de la salida RSS.\n"
+
+#: lib/apt-listbugs/logic.rb:55
+msgid " -q               : Don't display progress bar.\n"
+msgstr " -q               : Oculta la barra de progreso.\n"
+
+#: lib/apt-listbugs/logic.rb:56
+msgid " -C <apt.conf>    : Specify apt.conf.\n"
+msgstr " -C <apt.conf>    : Define el fichero «apt.conf».\n"
+
+#: lib/apt-listbugs/logic.rb:57
+msgid " -y               : Assume that you select yes for all questions.\n"
+msgstr " -y               : Supone que responde afirmativamente a todas las "
+"preguntas.\n"
+
+#: lib/apt-listbugs/logic.rb:58
+msgid " -n               : Assume that you select no for all questions.\n"
+msgstr " -n               : Supone que responde negativamente a todas las preguntas.\n"
+
+#: lib/apt-listbugs/logic.rb:59
+msgid " -d               : Debug.\n"
+msgstr " -d               : Depuración de fallos.\n"
+
+#: lib/apt-listbugs/logic.rb:60
+msgid "Commands:\n"
+msgstr "Órdenes:\n"
+
+#: lib/apt-listbugs/logic.rb:61
+msgid " apt              : Apt mode.\n"
+msgstr " apt              : Modo apt.\n"
+
+#: lib/apt-listbugs/logic.rb:62
+msgid " list <pkg...>    : List bug reports of the specified packages.\n"
+msgstr " list <paquete...>    : Muestra informes de fallo de los paquetes definidos.\n"
+
+#: lib/apt-listbugs/logic.rb:63
+msgid " rss <pkg...>     : List bug reports of the specified packages in RSS.\n"
+msgstr " rss <paquete...>     : Muestra informes de fallo de los paquetes definidos "
+"en formato RSS.\n"
+
+#: lib/apt-listbugs/logic.rb:64
+msgid "See the manual page for the long options.\n"
+msgstr "Consulte la página de manual para las opciones largas.\n"
+
+#: lib/apt-listbugs/logic.rb:71
+msgid "forwarded"
+msgstr "reenviado"
+
+#: lib/apt-listbugs/logic.rb:72
+msgid "marked as done in some version"
+msgstr "marcado como arreglado en alguna versión"
+
+#: lib/apt-listbugs/logic.rb:73
+msgid "unfixed"
+msgstr "sin arreglar"
+
+#: lib/apt-listbugs/logic.rb:74
+msgid "tagged as pending a fix"
+msgstr "etiquetado como pendiente de arreglo"
+
+#: lib/apt-listbugs/logic.rb:181
+msgid "W: sanity check failed: environment variable http_proxy is unset and HTTP_PROXY is set."
+msgstr ""
+"W: Fallo de la comprobación de estado: la variable de entorno «http_proxy» "
+"no está definida, «HTTP_PROXY» sí lo está."
+
+#: lib/apt-listbugs/logic.rb:217
+msgid "E: You need to specify a command."
+msgstr "E: Debe definir una orden."
+
+#: lib/apt-listbugs/logic.rb:227
+msgid "E: Unknown command "
+msgstr "E: Orden desconocida "
+
+#: lib/apt-listbugs/logic.rb:238
+msgid "W: cannot open /dev/tty - running inside su -c \"command\"? Switching to non-interactive failure mode (see /usr/share/doc/apt-listbugs/README.Debian.gz)"
+msgstr ""
+"W: No se puede abrir «/dev/tty», ¿se está ejecutando dentro de la orden «su "
+"-c»? Cambiando a modo de fallo no interactivo (consulte «/usr/share/doc/apt-"
+"listbugs/README.Debian.gz»)"
+
+#: lib/apt-listbugs/logic.rb:300
+#, python-format
+msgid "W: Cannot read from %s"
+msgstr "W: No se puede leer desde %s"
+
+#: lib/apt-listbugs/logic.rb:318
+#, python-format
+msgid "W: Cannot write to %s"
+msgstr "W: No se puede escribir en %s"
+
+#: lib/apt-listbugs/logic.rb:337
+msgid "********** on_hold IS DEPRECATED. USE p INSTEAD to use pin **********"
+msgstr ""
+"********** on_hold ESTÁ OBSOLETO. UTILICE p EN SU LUGAR para el anclaje "
+"**********"
+
+#: lib/apt-listbugs/logic.rb:352
+msgid "Are you sure you want to install/upgrade the above packages?"
+msgstr ""
+"¿Está seguro que desea instalar/actualizar los paquetes mostrados "
+"anteriormente?"
+
+#: lib/apt-listbugs/logic.rb:396
+msgid "You must install the reportbug package to be able to do this"
+msgstr "Debe instalar el paquete reportbug para poder realizar este paso"
+
+#: lib/apt-listbugs/logic.rb:402
+#, python-format
+msgid "%s ignored"
+msgstr "%s ignorado"
+
+#: lib/apt-listbugs/logic.rb:404
+#, python-format
+msgid "%s already ignored"
+msgstr "%s ya se ha ignorado"
+
+#. TRANSLATORS: %{plist} is a comma-separated list of %{npkgs} packages to be pinned or put on hold.
+#: lib/apt-listbugs/logic.rb:451
+msgid ""
+"The following package will be pinned or on hold:\n"
+" %{plist}\n"
+"Are you sure?"
+msgid_plural ""
+"The following %{npkgs} packages will be pinned or on hold:\n"
+" %{plist}\n"
+"Are you sure?"
+msgstr[0] ""
+"El siguiente paquete se anclará o mantendrá (hold):\n"
+" %{plist}\n"
+"¿Está seguro?"
+msgstr[1] ""
+"Los siguientes %{npkgs} paquetes se anclarán o mantendrán (hold):\n"
+" %{plist}\n"
+"¿Está seguro?"
+
+#: lib/apt-listbugs/logic.rb:463
+#, python-format
+msgid "All selected packages are already pinned or on hold. Ignoring %s command."
+msgstr ""
+"Todos los paquetes ya se han anclado o marcado para mantener. "
+"Ignorando la orden %s"
+
+#: lib/apt-listbugs/logic.rb:468
+msgid "     y     - continue the apt installation, but do not mark the bugs as ignored.\n"
+msgstr "     y     - Continua la instalación realizada por apt, pero no marca "
+"los informes de fallo como ignorados.\n"
+
+#: lib/apt-listbugs/logic.rb:469
+msgid "     a     - continue the apt installation and mark all the above bugs as ignored.\n"
+msgstr "     a     - Continua la instalación realizada por apt y marca todos "
+"los informes de fallo mostrados como ignorados.\n"
+
+#: lib/apt-listbugs/logic.rb:472
+msgid "     n     - stop the apt installation.\n"
+msgstr "     n     - Detiene la instalación de apt.\n"
+
+#: lib/apt-listbugs/logic.rb:473
+msgid "   <num>   - query the specified bug number (requires reportbug).\n"
+msgstr "   <número>   - Consulta el número de fallo definido (requiere reportbug).\n"
+
+#: lib/apt-listbugs/logic.rb:474
+msgid "  #<num>   - same as <num>\n"
+msgstr "  #<número>   - Idéntico a <num>\n"
+
+#: lib/apt-listbugs/logic.rb:475
+msgid "     r     - redisplay bug lists.\n"
+msgstr "     r     - Muestra otra vez las listas de informes de fallo.\n"
+
+#: lib/apt-listbugs/logic.rb:476
+msgid " p <pkg..> - pin pkgs (restart APT session to enable).\n"
+msgstr " p <paquete..> - Anclaje de paquetes (reinicie la sesión de APT para "
+"activarla).\n"
+
+#: lib/apt-listbugs/logic.rb:477
+msgid " p         - pin all the above pkgs (restart APT session to enable).\n"
+msgstr " p         - Anclaje de todos los paquetes anteriormente mencionados "
+"(reinicie la sesión de APT para activarla).\n"
+
+#: lib/apt-listbugs/logic.rb:478
+msgid " i <num>   - mark bug number <num> as ignored.\n"
+msgstr " i <número>   - Marca el número de informe de fallo <número> como ignorado.\n"
+
+#: lib/apt-listbugs/logic.rb:479
+msgid "     ?     - print this help.\n"
+msgstr "     ?     - Muestra esta ayuda.\n"
+
+#: lib/apt-listbugs/logic.rb:481
+#, python-format
+msgid "     w     - display bug lists in HTML (uses %s).\n"
+msgstr "     w     - Muestra la lista de informes de fallo en HTML (utiliza %s).\n"
+
+#: lib/apt-listbugs/logic.rb:517
+#, python-format
+msgid "%s pinned by adding Pin preferences in /etc/apt/preferences. Restart APT session to enable"
+msgstr ""
+"%s anclado añadiendo preferencias de anclaje en «/etc/apt/preferences». "
+"Reinicie la sesión de APT para activarla"
+
+#: lib/apt-listbugs/logic.rb:530
+#, python-format
+msgid "%s held. Restart APT session to enable"
+msgstr ""
+"%s marcado para mantener (hold). Reinicie la sesión de APT para activarla"
+
+#. TRANSLATORS: %{sevty} is the severity of some of the bugs found for package %{packg}.
+#: lib/apt-listbugs/logic.rb:552
+msgid "%{sevty} bugs of %{packg} ("
+msgstr "Fallos %{sevty} del paquete  %{packg} ("
+
+#: lib/apt-listbugs/logic.rb:560
+#, python-format
+msgid " (Found: %s)"
+msgstr " (Detectado: %s)"
+
+#: lib/apt-listbugs/logic.rb:561
+#, python-format
+msgid " (Fixed: %s)"
+msgstr " (Arreglado: %s)"
+
+#: lib/apt-listbugs/logic.rb:564
+msgid "   Merged with:"
+msgstr "   Fusionado con:"
+
+#. TRANSLATORS: %{nbugs} is the number of bugs found for package %{packg}.
+#: lib/apt-listbugs/logic.rb:579
+msgid "%{packg}(%{nbugs} bug)"
+msgid_plural "%{packg}(%{nbugs} bugs)"
+msgstr[0] "%{packg}(%{nbugs} informe de fallo)"
+msgstr[1] "%{packg}(%{nbugs} informes de fallo)"
+
+#: lib/apt-listbugs/logic.rb:586
+msgid ""
+"Summary:\n"
+" "
+msgstr ""
+"Resumen:\n"
+" "
+
+#. TRANSLATORS: %s is a bug status such as forwarded, done, pending, pending-fixed, etc. see the -S option in the man page.
+#: lib/apt-listbugs/logic.rb:599
+#, python-format
+msgid "Bug reports which are marked as %s in the bug tracking system"
+msgstr ""
+"Informes de fallo marcados como %s en el sistema de seguimiento de fallos"
+
+#: lib/apt-listbugs/logic.rb:600
+msgid "package"
+msgstr "paquete"
+
+#: lib/apt-listbugs/logic.rb:600
+msgid "severity"
+msgstr "severidad"
+
+#: lib/apt-listbugs/logic.rb:600
+msgid "bug number"
+msgstr "número de informe de fallo"
+
+#: lib/apt-listbugs/logic.rb:600
+msgid "description"
+msgstr "descripción"
+
+#: lib/apt-listbugs/logic.rb:614 lib/apt-listbugs/logic.rb:615
+msgid "Critical bugs for your upgrade"
+msgstr "Informes de fallo críticos para su actualización"
+
+#: lib/apt-listbugs/logic.rb:616
+msgid "by apt-listbugs"
+msgstr "por apt-listbugs"
+
+#: lib/apt-listbugs/logic.rb:617
+msgid "Bug reports"
+msgstr "Informes de fallo"
+
+#: lib/apt-listbugs/logic.rb:626
+msgid "Package upgrade information in question"
+msgstr "Información de actualización de paquete en la consulta"
+
+#: lib/apt-listbugs/logic.rb:644
+msgid "W: Failed to invoke browser."
+msgstr "W: Fallo al invocar el explorador."
+
+#: lib/apt-listbugs/logic.rb:735 lib/apt-listbugs/logic.rb:815
+#: lib/apt-listbugs/logic.rb:1009
+msgid "Done"
+msgstr "Finalizado"
+
+#: lib/apt-listbugs/logic.rb:747
+msgid "Not Implemented"
+msgstr "No implementado"
+
+#: lib/apt-listbugs/logic.rb:771 lib/apt-listbugs/logic.rb:779
+#: lib/apt-listbugs/logic.rb:812 lib/apt-listbugs/logic.rb:815
+msgid "Retrieving bug reports..."
+msgstr "Obteniendo informes de fallo..."
+
+#: lib/apt-listbugs/logic.rb:782 lib/apt-listbugs/logic.rb:790
+#: lib/apt-listbugs/logic.rb:798
+msgid " Fail"
+msgstr " Fallo"
+
+#: lib/apt-listbugs/logic.rb:784
+msgid " E: HTTP GET failed"
+msgstr " E: Fallo de HTTP GET"
+
+#: lib/apt-listbugs/logic.rb:786 lib/apt-listbugs/logic.rb:794
+#: lib/apt-listbugs/logic.rb:808
+msgid "Retry downloading bug information?"
+msgstr "¿Desea reintentar la descarga de información de fallo?"
+
+#: lib/apt-listbugs/logic.rb:787 lib/apt-listbugs/logic.rb:795
+#: lib/apt-listbugs/logic.rb:809
+msgid "Exiting with error"
+msgstr "Cerrando con error"
+
+#: lib/apt-listbugs/logic.rb:787 lib/apt-listbugs/logic.rb:795
+#: lib/apt-listbugs/logic.rb:809
+msgid "Continue the installation anyway?"
+msgstr "¿Desea continuar la instalación de todas formas?"
+
+#: lib/apt-listbugs/logic.rb:792
+msgid " E: Empty stream from SOAP"
+msgstr " E: Flujo vacío desde SOAP"
+
+#: lib/apt-listbugs/logic.rb:800
+msgid "Error retrieving bug reports from the server with the following error message:"
+msgstr ""
+"Fallo al obtener informes de fallo del servidor con el siguiente mensaje de "
+"fallo:"
+
+#: lib/apt-listbugs/logic.rb:803
+msgid "It appears that your network connection is down. Check network configuration and try again"
+msgstr ""
+"Parece que no dispone de conexión a la red. Compruebe la configuración de la "
+"red e inténtelo de nuevo"
+
+#: lib/apt-listbugs/logic.rb:805
+msgid "It could be because your network is down, or because of broken proxy servers, or the BTS server itself is down. Check network configuration and try again"
+msgstr ""
+"Podría ser que debido a que la red ha fallado, servidores proxy no "
+"funcionales, o que el mismo servidor del sistema de seguimiento de fallos ha "
+"fallado. Compruebe la configuración de la red e inténtelo de nuevo"
+
+#: lib/apt-listbugs/logic.rb:989 lib/apt-listbugs/logic.rb:1000
+#: lib/apt-listbugs/logic.rb:1008 lib/apt-listbugs/logic.rb:1009
+msgid "Parsing Found/Fixed information..."
+msgstr "Analizando información Detectado/Arreglado..."

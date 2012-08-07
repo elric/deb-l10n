@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2011-05-25 03:58+0000\n"
-"PO-Revision-Date: 2012-05-18 11:46+0200\n"
+"PO-Revision-Date: 2012-08-06 13:27+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5535,7 +5535,7 @@ msgstr ""
 #: ../scripts/debchange.1:1
 #, no-wrap
 msgid "DEBCHANGE"
-msgstr ""
+msgstr "DEBCHANGE"
 
 #. type: Plain text
 #: ../scripts/debchange.1:4
@@ -5543,16 +5543,18 @@ msgid ""
 "debchange - Tool for maintenance of the debian/changelog file in a source "
 "package"
 msgstr ""
+"debchange - Herramienta de edición de un fichero «debian/changelog» dentro "
+"de un paquete fuente"
 
 #. type: Plain text
 #: ../scripts/debchange.1:6
 msgid "B<debchange> [I<options>] [I<text> ...]"
-msgstr ""
+msgstr "B<debchange> [I<opciones>] [I<texto> ...]"
 
 #. type: Plain text
 #: ../scripts/debchange.1:8
 msgid "B<dch> [I<options>] [I<text> ...]"
-msgstr ""
+msgstr "B<dch> [I<opciones>] [I<texto> ...]"
 
 #. type: Plain text
 #: ../scripts/debchange.1:29
@@ -5576,6 +5578,26 @@ msgid ""
 "I<NEWS> file can be created from scratch using the B<--create> option "
 "described below."
 msgstr ""
+"B<debchange>, o su alias B<dch>, añade una nueva línea de comentario al "
+"fichero de registro de cambios «changelog» en el árbol de fuentes actual. "
+"Esta orden se debe ejecutar desde ese árbol. Si se introduce el texto que "
+"describe el cambio en la línea de órdenes, B<debchange> se ejecutará en modo "
+"de procesamiento por lotes y simplemente añadirá el texto, con líneas "
+"nuevas si es necesario, en el lugar adecuado dentro de I<debian/changelog> "
+"(o el fichero «changelog» definido con opciones, como se describe a "
+"continuación). Si no se especifica ningún texto, B<debchange> se ejecutará "
+"con el editor definido por B<sensible-editor> para que pueda editarlo. (Las "
+"variables de entorno B<VISUAL> y B<EDITOR> se utilizan en este orden para "
+"determinar qué editor utilizar). Los editores que permitan la opción I<+n> "
+"para iniciar la edición en una línea específica, utilizan esto para "
+"desplazarse a la línea correcta del fichero para la edición. Si el editor se "
+"cierra sin modificar el fichero temporal, B<debchange> se cierra sin tocar "
+"el «changelog» existente. B<Tenga en cuenta que se asume que el fichero "
+"«changelog» tiene una codificación UTF-8. En caso contrario, pueden aparecer "
+"problemas.> Consulte la página de manual I<iconv>(1) para ver cómo "
+"convertir ficheros «changelog» desde codificaciones antiguas. Por último, se "
+"puede generar un fichero I<changelog> o I<NEWS> se puede crear desde cero "
+"utilizando la opción B<--create>, descrita a continuación."
 
 #. type: Plain text
 #: ../scripts/debchange.1:42
@@ -5591,6 +5613,18 @@ msgid ""
 "whether or not modifications are made.  An extra changelog entry can be "
 "given on the command line in addition to the closes entries."
 msgstr ""
+"B<debchange> también permite generar entradas de «changelog» de cierre de "
+"informes de fallo de forma automática mediante la opción B<--closes>. "
+"Habitualmente, consulta al sistema BTS, el sistema de seguimiento de fallos "
+"de Debian (visite «http://bugs.debian.org/») para determinar el nombre del "
+"fallo y el paquete en el que aparece. Este comportamiento se puede impedir "
+"introduciendo la opción B<--noquery> o definiendo la variable de "
+"configuración B<DEBCHANGE_QUERY_BTS> con el valor I<no>, como se describe a "
+"continuación. En cualquier caso, el editor (como se describe a continuación) "
+"siempre se invocará para ofrecer la oportunidad de modificar las entradas, "
+"y el fichero «changelog» se aceptará sin importar si se han realizado o no "
+"modificaciones. Se puede introducir en la línea de órdenes una entrada de de "
+"fichero «changelog» adicional además de las entradas de cierre de informe."
 
 #. type: Plain text
 #: ../scripts/debchange.1:49
